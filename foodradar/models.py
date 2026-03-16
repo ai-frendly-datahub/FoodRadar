@@ -7,7 +7,6 @@ from radar_core.models import (
     CategoryConfig,
     EmailSettings,
     EntityDefinition,
-    NotificationConfig,
     RadarSettings,
     Source,
     TelegramSettings,
@@ -28,3 +27,5 @@ __all__ = [
     "TelegramSettings",
     "WebhookConfig",
 ]
+
+NotificationConfig = StandardNotificationConfig
