@@ -1,0 +1,2 @@
+-e .[dev]
+radar-core>=0.2.0

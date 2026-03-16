@@ -1,0 +1,140 @@
+name: FoodRadar Daily Collection
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 3 * * *"  # Daily at 3:00 UTC
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+env:
+  RADAR_CATEGORY: food
+  TZ: Asia/Seoul
+  PYTHON_VERSION: "3.11"
+
+concurrency:
+  group: radar-collection
+  cancel-in-progress: false
+
+jobs:
+  run-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: 'pip'
+
+      - name: Cache pip dependencies
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install "radar-core @ git+https://github.com/ai-frendly-datahub/radar-core.git@main"
+          pip install -r requirements.txt
+
+      - name: Run Radar
+        run: |
+          python main.py --category "${{ env.RADAR_CATEGORY }}" --recent-days 7 --keep-days 90 --keep-raw-days 180 --keep-report-days 90 --snapshot-db --generate-report
+
+      - name: Generate index.html
+        run: |
+          python -c "from radar.reporter import generate_index_html; from pathlib import Path; generate_index_html(Path('reports'))"
+
+      - name: Run Quality Checks
+        if: always()
+        run: |
+          python scripts/check_quality.py > quality_report.txt 2>&1 || true
+          cat quality_report.txt >> $GITHUB_STEP_SUMMARY
+        continue-on-error: true
+
+      - name: Archive Quality Report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: quality-report-${{ github.run_number }}
+          path: quality_report.txt
+          retention-days: 30
+
+      - name: Auto-commit data updates
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update radar data [skip ci]"
+          file_pattern: data/*.duckdb
+          skip_fetch: false
+          skip_checkout: false
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./reports
+          user_name: github-actions[bot]
+          user_email: github-actions[bot]@users.noreply.github.com
+          commit_message: "docs: update radar report"
+          cname: ""
+
+      - name: Archive DuckDB (30-day backup)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: radar-db-${{ github.run_number }}
+          path: data/radar_data.duckdb
+          retention-days: 30
+          if-no-files-found: ignore
+
+      - name: Archive reports (30-day backup)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: radar-reports-${{ github.run_number }}
+          path: reports/
+          retention-days: 30
+          if-no-files-found: warn
+
+      - name: Create workflow summary
+        if: always()
+        run: |
+          echo "## 📊 Radar Collection Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- **Category**: ${{ env.RADAR_CATEGORY }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Run**: ${{ github.run_number }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Timestamp**: $(date +'%Y-%m-%d %H:%M:%S UTC')" >> $GITHUB_STEP_SUMMARY
+          echo "- **Status**: ${{ job.status }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          if [ -f "reports/index.html" ]; then
+            echo "✅ Report generated successfully" >> $GITHUB_STEP_SUMMARY
+          fi
+          if [ -f "data/radar_data.duckdb" ]; then
+            SIZE=$(du -h data/radar_data.duckdb | cut -f1)
+            echo "✅ Database backed up ($SIZE)" >> $GITHUB_STEP_SUMMARY
+          fi
+
+      - name: Notify on failure
+        if: failure()
+        run: |
+          curl -s -X POST "${{ secrets.NOTIFICATION_WEBHOOK_URL }}" \
+            -H "Content-Type: application/json" \
+            -d '{
+              "repo": "${{ github.repository }}",
+              "workflow": "${{ github.workflow }}",
+              "run_id": "${{ github.run_id }}",
+              "run_url": "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}",
+              "status": "failure",
+              "timestamp": "${{ github.event.head_commit.timestamp }}"
+            }' || true

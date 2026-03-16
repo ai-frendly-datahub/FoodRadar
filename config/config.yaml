@@ -1,0 +1,30 @@
+# Global configuration for the Radar project
+
+# Path to the DuckDB database file (kept outside published reports)
+database_path: "data/radar_data.duckdb"
+
+# Directory to save generated reports
+report_dir: "reports"
+
+# Directory to save raw collected data as JSONL
+raw_data_dir: "data/raw"
+
+# Path to the SQLite FTS5 sidecar database file
+search_db_path: "data/search_index.db"
+
+# Notification settings (optional)
+notifications:
+  enabled: false
+  email:
+    enabled: false
+    smtp_host: ""
+    smtp_port: 587
+    smtp_user: ""
+    smtp_password: ""
+    from_addr: ""
+    to_addrs: []
+  webhook:
+    enabled: false
+    url: ""
+    method: "POST"
+    headers: {}
