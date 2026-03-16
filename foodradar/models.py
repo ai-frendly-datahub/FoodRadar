@@ -2,6 +2,7 @@ from __future__ import annotations
 
 # Re-export from radar-core shared package
 from radar_core.models import (
+    EmailConfig,
     Article,
     CategoryConfig,
     EmailSettings,
@@ -10,6 +11,8 @@ from radar_core.models import (
     RadarSettings,
     Source,
     TelegramSettings,
+    StandardNotificationConfig,
+    WebhookConfig,
 )
 
 __all__ = [
@@ -20,5 +23,8 @@ __all__ = [
     "NotificationConfig",
     "RadarSettings",
     "Source",
+    "EmailConfig",
+    "StandardNotificationConfig",
     "TelegramSettings",
+    "WebhookConfig",
 ]
