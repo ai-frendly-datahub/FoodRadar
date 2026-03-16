@@ -49,7 +49,7 @@ jobs:
 
       - name: Run Radar
         run: |
-          python main.py --category "${{ env.RADAR_CATEGORY }}" --recent-days 7 --keep-days 90 --keep-raw-days 180 --keep-report-days 90 --snapshot-db --generate-report
+          python main.py --category "${{ env.RADAR_CATEGORY }}" --recent-days 7 --keep-days 90
 
       - name: Generate index.html
         run: |
