@@ -146,3 +146,6 @@ module = [
     "duckdb.*",
 ]
 ignore_missing_imports = true
+
+[tool.setuptools.packages.find]
+include = ["foodradar*"]
