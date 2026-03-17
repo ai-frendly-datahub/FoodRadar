@@ -324,6 +324,11 @@ def _collect_single(
                         if isinstance(value, str):
                             summary = value
 
+            # Fallback: use title as summary if no description available
+            if not summary or not summary.strip():
+                raw_title = _entry_text(entry, "title").strip()
+                summary = f"[식품안전] {raw_title}" if raw_title else ""
+
             items.append(
                 Article(
                     title=html.unescape(_entry_text(entry, "title").strip())
