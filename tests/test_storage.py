@@ -2,8 +2,6 @@ from __future__ import annotations
 
 from datetime import UTC, datetime, timedelta
 
-import pytest
-
 from foodradar.models import Article
 from foodradar.storage import RadarStorage
 

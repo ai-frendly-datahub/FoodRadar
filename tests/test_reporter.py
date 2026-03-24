@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 
 import pytest
 
@@ -10,7 +10,7 @@ from foodradar.reporter import generate_index_html, generate_report
 
 @pytest.fixture()
 def fixed_now():
-    return datetime(2024, 3, 15, 9, 30, tzinfo=timezone.utc)
+    return datetime(2024, 3, 15, 9, 30, tzinfo=UTC)
 
 
 @pytest.fixture()

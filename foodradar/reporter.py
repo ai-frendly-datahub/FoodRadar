@@ -5,6 +5,8 @@ from pathlib import Path
 
 from radar_core.report_utils import (
     generate_index_html as _core_generate_index_html,
+)
+from radar_core.report_utils import (
     generate_report as _core_generate_report,
 )
 

@@ -98,9 +98,7 @@ class SourceCircuitBreakerManager:
     def get_status(self) -> dict[str, str]:
         """Get status of all circuit breakers."""
         with self._lock:
-            return {
-                name: breaker.current_state for name, breaker in self._instances.items()
-            }
+            return {name: breaker.current_state for name, breaker in self._instances.items()}
 
 
 # Global singleton instance
