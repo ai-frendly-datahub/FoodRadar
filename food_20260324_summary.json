@@ -1,17 +1,17 @@
 {
   "date": "2026-03-24",
   "category": "food",
-  "article_count": 62,
-  "source_count": 3,
-  "matched_count": 29,
+  "article_count": 63,
+  "source_count": 4,
+  "matched_count": 31,
   "top_entities": [
     {
       "name": "FoodType",
-      "count": 19
+      "count": 21
     },
     {
       "name": "SafetyIssue",
-      "count": 15
+      "count": 16
     },
     {
       "name": "Region",
@@ -35,9 +35,10 @@
     }
   ],
   "sources": {
-    "식품안전나라 행정처분": 27,
+    "식품안전나라 행정처분": 25,
     "식품안전 국내뉴스": 28,
-    "식약처 보도자료": 7
+    "식품안전나라 회수판매중지": 2,
+    "식약처 보도자료": 8
   },
-  "generated_at": "2026-03-24T15:24:04.973806+09:00"
+  "generated_at": "2026-03-24T18:23:04.583383+09:00"
 }
