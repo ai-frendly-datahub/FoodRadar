@@ -4,7 +4,6 @@ from pathlib import Path
 from typing import cast
 
 import yaml
-
 from radar_core.models import (
     CategoryConfig,
     EntityDefinition,
@@ -12,6 +11,7 @@ from radar_core.models import (
     RadarSettings,
     Source,
 )
+
 
 _PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
@@ -46,28 +46,47 @@ def load_settings(config_path: Path | None = None) -> RadarSettings:
     )
 
 
-def load_category_config(
-    category_name: str, categories_dir: Path | None = None
-) -> CategoryConfig:
+def load_category_config(category_name: str, categories_dir: Path | None = None) -> CategoryConfig:
     base = categories_dir or _PROJECT_ROOT / "config" / "categories"
     f = Path(base) / f"{category_name}.yaml"
     if not f.exists():
         raise FileNotFoundError(f"Category config not found: {f}")
     raw = _read_yaml(f)
     sources = []
-    for s in (raw.get("sources") or []):
+    for s in raw.get("sources") or []:
         if isinstance(s, dict):
             sd = {str(k): v for k, v in cast(dict[object, object], s).items()}
-            sources.append(Source(name=_str(sd, "name", "Unnamed"), type=_str(sd, "type", "rss"), url=_str(sd, "url")))
+            sources.append(
+                Source(
+                    name=_str(sd, "name", "Unnamed"),
+                    type=_str(sd, "type", "rss"),
+                    url=_str(sd, "url"),
+                )
+            )
     entities = []
-    for e in (raw.get("entities") or []):
+    for e in raw.get("entities") or []:
         if isinstance(e, dict):
             ed = {str(k): v for k, v in cast(dict[object, object], e).items()}
             kw_raw = ed.get("keywords", [])
-            kws = [str(k).strip() for k in (kw_raw if isinstance(kw_raw, list) else []) if str(k).strip()]
-            entities.append(EntityDefinition(name=_str(ed, "name", "entity"), display_name=_str(ed, "display_name", _str(ed, "name", "entity")), keywords=kws))
+            kws = [
+                str(k).strip()
+                for k in (kw_raw if isinstance(kw_raw, list) else [])
+                if str(k).strip()
+            ]
+            entities.append(
+                EntityDefinition(
+                    name=_str(ed, "name", "entity"),
+                    display_name=_str(ed, "display_name", _str(ed, "name", "entity")),
+                    keywords=kws,
+                )
+            )
     dn = _str(raw, "display_name") or _str(raw, "category_name") or category_name
-    return CategoryConfig(category_name=_str(raw, "category_name", category_name), display_name=dn, sources=sources, entities=entities)
+    return CategoryConfig(
+        category_name=_str(raw, "category_name", category_name),
+        display_name=dn,
+        sources=sources,
+        entities=entities,
+    )
 
 
 def load_notification_config(config_path: Path | None = None) -> NotificationConfig:
@@ -78,4 +97,3 @@ def load_notification_config(config_path: Path | None = None) -> NotificationCon
 
 
 __all__ = ["load_category_config", "load_notification_config", "load_settings"]
-

@@ -513,9 +513,15 @@
 
       <div class="header__stats">
         <div class="stat-item">
-          <span class="stat-value">0</span>
+          <span class="stat-value">2</span>
           <span class="stat-label">Total Reports</span>
         </div>
+        
+        <div class="stat-item">
+          <span class="stat-value">2026-03-24</span>
+          <span class="stat-label">Latest Report</span>
+        </div>
+        
         
       </div>
     </header>
@@ -569,10 +575,51 @@
 
       <div id="reports-grid" class="reports-grid">
         
-        <div class="empty-state">
-          <div class="empty-state__icon">📊</div>
-          <p class="empty-state__text">No reports available yet. Check back later.</p>
-        </div>
+          
+          <a href="food_20260324.html" class="report-card" data-date="2026-03-24" data-name="food - 2026-03-24" data-title="food - 2026-03-24" data-entities="">
+            <div class="report-card__header">
+              <span class="report-card__date">2026-03-24</span>
+              
+              <span class="report-card__badge">Daily</span>
+              
+            </div>
+            <div class="report-card__meta">
+              <span class="report-card__meta-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                </svg>
+                View Report
+              </span>
+            </div>
+            
+            <div class="report-card__entities" data-summary-date="2026-03-24">
+              
+            </div>
+          </a>
+          
+          <a href="food_report.html" class="report-card" data-date="" data-name="Food Report" data-title="Food Report" data-entities="">
+            <div class="report-card__header">
+              <span class="report-card__date">Food Report</span>
+              
+              <span class="report-card__badge" style="background: rgba(246, 200, 76, 0.15); color: var(--accent-highlight);">Latest</span>
+              
+            </div>
+            <div class="report-card__meta">
+              <span class="report-card__meta-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                </svg>
+                View Report
+              </span>
+            </div>
+            
+            <div class="report-card__entities" data-summary-date="">
+              
+            </div>
+          </a>
+          
         
       </div>
     </section>
@@ -584,7 +631,7 @@
         <span class="footer__timestamp">
           
             
-              2026-03-16T07:07:12.307361+00:00
+              2026-03-24T03:34:35.178554+00:00
             
           
         </span>
@@ -600,9 +647,9 @@
     
     const RADAR_DATA = {
       name: "Food Radar",
-      reports: [],
-      summaries: [],
-      generatedAt: "2026-03-16T07:07:12.307361+00:00"
+      reports: [{"date": "2026-03-24", "date_label": "2026-03-24", "display_name": "food - 2026-03-24", "filename": "food_20260324.html"}, {"date": "", "date_label": "", "display_name": "Food Report", "filename": "food_report.html"}],
+      summaries: [{"date": "2026-03-24", "category": "food", "article_count": 97, "source_count": 5, "matched_count": 36, "top_entities": [{"name": "SafetyIssue", "count": 27}, {"name": "FoodType", "count": 23}, {"name": "Regulation", "count": 2}, {"name": "Brand", "count": 1}]}],
+      generatedAt: "2026-03-24T03:34:35.178554+00:00"
     };
 
     

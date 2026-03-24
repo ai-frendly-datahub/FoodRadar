@@ -1,13 +1,13 @@
 from __future__ import annotations
 
 import argparse
-from datetime import UTC, datetime
 from pathlib import Path
 from typing import cast
 
 from foodradar.analyzer import apply_entity_rules
 from foodradar.collector import collect_sources
 from foodradar.config_loader import load_category_config, load_settings
+from radar_core.date_storage import apply_date_storage_policy
 from foodradar.logger import configure_logging, get_logger
 from foodradar.reporter import generate_index_html, generate_report
 from foodradar.storage import RadarStorage
@@ -25,6 +25,7 @@ def run(
     recent_days: int = 7,
     timeout: int = 15,
     keep_days: int = 90,
+    snapshot_db: bool = False,
 ) -> Path:
     """Execute the lightweight collect -> analyze -> report pipeline."""
     configure_logging()
@@ -80,6 +81,21 @@ def run(
     if errors:
         logger.warning("collection_errors", errors_count=len(errors))
 
+    raw_data_dir = getattr(settings, "raw_data_dir", settings.database_path.parent / "raw")
+    keep_raw_days = getattr(settings, "keep_raw_days", 180)
+    keep_report_days = getattr(settings, "keep_report_days", 90)
+    date_storage = apply_date_storage_policy(
+        database_path=settings.database_path,
+        raw_data_dir=raw_data_dir,
+        report_dir=settings.report_dir,
+        keep_raw_days=keep_raw_days,
+        keep_report_days=keep_report_days,
+        snapshot_db=snapshot_db,
+    )
+    snapshot_path = date_storage.get("snapshot_path")
+    if isinstance(snapshot_path, str) and snapshot_path:
+        print(f"[Radar] Snapshot saved at {snapshot_path}")
+
     return output_path
 
 
@@ -117,6 +133,12 @@ def parse_args() -> argparse.Namespace:
     _ = parser.add_argument(
         "--keep-days", type=int, default=90, help="Retention window for stored items"
     )
+    _ = parser.add_argument(
+        "--snapshot-db",
+        action="store_true",
+        default=False,
+        help="Create a dated DuckDB snapshot after each run",
+    )
     return parser.parse_args()
 
 
@@ -149,4 +171,5 @@ if __name__ == "__main__":
         recent_days=_to_int(args.get("recent_days"), 7),
         timeout=_to_int(args.get("timeout"), 15),
         keep_days=_to_int(args.get("keep_days"), 90),
+        snapshot_db=bool(args.get("snapshot_db", False)),
     )
