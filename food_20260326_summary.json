@@ -1,0 +1,44 @@
+{
+  "date": "2026-03-26",
+  "category": "food",
+  "article_count": 50,
+  "source_count": 4,
+  "matched_count": 26,
+  "top_entities": [
+    {
+      "name": "FoodType",
+      "count": 19
+    },
+    {
+      "name": "SafetyIssue",
+      "count": 10
+    },
+    {
+      "name": "Regulation",
+      "count": 4
+    },
+    {
+      "name": "RecallReason",
+      "count": 3
+    },
+    {
+      "name": "Manufacturer",
+      "count": 2
+    },
+    {
+      "name": "Region",
+      "count": 2
+    },
+    {
+      "name": "Brand",
+      "count": 1
+    }
+  ],
+  "sources": {
+    "식품안전나라 행정처분": 22,
+    "식약처 보도자료": 7,
+    "식품안전 국내뉴스": 17,
+    "식품안전나라 회수판매중지": 4
+  },
+  "generated_at": "2026-03-26T14:01:29.943568+09:00"
+}
