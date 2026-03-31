@@ -2,30 +2,68 @@ category_name: "food"
 display_name: "식품 안전 레이더"
 
 sources:
-  # 식품안전나라 - 회수판매중지
+  # === 국내 공공기관 ===
   - name: "식품안전나라 회수판매중지"
     type: "rss"
     url: "https://www.foodsafetykorea.go.kr/rss/rss.do?menu_no=2713&menu_grp=MENU_NEW02"
 
-  # 식품안전나라 - 행정처분
   - name: "식품안전나라 행정처분"
     type: "rss"
     url: "https://www.foodsafetykorea.go.kr/rss/rss.do?menu_no=2714&menu_grp=MENU_NEW02"
 
-  # 식약처 보도자료
   - name: "식약처 보도자료"
     type: "rss"
     url: "https://www.foodsafetykorea.go.kr/rss/rss.do?bbs_no=bbs080&menu_no=2857&menu_grp=MENU_NEW05"
 
-  # 식품안전나라 - 국내뉴스
   - name: "식품안전 국내뉴스"
     type: "rss"
     url: "https://www.foodsafetykorea.go.kr/rss/rss.do?bbs_no=bbs082&menu_no=2859&menu_grp=MENU_NEW05"
 
-  # 식품안전나라 - 해외뉴스
   - name: "식품안전 해외뉴스"
     type: "rss"
     url: "https://www.foodsafetykorea.go.kr/rss/rss.do?bbs_no=bbs180&menu_no=4122&menu_grp=MENU_NEW05"
+
+  - name: "농림축산식품부"
+    type: "rss"
+    url: "https://www.mafra.go.kr/bbs/mafra/68/rss.do"
+
+  - name: "농촌진흥청"
+    type: "rss"
+    url: "https://www.rda.go.kr/board/board.do?mode=rss&boardId=farmprmninfo"
+
+  # === 식품 전문 뉴스 ===
+  - name: "식품저널"
+    type: "rss"
+    url: "https://www.foodnews.co.kr/rss/allArticle.xml"
+
+  - name: "식품음료신문"
+    type: "rss"
+    url: "https://www.thinkfood.co.kr/rss/allArticle.xml"
+
+  - name: "푸드투데이"
+    type: "rss"
+    url: "https://www.foodtoday.or.kr/rss/allArticle.xml"
+
+  # === 글로벌 식품 안전 ===
+  - name: "Food Safety News"
+    type: "rss"
+    url: "https://www.foodsafetynews.com/feed/"
+
+  - name: "FDA Food"
+    type: "rss"
+    url: "https://www.fda.gov/about-fda/contact-fda/stay-informed/rss-feeds/food/rss.xml"
+
+  - name: "Food Safety Magazine"
+    type: "rss"
+    url: "https://www.food-safety.com/rss/"
+
+  - name: "Food Navigator"
+    type: "rss"
+    url: "https://www.foodnavigator.com/rssfeed"
+
+  - name: "Food Dive"
+    type: "rss"
+    url: "https://www.fooddive.com/feeds/news/"
 
 entities:
   - name: "FoodType"
@@ -95,6 +133,27 @@ entities:
       - "방사능"
       - "알레르기"
       - "표시위반"
+      - "recall"
+      - "contamination"
+      - "outbreak"
+      - "listeria"
+      - "E. coli"
+      - "salmonella"
+      - "FDA"
+      - "withdrawal"
+      - "위생"
+      - "점검"
+      - "수거"
+      - "검사"
+      - "식용"
+      - "식품"
+      - "급식"
+      - "영양"
+      - "원료"
+      - "성분"
+      - "고시"
+      - "규격"
+      - "판매중지"
   - name: "Regulation"
     display_name: "규제/제도"
     keywords:
@@ -109,6 +168,12 @@ entities:
       - "GMP"
       - "수입검사"
       - "자가품질검사"
+      - "개정"
+      - "고시"
+      - "규정"
+      - "기준"
+      - "식약처"
+      - "보도자료"
   - name: "RecallReason"
     display_name: "회수 사유"
     keywords:
