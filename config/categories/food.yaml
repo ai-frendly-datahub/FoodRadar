@@ -65,6 +65,61 @@ sources:
     type: "rss"
     url: "https://www.fooddive.com/feeds/news/"
 
+  # === Reddit 식품 안전 커뮤니티 ===
+  - name: "r/foodsafety"
+    type: "rss"
+    url: "https://www.reddit.com/r/foodsafety/.rss"
+
+  - name: "r/Cooking"
+    type: "rss"
+    url: "https://www.reddit.com/r/Cooking/.rss"
+
+  - name: "r/nutrition"
+    type: "rss"
+    url: "https://www.reddit.com/r/nutrition/.rss"
+
+  - name: "r/KoreanFood"
+    type: "rss"
+    url: "https://www.reddit.com/r/KoreanFood/.rss"
+
+  - name: "r/ProductRecalls"
+    type: "rss"
+    url: "https://www.reddit.com/r/ProductRecalls/.rss"
+
+  # === 국제 식품안전 기관 ===
+  - name: "EFSA European Food Safety"
+    type: "rss"
+    url: "https://www.efsa.europa.eu/en/rss"
+
+  - name: "UK Food Standards Agency"
+    type: "rss"
+    url: "https://www.food.gov.uk/rss-feeds/news"
+
+  - name: "Health Canada Food Recalls"
+    type: "rss"
+    url: "https://www.canada.ca/en/health-canada/services/food-nutrition.atom"
+
+  - name: "Food Standards Australia NZ"
+    type: "rss"
+    url: "https://www.foodstandards.gov.au/rss/pages/default.aspx"
+
+  - name: "WHO Food Safety"
+    type: "rss"
+    url: "https://www.who.int/feeds/entity/foodsafety/en/rss.xml"
+
+  # === 식품 산업 분석 ===
+  - name: "Food Business News"
+    type: "rss"
+    url: "https://www.foodbusinessnews.net/rss"
+
+  - name: "Food Processing"
+    type: "rss"
+    url: "https://www.foodprocessing.com/rss/"
+
+  - name: "Food Engineering"
+    type: "rss"
+    url: "https://www.foodengineeringmag.com/rss/"
+
 entities:
   - name: "FoodType"
     display_name: "식품 유형"
