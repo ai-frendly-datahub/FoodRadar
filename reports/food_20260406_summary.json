@@ -1,0 +1,50 @@
+{
+  "date": "2026-04-06",
+  "category": "food",
+  "article_count": 200,
+  "source_count": 10,
+  "matched_count": 49,
+  "top_entities": [
+    {
+      "name": "SafetyIssue",
+      "count": 101
+    },
+    {
+      "name": "FoodType",
+      "count": 31
+    },
+    {
+      "name": "Regulation",
+      "count": 23
+    },
+    {
+      "name": "Region",
+      "count": 8
+    },
+    {
+      "name": "Brand",
+      "count": 7
+    },
+    {
+      "name": "RecallReason",
+      "count": 3
+    },
+    {
+      "name": "Manufacturer",
+      "count": 2
+    }
+  ],
+  "sources": {
+    "식품안전나라 행정처분": 24,
+    "식품저널": 4,
+    "식품음료신문": 9,
+    "r/KoreanFood": 44,
+    "r/Cooking": 61,
+    "r/foodsafety": 32,
+    "Food Safety News": 6,
+    "r/nutrition": 12,
+    "식약처 보도자료": 4,
+    "식품안전 국내뉴스": 4
+  },
+  "generated_at": "2026-04-06T14:17:45.129774+09:00"
+}
