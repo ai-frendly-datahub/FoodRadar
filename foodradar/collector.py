@@ -15,6 +15,7 @@ import feedparser
 import requests
 from pybreaker import CircuitBreakerError
 from radar_core import AdaptiveThrottler, CrawlHealthStore
+from radar_core.url_extractor import extract_url_content_safe
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
@@ -313,6 +314,13 @@ def _collect_single(
             if not summary or not summary.strip():
                 raw_title = _entry_text(entry, "title").strip()
                 summary = f"[식품안전] {raw_title}" if raw_title else ""
+
+            # URL extraction fallback: fetch content from link if summary is too short
+            link = _entry_text(entry, "link").strip()
+            if link and (not summary or len(summary.strip()) < 50):
+                extracted = extract_url_content_safe(link)
+                if extracted and len(extracted) > len(summary or ""):
+                    summary = extracted
 
             items.append(
                 Article(

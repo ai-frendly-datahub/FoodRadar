@@ -1,273 +1,865 @@
-category_name: "food"
-display_name: "식품 안전 레이더"
-
+category_name: food
+display_name: 식품 안전 레이더
 sources:
-  # === 국내 공공기관 ===
-  - name: "식품안전나라 회수판매중지"
-    type: "rss"
-    url: "https://www.foodsafetykorea.go.kr/rss/rss.do?menu_no=2713&menu_grp=MENU_NEW02"
-
-  - name: "식품안전나라 행정처분"
-    type: "rss"
-    url: "https://www.foodsafetykorea.go.kr/rss/rss.do?menu_no=2714&menu_grp=MENU_NEW02"
-
-  - name: "식약처 보도자료"
-    type: "rss"
-    url: "https://www.foodsafetykorea.go.kr/rss/rss.do?bbs_no=bbs080&menu_no=2857&menu_grp=MENU_NEW05"
-
-  - name: "식품안전 국내뉴스"
-    type: "rss"
-    url: "https://www.foodsafetykorea.go.kr/rss/rss.do?bbs_no=bbs082&menu_no=2859&menu_grp=MENU_NEW05"
-
-  - name: "식품안전 해외뉴스"
-    type: "rss"
-    url: "https://www.foodsafetykorea.go.kr/rss/rss.do?bbs_no=bbs180&menu_no=4122&menu_grp=MENU_NEW05"
-
-  - name: "농림축산식품부"
-    type: "rss"
-    url: "https://www.mafra.go.kr/bbs/mafra/68/rss.do"
-
-  - name: "농촌진흥청"
-    type: "rss"
-    url: "https://www.rda.go.kr/board/board.do?mode=rss&boardId=farmprmninfo"
-
-  # === 식품 전문 뉴스 ===
-  - name: "식품저널"
-    type: "rss"
-    url: "https://www.foodnews.co.kr/rss/allArticle.xml"
-
-  - name: "식품음료신문"
-    type: "rss"
-    url: "https://www.thinkfood.co.kr/rss/allArticle.xml"
-
-  - name: "푸드투데이"
-    type: "rss"
-    url: "https://www.foodtoday.or.kr/rss/allArticle.xml"
-
-  # === 글로벌 식품 안전 ===
-  - name: "Food Safety News"
-    type: "rss"
-    url: "https://www.foodsafetynews.com/feed/"
-
-  - name: "FDA Food"
-    type: "rss"
-    url: "https://www.fda.gov/about-fda/contact-fda/stay-informed/rss-feeds/food/rss.xml"
-
-  - name: "Food Safety Magazine"
-    type: "rss"
-    url: "https://www.food-safety.com/rss/"
-
-  - name: "Food Navigator"
-    type: "rss"
-    url: "https://www.foodnavigator.com/rssfeed"
-
-  - name: "Food Dive"
-    type: "rss"
-    url: "https://www.fooddive.com/feeds/news/"
-
-  # === Reddit 식품 안전 커뮤니티 ===
-  - name: "r/foodsafety"
-    type: "rss"
-    url: "https://www.reddit.com/r/foodsafety/.rss"
-
-  - name: "r/Cooking"
-    type: "rss"
-    url: "https://www.reddit.com/r/Cooking/.rss"
-
-  - name: "r/nutrition"
-    type: "rss"
-    url: "https://www.reddit.com/r/nutrition/.rss"
-
-  - name: "r/KoreanFood"
-    type: "rss"
-    url: "https://www.reddit.com/r/KoreanFood/.rss"
-
-  - name: "r/ProductRecalls"
-    type: "rss"
-    url: "https://www.reddit.com/r/ProductRecalls/.rss"
-
-  # === 국제 식품안전 기관 ===
-  - name: "EFSA European Food Safety"
-    type: "rss"
-    url: "https://www.efsa.europa.eu/en/rss"
-
-  - name: "UK Food Standards Agency"
-    type: "rss"
-    url: "https://www.food.gov.uk/rss-feeds/news"
-
-  - name: "Health Canada Food Recalls"
-    type: "rss"
-    url: "https://www.canada.ca/en/health-canada/services/food-nutrition.atom"
-
-  - name: "Food Standards Australia NZ"
-    type: "rss"
-    url: "https://www.foodstandards.gov.au/rss/pages/default.aspx"
-
-  - name: "WHO Food Safety"
-    type: "rss"
-    url: "https://www.who.int/feeds/entity/foodsafety/en/rss.xml"
-
-  # === 식품 산업 분석 ===
-  - name: "Food Business News"
-    type: "rss"
-    url: "https://www.foodbusinessnews.net/rss"
-
-  - name: "Food Processing"
-    type: "rss"
-    url: "https://www.foodprocessing.com/rss/"
-
-  - name: "Food Engineering"
-    type: "rss"
-    url: "https://www.foodengineeringmag.com/rss/"
-
+- name: 식품안전나라 회수판매중지
+  type: rss
+  url: https://www.foodsafetykorea.go.kr/rss/rss.do?menu_no=2713&menu_grp=MENU_NEW02
+- name: 식품안전나라 행정처분
+  type: rss
+  url: https://www.foodsafetykorea.go.kr/rss/rss.do?menu_no=2714&menu_grp=MENU_NEW02
+- name: 식약처 보도자료
+  type: rss
+  url: https://www.foodsafetykorea.go.kr/rss/rss.do?bbs_no=bbs080&menu_no=2857&menu_grp=MENU_NEW05
+- name: 식품안전 국내뉴스
+  type: rss
+  url: https://www.foodsafetykorea.go.kr/rss/rss.do?bbs_no=bbs082&menu_no=2859&menu_grp=MENU_NEW05
+- name: 식품안전 해외뉴스
+  type: rss
+  url: https://www.foodsafetykorea.go.kr/rss/rss.do?bbs_no=bbs180&menu_no=4122&menu_grp=MENU_NEW05
+# NOTE: 2026-04-02 품질점검 - RSS가 아닌 HTML 오류페이지 반환 (F등급)
+# - name: 농림축산식품부
+#   type: rss
+#   url: https://www.mafra.go.kr/bbs/mafra/68/rss.do
+# NOTE: 아래 소스들은 2026-04-02 테스트에서 동작하지 않음
+# - name: 농촌진흥청
+#   type: rss
+#   url: https://www.rda.go.kr/board/board.do?mode=rss&boardId=farmprmninfo
+# - name: 식품저널
+#   type: rss
+#   url: https://www.foodnews.co.kr/rss/allArticle.xml
+# - name: 식품음료신문
+#   type: rss
+#   url: https://www.thinkfood.co.kr/rss/allArticle.xml
+# NOTE: 2026-04-02 품질점검 - 페이지를 찾을 수 없음 HTML 반환 (F등급)
+# - name: 푸드투데이
+#   type: rss
+#   url: https://www.foodtoday.or.kr/rss/allArticle.xml
+- name: Food Safety News
+  type: rss
+  url: https://www.foodsafetynews.com/feed/
+# NOTE: FDA/Cloudflare 보호 사이트 - 2026-04-02 테스트에서 동작하지 않음
+# - name: FDA Food
+#   type: rss
+#   url: https://www.fda.gov/about-fda/contact-fda/stay-informed/rss-feeds/food/rss.xml
+# - name: Food Safety Magazine
+#   type: rss
+#   url: https://www.food-safety.com/rss/
+# - name: Food Navigator
+#   type: rss
+#   url: https://www.foodnavigator.com/rssfeed
+- name: Food Dive
+  type: rss
+  url: https://www.fooddive.com/feeds/news/
+- name: r/foodsafety
+  type: reddit
+  url: https://www.reddit.com/r/foodsafety/
+- name: r/Cooking
+  type: reddit
+  url: https://www.reddit.com/r/Cooking/
+- name: r/nutrition
+  type: reddit
+  url: https://www.reddit.com/r/nutrition/
+- name: r/KoreanFood
+  type: reddit
+  url: https://www.reddit.com/r/KoreanFood/
+- name: r/ProductRecalls
+  type: reddit
+  url: https://www.reddit.com/r/ProductRecalls/
+# NOTE: 국제 정부 기관 RSS - URL 변경/중단됨 (2026-04-02 확인)
+# - name: EFSA European Food Safety
+#   type: rss
+#   url: https://www.efsa.europa.eu/en/rss
+# - name: UK Food Standards Agency
+#   type: rss
+#   url: https://www.food.gov.uk/rss-feeds/news
+# - name: Health Canada Food Recalls
+#   type: rss
+#   url: https://www.canada.ca/en/health-canada/services/food-nutrition.atom
+# - name: Food Standards Australia NZ
+#   type: rss
+#   url: https://www.foodstandards.gov.au/rss/pages/default.aspx
+# - name: WHO Food Safety
+#   type: rss
+#   url: https://www.who.int/feeds/entity/foodsafety/en/rss.xml
+# NOTE: Cloudflare 보호 사이트 - 봇 차단됨
+# - name: Food Business News
+#   type: rss
+#   url: https://www.foodbusinessnews.net/rss
+# - name: Food Processing
+#   type: rss
+#   url: https://www.foodprocessing.com/rss/
+# - name: Food Engineering
+#   type: rss
+#   url: https://www.foodengineeringmag.com/rss/
+# === MCP 서버 소스 (식품 영양정보) ===
+- name: 식약처 식품DB MCP
+  type: mcp
+  url: https://github.com/slicequeue/k-mfds-fooddb-mcp-server
+  config:
+    transport: stdio
+    command: npx
+    args: ["-y", "k-mfds-fooddb-mcp-server"]
+    env:
+      GOV_API_KEY: "${GOV_API_KEY}"
+    tool: searchFoodNutrition
+    arguments:
+      foodNameKr: ""
+      pageNo: 1
+      numOfRows: 30
+    transform:
+      title_field: foodNameKr
+      summary_fields: ["energyKcal", "proteinG", "fatG", "carbohydrateG", "sodiumMg"]
+      published_field: researchYearMonthDate
 entities:
-  - name: "FoodType"
-    display_name: "식품 유형"
-    keywords:
-      - "육류"
-      - "수산물"
-      - "채소"
-      - "과일"
-      - "가공식품"
-      - "유제품"
-      - "음료"
-      - "건강기능식품"
-      - "냉동식품"
-      - "즉석식품"
-      - "수입식품"
-      - "축산물"
-      - "농산물"
-      - "조미료"
-      - "과자"
-      - "빵"
-      - "면류"
-      - "통조림"
-      - "영유아식품"
-      - "특수용도식품"
-  - name: "Brand"
-    display_name: "브랜드"
-    keywords:
-      - "CJ"
-      - "롯데"
-      - "오뚜기"
-      - "농심"
-      - "삼양"
-      - "풀무원"
-      - "동원"
-      - "해태"
-      - "빙그레"
-      - "매일유업"
-      - "남양유업"
-      - "하림"
-      - "사조"
-      - "대상"
-      - "샘표"
-      - "오리온"
-      - "크라운"
-  - name: "SafetyIssue"
-    display_name: "안전 이슈"
-    keywords:
-      - "리콜"
-      - "회수"
-      - "부적합"
-      - "위해"
-      - "검출"
-      - "기준초과"
-      - "이물"
-      - "변질"
-      - "유통기한"
-      - "식중독"
-      - "오염"
-      - "잔류농약"
-      - "중금속"
-      - "세균"
-      - "살모넬라"
-      - "대장균"
-      - "노로바이러스"
-      - "아플라톡신"
-      - "방사능"
-      - "알레르기"
-      - "표시위반"
-      - "recall"
-      - "contamination"
-      - "outbreak"
-      - "listeria"
-      - "E. coli"
-      - "salmonella"
-      - "FDA"
-      - "withdrawal"
-      - "위생"
-      - "점검"
-      - "수거"
-      - "검사"
-      - "식용"
-      - "식품"
-      - "급식"
-      - "영양"
-      - "원료"
-      - "성분"
-      - "고시"
-      - "규격"
-      - "판매중지"
-  - name: "Regulation"
-    display_name: "규제/제도"
-    keywords:
-      - "행정처분"
-      - "영업정지"
-      - "과징금"
-      - "시정명령"
-      - "허가취소"
-      - "품목제조보고"
-      - "식품위생법"
-      - "HACCP"
-      - "GMP"
-      - "수입검사"
-      - "자가품질검사"
-      - "개정"
-      - "고시"
-      - "규정"
-      - "기준"
-      - "식약처"
-      - "보도자료"
-  - name: "RecallReason"
-    display_name: "회수 사유"
-    keywords:
-      - "기준규격"
-      - "유통기한"
-      - "이물혼입"
-      - "표시기준"
-      - "보존기준"
-      - "미생물"
-      - "잔류농약"
-      - "중금속"
-      - "알레르겐"
-      - "무신고"
-  - name: "Manufacturer"
-    display_name: "제조업체"
-    keywords:
-      - "제조업소"
-      - "수입업소"
-      - "판매업소"
-      - "유통업체"
-      - "제조원"
-      - "수입원"
-  - name: "Region"
-    display_name: "지역"
-    keywords:
-      - "서울"
-      - "경기"
-      - "인천"
-      - "부산"
-      - "대구"
-      - "광주"
-      - "대전"
-      - "울산"
-      - "세종"
-      - "강원"
-      - "충북"
-      - "충남"
-      - "전북"
-      - "전남"
-      - "경북"
-      - "경남"
-      - "제주"
+- name: FoodType
+  display_name: 식품 유형
+  keywords:
+  - 육류
+  - 수산물
+  - 채소
+  - 과일
+  - 가공식품
+  - 유제품
+  - 음료
+  - 건강기능식품
+  - 냉동식품
+  - 즉석식품
+  - 수입식품
+  - 축산물
+  - 농산물
+  - 조미료
+  - 과자
+  - 빵
+  - 면류
+  - 통조림
+  - 영유아식품
+  - 특수용도식품
+- name: Brand
+  display_name: 브랜드
+  keywords:
+  - CJ
+  - 롯데
+  - 오뚜기
+  - 농심
+  - 삼양
+  - 풀무원
+  - 동원
+  - 해태
+  - 빙그레
+  - 매일유업
+  - 남양유업
+  - 하림
+  - 사조
+  - 대상
+  - 샘표
+  - 오리온
+  - 크라운
+- name: SafetyIssue
+  display_name: 안전 이슈
+  keywords:
+  - 리콜
+  - 회수
+  - 부적합
+  - 위해
+  - 검출
+  - 기준초과
+  - 이물
+  - 변질
+  - 유통기한
+  - 식중독
+  - 오염
+  - 잔류농약
+  - 중금속
+  - 세균
+  - 살모넬라
+  - 대장균
+  - 노로바이러스
+  - 아플라톡신
+  - 방사능
+  - 알레르기
+  - 표시위반
+  - recall
+  - contamination
+  - outbreak
+  - listeria
+  - E. coli
+  - salmonella
+  - FDA
+  - withdrawal
+  - 위생
+  - 점검
+  - 수거
+  - 검사
+  - 식용
+  - 식품
+  - 급식
+  - 영양
+  - 원료
+  - 성분
+  - 고시
+  - 규격
+  - 판매중지
+- name: Regulation
+  display_name: 규제/제도
+  keywords:
+  - 행정처분
+  - 영업정지
+  - 과징금
+  - 시정명령
+  - 허가취소
+  - 품목제조보고
+  - 식품위생법
+  - HACCP
+  - GMP
+  - 수입검사
+  - 자가품질검사
+  - 개정
+  - 고시
+  - 규정
+  - 기준
+  - 식약처
+  - 보도자료
+- name: RecallReason
+  display_name: 회수 사유
+  keywords:
+  - 기준규격
+  - 유통기한
+  - 이물혼입
+  - 표시기준
+  - 보존기준
+  - 미생물
+  - 잔류농약
+  - 중금속
+  - 알레르겐
+  - 무신고
+- name: Manufacturer
+  display_name: 제조업체
+  keywords:
+  - 제조업소
+  - 수입업소
+  - 판매업소
+  - 유통업체
+  - 제조원
+  - 수입원
+- name: Region
+  display_name: 지역
+  keywords:
+  - 서울
+  - 경기
+  - 인천
+  - 부산
+  - 대구
+  - 광주
+  - 대전
+  - 울산
+  - 세종
+  - 강원
+  - 충북
+  - 충남
+  - 전북
+  - 전남
+  - 경북
+  - 경남
+  - 제주
+- name: FoodGeneral
+  display_name: 일반
+  keywords:
+  - a
+  - able
+  - add
+  - after
+  - again
+  - all
+  - already
+  - also
+  - always
+  - an
+  - and
+  - announce
+  - another
+  - any
+  - anybody
+  - anyone
+  - anything
+  - are
+  - article
+  - as
+  - ask
+  - asked
+  - at
+  - available
+  - back
+  - bad
+  - be
+  - become
+  - been
+  - before
+  - begin
+  - being
+  - believe
+  - best
+  - better
+  - big
+  - both
+  - bring
+  - build
+  - businesses
+  - but
+  - buy
+  - by
+  - call
+  - called
+  - came
+  - can
+  - case
+  - ceo
+  - certain
+  - change
+  - child
+  - clear
+  - come
+  - comment
+  - companies
+  - company
+  - continue
+  - could
+  - country
+  - create
+  - current
+  - customers
+  - day
+  - details
+  - develop
+  - did
+  - different
+  - director
+  - do
+  - does
+  - doing
+  - done
+  - down
+  - during
+  - each
+  - early
+  - economic
+  - eight
+  - end
+  - enough
+  - even
+  - evening
+  - every
+  - everyone
+  - everything
+  - expect
+  - fact
+  - 'false'
+  - family
+  - feel
+  - few
+  - find
+  - first
+  - five
+  - follow
+  - for
+  - found
+  - four
+  - free
+  - from
+  - full
+  - gave
+  - get
+  - give
+  - given
+  - go
+  - gone
+  - good
+  - got
+  - government
+  - great
+  - group
+  - had
+  - hand
+  - has
+  - have
+  - having
+  - he
+  - hear
+  - help
+  - her
+  - here
+  - high
+  - him
+  - his
+  - hold
+  - home
+  - hope
+  - hour
+  - how
+  - human
+  - hundred
+  - i
+  - if
+  - important
+  - in
+  - include
+  - industry
+  - information
+  - is
+  - it
+  - its
+  - itself
+  - just
+  - keep
+  - knew
+  - know
+  - known
+  - large
+  - last
+  - later
+  - launch
+  - leader
+  - learn
+  - least
+  - leave
+  - left
+  - less
+  - let
+  - life
+  - like
+  - likely
+  - little
+  - live
+  - local
+  - long
+  - look
+  - low
+  - made
+  - major
+  - make
+  - man
+  - manager
+  - many
+  - market
+  - may
+  - me
+  - meet
+  - member
+  - members
+  - might
+  - million
+  - minute
+  - month
+  - more
+  - morning
+  - most
+  - move
+  - much
+  - must
+  - my
+  - myself
+  - national
+  - need
+  - never
+  - new
+  - news
+  - next
+  - night
+  - nine
+  - 'no'
+  - nobody
+  - not
+  - nothing
+  - now
+  - number
+  - of
+  - 'off'
+  - offer
+  - often
+  - old
+  - 'on'
+  - one
+  - only
+  - or
+  - other
+  - our
+  - ourselves
+  - out
+  - over
+  - own
+  - part
+  - pay
+  - people
+  - percent
+  - place
+  - plan
+  - play
+  - point
+  - political
+  - possible
+  - post
+  - president
+  - problem
+  - products
+  - program
+  - provide
+  - public
+  - put
+  - question
+  - read
+  - real
+  - really
+  - recent
+  - release
+  - report
+  - reveal
+  - right
+  - run
+  - said
+  - same
+  - saw
+  - say
+  - school
+  - second
+  - see
+  - seem
+  - seen
+  - sell
+  - services
+  - set
+  - seven
+  - several
+  - share
+  - she
+  - should
+  - show
+  - shown
+  - since
+  - six
+  - small
+  - so
+  - social
+  - some
+  - someone
+  - something
+  - soon
+  - special
+  - staff
+  - start
+  - state
+  - still
+  - stop
+  - story
+  - student
+  - such
+  - support
+  - sure
+  - system
+  - take
+  - taken
+  - talk
+  - team
+  - tell
+  - ten
+  - than
+  - that
+  - the
+  - their
+  - them
+  - themselves
+  - then
+  - there
+  - these
+  - they
+  - thing
+  - things
+  - think
+  - this
+  - those
+  - thought
+  - thousand
+  - three
+  - time
+  - to
+  - today
+  - told
+  - tomorrow
+  - too
+  - took
+  - 'true'
+  - try
+  - turn
+  - two
+  - until
+  - up
+  - update
+  - us
+  - use
+  - users
+  - very
+  - want
+  - was
+  - way
+  - we
+  - week
+  - well
+  - went
+  - were
+  - what
+  - when
+  - where
+  - which
+  - while
+  - who
+  - whole
+  - why
+  - will
+  - with
+  - woman
+  - work
+  - world
+  - would
+  - write
+  - written
+  - year
+  - 'yes'
+  - yesterday
+  - yet
+  - you
+  - young
+  - your
+  - yourself
+  - 가
+  - 가끔
+  - 가능
+  - 가다
+  - 가장
+  - 간
+  - 강화
+  - 같이
+  - 개
+  - 개선
+  - 건
+  - 것
+  - 결과
+  - 계
+  - 계속
+  - 곳
+  - 공지
+  - 과
+  - 관
+  - 관련
+  - 구
+  - 국
+  - 군
+  - 그
+  - 그녀
+  - 그들
+  - 그러나
+  - 그리고
+  - 기
+  - 기관
+  - 기업
+  - 기자
+  - 까지
+  - 나
+  - 내
+  - 내외
+  - 내용
+  - 내일
+  - 너
+  - 너무
+  - 년
+  - 농산물
+  - 뉴스
+  - 는
+  - 다시
+  - 다양한
+  - 다음
+  - 단백질
+  - 단체
+  - 달
+  - 대한
+  - 더
+  - 데
+  - 도
+  - 동
+  - 되다
+  - 됨
+  - 듯
+  - 등
+  - 따라서
+  - 따른
+  - 때
+  - 때때로
+  - 또
+  - 또는
+  - 또한
+  - 레스토랑
+  - 레시피
+  - 력
+  - 로
+  - 를
+  - 리
+  - 리뷰
+  - 만
+  - 만들다
+  - 많은
+  - 말
+  - 맛
+  - 맛집
+  - 매우
+  - 메뉴
+  - 명
+  - 모든
+  - 모집하다
+  - 문의하다
+  - 및
+  - 바
+  - 받다
+  - 발표
+  - 발표하다
+  - 배달
+  - 법
+  - 별로
+  - 보다
+  - 보도
+  - 부
+  - 부처
+  - 부터
+  - 분
+  - 비
+  - 뿐
+  - 사용하다
+  - 상
+  - 새로운
+  - 성
+  - 센터
+  - 셰프
+  - 소식
+  - 수
+  - 수산물
+  - 시
+  - 시작하다
+  - 시행
+  - 식
+  - 식감
+  - 식당
+  - 식재료
+  - 식품
+  - 신
+  - 신메뉴
+  - 신청하다
+  - 씨
+  - 아주
+  - 안내
+  - 안내하다
+  - 알다
+  - 약
+  - 어제
+  - 업
+  - 없다
+  - 에
+  - 에서
+  - 여러분
+  - 영양
+  - 예약
+  - 예정
+  - 오늘
+  - 오다
+  - 올해
+  - 와
+  - 외
+  - 요리
+  - 요리사
+  - 용
+  - 우리
+  - 운영
+  - 운영하다
+  - 원
+  - 월
+  - 위원회
+  - 위한
+  - 위해
+  - 유기농
+  - 으로
+  - 은
+  - 을
+  - 음식
+  - 의
+  - 이
+  - 이번
+  - 이상
+  - 이하
+  - 인기
+  - 일
+  - 일부
+  - 임
+  - 입장
+  - 있다
+  - 자
+  - 자료
+  - 자주
+  - 재료
+  - 저
+  - 적
+  - 적은
+  - 전
+  - 전체
+  - 전혀
+  - 점
+  - 정
+  - 정말
+  - 정보
+  - 정부
+  - 제
+  - 제공하다
+  - 조금
+  - 조리
+  - 조리법
+  - 주다
+  - 주문
+  - 중
+  - 중요
+  - 지급
+  - 지난
+  - 지방
+  - 지원하다
+  - 진짜
+  - 진행하다
+  - 차원
+  - 참여하다
+  - 처럼
+  - 최근
+  - 추진
+  - 추천
+  - 축산물
+  - 측
+  - 측면
+  - 측에서
+  - 친환경
+  - 카페
+  - 칼로리
+  - 탄수화물
+  - 테이크아웃
+  - 통해
+  - 특히
+  - 평점
+  - 포장
+  - 품
+  - 필요
+  - 하
+  - 하다
+  - 하지만
+  - 함
+  - 함께
+  - 항상
+  - 해
+  - 향
+  - 현재
+  - 협회
+  - 화
+  - 확대
+  - 확인하다
+  - 회
+  - 회사
+  - 후

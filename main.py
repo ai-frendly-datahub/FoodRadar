@@ -4,10 +4,11 @@ import argparse
 from pathlib import Path
 from typing import cast
 
+from radar_core.date_storage import apply_date_storage_policy
+
 from foodradar.analyzer import apply_entity_rules
 from foodradar.collector import collect_sources
 from foodradar.config_loader import load_category_config, load_settings
-from radar_core.date_storage import apply_date_storage_policy
 from foodradar.logger import configure_logging, get_logger
 from foodradar.reporter import generate_index_html, generate_report
 from foodradar.storage import RadarStorage
