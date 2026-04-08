@@ -3,15 +3,15 @@
   "category": "food",
   "article_count": 200,
   "source_count": 12,
-  "matched_count": 100,
+  "matched_count": 93,
   "top_entities": [
-    {
-      "name": "FoodGeneral",
-      "count": 864
-    },
     {
       "name": "SafetyIssue",
       "count": 169
+    },
+    {
+      "name": "FoodGeneral",
+      "count": 151
     },
     {
       "name": "FoodType",
@@ -52,5 +52,5 @@
     "식약처 보도자료": 4,
     "식품안전나라 회수판매중지": 1
   },
-  "generated_at": "2026-04-08T09:54:11.203888+09:00"
+  "generated_at": "2026-04-08T14:06:09.112096+09:00"
 }
