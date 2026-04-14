@@ -2,9 +2,6 @@ name: Deploy Reports to GitHub Pages
 
 on:
   workflow_dispatch:
-  workflow_run:
-    workflows: ["FoodRadar Daily Collection"]
-    types: [completed]
 
 permissions:
   contents: write
@@ -16,10 +13,14 @@ concurrency:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
     steps:
       - uses: actions/checkout@v4
-      - uses: peaceiris/actions-gh-pages@v3
+
+      - name: Verify report output
+        run: test -f reports/index.html
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
