@@ -103,6 +103,83 @@ class TestGenerateReport:
         html = output.read_text(encoding="utf-8")
         assert "source timeout" in html
 
+    def test_generate_report_includes_quality_traceability(
+        self, tmp_path, report_category, report_articles, report_stats, patch_datetime
+    ):
+        """Quality report summary and alias candidates appear in the HTML report."""
+        output = tmp_path / "reports" / "food_report.html"
+        quality_report = {
+            "summary": {
+                "fresh_sources": 2,
+                "stale_sources": 1,
+                "missing_sources": 1,
+                "alias_candidate_count": 1,
+                "recall_status_change_events": 1,
+                "enforcement_action_events": 0,
+                "complaint_signal_events": 1,
+            },
+            "sources": [
+                {
+                    "source": "Recall RSS",
+                    "status": "stale",
+                    "event_model": "recall_status_change",
+                    "age_days": 4,
+                }
+            ],
+            "events": [
+                {
+                    "event_model": "recall_status_change",
+                    "event_status": "stale",
+                    "title": "CJ recall notice",
+                    "notice_date": "2026-04-09",
+                    "recall_status": "sales_stop",
+                    "alias_traces": ["CJ CheilJedang -> CJ"],
+                },
+                {
+                    "event_model": "complaint_signal",
+                    "event_status": "fresh",
+                    "title": "consumer complaint",
+                    "observed_at": "2026-04-12",
+                    "verification_status": "auxiliary_only",
+                },
+            ],
+            "alias_candidates": [
+                {
+                    "alias_type": "brand",
+                    "canonical": "CJ",
+                    "normalized": "cj",
+                    "variants": ["cj cheiljedang"],
+                }
+            ],
+        }
+
+        generate_report(
+            category=report_category,
+            articles=report_articles,
+            output_path=output,
+            stats=report_stats,
+            quality_report=quality_report,
+        )
+
+        html = output.read_text(encoding="utf-8")
+        assert "Quality Traceability" in html
+        assert "Recall RSS" in html
+        assert "recall_status_change" in html
+        assert "sales_stop" in html
+        assert "auxiliary_only" in html
+        assert "cj cheiljedang" in html
+        assert html == "\n".join(line.rstrip() for line in html.splitlines()) + "\n"
+        summaries = sorted(
+            (tmp_path / "reports").glob(
+                "food_[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]_summary.json"
+            )
+        )
+        assert len(summaries) == 1
+        summary = summaries[0].read_text(encoding="utf-8")
+        assert '"repo": "FoodRadar"' in summary
+        assert '"ontology_version": "0.1.0"' in summary
+        assert '"food.recall_status_change"' in summary
+
 
 class TestGenerateIndexHtml:
     """Unit tests for generate_index_html."""

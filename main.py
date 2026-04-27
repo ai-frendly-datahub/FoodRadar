@@ -5,11 +5,18 @@ from pathlib import Path
 from typing import cast
 
 from radar_core.date_storage import apply_date_storage_policy
+from radar_core.ontology import annotate_articles_with_ontology
+from radar_core.raw_logger import RawLogger
 
 from foodradar.analyzer import apply_entity_rules
 from foodradar.collector import collect_sources
-from foodradar.config_loader import load_category_config, load_settings
+from foodradar.config_loader import (
+    load_category_config,
+    load_category_quality_config,
+    load_settings,
+)
 from foodradar.logger import configure_logging, get_logger
+from foodradar.quality_report import build_quality_report, write_quality_report
 from foodradar.reporter import generate_index_html, generate_report
 from foodradar.storage import RadarStorage
 
@@ -26,12 +33,16 @@ def run(
     recent_days: int = 7,
     timeout: int = 15,
     keep_days: int = 90,
+    keep_raw_days: int = 180,
+    keep_report_days: int = 90,
     snapshot_db: bool = False,
 ) -> Path:
     """Execute the lightweight collect -> analyze -> report pipeline."""
     configure_logging()
     settings = load_settings(config_path)
+    raw_data_dir = getattr(settings, "raw_data_dir", settings.database_path.parent / "raw")
     category_cfg = load_category_config(category, categories_dir=categories_dir)
+    quality_cfg = load_category_quality_config(category, categories_dir=categories_dir)
 
     logger.info(
         "pipeline_start",
@@ -44,8 +55,27 @@ def run(
         limit_per_source=per_source_limit,
         timeout=timeout,
     )
+    collected = annotate_articles_with_ontology(
+        collected,
+        repo_name="FoodRadar",
+        sources_by_name={source.name: source for source in category_cfg.sources},
+        category_name=category_cfg.category_name,
+        search_from=Path(__file__),
+    )
 
-    analyzed = apply_entity_rules(collected, category_cfg.entities)
+    raw_logger = RawLogger(raw_data_dir)
+    for source in category_cfg.sources:
+        source_articles = [article for article in collected if article.source == source.name]
+        if source_articles:
+            _ = raw_logger.log(source_articles, source_name=source.name)
+
+    data_quality = quality_cfg.get("data_quality")
+    alias_map = data_quality.get("alias_map") if isinstance(data_quality, dict) else None
+    analyzed = apply_entity_rules(
+        collected,
+        category_cfg.entities,
+        alias_map=alias_map if isinstance(alias_map, dict) else None,
+    )
 
     storage = RadarStorage(settings.database_path)
     storage.upsert_articles(analyzed)
@@ -54,19 +84,40 @@ def run(
     recent_articles = storage.recent_articles(category_cfg.category_name, days=recent_days)
     storage.close()
 
-    matched_count = sum(1 for a in collected if a.matched_entities)
+    quality_report = build_quality_report(
+        category=category_cfg,
+        articles=recent_articles,
+        errors=errors,
+        quality_config=quality_cfg,
+    )
+    quality_report_paths = write_quality_report(
+        quality_report,
+        output_dir=settings.report_dir,
+        category_name=category_cfg.category_name,
+    )
+
+    collected_matched_count = sum(1 for a in collected if a.matched_entities)
+    matched_count = sum(1 for a in recent_articles if a.matched_entities)
+    source_count = len({article.source for article in recent_articles if article.source})
     logger.info(
         "collection_complete",
         collected_count=len(collected),
         errors_count=len(errors),
     )
-    logger.info("analysis_complete", matched_count=matched_count)
+    logger.info(
+        "analysis_complete",
+        collected_matched_count=collected_matched_count,
+        report_matched_count=matched_count,
+    )
 
     stats = {
         "sources": len(category_cfg.sources),
-        "collected": len(collected),
+        "collected": len(recent_articles),
         "matched": matched_count,
         "window_days": recent_days,
+        "article_count": len(recent_articles),
+        "source_count": source_count,
+        "matched_count": matched_count,
     }
 
     output_path = settings.report_dir / f"{category_cfg.category_name}_report.html"
@@ -76,15 +127,19 @@ def run(
         output_path=output_path,
         stats=stats,
         errors=errors,
+        quality_report=quality_report,
     )
     logger.info("report_generated", output_path=str(output_path))
+    logger.info(
+        "quality_report_generated",
+        output_path=str(quality_report_paths["latest"]),
+        stale_sources=quality_report["summary"]["stale_sources"],
+        missing_sources=quality_report["summary"]["missing_sources"],
+    )
     generate_index_html(settings.report_dir)
     if errors:
         logger.warning("collection_errors", errors_count=len(errors))
 
-    raw_data_dir = getattr(settings, "raw_data_dir", settings.database_path.parent / "raw")
-    keep_raw_days = getattr(settings, "keep_raw_days", 180)
-    keep_report_days = getattr(settings, "keep_report_days", 90)
     date_storage = apply_date_storage_policy(
         database_path=settings.database_path,
         raw_data_dir=raw_data_dir,
@@ -135,6 +190,12 @@ def parse_args() -> argparse.Namespace:
         "--keep-days", type=int, default=90, help="Retention window for stored items"
     )
     _ = parser.add_argument(
+        "--keep-raw-days", type=int, default=180, help="Retention window for raw JSONL directories"
+    )
+    _ = parser.add_argument(
+        "--keep-report-days", type=int, default=90, help="Retention window for dated HTML reports"
+    )
+    _ = parser.add_argument(
         "--snapshot-db",
         action="store_true",
         default=False,
@@ -172,5 +233,7 @@ if __name__ == "__main__":
         recent_days=_to_int(args.get("recent_days"), 7),
         timeout=_to_int(args.get("timeout"), 15),
         keep_days=_to_int(args.get("keep_days"), 90),
+        keep_raw_days=_to_int(args.get("keep_raw_days"), 180),
+        keep_report_days=_to_int(args.get("keep_report_days"), 90),
         snapshot_db=bool(args.get("snapshot_db", False)),
     )

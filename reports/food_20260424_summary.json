@@ -1,0 +1,94 @@
+{
+  "date": "2026-04-24",
+  "category": "food",
+  "article_count": 200,
+  "source_count": 10,
+  "matched_count": 169,
+  "top_entities": [
+    {
+      "name": "FoodGeneral",
+      "count": 297
+    },
+    {
+      "name": "FoodType",
+      "count": 130
+    },
+    {
+      "name": "SafetyIssue",
+      "count": 107
+    },
+    {
+      "name": "Regulation",
+      "count": 27
+    },
+    {
+      "name": "Brand",
+      "count": 4
+    },
+    {
+      "name": "RecallReason",
+      "count": 3
+    },
+    {
+      "name": "Manufacturer",
+      "count": 3
+    },
+    {
+      "name": "BrandCanonical",
+      "count": 1
+    },
+    {
+      "name": "BrandAliasTrace",
+      "count": 1
+    }
+  ],
+  "sources": {
+    "식품안전나라 행정처분": 20,
+    "r/Cooking": 36,
+    "r/KoreanFood": 30,
+    "r/foodsafety": 35,
+    "r/nutrition": 16,
+    "Food Dive": 13,
+    "Food Safety News": 15,
+    "식약처 보도자료": 14,
+    "식품안전 국내뉴스": 16,
+    "식품안전나라 회수판매중지": 5
+  },
+  "generated_at": "2026-04-24T23:23:00.426905+09:00",
+  "ontology": {
+    "repo": "FoodRadar",
+    "category": "food",
+    "ontology_version": "0.1.0",
+    "event_model_ids": [
+      "food.complaint_signal",
+      "food.enforcement_action",
+      "food.recall_status_change"
+    ],
+    "event_model_mappings": {
+      "recall_status_change": "food.recall_status_change",
+      "enforcement_action": "food.enforcement_action",
+      "complaint_signal": "food.complaint_signal"
+    },
+    "entity_type_hints": [
+      "food.product",
+      "organization.company"
+    ],
+    "source_role_ids": [
+      "community_signal",
+      "context_only",
+      "primary_evidence"
+    ],
+    "source_role_mappings": {
+      "식품안전나라 회수판매중지": "primary_evidence",
+      "식품안전나라 행정처분": "primary_evidence",
+      "식약처 보도자료": "context_only",
+      "Food Safety News": "context_only",
+      "r/foodsafety": "community_signal"
+    },
+    "evidence_policy_ids": [
+      "traceable_url_required",
+      "official_confirmation_required",
+      "non_authoritative_context_only"
+    ]
+  }
+}

@@ -65,6 +65,24 @@ class TestRadarStorage:
         assert len(results) == 1
         assert results[0].title == "최근"
 
+    def test_recent_articles_round_trip_ontology(self, tmp_db):
+        """Stored articles preserve ontology metadata."""
+        article = Article(
+            title="온톨로지 기사",
+            link="https://example.com/ontology",
+            summary="",
+            published=datetime.now(UTC) - timedelta(days=1),
+            source="S",
+            category="test",
+            ontology={"ontology_version": "0.1.0", "event_model_id": "food_signal_event"},
+        )
+        with RadarStorage(tmp_db) as storage:
+            storage.upsert_articles([article])
+            results = storage.recent_articles("test", days=7)
+
+        assert len(results) == 1
+        assert results[0].ontology == article.ontology
+
     def test_delete_older_than(self, tmp_db):
         """Old articles are deleted, recent ones remain."""
         now = datetime.now(UTC)

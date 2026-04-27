@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import html
 import os
+import re
 import threading
 import time
 from collections.abc import Mapping
@@ -31,6 +32,9 @@ _DEFAULT_HEALTH_DB_PATH = "data/radar_data.duckdb"
 _COLLECTION_CONTROL_LOCK = threading.Lock()
 _ACTIVE_THROTTLER: AdaptiveThrottler | None = None
 _ACTIVE_HEALTH_STORE: CrawlHealthStore | None = None
+DATE_ONLY_SUMMARY_PATTERN = re.compile(
+    r"^\s*(?:20\d{2}\d{2}\d{2}|20\d{2}[.\-/년\s]+\d{1,2}[.\-/월\s]+\d{1,2})\s*\.?\s*$"
+)
 
 
 def _set_collection_controls(throttler: AdaptiveThrottler, health_store: CrawlHealthStore) -> None:
@@ -78,6 +82,15 @@ def _resolve_max_workers(max_workers: int | None = None) -> int:
         parsed = max_workers
 
     return max(1, min(parsed, 10))
+
+
+def _source_bypasses_crawl_health(source: Source) -> bool:
+    raw = source.config.get("bypass_crawl_health", False)
+    if isinstance(raw, bool):
+        return raw
+    if isinstance(raw, str):
+        return raw.strip().lower() in {"1", "true", "yes", "y", "on"}
+    return False
 
 
 def _create_session() -> requests.Session:
@@ -198,13 +211,27 @@ def collect_sources(
     """Fetch items from all configured sources, returning articles and errors."""
     articles: list[Article] = []
     errors: list[str] = []
+    enabled_sources = [source for source in sources if source.enabled]
+    rss_sources = [source for source in enabled_sources if source.type.lower() == "rss"]
+    reddit_sources = [
+        source for source in enabled_sources if source.type.lower() == "reddit"
+    ]
+    unsupported_sources = [
+        source
+        for source in enabled_sources
+        if source.type.lower() not in {"rss", "reddit"}
+    ]
     manager = get_circuit_breaker_manager()
     workers = _resolve_max_workers(max_workers)
     source_hosts: dict[str, str] = {
-        source.name: (urlparse(source.url).netloc.lower() or source.name) for source in sources
+        source.name: (urlparse(source.url).netloc.lower() or source.name)
+        for source in rss_sources
     }
     rate_limiters: dict[str, RateLimiter] = {
         host: RateLimiter(min_interval=min_interval_per_host) for host in set(source_hosts.values())
+    }
+    host_locks: dict[str, threading.Lock] = {
+        host: threading.Lock() for host in set(source_hosts.values())
     }
     throttler = AdaptiveThrottler(min_delay=max(0.001, min_interval_per_host))
     health_store = CrawlHealthStore(
@@ -214,22 +241,22 @@ def collect_sources(
     session = _create_session()
 
     def _collect_for_source(source: Source) -> tuple[list[Article], list[str]]:
-        if health_store.is_disabled(source.name):
+        if not _source_bypasses_crawl_health(source) and health_store.is_disabled(source.name):
             return [], [f"{source.name}: Source disabled (crawl health threshold reached)"]
 
-        host = source_hosts[source.name]
-        rate_limiters[host].acquire()
-
         try:
-            breaker = manager.get_breaker(source.name)
-            result = breaker.call(
-                _collect_single,
-                source,
-                category=category,
-                limit=limit_per_source,
-                timeout=timeout,
-                session=session,
-            )
+            host = source_hosts[source.name]
+            with host_locks[host]:
+                rate_limiters[host].acquire()
+                breaker = manager.get_breaker(source.name)
+                result = breaker.call(
+                    _collect_single,
+                    source,
+                    category=category,
+                    limit=limit_per_source,
+                    timeout=timeout,
+                    session=session,
+                )
             return result, []
         except CircuitBreakerError:
             return [], [f"{source.name}: Circuit breaker open (source unavailable)"]
@@ -242,20 +269,46 @@ def collect_sources(
 
     try:
         if workers == 1:
-            for source in sources:
+            for source in rss_sources:
                 source_articles, source_errors = _collect_for_source(source)
                 articles.extend(source_articles)
                 errors.extend(source_errors)
         else:
-            with ThreadPoolExecutor(max_workers=workers) as executor:
-                future_map: list[Future[tuple[list[Article], list[str]]]] = [
-                    executor.submit(_collect_for_source, source) for source in sources
-                ]
+            if rss_sources:
+                with ThreadPoolExecutor(max_workers=workers) as executor:
+                    future_map: list[Future[tuple[list[Article], list[str]]]] = [
+                        executor.submit(_collect_for_source, source) for source in rss_sources
+                    ]
 
-                for future in future_map:
-                    source_articles, source_errors = future.result()
-                    articles.extend(source_articles)
-                    errors.extend(source_errors)
+                    for future in future_map:
+                        source_articles, source_errors = future.result()
+                        articles.extend(source_articles)
+                        errors.extend(source_errors)
+
+        if reddit_sources:
+            try:
+                from radar_core import collect_reddit_sources
+
+                reddit_articles, reddit_errors = collect_reddit_sources(
+                    reddit_sources,
+                    category=category,
+                    limit=limit_per_source,
+                    timeout=timeout,
+                    health_db_path=health_db_path
+                    or os.environ.get("RADAR_CRAWL_HEALTH_DB_PATH", _DEFAULT_HEALTH_DB_PATH),
+                )
+                articles.extend(reddit_articles)
+                errors.extend(reddit_errors)
+            except ImportError:
+                errors.append(
+                    f"Reddit collection unavailable for {len(reddit_sources)} source(s). "
+                    "Ensure radar-core reddit support is installed."
+                )
+
+        for source in unsupported_sources:
+            errors.append(
+                f"{source.name}: Source type '{source.type}' is cataloged but not collected by the standard pipeline"
+            )
     finally:
         session.close()
         health_store.close()
@@ -276,11 +329,14 @@ def _collect_single(
         raise SourceError(source.name, f"Unsupported source type '{source.type}'")
 
     try:
+        request_timeout = _source_request_timeout(source, timeout)
+        max_attempts = _source_max_attempts(source, 3)
         response = _fetch_url_with_retry(
             source.url,
-            timeout,
+            request_timeout,
             session=session,
             source_name=source.name,
+            max_attempts=max_attempts,
         )
     except (requests.exceptions.Timeout, requests.exceptions.ConnectionError) as exc:
         raise NetworkError(f"Network error fetching {source.name}: {exc}") from exc
@@ -317,10 +373,18 @@ def _collect_single(
 
             # URL extraction fallback: fetch content from link if summary is too short
             link = _entry_text(entry, "link").strip()
-            if link and (not summary or len(summary.strip()) < 50):
+            if link and (
+                not summary
+                or (
+                    len(summary.strip()) < 50
+                    and not _is_date_only_summary(summary)
+                )
+            ):
                 extracted = extract_url_content_safe(link)
-                if extracted and len(extracted) > len(summary or ""):
-                    summary = extracted
+                if extracted and extracted.content:
+                    extracted_summary = extracted.content[:2000].strip()
+                    if len(extracted_summary) > len(summary or ""):
+                        summary = extracted_summary
 
             items.append(
                 Article(
@@ -336,6 +400,38 @@ def _collect_single(
         return items
     except Exception as exc:
         raise ParseError(f"Failed to parse feed from {source.name}: {exc}") from exc
+
+
+def _source_request_timeout(source: Source, default: int) -> int:
+    raw = source.config.get("request_timeout", source.config.get("timeout"))
+    if isinstance(raw, bool):
+        return default
+    if isinstance(raw, int | float):
+        return max(1, int(raw))
+    if isinstance(raw, str):
+        try:
+            return max(1, int(float(raw.strip())))
+        except ValueError:
+            return default
+    return default
+
+
+def _source_max_attempts(source: Source, default: int) -> int:
+    raw = source.config.get("max_attempts")
+    if isinstance(raw, bool):
+        return default
+    if isinstance(raw, int | float):
+        return max(1, int(raw))
+    if isinstance(raw, str):
+        try:
+            return max(1, int(float(raw.strip())))
+        except ValueError:
+            return default
+    return default
+
+
+def _is_date_only_summary(value: str) -> bool:
+    return bool(DATE_ONLY_SUMMARY_PATTERN.match(value or ""))
 
 
 def _extract_datetime(entry: Mapping[str, Any]) -> datetime | None:
