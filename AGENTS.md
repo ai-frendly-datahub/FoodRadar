@@ -53,5 +53,5 @@ pytest tests/ -v
 
 - 식품 소스 추가 시 `config/categories/food.yaml` 먼저 수정
 - 표준 수집 경로는 `rss`와 `reddit`만 지원한다. MCP 서버는 `integration_candidates`로 기록하고 별도 agent/tool 통합 경로에서 다룬다.
-- capability 후보 메모는 [integration-candidates.md](/home/kjs/projects/ai-frendly-datahub/FoodRadar/docs/integration-candidates.md)를 본다.
+- capability 후보 메모는 [integration-candidates.md](docs/integration-candidates.md)를 본다.
 - 출력 경로와 파일명 규칙을 바꾸면 `radar-dashboard` 영향 여부를 확인
