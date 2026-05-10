@@ -22,6 +22,7 @@ from foodradar.config_loader import (  # noqa: E402
     load_category_config,
     load_category_quality_config,
 )
+from foodradar.analyzer import apply_entity_rules  # noqa: E402
 from foodradar.quality_report import build_quality_report, write_quality_report  # noqa: E402
 from foodradar.storage import RadarStorage  # noqa: E402
 
@@ -150,6 +151,15 @@ def generate_quality_artifacts(
             days=lookback_days,
             limit=1000,
         )
+
+    data_quality = quality_cfg.get("data_quality")
+    alias_map = data_quality.get("alias_map") if isinstance(data_quality, dict) else None
+    recent_articles = apply_entity_rules(
+        recent_articles,
+        category_cfg.entities,
+        alias_map=alias_map if isinstance(alias_map, dict) else None,
+        sources=category_cfg.sources,
+    )
 
     report = build_quality_report(
         category=category_cfg,

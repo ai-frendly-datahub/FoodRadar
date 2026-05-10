@@ -1,0 +1,278 @@
+{
+  "date": "2026-04-29",
+  "category": "food",
+  "article_count": 16,
+  "source_count": 8,
+  "matched_count": 16,
+  "top_entities": [
+    {
+      "name": "FoodType",
+      "count": 30
+    },
+    {
+      "name": "FoodGeneral",
+      "count": 18
+    },
+    {
+      "name": "SafetyIssue",
+      "count": 10
+    },
+    {
+      "name": "Brand",
+      "count": 5
+    },
+    {
+      "name": "Regulation",
+      "count": 1
+    }
+  ],
+  "sources": {
+    "식품안전나라 행정처분": 1,
+    "r/foodsafety": 3,
+    "r/Cooking": 3,
+    "r/KoreanFood": 3,
+    "r/nutrition": 2,
+    "식품안전 국내뉴스": 1,
+    "Food Safety News": 1,
+    "Food Dive": 2
+  },
+  "generated_at": "2026-04-29T09:20:26.860637+09:00",
+  "articles": [
+    {
+      "event_model_payload": {
+        "source_url": "/portal/administMeasureDetail.do?seq=4717657"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://www.reddit.com/r/foodsafety/comments/1syiglu/veins_or_worms/"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Using the Pot lid as a shield for deep frying",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1syi1gn/using_the_pot_lid_as_a_shield_for_deep_frying/",
+        "published_at": "2026-04-28T23:37:04+00:00",
+        "summary": "[r/Cooking] by u/Numerous_Temporary11 | 0 points | 21 comments\n\nIf you are afraid of deep frying and are anxious of the possibilities with oil splattering onto your skin, one effective method or trick I would always do is use a pot lid to protect me. It acts like a Captain America Shield 🛡 😄\n\nDoes anyone ever do that?\n\nUpdate: My comment was meant to intend to use the lid in front of your body instead of placing it on top, and it makes you feel like a fictional character or soldier heading towards the battlefield and makes the experience quite fun."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/KoreanFood",
+        "headline": "Lazy day. This is enough for lunch.",
+        "source_url": "https://www.reddit.com/r/KoreanFood/comments/1syi172/lazy_day_this_is_enough_for_lunch/",
+        "published_at": "2026-04-28T23:36:45+00:00",
+        "summary": "[r/KoreanFood] by u/taran1013 | 6 points | 0 comments\n\nHave you tried hot pepper tuna? If you mix it with rice, you don’t need anything else.\n\nIt’s the best meal for living alone.🤣"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://www.reddit.com/r/foodsafety/comments/1syhd8j/odd_curved_thing_on_a_chicken_breast_just_removed/"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Delicious corn",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1syhc4l/delicious_corn/",
+        "published_at": "2026-04-28T23:07:03+00:00",
+        "summary": "[r/Cooking] by u/KDinNS | 1 points | 0 comments\n\nI saw this recipe on Instagram, and of course did my own thing. In the end it's chicken taco bowls. \n\nI had corn in my freezer that I'd cooked and removed from the cob. Sear that in a pan (although for the next batch I did it in my air fryer, way less work). Mix in Greek yogurt, Tajin if you have it (I didn't, so chili powder and lime juice, a bit of salt), cilantro. It also called for feta which I don't like, so I added a bit of mozzarella.\n\nWe had this in bowls with basmati rice, black beans that were cooked from dried and in my freezer, taco seasoned chicken and some cheese.  SO good!  The corn was really the star."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/KoreanFood",
+        "headline": "Comfort foods with produce from an American grocery store?",
+        "source_url": "https://www.reddit.com/r/KoreanFood/comments/1syeqaj/comfort_foods_with_produce_from_an_american/",
+        "published_at": "2026-04-28T21:22:49+00:00",
+        "summary": "[r/KoreanFood] by u/cynd3rs | 3 points | 9 comments\n\nI need some help with meal ideas for an older Korean-American couple. What Korean comfort foods can I make with meat/produce from a typical American grocery store? Or what American dishes can I make that are likely to appeal to Korean palates?\n\nI only have miyeokguk and juk on my list so far...\n\nAdditional info:\n\n* My pantry is decently stocked with Korean and other East Asian staples.\n* I do not have access to an Asian grocery store (including online delivery like Wee) for fresh meat/produce. No napa cabbage, Korean radish, bean sprouts, etc.\n* Dishes need to be freezer friendly.\n\nLooking forward to reading your responses. Thank you!\n\n\n\nEDIT: I have things such as gochujang, gochugaru, doenjang, ssamjang, miso paste, dashi powder, sesame oil, dried shiitake, fish sauce, oyster sauce, Maggi seasoning...hmart is several hours away and I make the trip once or twice a year to stock up."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/nutrition",
+        "headline": "Things I have Learned In Nutrition Class",
+        "source_url": "https://www.reddit.com/r/nutrition/comments/1sycxnn/things_i_have_learned_in_nutrition_class/",
+        "published_at": "2026-04-28T20:17:07+00:00",
+        "summary": "[r/nutrition] by u/One-Construction2923 | 38 points | 19 comments\n\n**Post:**  \nI’ve been taking a nutrition class this semester, and one thing that’s really stood out to me is how much misinformation there is around metabolism and weight. I wanted to share a few evidence-based takeaways that changed how I think about it:\n\n**1. Energy balance isn’t just “eat less, move more.”**  \nYes, weight change is related to calories in vs. calories out—but the “calories out” side includes things you don’t fully control, like basal metabolic rate and how your body adapts over time. It’s not as simple as people make it sound.\n\n**2. Your body adapts to weight loss.**  \nWhen you lose weight, your metabolism can slow down and your hunger hormones can increase. This is part of why people often hit plateaus and why weight cycling (losing and regaining weight) is so common. It’s not just about willpower—your body is actively trying to maintain a certain range.\n\n**3. Weight ≠ health.**  \nA lot of health messaging focuses heavily on body weight, but behaviors like diet quality, physical activity, sleep, and stress play a huge role in health regardless of weight. Two people can have very different health profiles at the same weight.\n\nNot trying to be controversial—just thought this was interesting and worth sharing since a lot of mainstream advice ignores these nuances.\n\nCurious what people here think, especially anyone with a background in nutrition or research."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식품안전 국내뉴스",
+        "headline": "[보도참고] 살모넬라균 검출된 '즉석조리식품' 회수 조치",
+        "source_url": "/portal/board/boardDetail.do?bbs_no=bbs082&ntctxt_no=1110607&menu_no=2859",
+        "published_at": "2026-04-28T15:00:00+00:00",
+        "summary": "[식품안전] [보도참고] 살모넬라균 검출된 '즉석조리식품' 회수 조치"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/KoreanFood",
+        "headline": "[OC] Spicy Squid Stir-fry (Ojingeo-bokkeum) with a perfect smoky flavor!",
+        "source_url": "https://www.reddit.com/r/KoreanFood/comments/1sy3qj6/oc_spicy_squid_stirfry_ojingeobokkeum_with_a/",
+        "published_at": "2026-04-28T14:54:38+00:00",
+        "summary": "[r/KoreanFood] by u/lovegabi | 1 points | 0 comments\n\nThis is one of my absolute favorite dishes! The key is the \"Bul-mat\" (smoky charred flavor) and keeping the vegetables perfectly crunchy.\n\nI love how the spicy sauce coats the tender squid while the veggies stay fresh and crisp. Pairing this with a warm bowl of white rice is pure happiness (Haeng-bok-geu-jap-chae)!\n\nDoes anyone else love their squid stir-fry extra smoky and spicy?"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "1st cheesecake",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1sy3o88/1st_cheesecake/",
+        "published_at": "2026-04-28T14:52:18+00:00",
+        "summary": "[r/Cooking] by u/Various_Heart650 | 1 points | 0 comments\n\nI made my cheesecake with 550g cream cheese, 120g sugar, 280g heavy cream, and 3 eggs, baked at 220°C (425°F) for 20 minutes, followed by a full grill/broil. I would like it to be more liquid/runny inside, what should I do?\""
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://www.reddit.com/r/foodsafety/comments/1sy3jlg/mold_growing_around_yogurt_container_ive_scraped/"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/nutrition",
+        "headline": "Is putting 0 cal syrup in my water to get me to drink more water unhealthy in the long run?",
+        "source_url": "https://www.reddit.com/r/nutrition/comments/1sy39v0/is_putting_0_cal_syrup_in_my_water_to_get_me_to/",
+        "published_at": "2026-04-28T14:37:28+00:00",
+        "summary": "[r/nutrition] by u/MrVickiesChips | 4 points | 5 comments\n\nI’m someone who’s decently fit most of my water drinking is on weekends when I’m at the gym during the work week there’s some days where my 40oz water is basically full by the end of the work week so I found a zerolicous strawberry syrup and started my morning with mixing some with my water and I finish it by lunch and go home and refill without the syrup and can drink majority of it I’m a huge coffee drinker too"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Publisher's Platform: It's time to get the S*%! out of chicken and declare Salmonella an adulterant",
+        "source_url": "https://www.foodsafetynews.com/2026/04/publishers-platform-its-time-to-get-the-s-out-of-chicken-declare-salmonella-an-adulterant/",
+        "published_at": "2026-04-28T10:25:07+00:00",
+        "summary": "The Centers for Disease Control and Prevention estimates that Salmonella causes approximately 1.35 million illnesses, 26,500 hospitalizations, and 420 deaths in the United States every year."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "Sazerac nabs minority stake in Kendall Jenner’s 818 Tequila",
+        "source_url": "https://www.fooddive.com/news/sazerac-invests-818-tequila/818724/",
+        "published_at": "2026-04-28T09:22:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/UPqlmX0eoUq5hL_DQ_P5DdGsCmSIYp2Zl2q__HQwSVQ/g:nowe:0:963/c:2159:1220/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS84MTguanBn.webp\" /></div></figure><p>The investment continues a run of dealmaking for the spirits giant as it looks to appeal to the next generation of drinkers.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "Pure Leaf puts mental clarity in focus with new functional tea",
+        "source_url": "https://www.fooddive.com/news/pure-leaf-mental-focus-functional-beverage-sparkling-pepsi-lipton-partnership/818663/",
+        "published_at": "2026-04-28T05:02:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/NF6yM9tM0BeNjAkgtjbgp6IieWQZLoQvudwsQN3oU2c/g:nowe:0:164/c:2500:1412/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9UaGVfTWVudGFsX0ZvY3VzX0tpdF93aXRoX1B1cmVfTGVhZl9hbmRfQnJpY2suanBn.webp\" /></div></figure><p>The brand, owned by PepsiCo and Unilever in a partnership, is releasing its first sparkling drink designed for balanced energy instead of extreme performance.</p>"
+      }
+    }
+  ],
+  "ontology": {
+    "repo": "FoodRadar",
+    "category": "food",
+    "ontology_version": "0.1.0",
+    "event_model_ids": [
+      "food.complaint_signal",
+      "food.editorial_coverage",
+      "food.enforcement_action",
+      "food.official_notice",
+      "food.recall_status_change"
+    ],
+    "event_model_mappings": {
+      "recall_status_change": "food.recall_status_change",
+      "enforcement_action": "food.enforcement_action",
+      "complaint_signal": "food.complaint_signal",
+      "editorial_coverage": "food.editorial_coverage",
+      "official_notice": "food.official_notice"
+    },
+    "entity_type_hints": [
+      "food.product",
+      "organization.company"
+    ],
+    "source_role_ids": [
+      "community_signal",
+      "context_only",
+      "primary_evidence"
+    ],
+    "source_role_mappings": {
+      "식품안전나라 회수판매중지": "primary_evidence",
+      "식품안전나라 행정처분": "primary_evidence",
+      "식약처 보도자료": "context_only",
+      "Food Safety News": "context_only",
+      "r/foodsafety": "community_signal"
+    },
+    "evidence_policy_ids": [
+      "traceable_url_required",
+      "official_confirmation_required",
+      "non_authoritative_context_only"
+    ]
+  },
+  "quality_summary": {
+    "total_sources": 12,
+    "tracked_sources": 3,
+    "fresh_sources": 2,
+    "stale_sources": 0,
+    "missing_sources": 1,
+    "unknown_event_date_sources": 0,
+    "not_tracked_sources": 8,
+    "catalog_only_sources": 0,
+    "skipped_disabled_sources": 1,
+    "collection_error_count": 0,
+    "alias_candidate_count": 0,
+    "product_alias_candidate_count": 0,
+    "brand_alias_candidate_count": 0,
+    "manufacturer_alias_candidate_count": 0,
+    "match_coverage_article_count": 16,
+    "match_coverage_matched_count": 16,
+    "match_coverage_unmatched_count": 0,
+    "match_coverage_rate": 100.0,
+    "match_coverage_review_item_count": 0,
+    "fresh_food_events": 4,
+    "stale_food_events": 0,
+    "undated_food_events": 0,
+    "unique_food_event_key_count": 4,
+    "recall_events_with_notice_date_count": 0,
+    "recall_events_with_status_count": 0,
+    "event_alias_trace_count": 0,
+    "complaint_auxiliary_only_events": 3,
+    "official_evidence_events": 1,
+    "recall_status_change_events": 0,
+    "enforcement_action_events": 1,
+    "complaint_signal_events": 3
+  },
+  "warnings": [
+    "freshness gaps detected: stale=0, missing=1"
+  ],
+  "quality_flagged_sources": [
+    {
+      "source": "식품안전나라 회수판매중지",
+      "source_type": "rss",
+      "enabled": true,
+      "tracked": true,
+      "event_model": "recall_status_change",
+      "freshness_sla_days": 3,
+      "status": "missing",
+      "article_count": 0,
+      "latest_event_at": null,
+      "latest_collected_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_food_event_key": "",
+      "latest_notice_date": "",
+      "latest_recall_status": "",
+      "latest_release_date": "",
+      "latest_sanction_start_date": "",
+      "latest_sanction_end_date": "",
+      "latest_sanction_type": "",
+      "latest_product_name_raw": "",
+      "latest_manufacturer_name_raw": "",
+      "latest_alias_traces": [],
+      "verification_role": "",
+      "merge_policy": "",
+      "skip_reason": "",
+      "reenable_gate": "",
+      "errors": []
+    }
+  ]
+}

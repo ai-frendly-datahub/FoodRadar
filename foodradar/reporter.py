@@ -119,6 +119,11 @@ def _render_quality_traceability_panel(quality_report: Mapping[str, Any]) -> str
     alias_candidates = [
         row for row in _list(quality_report.get("alias_candidates")) if isinstance(row, Mapping)
     ]
+    match_review_items = [
+        row
+        for row in _list(quality_report.get("match_coverage_review_items"))
+        if isinstance(row, Mapping)
+    ]
     flagged_sources = [
         row
         for row in sources
@@ -139,6 +144,13 @@ def _render_quality_traceability_panel(quality_report: Mapping[str, Any]) -> str
         ("enforcement", summary_map.get("enforcement_action_events", 0)),
         ("complaints", summary_map.get("complaint_signal_events", 0)),
         ("alias candidates", summary_map.get("alias_candidate_count", 0)),
+        ("product aliases", summary_map.get("product_alias_candidate_count", 0)),
+        ("manufacturer aliases", summary_map.get("manufacturer_alias_candidate_count", 0)),
+        ("alias traced", summary_map.get("event_alias_trace_count", 0)),
+        (
+            "coverage review",
+            summary_map.get("match_coverage_review_item_count", len(match_review_items)),
+        ),
     ]
     chip_html = "\n".join(
         f'<span class="chip"><strong>{escape(label)}</strong> {escape(str(value))}</span>'
@@ -146,6 +158,7 @@ def _render_quality_traceability_panel(quality_report: Mapping[str, Any]) -> str
     )
     event_html = _render_food_events(event_rows)
     source_html = _render_quality_sources(flagged_sources)
+    match_review_html = _render_match_coverage_review_items(match_review_items[:8])
     alias_html = _render_alias_candidates(alias_candidates[:6])
     return f"""
       <section id="quality-traceability" class="section" aria-label="Quality traceability">
@@ -169,6 +182,7 @@ def _render_quality_traceability_panel(quality_report: Mapping[str, Any]) -> str
             </div>
             {event_html}
             {source_html}
+            {match_review_html}
             {alias_html}
           </div>
         </article>
@@ -208,6 +222,16 @@ def _render_food_events(events: list[Mapping[str, Any]]) -> str:
             )
         )
         details = []
+        for key, label in (
+            ("product_canonical", "product"),
+            ("manufacturer_canonical", "manufacturer"),
+            ("brand_canonical", "brand"),
+        ):
+            values = _list(row.get(key))
+            if values:
+                details.append(
+                    f"{escape(label)}={escape(', '.join(str(value) for value in values[:2]))}"
+                )
         for key in ("recall_status", "sanction_type", "verification_status"):
             value = row.get(key)
             if value:
@@ -235,6 +259,25 @@ def _render_alias_candidates(alias_candidates: list[Mapping[str, Any]]) -> str:
             f"<li><strong>{alias_type}</strong> {escape(canonical)}: {variants}</li>"
         )
     return "<ul>" + "\n".join(items) + "</ul>"
+
+
+def _render_match_coverage_review_items(items: list[Mapping[str, Any]]) -> str:
+    if not items:
+        return '<p class="muted small">No match coverage review items in this run.</p>'
+    rendered = []
+    for item in items:
+        reason = escape(str(item.get("reason", "")))
+        priority = escape(str(item.get("priority", "")))
+        source = escape(str(item.get("source", "")))
+        title = escape(str(item.get("title", ""))[:120])
+        action = escape(str(item.get("recommended_action", "")))
+        rendered.append(
+            "<li>"
+            f"<strong>{priority}</strong> {reason}: {source} - {title}"
+            f"<br><span class=\"muted small\">{action}</span>"
+            "</li>"
+        )
+    return "<ul>" + "\n".join(rendered) + "</ul>"
 
 
 def _list(value: object) -> list[Any]:

@@ -26,13 +26,19 @@
 ## 구현 완료
 
 - `reports/food_quality.json`과 일자별 `food_YYYYMMDD_quality.json`으로 source별 freshness/stale/missing 상태를 검증 산출물에 추가
-- 리포트에는 event model, freshness SLA, 최신 event date, collection error, Brand/Manufacturer alias 후보를 포함
+- 리포트에는 event model, freshness SLA, 최신 event date, collection error, Product/Brand/Manufacturer alias 후보를 포함
+- Product/Manufacturer alias map을 analyzer에 연결하고 canonical product/manufacturer field와 alias trace를 JSON/HTML 리포트에 출력
+- `food_quality.json`의 stale/missing 요약을 HTML Quality Traceability 패널과 summary JSON `quality_summary`/`quality_flagged_sources`에 노출
+- 식품안전나라 회수판매중지 공식 리콜 feed는 title/summary 기반 product/manufacturer fallback extraction으로 food event key를 보강
+- Product/FoodType/FoodGeneral/SafetyIssue/Brand keyword coverage를 보강해 최신 1일 리포트 매칭률을 `16/16`으로 회복
+- 저장 DB에서 다시 읽은 recent article도 현재 엔티티·별칭·소스 규칙으로 재분석해 리포트와 품질 점검의 규칙 적용을 일치시킴
+- `match_coverage_review_items`를 quality JSON, HTML 패널, summary JSON에 추가해 미매칭 표본을 운영 큐로 노출
 
 ## 다음 구현 순서
 
-- 제품/제조사 alias map을 analyzer와 리포트 출력에 연결
+- `match_coverage_review_items`에 남는 이미지 중심 커뮤니티 항목을 일일 점검하되, 의미 없는 광역 키워드로 매칭률을 부풀리지 않음
 - 소비자 complaint 후보는 source_backlog에서 API·ToS·개인정보 검토 후 보조 레이어로 활성화
-- `food_quality.json`의 stale/missing 요약을 HTML 리포트 또는 dashboard 카드로 노출
+- 판매중단 확산·유통 가격 데이터를 후속 운영 source로 보강
 
 ## 운영 규칙
 

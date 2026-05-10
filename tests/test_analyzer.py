@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from foodradar.analyzer import apply_entity_rules
 from foodradar.config_loader import load_category_config, load_category_quality_config
-from foodradar.models import Article, EntityDefinition
+from foodradar.models import Article, EntityDefinition, Source
 
 
 def _make_article(title: str, summary: str = "") -> Article:
@@ -113,6 +113,32 @@ class TestApplyEntityRules:
         assert result[0].matched_entities["BrandCanonical"] == ["CJ"]
         assert result[0].matched_entities["BrandAliasTrace"] == ["cj cheiljedang -> CJ"]
 
+    def test_alias_map_adds_product_and_manufacturer_traces(self):
+        """Product and manufacturer aliases resolve to canonical food safety keys."""
+        articles = [_make_article("Bibigo Dumplings recall from Samyang Foods")]
+        entities = [
+            EntityDefinition(name="Product", display_name="제품", keywords=["비비고 만두"]),
+            EntityDefinition(name="Manufacturer", display_name="제조업체", keywords=["삼양식품"]),
+        ]
+
+        result = apply_entity_rules(
+            articles,
+            entities,
+            alias_map={
+                "Product": {"비비고 만두": ["비비고 만두", "Bibigo Dumplings"]},
+                "Manufacturer": {"삼양식품": ["삼양식품", "Samyang Foods"]},
+            },
+        )
+
+        assert result[0].matched_entities["ProductCanonical"] == ["비비고 만두"]
+        assert result[0].matched_entities["ProductAliasTrace"] == [
+            "bibigo dumplings -> 비비고 만두"
+        ]
+        assert result[0].matched_entities["ManufacturerCanonical"] == ["삼양식품"]
+        assert result[0].matched_entities["ManufacturerAliasTrace"] == [
+            "samyang foods -> 삼양식품"
+        ]
+
     def test_real_config_classifies_community_food_terms_without_safety_issue(self):
         """Recipe/community source terms are classified as food types, not safety events."""
         config = load_category_config("food")
@@ -142,6 +168,49 @@ class TestApplyEntityRules:
             "doenjang",
         }
         assert "SafetyIssue" not in result[0].matched_entities
+
+    def test_real_config_resolves_product_and_manufacturer_aliases(self):
+        """Real FoodRadar config wires Product/Manufacturer aliases into analyzer."""
+        config = load_category_config("food")
+        metadata = load_category_quality_config("food")
+        data_quality = metadata["data_quality"]
+        article = _make_article("Bibigo Dumplings recall from Samyang Foods")
+
+        result = apply_entity_rules(
+            [article],
+            config.entities,
+            alias_map=data_quality["alias_map"],
+        )
+
+        assert result[0].matched_entities["ProductCanonical"] == ["비비고 만두"]
+        assert result[0].matched_entities["ManufacturerCanonical"] == ["삼양식품"]
+
+    def test_official_recall_source_uses_title_and_summary_as_entities(self):
+        """Official recall rows keep product/manufacturer trace even without keyword hits."""
+        articles = [_make_article("주식회사 국왕푸드", summary="이부자 한우 국밥")]
+        articles[0].source = "식품안전나라 회수판매중지"
+        sources = [
+            Source(
+                name="식품안전나라 회수판매중지",
+                type="rss",
+                url="https://example.com/recall.xml",
+                country="KR",
+                trust_tier="T1_official",
+                config={
+                    "event_model": "recall_status_change",
+                    "canonical_key_fields": [
+                        "product_name",
+                        "manufacturer_name",
+                        "source_url",
+                    ],
+                },
+            )
+        ]
+
+        result = apply_entity_rules(articles, [], sources=sources)
+
+        assert result[0].matched_entities["ProductCanonical"] == ["이부자 한우 국밥"]
+        assert result[0].matched_entities["ManufacturerCanonical"] == ["주식회사 국왕푸드"]
 
     def test_real_config_classifies_fowl_plague_as_safety_issue(self):
         """Food safety disease/outbreak terms from trade media remain safety issues."""
@@ -179,3 +248,18 @@ class TestApplyEntityRules:
         assert result[0].matched_entities["FoodType"] == ["coffee"]
         assert result[1].matched_entities["SafetyIssue"] == ["outbreaks"]
         assert result[2].matched_entities["FoodGeneral"] == ["cooking", "recipe"]
+
+    def test_real_config_classifies_current_unmatched_review_items(self):
+        """Current review rows classify concrete brand and meal context terms."""
+        config = load_category_config("food")
+        articles = [
+            _make_article("Mondelēz CEO says Iran war could further weigh on consumer confidence"),
+            _make_article("Assorted goodness for dinner"),
+            _make_article("How Do I Cook These?"),
+        ]
+
+        result = apply_entity_rules(articles, config.entities)
+
+        assert result[0].matched_entities["Brand"] == ["mondelēz"]
+        assert result[1].matched_entities["FoodGeneral"] == ["dinner"]
+        assert result[2].matched_entities["FoodGeneral"] == ["cook"]

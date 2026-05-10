@@ -130,6 +130,8 @@ def test_build_quality_report_extracts_alias_candidates() -> None:
     report = build_quality_report(category=category, articles=articles, generated_at=now)
 
     assert report["summary"]["alias_candidate_count"] == 1
+    assert report["summary"]["brand_alias_candidate_count"] == 1
+    assert report["summary"]["product_alias_candidate_count"] == 0
     candidate = report["alias_candidates"][0]
     assert candidate["alias_type"] == "brand"
     assert candidate["normalized"] == "cj"
@@ -176,6 +178,171 @@ def test_build_quality_report_extracts_mapped_alias_trace() -> None:
     assert report["summary"]["event_alias_trace_count"] == 1
     assert report["events"][0]["brand_canonical"] == ["CJ"]
     assert report["events"][0]["alias_traces"] == ["cj cheiljedang -> CJ"]
+
+
+def test_build_quality_report_extracts_product_and_manufacturer_alias_traces() -> None:
+    now = datetime(2026, 4, 12, 0, 0, tzinfo=UTC)
+    category = CategoryConfig(
+        category_name="food",
+        display_name="Food Radar",
+        sources=[
+            Source(
+                name="Recall RSS",
+                type="rss",
+                url="https://example.com/feed",
+                country="KR",
+                trust_tier="T1_official",
+                config={"event_model": "recall_status_change"},
+            )
+        ],
+        entities=[],
+    )
+    article = Article(
+        title="Bibigo Dumplings recall from Samyang Foods",
+        link="https://example.com/product-recall",
+        summary="",
+        published=now,
+        source="Recall RSS",
+        category="food",
+        matched_entities={
+            "Product": ["bibigo dumplings"],
+            "ProductCanonical": ["비비고 만두"],
+            "ProductAliasTrace": ["bibigo dumplings -> 비비고 만두"],
+            "Manufacturer": ["samyang foods"],
+            "ManufacturerCanonical": ["삼양식품"],
+            "ManufacturerAliasTrace": ["samyang foods -> 삼양식품"],
+        },
+    )
+
+    report = build_quality_report(category=category, articles=[article], generated_at=now)
+
+    candidates = {row["alias_type"]: row for row in report["alias_candidates"]}
+    assert candidates["product"]["canonical"] == "비비고 만두"
+    assert candidates["product"]["variants"] == ["bibigo dumplings"]
+    assert candidates["manufacturer"]["canonical"] == "삼양식품"
+    assert candidates["manufacturer"]["variants"] == ["samyang foods"]
+    assert report["summary"]["product_alias_candidate_count"] == 1
+    assert report["summary"]["manufacturer_alias_candidate_count"] == 1
+    assert report["summary"]["event_alias_trace_count"] == 1
+
+    event = report["events"][0]
+    assert event["product_canonical"] == ["비비고 만두"]
+    assert event["manufacturer_canonical"] == ["삼양식품"]
+    assert event["alias_traces"] == [
+        "bibigo dumplings -> 비비고 만두",
+        "samyang foods -> 삼양식품",
+    ]
+    assert "비비고-만두" in event["food_event_key"]
+
+
+def test_build_quality_report_extracts_official_recall_product_fields() -> None:
+    now = datetime(2026, 4, 29, 0, 0, tzinfo=UTC)
+    category = CategoryConfig(
+        category_name="food",
+        display_name="Food Radar",
+        sources=[
+            Source(
+                name="식품안전나라 회수판매중지",
+                type="rss",
+                url="https://example.com/recall.xml",
+                country="KR",
+                trust_tier="T1_official",
+                config={
+                    "event_model": "recall_status_change",
+                    "canonical_key_fields": [
+                        "product_name",
+                        "manufacturer_name",
+                        "source_url",
+                    ],
+                    "freshness_sla_days": 3,
+                },
+            )
+        ],
+        entities=[],
+    )
+    article = Article(
+        title="주식회사 국왕푸드",
+        link="/portal/suspensionDetail.do?search_keyword=3000225408",
+        summary="이부자 한우 국밥",
+        published=now,
+        source="식품안전나라 회수판매중지",
+        category="food",
+    )
+
+    report = build_quality_report(category=category, articles=[article], generated_at=now)
+
+    event = report["events"][0]
+    assert event["product_name_raw"] == "이부자 한우 국밥"
+    assert event["manufacturer_name_raw"] == "주식회사 국왕푸드"
+    assert event["product_canonical"] == ["이부자 한우 국밥"]
+    assert event["manufacturer_canonical"] == ["주식회사 국왕푸드"]
+    assert event["recall_extraction_method"] == "official_recall_title_summary"
+    assert "이부자-한우-국밥" in event["food_event_key"]
+    assert "주식회사-국왕푸드" in event["food_event_key"]
+    assert report["summary"]["match_coverage_matched_count"] == 1
+    assert report["summary"]["match_coverage_review_item_count"] == 0
+    assert report["sources"][0]["latest_product_name_raw"] == "이부자 한우 국밥"
+    assert report["sources"][0]["latest_manufacturer_name_raw"] == "주식회사 국왕푸드"
+
+
+def test_build_quality_report_adds_match_coverage_review_items() -> None:
+    now = datetime(2026, 4, 29, 0, 0, tzinfo=UTC)
+    category = CategoryConfig(
+        category_name="food",
+        display_name="Food Radar",
+        sources=[
+            Source(
+                name="식품안전나라 회수판매중지",
+                type="rss",
+                url="https://example.com/recall.xml",
+                country="KR",
+                trust_tier="T1_official",
+                config={
+                    "event_model": "recall_status_change",
+                    "canonical_key_fields": ["product_name", "manufacturer_name"],
+                },
+            ),
+            Source(
+                name="Food Dive",
+                type="rss",
+                url="https://example.com/feed.xml",
+                config={"event_model": "editorial_coverage"},
+            ),
+        ],
+        entities=[],
+    )
+    articles = [
+        Article(
+            title="20260429",
+            link="https://example.com/recall",
+            summary="20260429",
+            published=now,
+            source="식품안전나라 회수판매중지",
+            category="food",
+        ),
+        Article(
+            title="Unclassified market item",
+            link="https://example.com/market",
+            summary="<p>Brand context</p>",
+            published=now,
+            source="Food Dive",
+            category="food",
+        ),
+    ]
+
+    report = build_quality_report(category=category, articles=articles, generated_at=now)
+
+    assert report["summary"]["match_coverage_article_count"] == 2
+    assert report["summary"]["match_coverage_unmatched_count"] == 2
+    assert report["summary"]["match_coverage_review_item_count"] == 2
+    assert report["match_coverage_review_items"][0]["reason"] == (
+        "official_recall_unclassified"
+    )
+    assert report["match_coverage_review_items"][0]["priority"] == "high"
+    assert report["match_coverage_review_items"][1]["reason"] == (
+        "market_or_editorial_unclassified"
+    )
+    assert report["match_coverage_review_items"][1]["summary_excerpt"] == "Brand context"
 
 
 def test_build_quality_report_keeps_notice_date_separate_from_sanction_range() -> None:

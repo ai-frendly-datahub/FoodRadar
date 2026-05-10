@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import html
 import json
 import re
 import unicodedata
@@ -13,7 +14,11 @@ from .models import Article, CategoryConfig, Source
 
 
 COLLECTED_SOURCE_TYPES = {"rss", "reddit"}
-ALIAS_ENTITY_TYPES = {"Brand": "brand", "Manufacturer": "manufacturer"}
+ALIAS_ENTITY_TYPES = {
+    "Product": "product",
+    "Brand": "brand",
+    "Manufacturer": "manufacturer",
+}
 ALIAS_TRACE_PATTERN = re.compile(r"^(?P<variant>.+?)\s*->\s*(?P<canonical>.+)$")
 TRACKED_EVENT_MODEL_ORDER = [
     "recall_status_change",
@@ -22,6 +27,7 @@ TRACKED_EVENT_MODEL_ORDER = [
 ]
 TRACKED_EVENT_MODELS = set(TRACKED_EVENT_MODEL_ORDER)
 COMPACT_DATE_PATTERN = re.compile(r"(?<!\d)(20\d{2})(\d{2})(\d{2})(?!\d)")
+HTML_TAG_PATTERN = re.compile(r"<[^>]+>")
 DATE_ONLY_TEXT_PATTERN = re.compile(
     r"^\s*(?:20\d{2}\d{2}\d{2}|20\d{2}[.\-/년\s]+\d{1,2}[.\-/월\s]+\d{1,2})\s*\.?\s*$"
 )
@@ -66,6 +72,11 @@ def build_quality_report(
         generated_at=generated_at,
     )
     alias_candidates = _build_alias_candidates(articles_list)
+    match_coverage_review_items = _build_match_coverage_review_items(
+        sources=category.sources,
+        articles=articles_list,
+    )
+    sources_by_name = {source.name: source for source in category.sources}
 
     status_counts = Counter(str(row["status"]) for row in source_rows)
     event_counts = Counter(str(row["event_model"]) for row in events)
@@ -75,6 +86,12 @@ def build_quality_report(
         for row in events
         if str(row.get("food_event_key") or "")
     }
+    matched_article_count = sum(
+        1
+        for article in articles_list
+        if _article_has_match_coverage(article, sources_by_name)
+    )
+    article_count = len(articles_list)
     summary = {
         "total_sources": len(source_rows),
         "tracked_sources": sum(1 for row in source_rows if row["tracked"]),
@@ -87,6 +104,22 @@ def build_quality_report(
         "skipped_disabled_sources": status_counts.get("skipped_disabled", 0),
         "collection_error_count": len(errors_list),
         "alias_candidate_count": len(alias_candidates),
+        "product_alias_candidate_count": sum(
+            1 for row in alias_candidates if row.get("alias_type") == "product"
+        ),
+        "brand_alias_candidate_count": sum(
+            1 for row in alias_candidates if row.get("alias_type") == "brand"
+        ),
+        "manufacturer_alias_candidate_count": sum(
+            1 for row in alias_candidates if row.get("alias_type") == "manufacturer"
+        ),
+        "match_coverage_article_count": article_count,
+        "match_coverage_matched_count": matched_article_count,
+        "match_coverage_unmatched_count": article_count - matched_article_count,
+        "match_coverage_rate": round(matched_article_count / article_count * 100, 1)
+        if article_count
+        else 0.0,
+        "match_coverage_review_item_count": len(match_coverage_review_items),
         "fresh_food_events": event_status_counts.get("fresh", 0),
         "stale_food_events": event_status_counts.get("stale", 0),
         "undated_food_events": event_status_counts.get("unknown_event_date", 0),
@@ -124,6 +157,7 @@ def build_quality_report(
         "sources": source_rows,
         "events": events,
         "alias_candidates": alias_candidates,
+        "match_coverage_review_items": match_coverage_review_items,
         "errors": errors_list,
     }
 
@@ -204,6 +238,10 @@ def _build_source_row(
         "latest_sanction_start_date": latest_event_fields.get("sanction_start_date", ""),
         "latest_sanction_end_date": latest_event_fields.get("sanction_end_date", ""),
         "latest_sanction_type": latest_event_fields.get("sanction_type", ""),
+        "latest_product_name_raw": latest_event_fields.get("product_name_raw", ""),
+        "latest_manufacturer_name_raw": latest_event_fields.get(
+            "manufacturer_name_raw", ""
+        ),
         "latest_alias_traces": latest_event_fields.get("alias_traces", []),
         "verification_role": str(source.config.get("verification_role") or "").strip(),
         "merge_policy": str(source.config.get("merge_policy") or "").strip(),
@@ -270,8 +308,10 @@ def _food_event_fields(
     source: Source,
     event_model: str,
 ) -> dict[str, Any]:
+    product_canonical = _list(article.matched_entities.get("ProductCanonical"))
     brand_canonical = _list(article.matched_entities.get("BrandCanonical"))
     manufacturer_canonical = _list(article.matched_entities.get("ManufacturerCanonical"))
+    products = _list(article.matched_entities.get("Product"))
     brands = _list(article.matched_entities.get("Brand"))
     manufacturers = _list(article.matched_entities.get("Manufacturer"))
     food_types = _list(article.matched_entities.get("FoodType"))
@@ -282,6 +322,8 @@ def _food_event_fields(
 
     fields: dict[str, Any] = {
         "country": source.country,
+        "products": products,
+        "product_canonical": product_canonical,
         "brands": brands,
         "brand_canonical": brand_canonical,
         "manufacturers": manufacturers,
@@ -295,6 +337,11 @@ def _food_event_fields(
         "verification_status": _verification_status(source, event_model),
     }
     if event_model == "recall_status_change":
+        _apply_official_recall_fallback_fields(
+            fields=fields,
+            article=article,
+            source=source,
+        )
         fields.update(
             {
                 "notice_date": _notice_date(article, source),
@@ -456,6 +503,42 @@ def _source_sla_days(
     return None
 
 
+def _apply_official_recall_fallback_fields(
+    *,
+    fields: dict[str, Any],
+    article: Article,
+    source: Source,
+) -> None:
+    if not _is_official_recall_product_source(source):
+        return
+
+    product_raw = _clean_text(article.summary)
+    manufacturer_raw = _clean_text(article.title)
+    if product_raw and not _is_date_only_text(product_raw):
+        fields["product_name_raw"] = product_raw
+        if not fields.get("products"):
+            fields["products"] = [product_raw]
+        if not fields.get("product_canonical"):
+            fields["product_canonical"] = [product_raw]
+    if manufacturer_raw and not _is_date_only_text(manufacturer_raw):
+        fields["manufacturer_name_raw"] = manufacturer_raw
+        if not fields.get("manufacturers"):
+            fields["manufacturers"] = [manufacturer_raw]
+        if not fields.get("manufacturer_canonical"):
+            fields["manufacturer_canonical"] = [manufacturer_raw]
+    if product_raw or manufacturer_raw:
+        fields["recall_extraction_method"] = "official_recall_title_summary"
+
+
+def _is_official_recall_product_source(source: Source) -> bool:
+    if _source_event_model(source) != "recall_status_change":
+        return False
+    if not str(source.trust_tier).startswith("T1_"):
+        return False
+    canonical_fields = _string_set(source.config.get("canonical_key_fields"))
+    return {"product_name", "manufacturer_name"}.issubset(canonical_fields)
+
+
 def _tracked_event_models(quality: Mapping[str, object]) -> set[str]:
     outputs = _dict(quality, "quality_outputs")
     output_models = _string_set(outputs.get("tracked_event_models"))
@@ -496,6 +579,9 @@ def _food_event_key(
     producer_part = ",".join(_list(fields.get("manufacturer_canonical"))) or ",".join(
         _list(fields.get("manufacturers"))
     )
+    product_part = ",".join(_list(fields.get("product_canonical"))) or ",".join(
+        _list(fields.get("products"))
+    )
     brand_part = ",".join(_list(fields.get("brand_canonical"))) or ",".join(
         _list(fields.get("brands"))
     )
@@ -509,6 +595,7 @@ def _food_event_key(
         source.name,
         date_part,
         producer_part,
+        product_part,
         brand_part,
         type_part,
         reason_part,
@@ -766,3 +853,111 @@ def _parse_text_datetime(value: str) -> datetime | None:
     if parsed:
         return parsed
     return _extract_first_datetime(value)
+
+
+def _build_match_coverage_review_items(
+    *,
+    sources: list[Source],
+    articles: list[Article],
+) -> list[dict[str, Any]]:
+    sources_by_name = {source.name: source for source in sources}
+    items: list[dict[str, Any]] = []
+    for article in articles:
+        if _article_has_match_coverage(article, sources_by_name):
+            continue
+        source = sources_by_name.get(article.source)
+        event_model = _source_event_model(source) if source else ""
+        reason, priority, action = _match_review_classification(source, event_model)
+        item = {
+            "reason": reason,
+            "priority": priority,
+            "source": article.source,
+            "source_type": source.type if source else "",
+            "trust_tier": source.trust_tier if source else "",
+            "event_model": event_model,
+            "title": article.title,
+            "url": article.link,
+            "published_at": _datetime_iso(article.published),
+            "collected_at": _datetime_iso(article.collected_at),
+            "summary_excerpt": _clean_text(article.summary)[:260],
+            "recommended_action": action,
+        }
+        items.append(item)
+
+    priority_order = {"high": 0, "medium": 1, "low": 2}
+    return sorted(
+        items,
+        key=lambda item: (
+            priority_order.get(str(item.get("priority")), 9),
+            str(item.get("source") or ""),
+            str(item.get("title") or ""),
+        ),
+    )
+
+
+def _article_has_match_coverage(
+    article: Article,
+    sources_by_name: Mapping[str, Source],
+) -> bool:
+    source = sources_by_name.get(article.source)
+    if source and _is_official_recall_product_source(source):
+        return _has_official_recall_product_and_manufacturer(article)
+    return bool(article.matched_entities)
+
+
+def _has_official_recall_product_and_manufacturer(article: Article) -> bool:
+    has_product = bool(
+        _list(article.matched_entities.get("Product"))
+        or _list(article.matched_entities.get("ProductCanonical"))
+        or _valid_recall_field_text(article.summary)
+    )
+    has_manufacturer = bool(
+        _list(article.matched_entities.get("Manufacturer"))
+        or _list(article.matched_entities.get("ManufacturerCanonical"))
+        or _valid_recall_field_text(article.title)
+    )
+    return has_product and has_manufacturer
+
+
+def _valid_recall_field_text(value: str) -> bool:
+    text = _clean_text(value)
+    return bool(text and not _is_date_only_text(text))
+
+
+def _match_review_classification(
+    source: Source | None,
+    event_model: str,
+) -> tuple[str, str, str]:
+    if source and _is_official_recall_product_source(source):
+        return (
+            "official_recall_unclassified",
+            "high",
+            "extract product/manufacturer from official recall title and summary",
+        )
+    if event_model == "complaint_signal":
+        return (
+            "complaint_signal_unclassified",
+            "medium",
+            "review food/safety terms or keep as auxiliary complaint noise",
+        )
+    if event_model == "editorial_coverage":
+        return (
+            "market_or_editorial_unclassified",
+            "medium",
+            "review Product/FoodType/Brand keyword coverage",
+        )
+    return (
+        "unclassified_article",
+        "low",
+        "review whether this item belongs in FoodRadar matching scope",
+    )
+
+
+def _datetime_iso(value: datetime | None) -> str | None:
+    return _as_utc(value).isoformat() if value is not None else None
+
+
+def _clean_text(value: str) -> str:
+    text = html.unescape(value or "")
+    text = HTML_TAG_PATTERN.sub(" ", text)
+    return " ".join(text.split())

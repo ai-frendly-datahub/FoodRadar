@@ -49,9 +49,14 @@ def test_generate_quality_artifacts_uses_latest_stored_checkpoint(
                         "type": "rss",
                         "url": "https://example.com/food.xml",
                         "enabled": True,
+                        "trust_tier": "T1_official",
                         "config": {
                             "event_model": "recall_status_change",
                             "freshness_sla_days": 7,
+                            "canonical_key_fields": [
+                                "product_name",
+                                "manufacturer_name",
+                            ],
                         },
                     }
                 ],
@@ -92,6 +97,14 @@ def test_generate_quality_artifacts_uses_latest_stored_checkpoint(
     assert Path(paths["dated"]).exists()
     assert report["summary"]["tracked_sources"] == 1
     assert report["summary"]["recall_status_change_events"] == 1
+    assert report["summary"]["match_coverage_matched_count"] == 1
+    assert report["summary"]["match_coverage_unmatched_count"] == 0
+    assert report["events"][0]["product_name_raw"] == (
+        "Recall notice published for a packaged noodle product."
+    )
+    assert report["events"][0]["manufacturer_name_raw"] == (
+        "Recall notice for packaged noodles"
+    )
 
     module.PROJECT_ROOT = project_root
     module.main()

@@ -114,6 +114,10 @@ class TestGenerateReport:
                 "stale_sources": 1,
                 "missing_sources": 1,
                 "alias_candidate_count": 1,
+                "product_alias_candidate_count": 1,
+                "manufacturer_alias_candidate_count": 1,
+                "event_alias_trace_count": 1,
+                "match_coverage_review_item_count": 1,
                 "recall_status_change_events": 1,
                 "enforcement_action_events": 0,
                 "complaint_signal_events": 1,
@@ -132,8 +136,10 @@ class TestGenerateReport:
                     "event_status": "stale",
                     "title": "CJ recall notice",
                     "notice_date": "2026-04-09",
+                    "product_canonical": ["비비고 만두"],
+                    "manufacturer_canonical": ["CJ제일제당"],
                     "recall_status": "sales_stop",
-                    "alias_traces": ["CJ CheilJedang -> CJ"],
+                    "alias_traces": ["Bibigo Dumplings -> 비비고 만두"],
                 },
                 {
                     "event_model": "complaint_signal",
@@ -145,10 +151,19 @@ class TestGenerateReport:
             ],
             "alias_candidates": [
                 {
-                    "alias_type": "brand",
-                    "canonical": "CJ",
-                    "normalized": "cj",
-                    "variants": ["cj cheiljedang"],
+                    "alias_type": "product",
+                    "canonical": "비비고 만두",
+                    "normalized": "비비고만두",
+                    "variants": ["Bibigo Dumplings"],
+                }
+            ],
+            "match_coverage_review_items": [
+                {
+                    "reason": "market_or_editorial_unclassified",
+                    "priority": "medium",
+                    "source": "Food Dive",
+                    "title": "Pure Leaf puts mental clarity in focus",
+                    "recommended_action": "review Product/FoodType/Brand keyword coverage",
                 }
             ],
         }
@@ -166,8 +181,13 @@ class TestGenerateReport:
         assert "Recall RSS" in html
         assert "recall_status_change" in html
         assert "sales_stop" in html
+        assert "비비고 만두" in html
+        assert "CJ제일제당" in html
         assert "auxiliary_only" in html
-        assert "cj cheiljedang" in html
+        assert "Bibigo Dumplings" in html
+        assert "coverage review" in html
+        assert "market_or_editorial_unclassified" in html
+        assert "Pure Leaf puts mental clarity" in html
         assert html == "\n".join(line.rstrip() for line in html.splitlines()) + "\n"
         summaries = sorted(
             (tmp_path / "reports").glob(

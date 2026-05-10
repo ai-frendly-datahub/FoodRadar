@@ -74,9 +74,26 @@ def test_real_food_config_exposes_data_quality_overlay() -> None:
     assert data_quality["primary_motion"] == "compliance-risk"
     assert data_quality["weakest_dimension"] == "traceability"
     assert data_quality["quality_outputs"]["freshness_report"] == "reports/food_quality.json"
+    assert "Product" in data_quality["quality_outputs"]["alias_entities"]
     assert "recall_status_change" in data_quality["event_models"]
     assert data_quality["canonical_keys"]["product"]["fields"]
+    assert "Bibigo Dumplings" in data_quality["alias_map"]["Product"]["비비고 만두"]
     assert "CJ CheilJedang" in data_quality["alias_map"]["Brand"]["CJ"]
+    assert "Samyang Foods" in data_quality["alias_map"]["Manufacturer"]["삼양식품"]
+
+    config = load_category_config("food")
+    entities = {entity.name: set(entity.keywords) for entity in config.entities}
+    assert {
+        "tea",
+        "tequila",
+        "국밥",
+        "ganjang gejang",
+        "guanciale",
+        "pumpkin",
+        "burger",
+    } <= entities["FoodType"]
+    assert {"Sazerac", "Pure Leaf", "PepsiCo", "Ferrara"} <= entities["Brand"]
+    assert {"mold", "undeclared", "air bubbles"} <= entities["SafetyIssue"]
 
     backlog = metadata["source_backlog"]
     assert isinstance(backlog, dict)

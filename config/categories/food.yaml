@@ -8,6 +8,7 @@ data_quality:
     freshness_report: reports/food_quality.json
     dated_freshness_report_pattern: reports/food_YYYYMMDD_quality.json
     alias_entities:
+    - Product
     - Brand
     - Manufacturer
     tracked_event_models:
@@ -15,6 +16,31 @@ data_quality:
     - enforcement_action
     - complaint_signal
   alias_map:
+    Product:
+      햇반:
+      - 햇반
+      - Hetbahn
+      - CJ Hetbahn
+      비비고 만두:
+      - 비비고 만두
+      - Bibigo Dumplings
+      - Bibigo Mandu
+      신라면:
+      - 신라면
+      - Shin Ramyun
+      - Shin Ramen
+      새우깡:
+      - 새우깡
+      - Nongshim Shrimp Crackers
+      - Saewookkang
+      초코파이:
+      - 초코파이
+      - Choco Pie
+      - Orion Choco Pie
+      불닭볶음면:
+      - 불닭볶음면
+      - Buldak Bokkeummyeon
+      - Buldak Ramen
     Brand:
       CJ:
       - CJ
@@ -49,6 +75,35 @@ data_quality:
       - 농심
       - 주식회사 농심
       - Nongshim
+      삼양식품:
+      - 삼양식품
+      - Samyang Foods
+      - 삼양
+      풀무원:
+      - 풀무원
+      - 풀무원식품
+      - Pulmuone
+      동원F&B:
+      - 동원F&B
+      - 동원에프앤비
+      - Dongwon F&B
+      대상:
+      - 대상
+      - 대상주식회사
+      - Daesang
+      샘표식품:
+      - 샘표식품
+      - 샘표
+      - Sempio
+      오리온:
+      - 오리온
+      - Orion
+      하림:
+      - 하림
+      - Harim
+      매일유업:
+      - 매일유업
+      - Maeil Dairies
   event_models:
     recall_status_change:
       fields:
@@ -437,6 +492,7 @@ entities:
   - chicken
   - bacon
   - ham
+  - guanciale
   - sausage
   - sausages
   - salmon
@@ -455,24 +511,48 @@ entities:
   - tomatoes
   - avocado
   - coffee
+  - tea
   - yogurt
   - chocolate
+  - cocoa
   - peanut
   - peanuts
+  - pumpkin
+  - butter
   - egg
   - eggs
   - rice
   - ramen
+  - ramyun
   - snack
   - snacks
   - meal
   - grocery
   - groceries
   - whiskey
+  - burger
+  - burgers
+  - tequila
+  - spirits
+  - drink
+  - drinks
   - beverage
   - beverages
   - fruit
   - fruits
+  - apple
+  - apples
+  - orange
+  - oranges
+  - milk
+  - tuna
+  - zucchini
+  - kale
+  - walnut
+  - walnuts
+  - bonbon
+  - bonbons
+  - candy
   - pasta
   - noodle
   - noodles
@@ -488,6 +568,21 @@ entities:
   - jjigae
   - kimchi
   - 김치
+  - 국밥
+  - 한우
+  - 간장게장
+  - ganjang gejang
+  - gejang
+  - gukbap
+  - sushi
+  - jjukkumi
+  - octopus
+  - tteokbokki
+  - bibimbap
+  - kalbi
+  - miyeokguk
+  - juk
+  - gochugaru
 - name: Brand
   display_name: 브랜드
   keywords:
@@ -511,6 +606,41 @@ entities:
   - 샘표
   - 오리온
   - 크라운
+  - Sazerac
+  - 818 Tequila
+  - Pure Leaf
+  - PepsiCo
+  - Unilever
+  - Lipton
+  - Sara Lee
+  - Bimbo
+  - Nestlé
+  - Nestle
+  - Nerds
+  - Ferrara
+  - Mars
+  - Ofi
+  - Mondelēz
+  - Mondelez
+- name: Product
+  display_name: 제품
+  keywords:
+  - 햇반
+  - 비비고 만두
+  - 신라면
+  - 새우깡
+  - 초코파이
+  - 불닭볶음면
+  - Hetbahn
+  - Bibigo Dumplings
+  - Bibigo Mandu
+  - Shin Ramyun
+  - Shin Ramen
+  - Nongshim Shrimp Crackers
+  - Saewookkang
+  - Orion Choco Pie
+  - Buldak Bokkeummyeon
+  - Buldak Ramen
 - name: SafetyIssue
   display_name: 안전 이슈
   keywords:
@@ -552,6 +682,22 @@ entities:
   - plague
   - FDA
   - withdrawal
+  - mold
+  - moldy
+  - expired
+  - expiry
+  - gone bad
+  - safe to eat
+  - is it safe
+  - leaked
+  - compromised
+  - melted
+  - air bubbles
+  - undeclared
+  - allergy
+  - sensitivity
+  - cloudiness
+  - bitter
   - 위생
   - 점검
   - 수거
@@ -710,8 +856,11 @@ entities:
   - outbreak
   - outbreaks
   - cooking
+  - cook
   - recipe
   - recipes
+  - dinner
+  - supper
   - inspection
   - compliance
   - regulation
@@ -747,3 +896,10 @@ entities:
   - 원산지
   - 이력
   - 추적
+  - brand
+  - manufacturer
+  - plant
+  - facility
+  - factory
+  - investment
+  - dealmaking

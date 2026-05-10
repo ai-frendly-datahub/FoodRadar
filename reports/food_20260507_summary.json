@@ -1,0 +1,175 @@
+{
+  "date": "2026-05-07",
+  "category": "food",
+  "article_count": 8,
+  "source_count": 8,
+  "matched_count": 8,
+  "top_entities": [
+    {
+      "name": "FoodGeneral",
+      "count": 24
+    },
+    {
+      "name": "SafetyIssue",
+      "count": 7
+    },
+    {
+      "name": "FoodType",
+      "count": 6
+    },
+    {
+      "name": "Regulation",
+      "count": 2
+    }
+  ],
+  "sources": {
+    "식품안전나라 행정처분": 1,
+    "r/Cooking": 1,
+    "r/foodsafety": 1,
+    "r/KoreanFood": 1,
+    "Food Safety News": 1,
+    "식품안전 국내뉴스": 1,
+    "Food Dive": 1,
+    "r/nutrition": 1
+  },
+  "generated_at": "2026-05-07T09:56:06.016772+09:00",
+  "articles": [
+    {
+      "event_model_payload": {
+        "source_url": "/portal/administMeasureDetail.do?seq=4720043"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "White Pepper",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1t5v7wl/white_pepper/",
+        "published_at": "2026-05-07T00:40:56+00:00",
+        "summary": "[r/Cooking] by u/warpweftwelted | 1 points | 3 comments\n\nIs white pepper spicy as hell and I just don't know it?\n\nI followed Kenneth Temple's Jambalaya recipe on youtube twice. The first was to the exact measurements except cutting back on the cayenne powder because myself and especially my wife and 2 year old can't handle high heat. It still blew even me out of the water.\n\nNext time I cooked it with almost no cayenne at all and it was still spicy as hell. My suspect is the white pepper or I'm more wimpy than I thought.\n\nWhat are yalls thoughts? Side note this guy is so chill to listen to for cooking. Link for reference to reicpe: [https://www.youtube.com/watch?v=O8TTbedtCVk&t=18s](https://www.youtube.com/watch?v=O8TTbedtCVk&t=18s)"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://www.reddit.com/r/foodsafety/comments/1t5v10q/can_i_still_take_medicine_from_packets_that_have/"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/KoreanFood",
+        "headline": "Took a train to Busan, had to grab some fresh seafood!",
+        "source_url": "https://www.reddit.com/r/KoreanFood/comments/1t5ujiu/took_a_train_to_busan_had_to_grab_some_fresh/",
+        "published_at": "2026-05-07T00:10:57+00:00",
+        "summary": "[r/KoreanFood] by u/Minute_Register3435 | 27 points | 1 comments\n\nssam in the top right, clam soup, & oysters"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "'Brocoli Calabrese' seeds recalled because of E. coli",
+        "source_url": "https://www.foodsafetynews.com/2026/05/brocoli-calabrese-seeds-recalled-because-of-e-coli/",
+        "published_at": "2026-05-06T15:24:40+00:00",
+        "summary": "<p>Germina brand \"Brocoli Calabrese\" seeds are being recalled in Canada because of contamination with pathogenic E. Coli.</p><p>The recall was triggered by a recall in another country, according to the Canadian Food Inspection Agency. No illnesses have been reported in Canada in relation to the recalled product.</p><p>The</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식품안전 국내뉴스",
+        "headline": "「축산물 또는 동물성 식품의 수입허용국가(지역) 및 수입위생요건」 일부개정고시(안) 행정예고 (식품의약품안전처 공고 제2026-225호)",
+        "source_url": "/portal/board/boardDetail.do?bbs_no=bbs082&ntctxt_no=1110689&menu_no=2859",
+        "published_at": "2026-05-06T15:00:00+00:00",
+        "summary": "[식품안전] 「축산물 또는 동물성 식품의 수입허용국가(지역) 및 수입위생요건」 일부개정고시(안) 행정예고 (식품의약품안전처 공고 제2026-225호)"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "Babybel parent buys Brainiac snacks to expand better-for-you portfolio",
+        "source_url": "https://www.fooddive.com/news/babybel-parent-buys-brainiac-snacks-to-expand-better-for-you-portfolio/819472/",
+        "published_at": "2026-05-06T12:00:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/VQJphhGXyKhfpcl_452bmvZPhQuiCowGPBczAcQrmqw/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9OZXVyby5qcGc=.webp\" /></div></figure><p>The acquisition comes as the GoGo squeeZ maker looks to expand its U.S. presence and become a leader in functional foods.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/nutrition",
+        "headline": "Are peas healthy",
+        "source_url": "https://www.reddit.com/r/nutrition/comments/1t56pi0/are_peas_healthy/",
+        "published_at": "2026-05-06T08:21:54+00:00",
+        "summary": "[r/nutrition] by u/rose2830 | 53 points | 77 comments\n\nI don’t really see them hyped up"
+      }
+    }
+  ],
+  "ontology": {
+    "repo": "FoodRadar",
+    "category": "food",
+    "ontology_version": "0.1.0",
+    "event_model_ids": [
+      "food.complaint_signal",
+      "food.editorial_coverage",
+      "food.enforcement_action",
+      "food.official_notice",
+      "food.recall_status_change"
+    ],
+    "event_model_mappings": {
+      "recall_status_change": "food.recall_status_change",
+      "enforcement_action": "food.enforcement_action",
+      "complaint_signal": "food.complaint_signal",
+      "editorial_coverage": "food.editorial_coverage",
+      "official_notice": "food.official_notice"
+    },
+    "entity_type_hints": [
+      "food.product",
+      "organization.company"
+    ],
+    "source_role_ids": [
+      "community_signal",
+      "context_only",
+      "primary_evidence"
+    ],
+    "source_role_mappings": {
+      "식품안전나라 회수판매중지": "primary_evidence",
+      "식품안전나라 행정처분": "primary_evidence",
+      "식약처 보도자료": "context_only",
+      "Food Safety News": "context_only",
+      "r/foodsafety": "community_signal"
+    },
+    "evidence_policy_ids": [
+      "traceable_url_required",
+      "official_confirmation_required",
+      "non_authoritative_context_only"
+    ]
+  },
+  "quality_summary": {
+    "total_sources": 12,
+    "tracked_sources": 3,
+    "fresh_sources": 3,
+    "stale_sources": 0,
+    "missing_sources": 0,
+    "unknown_event_date_sources": 0,
+    "not_tracked_sources": 8,
+    "catalog_only_sources": 0,
+    "skipped_disabled_sources": 1,
+    "collection_error_count": 0,
+    "alias_candidate_count": 0,
+    "product_alias_candidate_count": 0,
+    "brand_alias_candidate_count": 0,
+    "manufacturer_alias_candidate_count": 0,
+    "match_coverage_article_count": 18,
+    "match_coverage_matched_count": 18,
+    "match_coverage_unmatched_count": 0,
+    "match_coverage_rate": 100.0,
+    "match_coverage_review_item_count": 0,
+    "fresh_food_events": 3,
+    "stale_food_events": 3,
+    "undated_food_events": 0,
+    "unique_food_event_key_count": 6,
+    "recall_events_with_notice_date_count": 1,
+    "recall_events_with_status_count": 1,
+    "event_alias_trace_count": 0,
+    "complaint_auxiliary_only_events": 3,
+    "official_evidence_events": 3,
+    "recall_status_change_events": 1,
+    "enforcement_action_events": 2,
+    "complaint_signal_events": 3
+  }
+}
