@@ -1,0 +1,240 @@
+{
+  "category": "food",
+  "generated_at": "2026-04-13T15:20:47.277754+00:00",
+  "summary": {
+    "total_sources": 12,
+    "tracked_sources": 5,
+    "fresh_sources": 3,
+    "stale_sources": 1,
+    "missing_sources": 2,
+    "unknown_event_date_sources": 0,
+    "not_tracked_sources": 6,
+    "collection_error_count": 0,
+    "alias_candidate_count": 3
+  },
+  "sources": [
+    {
+      "source": "식품안전나라 회수판매중지",
+      "source_type": "rss",
+      "enabled": true,
+      "event_model": "recall_status_change",
+      "freshness_sla_days": 1,
+      "status": "stale",
+      "article_count": 1,
+      "latest_event_at": "2026-04-09T15:00:00+00:00",
+      "latest_collected_at": "2026-04-13T15:20:46.227495+00:00",
+      "age_days": 4.01,
+      "latest_title": "(주)파시코",
+      "latest_url": "/portal/suspensionDetail.do?search_keyword=3000224624",
+      "errors": []
+    },
+    {
+      "source": "식품안전나라 행정처분",
+      "source_type": "rss",
+      "enabled": true,
+      "event_model": "enforcement_action",
+      "freshness_sla_days": 2,
+      "status": "fresh",
+      "article_count": 22,
+      "latest_event_at": "2026-04-13T15:20:46.227495+00:00",
+      "latest_collected_at": "2026-04-13T15:20:46.227495+00:00",
+      "age_days": 0.0,
+      "latest_title": "인도산 수입식품(제품명: 샤프란(MEHR SAFFRON 1G, 유형: 천연향신료)을 수입신고하고 판매를 목적으로 인터넷 쇼핑몰(쿠팡)에 게시하여, 질병의 예방‧치료에 효능이 있는 것으로 인식할 우려가 있는 광고를 한 사실이 있음.",
+      "latest_url": "/portal/administMeasureDetail.do?seq=4708150",
+      "errors": []
+    },
+    {
+      "source": "식약처 보도자료",
+      "source_type": "rss",
+      "enabled": true,
+      "event_model": "official_notice",
+      "freshness_sla_days": 2,
+      "status": "fresh",
+      "article_count": 3,
+      "latest_event_at": "2026-04-12T15:00:00+00:00",
+      "latest_collected_at": "2026-04-13T15:20:46.227495+00:00",
+      "age_days": 1.01,
+      "latest_title": "세계보건기구, 대한민국 식품안전관리 체계 '세계 최고 수준·만점' 인정",
+      "latest_url": "/portal/board/boardDetail.do?bbs_no=bbs080&ntctxt_no=49857&menu_no=2857",
+      "errors": []
+    },
+    {
+      "source": "식품안전 국내뉴스",
+      "source_type": "rss",
+      "enabled": true,
+      "event_model": "",
+      "freshness_sla_days": null,
+      "status": "not_tracked",
+      "article_count": 5,
+      "latest_event_at": "2026-04-12T15:00:00+00:00",
+      "latest_collected_at": "2026-04-13T15:20:46.227495+00:00",
+      "age_days": 1.01,
+      "latest_title": "충남 논산 육용오리 농장 출하 전 예찰검사에서 고병원성 조류인플루엔자 확진, 발생 지역 및 계열사 관리 강화를 통해 추가 발생 방지에 총력",
+      "latest_url": "/portal/board/boardDetail.do?bbs_no=bbs082&ntctxt_no=1110352&menu_no=2859",
+      "errors": []
+    },
+    {
+      "source": "식품안전 해외뉴스",
+      "source_type": "rss",
+      "enabled": true,
+      "event_model": "",
+      "freshness_sla_days": null,
+      "status": "missing",
+      "article_count": 0,
+      "latest_event_at": null,
+      "latest_collected_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "errors": []
+    },
+    {
+      "source": "Food Safety News",
+      "source_type": "rss",
+      "enabled": true,
+      "event_model": "",
+      "freshness_sla_days": null,
+      "status": "not_tracked",
+      "article_count": 17,
+      "latest_event_at": "2026-04-12T19:05:56+00:00",
+      "latest_collected_at": "2026-04-13T15:20:46.227495+00:00",
+      "age_days": 0.84,
+      "latest_title": "Colombia reported more than 650 outbreaks in 2025",
+      "latest_url": "https://www.foodsafetynews.com/2026/04/colombia-reported-more-than-650-outbreaks-in-2025/",
+      "errors": []
+    },
+    {
+      "source": "Food Dive",
+      "source_type": "rss",
+      "enabled": true,
+      "event_model": "",
+      "freshness_sla_days": null,
+      "status": "not_tracked",
+      "article_count": 8,
+      "latest_event_at": "2026-04-13T00:00:00+00:00",
+      "latest_collected_at": "2026-04-13T15:20:46.227495+00:00",
+      "age_days": 0.64,
+      "latest_title": "Why manual work persists in food and beverage and how connected data eliminates it",
+      "latest_url": "https://www.fooddive.com/spons/why-manual-work-persists-in-food-and-beverage-and-how-connected-data-elimin/816918/",
+      "errors": []
+    },
+    {
+      "source": "r/foodsafety",
+      "source_type": "reddit",
+      "enabled": true,
+      "event_model": "complaint_signal",
+      "freshness_sla_days": 3,
+      "status": "fresh",
+      "article_count": 6,
+      "latest_event_at": "2026-04-13T06:33:09+00:00",
+      "latest_collected_at": "2026-04-13T15:20:46.227495+00:00",
+      "age_days": 0.37,
+      "latest_title": "found in canned iced coffee",
+      "latest_url": "https://www.reddit.com/r/foodsafety/comments/1sk2tsa/found_in_canned_iced_coffee/",
+      "errors": []
+    },
+    {
+      "source": "r/Cooking",
+      "source_type": "reddit",
+      "enabled": true,
+      "event_model": "",
+      "freshness_sla_days": null,
+      "status": "not_tracked",
+      "article_count": 10,
+      "latest_event_at": "2026-04-13T09:32:40+00:00",
+      "latest_collected_at": "2026-04-13T15:20:46.227495+00:00",
+      "age_days": 0.24,
+      "latest_title": "This might be a long shot but it would be helpful",
+      "latest_url": "https://www.reddit.com/r/Cooking/comments/1sk5ula/this_might_be_a_long_shot_but_it_would_be_helpful/",
+      "errors": []
+    },
+    {
+      "source": "r/nutrition",
+      "source_type": "reddit",
+      "enabled": true,
+      "event_model": "",
+      "freshness_sla_days": null,
+      "status": "not_tracked",
+      "article_count": 3,
+      "latest_event_at": "2026-04-12T19:45:36+00:00",
+      "latest_collected_at": "2026-04-13T15:20:46.227495+00:00",
+      "age_days": 0.82,
+      "latest_title": "Is high fructose corn syrup really any worse than corn syrup?",
+      "latest_url": "https://www.reddit.com/r/nutrition/comments/1sjogrw/is_high_fructose_corn_syrup_really_any_worse_than/",
+      "errors": []
+    },
+    {
+      "source": "r/KoreanFood",
+      "source_type": "reddit",
+      "enabled": true,
+      "event_model": "",
+      "freshness_sla_days": null,
+      "status": "not_tracked",
+      "article_count": 9,
+      "latest_event_at": "2026-04-13T07:29:20+00:00",
+      "latest_collected_at": "2026-04-13T15:20:46.227495+00:00",
+      "age_days": 0.33,
+      "latest_title": "Korean ramen is amazing",
+      "latest_url": "https://www.reddit.com/r/KoreanFood/comments/1sk3shy/korean_ramen_is_amazing/",
+      "errors": []
+    },
+    {
+      "source": "r/ProductRecalls",
+      "source_type": "reddit",
+      "enabled": true,
+      "event_model": "complaint_signal",
+      "freshness_sla_days": 3,
+      "status": "missing",
+      "article_count": 0,
+      "latest_event_at": null,
+      "latest_collected_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "errors": []
+    }
+  ],
+  "alias_candidates": [
+    {
+      "alias_type": "brand",
+      "canonical": "",
+      "normalized": "대상",
+      "variants": [
+        "대상"
+      ],
+      "count": 5,
+      "example_urls": [
+        "/portal/administMeasureDetail.do?seq=4716201",
+        "http://www.foodnews.co.kr/news/articleView.html?idxno=118034",
+        "http://www.foodnews.co.kr/news/articleView.html?idxno=118035"
+      ]
+    },
+    {
+      "alias_type": "brand",
+      "canonical": "",
+      "normalized": "롯데",
+      "variants": [
+        "롯데"
+      ],
+      "count": 2,
+      "example_urls": [
+        "http://www.foodnews.co.kr/news/articleView.html?idxno=118037",
+        "http://www.thinkfood.co.kr/news/articleView.html?idxno=105047"
+      ]
+    },
+    {
+      "alias_type": "manufacturer",
+      "canonical": "",
+      "normalized": "제조업소",
+      "variants": [
+        "제조업소"
+      ],
+      "count": 2,
+      "example_urls": [
+        "/portal/administMeasureDetail.do?seq=4708360",
+        "/portal/administMeasureDetail.do?seq=4715586"
+      ]
+    }
+  ],
+  "errors": []
+}

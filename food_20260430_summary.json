@@ -1,46 +1,290 @@
 {
   "date": "2026-04-30",
   "category": "food",
-  "article_count": 94,
-  "source_count": 6,
-  "matched_count": 75,
+  "article_count": 13,
+  "source_count": 8,
+  "matched_count": 13,
   "top_entities": [
     {
       "name": "FoodGeneral",
-      "count": 232
-    },
-    {
-      "name": "SafetyIssue",
-      "count": 133
-    },
-    {
-      "name": "Regulation",
-      "count": 31
+      "count": 18
     },
     {
       "name": "FoodType",
-      "count": 28
+      "count": 13
+    },
+    {
+      "name": "SafetyIssue",
+      "count": 12
     },
     {
       "name": "Manufacturer",
-      "count": 5
-    },
-    {
-      "name": "RecallReason",
-      "count": 4
+      "count": 1
     },
     {
       "name": "Brand",
-      "count": 2
+      "count": 1
     }
   ],
   "sources": {
-    "식품안전나라 행정처분": 24,
-    "식약처 보도자료": 18,
-    "식품안전 국내뉴스": 26,
-    "Food Dive": 15,
-    "식품안전나라 회수판매중지": 3,
-    "Food Safety News": 8
+    "식품안전나라 행정처분": 1,
+    "r/KoreanFood": 2,
+    "r/Cooking": 3,
+    "r/foodsafety": 2,
+    "r/nutrition": 1,
+    "식약처 보도자료": 2,
+    "식품안전 국내뉴스": 1,
+    "Food Dive": 1
   },
-  "generated_at": "2026-04-30T14:51:19.785131+09:00"
+  "generated_at": "2026-04-30T11:24:26.068072+09:00",
+  "articles": [
+    {
+      "event_model_payload": {
+        "source_url": "/portal/administMeasureDetail.do?seq=4719400"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/KoreanFood",
+        "headline": "Dinner with Family",
+        "source_url": "https://www.reddit.com/r/KoreanFood/comments/1szj4jg/dinner_with_family/",
+        "published_at": "2026-04-30T02:21:27+00:00",
+        "summary": "[r/KoreanFood] by u/Puzzleheaded_Act_131 | 1 points | 0 comments\n\nFamily came in from out of state. Dubu-jorim, Gossari, Jangajji, Pork Ribs from Gamja-tang."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Seeking advice: “Sea Scallop Pieces”",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1szj2c4/seeking_advice_sea_scallop_pieces/",
+        "published_at": "2026-04-30T02:18:37+00:00",
+        "summary": "[r/Cooking] by u/freddyisarat | 1 points | 2 comments\n\nI bought a bag of frozen “sea scallops” planning to sear them in my cast iron, then serve over something like a sweet corn salad/relish/puree or over pasta (most likely, a combination of both).\n\nWell I just went to move 8 oz from my freezer to the refrigerator to thaw overnight and was taken aback…turns out I bought “sea scallop pieces” NOT whole scallops, (I should’ve read the package more carefully, smh). I’m wondering if these would still be good to use how I originally planned? \n\nThe pieces are different sizes, and also, most look very flat?? Should I bake/broil them instead? (in like melted butter + lemon) \n\nShould I still sear them, but for a shorter time on each side? Lastly, once they do thaw, will it be obvious which pieces contain side-muscles that I need to remove? (as stated in the package’s instructions).  \n\nThanks in advance for any advice! \n\nI’ve been a pescatarian (with occasional chicken) for two decades but Im still “green around the gills” (pun intended lol) regarding shellfish, which I only recently started eating and am now attempting to prepare at home."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://www.reddit.com/r/foodsafety/comments/1sziu4l/ate_cream_cheese_35_weeks_after_panicking/"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Ideas for kmichi brine?",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1szikdv/ideas_for_kmichi_brine/",
+        "published_at": "2026-04-30T01:56:28+00:00",
+        "summary": "[r/Cooking] by u/MoultingRoach | 2 points | 0 comments\n\nI'm about to finish a jar of kimchi, but once I finish all the cabbage a d radish, I'll have a good bit of the spiced brine left behind. Any suggestions on how to use it? I really don't want to waste it."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/KoreanFood",
+        "headline": "Korean Salt Bread is one of the best baked goods I've ever eaten",
+        "source_url": "https://www.reddit.com/r/KoreanFood/comments/1szicul/korean_salt_bread_is_one_of_the_best_baked_goods/",
+        "published_at": "2026-04-30T01:47:03+00:00",
+        "summary": "[r/KoreanFood] by u/_GrimFandango | 8 points | 0 comments\n\nI went to this bakery in Seoul, Artist Bakery, and oh man it's SO GOOD.\n\nI didn't expect it to be this good but I ate 3 of those things in one sitting! I don't know how they make it or what they put in it but I've never had bread this good! It's probably one of the best things I ate during my trip.\n\nI got the truffle butter, squid ink, and plain.\n\n\n\n📍Artist Bakery\n\n167 Anguk-dong, Jongno District, Seoul, South Korea"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Pancakes",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1szhjoc/pancakes/",
+        "published_at": "2026-04-30T01:10:55+00:00",
+        "summary": "[r/Cooking] by u/Plenty_Month_2897 | 17 points | 44 comments\n\nSo im out of money and food and all i have is an assortment a different seasonings, all purpose flour, bread crumbs, chicken broth, butter and boilded water. I have a microwave, toaster oven, and a waffle maker.  No stove top or grill. Tap water is unsafe to consume but i have bottle water and boiled water. Havent ate for a two days. In a finacial situation dont have access to money until the 5th of may. \n\nThe only thing i was wondering , all though not the healthiest. I was wondering if it was possible to make pancake mix with just boiled water and all purpose flour. And make waffles. Or waffle shapped toast with seasonings for flavor idk. My brains not working to well and just looking for a way to get something in my stomach."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://www.reddit.com/r/foodsafety/comments/1szhcuk/red_dots_on_hard_boiled_egg/"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/nutrition",
+        "headline": "Track both fitness and nutrition",
+        "source_url": "https://www.reddit.com/r/nutrition/comments/1szdo3g/track_both_fitness_and_nutrition/",
+        "published_at": "2026-04-29T22:23:36+00:00",
+        "summary": "[r/nutrition] by u/Point_Jolly | 6 points | 10 comments\n\nI'm moving from a pixel watch 2 due to the terrible battery to Garmin instinct 3 but Garmin connect doesn't sync to any food apps I've always used MyFitnessPal but I've now been looking at fatsecret but it would be nice to have a central app to track food and fitness in one place any suggestions?"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식약처 보도자료",
+        "headline": "기후.환경 변화에 대응하기 위한 ‘식품위해예측센터’ 지정",
+        "source_url": "/portal/board/boardDetail.do?bbs_no=bbs080&ntctxt_no=49937&menu_no=2857",
+        "published_at": "2026-04-29T15:00:00+00:00",
+        "summary": "<p>기후.환경 변화에 대응하기 위한 ‘식품위해예측센터’ 지정</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식약처 보도자료",
+        "headline": "5월 가정의 달 대비 건강기능식품 제조·판매업체 및 온라인 부당광고 점검 결과",
+        "source_url": "/portal/board/boardDetail.do?bbs_no=bbs080&ntctxt_no=49936&menu_no=2857",
+        "published_at": "2026-04-29T15:00:00+00:00",
+        "summary": "<p>5월 가정의 달 대비 건강기능식품 제조·판매업체 및 온라인 부당광고 점검 결과</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식품안전 국내뉴스",
+        "headline": "[보도참고] 세균수 초과 검출된 '당뇨환자용 영양조제식품' 회수 조치",
+        "source_url": "/portal/board/boardDetail.do?bbs_no=bbs082&ntctxt_no=1110625&menu_no=2859",
+        "published_at": "2026-04-29T15:00:00+00:00",
+        "summary": "[식품안전] [보도참고] 세균수 초과 검출된 '당뇨환자용 영양조제식품' 회수 조치"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "Mondelēz CEO says Iran war could further weigh on consumer confidence",
+        "source_url": "https://www.fooddive.com/news/mondelez-ceo-says-iran-war-could-further-weigh-on-consumer-confidence/818845/",
+        "published_at": "2026-04-29T11:00:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/RuNKsU7Ksmgx61AOvbCELuHrqdo77v8q8QPsuiplSbg/g:nowe:0:0/c:2016:1138/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9JTUdfMDYwM18xLmpwZw==.webp\" /></div></figure><p>Dirk Van de Put said shoppers are already “very concerned” about affordability, the economy and job security.</p>"
+      }
+    }
+  ],
+  "ontology": {
+    "repo": "FoodRadar",
+    "category": "food",
+    "ontology_version": "0.1.0",
+    "event_model_ids": [
+      "food.complaint_signal",
+      "food.editorial_coverage",
+      "food.enforcement_action",
+      "food.official_notice",
+      "food.recall_status_change"
+    ],
+    "event_model_mappings": {
+      "recall_status_change": "food.recall_status_change",
+      "enforcement_action": "food.enforcement_action",
+      "complaint_signal": "food.complaint_signal",
+      "editorial_coverage": "food.editorial_coverage",
+      "official_notice": "food.official_notice"
+    },
+    "entity_type_hints": [
+      "food.product",
+      "organization.company"
+    ],
+    "source_role_ids": [
+      "community_signal",
+      "context_only",
+      "primary_evidence"
+    ],
+    "source_role_mappings": {
+      "식품안전나라 회수판매중지": "primary_evidence",
+      "식품안전나라 행정처분": "primary_evidence",
+      "식약처 보도자료": "context_only",
+      "Food Safety News": "context_only",
+      "r/foodsafety": "community_signal"
+    },
+    "evidence_policy_ids": [
+      "traceable_url_required",
+      "official_confirmation_required",
+      "non_authoritative_context_only"
+    ]
+  },
+  "quality_summary": {
+    "total_sources": 12,
+    "tracked_sources": 3,
+    "fresh_sources": 3,
+    "stale_sources": 0,
+    "missing_sources": 0,
+    "unknown_event_date_sources": 0,
+    "not_tracked_sources": 8,
+    "catalog_only_sources": 0,
+    "skipped_disabled_sources": 1,
+    "collection_error_count": 0,
+    "alias_candidate_count": 4,
+    "product_alias_candidate_count": 0,
+    "brand_alias_candidate_count": 3,
+    "manufacturer_alias_candidate_count": 1,
+    "match_coverage_article_count": 185,
+    "match_coverage_matched_count": 184,
+    "match_coverage_unmatched_count": 1,
+    "match_coverage_rate": 99.5,
+    "match_coverage_review_item_count": 1,
+    "fresh_food_events": 8,
+    "stale_food_events": 57,
+    "undated_food_events": 0,
+    "unique_food_event_key_count": 65,
+    "recall_events_with_notice_date_count": 2,
+    "recall_events_with_status_count": 2,
+    "event_alias_trace_count": 0,
+    "complaint_auxiliary_only_events": 41,
+    "official_evidence_events": 24,
+    "recall_status_change_events": 2,
+    "enforcement_action_events": 22,
+    "complaint_signal_events": 41
+  },
+  "quality_alias_candidates": [
+    {
+      "alias_type": "brand",
+      "canonical": "",
+      "normalized": "nestl",
+      "variants": [
+        "nestlé"
+      ],
+      "count": 2,
+      "example_urls": [
+        "https://www.fooddive.com/news/how-nestles-us-cmo-keeps-tabs-on-changing-consumer-tastes/818182/",
+        "https://www.fooddive.com/news/nestle-sells-blue-bottle-coffee-to-Centurium-Capital/818334/"
+      ]
+    },
+    {
+      "alias_type": "brand",
+      "canonical": "",
+      "normalized": "pepsico",
+      "variants": [
+        "pepsico"
+      ],
+      "count": 2,
+      "example_urls": [
+        "https://www.fooddive.com/news/lays-world-cup-captain-morgan-pina-coladas-taco-tea/818412/",
+        "https://www.fooddive.com/news/pure-leaf-mental-focus-functional-beverage-sparkling-pepsi-lipton-partnership/818663/"
+      ]
+    },
+    {
+      "alias_type": "brand",
+      "canonical": "롯데",
+      "normalized": "롯데",
+      "variants": [
+        "lotte"
+      ],
+      "count": 1,
+      "example_urls": [
+        "https://www.reddit.com/r/KoreanFood/comments/1su482g/found_another_samyetang/"
+      ]
+    },
+    {
+      "alias_type": "manufacturer",
+      "canonical": "",
+      "normalized": "제조업소",
+      "variants": [
+        "제조업소"
+      ],
+      "count": 4,
+      "example_urls": [
+        "/portal/administMeasureDetail.do?seq=4716603",
+        "/portal/administMeasureDetail.do?seq=4717092",
+        "/portal/administMeasureDetail.do?seq=4719400"
+      ]
+    }
+  ],
+  "quality_match_coverage_review_items": [
+    {
+      "reason": "market_or_editorial_unclassified",
+      "priority": "medium",
+      "source": "r/KoreanFood",
+      "source_type": "reddit",
+      "trust_tier": "T4_community",
+      "event_model": "editorial_coverage",
+      "title": "Best combo !!!!!",
+      "url": "https://www.reddit.com/r/KoreanFood/comments/1stz52s/best_combo/",
+      "published_at": "2026-04-23T23:36:24+00:00",
+      "collected_at": "2026-04-24T14:22:57.451355+00:00",
+      "summary_excerpt": "[r/KoreanFood] by u/lovegabi | 153 points | 12 comments Link: https://i.redd.it/qhdnksptz0xg1.jpeg",
+      "recommended_action": "review Product/FoodType/Brand keyword coverage"
+    }
+  ]
 }

@@ -1,25 +1,29 @@
 {
   "date": "2026-04-25",
   "category": "food",
-  "article_count": 104,
-  "source_count": 6,
-  "matched_count": 82,
+  "article_count": 200,
+  "source_count": 10,
+  "matched_count": 163,
   "top_entities": [
     {
       "name": "FoodGeneral",
-      "count": 227
-    },
-    {
-      "name": "SafetyIssue",
-      "count": 120
+      "count": 261
     },
     {
       "name": "FoodType",
-      "count": 26
+      "count": 141
+    },
+    {
+      "name": "SafetyIssue",
+      "count": 82
     },
     {
       "name": "Regulation",
-      "count": 24
+      "count": 21
+    },
+    {
+      "name": "Brand",
+      "count": 4
     },
     {
       "name": "Manufacturer",
@@ -30,17 +34,61 @@
       "count": 3
     },
     {
-      "name": "Brand",
-      "count": 2
+      "name": "BrandCanonical",
+      "count": 1
+    },
+    {
+      "name": "BrandAliasTrace",
+      "count": 1
     }
   ],
   "sources": {
-    "식품안전나라 행정처분": 23,
-    "Food Safety News": 23,
-    "Food Dive": 21,
-    "식약처 보도자료": 14,
-    "식품안전 국내뉴스": 18,
+    "식품안전나라 행정처분": 20,
+    "r/Cooking": 41,
+    "r/KoreanFood": 35,
+    "r/nutrition": 14,
+    "r/foodsafety": 40,
+    "Food Safety News": 15,
+    "Food Dive": 12,
+    "식약처 보도자료": 8,
+    "식품안전 국내뉴스": 10,
     "식품안전나라 회수판매중지": 5
   },
-  "generated_at": "2026-04-25T14:06:20.882220+09:00"
+  "generated_at": "2026-04-25T20:23:54.095933+09:00",
+  "ontology": {
+    "repo": "FoodRadar",
+    "category": "food",
+    "ontology_version": "0.1.0",
+    "event_model_ids": [
+      "food.complaint_signal",
+      "food.enforcement_action",
+      "food.recall_status_change"
+    ],
+    "event_model_mappings": {
+      "recall_status_change": "food.recall_status_change",
+      "enforcement_action": "food.enforcement_action",
+      "complaint_signal": "food.complaint_signal"
+    },
+    "entity_type_hints": [
+      "food.product",
+      "organization.company"
+    ],
+    "source_role_ids": [
+      "community_signal",
+      "context_only",
+      "primary_evidence"
+    ],
+    "source_role_mappings": {
+      "식품안전나라 회수판매중지": "primary_evidence",
+      "식품안전나라 행정처분": "primary_evidence",
+      "식약처 보도자료": "context_only",
+      "Food Safety News": "context_only",
+      "r/foodsafety": "community_signal"
+    },
+    "evidence_policy_ids": [
+      "traceable_url_required",
+      "official_confirmation_required",
+      "non_authoritative_context_only"
+    ]
+  }
 }

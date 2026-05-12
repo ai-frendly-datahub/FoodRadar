@@ -1,56 +1,45 @@
 {
   "date": "2026-04-13",
   "category": "food",
-  "article_count": 182,
-  "source_count": 12,
-  "matched_count": 102,
+  "article_count": 16,
+  "source_count": 9,
+  "matched_count": 13,
   "top_entities": [
     {
-      "name": "FoodGeneral",
-      "count": 213
-    },
-    {
-      "name": "SafetyIssue",
-      "count": 171
-    },
-    {
-      "name": "Regulation",
-      "count": 44
-    },
-    {
       "name": "FoodType",
-      "count": 39
+      "count": 19
     },
     {
-      "name": "Brand",
+      "name": "FoodGeneral",
       "count": 16
     },
     {
+      "name": "SafetyIssue",
+      "count": 9
+    },
+    {
+      "name": "Brand",
+      "count": 1
+    },
+    {
+      "name": "Regulation",
+      "count": 1
+    },
+    {
       "name": "Region",
-      "count": 13
-    },
-    {
-      "name": "RecallReason",
-      "count": 3
-    },
-    {
-      "name": "Manufacturer",
-      "count": 2
+      "count": 1
     }
   ],
   "sources": {
-    "식품안전나라 행정처분": 23,
-    "Food Safety News": 28,
-    "식품안전 국내뉴스": 19,
-    "식약처 보도자료": 5,
-    "Food Dive": 13,
-    "식품안전나라 회수판매중지": 3,
-    "식품저널": 27,
-    "식품음료신문": 8,
-    "r/Cooking": 20,
-    "r/KoreanFood": 17,
-    "r/foodsafety": 18,
-    "r/nutrition": 1
+    "식품안전나라 행정처분": 1,
+    "r/Cooking": 4,
+    "r/KoreanFood": 3,
+    "r/foodsafety": 3,
+    "Food Dive": 1,
+    "r/nutrition": 1,
+    "Food Safety News": 1,
+    "식약처 보도자료": 1,
+    "식품안전 국내뉴스": 1
   },
-  "generated_at": "2026-04-13T14:33:50.472388+09:00"
+  "generated_at": "2026-04-13T18:41:14.982375+09:00"
 }

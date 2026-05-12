@@ -1,46 +1,152 @@
 {
   "date": "2026-04-28",
   "category": "food",
-  "article_count": 94,
-  "source_count": 6,
-  "matched_count": 72,
+  "article_count": 9,
+  "source_count": 9,
+  "matched_count": 8,
   "top_entities": [
     {
       "name": "FoodGeneral",
-      "count": 216
-    },
-    {
-      "name": "SafetyIssue",
-      "count": 118
-    },
-    {
-      "name": "Regulation",
-      "count": 26
+      "count": 12
     },
     {
       "name": "FoodType",
-      "count": 25
+      "count": 7
     },
     {
-      "name": "RecallReason",
+      "name": "SafetyIssue",
       "count": 4
     },
     {
-      "name": "Manufacturer",
-      "count": 3
-    },
-    {
-      "name": "Brand",
-      "count": 1
+      "name": "Regulation",
+      "count": 2
     }
   ],
   "sources": {
-    "식품안전나라 행정처분": 22,
-    "식품안전 국내뉴스": 23,
-    "식약처 보도자료": 12,
-    "Food Dive": 15,
-    "식품안전나라 회수판매중지": 7,
-    "Food Safety News": 15
+    "식품안전나라 행정처분": 1,
+    "r/KoreanFood": 1,
+    "r/Cooking": 1,
+    "r/foodsafety": 1,
+    "r/nutrition": 1,
+    "Food Dive": 1,
+    "Food Safety News": 1,
+    "식약처 보도자료": 1,
+    "식품안전 국내뉴스": 1
   },
-  "generated_at": "2026-04-28T14:51:37.070799+09:00"
+  "generated_at": "2026-04-28T23:56:35.197337+09:00",
+  "articles": [
+    {
+      "event_model_payload": {
+        "source_url": "/portal/administMeasureDetail.do?seq=4717657"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/KoreanFood",
+        "headline": "[OC] Spicy Squid Stir-fry (Ojingeo-bokkeum) with a perfect smoky flavor!",
+        "source_url": "https://www.reddit.com/r/KoreanFood/comments/1sy3qj6/oc_spicy_squid_stirfry_ojingeobokkeum_with_a/",
+        "published_at": "2026-04-28T14:54:38+00:00",
+        "summary": "[r/KoreanFood] by u/lovegabi | 1 points | 0 comments\n\nThis is one of my absolute favorite dishes! The key is the \"Bul-mat\" (smoky charred flavor) and keeping the vegetables perfectly crunchy.\n\nI love how the spicy sauce coats the tender squid while the veggies stay fresh and crisp. Pairing this with a warm bowl of white rice is pure happiness (Haeng-bok-geu-jap-chae)!\n\nDoes anyone else love their squid stir-fry extra smoky and spicy?"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "1st cheesecake",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1sy3o88/1st_cheesecake/",
+        "published_at": "2026-04-28T14:52:18+00:00",
+        "summary": "[r/Cooking] by u/Various_Heart650 | 1 points | 0 comments\n\nI made my cheesecake with 550g cream cheese, 120g sugar, 280g heavy cream, and 3 eggs, baked at 220°C (425°F) for 20 minutes, followed by a full grill/broil. I would like it to be more liquid/runny inside, what should I do?\""
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://www.reddit.com/r/foodsafety/comments/1sy3jlg/mold_growing_around_yogurt_container_ive_scraped/"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/nutrition",
+        "headline": "Is putting 0 cal syrup in my water to get me to drink more water unhealthy in the long run?",
+        "source_url": "https://www.reddit.com/r/nutrition/comments/1sy39v0/is_putting_0_cal_syrup_in_my_water_to_get_me_to/",
+        "published_at": "2026-04-28T14:37:28+00:00",
+        "summary": "[r/nutrition] by u/MrVickiesChips | 4 points | 5 comments\n\nI’m someone who’s decently fit most of my water drinking is on weekends when I’m at the gym during the work week there’s some days where my 40oz water is basically full by the end of the work week so I found a zerolicous strawberry syrup and started my morning with mixing some with my water and I finish it by lunch and go home and refill without the syrup and can drink majority of it I’m a huge coffee drinker too"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "Pure Leaf puts mental clarity in focus with new functional tea",
+        "source_url": "https://www.fooddive.com/news/pure-leaf-mental-focus-functional-beverage-sparkling-pepsi-lipton-partnership/818663/",
+        "published_at": "2026-04-28T05:02:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/NF6yM9tM0BeNjAkgtjbgp6IieWQZLoQvudwsQN3oU2c/g:nowe:0:164/c:2500:1412/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9UaGVfTWVudGFsX0ZvY3VzX0tpdF93aXRoX1B1cmVfTGVhZl9hbmRfQnJpY2suanBn.webp\" /></div></figure><p>The brand, owned by PepsiCo and Unilever in a partnership, is releasing its first sparkling drink designed for balanced energy instead of extreme performance.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Salmonella outbreak spreads across Europe",
+        "source_url": "https://www.foodsafetynews.com/2026/04/salmonella-outbreak-spreads-across-europe/",
+        "published_at": "2026-04-27T19:05:33+00:00",
+        "summary": "The outbreak is linked to consumption of sprouted seeds from Italy"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식약처 보도자료",
+        "headline": "식약처 사칭 위조 공문으로 물품 구매 유도...식품업계 주의 당부",
+        "source_url": "/portal/board/boardDetail.do?bbs_no=bbs080&ntctxt_no=49924&menu_no=2857",
+        "published_at": "2026-04-27T15:00:00+00:00",
+        "summary": "<p>식약처 사칭 위조 공문으로 물품 구매 유도...식품업계 주의 당부</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식품안전 국내뉴스",
+        "headline": "’26년 2/4분기 축산물이력제 합동단속 실시",
+        "source_url": "/portal/board/boardDetail.do?bbs_no=bbs082&ntctxt_no=1110593&menu_no=2859",
+        "published_at": "2026-04-27T15:00:00+00:00",
+        "summary": "[식품안전] ’26년 2/4분기 축산물이력제 합동단속 실시"
+      }
+    }
+  ],
+  "ontology": {
+    "repo": "FoodRadar",
+    "category": "food",
+    "ontology_version": "0.1.0",
+    "event_model_ids": [
+      "food.complaint_signal",
+      "food.editorial_coverage",
+      "food.enforcement_action",
+      "food.official_notice",
+      "food.recall_status_change"
+    ],
+    "event_model_mappings": {
+      "recall_status_change": "food.recall_status_change",
+      "enforcement_action": "food.enforcement_action",
+      "complaint_signal": "food.complaint_signal",
+      "editorial_coverage": "food.editorial_coverage",
+      "official_notice": "food.official_notice"
+    },
+    "entity_type_hints": [
+      "food.product",
+      "organization.company"
+    ],
+    "source_role_ids": [
+      "community_signal",
+      "context_only",
+      "primary_evidence"
+    ],
+    "source_role_mappings": {
+      "식품안전나라 회수판매중지": "primary_evidence",
+      "식품안전나라 행정처분": "primary_evidence",
+      "식약처 보도자료": "context_only",
+      "Food Safety News": "context_only",
+      "r/foodsafety": "community_signal"
+    },
+    "evidence_policy_ids": [
+      "traceable_url_required",
+      "official_confirmation_required",
+      "non_authoritative_context_only"
+    ]
+  }
 }
