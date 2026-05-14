@@ -1,280 +1,173 @@
 {
   "date": "2026-05-13",
   "category": "food",
-  "article_count": 63,
-  "source_count": 10,
-  "matched_count": 60,
+  "article_count": 7,
+  "source_count": 7,
+  "matched_count": 7,
   "top_entities": [
     {
-      "name": "FoodGeneral",
-      "count": 166
-    },
-    {
-      "name": "SafetyIssue",
-      "count": 76
-    },
-    {
       "name": "FoodType",
-      "count": 29
+      "count": 11
+    },
+    {
+      "name": "FoodGeneral",
+      "count": 10
+    },
+    {
+      "name": "Region",
+      "count": 3
     },
     {
       "name": "Regulation",
-      "count": 18
+      "count": 2
+    },
+    {
+      "name": "SafetyIssue",
+      "count": 1
     },
     {
       "name": "Manufacturer",
-      "count": 8
-    },
-    {
-      "name": "Brand",
-      "count": 5
-    },
-    {
-      "name": "ManufacturerCanonical",
-      "count": 5
-    },
-    {
-      "name": "Product",
-      "count": 3
-    },
-    {
-      "name": "ProductCanonical",
-      "count": 3
-    },
-    {
-      "name": "RecallReason",
-      "count": 2
+      "count": 1
     }
   ],
   "sources": {
-    "식품안전나라 행정처분": 20,
-    "Food Safety News": 16,
-    "식약처 보도자료": 8,
-    "Food Dive": 11,
-    "식품안전나라 회수판매중지": 3,
-    "r/Cooking": 1,
+    "식품안전나라 행정처분": 1,
     "r/foodsafety": 1,
+    "r/Cooking": 1,
     "r/KoreanFood": 1,
-    "식품안전 국내뉴스": 1,
-    "r/nutrition": 1
+    "r/nutrition": 1,
+    "Food Safety News": 1,
+    "식약처 보도자료": 1
   },
-  "generated_at": "2026-05-13T15:19:49.936243+09:00",
+  "generated_at": "2026-05-13T21:23:44.962443+09:00",
   "articles": [
     {
       "event_model_payload": {
-        "source_name": "r/Cooking",
-        "headline": "White Pepper",
-        "source_url": "https://www.reddit.com/r/Cooking/comments/1t5v7wl/white_pepper/",
-        "published_at": "2026-05-07T00:40:56+00:00",
-        "summary": "[r/Cooking] by u/warpweftwelted | 1 points | 3 comments\n\nIs white pepper spicy as hell and I just don't know it?\n\nI followed Kenneth Temple's Jambalaya recipe on youtube twice. The first was to the exact measurements except cutting back on the cayenne powder because myself and especially my wife and 2 year old can't handle high heat. It still blew even me out of the water.\n\nNext time I cooked it with almost no cayenne at all and it was still spicy as hell. My suspect is the white pepper or I'm more wimpy than I thought.\n\nWhat are yalls thoughts? Side note this guy is so chill to listen to for cooking. Link for reference to reicpe: [https://www.youtube.com/watch?v=O8TTbedtCVk&t=18s](https://www.youtube.com/watch?v=O8TTbedtCVk&t=18s)"
+        "source_url": "/portal/administMeasureDetail.do?seq=4720874"
       }
     },
     {
       "event_model_payload": {
-        "source_url": "https://www.reddit.com/r/foodsafety/comments/1t5v10q/can_i_still_take_medicine_from_packets_that_have/"
+        "source_url": "https://www.reddit.com/r/foodsafety/comments/1tbxzvh/milk_carton_waxxy_powder/"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Long term reuse of homemade tallow",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tbxr2d/long_term_reuse_of_homemade_tallow/",
+        "published_at": "2026-05-13T12:10:19+00:00",
+        "summary": "[r/Cooking] by u/Snappy053 | 3 points | 0 comments\n\nI have a question about reusing the tallow from my cooked steaks.\n\nIt's generally ok to store in the fridge for a few months up to a year depending on how it's extracted and stored, but I wanted to know if reusing the same fats to cook with over and over is commonplace? For example, I cook a couple of steaks one night and save the drippings in the fridge, juice and all. The next week I cook a steak, I pry the puck of tallow ou and it goes back in the pan. Repeat until I cook something like fried potato or sauteed veggies, which tends to absorb the fat.\n\nDo you guys generally get rid of it all or use it up and start a new container of tallow after a little while? Or does the constant cooking extend its life?"
       }
     },
     {
       "event_model_payload": {
         "source_name": "r/KoreanFood",
-        "headline": "Took a train to Busan, had to grab some fresh seafood!",
-        "source_url": "https://www.reddit.com/r/KoreanFood/comments/1t5ujiu/took_a_train_to_busan_had_to_grab_some_fresh/",
-        "published_at": "2026-05-07T00:10:57+00:00",
-        "summary": "[r/KoreanFood] by u/Minute_Register3435 | 27 points | 1 comments\n\nssam in the top right, clam soup, & oysters"
-      }
-    },
-    {
-      "event_model_payload": {
-        "source_name": "Food Safety News",
-        "headline": "'Brocoli Calabrese' seeds recalled because of E. coli",
-        "source_url": "https://www.foodsafetynews.com/2026/05/brocoli-calabrese-seeds-recalled-because-of-e-coli/",
-        "published_at": "2026-05-06T15:24:40+00:00",
-        "summary": "<p>Germina brand \"Brocoli Calabrese\" seeds are being recalled in Canada because of contamination with pathogenic E. Coli.</p><p>The recall was triggered by a recall in another country, according to the Canadian Food Inspection Agency. No illnesses have been reported in Canada in relation to the recalled product.</p><p>The</p>"
-      }
-    },
-    {
-      "event_model_payload": {
-        "source_name": "식품안전 국내뉴스",
-        "headline": "「축산물 또는 동물성 식품의 수입허용국가(지역) 및 수입위생요건」 일부개정고시(안) 행정예고 (식품의약품안전처 공고 제2026-225호)",
-        "source_url": "/portal/board/boardDetail.do?bbs_no=bbs082&ntctxt_no=1110689&menu_no=2859",
-        "published_at": "2026-05-06T15:00:00+00:00",
-        "summary": "[식품안전] 「축산물 또는 동물성 식품의 수입허용국가(지역) 및 수입위생요건」 일부개정고시(안) 행정예고 (식품의약품안전처 공고 제2026-225호)"
-      }
-    },
-    {
-      "event_model_payload": {
-        "source_name": "Food Dive",
-        "headline": "Babybel parent buys Brainiac snacks to expand better-for-you portfolio",
-        "source_url": "https://www.fooddive.com/news/babybel-parent-buys-brainiac-snacks-to-expand-better-for-you-portfolio/819472/",
-        "published_at": "2026-05-06T12:00:00+00:00",
-        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/VQJphhGXyKhfpcl_452bmvZPhQuiCowGPBczAcQrmqw/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9OZXVyby5qcGc=.webp\" /></div></figure><p>The acquisition comes as the GoGo squeeZ maker looks to expand its U.S. presence and become a leader in functional foods.</p>"
+        "headline": "Spicy Pork, Dotori-muk Salad, Chive Pancakes, and Beef Radish Soup - I made a video of the whole process!",
+        "source_url": "https://www.reddit.com/r/KoreanFood/comments/1tbwq4c/spicy_pork_dotorimuk_salad_chive_pancakes_and/",
+        "published_at": "2026-05-13T11:24:16+00:00",
+        "summary": "[r/KoreanFood] by u/Joe_WYK | 15 points | 2 comments\n\n1. Spicy Stir-fried Pork (Jeyuk-bokkeum)\n\n​Main: 600g (21.2oz) Pork shoulder\n\n​Vegetables: 1 Green onion, 1/2 Onion, 1/5 Carrot, 1 Cheongyang chili pepper\n\n​Sauce Ratio:\n\n​Cooking wine 1 / Onion 1/2 / Green onion 1 / Cheongyang chili pepper 1\n\n​Red chili flakes 4 / Minced garlic 2 / Soy sauce 2 / Red chili paste 2\n\n​Sesame oil 1 / 1/2 tbsp Sugar\n\n​Garnish & Sides: Sesame seeds, Lettuce, Perilla leaves\n\n​Ssamjang Sauce Ratio: Soybean paste 2 : Red chili paste 1 : Corn syrup 1 : Sesame oil 1 : Minced garlic 1\n\n​2. Acorn Jelly Salad (Dotori-muk Muchim)\n\n​Main: 1 pack Store-bought Acorn jelly (approx. 400g / 14.1oz)\n\n​Vegetables: Water dropwort (handful), 1 Lettuce leaf, 1/5 Carrot, 1 Cucumber, 1 Cheongyang chili pepper\n\n​Dressing Ratio: Soy sauce 2 : Vinegar 2 : Sugar 2 : Red chili flakes 1 : Sesame oil 1\n\n​3. Chive Pancake (Buchu-jeon)\n\n​Main: 1/2 bunch Chives, 1 Cheongyang chili pepper\n\n​Batter Ratio: Flour 1 : Starch powder 1 : Water 2\n\n​Dipping Sauce Ratio: Soy sauce 1 : Vinegar 1 : Water 1\n\n​4. Beef Radish Soup (Sogogi Mu-guk)\n\n​Main: Beef, Korean radish\n\n​Aromatics: 1 tbsp Minced garlic, 1/2 Green onion\n\n​Seasoning: Soup soy sauce 1 : Anchovy fish sauce 2 : Salt to taste"
       }
     },
     {
       "event_model_payload": {
         "source_name": "r/nutrition",
-        "headline": "Are peas healthy",
-        "source_url": "https://www.reddit.com/r/nutrition/comments/1t56pi0/are_peas_healthy/",
-        "published_at": "2026-05-06T08:21:54+00:00",
-        "summary": "[r/nutrition] by u/rose2830 | 53 points | 77 comments\n\nI don’t really see them hyped up"
+        "headline": "how many cans of baked beans a week is too many?",
+        "source_url": "https://www.reddit.com/r/nutrition/comments/1tbuuus/how_many_cans_of_baked_beans_a_week_is_too_many/",
+        "published_at": "2026-05-13T09:46:53+00:00",
+        "summary": "[r/nutrition] by u/RichAfter2565 | 8 points | 16 comments\n\nI normally eat probaly 7-10 cans of heinz baked beens a week maybe. is this too many?\n\nbare in mind this is the uk version, which doest have any pork or molasses in them, making them lower in sugar and fat."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Food incident levels stable in Hong Kong in 2025",
+        "source_url": "https://www.foodsafetynews.com/2026/05/food-incident-levels-stable-in-hong-kong-in-2025/",
+        "published_at": "2026-05-12T19:03:34+00:00",
+        "summary": "<p>Microbial and chemical hazards dominated food incidents possibly affecting Hong Kong in 2025, according to a new report from the Centre for Food Safety (CFS).</p><p>The Food Incident Surveillance System (FISS) monitors issues outside Hong Kong that potentially affect domestic food safety.</p><p>In 2025, CFS detected 5,300 incidents through</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식약처 보도자료",
+        "headline": "식약처, 부산·울산·경남지역 해썹(HACCP) 업체와 '식의약 정책이음 지역현장 열린마당' 개최",
+        "source_url": "/portal/board/boardDetail.do?bbs_no=bbs080&ntctxt_no=49982&menu_no=2857",
+        "published_at": "2026-05-12T15:00:00+00:00",
+        "summary": "<p>식약처, 부산·울산·경남지역 해썹(HACCP) 업체와 '식의약 정책이음 지역현장 열린마당' 개최</p>"
       }
     }
   ],
+  "ontology": {
+    "repo": "FoodRadar",
+    "category": "food",
+    "ontology_version": "0.1.0",
+    "event_model_ids": [
+      "food.complaint_signal",
+      "food.editorial_coverage",
+      "food.enforcement_action",
+      "food.official_notice",
+      "food.recall_status_change"
+    ],
+    "event_model_mappings": {
+      "recall_status_change": "food.recall_status_change",
+      "enforcement_action": "food.enforcement_action",
+      "complaint_signal": "food.complaint_signal",
+      "editorial_coverage": "food.editorial_coverage",
+      "official_notice": "food.official_notice"
+    },
+    "entity_type_hints": [
+      "food.product",
+      "organization.company"
+    ],
+    "source_role_ids": [
+      "community_signal",
+      "context_only",
+      "primary_evidence"
+    ],
+    "source_role_mappings": {
+      "식품안전나라 회수판매중지": "primary_evidence",
+      "식품안전나라 행정처분": "primary_evidence",
+      "식약처 보도자료": "context_only",
+      "Food Safety News": "context_only",
+      "r/foodsafety": "community_signal"
+    },
+    "evidence_policy_ids": [
+      "traceable_url_required",
+      "official_confirmation_required",
+      "non_authoritative_context_only"
+    ]
+  },
   "quality_summary": {
     "total_sources": 12,
     "tracked_sources": 3,
-    "fresh_sources": 2,
-    "stale_sources": 1,
+    "fresh_sources": 3,
+    "stale_sources": 0,
     "missing_sources": 0,
     "unknown_event_date_sources": 0,
     "not_tracked_sources": 8,
     "catalog_only_sources": 0,
     "skipped_disabled_sources": 1,
-    "collection_error_count": 4,
-    "alias_candidate_count": 3,
+    "collection_error_count": 0,
+    "alias_candidate_count": 0,
     "product_alias_candidate_count": 0,
-    "brand_alias_candidate_count": 1,
-    "manufacturer_alias_candidate_count": 2,
-    "match_coverage_article_count": 63,
-    "match_coverage_matched_count": 60,
-    "match_coverage_unmatched_count": 3,
-    "match_coverage_rate": 95.2,
-    "match_coverage_review_item_count": 3,
-    "fresh_food_events": 21,
-    "stale_food_events": 3,
+    "brand_alias_candidate_count": 0,
+    "manufacturer_alias_candidate_count": 0,
+    "match_coverage_article_count": 15,
+    "match_coverage_matched_count": 15,
+    "match_coverage_unmatched_count": 0,
+    "match_coverage_rate": 100.0,
+    "match_coverage_review_item_count": 0,
+    "fresh_food_events": 3,
+    "stale_food_events": 2,
     "undated_food_events": 0,
-    "unique_food_event_key_count": 24,
-    "recall_events_with_notice_date_count": 3,
-    "recall_events_with_status_count": 3,
+    "unique_food_event_key_count": 5,
+    "recall_events_with_notice_date_count": 1,
+    "recall_events_with_status_count": 1,
     "event_alias_trace_count": 0,
-    "complaint_auxiliary_only_events": 1,
-    "official_evidence_events": 23,
-    "recall_status_change_events": 3,
-    "enforcement_action_events": 20,
-    "complaint_signal_events": 1
-  },
-  "warnings": [
-    "collection errors detected: 4",
-    "freshness gaps detected: stale=1, missing=0"
-  ],
-  "quality_flagged_sources": [
-    {
-      "source": "r/foodsafety",
-      "source_type": "reddit",
-      "enabled": true,
-      "tracked": true,
-      "event_model": "complaint_signal",
-      "freshness_sla_days": 3,
-      "status": "stale",
-      "article_count": 1,
-      "latest_event_at": "2026-05-07T00:32:31+00:00",
-      "latest_collected_at": "2026-05-07T00:56:05.432223+00:00",
-      "age_days": 6.24,
-      "latest_title": "can i still take medicine from packets that have been left open for 7 months?",
-      "latest_url": "https://www.reddit.com/r/foodsafety/comments/1t5v10q/can_i_still_take_medicine_from_packets_that_have/",
-      "latest_food_event_key": "complaint-signal:us:r-foodsafety:2026-05-07:https-www-reddit-com-r-foodsafety-comments-1t5v10q-can-i-still-take-medicine-from-packets-that-have",
-      "latest_notice_date": "",
-      "latest_recall_status": "",
-      "latest_release_date": "",
-      "latest_sanction_start_date": "",
-      "latest_sanction_end_date": "",
-      "latest_sanction_type": "",
-      "latest_product_name_raw": "",
-      "latest_manufacturer_name_raw": "",
-      "latest_alias_traces": [],
-      "verification_role": "auxiliary_complaint_signal",
-      "merge_policy": "do_not_merge_with_official_notice",
-      "skip_reason": "",
-      "reenable_gate": "",
-      "errors": [
-        "[r/foodsafety] Reddit returned 403 Forbidden. The subreddit may be private or banned."
-      ]
-    }
-  ],
-  "quality_alias_candidates": [
-    {
-      "alias_type": "brand",
-      "canonical": "",
-      "normalized": "대상",
-      "variants": [
-        "대상"
-      ],
-      "count": 2,
-      "example_urls": [
-        "/portal/board/boardDetail.do?bbs_no=bbs080&menu_no=2857&ntctxt_no=49973",
-        "/portal/board/boardDetail.do?bbs_no=bbs080&menu_no=2857&ntctxt_no=49977"
-      ]
-    },
-    {
-      "alias_type": "manufacturer",
-      "canonical": "",
-      "normalized": "대상",
-      "variants": [
-        "대상"
-      ],
-      "count": 2,
-      "example_urls": [
-        "/portal/board/boardDetail.do?bbs_no=bbs080&menu_no=2857&ntctxt_no=49973",
-        "/portal/board/boardDetail.do?bbs_no=bbs080&menu_no=2857&ntctxt_no=49977"
-      ]
-    },
-    {
-      "alias_type": "manufacturer",
-      "canonical": "",
-      "normalized": "제조업소",
-      "variants": [
-        "제조업소"
-      ],
-      "count": 3,
-      "example_urls": [
-        "/portal/administMeasureDetail.do?seq=4719401",
-        "/portal/administMeasureDetail.do?seq=4720039",
-        "/portal/administMeasureDetail.do?seq=4720874"
-      ]
-    }
-  ],
-  "quality_match_coverage_review_items": [
-    {
-      "reason": "market_or_editorial_unclassified",
-      "priority": "medium",
-      "source": "Food Dive",
-      "source_type": "rss",
-      "trust_tier": "T3_professional",
-      "event_model": "editorial_coverage",
-      "title": "Suja Life taps into sizzling demand for health and wellness with IPO",
-      "url": "https://www.fooddive.com/news/suja-life-public-market-debut-ceo-interview/819851",
-      "published_at": "2026-05-11T06:14:00+00:00",
-      "collected_at": "2026-05-13T06:19:49.323969+00:00",
-      "summary_excerpt": "The cold-pressed juice pioneer raised nearly $200 million in its offering, which it plans to use to expand production and consider an acquisition, its CEO said.",
-      "recommended_action": "review Product/FoodType/Brand keyword coverage"
-    },
-    {
-      "reason": "market_or_editorial_unclassified",
-      "priority": "medium",
-      "source": "Food Dive",
-      "source_type": "rss",
-      "trust_tier": "T3_professional",
-      "event_model": "editorial_coverage",
-      "title": "[Podcast] Cold Chain 2026 – Evolving Under Pressure",
-      "url": "https://www.fooddive.com/spons/podcast-cold-chain-2026-evolving-under-pressure/817965",
-      "published_at": "2026-05-12T03:00:00+00:00",
-      "collected_at": "2026-05-13T06:19:49.323969+00:00",
-      "summary_excerpt": "This podcast series examines the forces reshaping cold chain operations, from trade volatility and tariffs to AI adoption and supply chain resilience.",
-      "recommended_action": "review Product/FoodType/Brand keyword coverage"
-    },
-    {
-      "reason": "unclassified_article",
-      "priority": "low",
-      "source": "식약처 보도자료",
-      "source_type": "rss",
-      "trust_tier": "T1_official",
-      "event_model": "official_notice",
-      "title": "디카페인 커피 안심하고 선택하세요",
-      "url": "/portal/board/boardDetail.do?bbs_no=bbs080&menu_no=2857&ntctxt_no=49971",
-      "published_at": "2026-05-11T15:00:00+00:00",
-      "collected_at": "2026-05-13T06:19:49.323969+00:00",
-      "summary_excerpt": "디카페인 커피 안심하고 선택하세요",
-      "recommended_action": "review whether this item belongs in FoodRadar matching scope"
-    }
-  ]
+    "complaint_auxiliary_only_events": 2,
+    "official_evidence_events": 3,
+    "recall_status_change_events": 1,
+    "enforcement_action_events": 2,
+    "complaint_signal_events": 2
+  }
 }
