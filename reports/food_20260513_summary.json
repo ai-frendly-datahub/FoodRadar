@@ -1,0 +1,173 @@
+{
+  "date": "2026-05-13",
+  "category": "food",
+  "article_count": 7,
+  "source_count": 7,
+  "matched_count": 7,
+  "top_entities": [
+    {
+      "name": "FoodType",
+      "count": 11
+    },
+    {
+      "name": "FoodGeneral",
+      "count": 10
+    },
+    {
+      "name": "Region",
+      "count": 3
+    },
+    {
+      "name": "Regulation",
+      "count": 2
+    },
+    {
+      "name": "SafetyIssue",
+      "count": 1
+    },
+    {
+      "name": "Manufacturer",
+      "count": 1
+    }
+  ],
+  "sources": {
+    "식품안전나라 행정처분": 1,
+    "r/foodsafety": 1,
+    "r/Cooking": 1,
+    "r/KoreanFood": 1,
+    "r/nutrition": 1,
+    "Food Safety News": 1,
+    "식약처 보도자료": 1
+  },
+  "generated_at": "2026-05-13T21:23:44.962443+09:00",
+  "articles": [
+    {
+      "event_model_payload": {
+        "source_url": "/portal/administMeasureDetail.do?seq=4720874"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://www.reddit.com/r/foodsafety/comments/1tbxzvh/milk_carton_waxxy_powder/"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Long term reuse of homemade tallow",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tbxr2d/long_term_reuse_of_homemade_tallow/",
+        "published_at": "2026-05-13T12:10:19+00:00",
+        "summary": "[r/Cooking] by u/Snappy053 | 3 points | 0 comments\n\nI have a question about reusing the tallow from my cooked steaks.\n\nIt's generally ok to store in the fridge for a few months up to a year depending on how it's extracted and stored, but I wanted to know if reusing the same fats to cook with over and over is commonplace? For example, I cook a couple of steaks one night and save the drippings in the fridge, juice and all. The next week I cook a steak, I pry the puck of tallow ou and it goes back in the pan. Repeat until I cook something like fried potato or sauteed veggies, which tends to absorb the fat.\n\nDo you guys generally get rid of it all or use it up and start a new container of tallow after a little while? Or does the constant cooking extend its life?"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/KoreanFood",
+        "headline": "Spicy Pork, Dotori-muk Salad, Chive Pancakes, and Beef Radish Soup - I made a video of the whole process!",
+        "source_url": "https://www.reddit.com/r/KoreanFood/comments/1tbwq4c/spicy_pork_dotorimuk_salad_chive_pancakes_and/",
+        "published_at": "2026-05-13T11:24:16+00:00",
+        "summary": "[r/KoreanFood] by u/Joe_WYK | 15 points | 2 comments\n\n1. Spicy Stir-fried Pork (Jeyuk-bokkeum)\n\n​Main: 600g (21.2oz) Pork shoulder\n\n​Vegetables: 1 Green onion, 1/2 Onion, 1/5 Carrot, 1 Cheongyang chili pepper\n\n​Sauce Ratio:\n\n​Cooking wine 1 / Onion 1/2 / Green onion 1 / Cheongyang chili pepper 1\n\n​Red chili flakes 4 / Minced garlic 2 / Soy sauce 2 / Red chili paste 2\n\n​Sesame oil 1 / 1/2 tbsp Sugar\n\n​Garnish & Sides: Sesame seeds, Lettuce, Perilla leaves\n\n​Ssamjang Sauce Ratio: Soybean paste 2 : Red chili paste 1 : Corn syrup 1 : Sesame oil 1 : Minced garlic 1\n\n​2. Acorn Jelly Salad (Dotori-muk Muchim)\n\n​Main: 1 pack Store-bought Acorn jelly (approx. 400g / 14.1oz)\n\n​Vegetables: Water dropwort (handful), 1 Lettuce leaf, 1/5 Carrot, 1 Cucumber, 1 Cheongyang chili pepper\n\n​Dressing Ratio: Soy sauce 2 : Vinegar 2 : Sugar 2 : Red chili flakes 1 : Sesame oil 1\n\n​3. Chive Pancake (Buchu-jeon)\n\n​Main: 1/2 bunch Chives, 1 Cheongyang chili pepper\n\n​Batter Ratio: Flour 1 : Starch powder 1 : Water 2\n\n​Dipping Sauce Ratio: Soy sauce 1 : Vinegar 1 : Water 1\n\n​4. Beef Radish Soup (Sogogi Mu-guk)\n\n​Main: Beef, Korean radish\n\n​Aromatics: 1 tbsp Minced garlic, 1/2 Green onion\n\n​Seasoning: Soup soy sauce 1 : Anchovy fish sauce 2 : Salt to taste"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/nutrition",
+        "headline": "how many cans of baked beans a week is too many?",
+        "source_url": "https://www.reddit.com/r/nutrition/comments/1tbuuus/how_many_cans_of_baked_beans_a_week_is_too_many/",
+        "published_at": "2026-05-13T09:46:53+00:00",
+        "summary": "[r/nutrition] by u/RichAfter2565 | 8 points | 16 comments\n\nI normally eat probaly 7-10 cans of heinz baked beens a week maybe. is this too many?\n\nbare in mind this is the uk version, which doest have any pork or molasses in them, making them lower in sugar and fat."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Food incident levels stable in Hong Kong in 2025",
+        "source_url": "https://www.foodsafetynews.com/2026/05/food-incident-levels-stable-in-hong-kong-in-2025/",
+        "published_at": "2026-05-12T19:03:34+00:00",
+        "summary": "<p>Microbial and chemical hazards dominated food incidents possibly affecting Hong Kong in 2025, according to a new report from the Centre for Food Safety (CFS).</p><p>The Food Incident Surveillance System (FISS) monitors issues outside Hong Kong that potentially affect domestic food safety.</p><p>In 2025, CFS detected 5,300 incidents through</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식약처 보도자료",
+        "headline": "식약처, 부산·울산·경남지역 해썹(HACCP) 업체와 '식의약 정책이음 지역현장 열린마당' 개최",
+        "source_url": "/portal/board/boardDetail.do?bbs_no=bbs080&ntctxt_no=49982&menu_no=2857",
+        "published_at": "2026-05-12T15:00:00+00:00",
+        "summary": "<p>식약처, 부산·울산·경남지역 해썹(HACCP) 업체와 '식의약 정책이음 지역현장 열린마당' 개최</p>"
+      }
+    }
+  ],
+  "ontology": {
+    "repo": "FoodRadar",
+    "category": "food",
+    "ontology_version": "0.1.0",
+    "event_model_ids": [
+      "food.complaint_signal",
+      "food.editorial_coverage",
+      "food.enforcement_action",
+      "food.official_notice",
+      "food.recall_status_change"
+    ],
+    "event_model_mappings": {
+      "recall_status_change": "food.recall_status_change",
+      "enforcement_action": "food.enforcement_action",
+      "complaint_signal": "food.complaint_signal",
+      "editorial_coverage": "food.editorial_coverage",
+      "official_notice": "food.official_notice"
+    },
+    "entity_type_hints": [
+      "food.product",
+      "organization.company"
+    ],
+    "source_role_ids": [
+      "community_signal",
+      "context_only",
+      "primary_evidence"
+    ],
+    "source_role_mappings": {
+      "식품안전나라 회수판매중지": "primary_evidence",
+      "식품안전나라 행정처분": "primary_evidence",
+      "식약처 보도자료": "context_only",
+      "Food Safety News": "context_only",
+      "r/foodsafety": "community_signal"
+    },
+    "evidence_policy_ids": [
+      "traceable_url_required",
+      "official_confirmation_required",
+      "non_authoritative_context_only"
+    ]
+  },
+  "quality_summary": {
+    "total_sources": 12,
+    "tracked_sources": 3,
+    "fresh_sources": 3,
+    "stale_sources": 0,
+    "missing_sources": 0,
+    "unknown_event_date_sources": 0,
+    "not_tracked_sources": 8,
+    "catalog_only_sources": 0,
+    "skipped_disabled_sources": 1,
+    "collection_error_count": 0,
+    "alias_candidate_count": 0,
+    "product_alias_candidate_count": 0,
+    "brand_alias_candidate_count": 0,
+    "manufacturer_alias_candidate_count": 0,
+    "match_coverage_article_count": 15,
+    "match_coverage_matched_count": 15,
+    "match_coverage_unmatched_count": 0,
+    "match_coverage_rate": 100.0,
+    "match_coverage_review_item_count": 0,
+    "fresh_food_events": 3,
+    "stale_food_events": 2,
+    "undated_food_events": 0,
+    "unique_food_event_key_count": 5,
+    "recall_events_with_notice_date_count": 1,
+    "recall_events_with_status_count": 1,
+    "event_alias_trace_count": 0,
+    "complaint_auxiliary_only_events": 2,
+    "official_evidence_events": 3,
+    "recall_status_change_events": 1,
+    "enforcement_action_events": 2,
+    "complaint_signal_events": 2
+  }
+}
