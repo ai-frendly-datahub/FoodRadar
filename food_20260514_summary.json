@@ -1,21 +1,21 @@
 {
   "date": "2026-05-14",
   "category": "food",
-  "article_count": 63,
+  "article_count": 71,
   "source_count": 9,
-  "matched_count": 59,
+  "matched_count": 67,
   "top_entities": [
     {
       "name": "FoodGeneral",
-      "count": 157
+      "count": 176
     },
     {
       "name": "SafetyIssue",
-      "count": 71
+      "count": 82
     },
     {
       "name": "FoodType",
-      "count": 37
+      "count": 42
     },
     {
       "name": "Regulation",
@@ -23,7 +23,7 @@
     },
     {
       "name": "Manufacturer",
-      "count": 8
+      "count": 9
     },
     {
       "name": "ManufacturerCanonical",
@@ -51,17 +51,17 @@
     }
   ],
   "sources": {
-    "식품안전나라 행정처분": 20,
-    "식약처 보도자료": 11,
+    "식품안전나라 행정처분": 22,
+    "Food Safety News": 19,
+    "식약처 보도자료": 13,
     "r/foodsafety": 1,
     "r/Cooking": 1,
     "r/KoreanFood": 1,
     "r/nutrition": 1,
     "Food Dive": 10,
-    "Food Safety News": 15,
     "식품안전나라 회수판매중지": 3
   },
-  "generated_at": "2026-05-14T11:28:49.424730+09:00",
+  "generated_at": "2026-05-14T15:18:13.168864+09:00",
   "articles": [
     {
       "event_model_payload": {
@@ -111,22 +111,22 @@
     "product_alias_candidate_count": 0,
     "brand_alias_candidate_count": 1,
     "manufacturer_alias_candidate_count": 2,
-    "match_coverage_article_count": 63,
-    "match_coverage_matched_count": 59,
+    "match_coverage_article_count": 71,
+    "match_coverage_matched_count": 67,
     "match_coverage_unmatched_count": 4,
-    "match_coverage_rate": 93.7,
+    "match_coverage_rate": 94.4,
     "match_coverage_review_item_count": 4,
-    "fresh_food_events": 23,
+    "fresh_food_events": 25,
     "stale_food_events": 1,
     "undated_food_events": 0,
-    "unique_food_event_key_count": 24,
+    "unique_food_event_key_count": 26,
     "recall_events_with_notice_date_count": 3,
     "recall_events_with_status_count": 3,
     "event_alias_trace_count": 0,
     "complaint_auxiliary_only_events": 1,
-    "official_evidence_events": 23,
+    "official_evidence_events": 25,
     "recall_status_change_events": 3,
-    "enforcement_action_events": 20,
+    "enforcement_action_events": 22,
     "complaint_signal_events": 1
   },
   "warnings": [
@@ -166,11 +166,11 @@
       "variants": [
         "제조업소"
       ],
-      "count": 3,
+      "count": 4,
       "example_urls": [
         "/portal/administMeasureDetail.do?seq=4719401",
         "/portal/administMeasureDetail.do?seq=4720039",
-        "/portal/administMeasureDetail.do?seq=4720874"
+        "/portal/administMeasureDetail.do?seq=4722113"
       ]
     }
   ],
@@ -185,7 +185,7 @@
       "title": "Ben & Jerry’s owner to offer ice cream at entertainment venues through Mini Melts partnership",
       "url": "https://www.fooddive.com/news/magnum-ice-cream-mini-melts-partnership/820114",
       "published_at": "2026-05-13T06:15:00+00:00",
-      "collected_at": "2026-05-14T02:28:48.825806+00:00",
+      "collected_at": "2026-05-14T06:18:12.543652+00:00",
       "summary_excerpt": "The agreement advances Magnum's out-of-home growth strategy by targeting consumers in high-traffic locations.",
       "recommended_action": "review Product/FoodType/Brand keyword coverage"
     },
@@ -199,7 +199,7 @@
       "title": "Suja Life taps into sizzling demand for health and wellness with IPO",
       "url": "https://www.fooddive.com/news/suja-life-public-market-debut-ceo-interview/819851",
       "published_at": "2026-05-11T06:14:00+00:00",
-      "collected_at": "2026-05-14T02:28:48.825806+00:00",
+      "collected_at": "2026-05-14T06:18:12.543652+00:00",
       "summary_excerpt": "The cold-pressed juice pioneer raised nearly $200 million in its offering, which it plans to use to expand production and consider an acquisition, its CEO said.",
       "recommended_action": "review Product/FoodType/Brand keyword coverage"
     },
@@ -213,7 +213,7 @@
       "title": "[Podcast] Cold Chain 2026 – Evolving Under Pressure",
       "url": "https://www.fooddive.com/spons/podcast-cold-chain-2026-evolving-under-pressure/817965",
       "published_at": "2026-05-12T03:00:00+00:00",
-      "collected_at": "2026-05-14T02:28:48.825806+00:00",
+      "collected_at": "2026-05-14T06:18:12.543652+00:00",
       "summary_excerpt": "This podcast series examines the forces reshaping cold chain operations, from trade volatility and tariffs to AI adoption and supply chain resilience.",
       "recommended_action": "review Product/FoodType/Brand keyword coverage"
     },
@@ -227,7 +227,7 @@
       "title": "디카페인 커피 안심하고 선택하세요",
       "url": "/portal/board/boardDetail.do?bbs_no=bbs080&menu_no=2857&ntctxt_no=49971",
       "published_at": "2026-05-11T15:00:00+00:00",
-      "collected_at": "2026-05-14T02:28:48.825806+00:00",
+      "collected_at": "2026-05-14T06:18:12.543652+00:00",
       "summary_excerpt": "디카페인 커피 안심하고 선택하세요",
       "recommended_action": "review whether this item belongs in FoodRadar matching scope"
     }
