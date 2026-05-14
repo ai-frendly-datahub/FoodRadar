@@ -84,6 +84,22 @@ jobs:
           path: quality_report.txt
           retention-days: 30
 
+      - name: Verify dated data artifact
+        run: |
+          set -euo pipefail
+          dates="$(date -u +%F) $(TZ=Asia/Seoul date +%F)"
+          found=0
+          for d in $dates; do
+            if find "data/raw/$d" -type f ! -name ".gitkeep" -print -quit 2>/dev/null | grep -q .; then found=1; fi
+            if find "data/snapshots/$d" -type f ! -name ".gitkeep" -print -quit 2>/dev/null | grep -q .; then found=1; fi
+            if find "data/daily" -maxdepth 1 -type f -name "$d*" -print -quit 2>/dev/null | grep -q .; then found=1; fi
+          done
+          if [ "$found" -eq 0 ]; then
+            echo "::error::No dated data artifact found for UTC/KST dates: $dates"
+            find data -maxdepth 3 -type f \( -path "*/raw/*" -o -path "*/daily/*" -o -path "*/snapshots/*" \) | sort | tail -50 || true
+            exit 1
+          fi
+
       - name: Auto-commit data updates
         continue-on-error: true
         uses: stefanzweifel/git-auto-commit-action@v5
