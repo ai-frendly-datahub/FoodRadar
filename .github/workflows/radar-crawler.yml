@@ -105,7 +105,7 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: update radar data [skip ci]"
-          file_pattern: "data/ reports/"
+          file_pattern: "data/ reports/ :(exclude)data/search_index.db*"
           add_options: "-f"
           skip_fetch: false
           skip_checkout: false
