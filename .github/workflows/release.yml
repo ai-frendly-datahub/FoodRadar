@@ -31,7 +31,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install "radar-core @ git+https://github.com/ai-frendly-datahub/radar-core.git@v0.3.2"
+          pip install "radar-core @ git+https://github.com/ai-frendly-datahub/radar-core.git@main"
           pip install -r requirements.txt
 
       - name: Generate changelog
