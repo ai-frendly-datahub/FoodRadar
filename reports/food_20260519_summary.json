@@ -1,0 +1,255 @@
+{
+  "date": "2026-05-19",
+  "category": "food",
+  "article_count": 79,
+  "source_count": 9,
+  "matched_count": 77,
+  "top_entities": [
+    {
+      "name": "FoodGeneral",
+      "count": 191
+    },
+    {
+      "name": "SafetyIssue",
+      "count": 86
+    },
+    {
+      "name": "FoodType",
+      "count": 58
+    },
+    {
+      "name": "Regulation",
+      "count": 26
+    },
+    {
+      "name": "Manufacturer",
+      "count": 9
+    },
+    {
+      "name": "Brand",
+      "count": 5
+    },
+    {
+      "name": "ManufacturerCanonical",
+      "count": 5
+    },
+    {
+      "name": "RecallReason",
+      "count": 3
+    },
+    {
+      "name": "Product",
+      "count": 3
+    },
+    {
+      "name": "ProductCanonical",
+      "count": 3
+    },
+    {
+      "name": "Region",
+      "count": 3
+    }
+  ],
+  "sources": {
+    "식품안전나라 행정처분": 24,
+    "Food Safety News": 22,
+    "식약처 보도자료": 14,
+    "Food Dive": 12,
+    "식품안전나라 회수판매중지": 3,
+    "r/foodsafety": 1,
+    "r/Cooking": 1,
+    "r/KoreanFood": 1,
+    "r/nutrition": 1
+  },
+  "generated_at": "2026-05-19T22:27:03.600069+09:00",
+  "articles": [
+    {
+      "event_model_payload": {
+        "source_url": "https://www.reddit.com/r/foodsafety/comments/1tbxzvh/milk_carton_waxxy_powder/"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Long term reuse of homemade tallow",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tbxr2d/long_term_reuse_of_homemade_tallow/",
+        "published_at": "2026-05-13T12:10:19+00:00",
+        "summary": "[r/Cooking] by u/Snappy053 | 3 points | 0 comments\n\nI have a question about reusing the tallow from my cooked steaks.\n\nIt's generally ok to store in the fridge for a few months up to a year depending on how it's extracted and stored, but I wanted to know if reusing the same fats to cook with over and over is commonplace? For example, I cook a couple of steaks one night and save the drippings in the fridge, juice and all. The next week I cook a steak, I pry the puck of tallow ou and it goes back in the pan. Repeat until I cook something like fried potato or sauteed veggies, which tends to absorb the fat.\n\nDo you guys generally get rid of it all or use it up and start a new container of tallow after a little while? Or does the constant cooking extend its life?"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/KoreanFood",
+        "headline": "Spicy Pork, Dotori-muk Salad, Chive Pancakes, and Beef Radish Soup - I made a video of the whole process!",
+        "source_url": "https://www.reddit.com/r/KoreanFood/comments/1tbwq4c/spicy_pork_dotorimuk_salad_chive_pancakes_and/",
+        "published_at": "2026-05-13T11:24:16+00:00",
+        "summary": "[r/KoreanFood] by u/Joe_WYK | 15 points | 2 comments\n\n1. Spicy Stir-fried Pork (Jeyuk-bokkeum)\n\n​Main: 600g (21.2oz) Pork shoulder\n\n​Vegetables: 1 Green onion, 1/2 Onion, 1/5 Carrot, 1 Cheongyang chili pepper\n\n​Sauce Ratio:\n\n​Cooking wine 1 / Onion 1/2 / Green onion 1 / Cheongyang chili pepper 1\n\n​Red chili flakes 4 / Minced garlic 2 / Soy sauce 2 / Red chili paste 2\n\n​Sesame oil 1 / 1/2 tbsp Sugar\n\n​Garnish & Sides: Sesame seeds, Lettuce, Perilla leaves\n\n​Ssamjang Sauce Ratio: Soybean paste 2 : Red chili paste 1 : Corn syrup 1 : Sesame oil 1 : Minced garlic 1\n\n​2. Acorn Jelly Salad (Dotori-muk Muchim)\n\n​Main: 1 pack Store-bought Acorn jelly (approx. 400g / 14.1oz)\n\n​Vegetables: Water dropwort (handful), 1 Lettuce leaf, 1/5 Carrot, 1 Cucumber, 1 Cheongyang chili pepper\n\n​Dressing Ratio: Soy sauce 2 : Vinegar 2 : Sugar 2 : Red chili flakes 1 : Sesame oil 1\n\n​3. Chive Pancake (Buchu-jeon)\n\n​Main: 1/2 bunch Chives, 1 Cheongyang chili pepper\n\n​Batter Ratio: Flour 1 : Starch powder 1 : Water 2\n\n​Dipping Sauce Ratio: Soy sauce 1 : Vinegar 1 : Water 1\n\n​4. Beef Radish Soup (Sogogi Mu-guk)\n\n​Main: Beef, Korean radish\n\n​Aromatics: 1 tbsp Minced garlic, 1/2 Green onion\n\n​Seasoning: Soup soy sauce 1 : Anchovy fish sauce 2 : Salt to taste"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/nutrition",
+        "headline": "how many cans of baked beans a week is too many?",
+        "source_url": "https://www.reddit.com/r/nutrition/comments/1tbuuus/how_many_cans_of_baked_beans_a_week_is_too_many/",
+        "published_at": "2026-05-13T09:46:53+00:00",
+        "summary": "[r/nutrition] by u/RichAfter2565 | 8 points | 16 comments\n\nI normally eat probaly 7-10 cans of heinz baked beens a week maybe. is this too many?\n\nbare in mind this is the uk version, which doest have any pork or molasses in them, making them lower in sugar and fat."
+      }
+    }
+  ],
+  "quality_summary": {
+    "total_sources": 12,
+    "tracked_sources": 3,
+    "fresh_sources": 2,
+    "stale_sources": 1,
+    "missing_sources": 0,
+    "unknown_event_date_sources": 0,
+    "not_tracked_sources": 8,
+    "catalog_only_sources": 0,
+    "skipped_disabled_sources": 1,
+    "collection_error_count": 4,
+    "alias_candidate_count": 4,
+    "product_alias_candidate_count": 0,
+    "brand_alias_candidate_count": 2,
+    "manufacturer_alias_candidate_count": 2,
+    "match_coverage_article_count": 79,
+    "match_coverage_matched_count": 77,
+    "match_coverage_unmatched_count": 2,
+    "match_coverage_rate": 97.5,
+    "match_coverage_review_item_count": 2,
+    "fresh_food_events": 21,
+    "stale_food_events": 7,
+    "undated_food_events": 0,
+    "unique_food_event_key_count": 28,
+    "recall_events_with_notice_date_count": 3,
+    "recall_events_with_status_count": 3,
+    "event_alias_trace_count": 0,
+    "complaint_auxiliary_only_events": 1,
+    "official_evidence_events": 27,
+    "recall_status_change_events": 3,
+    "enforcement_action_events": 24,
+    "complaint_signal_events": 1
+  },
+  "warnings": [
+    "collection errors detected: 4",
+    "freshness gaps detected: stale=1, missing=0"
+  ],
+  "quality_flagged_sources": [
+    {
+      "source": "r/foodsafety",
+      "source_type": "reddit",
+      "enabled": true,
+      "tracked": true,
+      "event_model": "complaint_signal",
+      "freshness_sla_days": 3,
+      "status": "stale",
+      "article_count": 1,
+      "latest_event_at": "2026-05-13T12:20:40+00:00",
+      "latest_collected_at": "2026-05-13T12:23:44.405685+00:00",
+      "age_days": 6.05,
+      "latest_title": "Milk carton waxxy powder?",
+      "latest_url": "https://www.reddit.com/r/foodsafety/comments/1tbxzvh/milk_carton_waxxy_powder",
+      "latest_food_event_key": "complaint-signal:us:r-foodsafety:2026-05-13:milk:https-www-reddit-com-r-foodsafety-comments-1tbxzvh-milk-carton-waxxy-powder",
+      "latest_notice_date": "",
+      "latest_recall_status": "",
+      "latest_release_date": "",
+      "latest_sanction_start_date": "",
+      "latest_sanction_end_date": "",
+      "latest_sanction_type": "",
+      "latest_product_name_raw": "",
+      "latest_manufacturer_name_raw": "",
+      "latest_alias_traces": [],
+      "verification_role": "auxiliary_complaint_signal",
+      "merge_policy": "do_not_merge_with_official_notice",
+      "skip_reason": "",
+      "reenable_gate": "",
+      "errors": [
+        "[r/foodsafety] Reddit returned 403 Forbidden. The subreddit may be private or banned."
+      ]
+    }
+  ],
+  "quality_alias_candidates": [
+    {
+      "alias_type": "brand",
+      "canonical": "",
+      "normalized": "pepsico",
+      "variants": [
+        "pepsico"
+      ],
+      "count": 2,
+      "example_urls": [
+        "https://www.fooddive.com/news/pepsicos-muscle-milk-flexes-rebrand-in-crowded-protein-drink-space/819873",
+        "https://www.fooddive.com/news/utzs-regional-potato-chip-brand-salty-snack-giant/812739"
+      ]
+    },
+    {
+      "alias_type": "brand",
+      "canonical": "",
+      "normalized": "대상",
+      "variants": [
+        "대상"
+      ],
+      "count": 2,
+      "example_urls": [
+        "/portal/board/boardDetail.do?bbs_no=bbs080&menu_no=2857&ntctxt_no=49977",
+        "/portal/board/boardDetail.do?bbs_no=bbs080&menu_no=2857&ntctxt_no=49990"
+      ]
+    },
+    {
+      "alias_type": "manufacturer",
+      "canonical": "",
+      "normalized": "대상",
+      "variants": [
+        "대상"
+      ],
+      "count": 2,
+      "example_urls": [
+        "/portal/board/boardDetail.do?bbs_no=bbs080&menu_no=2857&ntctxt_no=49977",
+        "/portal/board/boardDetail.do?bbs_no=bbs080&menu_no=2857&ntctxt_no=49990"
+      ]
+    },
+    {
+      "alias_type": "manufacturer",
+      "canonical": "",
+      "normalized": "제조업소",
+      "variants": [
+        "제조업소"
+      ],
+      "count": 4,
+      "example_urls": [
+        "/portal/administMeasureDetail.do?seq=4719401",
+        "/portal/administMeasureDetail.do?seq=4720874",
+        "/portal/administMeasureDetail.do?seq=4722113"
+      ]
+    }
+  ],
+  "quality_match_coverage_review_items": [
+    {
+      "reason": "market_or_editorial_unclassified",
+      "priority": "medium",
+      "source": "Food Dive",
+      "source_type": "rss",
+      "trust_tier": "T3_professional",
+      "event_model": "editorial_coverage",
+      "title": "Ben & Jerry’s owner to offer ice cream at entertainment venues through Mini Melts partnership",
+      "url": "https://www.fooddive.com/news/magnum-ice-cream-mini-melts-partnership/820114",
+      "published_at": "2026-05-13T06:15:00+00:00",
+      "collected_at": "2026-05-14T07:46:38.599656+00:00",
+      "summary_excerpt": "The agreement advances Magnum's out-of-home growth strategy by targeting consumers in high-traffic locations.",
+      "recommended_action": "review Product/FoodType/Brand keyword coverage"
+    },
+    {
+      "reason": "market_or_editorial_unclassified",
+      "priority": "medium",
+      "source": "Food Safety News",
+      "source_type": "rss",
+      "trust_tier": "T3_professional",
+      "event_model": "editorial_coverage",
+      "title": "Organic ice cream recalled because of metal pieces",
+      "url": "https://www.foodsafetynews.com/2026/05/organic-ice-cream-recalled-because-of-metal-pieces",
+      "published_at": "2026-05-16T15:51:14+00:00",
+      "collected_at": "2026-05-19T13:27:02.977717+00:00",
+      "summary_excerpt": "Straus Family Creamery is recalling a number of production runs of select flavors and sizes of its Organic Ice Cream because of the potential presence of metal foreign material. The implicated lots were distributed to retailers in seventeen states: AZ, CA, CO,",
+      "recommended_action": "review Product/FoodType/Brand keyword coverage"
+    }
+  ]
+}
