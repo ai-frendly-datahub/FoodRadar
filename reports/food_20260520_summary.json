@@ -1,44 +1,32 @@
 {
   "date": "2026-05-20",
   "category": "food",
-  "article_count": 170,
-  "source_count": 10,
-  "matched_count": 170,
+  "article_count": 132,
+  "source_count": 9,
+  "matched_count": 130,
   "top_entities": [
     {
       "name": "FoodGeneral",
-      "count": 302
+      "count": 242
     },
     {
       "name": "FoodType",
-      "count": 160
+      "count": 146
     },
     {
       "name": "SafetyIssue",
-      "count": 138
+      "count": 107
     },
     {
       "name": "Regulation",
-      "count": 31
+      "count": 23
     },
     {
       "name": "Brand",
-      "count": 15
-    },
-    {
-      "name": "Manufacturer",
-      "count": 13
-    },
-    {
-      "name": "ManufacturerCanonical",
       "count": 9
     },
     {
-      "name": "Product",
-      "count": 6
-    },
-    {
-      "name": "ProductCanonical",
+      "name": "Manufacturer",
       "count": 6
     },
     {
@@ -46,74 +34,31 @@
       "count": 3
     },
     {
-      "name": "Region",
-      "count": 3
+      "name": "ManufacturerCanonical",
+      "count": 2
+    },
+    {
+      "name": "Product",
+      "count": 1
+    },
+    {
+      "name": "ProductCanonical",
+      "count": 1
     }
   ],
   "sources": {
-    "식품안전나라 행정처분": 25,
-    "r/KoreanFood": 15,
-    "r/Cooking": 18,
-    "r/foodsafety": 13,
-    "r/nutrition": 12,
-    "Food Safety News": 36,
-    "Food Dive": 24,
-    "식약처 보도자료": 20,
-    "식품안전나라 회수판매중지": 6,
-    "식품안전 국내뉴스": 1
+    "식품안전나라 행정처분": 27,
+    "r/KoreanFood": 14,
+    "r/Cooking": 17,
+    "r/foodsafety": 12,
+    "Food Safety News": 24,
+    "식약처 보도자료": 13,
+    "r/nutrition": 11,
+    "Food Dive": 13,
+    "식품안전나라 회수판매중지": 1
   },
-  "generated_at": "2026-05-20T08:09:51.955276+09:00",
+  "generated_at": "2026-05-20T15:42:00.951692+09:00",
   "articles": [
-    {
-      "event_model_payload": {
-        "source_url": "/portal/administMeasureDetail.do?seq=4708216"
-      }
-    },
-    {
-      "event_model_payload": {
-        "source_url": "/portal/administMeasureDetail.do?seq=4708557"
-      }
-    },
-    {
-      "event_model_payload": {
-        "source_url": "/portal/administMeasureDetail.do?seq=4708560"
-      }
-    },
-    {
-      "event_model_payload": {
-        "source_url": "/portal/administMeasureDetail.do?seq=4714385"
-      }
-    },
-    {
-      "event_model_payload": {
-        "source_url": "/portal/administMeasureDetail.do?seq=4720852"
-      }
-    },
-    {
-      "event_model_payload": {
-        "source_url": "/portal/administMeasureDetail.do?seq=4722113"
-      }
-    },
-    {
-      "event_model_payload": {
-        "source_url": "/portal/administMeasureDetail.do?seq=4720909"
-      }
-    },
-    {
-      "event_model_payload": {
-        "source_url": "/portal/administMeasureDetail.do?seq=4713999"
-      }
-    },
-    {
-      "event_model_payload": {
-        "source_url": "/portal/administMeasureDetail.do?seq=4719299"
-      }
-    },
-    {
-      "event_model_payload": {
-        "source_url": "/portal/administMeasureDetail.do?seq=4707732"
-      }
-    },
     {
       "event_model_payload": {
         "source_name": "r/KoreanFood",
@@ -399,15 +344,6 @@
     },
     {
       "event_model_payload": {
-        "source_name": "Food Safety News",
-        "headline": "Kroger recalling croutons because of Salmonella risk",
-        "source_url": "https://www.foodsafetynews.com/2026/05/kroger-recalling-croutons-because-of-salmonella-risk/",
-        "published_at": "2026-05-19T13:19:30+00:00",
-        "summary": "<p>Sugar Foods LLC is recalling certain lots of Kroger Homestyle Cheese Garlic Croutons, 5-ounce pouches with the UPC 0 11110 81353 4 because of the potential for Salmonella contamination associated with milk powder used as an ingredient in the product.</p><p>There is concern that consumers may have the recalled croutons</p>"
-      }
-    },
-    {
-      "event_model_payload": {
         "source_name": "r/KoreanFood",
         "headline": "Proud to present... Buchu Namul!",
         "source_url": "https://www.reddit.com/r/KoreanFood/comments/1thmotv/proud_to_present_buchu_namul/",
@@ -445,34 +381,7 @@
     },
     {
       "event_model_payload": {
-        "source_name": "Food Dive",
-        "headline": "Ring Pop maker Bazooka expands into international flavors with new candy brand",
-        "source_url": "https://www.fooddive.com/news/bazooka-brands-go-wandr-mochi-gummy-international-flavors/820606/",
-        "published_at": "2026-05-19T06:01:00+00:00",
-        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/dbVPRLn-7S-q60r1zgNThb2sujjZ2eMIxotwfC-gpdc/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9Hb19XYW5kcl9Qcm9kdWN0X0ltYWdlcnlfX19CZXJyeV9NaXguanBn.webp\" /></div></figure><p>Go Wandr looks to tap into consumer interest in global flavors and textures, starting with a Japan-inspired mochi gummy.</p>"
-      }
-    },
-    {
-      "event_model_payload": {
         "source_url": "https://www.reddit.com/r/foodsafety/comments/1thdabf/does_this_look_safe/"
-      }
-    },
-    {
-      "event_model_payload": {
-        "source_name": "Food Dive",
-        "headline": "Danone exits stake in Lifeway Foods",
-        "source_url": "https://www.fooddive.com/news/danone-sells-stake-lifeway-kefir/820590/",
-        "published_at": "2026-05-19T05:03:00+00:00",
-        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/X-NwtU0C0Wtr7WZw5WPoYJ-KxKZ0UZN4MoOQs-iYnkg/g:nowe:99:113/c:2281:1288/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9MaWZld2F5X0tlZmlyX0ZsYXZvcnMuanBn.webp\" /></div></figure><p>The dairy giant is selling off its shares in the kefir maker, ending a long and tumultuous relationship between the two companies.</p>"
-      }
-    },
-    {
-      "event_model_payload": {
-        "source_name": "Food Dive",
-        "headline": "Kraft Heinz’s biggest portfolio campaign to date celebrates America250",
-        "source_url": "https://www.fooddive.com/news/kraft-heinzs-biggest-portfolio-campaign-to-date-celebrates-america250/820583/",
-        "published_at": "2026-05-19T04:37:00+00:00",
-        "summary": "<p>The CPG giant is uniting several of its top brands to capitalize on cookout season as it ramps up marketing spend to support its turnaround.</p>"
       }
     },
     {
@@ -486,101 +395,11 @@
     },
     {
       "event_model_payload": {
-        "source_name": "Food Safety News",
-        "headline": "EU plans to ban meat exports from Brazil",
-        "source_url": "https://www.foodsafetynews.com/2026/05/eu-plans-to-ban-meat-exports-from-brazil/",
-        "published_at": "2026-05-18T19:05:16+00:00",
-        "summary": "Rules on imports will apply beginning Sept. 3, 2026"
-      }
-    },
-    {
-      "event_model_payload": {
-        "source_name": "Food Safety News",
-        "headline": "GRAS, additives, chemicals: Who should hold the authority?",
-        "source_url": "https://www.foodsafetynews.com/2026/05/gras-additives-chemicals-who-should-hold-the-authority/",
-        "published_at": "2026-05-18T19:03:26+00:00",
-        "summary": "<p><strong>-- OPINION --</strong></p><p>State leadership vs. a patchwork of regulations sums up of the controversy over the “FRESH Act” in a single phrase.</p><p>Due to its controversial provisions on federal food regulations superseding the states, amended GRAS allowances, and chemical ingredients, the proposed FDA Review and Evaluation for</p>"
-      }
-    },
-    {
-      "event_model_payload": {
-        "source_name": "Food Safety News",
-        "headline": "New Zealand continues reforming food safety system",
-        "source_url": "https://www.foodsafetynews.com/2026/05/new-zealand-continues-reforming-food-safety-system/",
-        "published_at": "2026-05-18T19:01:49+00:00",
-        "summary": "<p>Guidance has been published in New Zealand aimed at giving multi-site businesses national consistency.</p><p>The government said the move would make operations easier for food companies with multiple sites by applying consistent verification rules across the country.</p>"
-      }
-    },
-    {
-      "event_model_payload": {
-        "source_name": "Food Safety News",
-        "headline": "IQ Produce recalling enoki mushrooms because of Listeria contamination",
-        "source_url": "https://www.foodsafetynews.com/2026/05/iq-produce-recalling-enoki-mushrooms-because-of-listeria-contamination/",
-        "published_at": "2026-05-18T17:43:11+00:00",
-        "summary": "<p>IQ Produce of Vernon, CA, is recalling 528 CASES of enoki mushrooms in  150-gram packages because they have the potential to be contaminated with Listeria monocytogenes.</p><p>The mushrooms were distributed through retail stores. The package has green label and label as IQ Produce Enoki Mushroom with Lot# UI775.</p><p>No</p>"
-      }
-    },
-    {
-      "event_model_payload": {
-        "source_name": "Food Safety News",
-        "headline": "Smoked herring recalled because of potential for botulism poisoning",
-        "source_url": "https://www.foodsafetynews.com/2026/05/smoked-herring-recalled-because-of-potential-for-botulism-poisoning/",
-        "published_at": "2026-05-18T17:28:14+00:00",
-        "summary": "<p>Terra Medi LLC of Long Island City, NY, is recalling all of its imported Hellas Meze Golden Smoked Whole herring in vacuum packages because of improper evisceration of the fish. </p><p>The sale of uneviscerated fish is prohibited under New York State Agriculture and Markets regulation because Clostridium Botulinum spores</p>"
-      }
-    },
-    {
-      "event_model_payload": {
-        "source_name": "Food Safety News",
-        "headline": "Ranch seasoning sold at Walmart recalled because of Salmonella",
-        "source_url": "https://www.foodsafetynews.com/2026/05/ranch-seasoning-sold-at-walmart-recalled-because-of-salmonella/",
-        "published_at": "2026-05-18T17:17:59+00:00",
-        "summary": "<p>Blackstone Products of Providence, UT, is recalling Blackstone Parmesan Ranch seasoning products because they have the potential to be contaminated with Salmonella. </p><p>Blackstone’s action is based on a California Dairies Inc. recall of dry milk powder because of potential Salmonella contamination. The affected milk powder ingredient was</p>"
-      }
-    },
-    {
-      "event_model_payload": {
-        "source_name": "Food Safety News",
-        "headline": "California company recalls enoki mushrooms because of Listeria",
-        "source_url": "https://www.foodsafetynews.com/2026/05/california-company-recalls-enoki-mushrooms-because-of-listeria/",
-        "published_at": "2026-05-18T17:06:28+00:00",
-        "summary": "<p>HH Fresh Trading of Los Angeles, CA, is recalling 120 cases of enoki mushrooms in 150-gram packages because they have the potential to be contaminated with Listeria monocytogenes.</p><p>The enoki mushrooms were distributed to Texas and Florida where the product was distributed to local wholesalers. The product is sold in</p>"
-      }
-    },
-    {
-      "event_model_payload": {
         "source_name": "r/nutrition",
         "headline": "Why do you choose the supplements you take?",
         "source_url": "https://www.reddit.com/r/nutrition/comments/1tgq2sl/why_do_you_choose_the_supplements_you_take/",
         "published_at": "2026-05-18T15:29:26+00:00",
         "summary": "[r/nutrition] by u/adi_gogiccc | 7 points | 18 comments\n\nHey everyone,  \nWe all know the supplement industry is a absolute minefield. Between influencer marketing, conflicting scientific studies, and targeted ads, deciding what to actually put in your body is incredibly complex.  \n  \nI’m currently running a research study at Ghent University to understand how context and information sources shape our supplement choices. Whether you take a basic daily multivitamin or manage a highly specific, performance-focused protocol, your input is incredibly valuable.  \nThe survey is completely anonymous, academic, and takes about 5 minutes to complete.  \n  \n👉 [https://qualtricsxmg5yh6qxql.qualtrics.com/jfe/form/SV\\_6gopAySyglHKCdU](https://qualtricsxmg5yh6qxql.qualtrics.com/jfe/form/SV_6gopAySyglHKCdU)   \n  \nBy participating, you’ll be helping us map out how people navigate the digital noise to make health decisions.\n\n  \nConsequently, if you have a few minutes to spare, I would highly appreciate your insights. If you have any questions about the study, feel free to drop them in the comments below!  \nThank you for your time!"
-      }
-    },
-    {
-      "event_model_payload": {
-        "source_name": "식약처 보도자료",
-        "headline": "[보도참고] 식약처, 스마트 해썹 활성화를 위한 전국 순회 설명회 개최",
-        "source_url": "/portal/board/boardDetail.do?bbs_no=bbs080&ntctxt_no=49996&menu_no=2857",
-        "published_at": "2026-05-18T15:00:00+00:00",
-        "summary": "<p>[보도참고] 식약처, 스마트 해썹 활성화를 위한 전국 순회 설명회 개최</p>"
-      }
-    },
-    {
-      "event_model_payload": {
-        "source_name": "식약처 보도자료",
-        "headline": "식약처, 청소년 수련시설 등 집중점검 11곳 적발",
-        "source_url": "/portal/board/boardDetail.do?bbs_no=bbs080&ntctxt_no=49995&menu_no=2857",
-        "published_at": "2026-05-18T15:00:00+00:00",
-        "summary": "<p><span>식약처, 청소년 수련시설 등 집중점검 11곳 적발</span><span> 김지민 </span></p>"
-      }
-    },
-    {
-      "event_model_payload": {
-        "source_name": "식약처 보도자료",
-        "headline": "[보도참고] 식약처, 시험·검사 분야 민관 협력 강화",
-        "source_url": "/portal/board/boardDetail.do?bbs_no=bbs080&ntctxt_no=49998&menu_no=2857",
-        "published_at": "2026-05-18T15:00:00+00:00",
-        "summary": "<p>[보도참고] 식약처, 시험·검사 분야 민관 협력 강화</p>"
       }
     },
     {
@@ -603,106 +422,11 @@
     },
     {
       "event_model_payload": {
-        "source_name": "Food Dive",
-        "headline": "FDA names safety vet acting head of food",
-        "source_url": "https://www.fooddive.com/news/fda-human-foods-program-donald-prater/820484/",
-        "published_at": "2026-05-18T06:00:00+00:00",
-        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/_wuBDKlxgofuGZjl5ZwRRCQIhyULA-rfYIkWcgIilJQ/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMjI5Njc1NjY4LmpwZw==.webp\" /></div></figure><p>Donald Prater will lead the Human Foods Program and replace Kyle Diamantas, who is taking over as department commissioner.</p>"
-      }
-    },
-    {
-      "event_model_payload": {
         "source_name": "r/nutrition",
         "headline": "Would you rather hit your protein but go over calories majorly, or just miss protein for a day?",
         "source_url": "https://www.reddit.com/r/nutrition/comments/1tgd34h/would_you_rather_hit_your_protein_but_go_over/",
         "published_at": "2026-05-18T05:30:38+00:00",
         "summary": "[r/nutrition] by u/Koalaboxess | 24 points | 37 comments\n\nE.g If the only protein source was a fatty steak, or cheese, whole yoghurt/milk ECT..\n\nEdit- This is a hypothetical, I don't often have this problem either. If, for example, you were staying with family or in a rural area and ran out of your normal foods is what I meant"
-      }
-    },
-    {
-      "event_model_payload": {
-        "source_name": "Food Dive",
-        "headline": "Grocery inflation hits highest level since mid-2023",
-        "source_url": "https://www.fooddive.com/news/grocery-inflation-april-2026-tomatoes-beef-coffee/820465/",
-        "published_at": "2026-05-18T04:51:00+00:00",
-        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/vbZrOUKYGs1trkh1Z4UjUlAwxNygLnssWB-oaauWOA8/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMTk3NDQ1MjI0XzEuanBn.webp\" /></div></figure><p>Tomato prices were up nearly 40% year over year in April, the quickest rate of inflation among the food-at-home categories that the BLS tracks.</p>"
-      }
-    },
-    {
-      "event_model_payload": {
-        "source_name": "Food Dive",
-        "headline": "Inside Utz’s rise from regional potato chip brand to salty snack juggernaut",
-        "source_url": "https://www.fooddive.com/news/utzs-regional-potato-chip-brand-salty-snack-giant/812739/",
-        "published_at": "2026-05-18T04:23:00+00:00",
-        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/B6zQK5lthICihlpSClabJDpA8lQorVpGmoEXmWD8RWk/g:nowe:0:113/c:2944:1663/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9JTUdfMjc4MS1mb3Rvci0yMDI2MDIyMTgyNTMxLmpwZw==.webp\" /></div></figure><p>The 105-year-old pretzel and chip maker is in the midst of a slow but steady national expansion as it competes with PepsiCo’s Frito-Lay and scores of smaller local brands.</p>"
-      }
-    },
-    {
-      "event_model_payload": {
-        "source_name": "Food Dive",
-        "headline": "Building a solid ad budget amid more economic uncertainty",
-        "source_url": "https://www.fooddive.com/spons/building-a-solid-ad-budget-amid-more-economic-uncertainty/820201/",
-        "published_at": "2026-05-18T00:00:00+00:00",
-        "summary": "<p>Spend smarter, not quieter: How food brands can build resilient ad budgets now.</p>"
-      }
-    },
-    {
-      "event_model_payload": {
-        "source_name": "Food Dive",
-        "headline": "How can you meet the evolving demands of today’s consumers?",
-        "source_url": "https://www.fooddive.com/spons/how-can-you-meet-the-evolving-demands-of-todays-consumers/819381/",
-        "published_at": "2026-05-18T00:00:00+00:00",
-        "summary": "<p>How can you secure success and meet consumer demands in the shelf-stable food category?</p>"
-      }
-    },
-    {
-      "event_model_payload": {
-        "source_name": "Food Safety News",
-        "headline": "Lawmakers want USDA to maintain line speeds in poultry and pork plants, citing food safety",
-        "source_url": "https://www.foodsafetynews.com/2026/05/lawmakers-want-usda-to-maintain-line-speeds-in-poultry-and-pork-plants-citing-food-safety/",
-        "published_at": "2026-05-17T19:05:47+00:00",
-        "summary": "In addition to worker safety, the letter points to food safety issues for federal inspectors who will be forced to significantly increase the number of hogs and poultry they review per hour."
-      }
-    },
-    {
-      "event_model_payload": {
-        "source_name": "Food Safety News",
-        "headline": "FDA warns four firms in California and Oregon over Listeria, HACCP and sanitation failures",
-        "source_url": "https://www.foodsafetynews.com/2026/05/fda-warns-four-firms-in-california-and-oregon-over-listeria-haccp-and-sanitation-failures/",
-        "published_at": "2026-05-17T19:04:17+00:00",
-        "summary": "<p><em>As part of its enforcement activities, the U.S. Food and Drug Administration sends warning letters to entities under its jurisdiction. Some letters are not posted for public view until weeks or months after they are sent. Business owners generally have 15 working days to respond to FDA warning letters.</em></p>"
-      }
-    },
-    {
-      "event_model_payload": {
-        "source_name": "Food Safety News",
-        "headline": "Early outbreak detection minimizes impact, says WHO",
-        "source_url": "https://www.foodsafetynews.com/2026/05/early-outbreak-detection-minimizes-impact-says-who/",
-        "published_at": "2026-05-17T19:03:58+00:00",
-        "summary": "<p>Scientists have stressed the importance of detecting outbreaks early to reduce the chance of contamination spreading and becoming a wider threat to public health.</p><p>Comments were made during a webinar held to mark the official release of manuals on the surveillance of and response to foodborne outbreaks by the World</p>"
-      }
-    },
-    {
-      "event_model_payload": {
-        "source_url": "/portal/suspensionDetail.do?search_keyword=3000226157"
-      }
-    },
-    {
-      "event_model_payload": {
-        "source_name": "식약처 보도자료",
-        "headline": "국민과 함께 달리며 실천하는 '식품 안전', '2026 식품안전 마라톤 대회' 개최",
-        "source_url": "/portal/board/boardDetail.do?bbs_no=bbs080&ntctxt_no=49991&menu_no=2857",
-        "published_at": "2026-05-17T15:00:00+00:00",
-        "summary": "<p>국민과 함께 달리며 실천하는 '식품 안전', '2026 식품안전 마라톤 대회' 개최</p>"
-      }
-    },
-    {
-      "event_model_payload": {
-        "source_name": "식약처 보도자료",
-        "headline": "[보도참고] 식약처, 국제식품규격위원회(CODEX)에서 식품 표시 국제 기준 논의 주도",
-        "source_url": "/portal/board/boardDetail.do?bbs_no=bbs080&ntctxt_no=49993&menu_no=2857",
-        "published_at": "2026-05-17T15:00:00+00:00",
-        "summary": "<p>[보도참고] 식약처, 국제식품규격위원회(CODEX)에서 식품 표시 국제 기준 논의 주도</p>"
       }
     },
     {
@@ -743,69 +467,6 @@
     },
     {
       "event_model_payload": {
-        "source_name": "Food Dive",
-        "headline": "PepsiCo’s Muscle Milk flexes rebrand in crowded protein drink space",
-        "source_url": "https://www.fooddive.com/news/pepsicos-muscle-milk-flexes-rebrand-in-crowded-protein-drink-space/819873/",
-        "published_at": "2026-05-15T06:00:00+00:00",
-        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/Pdb5WgFrzYEoFSZ_Zil2C4u3bYHkxjSKEx1jC39nyzA/g:nowe:0:145/c:3100:1751/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9OZXdfTXVzY2xlX01pbGtfTGluZV9VcC1mb3Rvci0yMDI2MDUxNTk0NjQ2LmpwZw==.webp\" /></div></figure><p>The reformulated beverage amps up the protein while cutting artificial colors, sweeteners and flavors, positioning it to stand out among competitors like Coca-Cola's Core Power.</p>"
-      }
-    },
-    {
-      "event_model_payload": {
-        "source_name": "Food Dive",
-        "headline": "Canmakers say capacity is tight as beverage industry gears up for big summer",
-        "source_url": "https://www.fooddive.com/news/beverage-food-cans-earnings-ball-ab-inbev-crown-ardagh-/820259/",
-        "published_at": "2026-05-15T05:31:00+00:00",
-        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/uLiTQ0k3F-w3V4AOfFCMCdIGhWWI5pdjiB_By6dxtAs/g:nowe:8:178/c:3829:2163/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9CdWR3ZWlzZXJfYW5kX0J1ZF9MaWdodC5qcGc=.webp\" /></div></figure><p>Ball, Crown and Ardagh are navigating higher input costs and inflationary pressures as brands prepare promotions related to the World Cup and America250 celebrations.</p>"
-      }
-    },
-    {
-      "event_model_payload": {
-        "source_name": "식약처 보도자료",
-        "headline": "식약처, 식품 판매 무인점포 특별점검 결과, 147곳 적발",
-        "source_url": "/portal/board/boardDetail.do?bbs_no=bbs080&ntctxt_no=49989&menu_no=2857",
-        "published_at": "2026-05-14T15:00:00+00:00",
-        "summary": "<p>식약처, 식품 판매 무인점포 특별점검 결과, 147곳 적발</p>"
-      }
-    },
-    {
-      "event_model_payload": {
-        "source_name": "식약처 보도자료",
-        "headline": "[보도참고] ‘식품안전나라’, 2026 국가대표브랜드 공공서비스 부문 대상 수상",
-        "source_url": "/portal/board/boardDetail.do?bbs_no=bbs080&ntctxt_no=49990&menu_no=2857",
-        "published_at": "2026-05-14T15:00:00+00:00",
-        "summary": "<p>[보도참고] ‘식품안전나라’, 2026 국가대표브랜드 공공서비스 부문 대상 수상</p>"
-      }
-    },
-    {
-      "event_model_payload": {
-        "source_name": "식약처 보도자료",
-        "headline": "식품안전으로 건강한 대한민국을 만들어가겠습니다",
-        "source_url": "/portal/board/boardDetail.do?bbs_no=bbs080&ntctxt_no=49987&menu_no=2857",
-        "published_at": "2026-05-13T15:00:00+00:00",
-        "summary": "<p>식품안전으로 건강한 대한민국을 만들어가겠습니다</p>"
-      }
-    },
-    {
-      "event_model_payload": {
-        "source_name": "식약처 보도자료",
-        "headline": "식약처 사칭 위조 공문 피해 확산에 따른 주의 재당부",
-        "source_url": "/portal/board/boardDetail.do?bbs_no=bbs080&ntctxt_no=49984&menu_no=2857",
-        "published_at": "2026-05-13T15:00:00+00:00",
-        "summary": "<p>식약처 사칭 위조 공문 피해 확산에 따른 주의 재당부</p>"
-      }
-    },
-    {
-      "event_model_payload": {
-        "source_name": "식약처 보도자료",
-        "headline": "[보도참고] 과학으로 잇는 식품안전, 글로벌 협력의 길 넓혀",
-        "source_url": "/portal/board/boardDetail.do?bbs_no=bbs080&ntctxt_no=49986&menu_no=2857",
-        "published_at": "2026-05-13T15:00:00+00:00",
-        "summary": "<p>[보도참고] 과학으로 잇는 식품안전, 글로벌 협력의 길 넓혀</p>"
-      }
-    },
-    {
-      "event_model_payload": {
         "source_url": "https://www.reddit.com/r/foodsafety/comments/1tbxzvh/milk_carton_waxxy_powder/"
       }
     },
@@ -835,132 +496,8 @@
         "published_at": "2026-05-13T09:46:53+00:00",
         "summary": "[r/nutrition] by u/RichAfter2565 | 8 points | 16 comments\n\nI normally eat probaly 7-10 cans of heinz baked beens a week maybe. is this too many?\n\nbare in mind this is the uk version, which doest have any pork or molasses in them, making them lower in sugar and fat."
       }
-    },
-    {
-      "event_model_payload": {
-        "source_url": "/portal/suspensionDetail.do?search_keyword=3000225967"
-      }
-    },
-    {
-      "event_model_payload": {
-        "source_url": "/portal/suspensionDetail.do?search_keyword=3000225962"
-      }
-    },
-    {
-      "event_model_payload": {
-        "source_url": "/portal/suspensionDetail.do?search_keyword=3000225935"
-      }
-    },
-    {
-      "event_model_payload": {
-        "source_url": "/portal/suspensionDetail.do?search_keyword=3000225841"
-      }
-    },
-    {
-      "event_model_payload": {
-        "source_name": "r/Cooking",
-        "headline": "White Pepper",
-        "source_url": "https://www.reddit.com/r/Cooking/comments/1t5v7wl/white_pepper/",
-        "published_at": "2026-05-07T00:40:56+00:00",
-        "summary": "[r/Cooking] by u/warpweftwelted | 1 points | 3 comments\n\nIs white pepper spicy as hell and I just don't know it?\n\nI followed Kenneth Temple's Jambalaya recipe on youtube twice. The first was to the exact measurements except cutting back on the cayenne powder because myself and especially my wife and 2 year old can't handle high heat. It still blew even me out of the water.\n\nNext time I cooked it with almost no cayenne at all and it was still spicy as hell. My suspect is the white pepper or I'm more wimpy than I thought.\n\nWhat are yalls thoughts? Side note this guy is so chill to listen to for cooking. Link for reference to reicpe: [https://www.youtube.com/watch?v=O8TTbedtCVk&t=18s](https://www.youtube.com/watch?v=O8TTbedtCVk&t=18s)"
-      }
-    },
-    {
-      "event_model_payload": {
-        "source_url": "https://www.reddit.com/r/foodsafety/comments/1t5v10q/can_i_still_take_medicine_from_packets_that_have/"
-      }
-    },
-    {
-      "event_model_payload": {
-        "source_name": "r/KoreanFood",
-        "headline": "Took a train to Busan, had to grab some fresh seafood!",
-        "source_url": "https://www.reddit.com/r/KoreanFood/comments/1t5ujiu/took_a_train_to_busan_had_to_grab_some_fresh/",
-        "published_at": "2026-05-07T00:10:57+00:00",
-        "summary": "[r/KoreanFood] by u/Minute_Register3435 | 27 points | 1 comments\n\nssam in the top right, clam soup, & oysters"
-      }
-    },
-    {
-      "event_model_payload": {
-        "source_name": "Food Safety News",
-        "headline": "'Brocoli Calabrese' seeds recalled because of E. coli",
-        "source_url": "https://www.foodsafetynews.com/2026/05/brocoli-calabrese-seeds-recalled-because-of-e-coli/",
-        "published_at": "2026-05-06T15:24:40+00:00",
-        "summary": "<p>Germina brand \"Brocoli Calabrese\" seeds are being recalled in Canada because of contamination with pathogenic E. Coli.</p><p>The recall was triggered by a recall in another country, according to the Canadian Food Inspection Agency. No illnesses have been reported in Canada in relation to the recalled product.</p><p>The</p>"
-      }
-    },
-    {
-      "event_model_payload": {
-        "source_name": "식품안전 국내뉴스",
-        "headline": "「축산물 또는 동물성 식품의 수입허용국가(지역) 및 수입위생요건」 일부개정고시(안) 행정예고 (식품의약품안전처 공고 제2026-225호)",
-        "source_url": "/portal/board/boardDetail.do?bbs_no=bbs082&ntctxt_no=1110689&menu_no=2859",
-        "published_at": "2026-05-06T15:00:00+00:00",
-        "summary": "[식품안전] 「축산물 또는 동물성 식품의 수입허용국가(지역) 및 수입위생요건」 일부개정고시(안) 행정예고 (식품의약품안전처 공고 제2026-225호)"
-      }
-    },
-    {
-      "event_model_payload": {
-        "source_url": "/portal/suspensionDetail.do?search_keyword=3000225787"
-      }
-    },
-    {
-      "event_model_payload": {
-        "source_name": "Food Dive",
-        "headline": "Babybel parent buys Brainiac snacks to expand better-for-you portfolio",
-        "source_url": "https://www.fooddive.com/news/babybel-parent-buys-brainiac-snacks-to-expand-better-for-you-portfolio/819472/",
-        "published_at": "2026-05-06T12:00:00+00:00",
-        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/VQJphhGXyKhfpcl_452bmvZPhQuiCowGPBczAcQrmqw/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9OZXVyby5qcGc=.webp\" /></div></figure><p>The acquisition comes as the GoGo squeeZ maker looks to expand its U.S. presence and become a leader in functional foods.</p>"
-      }
-    },
-    {
-      "event_model_payload": {
-        "source_name": "r/nutrition",
-        "headline": "Are peas healthy",
-        "source_url": "https://www.reddit.com/r/nutrition/comments/1t56pi0/are_peas_healthy/",
-        "published_at": "2026-05-06T08:21:54+00:00",
-        "summary": "[r/nutrition] by u/rose2830 | 53 points | 77 comments\n\nI don’t really see them hyped up"
-      }
     }
   ],
-  "ontology": {
-    "repo": "FoodRadar",
-    "category": "food",
-    "ontology_version": "0.1.0",
-    "event_model_ids": [
-      "food.complaint_signal",
-      "food.editorial_coverage",
-      "food.enforcement_action",
-      "food.official_notice",
-      "food.recall_status_change"
-    ],
-    "event_model_mappings": {
-      "recall_status_change": "food.recall_status_change",
-      "enforcement_action": "food.enforcement_action",
-      "complaint_signal": "food.complaint_signal",
-      "editorial_coverage": "food.editorial_coverage",
-      "official_notice": "food.official_notice"
-    },
-    "entity_type_hints": [
-      "food.product",
-      "organization.company"
-    ],
-    "source_role_ids": [
-      "community_signal",
-      "context_only",
-      "primary_evidence"
-    ],
-    "source_role_mappings": {
-      "식품안전나라 회수판매중지": "primary_evidence",
-      "식품안전나라 행정처분": "primary_evidence",
-      "식약처 보도자료": "context_only",
-      "Food Safety News": "context_only",
-      "r/foodsafety": "community_signal"
-    },
-    "evidence_policy_ids": [
-      "traceable_url_required",
-      "official_confirmation_required",
-      "non_authoritative_context_only"
-    ]
-  },
   "quality_summary": {
     "total_sources": 12,
     "tracked_sources": 3,
@@ -971,41 +508,44 @@
     "not_tracked_sources": 8,
     "catalog_only_sources": 0,
     "skipped_disabled_sources": 1,
-    "collection_error_count": 0,
-    "alias_candidate_count": 5,
+    "collection_error_count": 4,
+    "alias_candidate_count": 3,
     "product_alias_candidate_count": 0,
-    "brand_alias_candidate_count": 3,
-    "manufacturer_alias_candidate_count": 2,
-    "match_coverage_article_count": 170,
-    "match_coverage_matched_count": 170,
-    "match_coverage_unmatched_count": 0,
-    "match_coverage_rate": 100.0,
-    "match_coverage_review_item_count": 0,
-    "fresh_food_events": 33,
-    "stale_food_events": 11,
+    "brand_alias_candidate_count": 2,
+    "manufacturer_alias_candidate_count": 1,
+    "match_coverage_article_count": 132,
+    "match_coverage_matched_count": 130,
+    "match_coverage_unmatched_count": 2,
+    "match_coverage_rate": 98.5,
+    "match_coverage_review_item_count": 2,
+    "fresh_food_events": 36,
+    "stale_food_events": 4,
     "undated_food_events": 0,
-    "unique_food_event_key_count": 44,
-    "recall_events_with_notice_date_count": 6,
-    "recall_events_with_status_count": 6,
+    "unique_food_event_key_count": 40,
+    "recall_events_with_notice_date_count": 1,
+    "recall_events_with_status_count": 1,
     "event_alias_trace_count": 0,
-    "complaint_auxiliary_only_events": 13,
-    "official_evidence_events": 31,
-    "recall_status_change_events": 6,
-    "enforcement_action_events": 25,
-    "complaint_signal_events": 13
+    "complaint_auxiliary_only_events": 12,
+    "official_evidence_events": 28,
+    "recall_status_change_events": 1,
+    "enforcement_action_events": 27,
+    "complaint_signal_events": 12
   },
+  "warnings": [
+    "collection errors detected: 4"
+  ],
   "quality_alias_candidates": [
     {
       "alias_type": "brand",
       "canonical": "",
-      "normalized": "kraftheinz",
+      "normalized": "aldi",
       "variants": [
-        "kraft heinz"
+        "aldi"
       ],
       "count": 2,
       "example_urls": [
-        "https://www.fooddive.com/news/kraft-heinz-hikes-marketing-spend-37-as-turnaround-takes-shape/819982",
-        "https://www.fooddive.com/news/kraft-heinzs-biggest-portfolio-campaign-to-date-celebrates-america250/820583"
+        "https://www.foodsafetynews.com/2026/05/court-gives-judgement-in-aldi-pest-control-case",
+        "https://www.reddit.com/r/foodsafety/comments/1ti083a/newly_opened_aldi_applesauce_is_this_bad_or_just"
       ]
     },
     {
@@ -1022,34 +562,6 @@
       ]
     },
     {
-      "alias_type": "brand",
-      "canonical": "",
-      "normalized": "대상",
-      "variants": [
-        "대상"
-      ],
-      "count": 3,
-      "example_urls": [
-        "/portal/board/boardDetail.do?bbs_no=bbs080&menu_no=2857&ntctxt_no=49973",
-        "/portal/board/boardDetail.do?bbs_no=bbs080&menu_no=2857&ntctxt_no=49977",
-        "/portal/board/boardDetail.do?bbs_no=bbs080&menu_no=2857&ntctxt_no=49990"
-      ]
-    },
-    {
-      "alias_type": "manufacturer",
-      "canonical": "",
-      "normalized": "대상",
-      "variants": [
-        "대상"
-      ],
-      "count": 3,
-      "example_urls": [
-        "/portal/board/boardDetail.do?bbs_no=bbs080&menu_no=2857&ntctxt_no=49973",
-        "/portal/board/boardDetail.do?bbs_no=bbs080&menu_no=2857&ntctxt_no=49977",
-        "/portal/board/boardDetail.do?bbs_no=bbs080&menu_no=2857&ntctxt_no=49990"
-      ]
-    },
-    {
       "alias_type": "manufacturer",
       "canonical": "",
       "normalized": "제조업소",
@@ -1058,10 +570,40 @@
       ],
       "count": 4,
       "example_urls": [
-        "/portal/administMeasureDetail.do?seq=4720039",
+        "/portal/administMeasureDetail.do?seq=4719401",
         "/portal/administMeasureDetail.do?seq=4720874",
         "/portal/administMeasureDetail.do?seq=4722113"
       ]
+    }
+  ],
+  "quality_match_coverage_review_items": [
+    {
+      "reason": "unclassified_article",
+      "priority": "low",
+      "source": "식품안전나라 행정처분",
+      "source_type": "rss",
+      "trust_tier": "T1_official",
+      "event_model": "enforcement_action",
+      "title": "(no title)",
+      "url": "/portal/administMeasureDetail.do?seq=4722681",
+      "published_at": null,
+      "collected_at": "2026-05-20T06:42:00.129142+00:00",
+      "summary_excerpt": "20260520",
+      "recommended_action": "review whether this item belongs in FoodRadar matching scope"
+    },
+    {
+      "reason": "unclassified_article",
+      "priority": "low",
+      "source": "식품안전나라 행정처분",
+      "source_type": "rss",
+      "trust_tier": "T1_official",
+      "event_model": "enforcement_action",
+      "title": "상기 당사자는 해당 영업소 소재지의 관련 영업시설을 전부 철거하고, 변경허가를 받지 아니한 사실이 있음",
+      "url": "/portal/administMeasureDetail.do?seq=4692459",
+      "published_at": null,
+      "collected_at": "2026-05-20T06:42:00.129142+00:00",
+      "summary_excerpt": "20251121",
+      "recommended_action": "review whether this item belongs in FoodRadar matching scope"
     }
   ]
 }
