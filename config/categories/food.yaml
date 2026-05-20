@@ -479,6 +479,8 @@ entities:
   - 과자
   - 빵
   - 면류
+  - 커피
+  - 디카페인
   - 통조림
   - 영유아식품
   - 특수용도식품
@@ -542,9 +544,12 @@ entities:
   - fruits
   - apple
   - apples
+  - applesauce
   - orange
   - oranges
   - milk
+  - ice cream
+  - kefir
   - tuna
   - zucchini
   - kale
@@ -583,6 +588,18 @@ entities:
   - miyeokguk
   - juk
   - gochugaru
+  - kimbap
+  - jjajang
+  - jjangbbong
+  - 짜장면
+  - 짬뽕
+  - 탕수육
+  - buchu
+  - namul
+  - bossam
+  - jokbal
+  - baguette
+  - baguettes
 - name: Brand
   display_name: 브랜드
   keywords:
@@ -622,6 +639,13 @@ entities:
   - Ofi
   - Mondelēz
   - Mondelez
+  - Aldi
+  - Ben & Jerry's
+  - Danone
+  - Kraft Heinz
+  - Lifeway
+  - Mini Melts
+  - Suja
 - name: Product
   display_name: 제품
   keywords:
@@ -666,6 +690,7 @@ entities:
   - 알레르기
   - 표시위반
   - recall
+  - recalled
   - contamination
   - outbreak
   - outbreaks
@@ -682,6 +707,7 @@ entities:
   - plague
   - FDA
   - withdrawal
+  - metal pieces
   - mold
   - moldy
   - expired
@@ -689,6 +715,8 @@ entities:
   - gone bad
   - safe to eat
   - is it safe
+  - look safe
+  - is this bad
   - leaked
   - compromised
   - melted
@@ -859,6 +887,8 @@ entities:
   - cook
   - recipe
   - recipes
+  - cold chain
+  - supply chain
   - dinner
   - supper
   - inspection

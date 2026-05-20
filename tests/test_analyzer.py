@@ -256,6 +256,19 @@ class TestApplyEntityRules:
             _make_article("Mondelēz CEO says Iran war could further weigh on consumer confidence"),
             _make_article("Assorted goodness for dinner"),
             _make_article("How Do I Cook These?"),
+            _make_article("Organic ice cream recalled because of metal pieces"),
+            _make_article("Danone exits stake in Lifeway Foods", summary="Kefir brand ownership update"),
+            _make_article("Kraft Heinz's biggest portfolio campaign celebrates America250"),
+            _make_article("Newly opened Aldi applesauce. Is this bad or just sloppy packaging?"),
+            _make_article("Kimbap"),
+            _make_article("jjajang jjangbbong 짜장면 짬뽕 탕수육"),
+            _make_article("Bossam Jokbal Fest"),
+            _make_article("Horse shaped baguettes"),
+            _make_article(
+                "[Podcast] Cold Chain 2026 – Evolving Under Pressure",
+                summary="Forces reshaping cold chain operations and supply chain resilience.",
+            ),
+            _make_article("디카페인 커피 안심하고 선택하세요"),
         ]
 
         result = apply_entity_rules(articles, config.entities)
@@ -263,3 +276,23 @@ class TestApplyEntityRules:
         assert result[0].matched_entities["Brand"] == ["mondelēz"]
         assert result[1].matched_entities["FoodGeneral"] == ["dinner"]
         assert result[2].matched_entities["FoodGeneral"] == ["cook"]
+        assert result[3].matched_entities["FoodType"] == ["ice cream"]
+        assert result[3].matched_entities["SafetyIssue"] == ["recalled", "metal pieces"]
+        assert result[4].matched_entities["Brand"] == ["danone", "lifeway"]
+        assert result[4].matched_entities["FoodType"] == ["kefir"]
+        assert result[5].matched_entities["Brand"] == ["kraft heinz"]
+        assert result[6].matched_entities["Brand"] == ["aldi"]
+        assert result[6].matched_entities["FoodType"] == ["applesauce"]
+        assert result[6].matched_entities["SafetyIssue"] == ["is this bad"]
+        assert result[7].matched_entities["FoodType"] == ["kimbap"]
+        assert result[8].matched_entities["FoodType"] == [
+            "jjajang",
+            "jjangbbong",
+            "짜장면",
+            "짬뽕",
+            "탕수육",
+        ]
+        assert result[9].matched_entities["FoodType"] == ["bossam", "jokbal"]
+        assert result[10].matched_entities["FoodType"] == ["baguettes"]
+        assert result[11].matched_entities["FoodGeneral"] == ["cold chain", "supply chain"]
+        assert result[12].matched_entities["FoodType"] == ["커피", "디카페인"]
