@@ -6,24 +6,24 @@
   "matched_count": 200,
   "top_entities": [
     {
-      "name": "FoodGeneral",
-      "count": 280
-    },
-    {
       "name": "FoodType",
       "count": 260
     },
     {
+      "name": "FoodGeneral",
+      "count": 259
+    },
+    {
       "name": "SafetyIssue",
-      "count": 91
+      "count": 77
     },
     {
       "name": "Regulation",
-      "count": 23
+      "count": 16
     },
     {
       "name": "Brand",
-      "count": 7
+      "count": 10
     },
     {
       "name": "Manufacturer",
@@ -34,7 +34,7 @@
       "count": 2
     },
     {
-      "name": "RecallReason",
+      "name": "ManufacturerCanonical",
       "count": 2
     },
     {
@@ -42,28 +42,28 @@
       "count": 1
     },
     {
-      "name": "ManufacturerCanonical",
+      "name": "RecallReason",
       "count": 1
     }
   ],
   "sources": {
-    "식품안전나라 행정처분": 12,
+    "식품안전나라 행정처분": 6,
     "r/Cooking": 46,
-    "r/nutrition": 15,
+    "r/nutrition": 16,
     "r/foodsafety": 34,
-    "Food Dive": 14,
+    "Food Dive": 17,
     "r/KoreanFood": 43,
     "Food Safety News": 26,
-    "식약처 보도자료": 9,
+    "식약처 보도자료": 11,
     "식품안전나라 회수판매중지": 1
   },
-  "generated_at": "2026-05-22T01:19:47.033928+09:00",
+  "generated_at": "2026-05-22T01:27:05.830009+09:00",
   "articles": [
     {
       "event_model_payload": {
         "source_name": "식품안전나라 행정처분",
-        "headline": "2024. 9. 2.부터 2026. 1. 9.까지 베트남산 수입식품[제품명(유형): ➊으오이 사오 퐁남(당류가공품), ➋옹토(당류가공품), ➌코코넛워터(과·채주스]을 총 48회에 걸쳐 수입신고하면서 해외 제조업소 소재지를 사실과 다르게 수입신고한 사실이 있음.",
-        "source_url": "/portal/administMeasureDetail.do?seq=4722508",
+        "headline": "2020. 3. 17.부터 2025. 9. 5.까지 베트남산 수입식품[제품명(유형):➊으오이 사오 퐁남(당류가공품), ➋옹토(당류가공품)]을 총 15회에 걸쳐 수입신고하면서 해외 제조업소 소재지를 사실과 다르게 수입신고한 사실이 있음.",
+        "source_url": "/portal/administMeasureDetail.do?seq=4722507",
         "published_at": "2026-05-22T00:00:00+00:00",
         "summary": "20260522"
       }
@@ -71,8 +71,8 @@
     {
       "event_model_payload": {
         "source_name": "식품안전나라 행정처분",
-        "headline": "2020. 3. 17.부터 2025. 9. 5.까지 베트남산 수입식품[제품명(유형):➊으오이 사오 퐁남(당류가공품), ➋옹토(당류가공품)]을 총 15회에 걸쳐 수입신고하면서 해외 제조업소 소재지를 사실과 다르게 수입신고한 사실이 있음.",
-        "source_url": "/portal/administMeasureDetail.do?seq=4722507",
+        "headline": "2024. 9. 2.부터 2026. 1. 9.까지 베트남산 수입식품[제품명(유형): ➊으오이 사오 퐁남(당류가공품), ➋옹토(당류가공품), ➌코코넛워터(과·채주스]을 총 48회에 걸쳐 수입신고하면서 해외 제조업소 소재지를 사실과 다르게 수입신고한 사실이 있음.",
+        "source_url": "/portal/administMeasureDetail.do?seq=4722508",
         "published_at": "2026-05-22T00:00:00+00:00",
         "summary": "20260522"
       }
@@ -970,11 +970,20 @@
     },
     {
       "event_model_payload": {
-        "source_name": "식품안전나라 행정처분",
-        "headline": "2025. 10. 23., 2025. 11. 7. 2차례 수입신고한 중국산 수입식품 ‘신선마늘쫑’에 대하여 수입검사가 진행 중인 수입식품을 수입신고 수리 전 보세창고에서 반출(총 3,095박스)하여 수입검사가 진행 중인 제품을 국내로 반입되도록 한 사실이 있음.",
-        "source_url": "/portal/administMeasureDetail.do?seq=4713999",
+        "source_name": "식약처 보도자료",
+        "headline": "(부처합동)식품 수출에 필요한 해외 법령, 한 번에 검색한다",
+        "source_url": "/portal/board/boardDetail.do?bbs_no=bbs080&ntctxt_no=50000&menu_no=2857",
         "published_at": "2026-05-20T00:00:00+00:00",
-        "summary": "20260520"
+        "summary": "<p>(부처합동)식품 수출에 필요한 해외 법령, 한 번에 검색한다</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식약처 보도자료",
+        "headline": "청년이 만드는 식의약 안전, '제15기 식의약 영리더 ' 출범",
+        "source_url": "/portal/board/boardDetail.do?bbs_no=bbs080&ntctxt_no=50001&menu_no=2857",
+        "published_at": "2026-05-20T00:00:00+00:00",
+        "summary": "<p>청년이 만드는 식의약 안전, '제15기 식의약 영리더 ' 출범</p>"
       }
     },
     {
@@ -988,11 +997,11 @@
     },
     {
       "event_model_payload": {
-        "source_name": "식약처 보도자료",
-        "headline": "(부처합동)식품 수출에 필요한 해외 법령, 한 번에 검색한다",
-        "source_url": "/portal/board/boardDetail.do?bbs_no=bbs080&ntctxt_no=50000&menu_no=2857",
+        "source_name": "식품안전나라 행정처분",
+        "headline": "2025. 10. 23., 2025. 11. 7. 2차례 수입신고한 중국산 수입식품 ‘신선마늘쫑’에 대하여 수입검사가 진행 중인 수입식품을 수입신고 수리 전 보세창고에서 반출(총 3,095박스)하여 수입검사가 진행 중인 제품을 국내로 반입되도록 한 사실이 있음.",
+        "source_url": "/portal/administMeasureDetail.do?seq=4713999",
         "published_at": "2026-05-20T00:00:00+00:00",
-        "summary": "<p>(부처합동)식품 수출에 필요한 해외 법령, 한 번에 검색한다</p>"
+        "summary": "20260520"
       }
     },
     {
@@ -1002,15 +1011,6 @@
         "source_url": "/portal/administMeasureDetail.do?seq=4722681",
         "published_at": "2026-05-20T00:00:00+00:00",
         "summary": "20260520"
-      }
-    },
-    {
-      "event_model_payload": {
-        "source_name": "식약처 보도자료",
-        "headline": "청년이 만드는 식의약 안전, '제15기 식의약 영리더 ' 출범",
-        "source_url": "/portal/board/boardDetail.do?bbs_no=bbs080&ntctxt_no=50001&menu_no=2857",
-        "published_at": "2026-05-20T00:00:00+00:00",
-        "summary": "<p>청년이 만드는 식의약 안전, '제15기 식의약 영리더 ' 출범</p>"
       }
     },
     {
@@ -1459,19 +1459,19 @@
     {
       "event_model_payload": {
         "source_name": "식약처 보도자료",
-        "headline": "식약처, 청소년 수련시설 등 집중점검 11곳 적발",
-        "source_url": "/portal/board/boardDetail.do?bbs_no=bbs080&ntctxt_no=49995&menu_no=2857",
+        "headline": "[보도참고] 식약처, 스마트 해썹 활성화를 위한 전국 순회 설명회 개최",
+        "source_url": "/portal/board/boardDetail.do?bbs_no=bbs080&ntctxt_no=49996&menu_no=2857",
         "published_at": "2026-05-19T00:00:00+00:00",
-        "summary": "<p><span>식약처, 청소년 수련시설 등 집중점검 11곳 적발</span><span> 김지민 </span></p>"
+        "summary": "<p>[보도참고] 식약처, 스마트 해썹 활성화를 위한 전국 순회 설명회 개최</p>"
       }
     },
     {
       "event_model_payload": {
         "source_name": "식약처 보도자료",
-        "headline": "[보도참고] 식약처, 스마트 해썹 활성화를 위한 전국 순회 설명회 개최",
-        "source_url": "/portal/board/boardDetail.do?bbs_no=bbs080&ntctxt_no=49996&menu_no=2857",
+        "headline": "식약처, 청소년 수련시설 등 집중점검 11곳 적발",
+        "source_url": "/portal/board/boardDetail.do?bbs_no=bbs080&ntctxt_no=49995&menu_no=2857",
         "published_at": "2026-05-19T00:00:00+00:00",
-        "summary": "<p>[보도참고] 식약처, 스마트 해썹 활성화를 위한 전국 순회 설명회 개최</p>"
+        "summary": "<p><span>식약처, 청소년 수련시설 등 집중점검 11곳 적발</span><span> 김지민 </span></p>"
       }
     },
     {
@@ -1539,15 +1539,6 @@
     },
     {
       "event_model_payload": {
-        "source_name": "식약처 보도자료",
-        "headline": "국민과 함께 달리며 실천하는 '식품 안전', '2026 식품안전 마라톤 대회' 개최",
-        "source_url": "/portal/board/boardDetail.do?bbs_no=bbs080&ntctxt_no=49991&menu_no=2857",
-        "published_at": "2026-05-18T00:00:00+00:00",
-        "summary": "<p>국민과 함께 달리며 실천하는 '식품 안전', '2026 식품안전 마라톤 대회' 개최</p>"
-      }
-    },
-    {
-      "event_model_payload": {
         "source_name": "식품안전나라 행정처분",
         "headline": "2025.5.24.부터 2025.8.21.까지 식품용 기구(약셀 레토라쿠 집게가위)를 수입.판매하면서 수입신고를 하지 않은 사실이 있음.",
         "source_url": "/portal/administMeasureDetail.do?seq=4720909",
@@ -1557,11 +1548,11 @@
     },
     {
       "event_model_payload": {
-        "source_name": "식품안전나라 회수판매중지",
-        "headline": "(주)진성바이오지점",
-        "source_url": "/portal/suspensionDetail.do?search_keyword=3000226157",
+        "source_name": "식약처 보도자료",
+        "headline": "국민과 함께 달리며 실천하는 '식품 안전', '2026 식품안전 마라톤 대회' 개최",
+        "source_url": "/portal/board/boardDetail.do?bbs_no=bbs080&ntctxt_no=49991&menu_no=2857",
         "published_at": "2026-05-18T00:00:00+00:00",
-        "summary": "강황가루"
+        "summary": "<p>국민과 함께 달리며 실천하는 '식품 안전', '2026 식품안전 마라톤 대회' 개최</p>"
       }
     },
     {
@@ -1571,6 +1562,15 @@
         "source_url": "/portal/board/boardDetail.do?bbs_no=bbs080&ntctxt_no=49993&menu_no=2857",
         "published_at": "2026-05-18T00:00:00+00:00",
         "summary": "<p>[보도참고] 식약처, 국제식품규격위원회(CODEX)에서 식품 표시 국제 기준 논의 주도</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식품안전나라 회수판매중지",
+        "headline": "(주)진성바이오지점",
+        "source_url": "/portal/suspensionDetail.do?search_keyword=3000226157",
+        "published_at": "2026-05-18T00:00:00+00:00",
+        "summary": "강황가루"
       }
     },
     {
@@ -1644,6 +1644,42 @@
         "published_at": "2026-05-15T06:51:09+00:00",
         "summary": "[r/nutrition] by u/InfluenceTechnical91 | 112 points | 138 comments\n\nI keep watching new videos every day, and they are so persuasive, making me buy things like protein powders, peanut butter powder, chia seeds, Greek yogurt, expensive snacks, etc. because of TikTok recipes, and at the end most of them taste average.\n\nAnyone else feeling this or am I becoming cynical?"
       }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/nutrition",
+        "headline": "how do i calculate the energy lost in feces?",
+        "source_url": "https://www.reddit.com/r/nutrition/comments/1tdgaca/how_do_i_calculate_the_energy_lost_in_feces/",
+        "published_at": "2026-05-15T00:26:17+00:00",
+        "summary": "[r/nutrition] by u/pepo_316 | 0 points | 3 comments\n\nhi, i'm not sure if i should ask this here, but i've been trying to find the formula for calculating the energy lost in feces and i can't find anything, does anyone know where i can find something? i've looked in a lot of websites and books but they only mention other formulas"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식약처 보도자료",
+        "headline": "[보도참고] ‘식품안전나라’, 2026 국가대표브랜드 공공서비스 부문 대상 수상",
+        "source_url": "/portal/board/boardDetail.do?bbs_no=bbs080&ntctxt_no=49990&menu_no=2857",
+        "published_at": "2026-05-15T00:00:00+00:00",
+        "summary": "<p>[보도참고] ‘식품안전나라’, 2026 국가대표브랜드 공공서비스 부문 대상 수상</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식약처 보도자료",
+        "headline": "식약처, 식품 판매 무인점포 특별점검 결과, 147곳 적발",
+        "source_url": "/portal/board/boardDetail.do?bbs_no=bbs080&ntctxt_no=49989&menu_no=2857",
+        "published_at": "2026-05-15T00:00:00+00:00",
+        "summary": "<p>식약처, 식품 판매 무인점포 특별점검 결과, 147곳 적발</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식품안전나라 행정처분",
+        "headline": "수입․판매한 중국산‘건목이버섯(영문명: DRIED BLACK FUNGUS, 포장일자: 2025. 12. 18.)’제품을 수거․검사한 결과 2026. 2. 5.자로‘잔류농약(카벤다짐)’허용 기준 초과로 부적합 판정된 사실이 있음.\n※ 검사결과(카벤다짐) ➊ 기준:  0.01mg/kg 이하, 결과: 0.63mg/kg",
+        "source_url": "/portal/administMeasureDetail.do?seq=4720852",
+        "published_at": "2026-05-15T00:00:00+00:00",
+        "summary": "20260515"
+      }
     }
   ],
   "ontology": {
@@ -1709,29 +1745,32 @@
     "not_tracked_sources": 8,
     "catalog_only_sources": 0,
     "skipped_disabled_sources": 1,
-    "collection_error_count": 0,
+    "collection_error_count": 4,
     "alias_candidate_count": 3,
     "product_alias_candidate_count": 0,
     "brand_alias_candidate_count": 3,
     "manufacturer_alias_candidate_count": 0,
-    "match_coverage_article_count": 207,
-    "match_coverage_matched_count": 207,
+    "match_coverage_article_count": 200,
+    "match_coverage_matched_count": 200,
     "match_coverage_unmatched_count": 0,
     "match_coverage_rate": 100.0,
     "match_coverage_review_item_count": 0,
-    "fresh_food_events": 41,
-    "stale_food_events": 7,
+    "fresh_food_events": 38,
+    "stale_food_events": 3,
     "undated_food_events": 0,
-    "unique_food_event_key_count": 48,
+    "unique_food_event_key_count": 41,
     "recall_events_with_notice_date_count": 1,
     "recall_events_with_status_count": 1,
     "event_alias_trace_count": 0,
     "complaint_auxiliary_only_events": 34,
-    "official_evidence_events": 14,
+    "official_evidence_events": 7,
     "recall_status_change_events": 1,
-    "enforcement_action_events": 13,
+    "enforcement_action_events": 6,
     "complaint_signal_events": 34
   },
+  "warnings": [
+    "collection errors detected: 4"
+  ],
   "quality_alias_candidates": [
     {
       "alias_type": "brand",
