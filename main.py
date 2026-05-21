@@ -2,14 +2,14 @@ from __future__ import annotations
 
 import argparse
 import json
-from pathlib import Path
 from math import ceil
+from pathlib import Path
 from typing import Any, cast
 
+from radar_core.config_loader import filter_sources
 from radar_core.date_storage import apply_date_storage_policy
 from radar_core.ontology import annotate_articles_with_ontology
 from radar_core.raw_logger import RawLogger
-from radar_core.config_loader import filter_sources
 
 from foodradar.analyzer import apply_entity_rules
 from foodradar.collector import collect_sources
@@ -249,22 +249,20 @@ def run(
         sources=effective_sources,
     )
 
-    storage = RadarStorage(settings.database_path)
-    storage.upsert_articles(analyzed)
-    _ = storage.delete_older_than(keep_days)
-
     quality_days = _quality_lookback_days(
         category_cfg=category_cfg,
         quality_cfg=quality_cfg,
         recent_days=recent_days,
     )
-    recent_articles = storage.recent_articles(category_cfg.category_name, days=recent_days)
-    quality_articles = storage.recent_articles(
-        category_cfg.category_name,
-        days=quality_days,
-        limit=1000,
-    )
-    storage.close()
+    with RadarStorage(settings.database_path) as storage:
+        storage.upsert_articles(analyzed)
+        _ = storage.delete_older_than(keep_days)
+        recent_articles = storage.recent_articles(category_cfg.category_name, days=recent_days)
+        quality_articles = storage.recent_articles(
+            category_cfg.category_name,
+            days=quality_days,
+            limit=1000,
+        )
     recent_articles = apply_entity_rules(
         recent_articles,
         category_cfg.entities,

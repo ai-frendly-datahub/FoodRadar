@@ -1,13 +1,15 @@
 from __future__ import annotations
 
+import os
+import time
+from datetime import UTC, datetime
 from pathlib import Path
 from unittest.mock import Mock, patch
 
 import yaml
-
 from radar_core import CrawlHealthStore
 
-from foodradar.collector import _collect_single, collect_sources
+from foodradar.collector import _collect_single, _extract_datetime, collect_sources
 from foodradar.config_loader import load_category_config, load_category_quality_config
 from foodradar.models import Article, Source
 
@@ -247,3 +249,51 @@ def test_collect_single_uses_source_timeout_and_attempt_overrides() -> None:
     assert [article.title for article in articles] == ["Notice"]
     assert fetch.call_args.kwargs["max_attempts"] == 1
     assert fetch.call_args.args[1] == 12
+
+
+def test_collect_single_uses_date_only_summary_as_published_fallback() -> None:
+    source = Source(
+        name="official enforcement",
+        type="rss",
+        url="https://example.com/feed",
+    )
+    response = Mock()
+    response.content = b"""<?xml version="1.0"?>
+<rss version="2.0">
+  <channel>
+    <item>
+      <title>Administrative action</title>
+      <link>https://example.com/enforcement</link>
+      <description>20260522</description>
+    </item>
+  </channel>
+</rss>"""
+    response.headers = {"Content-Type": "application/rss+xml; charset=utf-8"}
+
+    with patch("foodradar.collector._fetch_url_with_retry", return_value=response):
+        articles = _collect_single(source, category="food", limit=1, timeout=5)
+
+    assert articles[0].published is not None
+    assert articles[0].published.date().isoformat() == "2026-05-22"
+    assert articles[0].summary == "20260522"
+
+
+def test_extract_datetime_treats_feedparser_struct_time_as_utc(monkeypatch) -> None:
+    original_tz = os.environ.get("TZ")
+    monkeypatch.setenv("TZ", "Asia/Seoul")
+    if hasattr(time, "tzset"):
+        time.tzset()
+
+    try:
+        parsed = time.struct_time((2026, 5, 22, 0, 30, 0, 4, 142, 0))
+
+        result = _extract_datetime({"published_parsed": parsed})
+
+        assert result == datetime(2026, 5, 22, 0, 30, tzinfo=UTC)
+    finally:
+        if original_tz is None:
+            monkeypatch.delenv("TZ", raising=False)
+        else:
+            monkeypatch.setenv("TZ", original_tz)
+        if hasattr(time, "tzset"):
+            time.tzset()

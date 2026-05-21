@@ -1,0 +1,66 @@
+{
+  "repo": "FoodRadar",
+  "category": "food",
+  "ontology_version": "0.1.0",
+  "event_model_mappings": {
+    "recall_status_change": "food.recall_status_change",
+    "enforcement_action": "food.enforcement_action",
+    "complaint_signal": "food.complaint_signal",
+    "official_notice": "food.official_notice",
+    "editorial_coverage": "food.editorial_coverage"
+  },
+  "event_model_field_specs": {
+    "recall_status_change": {
+      "required_fields": ["source_name", "headline", "source_url"],
+      "optional_fields": ["published_at", "summary", "tags"],
+      "field_enums": {}
+    },
+    "enforcement_action": {
+      "required_fields": ["source_name", "headline", "source_url"],
+      "optional_fields": ["published_at", "summary", "tags"],
+      "field_enums": {}
+    },
+    "complaint_signal": {
+      "required_fields": ["source_name", "headline", "source_url"],
+      "optional_fields": ["published_at", "summary", "tags"],
+      "field_enums": {}
+    },
+    "official_notice": {
+      "required_fields": ["source_name", "headline", "source_url"],
+      "optional_fields": ["published_at", "summary", "tags"],
+      "field_enums": {}
+    },
+    "editorial_coverage": {
+      "required_fields": ["source_name", "headline", "source_url"],
+      "optional_fields": ["published_at", "summary", "tags"],
+      "field_enums": {}
+    }
+  },
+  "entity_type_hints": [
+    "food.food_type",
+    "food.brand",
+    "food.product",
+    "food.manufacturer",
+    "food.safety_issue",
+    "food.regulation"
+  ],
+  "source_role_mappings": {
+    "식품안전나라 회수판매중지": "primary_evidence",
+    "식품안전나라 행정처분": "primary_evidence",
+    "식약처 보도자료": "official_context",
+    "식품안전 국내뉴스": "context_only",
+    "식품안전 해외뉴스": "context_only",
+    "Food Safety News": "context_only",
+    "Food Dive": "context_only",
+    "r/foodsafety": "community_signal",
+    "r/Cooking": "community_signal",
+    "r/nutrition": "community_signal",
+    "r/KoreanFood": "community_signal",
+    "r/ProductRecalls": "community_signal"
+  },
+  "evidence_policy_ids": [
+    "food.official_source_required_for_recall",
+    "food.community_signal_auxiliary_only",
+    "food.traceable_url_required"
+  ]
+}

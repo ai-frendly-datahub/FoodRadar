@@ -160,6 +160,7 @@ data_quality:
   freshness_sla:
     recall_status_change:
       max_age_days: 3
+      quiet_window_days: 5
       event_date_field: published
       observed_date_field: collected_at
     enforcement_action:
@@ -234,6 +235,7 @@ sources:
     - recall_status
     - release_date
     freshness_sla_days: 3
+    quiet_window_days: 5
 - name: 식품안전나라 행정처분
   type: rss
   url: https://www.foodsafetykorea.go.kr/rss/rss.do?menu_no=2714&menu_grp=MENU_NEW02
@@ -513,6 +515,7 @@ entities:
   - tomatoes
   - avocado
   - coffee
+  - bread
   - tea
   - yogurt
   - chocolate
@@ -531,9 +534,14 @@ entities:
   - meal
   - grocery
   - groceries
+  - lettuce
   - whiskey
   - burger
   - burgers
+  - steak
+  - steaks
+  - saltine
+  - saltines
   - tequila
   - spirits
   - drink
@@ -580,17 +588,45 @@ entities:
   - gejang
   - gukbap
   - sushi
+  - sashimi
   - jjukkumi
   - octopus
   - tteokbokki
   - bibimbap
+  - galbi
   - kalbi
+  - dakgalbi
   - miyeokguk
   - juk
   - gochugaru
   - kimbap
+  - bokkeumbap
+  - naengmyeon
+  - mandu
+  - kalguksu
+  - kalgucksu
+  - hotteok
+  - kkwabaegi
+  - samgyetang
+  - dotorimuk
+  - makgeolli
+  - soju
   - jjajang
   - jjangbbong
+  - 볶음밥
+  - 닭갈비
+  - 갈비
+  - 냉면
+  - 만두
+  - 칼국수
+  - 호떡
+  - 꽈배기
+  - 삼계탕
+  - 도토리묵
+  - 막걸리
+  - 소주
+  - 방어
+  - 회
   - 짜장면
   - 짬뽕
   - 탕수육
@@ -665,6 +701,7 @@ entities:
   - Orion Choco Pie
   - Buldak Bokkeummyeon
   - Buldak Ramen
+  - Smarties
 - name: SafetyIssue
   display_name: 안전 이슈
   keywords:
@@ -877,6 +914,7 @@ entities:
   - 가열
   - 살균
   - food
+  - foods
   - safety
   - recall
   - withdrawal

@@ -72,9 +72,8 @@ jobs:
       - name: Run Quality Checks
         if: always()
         run: |
-          python scripts/check_quality.py > quality_report.txt 2>&1 || true
+          python scripts/check_quality.py > quality_report.txt 2>&1
           cat quality_report.txt >> $GITHUB_STEP_SUMMARY
-        continue-on-error: true
 
       - name: Archive Quality Report
         if: always()

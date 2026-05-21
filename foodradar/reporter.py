@@ -1,9 +1,9 @@
 from __future__ import annotations
 
-from collections.abc import Iterable
+from collections.abc import Iterable, Mapping
 from html import escape
 from pathlib import Path
-from typing import Any, Mapping
+from typing import Any
 
 from radar_core.ontology import build_summary_ontology_metadata
 from radar_core.report_utils import (
@@ -138,6 +138,7 @@ def _render_quality_traceability_panel(quality_report: Mapping[str, Any]) -> str
 
     chips = [
         ("fresh", summary_map.get("fresh_sources", 0)),
+        ("quiet", summary_map.get("quiet_window_sources", 0)),
         ("stale", summary_map.get("stale_sources", 0)),
         ("missing", summary_map.get("missing_sources", 0)),
         ("recall events", summary_map.get("recall_status_change_events", 0)),

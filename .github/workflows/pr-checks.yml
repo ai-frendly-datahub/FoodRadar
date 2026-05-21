@@ -22,3 +22,5 @@ jobs:
           pip install -e .
       - name: Tests
         run: pytest --tb=short
+      - name: Ruff
+        run: ruff check .

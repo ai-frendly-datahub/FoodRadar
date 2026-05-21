@@ -25,6 +25,7 @@ def apply_entity_rules(
     analyzed = _core_apply_entity_rules(articles, expanded_entities)
     if sources:
         _attach_official_recall_entities(analyzed, sources)
+        _attach_official_enforcement_entities(analyzed, sources)
     if resolved_alias_map:
         _attach_alias_traces(analyzed, resolved_alias_map)
     return analyzed
@@ -134,6 +135,18 @@ def _attach_official_recall_entities(
             _append_entity_value(article, "ManufacturerCanonical", manufacturer_raw)
 
 
+def _attach_official_enforcement_entities(
+    articles: list[Article],
+    sources: Iterable[Source],
+) -> None:
+    sources_by_name = {source.name: source for source in sources}
+    for article in articles:
+        source = sources_by_name.get(article.source)
+        if source is None or not _is_official_enforcement_source(source):
+            continue
+        _append_entity_value(article, "Regulation", "행정처분")
+
+
 def _append_entity_value(article: Article, entity_name: str, value: str) -> None:
     existing = article.matched_entities.get(entity_name)
     if isinstance(existing, list):
@@ -152,6 +165,12 @@ def _is_official_recall_product_source(source: Source) -> bool:
         return False
     canonical_fields = _string_set(source.config.get("canonical_key_fields"))
     return {"product_name", "manufacturer_name"}.issubset(canonical_fields)
+
+
+def _is_official_enforcement_source(source: Source) -> bool:
+    if str(source.config.get("event_model") or "").strip() != "enforcement_action":
+        return False
+    return str(source.trust_tier).startswith("T1_")
 
 
 def _string_set(value: object) -> set[str]:

@@ -212,6 +212,25 @@ class TestApplyEntityRules:
         assert result[0].matched_entities["ProductCanonical"] == ["이부자 한우 국밥"]
         assert result[0].matched_entities["ManufacturerCanonical"] == ["주식회사 국왕푸드"]
 
+    def test_official_enforcement_source_adds_regulation_trace(self):
+        """Official enforcement rows remain covered even when source text is sparse."""
+        articles = [_make_article("(no title)", summary="20260520")]
+        articles[0].source = "식품안전나라 행정처분"
+        sources = [
+            Source(
+                name="식품안전나라 행정처분",
+                type="rss",
+                url="https://example.com/enforcement.xml",
+                country="KR",
+                trust_tier="T1_official",
+                config={"event_model": "enforcement_action"},
+            )
+        ]
+
+        result = apply_entity_rules(articles, [], sources=sources)
+
+        assert result[0].matched_entities["Regulation"] == ["행정처분"]
+
     def test_real_config_classifies_fowl_plague_as_safety_issue(self):
         """Food safety disease/outbreak terms from trade media remain safety issues."""
         config = load_category_config("food")
@@ -296,3 +315,45 @@ class TestApplyEntityRules:
         assert result[10].matched_entities["FoodType"] == ["baguettes"]
         assert result[11].matched_entities["FoodGeneral"] == ["cold chain", "supply chain"]
         assert result[12].matched_entities["FoodType"] == ["커피", "디카페인"]
+
+    def test_real_config_classifies_latest_quality_review_items(self):
+        """Latest quality review rows resolve common Korean food and complaint terms."""
+        config = load_category_config("food")
+        articles = [
+            _make_article("Once Upon a Farm soars as parents seek healthier kids’ foods"),
+            _make_article("Bokkeumbap"),
+            _make_article("Galbi at Home"),
+            _make_article("Korean Custard Cream Bread"),
+            _make_article("Korean Dakgalbi"),
+            _make_article("Mul Naengmyeon"),
+            _make_article("Samgyetang, Dotorimuk, and Makgeolli"),
+            _make_article("Soju time"),
+            _make_article("Tried making Hotteok and kkwabaegi"),
+            _make_article("a plate of assorted sashimi 대방어 모듬회"),
+            _make_article("kalgucksu mandu 칼국수와 만두"),
+            _make_article("Should I wash this lettuce?"),
+            _make_article("Steaks"),
+            _make_article("black powdery substance on saltines"),
+            _make_article(
+                "What is in this smarties box? One of them has a hole in it"
+            ),
+        ]
+
+        result = apply_entity_rules(articles, config.entities)
+        matched = [article.matched_entities for article in result]
+
+        assert matched[0]["FoodGeneral"] == ["foods"]
+        assert matched[1]["FoodType"] == ["bokkeumbap"]
+        assert matched[2]["FoodType"] == ["galbi"]
+        assert matched[3]["FoodType"] == ["bread"]
+        assert matched[4]["FoodType"] == ["dakgalbi"]
+        assert matched[5]["FoodType"] == ["naengmyeon"]
+        assert set(matched[6]["FoodType"]) == {"samgyetang", "dotorimuk", "makgeolli"}
+        assert matched[7]["FoodType"] == ["soju"]
+        assert set(matched[8]["FoodType"]) == {"hotteok", "kkwabaegi"}
+        assert set(matched[9]["FoodType"]) == {"sashimi", "방어", "회"}
+        assert set(matched[10]["FoodType"]) == {"mandu", "kalgucksu", "만두", "칼국수"}
+        assert matched[11]["FoodType"] == ["lettuce"]
+        assert matched[12]["FoodType"] == ["steaks"]
+        assert matched[13]["FoodType"] == ["saltines"]
+        assert matched[14]["Product"] == ["smarties"]

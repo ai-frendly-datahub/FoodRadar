@@ -3,8 +3,8 @@
 
 from __future__ import annotations
 
-from datetime import UTC, date, datetime
 import sys
+from datetime import UTC, date, datetime
 from pathlib import Path
 from typing import Any
 
@@ -18,11 +18,11 @@ sys.path.insert(0, str(PROJECT_ROOT.parent / "radar-core"))
 
 from radar_core.common import quality_checks as shared_quality_checks  # noqa: E402
 
+from foodradar.analyzer import apply_entity_rules  # noqa: E402
 from foodradar.config_loader import (  # noqa: E402
     load_category_config,
     load_category_quality_config,
 )
-from foodradar.analyzer import apply_entity_rules  # noqa: E402
 from foodradar.quality_report import build_quality_report, write_quality_report  # noqa: E402
 from foodradar.storage import RadarStorage  # noqa: E402
 

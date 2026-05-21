@@ -19,6 +19,23 @@ ALIAS_ENTITY_TYPES = {
     "Brand": "brand",
     "Manufacturer": "manufacturer",
 }
+GENERIC_ALIAS_VALUES = {
+    "manufacturer": {
+        "제조업소",
+        "제조원",
+        "제조업체",
+        "수입업소",
+        "수입원",
+        "판매업소",
+        "판매원",
+        "유통업체",
+        "제조사",
+        "manufacturer",
+        "importer",
+        "seller",
+        "distributor",
+    }
+}
 ALIAS_TRACE_PATTERN = re.compile(r"^(?P<variant>.+?)\s*->\s*(?P<canonical>.+)$")
 TRACKED_EVENT_MODEL_ORDER = [
     "recall_status_change",
@@ -96,6 +113,7 @@ def build_quality_report(
         "total_sources": len(source_rows),
         "tracked_sources": sum(1 for row in source_rows if row["tracked"]),
         "fresh_sources": status_counts.get("fresh", 0),
+        "quiet_window_sources": status_counts.get("quiet_window", 0),
         "stale_sources": status_counts.get("stale", 0),
         "missing_sources": status_counts.get("missing", 0),
         "unknown_event_date_sources": status_counts.get("unknown_event_date", 0),
@@ -193,6 +211,7 @@ def _build_source_row(
     event_model = _source_event_model(source)
     tracked = _is_tracked_source(source, event_model, tracked_event_models)
     sla_days = _source_sla_days(source, event_model, freshness_sla)
+    quiet_window_days = _source_quiet_window_days(source, event_model, freshness_sla)
     source_errors = _source_errors(source.name, errors)
     latest_article = _latest_article(source_articles, source)
     latest_event_at = _event_datetime(latest_article, source) if latest_article else None
@@ -202,6 +221,7 @@ def _build_source_row(
         tracked=tracked,
         article_count=len(source_articles),
         sla_days=sla_days,
+        quiet_window_days=quiet_window_days,
         latest_event_at=latest_event_at,
         age_days=age_days,
     )
@@ -217,6 +237,7 @@ def _build_source_row(
         "tracked": tracked,
         "event_model": event_model,
         "freshness_sla_days": sla_days,
+        "quiet_window_days": quiet_window_days,
         "status": status,
         "article_count": len(source_articles),
         "latest_event_at": latest_event_at.isoformat() if latest_event_at else None,
@@ -378,6 +399,7 @@ def _source_status(
     tracked: bool,
     article_count: int,
     sla_days: int | None,
+    quiet_window_days: int | None,
     latest_event_at: datetime | None,
     age_days: float | None,
 ) -> str:
@@ -392,6 +414,8 @@ def _source_status(
     if latest_event_at is None or age_days is None:
         return "unknown_event_date"
     if sla_days is not None and age_days > sla_days:
+        if quiet_window_days is not None and age_days <= quiet_window_days:
+            return "quiet_window"
         return "stale"
     return "fresh"
 
@@ -500,6 +524,35 @@ def _source_sla_days(
             return int(raw_model_sla)
         if isinstance(raw_model_sla, str) and raw_model_sla.strip().isdigit():
             return int(raw_model_sla.strip())
+    return None
+
+
+def _source_quiet_window_days(
+    source: Source,
+    event_model: str,
+    freshness_sla: Mapping[str, object],
+) -> int | None:
+    raw_source_quiet_window = source.config.get("quiet_window_days")
+    parsed_source_quiet_window = _positive_int(raw_source_quiet_window)
+    if parsed_source_quiet_window is not None:
+        return parsed_source_quiet_window
+
+    model_sla = freshness_sla.get(event_model)
+    if isinstance(model_sla, Mapping):
+        return _positive_int(model_sla.get("quiet_window_days"))
+    return None
+
+
+def _positive_int(value: object) -> int | None:
+    if isinstance(value, bool):
+        return None
+    if isinstance(value, int | float):
+        return max(1, int(value))
+    if isinstance(value, str):
+        try:
+            return max(1, int(float(value.strip())))
+        except ValueError:
+            return None
     return None
 
 
@@ -761,7 +814,7 @@ def _build_alias_candidates(articles: list[Article]) -> list[dict[str, Any]]:
             for value in values:
                 variant = str(value).strip()
                 normalized = _normalize_alias(variant)
-                if not normalized:
+                if not normalized or _is_generic_alias_value(alias_type, normalized):
                     continue
                 key = (alias_type, normalized)
                 grouped[key][variant] += 1
@@ -808,7 +861,11 @@ def _collect_alias_traces(
             variant = match.group("variant").strip()
             canonical = match.group("canonical").strip()
             normalized = _normalize_alias(canonical)
-            if not variant or not normalized:
+            if (
+                not variant
+                or not normalized
+                or _is_generic_alias_value(alias_type, normalized)
+            ):
                 continue
 
             key = (alias_type, normalized)
@@ -824,6 +881,11 @@ def _normalize_alias(value: str) -> str:
     normalized = re.sub(r"(주식회사|\(주\)|㈜|유한회사|농업회사법인|영농조합법인)", "", normalized)
     normalized = re.sub(r"[^0-9a-z가-힣]+", "", normalized)
     return normalized.strip()
+
+
+def _is_generic_alias_value(alias_type: str, normalized: str) -> bool:
+    generic_values = GENERIC_ALIAS_VALUES.get(alias_type, set())
+    return normalized in {_normalize_alias(value) for value in generic_values}
 
 
 def _dict(mapping: Mapping[str, object], key: str) -> Mapping[str, object]:

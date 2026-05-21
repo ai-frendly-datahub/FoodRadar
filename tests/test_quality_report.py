@@ -91,6 +91,45 @@ def test_build_quality_report_marks_fresh_stale_and_missing_sources() -> None:
     assert recall_event["food_event_key"]
 
 
+def test_build_quality_report_separates_official_quiet_window_from_stale() -> None:
+    now = datetime(2026, 5, 22, 0, 0, tzinfo=UTC)
+    category = CategoryConfig(
+        category_name="food",
+        display_name="Food Radar",
+        sources=[
+            Source(
+                name="Recall RSS",
+                type="rss",
+                url="https://example.com/recall.xml",
+                country="KR",
+                trust_tier="T1_official",
+                config={
+                    "event_model": "recall_status_change",
+                    "freshness_sla_days": 3,
+                    "quiet_window_days": 5,
+                },
+            )
+        ],
+        entities=[],
+    )
+    article = Article(
+        title="Quiet recall source",
+        link="https://example.com/quiet-recall",
+        summary="Recall notice",
+        published=now - timedelta(days=4),
+        collected_at=now,
+        source="Recall RSS",
+        category="food",
+    )
+
+    report = build_quality_report(category=category, articles=[article], generated_at=now)
+
+    assert report["sources"][0]["status"] == "quiet_window"
+    assert report["sources"][0]["quiet_window_days"] == 5
+    assert report["summary"]["quiet_window_sources"] == 1
+    assert report["summary"]["stale_sources"] == 0
+
+
 def test_build_quality_report_extracts_alias_candidates() -> None:
     now = datetime(2026, 4, 12, 0, 0, tzinfo=UTC)
     category = CategoryConfig(
@@ -136,6 +175,40 @@ def test_build_quality_report_extracts_alias_candidates() -> None:
     assert candidate["alias_type"] == "brand"
     assert candidate["normalized"] == "cj"
     assert candidate["variants"] == ["CJ", "CJ Corp."]
+
+
+def test_build_quality_report_excludes_generic_manufacturer_alias_labels() -> None:
+    now = datetime(2026, 5, 22, 0, 0, tzinfo=UTC)
+    category = CategoryConfig(
+        category_name="food",
+        display_name="Food Radar",
+        sources=[
+            Source(
+                name="Enforcement RSS",
+                type="rss",
+                url="https://example.com/feed",
+                config={"event_model": "enforcement_action"},
+            )
+        ],
+        entities=[],
+    )
+    articles = [
+        Article(
+            title=f"generic manufacturer label {idx}",
+            link=f"https://example.com/{idx}",
+            summary="",
+            published=now,
+            source="Enforcement RSS",
+            category="food",
+            matched_entities={"Manufacturer": ["제조업소"]},
+        )
+        for idx in range(3)
+    ]
+
+    report = build_quality_report(category=category, articles=articles, generated_at=now)
+
+    assert report["summary"]["manufacturer_alias_candidate_count"] == 0
+    assert report["alias_candidates"] == []
 
 
 def test_build_quality_report_extracts_mapped_alias_trace() -> None:

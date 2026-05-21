@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import calendar
 import html
 import os
 import re
@@ -34,6 +35,12 @@ _ACTIVE_THROTTLER: AdaptiveThrottler | None = None
 _ACTIVE_HEALTH_STORE: CrawlHealthStore | None = None
 DATE_ONLY_SUMMARY_PATTERN = re.compile(
     r"^\s*(?:20\d{2}\d{2}\d{2}|20\d{2}[.\-/년\s]+\d{1,2}[.\-/월\s]+\d{1,2})\s*\.?\s*$"
+)
+COMPACT_DATE_PATTERN = re.compile(r"^\s*(20\d{2})(\d{2})(\d{2})\s*$")
+SEPARATED_DATE_PATTERN = re.compile(
+    r"^\s*(20\d{2})\s*(?:[.\-/]|년)\s*"
+    r"(\d{1,2})\s*(?:[.\-/]|월)\s*"
+    r"(\d{1,2})"
 )
 
 
@@ -238,12 +245,12 @@ def collect_sources(
         health_db_path or os.environ.get("RADAR_CRAWL_HEALTH_DB_PATH", _DEFAULT_HEALTH_DB_PATH)
     )
     _set_collection_controls(throttler, health_store)
-    session = _create_session()
 
     def _collect_for_source(source: Source) -> tuple[list[Article], list[str]]:
         if not _source_bypasses_crawl_health(source) and health_store.is_disabled(source.name):
             return [], [f"{source.name}: Source disabled (crawl health threshold reached)"]
 
+        source_session = _create_session()
         try:
             host = source_hosts[source.name]
             with host_locks[host]:
@@ -255,7 +262,7 @@ def collect_sources(
                     category=category,
                     limit=limit_per_source,
                     timeout=timeout,
-                    session=session,
+                    session=source_session,
                 )
             return result, []
         except CircuitBreakerError:
@@ -266,6 +273,8 @@ def collect_sources(
             return [], [f"{source.name}: {exc}"]
         except Exception as exc:
             return [], [f"{source.name}: Unexpected error - {type(exc).__name__}: {exc}"]
+        finally:
+            source_session.close()
 
     try:
         if workers == 1:
@@ -310,7 +319,6 @@ def collect_sources(
                 f"{source.name}: Source type '{source.type}' is cataloged but not collected by the standard pipeline"
             )
     finally:
-        session.close()
         health_store.close()
         _clear_collection_controls()
 
@@ -386,6 +394,9 @@ def _collect_single(
                     if len(extracted_summary) > len(summary or ""):
                         summary = extracted_summary
 
+            if published is None and _is_date_only_summary(summary):
+                published = _extract_summary_date(summary)
+
             items.append(
                 Article(
                     title=html.unescape(_entry_text(entry, "title").strip()) or "(no title)",
@@ -434,15 +445,42 @@ def _is_date_only_summary(value: str) -> bool:
     return bool(DATE_ONLY_SUMMARY_PATTERN.match(value or ""))
 
 
+def _extract_summary_date(value: str) -> datetime | None:
+    text = value.strip()
+    compact_match = COMPACT_DATE_PATTERN.match(text)
+    if compact_match is not None:
+        return _date_from_parts(
+            compact_match.group(1),
+            compact_match.group(2),
+            compact_match.group(3),
+        )
+
+    separated_match = SEPARATED_DATE_PATTERN.match(text)
+    if separated_match is not None:
+        return _date_from_parts(
+            separated_match.group(1),
+            separated_match.group(2),
+            separated_match.group(3),
+        )
+    return None
+
+
+def _date_from_parts(year: str, month: str, day: str) -> datetime | None:
+    try:
+        return datetime(int(year), int(month), int(day), tzinfo=UTC)
+    except ValueError:
+        return None
+
+
 def _extract_datetime(entry: Mapping[str, Any]) -> datetime | None:
     """Parse a feed entry date into a timezone-aware datetime."""
     published_parsed = entry.get("published_parsed")
     if isinstance(published_parsed, time.struct_time):
-        return datetime.fromtimestamp(time.mktime(published_parsed), tz=UTC)
+        return datetime.fromtimestamp(calendar.timegm(published_parsed), tz=UTC)
 
     updated_parsed = entry.get("updated_parsed")
     if isinstance(updated_parsed, time.struct_time):
-        return datetime.fromtimestamp(time.mktime(updated_parsed), tz=UTC)
+        return datetime.fromtimestamp(calendar.timegm(updated_parsed), tz=UTC)
 
     for key in ("published", "updated", "date"):
         raw = entry.get(key)

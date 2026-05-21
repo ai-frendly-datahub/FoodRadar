@@ -15,7 +15,7 @@
 
 ```bash
 pip install -e ".[dev]"
-python main.py --once
+python main.py --category food --recent-days 7
 ```
 
 ## 구조
@@ -40,11 +40,11 @@ FoodRadar/
 
 - `type: rss`와 `type: reddit`는 표준 파이프라인에서 수집됩니다.
 - `config/categories/food.yaml`의 `integration_candidates`는 향후 에이전트/도구 통합용 capability 후보입니다.
-- 관련 메모: [integration-candidates.md](/home/kjs/projects/ai-frendly-datahub/FoodRadar/docs/integration-candidates.md)
+- 관련 메모: [integration-candidates.md](docs/integration-candidates.md)
 
 ## 데이터 품질 운영
 
-- 품질 기준은 [data-quality-plan.md](/home/kjs/projects/ai-frendly-datahub/FoodRadar/docs/data-quality-plan.md)와 `config/categories/food.yaml`의 `data_quality` 섹션을 기준으로 관리합니다.
+- 품질 기준은 [data-quality-plan.md](docs/data-quality-plan.md)와 `config/categories/food.yaml`의 `data_quality` 섹션을 기준으로 관리합니다.
 - 식품안전나라 회수판매중지 RSS는 `recall_status_change`, 행정처분 RSS는 `enforcement_action`, Reddit 소비자 신호는 `complaint_signal`로 분리합니다.
 - 제품명·제조사·브랜드 alias는 `data_quality.canonical_keys` 기준으로 정규화하고, 공식 source와 커뮤니티 complaint는 같은 근거로 병합하지 않습니다.
 - 매 실행 후 `reports/food_quality.json`과 일자별 `food_YYYYMMDD_quality.json`을 생성해 source별 freshness/stale/missing 상태와 alias 후보를 점검합니다.
