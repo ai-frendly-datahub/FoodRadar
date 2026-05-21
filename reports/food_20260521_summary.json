@@ -1,0 +1,624 @@
+{
+  "date": "2026-05-21",
+  "category": "food",
+  "article_count": 130,
+  "source_count": 9,
+  "matched_count": 127,
+  "top_entities": [
+    {
+      "name": "FoodGeneral",
+      "count": 243
+    },
+    {
+      "name": "FoodType",
+      "count": 136
+    },
+    {
+      "name": "SafetyIssue",
+      "count": 109
+    },
+    {
+      "name": "Regulation",
+      "count": 22
+    },
+    {
+      "name": "Brand",
+      "count": 9
+    },
+    {
+      "name": "Manufacturer",
+      "count": 6
+    },
+    {
+      "name": "RecallReason",
+      "count": 3
+    },
+    {
+      "name": "ManufacturerCanonical",
+      "count": 2
+    },
+    {
+      "name": "Product",
+      "count": 1
+    },
+    {
+      "name": "ProductCanonical",
+      "count": 1
+    }
+  ],
+  "sources": {
+    "식품안전나라 행정처분": 27,
+    "Food Safety News": 26,
+    "식약처 보도자료": 11,
+    "Food Dive": 15,
+    "r/KoreanFood": 13,
+    "r/Cooking": 16,
+    "r/foodsafety": 11,
+    "r/nutrition": 10,
+    "식품안전나라 회수판매중지": 1
+  },
+  "generated_at": "2026-05-21T15:45:02.682378+09:00",
+  "articles": [
+    {
+      "event_model_payload": {
+        "source_name": "r/KoreanFood",
+        "headline": "Kimchi Jiggae",
+        "source_url": "https://www.reddit.com/r/KoreanFood/comments/1ti35kb/kimchi_jiggae/",
+        "published_at": "2026-05-19T22:51:03+00:00",
+        "summary": "[r/KoreanFood] by u/PomegranateMoney4826 | 2 points | 0 comments\n\nI add 1-2 tablespoons sesame oil and stir fry my kimchi and pork until you get the little black burn bits just a little and I add 1 tablespoon of sugar, however much kimchi I like, 1 tablespoon anchovy stock (fish sauce here anchovies) 3-4 tablespoons Gochujang and 1-2 teaspoons of minced garlic and 2 teaspoons gochugaru (fine not course for soups)\n\nI then let this bubble a little 3-4 minutes well stirring before adding 2 cups of water and I let it simmer and reduce for 20-25 minutes \n\nGrew up eating Korean food all my life"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Peeling soft boiled eggs the next day",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1ti2z3k/peeling_soft_boiled_eggs_the_next_day/",
+        "published_at": "2026-05-19T22:43:50+00:00",
+        "summary": "[r/Cooking] by u/prosperousoctopus | 1 points | 5 comments\n\nI’m pretty good at making easily peelable soft/jammy eggs. But sometimes I’ll make extra and store them in the fridge for the next day or 2. These ones are usually a mess to peel. Any advice?\n\nI’ve tried peeling right out the fridge or bringing them to warm temp in hot water, but it doesn’t work. \n\nDo I just need to pre-peel these extras?"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/KoreanFood",
+        "headline": "Anyone ever try this?",
+        "source_url": "https://www.reddit.com/r/KoreanFood/comments/1ti2z2o/anyone_ever_try_this/",
+        "published_at": "2026-05-19T22:43:48+00:00",
+        "summary": "[r/KoreanFood] by u/PomegranateMoney4826 | 7 points | 1 comments\n\nChinese-Korean here mixed, I love pork cutlet and rice but don’t really care for the semi-glaze sauce or Japanese curry varieties. I find the black bean sauce so much more comforting I make it Chinese-Korean style nice and glossy and thick, little oily, I add 1 tablespoon soy sauce, oyster sauce and sugar for depth (I do the pork and zucchini and onions and the essentials when making Jjajangbap or Jjajangmyeon) and it’s absolutely delicious the best thing for a bad day."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Lemon Juice",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1ti2wv9/lemon_juice/",
+        "published_at": "2026-05-19T22:41:22+00:00",
+        "summary": "[r/Cooking] by u/IQof76 | 0 points | 4 comments\n\nFor about a year or so I’ve been using lemon juice as a substitute for oil sometimes when making chicken, salmon or steak. \n\nIt always turns out yummy, but does anyone know if the acidity is harming my pans or self? \n\nThanks in advance"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Chocolate",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1ti2jug/chocolate/",
+        "published_at": "2026-05-19T22:27:11+00:00",
+        "summary": "[r/Cooking] by u/Different_Seaweed534 | 1 points | 4 comments\n\nWhy has it gotten so expensive?   Chocolate chips (12 oz bag) used to be $1.79-$2.29 and now I’m lucky if I can find them for under $5.00 a bag.  Don’t get me started on chocolate candy bars.\n\nAnyone have a cheaper and an acceptable substitute?"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Cooked chicken",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1ti271p/cooked_chicken/",
+        "published_at": "2026-05-19T22:13:44+00:00",
+        "summary": "[r/Cooking] by u/finns004 | 0 points | 9 comments\n\nTook out cooked prepped chicken from fridge and left for work, forgot it in my car (72° cloudy day) left it there for 3 hours, first hour of that was driving in 67° cabin. Still good to eat? It has been in the fridge since I remembered it, which was 3 hours in car on the dot"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://www.reddit.com/r/foodsafety/comments/1ti26pq/whats_inside_my_chicken_gizzard/"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/KoreanFood",
+        "headline": "Is this a traditional home cooked meal?",
+        "source_url": "https://www.reddit.com/r/KoreanFood/comments/1ti25i1/is_this_a_traditional_home_cooked_meal/",
+        "published_at": "2026-05-19T22:12:08+00:00",
+        "summary": "[r/KoreanFood] by u/monstrousregime | 4 points | 2 comments\n\nI saw a reel today by a Korean cook who made this dish for her child. Garlic, tomatoes, okra, scrambled egg, fish sauce. Thats it.   \nI made this for dinner and wondered if anyone grew up with this or if it was something specific to this creator. ? \n\n(I topped mine with fried garlic coz I accidentally overcooked them the first time I started making this and scallions that needed to be used up. The kimchi of course is non negotiable. )"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Do you use all 4 burners of your stove?",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1ti2151/do_you_use_all_4_burners_of_your_stove/",
+        "published_at": "2026-05-19T22:07:30+00:00",
+        "summary": "[r/Cooking] by u/Embarrassed-Past7094 | 34 points | 203 comments"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Iodized table has dextrose in it now???? What the hell.",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1ti202w/iodized_table_has_dextrose_in_it_now_what_the_hell/",
+        "published_at": "2026-05-19T22:06:24+00:00",
+        "summary": "[r/Cooking] by u/monkey_trumpets | 0 points | 20 comments\n\n​"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Opinion on a sauce i made",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1ti1vn3/opinion_on_a_sauce_i_made/",
+        "published_at": "2026-05-19T22:01:53+00:00",
+        "summary": "[r/Cooking] by u/Silver-Extent2290 | 0 points | 8 comments\n\nI made a sauce as a late night snack but it's taste feels like a proper sweet spicy sauce, i would like some opinions on if it's good or just my taste. \n\nThe recipe is\n\n3/4 cup jaggery \n\n3 tablespoons of sugar\n\n4 gram peri peri spice\n\n5 dash of hot and sweet ketchup \n\n1/2 cup water\n\nMix in a bowl and dry reduce the water to achieve a slightly thick consistency. \n\nThe taste starts with sweetness and goes towards the peri peri spicy. Then the after taste of peri peri spice. \n\nI feel it will go well with the following dishes \n\n1. As garnish on popcorn\n\n2. On plain toasted bread\n\n3. Fried potato/french fries \n\n4. Fried chicken\n\nbut I can't be sure, i live in a college dorm and we have a lot of restrictions on cooking in the room. I have come to these conclusions purely based on the taste of this sauce. I think this might also work as a marinade but it's just a shot in the dark. \n\nIt would be very helpful to get some opinions on this sauce. \n\nThanks guys beforehand"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Looking for a good substitute for Lake Erie Perch",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1ti1nxa/looking_for_a_good_substitute_for_lake_erie_perch/",
+        "published_at": "2026-05-19T21:53:41+00:00",
+        "summary": "[r/Cooking] by u/ThinkingAboutMyself | 1 points | 0 comments\n\nMy husband and I grew up in northern Ohio and unfortunately had to move a thousand miles away about a decade ago for a job opportunity. Many of the things we miss that we can’t get in our new locale we have been able to have shipped(Stadium Mustard comes to mind, lol). With summer approaching we have been talking about how nice it would be to have some fried Lake Erie Perch. I know there is a fish called Lake Perch, but it hasn’t been the same, in our opinion. It isn’t as delicate as the perch we were familiar with. \n\nThe way we prepare it is to dip it in egg, coat it with Ritz crackers that have been finely ground, and then deep fry. \n\nDoes anyone have any suggestions for an alternative that might be similar? We are in Florida now."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/KoreanFood",
+        "headline": "why is this brand of cold noodles so expensive ? its double the price of another popular brand (hansang)..is it that much better ?",
+        "source_url": "https://www.reddit.com/r/KoreanFood/comments/1ti1c42/why_is_this_brand_of_cold_noodles_so_expensive/",
+        "published_at": "2026-05-19T21:41:11+00:00",
+        "summary": "[r/KoreanFood] by u/Consistent_Land_2747 | 19 points | 8 comments\n\nLink: https://i.redd.it/4h88zckxy52h1.jpeg"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Steak Sandwich With A Twist",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1ti0gql/steak_sandwich_with_a_twist/",
+        "published_at": "2026-05-19T21:09:58+00:00",
+        "summary": "[r/Cooking] by u/Smartypantsmcgee24 | 3 points | 6 comments\n\nToday I made a great meal for myself and I'm wondering how to elevate it even further. I got my hands on some mushroom and black truffle sauce/condiment, and some gochugung. So I made a mayo sauce out of those. My skirt steaks have a sprinkling of some Cajun seasoning. All placed on a beautifully toasted romano and basil keiser bun. Now what I'm wondering is; what cheese or other toppings would be good? I'm up for any suggestions."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://www.reddit.com/r/foodsafety/comments/1ti083a/newly_opened_aldi_applesauce_is_this_bad_or_just/"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Does anyone use ground turkey . Instead of beef or pork?",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1thzxae/does_anyone_use_ground_turkey_instead_of_beef_or/",
+        "published_at": "2026-05-19T20:50:18+00:00",
+        "summary": "[r/Cooking] by u/WasteWriter5692 | 23 points | 107 comments\n\nChili..with gr.turkey.!!..a no brainer..but is it any healthier?."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Book recommendations for techniques rather than recipes?",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1thznkg/book_recommendations_for_techniques_rather_than/",
+        "published_at": "2026-05-19T20:40:33+00:00",
+        "summary": "[r/Cooking] by u/BingWhizzer | 5 points | 24 comments\n\nI’m just sort of getting into cooking and I think I’m pretty alright at improvising stuff and I enjoy that aspect rather than following recipes. Are there any good books or resources that help build a skill set rather than just a list of recipes? Thanks :)"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Chicken breast: I’ve had it at restaurants where it’s extremely tender, and not dry at all. What’s the method? Pressure cooker?",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1thytyh/chicken_breast_ive_had_it_at_restaurants_where/",
+        "published_at": "2026-05-19T20:12:18+00:00",
+        "summary": "[r/Cooking] by u/Sunrisewithtea | 79 points | 174 comments"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://www.reddit.com/r/foodsafety/comments/1thyclj/possibly_printed_wrong/"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://www.reddit.com/r/foodsafety/comments/1thy3qq/is_my_coconut_oil_bad/"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Is it safe to cook with apples with very soft brown spots?For home use, not selling.",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1thxpls/is_it_safe_to_cook_with_apples_with_very_soft/",
+        "published_at": "2026-05-19T19:33:30+00:00",
+        "summary": "[r/Cooking] by u/dogsRgr8too | 8 points | 32 comments\n\nUsually 1 apple per bag will be bad and I'll throw it out, but there's several this time with a thumb sized very soft spot, (not just the slight mushy bruise). Can I make applesauce or crumble with these if I cut off the bad spots? Tried to post an imgur photo but the post got removed for that.\n\n  \nEdit Thank you for those with the kind responses. For those I upset by food waste--I had read that mold would be throughout the whole fruit if it's on one part which is why I was concerned. I know aflatoxin from mold is a carcinogen in some crops. It doesn't look like apples is a common one though. I've been more cautious since I have young kids now."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "How to use bánh căn grill?",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1thxk60/how_to_use_bánh_căn_grill/",
+        "published_at": "2026-05-19T19:28:24+00:00",
+        "summary": "[r/Cooking] by u/KennethLin521 | 0 points | 0 comments\n\nI bought a set for Vietnamese bánh căn(rice cakes) for 10 bucks and am figuring out how to use this. I think the material is clay/some form of earthenware, very dusty, and not sure if I can wash directly with soap and how to use overall. If someone could provide tips for this type of material or point me to a better subreddit for this question that would be greatly appreciated!\n\nAlso, any tips for making bánh căn in general would be appreciated! \n\nI am not allowed to upload pictures, but it looks like this: [https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7xLEOLeKpz6aufdGz5mZUFs8NzwzTwUGJZQ&s](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7xLEOLeKpz6aufdGz5mZUFs8NzwzTwUGJZQ&s) \n\nexcept that the small pot structures used to hold the batter are also made out of clay(in the picture it looks like it's made of metal)\n\n  \nThanks!"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Using remains of failed manicotti dish?",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1thxgyw/using_remains_of_failed_manicotti_dish/",
+        "published_at": "2026-05-19T19:25:28+00:00",
+        "summary": "[r/Cooking] by u/Slvrwind | 0 points | 13 comments\n\nI'd made a large double batch of lasagna, but ran out of flat pasta and decided to fill up manicotti shells we had on hand.  \n\nThe proportions are **very** off.  Ricotta, mozza, provolone, Parm, and bechamel all basically blended into a cream-flavored cheese-textured mess.  Not anywhere near enough meat and red sauce to cut it.\n\n(This is what was left after I filled two large casserole pans.)\n\nI thought maybe making another meat sauce and some pasta and baking a scoop of the cheese stuff on top? Anyone have other ideas?"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/KoreanFood",
+        "headline": "Anything goes ssam",
+        "source_url": "https://www.reddit.com/r/KoreanFood/comments/1thwdhq/anything_goes_ssam/",
+        "published_at": "2026-05-19T18:49:27+00:00",
+        "summary": "[r/KoreanFood] by u/ThePietje | 80 points | 7 comments\n\nUsed leftovers and various odds and ends to make tasty grilled chicken ssam for lunch. Even had a half full bottle of soju to complete the leftovers theme."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Ideas to use Melted Marshmellows",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1thw95j/ideas_to_use_melted_marshmellows/",
+        "published_at": "2026-05-19T18:45:25+00:00",
+        "summary": "[r/Cooking] by u/Puzzleheaded_Date834 | 2 points | 4 comments\n\nI make my own Marshmallows mostly because it's very hard to find some that have vegan/halal gelatin. I was wondering what else I can do with it? I make Rice Crispy Treats often. I love them! But I'm out, and was wondering what else I can do with it. I can't wait to see your ideas!"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/KoreanFood",
+        "headline": "what is your earliest memory of eating instant ramyun?",
+        "source_url": "https://www.reddit.com/r/KoreanFood/comments/1thunko/what_is_your_earliest_memory_of_eating_instant/",
+        "published_at": "2026-05-19T17:52:58+00:00",
+        "summary": "[r/KoreanFood] by u/Nongshim_official | 4 points | 13 comments\n\nwe’re feeling a little nostalgic in the office today... for a lot of us, instant ramyun was the very first meal we were ever allowed to \"cook\" by ourselves on the stove when we were kids.\n\nwhat was your first core memory with it? who made it for you, or how badly did you mess it up—or perfect it—the first time you tried to make it yourself?"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/KoreanFood",
+        "headline": "Breakfast - Sangchu Geotjeori Bap (or Bibimbap?) with Seasoned Steamed Shrimp",
+        "source_url": "https://www.reddit.com/r/KoreanFood/comments/1thu3pi/breakfast_sangchu_geotjeori_bap_or_bibimbap_with/",
+        "published_at": "2026-05-19T17:34:56+00:00",
+        "summary": "[r/KoreanFood] by u/Puzzleheaded_Act_131 | 14 points | 0 comments\n\nEasy breakfast today."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/KoreanFood",
+        "headline": "Kimbap",
+        "source_url": "https://www.reddit.com/r/KoreanFood/comments/1thtnqj/kimbap/",
+        "published_at": "2026-05-19T17:20:01+00:00",
+        "summary": "[r/KoreanFood] by u/Quirky-Piece-703 | 39 points | 1 comments\n\nThe BEST kimbap I’ve EVER had, and honestly nothing has come close since. This was back home, and now that I don’t live there anymore, I miss this place sooo much. I’ve tried so many places in my new city hoping to find “the one” again, but it just never hits the same. 😭"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://www.reddit.com/r/foodsafety/comments/1thtnky/jar_of_gefilte_fish/"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://www.reddit.com/r/foodsafety/comments/1thsa6k/brown_fuzzy_stuff_in_tangerines/"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://www.reddit.com/r/foodsafety/comments/1thrmoz/never_seen_this_on_chicken_before_bought_sunday/"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/KoreanFood",
+        "headline": "Kimchi Okra. Korean 🤝 New Orleans",
+        "source_url": "https://www.reddit.com/r/KoreanFood/comments/1thq1fk/kimchi_okra_korean_new_orleans/",
+        "published_at": "2026-05-19T15:16:42+00:00",
+        "summary": "[r/KoreanFood] by u/KheetoDiet | 44 points | 4 comments\n\nLink: https://i.redd.it/mu2gk45d242h1.jpeg"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://www.reddit.com/r/foodsafety/comments/1thp379/should_i_not_be_storing_my_opened_tomato_paste/"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/KoreanFood",
+        "headline": "jjajang jjangbbong 짜장면 짬뽕 탕수육",
+        "source_url": "https://www.reddit.com/r/KoreanFood/comments/1thp0fw/jjajang_jjangbbong_짜장면_짬뽕_탕수육/",
+        "published_at": "2026-05-19T14:40:43+00:00",
+        "summary": "[r/KoreanFood] by u/MallOk9124 | 26 points | 3 comments\n\nyum yum\\~\\~"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/nutrition",
+        "headline": "The Protein Shortage Is Coming",
+        "source_url": "https://www.reddit.com/r/nutrition/comments/1tho6l3/the_protein_shortage_is_coming/",
+        "published_at": "2026-05-19T14:11:18+00:00",
+        "summary": "[r/nutrition] by u/MurphyBacon | 137 points | 262 comments\n\n[https://www.theatlantic.com/culture/2026/05/protein-powder-shortage/687193/](https://www.theatlantic.com/culture/2026/05/protein-powder-shortage/687193/)\n\n  \nWelp... this is agitating to say the least."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/KoreanFood",
+        "headline": "Proud to present... Buchu Namul!",
+        "source_url": "https://www.reddit.com/r/KoreanFood/comments/1thmotv/proud_to_present_buchu_namul/",
+        "published_at": "2026-05-19T13:16:23+00:00",
+        "summary": "[r/KoreanFood] by u/hyein727 | 149 points | 20 comments\n\nThis is getting fun! Here's another video of me making Buchu namul hehe. 😚"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://www.reddit.com/r/foodsafety/comments/1thlorw/left_butter_in_car_in_spring_weather/"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://www.reddit.com/r/foodsafety/comments/1thjp93/foodinduced_allergy_sensitivity_primarily_eczema/"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/KoreanFood",
+        "headline": "Bossam Jokbal Fest",
+        "source_url": "https://www.reddit.com/r/KoreanFood/comments/1thipxd/bossam_jokbal_fest/",
+        "published_at": "2026-05-19T10:25:18+00:00",
+        "summary": "[r/KoreanFood] by u/Hot_Quantity6732 | 18 points | 0 comments\n\nLink: https://i.redd.it/fx3e12fam22h1.jpeg"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/KoreanFood",
+        "headline": "Horse shaped baguettes",
+        "source_url": "https://www.reddit.com/r/KoreanFood/comments/1thilx3/horse_shaped_baguettes/",
+        "published_at": "2026-05-19T10:19:50+00:00",
+        "summary": "[r/KoreanFood] by u/No-Pepper9874 | 4 points | 1 comments\n\nIn Korea, horse shaped baguettes became a seasonal trend this year as part of the Year of the Horse celebrations. Their unique design spread quickly on social media and drew attention for their cute and playful appearance. They were especially popular for their visual appeal and stood out as a fun bakery item for a time."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_url": "https://www.reddit.com/r/foodsafety/comments/1thdabf/does_this_look_safe/"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/nutrition",
+        "headline": "For lycopene and β-carotene bioavailability, I’ve cooked tomatoes and carrots with ghee butter or EVOO in the microwave, but to minimize the oil going rancid, decided to microwave veggies alone first, add oil later, then fridge it overnight: will the absorption be the same?",
+        "source_url": "https://www.reddit.com/r/nutrition/comments/1th4hek/for_lycopene_and_βcarotene_bioavailability_ive/",
+        "published_at": "2026-05-18T23:00:25+00:00",
+        "summary": "[r/nutrition] by u/TraditionalDepth6924 | 10 points | 7 comments\n\nCooking simultaneously with oil vs. cooking no-oil then adding oil like a dressing, letting it sit like pickling\n\n(For both cases, I cut and crush tomatoes/carrots into pieces for better absorption of fat into the cells, and I know ghee butter is mostly saturated fat so relatively safer from rancidity by heat)\n\nIs there scientifically a difference or a caveat please?"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/nutrition",
+        "headline": "Why do you choose the supplements you take?",
+        "source_url": "https://www.reddit.com/r/nutrition/comments/1tgq2sl/why_do_you_choose_the_supplements_you_take/",
+        "published_at": "2026-05-18T15:29:26+00:00",
+        "summary": "[r/nutrition] by u/adi_gogiccc | 7 points | 18 comments\n\nHey everyone,  \nWe all know the supplement industry is a absolute minefield. Between influencer marketing, conflicting scientific studies, and targeted ads, deciding what to actually put in your body is incredibly complex.  \n  \nI’m currently running a research study at Ghent University to understand how context and information sources shape our supplement choices. Whether you take a basic daily multivitamin or manage a highly specific, performance-focused protocol, your input is incredibly valuable.  \nThe survey is completely anonymous, academic, and takes about 5 minutes to complete.  \n  \n👉 [https://qualtricsxmg5yh6qxql.qualtrics.com/jfe/form/SV\\_6gopAySyglHKCdU](https://qualtricsxmg5yh6qxql.qualtrics.com/jfe/form/SV_6gopAySyglHKCdU)   \n  \nBy participating, you’ll be helping us map out how people navigate the digital noise to make health decisions.\n\n  \nConsequently, if you have a few minutes to spare, I would highly appreciate your insights. If you have any questions about the study, feel free to drop them in the comments below!  \nThank you for your time!"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/nutrition",
+        "headline": "How much water do you all actually drink daily?",
+        "source_url": "https://www.reddit.com/r/nutrition/comments/1tgkszd/how_much_water_do_you_all_actually_drink_daily/",
+        "published_at": "2026-05-18T12:15:02+00:00",
+        "summary": "[r/nutrition] by u/Emotional-Heat-1427 | 84 points | 167 comments\n\nI always hear the recommendation to drink 8 glasses of water a day, but honestly I struggle to even get close most days.\n\nSome people carry giant water bottles around and make it look easy, while I’ll forget to drink water for hours unless I consciously think about it.\n\nHow much water do you realistically drink in a normal day, and do you notice a difference when you’re properly hydrated?"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/nutrition",
+        "headline": "Iodized salt has less usage in US & Europe compared to Asian & African countries?",
+        "source_url": "https://www.reddit.com/r/nutrition/comments/1tgib1l/iodized_salt_has_less_usage_in_us_europe_compared/",
+        "published_at": "2026-05-18T10:19:43+00:00",
+        "summary": "[r/nutrition] by u/Rowdy_Rathod | 37 points | 96 comments\n\nI was reading the iodized salt Wikipedia page and came to know the stat that was stating that US & Europe has almost negligible iodized salt intake if not nil while it's heavily consumed in African and Asian countries. Is it true? If yes, then is there a reason as to why US & Europe not taking iodine salt if it really improves the health and IQ of the people?\n\nThe chart is mentioned on the below page.\n\nhttps://en.wikipedia.org/wiki/Iodised\\_salt\n\nKindly share your thoughts. Thanks."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/nutrition",
+        "headline": "Would you rather hit your protein but go over calories majorly, or just miss protein for a day?",
+        "source_url": "https://www.reddit.com/r/nutrition/comments/1tgd34h/would_you_rather_hit_your_protein_but_go_over/",
+        "published_at": "2026-05-18T05:30:38+00:00",
+        "summary": "[r/nutrition] by u/Koalaboxess | 24 points | 37 comments\n\nE.g If the only protein source was a fatty steak, or cheese, whole yoghurt/milk ECT..\n\nEdit- This is a hypothetical, I don't often have this problem either. If, for example, you were staying with family or in a rural area and ran out of your normal foods is what I meant"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/nutrition",
+        "headline": "Neurotransmitter-precursor foods?",
+        "source_url": "https://www.reddit.com/r/nutrition/comments/1tfj2r1/neurotransmitterprecursor_foods/",
+        "published_at": "2026-05-17T07:58:16+00:00",
+        "summary": "[r/nutrition] by u/OatmealRaisinGolem | 19 points | 18 comments\n\nDoes anyone have pointers/experience on foods that are precursors to neurotransmitters?  \nI am curious about the issue, and have done some research online, but it seems either very vague, or at a technical level above my literacy.\n\nPrompts already accompanied by scientific sources will get double brownie points in my eyes, but I'm fully prepared to do the grunt work on my own, if you only have time for the prompt :)\n\nThanks for your attention!"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/nutrition",
+        "headline": "What’s wrong with getting nutrients in liquid form",
+        "source_url": "https://www.reddit.com/r/nutrition/comments/1tfdai3/whats_wrong_with_getting_nutrients_in_liquid_form/",
+        "published_at": "2026-05-17T02:55:41+00:00",
+        "summary": "[r/nutrition] by u/Diimmennsiionz | 3 points | 31 comments\n\nquestion is in the title"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/nutrition",
+        "headline": "Fruit instead of rice/potatoes as carb source?",
+        "source_url": "https://www.reddit.com/r/nutrition/comments/1tf80u1/fruit_instead_of_ricepotatoes_as_carb_source/",
+        "published_at": "2026-05-16T22:50:35+00:00",
+        "summary": "[r/nutrition] by u/Private_Blue207 | 24 points | 33 comments\n\nWhy don’t you hear about fruits as a carb source more often? I don’t think I’ve ever heard it be mentioned in a nutrition pre workout stack. Is it not a viable source?  Handful of assorted nuts and rice/potato versus handful of assorted nuts and fruit, which one is better? Is there a difference?"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/nutrition",
+        "headline": "Any issues with oats as primary carb in a diet?",
+        "source_url": "https://www.reddit.com/r/nutrition/comments/1ter4gf/any_issues_with_oats_as_primary_carb_in_a_diet/",
+        "published_at": "2026-05-16T11:33:03+00:00",
+        "summary": "[r/nutrition] by u/Baedosa | 75 points | 82 comments\n\nCurrently having oats pretty much every day as congee inspired meal with vegetables and eggs, and baked potatoes for lunch. Am I missing out nutrition wise by avoiding rice and pasta?"
+      }
+    }
+  ],
+  "quality_summary": {
+    "total_sources": 12,
+    "tracked_sources": 3,
+    "fresh_sources": 2,
+    "stale_sources": 1,
+    "missing_sources": 0,
+    "unknown_event_date_sources": 0,
+    "not_tracked_sources": 8,
+    "catalog_only_sources": 0,
+    "skipped_disabled_sources": 1,
+    "collection_error_count": 4,
+    "alias_candidate_count": 3,
+    "product_alias_candidate_count": 0,
+    "brand_alias_candidate_count": 2,
+    "manufacturer_alias_candidate_count": 1,
+    "match_coverage_article_count": 130,
+    "match_coverage_matched_count": 127,
+    "match_coverage_unmatched_count": 3,
+    "match_coverage_rate": 97.7,
+    "match_coverage_review_item_count": 3,
+    "fresh_food_events": 35,
+    "stale_food_events": 4,
+    "undated_food_events": 0,
+    "unique_food_event_key_count": 39,
+    "recall_events_with_notice_date_count": 1,
+    "recall_events_with_status_count": 1,
+    "event_alias_trace_count": 0,
+    "complaint_auxiliary_only_events": 11,
+    "official_evidence_events": 28,
+    "recall_status_change_events": 1,
+    "enforcement_action_events": 27,
+    "complaint_signal_events": 11
+  },
+  "warnings": [
+    "collection errors detected: 4",
+    "freshness gaps detected: stale=1, missing=0"
+  ],
+  "quality_flagged_sources": [
+    {
+      "source": "식품안전나라 회수판매중지",
+      "source_type": "rss",
+      "enabled": true,
+      "tracked": true,
+      "event_model": "recall_status_change",
+      "freshness_sla_days": 3,
+      "status": "stale",
+      "article_count": 1,
+      "latest_event_at": "2026-05-17T15:00:00+00:00",
+      "latest_collected_at": "2026-05-21T06:45:01.658932+00:00",
+      "age_days": 3.66,
+      "latest_title": "(주)진성바이오지점",
+      "latest_url": "/portal/suspensionDetail.do?search_keyword=3000226157",
+      "latest_food_event_key": "recall-status-change:kr:식품안전나라-회수판매중지:2026-05-17:주-진성바이오지점:강황가루:portal-suspensiondetail-do-search-keyword-3000226157",
+      "latest_notice_date": "2026-05-17",
+      "latest_recall_status": "notice",
+      "latest_release_date": "",
+      "latest_sanction_start_date": "",
+      "latest_sanction_end_date": "",
+      "latest_sanction_type": "",
+      "latest_product_name_raw": "강황가루",
+      "latest_manufacturer_name_raw": "(주)진성바이오지점",
+      "latest_alias_traces": [],
+      "verification_role": "",
+      "merge_policy": "",
+      "skip_reason": "",
+      "reenable_gate": "",
+      "errors": []
+    }
+  ],
+  "quality_alias_candidates": [
+    {
+      "alias_type": "brand",
+      "canonical": "",
+      "normalized": "aldi",
+      "variants": [
+        "aldi"
+      ],
+      "count": 2,
+      "example_urls": [
+        "https://www.foodsafetynews.com/2026/05/court-gives-judgement-in-aldi-pest-control-case",
+        "https://www.reddit.com/r/foodsafety/comments/1ti083a/newly_opened_aldi_applesauce_is_this_bad_or_just"
+      ]
+    },
+    {
+      "alias_type": "brand",
+      "canonical": "",
+      "normalized": "pepsico",
+      "variants": [
+        "pepsico"
+      ],
+      "count": 2,
+      "example_urls": [
+        "https://www.fooddive.com/news/pepsicos-muscle-milk-flexes-rebrand-in-crowded-protein-drink-space/819873",
+        "https://www.fooddive.com/news/utzs-regional-potato-chip-brand-salty-snack-giant/812739"
+      ]
+    },
+    {
+      "alias_type": "manufacturer",
+      "canonical": "",
+      "normalized": "제조업소",
+      "variants": [
+        "제조업소"
+      ],
+      "count": 4,
+      "example_urls": [
+        "/portal/administMeasureDetail.do?seq=4719401",
+        "/portal/administMeasureDetail.do?seq=4720874",
+        "/portal/administMeasureDetail.do?seq=4722113"
+      ]
+    }
+  ],
+  "quality_match_coverage_review_items": [
+    {
+      "reason": "market_or_editorial_unclassified",
+      "priority": "medium",
+      "source": "Food Dive",
+      "source_type": "rss",
+      "trust_tier": "T3_professional",
+      "event_model": "editorial_coverage",
+      "title": "Once Upon a Farm soars as parents seek healthier kids’ foods despite inflation",
+      "url": "https://www.fooddive.com/news/once-upon-a-farm-soars-as-parents-seek-healthier-kids-foods-despite-inflat/819748",
+      "published_at": "2026-05-20T04:30:00+00:00",
+      "collected_at": "2026-05-21T06:45:01.658932+00:00",
+      "summary_excerpt": "John Foraker, the company’s CEO and co-founder, said consumer demand for better-for-you offerings remains robust even as rising prices prompt shoppers to cut back on spending in other areas.",
+      "recommended_action": "review Product/FoodType/Brand keyword coverage"
+    },
+    {
+      "reason": "unclassified_article",
+      "priority": "low",
+      "source": "식품안전나라 행정처분",
+      "source_type": "rss",
+      "trust_tier": "T1_official",
+      "event_model": "enforcement_action",
+      "title": "(no title)",
+      "url": "/portal/administMeasureDetail.do?seq=4722681",
+      "published_at": null,
+      "collected_at": "2026-05-21T06:45:01.658932+00:00",
+      "summary_excerpt": "20260520",
+      "recommended_action": "review whether this item belongs in FoodRadar matching scope"
+    },
+    {
+      "reason": "unclassified_article",
+      "priority": "low",
+      "source": "식품안전나라 행정처분",
+      "source_type": "rss",
+      "trust_tier": "T1_official",
+      "event_model": "enforcement_action",
+      "title": "상기 당사자는 해당 영업소 소재지의 관련 영업시설을 전부 철거하고, 변경허가를 받지 아니한 사실이 있음",
+      "url": "/portal/administMeasureDetail.do?seq=4692459",
+      "published_at": null,
+      "collected_at": "2026-05-21T06:45:01.658932+00:00",
+      "summary_excerpt": "20251121",
+      "recommended_action": "review whether this item belongs in FoodRadar matching scope"
+    }
+  ]
+}
