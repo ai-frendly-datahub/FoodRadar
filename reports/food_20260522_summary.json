@@ -7,15 +7,15 @@
   "top_entities": [
     {
       "name": "FoodType",
-      "count": 298
+      "count": 293
     },
     {
       "name": "FoodGeneral",
-      "count": 243
+      "count": 255
     },
     {
       "name": "SafetyIssue",
-      "count": 55
+      "count": 61
     },
     {
       "name": "Regulation",
@@ -51,17 +51,62 @@
     }
   ],
   "sources": {
+    "Food Safety News": 21,
     "r/Cooking": 80,
-    "r/KoreanFood": 48,
-    "r/foodsafety": 37,
-    "Food Safety News": 16,
+    "r/KoreanFood": 45,
+    "r/foodsafety": 35,
     "식품안전나라 행정처분": 4,
     "r/nutrition": 4,
     "Food Dive": 7,
     "식약처 보도자료": 4
   },
-  "generated_at": "2026-05-22T10:05:47.614028+09:00",
+  "generated_at": "2026-05-22T15:42:33.789554+09:00",
   "articles": [
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Publisher's Platform: What industry doesn't want you to know about cantaloupe",
+        "source_url": "https://www.foodsafetynews.com/2026/05/publishers-platform-what-industry-doesnt-want-you-to-know-about-cantaloupe/",
+        "published_at": "2026-05-22T04:06:27+00:00",
+        "summary": "Cantaloupe is almost perfectly designed to make people sick"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "FDA warning letters are on the  rise",
+        "source_url": "https://www.foodsafetynews.com/2026/05/fda-warning-letters-are-on-the-rise/",
+        "published_at": "2026-05-22T04:05:09+00:00",
+        "summary": "Title: FDA warning letters are on the  rise\n\nURL Source: https://www.foodsafetynews.com/2026/05/fda-warning-letters-are-on-the-rise/\n\nPublished Time: 2026-05-22T04:05:09.000Z\n\nMarkdown Content:\n## Subscribe to Food Safety News\n\nGet the free version of our newsletter. No spam ever, unsubscribe anytime.\n\nFood and Drug Administration warning letters to food manufacturers, sellers and importers have been trending upward, and the shift is not incidental. It reflects a maturing regulatory environment shaped by years of implementation under the Food Safety Modernization Act (FSMA). For companies operating in today’s global supply chain, this increase is less about sudden enforcement intensity and more about a clear message: the expectation is now sustained, demonstrable compliance.\n\nWhen FSMA was first introduced, FDA emphasized education and gradual adoption. That period has largely passed. Preventive controls, supplier verification, and traceability are no longer new concepts; they are baseline requirements. As a result, the agency is reducing its reliance on iterative feedback cycles and moving more quickly to formal enforcement actions when deficiencies persist. A warning letter, in this context, represents a significant escalation — one that signals FDA believes a firm has not adequately corrected violations identified during inspection.\n\nAnother contributing factor is operational reality. FDA, like many regulatory bodies, faces resource constraints. Re-inspecting facilities multiple times to confirm compliance is no longer sustainable at scale. Instead, the agency is prioritizing efficiency by using stronger enforcement tools earlier in the process. Warning letters serve as both a corrective mechanism and a deterrent, encouraging firms to address root causes promptly rather than relying on repeated opportunities to improve.\n\nFor foreign suppliers, the implications are particularly significant. Under the Foreign Supplier Verification Program (FSVP), U.S. importers are"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Not enough progress on foodborne disease, says WHO",
+        "source_url": "https://www.foodsafetynews.com/2026/05/not-enough-progress-on-foodborne-disease-says-who/",
+        "published_at": "2026-05-22T04:03:16+00:00",
+        "summary": "<p>Country capacity for surveillance of foodborne diseases has improved slightly but remains off target, according to WHO.</p><p>The World Health Organization (WHO) provided an update on progress made relating to the Global Strategy for Food Safety at the 79th World Health Assembly.</p><p>Data shows that despite a gradual improvement in</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "FDA steps up enforcement on imported cheese, canned food, seafood and more",
+        "source_url": "https://www.foodsafetynews.com/2026/05/fda-steps-up-enforcement-on-imported-cheese-canned-food-seafood-and-more/",
+        "published_at": "2026-05-22T04:01:20+00:00",
+        "summary": "<p>The Food and Drug Administration uses import alerts to enforce U.S. food safety regulations for food from foreign countries. The agency updates and modifies the alerts as needed.</p><p>Recent modifications to FDA’s import alerts, as posted by the agency, are listed below.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Spanish study reveals burden of toxin-related outbreaks",
+        "source_url": "https://www.foodsafetynews.com/2026/05/spanish-study-reveals-burden-of-toxin-related-outbreaks/",
+        "published_at": "2026-05-22T04:00:34+00:00",
+        "summary": "The largest Clostridium perfringens outbreak sickened 426 people"
+      }
+    },
     {
       "event_model_payload": {
         "source_name": "r/Cooking",
@@ -146,19 +191,19 @@
     {
       "event_model_payload": {
         "source_name": "식품안전나라 행정처분",
-        "headline": "2020. 3. 17.부터 2025. 9. 5.까지 베트남산 수입식품[제품명(유형):➊으오이 사오 퐁남(당류가공품), ➋옹토(당류가공품)]을 총 15회에 걸쳐 수입신고하면서 해외 제조업소 소재지를 사실과 다르게 수입신고한 사실이 있음.",
-        "source_url": "/portal/administMeasureDetail.do?seq=4722507",
+        "headline": "2024. 9. 2.부터 2026. 1. 9.까지 베트남산 수입식품[제품명(유형): ➊으오이 사오 퐁남(당류가공품), ➋옹토(당류가공품), ➌코코넛워터(과·채주스]을 총 48회에 걸쳐 수입신고하면서 해외 제조업소 소재지를 사실과 다르게 수입신고한 사실이 있음.",
+        "source_url": "/portal/administMeasureDetail.do?seq=4722508",
         "published_at": "2026-05-22T00:00:00+00:00",
-        "summary": "2020. 3. 17.부터 2025. 9. 5.까지 베트남산 수입식품[제품명(유형):➊으오이 사오 퐁남(당류가공품), ➋옹토(당류가공품)]을 총 15회에 걸쳐 수입신고하면서 해외 제조업소 소재지를 사실과 다르게 수입신고한 사실이 있음."
+        "summary": "2024. 9. 2.부터 2026. 1. 9.까지 베트남산 수입식품[제품명(유형): ➊으오이 사오 퐁남(당류가공품), ➋옹토(당류가공품), ➌코코넛워터(과·채주스]을 총 48회에 걸쳐 수입신고하면서 해외 제조업소 소재지를 사실과 다르게 수입신고한 사실이 있음."
       }
     },
     {
       "event_model_payload": {
         "source_name": "식품안전나라 행정처분",
-        "headline": "2024. 9. 2.부터 2026. 1. 9.까지 베트남산 수입식품[제품명(유형): ➊으오이 사오 퐁남(당류가공품), ➋옹토(당류가공품), ➌코코넛워터(과·채주스]을 총 48회에 걸쳐 수입신고하면서 해외 제조업소 소재지를 사실과 다르게 수입신고한 사실이 있음.",
-        "source_url": "/portal/administMeasureDetail.do?seq=4722508",
+        "headline": "2020. 3. 17.부터 2025. 9. 5.까지 베트남산 수입식품[제품명(유형):➊으오이 사오 퐁남(당류가공품), ➋옹토(당류가공품)]을 총 15회에 걸쳐 수입신고하면서 해외 제조업소 소재지를 사실과 다르게 수입신고한 사실이 있음.",
+        "source_url": "/portal/administMeasureDetail.do?seq=4722507",
         "published_at": "2026-05-22T00:00:00+00:00",
-        "summary": "2024. 9. 2.부터 2026. 1. 9.까지 베트남산 수입식품[제품명(유형): ➊으오이 사오 퐁남(당류가공품), ➋옹토(당류가공품), ➌코코넛워터(과·채주스]을 총 48회에 걸쳐 수입신고하면서 해외 제조업소 소재지를 사실과 다르게 수입신고한 사실이 있음."
+        "summary": "2020. 3. 17.부터 2025. 9. 5.까지 베트남산 수입식품[제품명(유형):➊으오이 사오 퐁남(당류가공품), ➋옹토(당류가공품)]을 총 15회에 걸쳐 수입신고하면서 해외 제조업소 소재지를 사실과 다르게 수입신고한 사실이 있음."
       }
     },
     {
@@ -1004,7 +1049,7 @@
         "headline": "HUS cases hit new low in Argentina",
         "source_url": "https://www.foodsafetynews.com/2026/05/hus-cases-hit-new-low-in-argentina/",
         "published_at": "2026-05-21T04:03:21+00:00",
-        "summary": "Four deaths and 209 cases were recorded in 2025"
+        "summary": "Title: HUS cases hit new low in Argentina\n\nURL Source: https://www.foodsafetynews.com/2026/05/hus-cases-hit-new-low-in-argentina/\n\nPublished Time: 2026-05-21T04:03:21.000Z\n\nMarkdown Content:\nFour deaths and 209 cases were recorded in 2025\n\n![Image 1: HUS cases hit new low in Argentina](https://storage.ghost.io/c/43/4e/434e508a-5e2f-4102-a53d-00bca10bb4bf/content/images/size/w30/2026/05/dreamstime_e--coli-hus-stec-pathogen-germ-bacteria.png)\n\nPublished:May 21, 2026, 12:03 am\n\nFigures from Argentina show a decline in cases of a serious condition that can develop during E. coli infections.\n\nHemolytic Uremic Syndrome (HUS) is a notifiable condition in the country. HUS is a severe complication associated with E. coli infections that causes kidney failure and sometimes death. An analysis was performed on data in the National Surveillance System from notifications between Jan. 1, 2015, and Dec. 31, 2025.\n\n[![Image 2](https://assets.context.ly/thumbnails/food_safety_newsghostio/29325330/600x315.png)](https://www.foodsafetynews.com/2024/03/hus-cases-decline-in-argentina-but-still-pose-a-deadly-problem/ \"HUS cases decline in Argentina but still pose a deadly problem\")\n\n[![Image 3](https://assets.context.ly/thumbnails/food_safety_newsghostio/29324675/600x315.png)](https://www.foodsafetynews.com/2024/08/italy-records-almost-70-hus-cases-in-12-months/ \"Italy records almost 70 HUS cases in 12 months\")\n\n[![Image 4](https://assets.context.ly/thumbnails/food_safety_newsghostio/29323027/600x315.png)](https://www.foodsafetynews.com/2025/08/italy-reports-61-hus-cases-in-12-months/ \"Italy reports 61 HUS cases in 12 months\")\n\n[![Image 5](https://assets.context.ly/thumbnails/food_safety_newsghostio/29327820/600x315.png)](https://www.foodsafetynews.com/2022/10/france-reports-fewest-hus-cases-since-2017/ \"France reports fewest HUS cases since 2017\")\n\n[![Image 6](https://assets.context.ly/thumbnails/food_safety_newsghostio/29323770/600x315.png)](https://www.foodsafetynews.com/2025/03/italy-r"
       }
     },
     {
@@ -1522,11 +1567,11 @@
     },
     {
       "event_model_payload": {
-        "source_name": "식약처 보도자료",
-        "headline": "(부처합동)식품 수출에 필요한 해외 법령, 한 번에 검색한다",
-        "source_url": "/portal/board/boardDetail.do?bbs_no=bbs080&ntctxt_no=50000&menu_no=2857",
+        "source_name": "식품안전나라 행정처분",
+        "headline": "식품안전나라 행정처분 2026-05-20",
+        "source_url": "/portal/administMeasureDetail.do?seq=4722681",
         "published_at": "2026-05-20T00:00:00+00:00",
-        "summary": "<p>(부처합동)식품 수출에 필요한 해외 법령, 한 번에 검색한다</p>"
+        "summary": "식품안전나라 행정처분 공고일 2026-05-20"
       }
     },
     {
@@ -1540,20 +1585,20 @@
     },
     {
       "event_model_payload": {
-        "source_name": "식품안전나라 행정처분",
-        "headline": "2025. 10. 23., 2025. 11. 7. 2차례 수입신고한 중국산 수입식품 ‘신선마늘쫑’에 대하여 수입검사가 진행 중인 수입식품을 수입신고 수리 전 보세창고에서 반출(총 3,095박스)하여 수입검사가 진행 중인 제품을 국내로 반입되도록 한 사실이 있음.",
-        "source_url": "/portal/administMeasureDetail.do?seq=4713999",
+        "source_name": "식약처 보도자료",
+        "headline": "(부처합동)식품 수출에 필요한 해외 법령, 한 번에 검색한다",
+        "source_url": "/portal/board/boardDetail.do?bbs_no=bbs080&ntctxt_no=50000&menu_no=2857",
         "published_at": "2026-05-20T00:00:00+00:00",
-        "summary": "2025. 10. 23., 2025. 11. 7. 2차례 수입신고한 중국산 수입식품 ‘신선마늘쫑’에 대하여 수입검사가 진행 중인 수입식품을 수입신고 수리 전 보세창고에서 반출(총 3,095박스)하여 수입검사가 진행 중인 제품을 국내로 반입되도록 한 사실이 있음."
+        "summary": "<p>(부처합동)식품 수출에 필요한 해외 법령, 한 번에 검색한다</p>"
       }
     },
     {
       "event_model_payload": {
         "source_name": "식품안전나라 행정처분",
-        "headline": "식품안전나라 행정처분 2026-05-20",
-        "source_url": "/portal/administMeasureDetail.do?seq=4722681",
+        "headline": "2025. 10. 23., 2025. 11. 7. 2차례 수입신고한 중국산 수입식품 ‘신선마늘쫑’에 대하여 수입검사가 진행 중인 수입식품을 수입신고 수리 전 보세창고에서 반출(총 3,095박스)하여 수입검사가 진행 중인 제품을 국내로 반입되도록 한 사실이 있음.",
+        "source_url": "/portal/administMeasureDetail.do?seq=4713999",
         "published_at": "2026-05-20T00:00:00+00:00",
-        "summary": "식품안전나라 행정처분 공고일 2026-05-20"
+        "summary": "2025. 10. 23., 2025. 11. 7. 2차례 수입신고한 중국산 수입식품 ‘신선마늘쫑’에 대하여 수입검사가 진행 중인 수입식품을 수입신고 수리 전 보세창고에서 반출(총 3,095박스)하여 수입검사가 진행 중인 제품을 국내로 반입되도록 한 사실이 있음."
       }
     },
     {
@@ -1807,51 +1852,6 @@
         "published_at": "2026-05-19T18:45:25+00:00",
         "summary": "[r/Cooking] by u/Puzzleheaded_Date834 | 2 points | 4 comments\n\nI make my own Marshmallows mostly because it's very hard to find some that have vegan/halal gelatin. I was wondering what else I can do with it? I make Rice Crispy Treats often. I love them! But I'm out, and was wondering what else I can do with it. I can't wait to see your ideas!"
       }
-    },
-    {
-      "event_model_payload": {
-        "source_name": "r/KoreanFood",
-        "headline": "what is your earliest memory of eating instant ramyun?",
-        "source_url": "https://www.reddit.com/r/KoreanFood/comments/1thunko/what_is_your_earliest_memory_of_eating_instant/",
-        "published_at": "2026-05-19T17:52:58+00:00",
-        "summary": "[r/KoreanFood] by u/Nongshim_official | 4 points | 13 comments\n\nwe’re feeling a little nostalgic in the office today... for a lot of us, instant ramyun was the very first meal we were ever allowed to \"cook\" by ourselves on the stove when we were kids.\n\nwhat was your first core memory with it? who made it for you, or how badly did you mess it up—or perfect it—the first time you tried to make it yourself?"
-      }
-    },
-    {
-      "event_model_payload": {
-        "source_name": "r/KoreanFood",
-        "headline": "Breakfast - Sangchu Geotjeori Bap (or Bibimbap?) with Seasoned Steamed Shrimp",
-        "source_url": "https://www.reddit.com/r/KoreanFood/comments/1thu3pi/breakfast_sangchu_geotjeori_bap_or_bibimbap_with/",
-        "published_at": "2026-05-19T17:34:56+00:00",
-        "summary": "[r/KoreanFood] by u/Puzzleheaded_Act_131 | 14 points | 0 comments\n\nEasy breakfast today."
-      }
-    },
-    {
-      "event_model_payload": {
-        "source_name": "r/KoreanFood",
-        "headline": "Kimbap",
-        "source_url": "https://www.reddit.com/r/KoreanFood/comments/1thtnqj/kimbap/",
-        "published_at": "2026-05-19T17:20:01+00:00",
-        "summary": "[r/KoreanFood] by u/Quirky-Piece-703 | 39 points | 1 comments\n\nThe BEST kimbap I’ve EVER had, and honestly nothing has come close since. This was back home, and now that I don’t live there anymore, I miss this place sooo much. I’ve tried so many places in my new city hoping to find “the one” again, but it just never hits the same. 😭"
-      }
-    },
-    {
-      "event_model_payload": {
-        "source_name": "r/foodsafety",
-        "headline": "Jar of Gefilte fish",
-        "source_url": "https://www.reddit.com/r/foodsafety/comments/1thtnky/jar_of_gefilte_fish/",
-        "published_at": "2026-05-19T17:19:52+00:00",
-        "summary": "[r/foodsafety] by u/Remarkable-World-234 | 1 points | 2 comments\n\nIt’s been sitting in fridge for a month or maybe more.   \nFish has been submerged in that gel / brine. Smells ok. \n\nAnyone have any suggestions."
-      }
-    },
-    {
-      "event_model_payload": {
-        "source_name": "r/foodsafety",
-        "headline": "Brown fuzzy stuff in tangerines",
-        "source_url": "https://www.reddit.com/r/foodsafety/comments/1thsa6k/brown_fuzzy_stuff_in_tangerines/",
-        "published_at": "2026-05-19T16:33:33+00:00",
-        "summary": "[r/foodsafety] by u/Fun_Photograph653 | 1 points | 7 comments\n\nI've opened 3 tangerines from the same bag and they all have these brown fuzzy stuff and some brown beads in the middle. I have eaten a lot of tangerines in my lifetime, and they never have this brown thing. FWIW, the tangerines don't have any visible damage on the outside. They smell normal.\n\nI've heard about endoxerosis. Is this that? Or is it mold?"
-      }
     }
   ],
   "ontology": {
@@ -1917,7 +1917,7 @@
     "not_tracked_sources": 8,
     "catalog_only_sources": 0,
     "skipped_disabled_sources": 1,
-    "collection_error_count": 0,
+    "collection_error_count": 4,
     "alias_candidate_count": 7,
     "text_length_outlier_count": 5,
     "title_length_outlier_count": 2,
@@ -1927,13 +1927,13 @@
     "product_alias_candidate_count": 1,
     "brand_alias_candidate_count": 4,
     "manufacturer_alias_candidate_count": 2,
-    "match_coverage_article_count": 257,
-    "match_coverage_matched_count": 256,
+    "match_coverage_article_count": 259,
+    "match_coverage_matched_count": 258,
     "match_coverage_unmatched_count": 1,
     "match_coverage_rate": 99.6,
     "match_coverage_review_item_count": 1,
-    "fresh_food_events": 44,
-    "stale_food_events": 4,
+    "fresh_food_events": 43,
+    "stale_food_events": 5,
     "undated_food_events": 0,
     "unique_food_event_key_count": 48,
     "recall_events_with_notice_date_count": 1,
@@ -1945,6 +1945,9 @@
     "enforcement_action_events": 5,
     "complaint_signal_events": 42
   },
+  "warnings": [
+    "collection errors detected: 4"
+  ],
   "quality_alias_candidates": [
     {
       "alias_type": "brand",
@@ -1979,9 +1982,8 @@
       "variants": [
         "pepsico"
       ],
-      "count": 2,
+      "count": 1,
       "example_urls": [
-        "https://www.fooddive.com/news/pepsicos-muscle-milk-flexes-rebrand-in-crowded-protein-drink-space/819873",
         "https://www.fooddive.com/news/utzs-regional-potato-chip-brand-salty-snack-giant/812739"
       ]
     },
@@ -2042,11 +2044,11 @@
       "source_type": "rss",
       "trust_tier": "T3_professional",
       "event_model": "editorial_coverage",
-      "title": "HUS cases hit new low in Argentina",
-      "url": "https://www.foodsafetynews.com/2026/05/hus-cases-hit-new-low-in-argentina",
-      "published_at": "2026-05-21T04:03:21+00:00",
-      "collected_at": "2026-05-22T01:05:45.246832+00:00",
-      "summary_excerpt": "Four deaths and 209 cases were recorded in 2025",
+      "title": "Publisher's Platform: What industry doesn't want you to know about cantaloupe",
+      "url": "https://www.foodsafetynews.com/2026/05/publishers-platform-what-industry-doesnt-want-you-to-know-about-cantaloupe",
+      "published_at": "2026-05-22T04:06:27+00:00",
+      "collected_at": "2026-05-22T06:42:32.282839+00:00",
+      "summary_excerpt": "Cantaloupe is almost perfectly designed to make people sick",
       "recommended_action": "review Product/FoodType/Brand keyword coverage"
     }
   ]
