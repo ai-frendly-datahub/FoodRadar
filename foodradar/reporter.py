@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from collections.abc import Iterable, Mapping
+from dataclasses import replace
 from html import escape
 from pathlib import Path
 from typing import Any
@@ -28,13 +29,14 @@ def generate_report(
 ) -> Path:
     """Generate HTML report (delegates to radar-core)."""
     articles_list = list(articles)
+    display_articles = [_display_article(article) for article in articles_list]
     plugin_charts = []
 
     # --- Universal plugins (entity heatmap + source reliability) ---
     try:
         from radar_core.plugins.entity_heatmap import get_chart_config as _heatmap_config
 
-        _heatmap = _heatmap_config(articles=articles_list)
+        _heatmap = _heatmap_config(articles=display_articles)
         if _heatmap is not None:
             plugin_charts.append(_heatmap)
     except Exception:
@@ -50,7 +52,7 @@ def generate_report(
 
     result = _core_generate_report(
         category=category,
-        articles=articles_list,
+        articles=display_articles,
         output_path=output_path,
         stats=stats,
         errors=errors,
@@ -283,3 +285,18 @@ def _render_match_coverage_review_items(items: list[Mapping[str, Any]]) -> str:
 
 def _list(value: object) -> list[Any]:
     return value if isinstance(value, list) else []
+
+
+def _display_article(article: Article) -> Article:
+    return replace(
+        article,
+        title=_compact_display_text(article.title, 180),
+        summary=_compact_display_text(article.summary, 700),
+    )
+
+
+def _compact_display_text(value: str, max_chars: int) -> str:
+    text = " ".join(str(value or "").split())
+    if len(text) <= max_chars:
+        return text
+    return text[: max_chars - 1].rstrip() + "…"

@@ -43,6 +43,8 @@ TRACKED_EVENT_MODEL_ORDER = [
     "complaint_signal",
 ]
 TRACKED_EVENT_MODELS = set(TRACKED_EVENT_MODEL_ORDER)
+TITLE_LENGTH_OUTLIER_THRESHOLD = 160
+SUMMARY_LENGTH_OUTLIER_THRESHOLD = 2000
 COMPACT_DATE_PATTERN = re.compile(r"(?<!\d)(20\d{2})(\d{2})(\d{2})(?!\d)")
 HTML_TAG_PATTERN = re.compile(r"<[^>]+>")
 DATE_ONLY_TEXT_PATTERN = re.compile(
@@ -89,6 +91,7 @@ def build_quality_report(
         generated_at=generated_at,
     )
     alias_candidates = _build_alias_candidates(articles_list)
+    text_length_outliers = _build_text_length_outliers(articles_list)
     match_coverage_review_items = _build_match_coverage_review_items(
         sources=category.sources,
         articles=articles_list,
@@ -122,6 +125,19 @@ def build_quality_report(
         "skipped_disabled_sources": status_counts.get("skipped_disabled", 0),
         "collection_error_count": len(errors_list),
         "alias_candidate_count": len(alias_candidates),
+        "text_length_outlier_count": len(text_length_outliers),
+        "title_length_outlier_count": sum(
+            1 for row in text_length_outliers if row.get("field") == "title"
+        ),
+        "summary_length_outlier_count": sum(
+            1 for row in text_length_outliers if row.get("field") == "summary"
+        ),
+        "mapped_alias_candidate_count": sum(
+            1 for row in alias_candidates if row.get("canonical")
+        ),
+        "unmapped_alias_candidate_count": sum(
+            1 for row in alias_candidates if not row.get("canonical")
+        ),
         "product_alias_candidate_count": sum(
             1 for row in alias_candidates if row.get("alias_type") == "product"
         ),
@@ -175,6 +191,7 @@ def build_quality_report(
         "sources": source_rows,
         "events": events,
         "alias_candidates": alias_candidates,
+        "text_length_outliers": text_length_outliers,
         "match_coverage_review_items": match_coverage_review_items,
         "errors": errors_list,
     }
@@ -322,6 +339,37 @@ def _build_event_rows(
             }
         )
     return rows
+
+
+def _build_text_length_outliers(articles: list[Article]) -> list[dict[str, Any]]:
+    outliers: list[dict[str, Any]] = []
+    for article in articles:
+        for field, threshold in (
+            ("title", TITLE_LENGTH_OUTLIER_THRESHOLD),
+            ("summary", SUMMARY_LENGTH_OUTLIER_THRESHOLD),
+        ):
+            value = str(getattr(article, field, "") or "")
+            length = len(value)
+            if length <= threshold:
+                continue
+            outliers.append(
+                {
+                    "source": article.source,
+                    "field": field,
+                    "length": length,
+                    "threshold": threshold,
+                    "title": _compact_text(article.title, 180),
+                    "url": article.link,
+                    "published": article.published.isoformat()
+                    if article.published
+                    else None,
+                }
+            )
+    return sorted(
+        outliers,
+        key=lambda row: (int(row["length"]), str(row["source"])),
+        reverse=True,
+    )
 
 
 def _food_event_fields(
@@ -811,12 +859,19 @@ def _build_alias_candidates(articles: list[Article]) -> list[dict[str, Any]]:
             values = article.matched_entities.get(entity_name, [])
             if not isinstance(values, list):
                 continue
+            traced_variants = _alias_trace_variants(article, entity_name)
+            canonical_values = _list(article.matched_entities.get(f"{entity_name}Canonical"))
+            canonical = canonical_values[0] if len(canonical_values) == 1 else ""
             for value in values:
                 variant = str(value).strip()
-                normalized = _normalize_alias(variant)
+                if _normalize_alias(variant) in traced_variants:
+                    continue
+                normalized = _normalize_alias(canonical or variant)
                 if not normalized or _is_generic_alias_value(alias_type, normalized):
                     continue
                 key = (alias_type, normalized)
+                if canonical:
+                    canonical_names[key] = canonical
                 grouped[key][variant] += 1
                 if len(examples[key]) < 3:
                     examples[key].add(article.link)
@@ -841,6 +896,18 @@ def _build_alias_candidates(articles: list[Article]) -> list[dict[str, Any]]:
             }
         )
     return candidates
+
+
+def _alias_trace_variants(article: Article, entity_name: str) -> set[str]:
+    values = article.matched_entities.get(f"{entity_name}AliasTrace", [])
+    if not isinstance(values, list):
+        return set()
+    variants: set[str] = set()
+    for trace in values:
+        match = ALIAS_TRACE_PATTERN.match(str(trace).strip())
+        if match is not None:
+            variants.add(_normalize_alias(match.group("variant")))
+    return variants
 
 
 def _collect_alias_traces(
@@ -1023,3 +1090,10 @@ def _clean_text(value: str) -> str:
     text = html.unescape(value or "")
     text = HTML_TAG_PATTERN.sub(" ", text)
     return " ".join(text.split())
+
+
+def _compact_text(value: str, max_chars: int) -> str:
+    text = _clean_text(value)
+    if len(text) <= max_chars:
+        return text
+    return text[: max_chars - 1].rstrip() + "…"

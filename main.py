@@ -17,6 +17,7 @@ from foodradar.config_loader import (
     load_category_config,
     load_category_quality_config,
     load_settings,
+    source_language_overrides,
 )
 from foodradar.logger import configure_logging, get_logger
 from foodradar.quality_report import build_quality_report, write_quality_report
@@ -256,6 +257,11 @@ def run(
     )
     with RadarStorage(settings.database_path) as storage:
         storage.upsert_articles(analyzed)
+        _ = storage.sync_source_metadata(
+            effective_sources,
+            category=category_cfg.category_name,
+            source_languages=source_language_overrides(quality_cfg),
+        )
         _ = storage.delete_older_than(keep_days)
         recent_articles = storage.recent_articles(category_cfg.category_name, days=recent_days)
         quality_articles = storage.recent_articles(

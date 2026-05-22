@@ -264,6 +264,7 @@ def collect_sources(
                     timeout=timeout,
                     session=source_session,
                 )
+                _mark_crawl_health_recovered(health_store, source.name)
             return result, []
         except CircuitBreakerError:
             return [], [f"{source.name}: Circuit breaker open (source unavailable)"]
@@ -397,11 +398,18 @@ def _collect_single(
             if published is None and _is_date_only_summary(summary):
                 published = _extract_summary_date(summary)
 
+            raw_title = html.unescape(_entry_text(entry, "title").strip()) or "(no title)"
+            normalized_title, normalized_summary = _normalize_entry_text(
+                source=source,
+                title=raw_title,
+                summary=html.unescape(summary.strip()),
+            )
+
             items.append(
                 Article(
-                    title=html.unescape(_entry_text(entry, "title").strip()) or "(no title)",
+                    title=normalized_title,
                     link=_entry_text(entry, "link").strip(),
-                    summary=html.unescape(summary.strip()),
+                    summary=normalized_summary,
                     published=published,
                     source=source.name,
                     category=category,
@@ -441,6 +449,31 @@ def _source_max_attempts(source: Source, default: int) -> int:
     return default
 
 
+def _mark_crawl_health_recovered(health_store: CrawlHealthStore, source_name: str) -> None:
+    """Clear stale disabled state after a bypassed source succeeds."""
+    try:
+        health_store.flush()
+        write_lock = getattr(health_store, "_write_lock", None)
+        conn = getattr(health_store, "conn", None)
+        if write_lock is None or conn is None:
+            return
+        with write_lock:
+            _ = conn.execute(
+                """
+                UPDATE crawl_health
+                SET disabled = FALSE,
+                    failure_count = 0,
+                    last_error = NULL,
+                    updated_at = NOW()
+                WHERE source_name = ?
+                """,
+                [source_name],
+            )
+            _ = conn.commit()
+    except Exception:
+        return
+
+
 def _is_date_only_summary(value: str) -> bool:
     return bool(DATE_ONLY_SUMMARY_PATTERN.match(value or ""))
 
@@ -470,6 +503,50 @@ def _date_from_parts(year: str, month: str, day: str) -> datetime | None:
         return datetime(int(year), int(month), int(day), tzinfo=UTC)
     except ValueError:
         return None
+
+
+def _normalize_entry_text(source: Source, title: str, summary: str) -> tuple[str, str]:
+    if not _is_official_enforcement_source(source):
+        return title, summary
+    if not _is_date_only_summary(summary):
+        return title, summary
+    if _is_placeholder_title(title):
+        notice_date = _format_summary_date(summary)
+        if notice_date:
+            return (
+                f"{source.name} {notice_date}",
+                f"{source.name} 공고일 {notice_date}",
+            )
+        return source.name, f"{source.name} 공고일 미확인"
+
+    clean_title = _single_line(title)
+    return _compact_title(clean_title), clean_title
+
+
+def _format_summary_date(value: str) -> str | None:
+    extracted = _extract_summary_date(value)
+    if extracted is None:
+        return None
+    return extracted.date().isoformat()
+
+
+def _is_official_enforcement_source(source: Source) -> bool:
+    return str(source.config.get("event_model") or "").strip() == "enforcement_action"
+
+
+def _is_placeholder_title(title: str) -> bool:
+    return _single_line(title).casefold() in {"", "(no title)", "no title"}
+
+
+def _single_line(value: str) -> str:
+    return " ".join(html.unescape(value or "").split())
+
+
+def _compact_title(value: str, max_chars: int = 160) -> str:
+    text = _single_line(value)
+    if len(text) <= max_chars:
+        return text
+    return text[: max_chars - 1].rstrip() + "…"
 
 
 def _extract_datetime(entry: Mapping[str, Any]) -> datetime | None:

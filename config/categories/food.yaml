@@ -58,6 +58,12 @@ data_quality:
       농심:
       - 농심
       - Nongshim
+      Aldi:
+      - Aldi
+      Kraft Heinz:
+      - Kraft Heinz
+      PepsiCo:
+      - PepsiCo
     Manufacturer:
       CJ제일제당:
       - CJ제일제당
@@ -176,6 +182,9 @@ data_quality:
   - 제품명·브랜드·제조사 alias를 canonical key로 정규화
   - 공식 source와 커뮤니티 complaint를 같은 근거로 병합하지 않음
   - 소비자 불만 source는 API/ToS/개인정보 노출 리스크 검토 후 보조 레이어로만 활성화
+  legacy_source_languages:
+    식품저널: ko
+    식품음료신문: ko
 source_backlog:
   consumer_complaint_candidates:
   - id: consumer24_recall_and_damage
@@ -491,6 +500,7 @@ entities:
   - poultry
   - seafood
   - fish
+  - squid
   - beef
   - pork
   - chicken
@@ -529,6 +539,8 @@ entities:
   - rice
   - ramen
   - ramyun
+  - ramyeon
+  - ra-myeon
   - snack
   - snacks
   - meal
@@ -594,6 +606,8 @@ entities:
   - tteokbokki
   - bibimbap
   - galbi
+  - galbijjim
+  - galbi jjim
   - kalbi
   - dakgalbi
   - miyeokguk
@@ -612,6 +626,10 @@ entities:
   - makgeolli
   - soju
   - jjajang
+  - jjamppong
+  - jjam-ppong
+  - oh-jing-uh
+  - ojingeo
   - jjangbbong
   - 볶음밥
   - 닭갈비
@@ -627,6 +645,13 @@ entities:
   - 소주
   - 방어
   - 회
+  - 갈치
+  - 갈비찜
+  - 라면
+  - 오징어
+  - 해물
+  - beltfish
+  - hairtail
   - 짜장면
   - 짬뽕
   - 탕수육
@@ -734,6 +759,9 @@ entities:
   - listeria
   - E. coli
   - salmonella
+  - HUS
+  - hemolytic uremic syndrome
+  - haemolytic uremic syndrome
   - temperature failure
   - temperature failures
   - temperature excursion

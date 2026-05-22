@@ -22,6 +22,7 @@ from foodradar.analyzer import apply_entity_rules  # noqa: E402
 from foodradar.config_loader import (  # noqa: E402
     load_category_config,
     load_category_quality_config,
+    source_language_overrides,
 )
 from foodradar.quality_report import build_quality_report, write_quality_report  # noqa: E402
 from foodradar.storage import RadarStorage  # noqa: E402
@@ -87,7 +88,11 @@ def _table_columns(con: duckdb.DuckDBPyConnection, table_name: str) -> set[str]:
     return {str(row[1]) for row in con.execute(f"PRAGMA table_info('{table_name}')").fetchall()}
 
 
-def _run_storage_checks(con: duckdb.DuckDBPyConnection) -> None:
+def _run_storage_checks(
+    con: duckdb.DuckDBPyConnection,
+    *,
+    category_cfg: Any | None = None,
+) -> None:
     table_name = "articles"
     columns = _table_columns(con, table_name)
     total = con.execute(f"SELECT COUNT(*) FROM {table_name}").fetchone()
@@ -110,6 +115,7 @@ def _run_storage_checks(con: duckdb.DuckDBPyConnection) -> None:
         table_name=table_name,
         text_columns=["title", "summary"],
     )
+    _run_text_length_outlier_check(con, table_name=table_name)
 
     if "language" in columns:
         shared_quality_checks.check_language_values(
@@ -119,11 +125,78 @@ def _run_storage_checks(con: duckdb.DuckDBPyConnection) -> None:
         )
     else:
         print("\nSkipping language check: missing column 'language'")
+        if category_cfg is not None:
+            _run_source_language_metadata_check(category_cfg)
 
     if "published" in columns:
         shared_quality_checks.check_dates(con, table_name=table_name, date_column="published")
     else:
         print("\nSkipping date check: missing column 'published'")
+
+
+def _run_source_language_metadata_check(category_cfg: Any) -> None:
+    sources = list(getattr(category_cfg, "sources", []) or [])
+    enabled_sources = [source for source in sources if getattr(source, "enabled", True)]
+    missing = [
+        str(getattr(source, "name", ""))
+        for source in enabled_sources
+        if not str(getattr(source, "language", "") or "").strip()
+    ]
+    total = len(enabled_sources)
+    configured = total - len(missing)
+    rate = round(configured / total * 100, 1) if total else 0.0
+    print("\n=== Source Language Metadata Check ===")
+    print(f"  configured: {configured} / {total} ({rate}%)")
+    if missing:
+        print("  missing sources:")
+        for source_name in missing:
+            print(f"    - {source_name}")
+
+
+def _run_text_length_outlier_check(
+    con: duckdb.DuckDBPyConnection,
+    *,
+    table_name: str,
+    title_threshold: int = 160,
+    summary_threshold: int = 2000,
+) -> None:
+    row = con.execute(
+        f"""
+        SELECT
+          COUNT(*) FILTER (WHERE length(title) > ?) AS long_titles,
+          COUNT(*) FILTER (WHERE length(summary) > ?) AS long_summaries
+        FROM {table_name}
+        WHERE category = 'food'
+        """,
+        [title_threshold, summary_threshold],
+    ).fetchone()
+    long_titles = int(row[0]) if row else 0
+    long_summaries = int(row[1]) if row else 0
+    print("\n=== Text Length Outlier Check ===")
+    print(f"  title > {title_threshold}: {long_titles}")
+    print(f"  summary > {summary_threshold}: {long_summaries}")
+    if not long_titles and not long_summaries:
+        return
+
+    for source, field, count, max_len in con.execute(
+        f"""
+        SELECT source, field, COUNT(*) AS count, MAX(length_value) AS max_len
+        FROM (
+          SELECT source, 'title' AS field, length(title) AS length_value
+          FROM {table_name}
+          WHERE category = 'food' AND length(title) > ?
+          UNION ALL
+          SELECT source, 'summary' AS field, length(summary) AS length_value
+          FROM {table_name}
+          WHERE category = 'food' AND length(summary) > ?
+        )
+        GROUP BY source, field
+        ORDER BY count DESC, max_len DESC, source
+        LIMIT 10
+        """,
+        [title_threshold, summary_threshold],
+    ).fetchall():
+        print(f"    - {source} {field}: {count} (max {max_len})")
 
 
 def generate_quality_artifacts(
@@ -184,8 +257,20 @@ def main() -> None:
         print(f"Database not found: {db_path}")
         sys.exit(1)
 
+    category_cfg = load_category_config("food", categories_dir=PROJECT_ROOT / "config" / "categories")
+    quality_cfg = load_category_quality_config(
+        "food",
+        categories_dir=PROJECT_ROOT / "config" / "categories",
+    )
+    with RadarStorage(db_path) as storage:
+        _ = storage.sync_source_metadata(
+            category_cfg.sources,
+            category=category_cfg.category_name,
+            source_languages=source_language_overrides(quality_cfg),
+        )
+
     with duckdb.connect(str(db_path), read_only=True) as con:
-        _run_storage_checks(con)
+        _run_storage_checks(con, category_cfg=category_cfg)
 
     paths, report = generate_quality_artifacts(PROJECT_ROOT)
     summary = report["summary"]

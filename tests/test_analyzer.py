@@ -337,6 +337,13 @@ class TestApplyEntityRules:
             _make_article(
                 "What is in this smarties box? One of them has a hole in it"
             ),
+            _make_article("Galbijjim at Sun Nong Dan"),
+            _make_article("Grilled Beltfish/Hairtail is one of my favorites"),
+            _make_article(
+                "Korean Oh-jing-uh Jjam-ppong Ra-myeon",
+                summary="진한 오징어와 해물 국물 맛이 나는 매운 인스턴트 라면",
+            ),
+            _make_article("HUS cases hit new low in Argentina"),
         ]
 
         result = apply_entity_rules(articles, config.entities)
@@ -357,3 +364,35 @@ class TestApplyEntityRules:
         assert matched[12]["FoodType"] == ["steaks"]
         assert matched[13]["FoodType"] == ["saltines"]
         assert matched[14]["Product"] == ["smarties"]
+        assert matched[15]["FoodType"] == ["galbijjim"]
+        assert set(matched[16]["FoodType"]) == {"beltfish", "hairtail"}
+        assert set(matched[17]["FoodType"]) == {
+            "ra-myeon",
+            "jjam-ppong",
+            "oh-jing-uh",
+            "라면",
+            "오징어",
+            "해물",
+        }
+        assert matched[18]["SafetyIssue"] == ["hus"]
+
+    def test_real_config_resolves_current_brand_alias_candidates(self):
+        """Current repeated brand candidates retain canonical traceability."""
+        config = load_category_config("food")
+        metadata = load_category_quality_config("food")
+        data_quality = metadata["data_quality"]
+        articles = [
+            _make_article("Aldi applesauce packaging question"),
+            _make_article("Kraft Heinz natural colors campaign"),
+            _make_article("PepsiCo protein drink rebrand"),
+        ]
+
+        result = apply_entity_rules(
+            articles,
+            config.entities,
+            alias_map=data_quality["alias_map"],
+        )
+
+        assert result[0].matched_entities["BrandCanonical"] == ["Aldi"]
+        assert result[1].matched_entities["BrandCanonical"] == ["Kraft Heinz"]
+        assert result[2].matched_entities["BrandCanonical"] == ["PepsiCo"]

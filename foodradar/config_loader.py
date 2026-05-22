@@ -188,6 +188,23 @@ def load_category_quality_config(
     return quality_config
 
 
+def source_language_overrides(quality_config: dict[str, object]) -> dict[str, str]:
+    data_quality = quality_config.get("data_quality")
+    if not isinstance(data_quality, dict):
+        return {}
+    raw_languages = data_quality.get("legacy_source_languages")
+    if not isinstance(raw_languages, dict):
+        return {}
+
+    languages: dict[str, str] = {}
+    for source_name, language in cast(dict[object, object], raw_languages).items():
+        clean_source_name = str(source_name).strip()
+        clean_language = str(language).strip()
+        if clean_source_name and clean_language:
+            languages[clean_source_name] = clean_language
+    return languages
+
+
 def load_notification_config(config_path: Path | None = None) -> NotificationConfig:
     f = config_path or _PROJECT_ROOT / "config" / "notifications.yaml"
     if not f.exists():
@@ -200,4 +217,5 @@ __all__ = [
     "load_category_quality_config",
     "load_notification_config",
     "load_settings",
+    "source_language_overrides",
 ]

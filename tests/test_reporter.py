@@ -103,6 +103,36 @@ class TestGenerateReport:
         html = output.read_text(encoding="utf-8")
         assert "source timeout" in html
 
+    def test_generate_report_truncates_display_outliers(
+        self, tmp_path, report_category, report_stats, patch_datetime
+    ):
+        """Long source text is preserved upstream but compacted in HTML output."""
+        long_title = "T" * 240
+        long_summary = "S" * 1200
+        output = tmp_path / "reports" / "food_report.html"
+        generate_report(
+            category=report_category,
+            articles=[
+                Article(
+                    title=long_title,
+                    link="https://example.com/long",
+                    summary=long_summary,
+                    published=datetime(2024, 3, 15, 9, 30, tzinfo=UTC),
+                    source="FoodNews",
+                    category="food",
+                )
+            ],
+            output_path=output,
+            stats=report_stats,
+        )
+
+        html = output.read_text(encoding="utf-8")
+        assert long_title not in html
+        assert long_summary not in html
+        assert ("T" * 179) + "…" in html
+        assert "S" * 700 not in html
+        assert "S" * 120 in html
+
     def test_generate_report_includes_quality_traceability(
         self, tmp_path, report_category, report_articles, report_stats, patch_datetime
     ):

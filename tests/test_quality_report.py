@@ -130,6 +130,43 @@ def test_build_quality_report_separates_official_quiet_window_from_stale() -> No
     assert report["summary"]["stale_sources"] == 0
 
 
+def test_build_quality_report_surfaces_text_length_outliers() -> None:
+    now = datetime(2026, 5, 22, 0, 0, tzinfo=UTC)
+    category = CategoryConfig(
+        category_name="food",
+        display_name="Food Radar",
+        sources=[
+            Source(
+                name="Community",
+                type="reddit",
+                url="https://example.com/feed",
+                config={"event_model": "complaint_signal"},
+            )
+        ],
+        entities=[],
+    )
+    article = Article(
+        title="T" * 220,
+        link="https://example.com/long",
+        summary="S" * 2100,
+        published=now,
+        source="Community",
+        category="food",
+    )
+
+    report = build_quality_report(category=category, articles=[article], generated_at=now)
+
+    assert report["summary"]["text_length_outlier_count"] == 2
+    assert report["summary"]["title_length_outlier_count"] == 1
+    assert report["summary"]["summary_length_outlier_count"] == 1
+    assert [row["field"] for row in report["text_length_outliers"]] == [
+        "summary",
+        "title",
+    ]
+    assert report["text_length_outliers"][0]["length"] == 2100
+    assert report["text_length_outliers"][0]["title"].endswith("…")
+
+
 def test_build_quality_report_extracts_alias_candidates() -> None:
     now = datetime(2026, 4, 12, 0, 0, tzinfo=UTC)
     category = CategoryConfig(
@@ -169,6 +206,8 @@ def test_build_quality_report_extracts_alias_candidates() -> None:
     report = build_quality_report(category=category, articles=articles, generated_at=now)
 
     assert report["summary"]["alias_candidate_count"] == 1
+    assert report["summary"]["unmapped_alias_candidate_count"] == 1
+    assert report["summary"]["mapped_alias_candidate_count"] == 0
     assert report["summary"]["brand_alias_candidate_count"] == 1
     assert report["summary"]["product_alias_candidate_count"] == 0
     candidate = report["alias_candidates"][0]
@@ -248,6 +287,8 @@ def test_build_quality_report_extracts_mapped_alias_trace() -> None:
     assert candidate["alias_type"] == "brand"
     assert candidate["canonical"] == "CJ"
     assert candidate["variants"] == ["cj cheiljedang"]
+    assert report["summary"]["mapped_alias_candidate_count"] == 1
+    assert report["summary"]["unmapped_alias_candidate_count"] == 0
     assert report["summary"]["event_alias_trace_count"] == 1
     assert report["events"][0]["brand_canonical"] == ["CJ"]
     assert report["events"][0]["alias_traces"] == ["cj cheiljedang -> CJ"]
@@ -296,7 +337,6 @@ def test_build_quality_report_extracts_product_and_manufacturer_alias_traces() -
     assert candidates["manufacturer"]["variants"] == ["samyang foods"]
     assert report["summary"]["product_alias_candidate_count"] == 1
     assert report["summary"]["manufacturer_alias_candidate_count"] == 1
-    assert report["summary"]["event_alias_trace_count"] == 1
 
     event = report["events"][0]
     assert event["product_canonical"] == ["비비고 만두"]
@@ -306,6 +346,45 @@ def test_build_quality_report_extracts_product_and_manufacturer_alias_traces() -
         "samyang foods -> 삼양식품",
     ]
     assert "비비고-만두" in event["food_event_key"]
+
+
+def test_build_quality_report_uses_canonical_without_alias_trace() -> None:
+    now = datetime(2026, 5, 22, 0, 0, tzinfo=UTC)
+    category = CategoryConfig(
+        category_name="food",
+        display_name="Food Radar",
+        sources=[
+            Source(
+                name="Editorial",
+                type="rss",
+                url="https://example.com/feed",
+                config={"event_model": "editorial_coverage"},
+            )
+        ],
+        entities=[],
+    )
+    articles = [
+        Article(
+            title=f"Aldi story {idx}",
+            link=f"https://example.com/aldi-{idx}",
+            summary="",
+            published=now,
+            source="Editorial",
+            category="food",
+            matched_entities={"Brand": ["aldi"], "BrandCanonical": ["Aldi"]},
+        )
+        for idx in range(2)
+    ]
+
+    report = build_quality_report(category=category, articles=articles, generated_at=now)
+
+    candidate = report["alias_candidates"][0]
+    assert candidate["canonical"] == "Aldi"
+    assert candidate["normalized"] == "aldi"
+    assert candidate["variants"] == ["aldi"]
+    assert report["summary"]["mapped_alias_candidate_count"] == 1
+    assert report["summary"]["unmapped_alias_candidate_count"] == 0
+    assert report["summary"]["event_alias_trace_count"] == 0
 
 
 def test_build_quality_report_extracts_official_recall_product_fields() -> None:

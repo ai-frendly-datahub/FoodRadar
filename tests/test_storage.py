@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from datetime import UTC, datetime, timedelta
 
-from foodradar.models import Article
+from foodradar.models import Article, Source
 from foodradar.storage import RadarStorage
 
 
@@ -157,3 +157,61 @@ class TestRadarStorage:
         assert alpha[0].title == "Cat A"
         assert len(beta) == 1
         assert beta[0].title == "Cat B"
+
+    def test_sync_source_metadata_persists_language(self, tmp_db):
+        """FoodRadar storage keeps configured source language metadata queryable."""
+        article = Article(
+            title="Language row",
+            link="https://example.com/language",
+            summary="Language metadata row.",
+            published=datetime.now(UTC),
+            source="Korean Feed",
+            category="food",
+        )
+        source = Source(
+            name="Korean Feed",
+            type="rss",
+            url="https://example.com/feed.xml",
+            language="ko",
+        )
+
+        with RadarStorage(tmp_db) as storage:
+            storage.upsert_articles([article])
+            changed = storage.sync_source_metadata([source], category="food")
+            columns = {
+                row[1] for row in storage.conn.execute("PRAGMA table_info('articles')").fetchall()
+            }
+            language = storage.conn.execute(
+                "SELECT language FROM articles WHERE link = ?",
+                [article.link],
+            ).fetchone()[0]
+
+        assert "language" in columns
+        assert changed == 1
+        assert language == "ko"
+
+    def test_sync_source_metadata_applies_legacy_language_overrides(self, tmp_db):
+        """Historical source names can still be annotated while retained in DB."""
+        article = Article(
+            title="Legacy row",
+            link="https://example.com/legacy",
+            summary="Legacy source metadata row.",
+            published=datetime.now(UTC),
+            source="Legacy Feed",
+            category="food",
+        )
+
+        with RadarStorage(tmp_db) as storage:
+            storage.upsert_articles([article])
+            changed = storage.sync_source_metadata(
+                [],
+                category="food",
+                source_languages={"Legacy Feed": "ko"},
+            )
+            language = storage.conn.execute(
+                "SELECT language FROM articles WHERE link = ?",
+                [article.link],
+            ).fetchone()[0]
+
+        assert changed == 1
+        assert language == "ko"
