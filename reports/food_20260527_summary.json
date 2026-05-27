@@ -1,0 +1,1930 @@
+{
+  "date": "2026-05-27",
+  "category": "food",
+  "article_count": 180,
+  "source_count": 8,
+  "matched_count": 177,
+  "top_entities": [
+    {
+      "name": "FoodGeneral",
+      "count": 254
+    },
+    {
+      "name": "FoodType",
+      "count": 242
+    },
+    {
+      "name": "SafetyIssue",
+      "count": 79
+    },
+    {
+      "name": "Regulation",
+      "count": 14
+    },
+    {
+      "name": "Brand",
+      "count": 5
+    },
+    {
+      "name": "Manufacturer",
+      "count": 4
+    },
+    {
+      "name": "BrandCanonical",
+      "count": 3
+    },
+    {
+      "name": "BrandAliasTrace",
+      "count": 1
+    },
+    {
+      "name": "ManufacturerCanonical",
+      "count": 1
+    },
+    {
+      "name": "ManufacturerAliasTrace",
+      "count": 1
+    },
+    {
+      "name": "Product",
+      "count": 1
+    }
+  ],
+  "sources": {
+    "Food Safety News": 33,
+    "식약처 보도자료": 4,
+    "Food Dive": 13,
+    "식품안전나라 행정처분": 6,
+    "r/Cooking": 64,
+    "r/KoreanFood": 32,
+    "r/foodsafety": 24,
+    "r/nutrition": 4
+  },
+  "generated_at": "2026-05-27T15:57:08.945578+09:00",
+  "articles": [
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "FDA reports another Salmonella outbreak traced to moringa leaf powder",
+        "source_url": "https://www.foodsafetynews.com/2026/05/fda-reports-another-salmonella-outbreak-traced-to-moringa-leaf-powder/",
+        "published_at": "2026-05-27T04:06:22+00:00",
+        "summary": "The outbreak of Salmonella Typhimurium has sickened 18 people"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Outbreak numbers related to backyard poultry flocks rising quickly",
+        "source_url": "https://www.foodsafetynews.com/2026/05/outbreak-numbers-related-to-backyard-poultry-flocks-rising-quickly/",
+        "published_at": "2026-05-27T04:05:29+00:00",
+        "summary": "Over a quarter of people sickened in this outbreak are children younger than 5 years old"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Germany shares findings from long-term outbreak analysis",
+        "source_url": "https://www.foodsafetynews.com/2026/05/germany-shares-findings-from-long-term-outbreak-analysis/",
+        "published_at": "2026-05-27T04:04:38+00:00",
+        "summary": "Over the 10-year period studied, 3,021 foodborne outbreaks were investigated in 16 states."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Botulism cases under investigation in Italy",
+        "source_url": "https://www.foodsafetynews.com/2026/05/botulism-cases-under-investigation-in-italy/",
+        "published_at": "2026-05-27T04:02:04+00:00",
+        "summary": "<p>Italian officials suspect that a brand of olive and almond cream caused two cases of botulism.</p><p>In early May, two adult patients, part of the same family, were hospitalized because of suspected botulism with epidemiological investigations led by experts from the Toscana Centro local health authority (ASL).</p><p>A notice on</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식약처 보도자료",
+        "headline": "안전한 매실청 담그는 방법, 식약처가 알려드림",
+        "source_url": "/portal/board/boardDetail.do?bbs_no=bbs080&ntctxt_no=50018&menu_no=2857",
+        "published_at": "2026-05-27T00:00:00+00:00",
+        "summary": "<p>안전한 매실청 담그는 방법, 식약처가 알려드림</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "FDA issues warning after cookie company refuses to recall products",
+        "source_url": "https://www.foodsafetynews.com/2026/05/fda-issues-warning-after-cookie-company-refuses-to-recall-products/",
+        "published_at": "2026-05-26T21:50:12+00:00",
+        "summary": "<p>The FDA is warning consumers with milk, wheat, or tree nut allergies not to eat, and retailers not to serve or sell certain Imperial-brand cookies and candies manufactured by Imperial Nougat Co. due to milk, wheat, and tree nut ingredients not being listed on the label as required.</p><p>People with</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "Svedka’s senior brand director on the vodka’s future-forward marketing",
+        "source_url": "https://www.fooddive.com/news/svedkas-senior-brand-director-on-the-vodkas-future-forward-marketing/820581/",
+        "published_at": "2026-05-26T14:01:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/u6dx1Y6ljZmup75frOywVb8DLDpBsxs8yUyojMjn_NQ/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9TdmVka2FfU1ZFRFBIT05FUy5qcGc=.webp\" /></div></figure><p>David Binder talks about the vodka maker’s controversial AI-generated Super Bowl debut and its future plans under Sazerac.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "Cactus candies, protein donuts: 5 products highlighting the evolution of snacking",
+        "source_url": "https://www.fooddive.com/news/cactus-candies-protein-donuts-5-products-highlighting-the-evolution-of-sn/820362/",
+        "published_at": "2026-05-26T14:00:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/k1drEPCQVxRg7HwdO_utjV7Hts0t4VdkxgCEfCwMEx0/g:nowe:0:97/c:2855:1613/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9JTUdfMzg0My5qcGVn.webp\" /></div></figure><p>Nutrition and sustainability were key themes at the 2026 Sweets & Snacks Expo, where 1,000 exhibitors from around the world gathered to display their innovations.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "How the food and beverage industry is rethinking manufacturing investments",
+        "source_url": "https://www.fooddive.com/news/food-beverage-manufacturing-investments-us-expansion/821081/",
+        "published_at": "2026-05-26T13:59:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/yI1IHTmvJeaUh2-UwCmmr2ukYIn8IwkoZkSZzlzreVc/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0xNDA0NDAxNDM4LmpwZw==.webp\" /></div></figure><p>Companies are increasingly focused on modernizing facilities as they shrink their footprints.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "The co-manufacturer’s dilemma: How MattPak learned to say yes to more business",
+        "source_url": "https://www.fooddive.com/spons/the-co-manufacturers-dilemma-how-mattpak-learned-to-say-yes-to-more-busin/820203/",
+        "published_at": "2026-05-26T09:00:00+00:00",
+        "summary": "<p>Ninety-eight percent uptime, no temp labor, a facility doubling in size. MattPak's automation story.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Costa Rica reports Salmonella outbreak; one possible death",
+        "source_url": "https://www.foodsafetynews.com/2026/05/costa-rica-reports-salmonella-outbreaks-one-possible-death/",
+        "published_at": "2026-05-26T04:05:48+00:00",
+        "summary": "Local media said a shop that sold mainly chicken is implicated"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "New guidance for infant manufacturers available",
+        "source_url": "https://www.foodsafetynews.com/2026/05/new-guidance-for-infant-manufacturers-available/",
+        "published_at": "2026-05-26T04:03:42+00:00",
+        "summary": "<p>The FDA has issued <a href=\"https://www.fda.gov/regulatory-information/search-fda-guidance-documents/guidance-industry-protein-efficiency-ratio-rat-bioassay-studies-demonstrate-new-infant-formula?ref=foodsafetynews.com\"><u>final guidance</u></a> for manufacturers of infant formula and laboratories conducting testing on infant formula. </p><p>The guidance was developed to help manufacturers and laboratories in the design, conduct, evaluation, and reporting of Protein Efficiency Ratio (PER) studies. Protein is an essential nutrient to support growth and</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Initial results from alcohol testing raise concerns",
+        "source_url": "https://www.foodsafetynews.com/2026/05/initial-results-from-alcohol-testing-raise-concerns/",
+        "published_at": "2026-05-26T04:01:39+00:00",
+        "summary": "<p>Findings from a preliminary investigation into the availability of illicit alcohol in an Australian state have been described as “concerning.”</p><p>Researchers visited four licensed alcohol retailers in Melbourne, Victoria, during June, July and September 2025. They purchased three suspected illicit vodka products and one control product and submitted</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식약처 보도자료",
+        "headline": "식약처, 전국 6개 권역에서 '식의약 정책이음 지역현장 열린마당' 개최",
+        "source_url": "/portal/board/boardDetail.do?bbs_no=bbs080&ntctxt_no=50012&menu_no=2857",
+        "published_at": "2026-05-26T00:00:00+00:00",
+        "summary": "<p>식약처, 전국 6개 권역에서 '식의약 정책이음 지역현장 열린마당' 개최</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식약처 보도자료",
+        "headline": "[보도참고] 식약처, 축산물 수거·검사 결과 “온라인 신속알림” 시범운영",
+        "source_url": "/portal/board/boardDetail.do?bbs_no=bbs080&ntctxt_no=50013&menu_no=2857",
+        "published_at": "2026-05-26T00:00:00+00:00",
+        "summary": "<p>[보도참고] 식약처, 축산물 수거·검사 결과 “온라인 신속알림” 시범운영</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식품안전나라 행정처분",
+        "headline": "○ 자가품질검사 전항목 미실시 - 상기 업체는 품목제조보고한 탁주 2종[① 제품명(품목보고번호): 우리밀막걸리 옹동주장(201300192192), ② 제품명(품목보고번호): 우리찹쌀동동주*(201300192193)]을 생산·판매하면서, 2021년 5월경 자가품질검사를 실시한 이후 점검…",
+        "source_url": "/portal/administMeasureDetail.do?seq=4721804",
+        "published_at": "2026-05-26T00:00:00+00:00",
+        "summary": "○ 자가품질검사 전항목 미실시 - 상기 업체는 품목제조보고한 탁주 2종[① 제품명(품목보고번호): 우리밀막걸리 옹동주장(201300192192), ② 제품명(품목보고번호): 우리찹쌀동동주*(201300192193)]을 생산·판매하면서, 2021년 5월경 자가품질검사를 실시한 이후 점검일(2026. 3. 31.) 현재까지 검사항목 전부에 대하여 자가품질검사를 실시하지 않은 사실이 있음 * 2026. 4. 3. ‘상서로세’로 품목명 변경"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식품안전나라 행정처분",
+        "headline": "2024.1.27.부터 2026.1.27. 까지 식품 등의 구매대행을 목적으로 게시글(제품명: 솔로데이트랩)을 인터넷 사이트에 게시하면서 질병의 예방.치료에 효능이 있는 것으로 인식할 우려가 있는 표시 광고를 한 사실이 있음.",
+        "source_url": "/portal/administMeasureDetail.do?seq=4720327",
+        "published_at": "2026-05-26T00:00:00+00:00",
+        "summary": "2024.1.27.부터 2026.1.27. 까지 식품 등의 구매대행을 목적으로 게시글(제품명: 솔로데이트랩)을 인터넷 사이트에 게시하면서 질병의 예방.치료에 효능이 있는 것으로 인식할 우려가 있는 표시 광고를 한 사실이 있음."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식품안전나라 행정처분",
+        "headline": "○ 자가품질검사 전항목 미실시 - 상기 업체는 품목제조보고한 탁주 2종[① 제품명(품목보고번호): 밀주(2013001911516), ② 제품명(품목보고번호): 찹쌀로만(201300191154)]을 생산·판매하면서, 6개월마다 1회 이상 자가품질검사를 실시하여야 함에도 불구하고 2024…",
+        "source_url": "/portal/administMeasureDetail.do?seq=4721805",
+        "published_at": "2026-05-26T00:00:00+00:00",
+        "summary": "○ 자가품질검사 전항목 미실시 - 상기 업체는 품목제조보고한 탁주 2종[① 제품명(품목보고번호): 밀주(2013001911516), ② 제품명(품목보고번호): 찹쌀로만(201300191154)]을 생산·판매하면서, 6개월마다 1회 이상 자가품질검사를 실시하여야 함에도 불구하고 2024년 1회(2024. 11. 18.), 2025년 1회(2025. 11. 18.) 국세청 주류면허지원센터 분석･감정 결과 ‘적합’판정을 받고 그 외 자가품질검사는 전혀 실시하지 않은 사실이 있음"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "USDA posts warning about beef kofta linked to E. coli outbreak",
+        "source_url": "https://www.foodsafetynews.com/2026/05/usda-posts-warning-about-beef-kofta-linked-to-e-coli-outbreak/",
+        "published_at": "2026-05-25T23:22:14+00:00",
+        "summary": "<p>The USDA’s Food Safety and Inspection Service (FSIS) has issued a public health alert regarding beef kofta products served at The Kebab Shop restaurant locations because they have been implicated in an outbreak of E. coli infections.</p><p>The beef kofta was produced as a raw ground beef product</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Salmonella egg outbreak sickens 230 in Belgium",
+        "source_url": "https://www.foodsafetynews.com/2026/05/salmonella-egg-outbreak-sickens-230-in-belgium/",
+        "published_at": "2026-05-25T04:05:08+00:00",
+        "summary": "Salmonella was found in a dust sample taken from a Laerco BV chicken coop and subsequent analysis revealed it was the same type detected in patients."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Bill Marler is right about food safety — but here’s what he left out",
+        "source_url": "https://www.foodsafetynews.com/2026/05/bill-marler-is-right-about-food-safety-but-heres-what-he-left-out/",
+        "published_at": "2026-05-25T04:04:08+00:00",
+        "summary": "Title: Bill Marler is right about food safety — but here’s what he left out\n\nURL Source: https://www.foodsafetynews.com/2026/05/bill-marler-is-right-about-food-safety-but-heres-what-he-left-out/\n\nPublished Time: 2026-05-25T04:04:08.000Z\n\nMarkdown Content:\n## Subscribe to Food Safety News\n\nGet the free version of our newsletter. No spam ever, unsubscribe anytime.\n\n**By Kathleen Gillin**\n\nTwenty years ago, my daughter Rylee nearly died after eating spinach contaminated with E. coli 0157:H7. She was only 9 years old. Sitting helplessly beside her hospital bed as she fought for her life was the most agonizing experience I have ever endured. Thankfully, she survived — but the health effects of that illness continue to impact her life to this day.\n\nBecause of that experience, I will always be a passionate advocate for food safety.\n\nRecently, I read food safety attorney Bill Marler’s editorial, “Romaine Roulette,” in which he recounted the history of foodborne illness outbreaks linked to leafy greens and pointed to cattle operations as a likely source of contamination.\n\nI agree with much of what Mr. Marler wrote. Dangerous pathogens do not originate in lettuce itself, and industries that raise livestock have a responsibility to prevent contamination of the environment and nearby food crops.\n\nBill Marler has done more than perhaps anyone else to force America’s food industries to take food safety seriously. His work has saved lives.\n\nBut there is another part of this story that deserves attention.\n\nAs part of my work as a food safety advocate, I serve as the Public Member of the California Leafy Greens Marketing Agreement (LGMA), which was formed in response to the devastating 2006 spinach outbreak that nearly took my daughter’s life. A few years after the LGMA was formed, their leadership reached out to invite families impacted by foodborne illness to California to meet growers, visit farms, and see firsthand the extensive food safety practices now required on leafy greens"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "FDA cites three companies for failing to verify safety of a variety of imported products",
+        "source_url": "https://www.foodsafetynews.com/2026/05/fda-cites-three-companies-for-failing-to-verify-safety-of-a-variety-of-imported-products/",
+        "published_at": "2026-05-25T04:03:19+00:00",
+        "summary": "<p><em>As part of its enforcement activities, the Food and Drug Administration sends warning letters to entities under its jurisdiction. Some letters are not posted for public view until weeks or months after they are sent. Business owners have 15 days to respond to FDA warning letters. Warning letters often are</em></p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "U.S. experts among attendees at food safety event in China",
+        "source_url": "https://www.foodsafetynews.com/2026/05/u-s-experts-among-attendees-at-food-safety-event-in-china/",
+        "published_at": "2026-05-25T04:01:28+00:00",
+        "summary": "<p>Officials from several countries, including the United States, met in China recently to discuss food safety priorities.</p><p>The Asia-Pacific Economic Cooperation (APEC) conference was hosted by the General Administration of Customs of China (GACC) in mid-May.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Sunday Edition: Reflecting",
+        "source_url": "https://www.foodsafetynews.com/2026/05/sunday-edition-reflecting/",
+        "published_at": "2026-05-24T12:00:53+00:00",
+        "summary": "Today we revisit some of the topics we’ve covered in the past months."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Angel Speciality drinks recalled because of Salmonella risk",
+        "source_url": "https://www.foodsafetynews.com/2026/05/angel-speciality-drinks-recalled-because-of-salmonella-risk/",
+        "published_at": "2026-05-24T03:35:15+00:00",
+        "summary": "<p>SKS Copack of Cerritos, CA is recalling various specialty beverages, because they have the potential to be contaminated with Salmonella.</p><p>The recalled products were distributed in the states of CA, UT, ID, NY, NJ, AZ, PA, NC, TX, OH, LA, GA, FL, IL, OK, MA, WA, OR, WI, NV, VA,</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Brucellosis outbreak in California linked to raw milk cheese",
+        "source_url": "https://www.foodsafetynews.com/2026/05/brucellosis-outbreak-in-california-linked-to-raw-milk-cheese/",
+        "published_at": "2026-05-24T03:22:23+00:00",
+        "summary": "<p>The Los Angeles County Department of Public Health (LAC DPH) is investigating a cluster of Brucella melitensis (brucellosis) infections among adults residing in South Los Angeles County. </p><p>Each confirmed case reported consuming unpasteurized cheese imported from Mexico, underscoring the serious health risks associated with raw or unpasteurized</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식품안전나라 행정처분",
+        "headline": "○ 수입신고를 하려는 자 또는 수입신고를 한 자는 수입식품등의 안전과 품질에 대하여 책임을 지며, 거짓이나 그 밖의 부정한 방법으로 수입신고 하여서는 아니 되나, - 상기 영업자는 2025년 12월 12일부터 2026년 1월 22일까지 수입식품등을 수입하면서 해외 제조업소를 사실과 다…",
+        "source_url": "/portal/administMeasureDetail.do?seq=4720326",
+        "published_at": "2026-05-23T00:00:00+00:00",
+        "summary": "○ 수입신고를 하려는 자 또는 수입신고를 한 자는 수입식품등의 안전과 품질에 대하여 책임을 지며, 거짓이나 그 밖의 부정한 방법으로 수입신고 하여서는 아니 되나, - 상기 영업자는 2025년 12월 12일부터 2026년 1월 22일까지 수입식품등을 수입하면서 해외 제조업소를 사실과 다르게 수입신고한 사실이 있음"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "E. coli outbreak linked to California restaurant",
+        "source_url": "https://www.foodsafetynews.com/2026/05/e-coli-outbreak-linked-to-california-restaurant/",
+        "published_at": "2026-05-22T22:24:53+00:00",
+        "summary": "<p>California public health officials are working with local health departments and federal partners to investigate an E. coli O157:H7 outbreak linked to beef kofta served at several California locations of The Kebab Shop restaurant chain. </p><p>The Kebab Shop has voluntarily paused sales of grilled beef kofta at all</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "Oscar Mayer’s Wienermobile race returns with bolder media blitz",
+        "source_url": "https://www.fooddive.com/news/oscar-mayers-wienermobile-race-returns-with-bolder-media-blitz/820973/",
+        "published_at": "2026-05-22T13:57:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/d3YXpzl_f8tHUUmZLd9k5z_f7bj6qfMV0b-Z-yv3Oh0/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9XaWVuaWVfNTAwX0hvdGRvZ2dlcnNfTmV4dF90b19XaWVuZXJtb2JpbGVzX05vX1RleHQuanBn.webp\" /></div></figure><p>After boosting hot dog sales last year, the event is jumping from streaming to broadcast as the Kraft Heinz brand looks to win Memorial Day weekend.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "Leftovers: Bush’s bakes apple pie-flavored beans | Slice splashes into dirty soda",
+        "source_url": "https://www.fooddive.com/news/bushs-rocket-pop-beans-slice-dirty-soda-fresca-hard/820971/",
+        "published_at": "2026-05-22T13:56:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/XscmnKL9q_o7W3ElKEcRST1WFNRcECJDGcfbceuIo44/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS85MzY2MjUzLUhlcm8tSW1hZ2UtTmV3LmpwZw==.webp\" /></div></figure><p>The bean brand is reimagining summer classics, including rocket pop and dill pickle, while Fresca launches an alcoholic soda water for post-workouts.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Publisher's Platform: What industry doesn't want you to know about cantaloupe",
+        "source_url": "https://www.foodsafetynews.com/2026/05/publishers-platform-what-industry-doesnt-want-you-to-know-about-cantaloupe/",
+        "published_at": "2026-05-22T04:06:27+00:00",
+        "summary": "Cantaloupe is almost perfectly designed to make people sick"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "FDA warning letters are on the  rise",
+        "source_url": "https://www.foodsafetynews.com/2026/05/fda-warning-letters-are-on-the-rise/",
+        "published_at": "2026-05-22T04:05:09+00:00",
+        "summary": "-- OPINION --"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Not enough progress on foodborne disease, says WHO",
+        "source_url": "https://www.foodsafetynews.com/2026/05/not-enough-progress-on-foodborne-disease-says-who/",
+        "published_at": "2026-05-22T04:03:16+00:00",
+        "summary": "<p>Country capacity for surveillance of foodborne diseases has improved slightly but remains off target, according to WHO.</p><p>The World Health Organization (WHO) provided an update on progress made relating to the Global Strategy for Food Safety at the 79th World Health Assembly.</p><p>Data shows that despite a gradual improvement in</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "FDA steps up enforcement on imported cheese, canned food, seafood and more",
+        "source_url": "https://www.foodsafetynews.com/2026/05/fda-steps-up-enforcement-on-imported-cheese-canned-food-seafood-and-more/",
+        "published_at": "2026-05-22T04:01:20+00:00",
+        "summary": "<p>The Food and Drug Administration uses import alerts to enforce U.S. food safety regulations for food from foreign countries. The agency updates and modifies the alerts as needed.</p><p>Recent modifications to FDA’s import alerts, as posted by the agency, are listed below.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Spanish study reveals burden of toxin-related outbreaks",
+        "source_url": "https://www.foodsafetynews.com/2026/05/spanish-study-reveals-burden-of-toxin-related-outbreaks/",
+        "published_at": "2026-05-22T04:00:34+00:00",
+        "summary": "The largest Clostridium perfringens outbreak sickened 426 people"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Dilute / weaken chilli crisp",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tk3nky/dilute_weaken_chilli_crisp/",
+        "published_at": "2026-05-22T00:59:52+00:00",
+        "summary": "[r/Cooking] by u/marco_polo_99 | 2 points | 2 comments\n\nA while back I made some chilli crisp which now after sitting for a month or so is deadly hot. Using more than 1/4 of teaspoon is firey. I love chilli but it’s even too much for me. My SO can’t even take whiff of it without keeling over.  \nWhat’s the best way to dilute it or mellow it? I was thinking about adding a bit more oil, crispy onions and sweet soy. Would it be best for me to reheat it and do this? Or do you have any other suggestions?"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/KoreanFood",
+        "headline": "Why does Korean food in the U.S. feel so expensive compared to Korea and other Asian cuisines?",
+        "source_url": "https://www.reddit.com/r/KoreanFood/comments/1tk3kia/why_does_korean_food_in_the_us_feel_so_expensive/",
+        "published_at": "2026-05-22T00:56:00+00:00",
+        "summary": "[r/KoreanFood] by u/savingrace0262 | 1 points | 0 comments\n\nMaybe I’m wrong, but every time I visit Korea, I’m shocked by how affordable Korean food is compared to the U.S. You can get full meals with tons of banchan, soups, grilled meats, late night food, etc. for prices that feel insanely reasonable.\n\nBut in the States, Korean food often feels expensive even compared to other Asian cuisines. A basic sundubu, kimchi jjigae, or bibimbap can easily be like $18–25 near NYC/NJ (where I live) once tax/tip is included. Korean BBQ is on another level entirely price-wise.\n\nMeanwhile I can still find relatively cheap Chinese, Vietnamese, and Thai spots pretty easily.\n\nWhat’s the actual reason for this?"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/foodsafety",
+        "headline": "Pretty positive I ate bread earlier today with little bits of mold on it. It was only visible from the crust, not on the bread itself. Will I be fine?",
+        "source_url": "https://www.reddit.com/r/foodsafety/comments/1tk3f49/pretty_positive_i_ate_bread_earlier_today_with/",
+        "published_at": "2026-05-22T00:48:57+00:00",
+        "summary": "[r/foodsafety] by u/Nate_C_of_2003 | 1 points | 1 comments\n\nAt lunch, I ate a turkey sandwich with toasted bread and I noticed a slight discoloration on the crust. I couldn’t tell what it was, but it wasn’t on the bread, so I thought it was fine. \n\nI was about to make myself another one when I noticed the same discoloration. I looked for other slices and the discoloration in some cases was actually ON the bread. Now I’m pretty positive I ate fungus-infested bread at lunch. I really hope I didn’t accidentally do something dangerous."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Publisher's Platform: The Justice Department is still enforcing the FDCA",
+        "source_url": "https://www.foodsafetynews.com/2026/05/publishers-platform-the-justice-department-is-still-enforcing-the-fdca/",
+        "published_at": "2026-05-22T00:44:51+00:00",
+        "summary": "Many of the below criminal cases stemmed from outbreaks that sickened consumers that I had the honor to represent.  It appears that the risk of criminal prosecution for food crimes is still real."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Cheese maker admits to selling adulterated queso fresco",
+        "source_url": "https://www.foodsafetynews.com/2026/05/cheese-maker-admits-to-selling-adulterated-queso-fresco/",
+        "published_at": "2026-05-22T00:42:15+00:00",
+        "summary": "<p>A New Jersey cheese manufacturer today admitted to introducing adulterated queso fresco into interstate commerce, according to U.S. Attorney Robert Frazer.</p><p>Abuelito Cheese Inc. a/k/a “El Abuelito Cheese,” a distributor of food products located in Paterson, New Jersey, pleaded guilty today before U.S. Magistrate</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Stainless steel pan sticking even after all precautions were taken",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tk36yt/stainless_steel_pan_sticking_even_after_all/",
+        "published_at": "2026-05-22T00:38:46+00:00",
+        "summary": "[r/Cooking] by u/MarA1018 | 2 points | 3 comments\n\nSo I cooked on my ss pan, ensuring leidenfrost effect temps before I start cooking. I used a lot of oil for the dish and it still stuck to the pan(dumplings), in a fit of rage and dismay I threw the pan into the bin. Before I did so, I tried whacking the stuck bits with spatulas(yes, 2 of them) and I bent them so bad I think I need to replace them, that's how stuck on the food was..\n\n  \nI'm sick of stainless steel. F it. I never had this issue with cast iron, especially my daily driver for 5 years."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/KoreanFood",
+        "headline": "How do I cook this rice?",
+        "source_url": "https://www.reddit.com/r/KoreanFood/comments/1tk2gz7/how_do_i_cook_this_rice/",
+        "published_at": "2026-05-22T00:07:07+00:00",
+        "summary": "[r/KoreanFood] by u/Useful_Potato_1305 | 1 points | 2 comments\n\nI bought the bag of mixed rice at the Korean grocery store because I wanted to try making the Korean purple rice, but when I got home I saw it had no cooking instructions that I could tell.\n\n  \nI know this is a mixed grain rice, but I don't know how I'm supposed to cook with it. I've seen some say japgokbap (if that's this) needs to be soaked overnight before cooking and others say mix in white rice.\n\n  \nI was hoping to cook it in a rice cooked, but even my translator app doesn't seem to show much. Has anyone used this and able to tell me how to prepare this?"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Potstickers stuck :(",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tk2go6/potstickers_stuck/",
+        "published_at": "2026-05-22T00:06:45+00:00",
+        "summary": "[r/Cooking] by u/LA_producer | 1 points | 46 comments\n\nThe instructions said to simmer the pot stickers in a pan, then when the water all evaporates, to not move them and let them brown in the pan. I followed the instructions to a T and ended up with the bottoms all stuck on the (“non-stick”!) pan. I had to rip them off and serve them torn open. What am I doing wrong??"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Oven St. Louis Style Ribs",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tk2cdn/oven_st_louis_style_ribs/",
+        "published_at": "2026-05-22T00:01:32+00:00",
+        "summary": "[r/Cooking] by u/Aware_Lifeguard3707 | 2 points | 4 comments\n\nLooking for advice on how to make oven baked spare ribs for the first time. I’ve been getting a lot of mix reviews regarding preparing the meat and cooking method. \n\n\\-I see some people remove the membrane and or trim the meat. I hate the husky part of ribs so I’ll definitely be looking to do that. What do you prefer?\n\n\\-Should I use liquid smoke or is there an alternative? \n\n\\-Do I need to use apple juice or beer? What is the purpose of that?\n\n\\-I’m also leaning towards cooking my ribs on a wire rack for the first hour or so and then covering with foil. Is there a down side to this? Some of the videos I’ve seen with the ribs covered the entire time, seem to have soggy seasoning. \n\n\\-What oven temp would you recommend and for how long?"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식품안전나라 행정처분",
+        "headline": "2024. 9. 2.부터 2026. 1. 9.까지 베트남산 수입식품[제품명(유형): ➊으오이 사오 퐁남(당류가공품), ➋옹토(당류가공품), ➌코코넛워터(과·채주스]을 총 48회에 걸쳐 수입신고하면서 해외 제조업소 소재지를 사실과 다르게 수입신고한 사실이 있음.",
+        "source_url": "/portal/administMeasureDetail.do?seq=4722508",
+        "published_at": "2026-05-22T00:00:00+00:00",
+        "summary": "2024. 9. 2.부터 2026. 1. 9.까지 베트남산 수입식품[제품명(유형): ➊으오이 사오 퐁남(당류가공품), ➋옹토(당류가공품), ➌코코넛워터(과·채주스]을 총 48회에 걸쳐 수입신고하면서 해외 제조업소 소재지를 사실과 다르게 수입신고한 사실이 있음."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식품안전나라 행정처분",
+        "headline": "2020. 3. 17.부터 2025. 9. 5.까지 베트남산 수입식품[제품명(유형):➊으오이 사오 퐁남(당류가공품), ➋옹토(당류가공품)]을 총 15회에 걸쳐 수입신고하면서 해외 제조업소 소재지를 사실과 다르게 수입신고한 사실이 있음.",
+        "source_url": "/portal/administMeasureDetail.do?seq=4722507",
+        "published_at": "2026-05-22T00:00:00+00:00",
+        "summary": "2020. 3. 17.부터 2025. 9. 5.까지 베트남산 수입식품[제품명(유형):➊으오이 사오 퐁남(당류가공품), ➋옹토(당류가공품)]을 총 15회에 걸쳐 수입신고하면서 해외 제조업소 소재지를 사실과 다르게 수입신고한 사실이 있음."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Extremely weird cooking challenge to settle an argument! Can you make a fake alien body out of bread dough and chicken skin?",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tk2a03/extremely_weird_cooking_challenge_to_settle_an/",
+        "published_at": "2026-05-21T23:59:07+00:00",
+        "summary": "[r/Cooking] by u/4spoop67 | 0 points | 4 comments\n\nI anticipate this is gonna be way TF too weird for this sub and that's fine, mods pls feel free to remove if so. \n\nBut in case it's not, who wants to help settle an argument!   This here is, supposedly, an alien body found in Siberia in 2011 (warning, kinda gross!):  https://ww.reddit.com/r/AlienBodies/comments/1tj3qc3/this_is_real   It's about a foot long or so, more detail in the [original video](https://www.youtube.com/watch?v=zwWWjqA8kIk).   The official debunk is that it's made of clay and bread dough covered in chicken skin, a hoax perpetrated by a couple of teenagers.  Here's, supposedly, one of them making some dough in order to demonstrate.   https://www.youtube.com/watch?v=XNSwj4bkMEg&list=PL4A754F2E0FEA747A&index=12 \n\nMy stance, as a weirdo who takes things like this seriously: chicken skin doesn't look that smooth or grey or translucent, and that shape would be very hard to make out of dough.  \n\nThe opposing stance: sure it does.\n\nWhat say you, bread wielders and chicken skin wranglers?  Could you recreate this?  \n\nAlso fair warning, I may link this thread from r/alienbodies discussion so pls be aware that replying runs the risk of getting comments from skeptics and believers alike, both of whom can be pretty toxic, unfortunately.  \n\nThanks!"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/KoreanFood",
+        "headline": "Korean Oh-jing-uh Jjam-ppong Ra-myeon",
+        "source_url": "https://www.reddit.com/r/KoreanFood/comments/1tk28c6/korean_ohjinguh_jjamppong_ramyeon/",
+        "published_at": "2026-05-21T23:57:07+00:00",
+        "summary": "[r/KoreanFood] by u/godok_drinker | 111 points | 16 comments\n\nIt's a spicy instant noodle with a rich squid and seafood broth"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Vanilla Blend",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tk22tw/vanilla_blend/",
+        "published_at": "2026-05-21T23:50:26+00:00",
+        "summary": "[r/Cooking] by u/TheEroticEskimo | 0 points | 2 comments\n\nWe accidentally bought Vanilla Blend on Amazon. We tried to return it, but they refunded us for it and asked us not to return it. What should we use it for?"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Leftover Consome' from Quesabirria tacos.",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tk1q2r/leftover_consome_from_quesabirria_tacos/",
+        "published_at": "2026-05-21T23:34:59+00:00",
+        "summary": "[r/Cooking] by u/PLCCLP | 1 points | 4 comments\n\ni have leftover broth and looking to make Ramen with it. \n\ni dont have any of the meat left so im thinking of using Rib eye steaks.\n\nWhich way would you recommend would be the best way to go about here? im thinking 1 of several ways atm.\n\n1. Cook ribeye steak up like a normal steak. and lay it on top of the ramen\n2. Cook Steak rare. use the leftover broth to slowly cook the steak up to medium rare. lay it on top of the ramen\n3. us the broth as a marinade. leave it overnight. cook up ribeye steaks med rare. lay it on top of the ramen\n\ni figure, since its ribeye, its tender enough. so i wont need to cook it for hours on low heat like i did with the original birria meat (used chuck roast)."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/nutrition",
+        "headline": "How Much Potassium in a Banana Peel?",
+        "source_url": "https://www.reddit.com/r/nutrition/comments/1tk1o4v/how_much_potassium_in_a_banana_peel/",
+        "published_at": "2026-05-21T23:32:45+00:00",
+        "summary": "[r/nutrition] by u/Ok-Team8039 | 0 points | 21 comments\n\nI’m trying to get in some more potassium, and was wondering if anyone has a straight answer as to how much potassium is in the peel itself. Like if the average banana (without peel) has 420-450mg of potassium, how much does the peel itself have? Ive looked all over on the internet, and I’ve seen answers ranging anywhere from 78mg all the way up to 1000mg, so I would just love some kind of answer!!! It obviously doesn’t have to be exact by any means, maybe just how much potassium would be in a “medium” sized peel. Thank you!!!"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Egg drop soup - your version",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tk1nn2/egg_drop_soup_your_version/",
+        "published_at": "2026-05-21T23:32:08+00:00",
+        "summary": "[r/Cooking] by u/Baaastet | 2 points | 1 comments\n\nMine add this\n\n•\t⁠Boil water with stock of your preference\n\n•\t⁠Whisk in spices like garlic powder and other stuff you like\n\n•\t⁠Crushed ginger paste\n\n•\t⁠Spring onion, green part only (chopped)\n\n•\t⁠Sesame oil - a few drops\n\n•\t⁠Add corn starch or similar if you want it thicker\n\n\t⁠- Optional: shedded chicken\n\n•\t⁠Once it’s all boiling - whisk a couple of eggs up and slowly pour into the pan making it noodley"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Tips on preserving home made tortillas in the summer?",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tk1jlh/tips_on_preserving_home_made_tortillas_in_the/",
+        "published_at": "2026-05-21T23:27:22+00:00",
+        "summary": "[r/Cooking] by u/Graviton_Lance | 1 points | 2 comments\n\nI wanna make a big batch of 30 tortillas to eat throughout the week but how should I go about storing them and especially will hey last a whole week without spoiling?"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/foodsafety",
+        "headline": "Left (unopened, packaged) ravioli that should be kept frozen in the fridge for 10 days, is it safe?",
+        "source_url": "https://www.reddit.com/r/foodsafety/comments/1tk1ivf/left_unopened_packaged_ravioli_that_should_be/",
+        "published_at": "2026-05-21T23:26:31+00:00",
+        "summary": "[r/foodsafety] by u/3crowsinpants | 2 points | 1 comments\n\nWas going to eat it the same night I brought it home; forgot. Now 10 days later. Expiration date is \\~1.5 YEARS from now, although that's if kept frozen. The ravioli are packed in an enclosed plastic sleeve. It's been on the top shelf of my refrigerator; foods I keep up there tend to freeze a bit."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Why does my fajita seasoning taste light, and how can I improve it?",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tk1hb4/why_does_my_fajita_seasoning_taste_light_and_how/",
+        "published_at": "2026-05-21T23:24:44+00:00",
+        "summary": "[r/Cooking] by u/Specialist_Spend_522 | 2 points | 21 comments\n\nI currently use the following fajita seasoning for 3 lbs of chicken breast, but the flavor still comes out a bit on the lighter side, not quite that bold, restaurant-style depth I’m going for. How can I adjust the seasoning to make it taste more well-rounded and punchy?\n\nI’ve also been told I need to add more salt, which I don’t mind. But is there a way to keep the salt at a minimum while still getting good flavor and what would that minimum amount look like? I meal prep regularly, and I already use a decent amount of salt for chicken shawarma as well.\n\n1 Tbsp Chili Powder \n\n1 Tsp Cumin Powder \n\n1 Tsp Paprika Powder\n\n1 Tsp Salt\n\n2 Tsp Garlic Powder\n\n1 Tsp Onion Powder\n\n½ Tsp Black\n\n¼ Tsp Cayenne Pepper"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "More microgreens recalled in Canada because of E. coli",
+        "source_url": "https://www.foodsafetynews.com/2026/05/more-microgreens-recalled-in-canada-because-of-e-coli/",
+        "published_at": "2026-05-21T23:18:55+00:00",
+        "summary": "<p>Les Fermes Lufa brand broccoli microgreens are being recalled in Canada because of pathogenic E. Coli.</p><p>The implicated product was distributed online and in Ontario and Quebec, according to the Canadian Food Inspection Agency.</p><p>This recall was triggered by the company.</p><p>There have been no reported illnesses associated with</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Made some butternut squash soup but I didn’t like it - alternative ways to use it?",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tk13al/made_some_butternut_squash_soup_but_i_didnt_like/",
+        "published_at": "2026-05-21T23:08:47+00:00",
+        "summary": "[r/Cooking] by u/pharmdoll | 0 points | 24 comments\n\nI made some butternut squash soup that was a bit too savory for my tastes. I tried adding cream, brown sugar, a touch of maple syrup - all still nah. I really hate being wasteful so I don’t want to throw it away. I’d like some suggestions on other ways I can use the soup.\n\nETA: I puréed the whole squash to make the soup.\n\nHere is the [recipe](https://thehungrygoddess.com/one-pot-butternut-squash-and-apple-soup/) I followed"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/KoreanFood",
+        "headline": "Galbijjim at Sun Nong Dan",
+        "source_url": "https://www.reddit.com/r/KoreanFood/comments/1tk0nku/galbijjim_at_sun_nong_dan/",
+        "published_at": "2026-05-21T22:51:00+00:00",
+        "summary": "[r/KoreanFood] by u/Delicious-March5707 | 14 points | 1 comments\n\nThis was so delicious. Must try when you’re in LA."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/KoreanFood",
+        "headline": "Bananas in Korea",
+        "source_url": "https://www.reddit.com/r/KoreanFood/comments/1tk0kt8/bananas_in_korea/",
+        "published_at": "2026-05-21T22:47:46+00:00",
+        "summary": "[r/KoreanFood] by u/Delicious-March5707 | 250 points | 24 comments\n\nI know this is not exactly Korean food, but the Korean person who thought of selling bananas this way is freaking brilliant!!"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Pancake mix recalled because of undeclared egg",
+        "source_url": "https://www.foodsafetynews.com/2026/05/pancake-mix-recalled-because-of-undeclared-egg/",
+        "published_at": "2026-05-21T22:45:18+00:00",
+        "summary": "<p>Hometown Food Company, in cooperation with Element Food Solutions, is recalling recall of a single lot code of its Birch Benders 12-ounce Sweet Potato Pancake Mix because it may contain undeclared egg. </p><p>People who have an allergy or severe sensitivity to egg run the risk of serious or life-threatening</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/KoreanFood",
+        "headline": "Grilled Beltfish/Hairtail is one of my favorites",
+        "source_url": "https://www.reddit.com/r/KoreanFood/comments/1tk0er0/grilled_beltfishhairtail_is_one_of_my_favorites/",
+        "published_at": "2026-05-21T22:40:46+00:00",
+        "summary": "[r/KoreanFood] by u/binh291 | 35 points | 5 comments\n\nAnother Jeju special from a restaurant called [Jegal-Yang](https://maps.app.goo.gl/k44rwVF1aUDgmmJz8?g_st=ic)"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Whole Foods soup recalled because of undeclared shrimp",
+        "source_url": "https://www.foodsafetynews.com/2026/05/whole-foods-soup-recalled-because-of-undeclared-shrimp/",
+        "published_at": "2026-05-21T22:35:01+00:00",
+        "summary": "<p>Kettle Cuisine of Lynn, MA, is recalling 24-ounce cups of Whole Foods Market Kitchen Minestrone Soup which may contain undeclared shrimp. </p><p>People who have allergies to crustacean shellfish, including shrimp, run the risk of serious or life-threatening allergic reactions if they consume this product.</p><p>The recall was initiated after</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "need help with cooking times",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tk047n/need_help_with_cooking_times/",
+        "published_at": "2026-05-21T22:28:52+00:00",
+        "summary": "[r/Cooking] by u/zcith | 0 points | 4 comments\n\nim not the best cook at all, but i make a pretty banging hot dog. tonight i’m making 10 for my family. usually i put two in our air fryer oven thingy for 6 minutes at 400 degrees. since i’d be doing more than 2 like a lot more do i increase the amount of time im cooking them for? spare me if this is a dumb question i genuinely know nothing"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/foodsafety",
+        "headline": "Is this normal",
+        "source_url": "https://www.reddit.com/r/foodsafety/comments/1tk03mh/is_this_normal/",
+        "published_at": "2026-05-21T22:28:12+00:00",
+        "summary": "[r/foodsafety] by u/Tudz | 1 points | 2 comments\n\nThe amount of blood in my chicken wings halfway through cooking?"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Would a mini chicken quiche pass as an amuse bouche",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tjzv1q/would_a_mini_chicken_quiche_pass_as_an_amuse/",
+        "published_at": "2026-05-21T22:19:02+00:00",
+        "summary": "[r/Cooking] by u/snaymane04 | 0 points | 13 comments\n\nI have been asked to come up with  an amuse boche from leftover chicken i used to make chicken galantine, wanted to get your input if a quiche would pass for a  fine dining amuse bouche"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Uses for the fat rendered off of stock?",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tjzssy/uses_for_the_fat_rendered_off_of_stock/",
+        "published_at": "2026-05-21T22:16:35+00:00",
+        "summary": "[r/Cooking] by u/Kevlar_Bunny | 3 points | 9 comments\n\nWe know about saving clipping from vegetable and steak night to make stock. What do you do with the fat rendered from the stock? Eggs? Soup? Anything? Let me know!"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/foodsafety",
+        "headline": "Broken eggs … can you eat the non broken ones that have raw egg on them?",
+        "source_url": "https://www.reddit.com/r/foodsafety/comments/1tjznt8/broken_eggs_can_you_eat_the_non_broken_ones_that/",
+        "published_at": "2026-05-21T22:11:14+00:00",
+        "summary": "[r/foodsafety] by u/broadwaybabyto | 2 points | 10 comments\n\nI’ve (thankfully) never had this happen before. I had a grocery order come with three dozen eggs and every carton had broken eggs in them. The raw egg has spilled on most of the non broken eggs. \n\nCan they be salvaged and eaten?"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/KoreanFood",
+        "headline": "Today's dinner!!",
+        "source_url": "https://www.reddit.com/r/KoreanFood/comments/1tjzjzv/todays_dinner/",
+        "published_at": "2026-05-21T22:07:03+00:00",
+        "summary": "[r/KoreanFood] by u/GreenMelonP | 13 points | 0 comments\n\nLink: https://i.redd.it/cnazovoedk2h1.jpeg"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Today I learned that homemade mayo is even better with freshly grated nutmeg",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tjylzc/today_i_learned_that_homemade_mayo_is_even_better/",
+        "published_at": "2026-05-21T21:31:20+00:00",
+        "summary": "[r/Cooking] by u/Crafterandchef1993 | 9 points | 10 comments\n\nSo I was making my cooked mayo (whisking the egg yolks, vinegar and mustard on a double boiler until it's the colour of custard and frothy, then remove from heat and whisk in oil, lasts much longer in the fridge and keeps it from breaking) and had the idea to add nutmeg, because it's used in custards all the time. Omg, does that add a beautiful, earthy flavour that contrasts beautifully with the richness and subtle tanginess of my mayo. Btw, I also recently started using rice wine vinegar for the main acid with white wine vinegar for seasoning, adds layers to the tanginess."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/foodsafety",
+        "headline": "Plastic-like string flakes in my drink... am I going to die",
+        "source_url": "https://www.reddit.com/r/foodsafety/comments/1tjyc06/plasticlike_string_flakes_in_my_drink_am_i_going/",
+        "published_at": "2026-05-21T21:21:07+00:00",
+        "summary": "[r/foodsafety] by u/donkeeotee | 6 points | 6 comments\n\nSo I bought this drink at Walmart a couple days ago, I have never had it before. It's called UPDATE. It's not that great so I've just been taking little sips out of it all day. Nearing the bottom, I took a bigger gulp (not swallowed yet) and I felt stuff on my tongue. I spit it back out because what the fuck and I found these bits that almost look like stuff from insulation?? The closest thing I can think of that it looks like/feels like is the flakes that come off of selenite (maybe more the raw version? I don't know about that stuff either) but it's not sharp. The pictures aren't the best but the pieces are so small that they are really hard to focus on. And this wasn't just something on the outside of the can, there was literally a clump INSIDE that I spat back in (kinda gross, sorry, but see last pics, you can kinda see it). I don't think that's supposed to be in there, at least I HOPE. It was not tampered with, it's only been closed at my home and opened at work (where I work alone behind a counter that no one can get behind except myself). There is nothing around me that could have fallen in, nor is there anything that I could even think of that could have that stuff in/on it near me. Wtf could this possibly be and how is it in my drink?\n\nI will try to somehow get a better picture of it if anyone needs it, sorry that my spit is in the way lol"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/foodsafety",
+        "headline": "Weird, foul smelling gunk in my Iced Coffee",
+        "source_url": "https://www.reddit.com/r/foodsafety/comments/1tjy6iv/weird_foul_smelling_gunk_in_my_iced_coffee/",
+        "published_at": "2026-05-21T21:15:42+00:00",
+        "summary": "[r/foodsafety] by u/emmmbaa | 23 points | 5 comments\n\nBought an iced coffee from mcdonalds. Drank most of it until a chuck hit my tongue. I immediately spit it out and found more in the bottom of my drink. The smell is AWFUL! They’re goopy and weirdly coloured. It is not coffee or milk, is this an issue?"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Is this pork safe?",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tjxy25/is_this_pork_safe/",
+        "published_at": "2026-05-21T21:06:35+00:00",
+        "summary": "[r/Cooking] by u/359dawson | 0 points | 12 comments\n\nI bought some pork chops on sale and put them in the freezer when I got home. I bought them on the sell by date. I put them in the fridge 5 days ago. Still ok to eat?"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "What kitchen scale would you buy again?",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tjxn8h/what_kitchen_scale_would_you_buy_again/",
+        "published_at": "2026-05-21T20:55:31+00:00",
+        "summary": "[r/Cooking] by u/Sea-Helicopter-1369 | 2 points | 13 comments\n\nI’m looking for a new kitchen scale and I did not expect there to be this many choices. Mine is starting to act weird with the tare function, and it randomly jumps a gram or two while I’m weighing things, which is annoying when I’m baking.\n\nI mostly use it for baking, coffee, meal prep, and occasionally weighing packages, so I’d like something accurate and not too fussy. I do not need anything super high-end, but I also do not want the cheapest one if it is going to be unreliable or hard to clean.\n\nI keep seeing people mention Escali, OXO, Greater Goods, and a bunch of random Amazon brands, but I cannot tell what is actually worth buying.\n\nFor anyone who uses a kitchen scale regularly, which one would you recommend? Bonus points if it has a good tare button, readable display, and does not shut off too fast while you’re using it."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Advice for pulled pork",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tjxb46/advice_for_pulled_pork/",
+        "published_at": "2026-05-21T20:43:11+00:00",
+        "summary": "[r/Cooking] by u/Disastrous_Yam8354 | 0 points | 39 comments\n\nI have about 7 lbs of lean pork tenderloin that I want to turn into pulled pork. I want to make it appetizing for my mother-in-law, who hates sugar and sweet flavours. I'm thinking I could take sugarless crushed tomatoes (canned), mix them with mashed skinned sweet potatoes, and use that as the sauce in which to submerge the pulled pork. (The pulled pork will get cooked with salt and pepper in closed foil for like 2 hours until very soft, I've done this several times). What do you think? I've done something like this before but with pumpkin instead of sweet potato, it turned out to be an amazingly rich and subtle sauce.\n\nI have two bottles of Bbq sauce which I can just mix with the two cans of 1 litre crushed tomatoes and bam it's done. But I know she won't like that (even though I think that's what pulled pork is supposed to be).\n\nThanks!\n\n  \nEdit: Thanks for all the feedback! I've done this a dozen times and regardless of whether or not you would deign it to have \"worked\" it usually created something quite delicious.\n\nIf any of you have an open mind, just give this a try. Cook a pork loin in tinfoil so it keeps the moisture and gets very soft. pull it apart into a rich fatty sauce. let that all cook together for a while. see what you get. \n\nIf anyone actually tried this and it fails, I'll apologize. Until then I think y'all are just narrow minded and have never had to cook in Hangzhou China."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "What do I make with Hershey's chocolate syrup?",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tjx5uh/what_do_i_make_with_hersheys_chocolate_syrup/",
+        "published_at": "2026-05-21T20:37:56+00:00",
+        "summary": "[r/Cooking] by u/123qwertykeyboard | 0 points | 9 comments\n\nGot this as a gift from the local store. Before I give it away to someone who'd find it useful, I was thinking of making something with it. Just to give it a taste! \n\nI was thinking of making cold coffee with ice-cream and this syrup. Should I go with that, or is there anything better to make? \n\nI can also use it on butter toast. How about that?"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Jalapeño recipes",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tjwstx/jalapeño_recipes/",
+        "published_at": "2026-05-21T20:24:59+00:00",
+        "summary": "[r/Cooking] by u/Ill_Bother2609 | 46 points | 93 comments\n\nI ordered 2 jalapeños in my grocery order and instead they sent 2 pounds!  I currently have a few poppers in the oven but I need more variety.  Anyone have any recommendations for recipes (not jalapeño poppers) ??"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "store bought chicken tenders",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tjwrbu/store_bought_chicken_tenders/",
+        "published_at": "2026-05-21T20:23:31+00:00",
+        "summary": "[r/Cooking] by u/Existing-Umpire7782 | 0 points | 21 comments\n\nHow do i upgrade store bought chicken tenders?? I wanna impress my boyfriend who loves chicken tenders. He doesn’t like flavorful sauces so idk how else to upgrade them😫"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "favorite non-meat dishes to cook in a stainless steel pan?",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tjwld2/favorite_nonmeat_dishes_to_cook_in_a_stainless/",
+        "published_at": "2026-05-21T20:17:45+00:00",
+        "summary": "[r/Cooking] by u/MixtureCommon1785 | 1 points | 8 comments\n\nA few months ago I made the most exciting estate sale purchase of my life (lol) which was 3 All Clad pans for like $35. Until then I pretty much just used my dutch oven and cast iron for everything, and I quickly learned how much other stuff is possible with stainless steel that wasn't as possible with the other two (still love those other guys though, they've got their own special stuff going on that stainless steel can't touch either). \n\nAnyway, one of the big things I was excited about was fond/browning meat! But lately I am not really eating meat or wanting to cook it as much. I was wondering if people have suggestions for non-meat things I should try cooking to get better at cooking with these pans / recipes that will let me still experience the excitement of this new world of stainless steel cookware! I do still cook/eat seafood.\n\nIf it helps I have a big saute pan, a (10 inch? 12 inch?) frying pan, and a smaller frying pan.\n\nThanks <3"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "High-end Pepper Mill Comparison",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tjwgat/highend_pepper_mill_comparison/",
+        "published_at": "2026-05-21T20:12:45+00:00",
+        "summary": "[r/Cooking] by u/FellatioCornballer | 0 points | 40 comments\n\nI currently own a Pepper Cannon from Mannkitchen. I love the feel of it, how satisfying it is to take off and put back on the top to reload, and the amazing output it is able to deliver. I want to get another pepper mill but am considering a different manufacturer for some variety. Has anyone been able to compare Weber Moulin or the Craig Lyn Design Studio to the Pepper Cannon? Any others in the same caliber that I should consider?"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Blueberry Lemon Bread",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tjwg5w/blueberry_lemon_bread/",
+        "published_at": "2026-05-21T20:12:38+00:00",
+        "summary": "[r/Cooking] by u/Immediate_Piano_4365 | 0 points | 1 comments\n\nYou’ll love this blueberry lemon bread. It’s super moist and so delicious. I love it for breakfast. Something good to make this Memorial Day weekend.\n\nINGREDIENTS  \nBread  \n2 ½ cups cake flour, sifted and then measured (NOTE: If you are using all-purpose or plain flour, reduce the flour amount to 2 1/4 cups.)  \n2 teaspoons baking powder  \n1 teaspoon salt  \n2 eggs, well beaten  \n1 1/2 cups white granulated sugar  \n½ cup vegetable oil  \n½ cup whole milk  \njuice and zest of 1 large lemon  \n½ teaspoon pure vanilla extract  \n1 ¼ cups fresh or frozen blueberries tossed with 1 Tablespoon flour  \nIf you are using frozen blueberries, be sure to thaw and then measure.  \nGranish: Extra blueberries and lemon zest (optional)  \nIcing  \n1Tablespoon butter  \n2 Tablespoons milk  \n1 3/4 cups confectioner’s sugar, sifted and then measured  \n4 Tablespoons fresh lemon juice  \n¼ teaspoon pure vanilla extract\n\nINSTRUCTIONS  \nPreheat the oven to 350 degrees. Grease and flour a 9×5 loaf pan. In a large mixing bowl combine the flour, baking powder and salt and set aside.  \nIn a separate mixing bowl, using an electric mixer or whisk, beat the eggs until light and fluffy.  \nAdd sugar and oil to the eggs and stir using a wooden spoon or whisk. (NOTE: Don’t use an electric mixer for the rest of the mixing.) Over mixing will cause the bread to be tough.  \nSlowly add the dry ingredients to the egg mixture, alternating with the milk.  \nAdd lemon zest, lemon juice and vanilla extract. Gently stir.  \nGently fold blueberries into the batter. Pour batter into the prepared loaf pan. Place in the preheated oven. Bake for 50 minutes to 1 hour or until a toothpick inserted in the center comes out clean. Be careful not to over bake. ( check on the bread after about 40 minutes. If it’s getting too brown, reduce the heat to 325 degrees and continue baking until a toothpick inserted in the middle comes out clean.  \nAllow bread to cool completely in the pan on a wire rack before glazing with the lemon icing and..."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/nutrition",
+        "headline": "Fair life Core power protein alternatives?",
+        "source_url": "https://www.reddit.com/r/nutrition/comments/1tjw6hr/fair_life_core_power_protein_alternatives/",
+        "published_at": "2026-05-21T20:03:13+00:00",
+        "summary": "[r/nutrition] by u/sisjxksmakznxj | 0 points | 5 comments\n\nFair life Core power Vanilla shakes are amazing what are some alternatives now that they are 62$ for just 12 bottles"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Chicken thighs changed my life and I'm not being dramatic",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tjvouz/chicken_thighs_changed_my_life_and_im_not_being/",
+        "published_at": "2026-05-21T19:46:20+00:00",
+        "summary": "[r/Cooking] by u/Acceptable_Pipe501 | 552 points | 245 comments\n\nSpent years buying chicken breast because I thought it was the \"right\" choice. Tried thighs last year and now I genuinely don't understand why I wasted so much money. Cheaper, harder to overcook, more flavor. Why does nobody tell you this early on?"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Salted Steaks too Much Before Freezing",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tjvb3t/salted_steaks_too_much_before_freezing/",
+        "published_at": "2026-05-21T19:33:19+00:00",
+        "summary": "[r/Cooking] by u/CookieEquivalent5996 | 0 points | 17 comments\n\nSo I got my hands on quite a lot of beef cuts for a good price, and in my infinite wisdom I thought I'd prep them for my sous vide by seasoning and vacuum sealing them before freezing. I've never over-seasoned beef before but I guess I got careless this time, given that the ones I've cooked have come out too salty. It's not egregious but enough to bother me.\n\nI'd rather not turn these cuts -- particularly not the ribeyes -- to mince or stew or whatever, so I've tried to compensate by using unsalted butter after the reverse sear, salting fries sparingly, and making fatty sauces with little added salt. \n\nDo you have any better suggestions on how I can save this meat while still enjoying it as proper steak and not something else? Besides the tricks above, I've considered thawing in a bag of plain water, to let osmosis draw the salt out. I'm sure this wouldn't be great for the flavor but it's possible the result would be better than the over-seasoned alternative. Thoughts?"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Can you guys tell me if this is possible or I’m being delusional",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tjv4jf/can_you_guys_tell_me_if_this_is_possible_or_im/",
+        "published_at": "2026-05-21T19:27:04+00:00",
+        "summary": "[r/Cooking] by u/donn_12345678 | 0 points | 51 comments\n\nI live in the UK, I’m have English and half Greek. Very in love with Greek food (obviously) due to not only its taste but also being one of if not the healthiest diets on the planet. \n\nWith that context out the way I try to eat (not UNCOMPROMISINGLY) in this manner but I’m struggling \n\n\\- following traditional Greek recipes (no modern adaptations or my own twist, what Greek grandmothers eat)\n\n\\- locally (no big supermarkets, locally grown and locally owned from meat to fish to produce, except things like olive oil then I must use traditional quality brands)\n\n\\- in season (no eating tomatoes in February\n\nCan I do all this all at once all the time year round"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Raw Chicken cutlet fridge life controversy…",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tjuf4r/raw_chicken_cutlet_fridge_life_controversy/",
+        "published_at": "2026-05-21T19:03:00+00:00",
+        "summary": "[r/Cooking] by u/PicklesMcGeee | 0 points | 8 comments\n\nSo obviously I googled it, and it says 1 to 2 days. However, I bought these cutlets at my local butcher on 5/19, there’s a sticker on it that says “sell by “5/23, which is four days after they were purchased. So now I’m confused… \n\nDo cutlets bought a butcher last longer? Or is my butcher just slapping random dates on their chicken cutlets? \n\nBasically trying to figure out whether or not it’s safe to cook them tonight or not.\n\nTYIA ❤️"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Baked yoghurt recipe?",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tju55d/baked_yoghurt_recipe/",
+        "published_at": "2026-05-21T18:53:55+00:00",
+        "summary": "[r/Cooking] by u/ClickAccomplished205 | 1 points | 2 comments\n\nHi all,\n\nSo I’ve gotten into baking recently and one of the things I want to try is a baked yoghurt with fresh berries.\n\nDoes anyone have or can suggest any good recipes for it? I’ve found loads online but there are so many I can’t really pick good ones from bad ones.\n\nIf anyone can suggest any I’d be very grateful!"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Chicken Parmesan",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tjtx75/chicken_parmesan/",
+        "published_at": "2026-05-21T18:46:18+00:00",
+        "summary": "[r/Cooking] by u/MountainMark | 0 points | 33 comments\n\nI just made some nice chicken parmesan for lunch.  \n\nWell, I threw some diced leftover McDonald's nuggets on top of leftover spaghetti, added some shaker cheese and microwaved for 2 minutes. \n\n Does that count?"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/KoreanFood",
+        "headline": "Bossam!",
+        "source_url": "https://www.reddit.com/r/KoreanFood/comments/1tjtrnq/bossam/",
+        "published_at": "2026-05-21T18:41:08+00:00",
+        "summary": "[r/KoreanFood] by u/VegetableRelation701 | 35 points | 2 comments\n\nLink: https://i.redd.it/3vcfhq5ocj2h1.jpeg"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/KoreanFood",
+        "headline": "Korean exchange student memories: My favorite tteokbokki combo",
+        "source_url": "https://www.reddit.com/r/KoreanFood/comments/1tjtm6b/korean_exchange_student_memories_my_favorite/",
+        "published_at": "2026-05-21T18:35:48+00:00",
+        "summary": "[r/KoreanFood] by u/SeesawAntique3660 | 81 points | 18 comments\n\nWhen I was an exchange student in Korea, one of my favorite memories is ordering tteokbokki for delivery by the Han River.  \nKoreans (especially the girls) are obsessed with tteokbokki. One of my Korean friends had her own way of eating it and it totally rubbed off on me lol. I still eat it like that now.  \nShe would always order steamed egg on the side to balance the spiciness. After spending so much time with her, it became my signature combo too!  \nThere’s no fancy recipe. I just grab the Nongshim tteokbokki noodles and follow the package instructions. It tastes the closest to what I used to get in Korea. You guys should try the tteokbokki + steamed egg combo. It’s seriously so good lol."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/foodsafety",
+        "headline": "Can I cook and eat these beans?",
+        "source_url": "https://www.reddit.com/r/foodsafety/comments/1tjsx8t/can_i_cook_and_eat_these_beans/",
+        "published_at": "2026-05-21T18:12:27+00:00",
+        "summary": "[r/foodsafety] by u/newrophantics | 2 points | 2 comments\n\nReceived these dry great northern beans from a neighbour who is moving with a label of “April 20” (not sure what year) and many of them are kind of shrivelled, with some also having brown/black discolouration. Can I cook and eat these, or should they be tossed?"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/KoreanFood",
+        "headline": "feeling very vegetable-centric this week",
+        "source_url": "https://www.reddit.com/r/KoreanFood/comments/1tjsuwo/feeling_very_vegetablecentric_this_week/",
+        "published_at": "2026-05-21T18:10:16+00:00",
+        "summary": "[r/KoreanFood] by u/ILoveLipGloss | 1 points | 0 comments\n\ngamja salad (potato salad), sigeumchi namul (spinach salad & I added yellow bell pepper), dubu jorim (braised tofu - I was out of gochugaru so I used sambal olek instead, and added broccoli, dried shiitake mushrooms, baby Bellas)\n\nhttps://preview.redd.it/v74vzxqv6j2h1.jpg?width=3000&format=pjpg&auto=webp&s=d6093bb2d4793f09f2213c94aa74d9fb2958d38f"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/nutrition",
+        "headline": "Can sparkling water (lecroix, other brands) be a direct replacement for normal water? Are there any downsides or benefits one way or another?",
+        "source_url": "https://www.reddit.com/r/nutrition/comments/1tjstsz/can_sparkling_water_lecroix_other_brands_be_a/",
+        "published_at": "2026-05-21T18:09:12+00:00",
+        "summary": "[r/nutrition] by u/BisonSpiritual3744 | 44 points | 24 comments\n\nCan sparkling water (lecroix, other brands) be a direct replacement for normal water? Are there any downsides or benefits one way or another?"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "FDA to reassess safety of ‘yoga mat’ chemical in food",
+        "source_url": "https://www.fooddive.com/news/fda-reassess-ada-bht-food-safety-gras/820895/",
+        "published_at": "2026-05-21T17:34:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/Ci2MeIVx1RxjqQQgr7PFXIetbPtROyTrcvcNjTzsqQU/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yNzUxOTIzLmpwZw==.webp\" /></div></figure><p>The agency will review ADA and chewing gum preservative BHT as it backs away from a plan to prioritize ingredient safety evaluations based on consumer concern.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "The glue that seals canned food?",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tjre84/the_glue_that_seals_canned_food/",
+        "published_at": "2026-05-21T17:22:24+00:00",
+        "summary": "[r/Cooking] by u/YahooSiriusBlack | 0 points | 32 comments\n\nI have an old Hamilton Beach can opener that I love.  It cuts the side of the top so the lid isn't sharp.\n\nWhat has always concerned me though is that the glue used to seal the can usually ends up on the food.\n\nIs that stuff safe or does the can opener need to be retired?\n\n(I can't post a picture?)\n\n[https://i.imgur.com/ghxb2es.jpeg](https://i.imgur.com/ghxb2es.jpeg)"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Oven replacement recommendations: Electric or Induction?",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tjre1x/oven_replacement_recommendations_electric_or/",
+        "published_at": "2026-05-21T17:22:15+00:00",
+        "summary": "[r/Cooking] by u/Interesting_Fruit_59 | 1 points | 17 comments\n\nI currently have the a Whirlpool electric range that the previous owners of my house installed but I'm ready for an upgrade. Last year the broiler started to turn on randomly during bakes. After doing some research I realized it'd be expensive to fix and instead I used a piece of electrical tape to prevent the broiler from engaging.  Now that I'm just working with the bottom coil for heat, it takes forever to preheat the oven and I have to be careful when baking to prevent the bottom of my items from burning. \n\nAt this point I'm ready to just replace the unit but there's lots of options out there and I'm a little overwhelmed. I'd love to take advantage of memorial day sales this week to pull the trigger. Please share recommendations with the following in mind:\n\n* I don't have a gas line to the house so am considering either another electric range or induction. Leaning towards induction.\n* Current unit: Whirlpool 5.3 cu. ft. Electric Range with Frozen Bake™ Technology Model: WFE515S0JB. Specs [here](https://www.whirlpool.com/kitchen/cooking/ranges/single-oven-freestanding/p.5.3-cu.-ft.-electric-range-with-frozen-bake-technology.wfe515s0jb.html). Hoping to find something I can easily swap out.\n* At this point I bake one to two times a week so having an oven that heats efficiently and maintains temp properly is super important.\n* Trying to stay under $3k but willing to go up to $4k for a superior product. For induction I know I'd need to replace all my pots and pans as well. \n\nTIA for any tips or recommendations!"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "How do you make a fried rice dish (in a wok with other chopped ingredients + egg) ? I would like to try making that tonight but am afraid of overcooking it..",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tjr7u7/how_do_you_make_a_fried_rice_dish_in_a_wok_with/",
+        "published_at": "2026-05-21T17:16:45+00:00",
+        "summary": "[r/Cooking] by u/DaytoDaySara | 3 points | 34 comments"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/foodsafety",
+        "headline": "is it safe to consume coconut milk that was at room temp (opened) for 3 days",
+        "source_url": "https://www.reddit.com/r/foodsafety/comments/1tjqj7j/is_it_safe_to_consume_coconut_milk_that_was_at/",
+        "published_at": "2026-05-21T16:54:22+00:00",
+        "summary": "[r/foodsafety] by u/mikadere | 1 points | 4 comments\n\nthe suspect: coconut milk, opened maybe 6 days ago or so and refrigerated, but then our fridge died so it's been at room temp for 3 days.\n\nmy mom put it in a baked dish and i feel really bad but i'm kinda concerned. is it safe to eat the baked dish...?"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Pork Belly",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tjpo6k/pork_belly/",
+        "published_at": "2026-05-21T16:24:07+00:00",
+        "summary": "[r/Cooking] by u/elbarto_24 | 60 points | 64 comments\n\nJust picked up some pork belly slices from Costco. Tried cooking it in the oven and smoked out the kitchen. Tried grilling it and turns out, when you render down a bunch of pork fat over open flame, it starts a grease fire 🤷‍♂️. The pork itself turned ok on both attempts but I feel like there’s got to be a more efficient way to cook it. \n\nWhat is your favorite method of cooking pork belly? Is it best to go slow and low or hard and fast?"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Arepa Dough - Making Ahead of Time?",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tjoxuv/arepa_dough_making_ahead_of_time/",
+        "published_at": "2026-05-21T16:00:07+00:00",
+        "summary": "[r/Cooking] by u/Present-Piano-9820 | 5 points | 9 comments\n\nHi everyone, \n\n  \nI want to make arepa's for a dinner I am having on Wednesday. I've never made them before, but I have eaten them before and want to try making them. \n\nI work until 5:30 and I am hosting a dinner at 6:30. Can i make the dough ahead of time and chill it? I would make a big batch to test run but can cook them the day of. Any tips would help! I am making Reina Pepiada and fried plantains :)"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/nutrition",
+        "headline": "Do nutrients stored as fat give you the same benefits when you burn the fat",
+        "source_url": "https://www.reddit.com/r/nutrition/comments/1tjokyr/do_nutrients_stored_as_fat_give_you_the_same/",
+        "published_at": "2026-05-21T15:48:01+00:00",
+        "summary": "[r/nutrition] by u/homegirl011 | 6 points | 14 comments\n\nSo im sure everyone has heard that unused protein gets stored as fat and I was wondering if when you burnt that fat would you get the benefits of eating protein? This may be a really dumb question but im curious and stupid"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/foodsafety",
+        "headline": "Raw chicken probably spoiled",
+        "source_url": "https://www.reddit.com/r/foodsafety/comments/1tjojaq/raw_chicken_probably_spoiled/",
+        "published_at": "2026-05-21T15:46:26+00:00",
+        "summary": "[r/foodsafety] by u/Zuldyck | 0 points | 6 comments\n\nLeft 40 dollars of raw chicken out overnight, it's covered in a chipotle pepper marinade. Was planning on cooking it for 8 hours on high heat and shredding it then cooking some more. I heard that cooking thoroughly will kill bacteria but not make it safe. I don't want to waste all that food, how much danger am I really in if I cook the hell out of this chicken?"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/foodsafety",
+        "headline": "What is in this smarties box? One of them has a hole in it… I’ve never seen anything like this before. Many boxes are like this.",
+        "source_url": "https://www.reddit.com/r/foodsafety/comments/1tjogf1/what_is_in_this_smarties_box_one_of_them_has_a/",
+        "published_at": "2026-05-21T15:43:46+00:00",
+        "summary": "[r/foodsafety] by u/sigurettes | 9 points | 13 comments"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Update - better luck with my stainless steel pan!",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tjnrvh/update_better_luck_with_my_stainless_steel_pan/",
+        "published_at": "2026-05-21T15:20:43+00:00",
+        "summary": "[r/Cooking] by u/askyou_askme | 0 points | 17 comments\n\nA couple of days ago I posted how much trouble I was having with my 12” All-Clad pan. \n\nI ended up buying a 10” Viking pan from Home Goods & I was able to successfully cook eggs and a chicken breast.\n\nI kept the heat the same, but used a little more avocado oil spray. Even with a low heat the bottom of my All-Clad skillet (not the part I cook on — the underside that touches my stovetop) was turning super brown. Not my Viking.\n\nTo be clear I’m not saying All-Clad is the “problem”. I’m sure it just distributes heat differently but I was too frustrated to keep trying with it lol. Plus it’s huge. I figured I would practice on a cheaper/smaller pan & hopefully I can sell my All-Clad.\n\nThanks to everyone who gave me advice!"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Are there any recipes for Crow?",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tjnlr1/are_there_any_recipes_for_crow/",
+        "published_at": "2026-05-21T15:15:12+00:00",
+        "summary": "[r/Cooking] by u/buffalomozarella | 0 points | 33 comments\n\nI never ever come across recipes for Crow meat. It's pretty crazy. Are there any out there?"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "Kraft Heinz launches Jell-O line without artificial dyes",
+        "source_url": "https://www.fooddive.com/news/kraft-heinz-jello-natural-colors-artificial-dyes/820864/",
+        "published_at": "2026-05-21T15:03:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/xFfK3lSt5_DHhkhxOPpNpTxCXG5ebJ_Y2ttHHFwxtRc/g:nowe:25:284/c:3158:1784/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9KZWxsLU9fU2ltcGx5XzEuanBn.webp\" /></div></figure><p>The food giant is rejiggling the brand known for its bright colors as part of a broader innovation plan to return the company to growth.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Is frozen meat at the grocery store lower quality?",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tjn4kd/is_frozen_meat_at_the_grocery_store_lower_quality/",
+        "published_at": "2026-05-21T14:59:26+00:00",
+        "summary": "[r/Cooking] by u/noveltieaccount | 3 points | 35 comments\n\nI freeze about 90% of meat I buy right when I get home from the grocery store. I buy fresh meat, trim it or cut it up to the size I will use when cooking, and then put it in a plastic bag and freeze it. I cannot tell a difference in quality between fresh bought meat cooked the day I buy it and meat that has been in the freezer for 2 or 3 weeks and then thawed. Eventually if the meat gets to be a couple months old, then I notice it can lose moisture when thawing and not be as good depending on the preparation method. I will even say I cannot tell the difference between a frozen and then thawed steak and a fresh steak.\n\nPlease correct me if I'm wrong here but it seems to me that meat that is already frozen at the grocery store is worse than meat bought fresh and then frozen at home. One example is salmon which when I've bought pre-frozen ends up thawing into a mushy mess only suitable for something like salmon patties. Another example is chicken breasts which also seem to have a mushy, spongy texture when bought frozen. I freeze both of these meats myself and find no difference between fresh and frozen when I do it myself.\n\nAm I right in thinking pre-frozen meat is worse quality? It would be great if I could buy some meats pre-frozen and save myself some time when I get home. Any specific meats that you would recommend to buy pre-frozen at the grocery?"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "I've been making mayo at home something's missing",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tjmy4n/ive_been_making_mayo_at_home_somethings_missing/",
+        "published_at": "2026-05-21T14:52:55+00:00",
+        "summary": "[r/Cooking] by u/Any-Wrangler-6383 | 3 points | 35 comments\n\nI lately started making mayo at home but not sure feels like something is missing, it doesn't quite taste like the mayo we buy. I mean i know its not going to be exactly the same. Not sure what to change, here the recipe i am using:\n\n1 egg\n\n1 cup veg oil\n\n1 tbsp lemon juice\n\n1 tsp dijon mustard\n\nPinch of salt"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "4 ways Bazooka rethought its supplier strategy in face of tariffs",
+        "source_url": "https://www.fooddive.com/news/4-ways-bazooka-rethought-its-supplier-strategy-in-face-of-tariffs/820357/",
+        "published_at": "2026-05-21T14:37:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/2gDCeCSqjXfEHFBho4US0V-2Mi48Eui2iCRA7B78cbI/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9JTUdfMDM3Ni5qcGVn.webp\" /></div></figure><p>The candy maker scrapped its volume-for-price playbook and adopted a collaborative approach to sharing the pain.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "Celebrity beverages are crowding the spotlight",
+        "source_url": "https://www.fooddive.com/news/celebrity-beverages-are-crowding-the-spotlight/820844/",
+        "published_at": "2026-05-21T14:00:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/kbgcnMBb1fWLRPacZD333RiwU0jTfmdause8DMwNxjY/g:nowe:11:0/c:2488:1405/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9TdGlsbGVyc19CZW5fU2V0X1YxLmpwZw==.webp\" /></div></figure><p>From the Kardashians to George Clooney, celebrities are lending their star power to help nascent brands stand out in an increasingly competitive industry. </p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "I am looking for a savory citrus forward for a work potluck/competition",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tjlbyo/i_am_looking_for_a_savory_citrus_forward_for_a/",
+        "published_at": "2026-05-21T13:57:03+00:00",
+        "summary": "[r/Cooking] by u/DessertFlowerz | 31 points | 95 comments\n\nMy workplace is having a citrus themed food competition. There are 2 categories - sweet and savory. Everyone is going to do do sweet but I much prefer cooking over baking. \n\nI can't decide what to make though. Any suggestions? Would love something that I can bring in the crockpot. Any citrus fruit is fine."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "How do I regain the passion for cooking food?",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tjkzad/how_do_i_regain_the_passion_for_cooking_food/",
+        "published_at": "2026-05-21T13:43:57+00:00",
+        "summary": "[r/Cooking] by u/Alarmed_Swan_4315 | 20 points | 43 comments\n\nlong story short, I used to cook professionally in hotels and restaurants even studied cooking formally but after working in the industry for years, I've lost passion for it\n\nI've tried cooking for family but they don't like my cooking, I come from a chinese family so they aren't very open to western food or even other asian foods (chinese food from other provinces, japanese, korean, indian etc etc) they tend to see cooking as a pita and don't cook a lot at home and sometimes see it as a waste of time\n\nHow do I reignite the passion again? I know that I won't be cooking for my family but I need a hobby to keep me from rotting in bed and some healthy food"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Rice Pudding turned brown..",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tjkonx/rice_pudding_turned_brown/",
+        "published_at": "2026-05-21T13:33:09+00:00",
+        "summary": "[r/Cooking] by u/Ground-Visible | 1 points | 7 comments\n\nI've been making the same recipe for many years now, but yesterday I used lactose free milk and the pudding turned a brownish color. My recipe calls for slowly cooking the rice in 4 cups of milk with the sugar and salt. It wasn't burnt (learned the hard way early on this recipe is slow and steady) and the only thing different was the milk.. Has anyone exp'd this before?"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/foodsafety",
+        "headline": "mouldy couscous",
+        "source_url": "https://www.reddit.com/r/foodsafety/comments/1tjkja4/mouldy_couscous/",
+        "published_at": "2026-05-21T13:27:53+00:00",
+        "summary": "[r/foodsafety] by u/saturnfay | 1 points | 0 comments\n\ni just ate some supermarket roasted vegetable  couscous with a use by date of today, and after a few mouthfuls i realised in the corner of the pot the couscous was stuck together and had what appeared to be mold (black dots and small white threadlike lines) and immediately threw the rest out \n\ndo i need to be concerned about this? I have an exam tomorrow morning 😬"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/KoreanFood",
+        "headline": "Mandu meal prep",
+        "source_url": "https://www.reddit.com/r/KoreanFood/comments/1tjixn9/mandu_meal_prep/",
+        "published_at": "2026-05-21T12:25:51+00:00",
+        "summary": "[r/KoreanFood] by u/denisalivingabroad | 23 points | 3 comments\n\nYesterday I made 124 mandus for the kids. The round ones are filled with minced meat, tofu, bacon, carrots, zucchini, scallions and black bean paste. The others are filled with minced meat, tofu and white kimchi."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Anyone Have The Recipefairy McDonald's Chicken Nugget Recipe?",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tjiv1d/anyone_have_the_recipefairy_mcdonalds_chicken/",
+        "published_at": "2026-05-21T12:22:47+00:00",
+        "summary": "[r/Cooking] by u/O-Castitatis-Lilium | 2 points | 1 comments\n\nHello!\n\nNormally I don't ask questions like this, but I kind of need to this time. I was searching the web for some copycat recipes and stumbled on this one site: [This one here by Recipefairy](https://recipefairy.com/mcdonalds-chicken-nuggets/) and for some reason I can't get into it. I want to know if anyone managed to get this written down somewhere that they could pass along? It looks really good. There is another website too that I found it on, but it links back to the broken wordpress site; as well as the pinterest group that was made around the site. If anyone has this recipe from here and is willing to share, please DM me, or if you know of another site it's on without the wordpress, pinterest group, and cooklist, please send the link; I would appreciate it as they look very interesting!"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/foodsafety",
+        "headline": "Coffee drink in glass bottle has this white stuff in it?",
+        "source_url": "https://www.reddit.com/r/foodsafety/comments/1tjiozj/coffee_drink_in_glass_bottle_has_this_white_stuff/",
+        "published_at": "2026-05-21T12:15:55+00:00",
+        "summary": "[r/foodsafety] by u/elcenizo2 | 0 points | 5 comments"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "How should I go about Quesabirria Ramen.",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tjhyj5/how_should_i_go_about_quesabirria_ramen/",
+        "published_at": "2026-05-21T11:44:20+00:00",
+        "summary": "[r/Cooking] by u/PLCCLP | 2 points | 7 comments\n\nyesterday for dinner i made Quesabirria tacos. we ran out of meet but have alot of the broth leftover.\n\nafter thinking around, i decided to make ramen. looking it up to see some ideas, looks like Quesabirria Ramen is a pretty trendy thing. so that makes it easy for me.\n\nthe problem? they all use the original meat from the Quesabirria.\n\ni know i dont HAVE to. but i want to add meat.\n\nso im thinking of using Rib eye steaks.\n\nso the question is, what would be the best way to go about here? im thinking 1 of several ways atm.\n\n1. Cook ribeye steak up like a normal steak. and lay it on top of the ramen\n\n2. Cook Steak rare. use the leftover broth to slowly cook the steak up to medium rare. lay it on top of the ramen\n\n3. us the broth as a marinade. leave it overnight. cook up ribeye steaks med rare. lay it on top of the ramen\n\ni figure, since its ribeye, its tender enough. so i wont need to cook it for hours on low heat like i did with the original birria meat (used chuck roast)."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Protein breakfast to share with colleagues",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tjhqct/protein_breakfast_to_share_with_colleagues/",
+        "published_at": "2026-05-21T11:34:01+00:00",
+        "summary": "[r/Cooking] by u/jagg737 | 12 points | 36 comments\n\nMy office wants to do a joint breakfast next week where everyone brings something to share. Usually there are plenty of sweet things there so I would like to bring something savory and higher in protein that can be shared. I would love to hear any ideas from this sub what to bring. Thank you in advance!"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Low sodium cooking?",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tjgogy/low_sodium_cooking/",
+        "published_at": "2026-05-21T10:43:56+00:00",
+        "summary": "[r/Cooking] by u/CatWizardCloset | 3 points | 5 comments\n\nMy elderly mother and her husband are planning a visit to me in July. She has recently been put on a low sodium diet due to her congestive heart failure. (To be honest, my husband and I both doubt that they will be able to manage this trip, which involves two flights, but we are planning, just in case.)\n\nI am the Salt Queen, so I need ideas for cooking with less of it. Any recipes or seasoning blends that you could recommend?"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Pork tomahawk advice",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tjge3t/pork_tomahawk_advice/",
+        "published_at": "2026-05-21T10:28:35+00:00",
+        "summary": "[r/Cooking] by u/Better-Drink7963 | 2 points | 2 comments\n\nHey chefs! Looking for some ideas for a good summer-style glaze for a tomahawk steak. My plan is to sous vide it first and then finish it on the grill. I’ve been thinking about doing something with pomegranate or orange, but I’m not sure what would work best flavor-wise.\n\nWould you add orange (juice/peel/zest)directly into the sous vide bag, or save it for a glaze afterward? Also, if I make an orange glaze, would using orange zest end up being too bitter once it chars on the grill? I'm thinking zest isn’t the move, but what would then be the best way to get a fresh orange flavor into the glaze?\n\nOpen to any other flavor suggestions too!! Thanks!"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/KoreanFood",
+        "headline": "kalgucksu mandu 칼국수와 만두",
+        "source_url": "https://www.reddit.com/r/KoreanFood/comments/1tjfok0/kalgucksu_mandu_칼국수와_만두/",
+        "published_at": "2026-05-21T09:52:39+00:00",
+        "summary": "[r/KoreanFood] by u/MallOk9124 | 14 points | 0 comments\n\nyum yum\\~\\~"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/KoreanFood",
+        "headline": "Ordered some Samgyeopsal for supper",
+        "source_url": "https://www.reddit.com/r/KoreanFood/comments/1tjfmqf/ordered_some_samgyeopsal_for_supper/",
+        "published_at": "2026-05-21T09:49:52+00:00",
+        "summary": "[r/KoreanFood] by u/WHW01 | 54 points | 2 comments\n\nLink: https://i.redd.it/2fefknlvpg2h1.jpeg"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Best way to store & freeze leftover extra chicken?",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tjdjxg/best_way_to_store_freeze_leftover_extra_chicken/",
+        "published_at": "2026-05-21T07:54:18+00:00",
+        "summary": "[r/Cooking] by u/foodieloveyum | 2 points | 14 comments\n\nI bought lots of boneless, skinless chicken breasts because they were on sale.  Ate some.  Will use some for the rest of the week.  Still have lots of extra left to freeze and use later.  What's the best way to store & freeze chicken? and why?\n\n\n\n1.cook the chicken (boil, pan fry, air fry, grill, or which cooking method?), put into bag, and  into the freezer\n\nor\n\n2.don't cook the chicken, leave it raw, put into bag, and into the freezer"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Thin pancakes with melted Brie and sour pickles – genius or crime?",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tjcrb0/thin_pancakes_with_melted_brie_and_sour_pickles/",
+        "published_at": "2026-05-21T07:10:24+00:00",
+        "summary": "[r/Cooking] by u/DungeonSprout_ | 0 points | 21 comments\n\nMy German colleague’s favorite lunch: thin pancakes topped with melted Brie and chopped sour pickles. He says the creamy + tangy combo is perfect. I tried it… and I’m genuinely torn. Tastes better than it sounds, but still weird as hell. Has anyone else tried this? Is it a thing in Germany or is he the only one? Hot takes please 😂"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Protein supplement question",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tjbv3h/protein_supplement_question/",
+        "published_at": "2026-05-21T06:22:09+00:00",
+        "summary": "[r/Cooking] by u/Exciting_Spell5064 | 1 points | 7 comments\n\nLooking at starting to eat easy light breakfast things such as overnight oats. Would like to add some protein to it. I’m NOT going to the gym currently. What are some good vanilla and chocolate protein powders I can add? What should I be looking at? Preferably lower sugar as I have honey, real maple syrup, and agave syrup for sweetness. I’m an absolute novice to healthier eating and currently don’t eat breakfast as I don’t like cooking in the mornings. Coffee is an essential but the most effort I want which is why overnight oats is/are appealing since I can make it the night before, wake up, grab and eat."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Moving out, what should i get to fill up the fridge",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tjbtx3/moving_out_what_should_i_get_to_fill_up_the_fridge/",
+        "published_at": "2026-05-21T06:20:36+00:00",
+        "summary": "[r/Cooking] by u/Katekuriz | 0 points | 16 comments\n\nhaving a list of the essentials so we have everything we need in a fride. What is needs to have so i can always have something?"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "What recipes do you have for chicken drumsticks?",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tjbm4a/what_recipes_do_you_have_for_chicken_drumsticks/",
+        "published_at": "2026-05-21T06:09:13+00:00",
+        "summary": "[r/Cooking] by u/threeonelead2016 | 18 points | 36 comments\n\nDrumsticks are crazy cheap at the grocery store. How do you cook with them?\n\nIdeas are great but I'm more comfortable cooking with recipes so if you have even a rough bare bones one I'd appreciate it!"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/KoreanFood",
+        "headline": "Samgyetang, Dotorimuk, and Makgeolli",
+        "source_url": "https://www.reddit.com/r/KoreanFood/comments/1tjb9nu/samgyetang_dotorimuk_and_makgeolli/",
+        "published_at": "2026-05-21T05:51:22+00:00",
+        "summary": "[r/KoreanFood] by u/yooncodes | 87 points | 2 comments\n\nAn amazing combination!"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Vegetable Soup Secret Ingredient",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tjawar/vegetable_soup_secret_ingredient/",
+        "published_at": "2026-05-21T05:31:41+00:00",
+        "summary": "[r/Cooking] by u/Goal-Kick64 | 176 points | 480 comments\n\nWhat is one ingredient you swear by to take a vegetable soup to the next level? I am not talking specific vegetables but is it a particular herb or spice? Sauce? Anything?\n\nI find my soups are dull so looking for inspiration."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Cooking time conversion help... Or another recipe option...",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tjar4a/cooking_time_conversion_help_or_another_recipe/",
+        "published_at": "2026-05-21T05:24:11+00:00",
+        "summary": "[r/Cooking] by u/meganeh35 | 0 points | 8 comments\n\nHow do I convert the Instant Pot directions to stove top or slow cooker cooking time??\n\nWhen I first saw this recipe it didn't mention it being an Instant Pot recipe (I don't have one)... What would be my cook time when trying to convert to 1 of the other 2??  And do I need to adjust any of the measurements of certain ingredients??  \n\nI wish I'd known that this before buying the ingredients like the heavy cream and such.  Unless someone else knows a different recipe somewhere that uses Sweet Baby Ray's Garlic Parmesan marinade and heavy cream??  \n\nI already have the chicken, marinade, heavy cream, broccoli, pasta, etc... But I am open to another chicken recipe using this marinade and heavy cream... I would think a cooking subreddit would allow pics... Guess I'll cut/paste the ingredients and cooking instructions below... \n\nThe recipe in the image is for Instant Pot Chicken Broccoli Ziti with Creamy Garlic Parmesan Sauce. It is designed to be a quick easy one-pot meal that serves 4 to 6\n\npeople.\n\n\\* Sweet Baby Ray's\n\nIngredients\n\n• 1 pound chicken breast, diced\n\n• 16 oz. ziti pasta\n\n‣ 3 cups broccoli florets, cut into bite-sized pieces\n\n• 3 cups chicken broth\n\n• 1 cup Sweet Baby Ray's Garlic Parmesar Sauce\n\n. 1 cup heavy cream\n\n• 2 tablespoons extra-virgin olive oi\n\n• 2 tablespoons Parmesan cheese grated\n\nDirections\n1. Prep & Sauté: (Optional step often used ta brown chicken) Heat the olive oil in the Instant Pot and sauté the diced chicken until golden\n\n2. Pressure Cook: Add the chicken broth, pasta and broccoli to the pot. Stir to combine.\n\n3. Seal & Cook: Close and lock the lid. Turn the vent to the sealing position. Select the manual or pressure cook button and set the timer for 5 minutes.\n\n4. Release: Once the cooking time is finished perform a quick release of the pressure.\n\n5. Finish & Serve: Open the lid and stir in the heavy cream and Sweet Baby Ray's Garlic Parmesan Sauce. Sprinkle with grated Parmesan before serving. S"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "I always thought of carrots as uninteresting and as an afterthought to be used with other vegetables but then I had gajar ka halwa, an Indian dessert (called carrot pudding) and it became my favourite desert. What one dish is your favourite where a vegetable is star ingredient.",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tjaon9/i_always_thought_of_carrots_as_uninteresting_and/",
+        "published_at": "2026-05-21T05:20:44+00:00",
+        "summary": "[r/Cooking] by u/West_Future326 | 22 points | 45 comments"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Wondering what to do with round sandwich size naan bread (besides the obvious)",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tjahac/wondering_what_to_do_with_round_sandwich_size/",
+        "published_at": "2026-05-21T05:10:37+00:00",
+        "summary": "[r/Cooking] by u/Emotional_Yam1393 | 7 points | 14 comments\n\nBasically what the title says! Kinda went into a huge state while shopping and had a package of naan bread in the bags alongside some pepperoni, salami, Italian dressing, and some parmesan cheese. Ideally, I'm looking for suggestions for what to do with the naan bread besides sandwiches (tho i wouldn't mind some suggestions for that either!)"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/KoreanFood",
+        "headline": "Korean Dakbal ( Chicken Feet )",
+        "source_url": "https://www.reddit.com/r/KoreanFood/comments/1tjaewc/korean_dakbal_chicken_feet/",
+        "published_at": "2026-05-21T05:07:07+00:00",
+        "summary": "[r/KoreanFood] by u/Aesang02 | 26 points | 4 comments\n\nThis is probably one of my favorite things to make! Has a nice mild hint of spice and sweetness, thanks to the gochujang. If only I had some soju, it’d be even more perfect 😌"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/KoreanFood",
+        "headline": "Kogi Korean BBQ",
+        "source_url": "https://www.reddit.com/r/KoreanFood/comments/1tja88b/kogi_korean_bbq/",
+        "published_at": "2026-05-21T04:57:56+00:00",
+        "summary": "[r/KoreanFood] by u/Impossible-Skirt4299 | 3 points | 2 comments\n\nHi friends! Does any current/past employees of Kogi’s AYCE Korean Bbq in Las Vegas or even customers know the recipe to the “Kogi Sauce”? I know it just says brisket sauce but I’m dying to know measurements etc. Thank you guys for your help!"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/KoreanFood",
+        "headline": "Egg Toast (Incheon Songdo Toast)",
+        "source_url": "https://www.reddit.com/r/KoreanFood/comments/1tj99eh/egg_toast_incheon_songdo_toast/",
+        "published_at": "2026-05-21T04:09:50+00:00",
+        "summary": "[r/KoreanFood] by u/QuickVillage1356 | 24 points | 0 comments\n\nLink: https://i.redd.it/zb2ytid31f2h1.jpeg"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/KoreanFood",
+        "headline": "Bokkeumbap",
+        "source_url": "https://www.reddit.com/r/KoreanFood/comments/1tj98h9/bokkeumbap/",
+        "published_at": "2026-05-21T04:08:39+00:00",
+        "summary": "[r/KoreanFood] by u/Significant-Flan827 | 0 points | 1 comments\n\nhttps://preview.redd.it/sglg1zzr0f2h1.jpg?width=3024&format=pjpg&auto=webp&s=53450526863f94645798f6f4b843bc76aad8a877"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/KoreanFood",
+        "headline": "Mul Naengmyeon",
+        "source_url": "https://www.reddit.com/r/KoreanFood/comments/1tj961y/mul_naengmyeon/",
+        "published_at": "2026-05-21T04:05:30+00:00",
+        "summary": "[r/KoreanFood] by u/Puzzleheaded_Act_131 | 94 points | 11 comments\n\nJust right to send the day off into the sunset."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "FDA investigating new Salmonella outbreak",
+        "source_url": "https://www.foodsafetynews.com/2026/05/fda-investigating-new-salmonella-outbreak-2/",
+        "published_at": "2026-05-21T04:05:26+00:00",
+        "summary": "In other outbreak news, the agency has initiated a foreign inspection in relation to an outbreak traced to cantaloupe"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "USDA move to decommission Beltsville Research Center sparks food safety and legal concerns",
+        "source_url": "https://www.foodsafetynews.com/2026/05/usda-move-to-decommission-beltsville-research-center-sparks-food-safety-and-legal-concerns/",
+        "published_at": "2026-05-21T04:04:23+00:00",
+        "summary": "<p>The USDA’s plan to decommission the Beltsville Agricultural Research Center (BARC) and disperse its research units, including the Environmental Microbial and Food Safety Laboratory (EMFSL), is drawing criticism from scientists, food safety advocates, and Maryland lawmakers who say the move could disrupt critical food safety research and violate</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "HUS cases hit new low in Argentina",
+        "source_url": "https://www.foodsafetynews.com/2026/05/hus-cases-hit-new-low-in-argentina/",
+        "published_at": "2026-05-21T04:03:21+00:00",
+        "summary": "Title: HUS cases hit new low in Argentina\n\nURL Source: https://www.foodsafetynews.com/2026/05/hus-cases-hit-new-low-in-argentina/\n\nPublished Time: 2026-05-21T04:03:21.000Z\n\nMarkdown Content:\nFour deaths and 209 cases were recorded in 2025\n\n![Image 1: HUS cases hit new low in Argentina](https://storage.ghost.io/c/43/4e/434e508a-5e2f-4102-a53d-00bca10bb4bf/content/images/size/w30/2026/05/dreamstime_e--coli-hus-stec-pathogen-germ-bacteria.png)\n\nPublished:May 21, 2026, 12:03 am\n\nFigures from Argentina show a decline in cases of a serious condition that can develop during E. coli infections.\n\nHemolytic Uremic Syndrome (HUS) is a notifiable condition in the country. HUS is a severe complication associated with E. coli infections that causes kidney failure and sometimes death. An analysis was performed on data in the National Surveillance System from notifications between Jan. 1, 2015, and Dec. 31, 2025.\n\n[![Image 2](https://assets.context.ly/thumbnails/food_safety_newsghostio/29325330/600x315.png)](https://www.foodsafetynews.com/2024/03/hus-cases-decline-in-argentina-but-still-pose-a-deadly-problem/ \"HUS cases decline in Argentina but still pose a deadly problem\")\n\n[![Image 3](https://assets.context.ly/thumbnails/food_safety_newsghostio/29324675/600x315.png)](https://www.foodsafetynews.com/2024/08/italy-records-almost-70-hus-cases-in-12-months/ \"Italy records almost 70 HUS cases in 12 months\")\n\n[![Image 4](https://assets.context.ly/thumbnails/food_safety_newsghostio/29323027/600x315.png)](https://www.foodsafetynews.com/2025/08/italy-reports-61-hus-cases-in-12-months/ \"Italy reports 61 HUS cases in 12 months\")\n\n[![Image 5](https://assets.context.ly/thumbnails/food_safety_newsghostio/29327820/600x315.png)](https://www.foodsafetynews.com/2022/10/france-reports-fewest-hus-cases-since-2017/ \"France reports fewest HUS cases since 2017\")\n\n[![Image 6](https://assets.context.ly/thumbnails/food_safety_newsghostio/29323770/600x315.png)](https://www.foodsafetynews.com/2025/03/italy-r"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "IFC guide aims to help with food safety assessment",
+        "source_url": "https://www.foodsafetynews.com/2026/05/ifc-guide-aims-to-help-with-food-safety-assessment/",
+        "published_at": "2026-05-21T04:01:49+00:00",
+        "summary": "<p>The International Finance Corporation (IFC) has produced a guide to support the analysis of four aspects of national food systems, including food safety.</p><p>The <a href=\"https://www.ifc.org/content/dam/ifc/doc/mgrt/fs-scan-guide-final.pdf?ref=foodsafetynews.com\" rel=\"noreferrer\">Scan Guide</a> covers food safety, food fortification, food loss and waste, and livestock production (animal welfare and use of antibiotics). It provides a list of assessment</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "License for Canadian ice cream company suspended because of food safety violations",
+        "source_url": "https://www.foodsafetynews.com/2026/05/license-for-canadian-ice-cream-company-suspended-because-of-food-safety-violations/",
+        "published_at": "2026-05-21T04:00:31+00:00",
+        "summary": "<p>The Canadian Food Inspection Agency has suspended the license of a Quebec frozen dessert company because of violations of food safety laws.</p><p>The agency’s move against Abe’s Frozen Desserts Inc. will remain in effect until the company can demonstrate that it has come into compliance with</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/KoreanFood",
+        "headline": "Korean Dakgalbi",
+        "source_url": "https://www.reddit.com/r/KoreanFood/comments/1tj8xew/korean_dakgalbi/",
+        "published_at": "2026-05-21T03:54:52+00:00",
+        "summary": "[r/KoreanFood] by u/Over-Standard5882 | 4 points | 0 comments\n\nhttps://preview.redd.it/4jyj3edeye2h1.jpg?width=3024&format=pjpg&auto=webp&s=ef623f63861b874e40a99c7afa04ca2b4757f4b2\n\nlove it 🐔💞"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/foodsafety",
+        "headline": "vacuum sealed steak thawed in fridge still safe to eat today?",
+        "source_url": "https://www.reddit.com/r/foodsafety/comments/1tj8cgm/vacuum_sealed_steak_thawed_in_fridge_still_safe/",
+        "published_at": "2026-05-21T03:27:23+00:00",
+        "summary": "[r/foodsafety] by u/No_Reality_8145 | 0 points | 1 comments\n\ni have a vacuum sealed steak that was taken out of the freezer not yester but the day before so today is the third day. It's been thawed in its vacuum sealed package in the fridge. Is it safe to eat? Just asking bc of how long its been thawed out IN the vacuum seal. Thank you!"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/KoreanFood",
+        "headline": "Today, regular pork cutlet🍽️",
+        "source_url": "https://www.reddit.com/r/KoreanFood/comments/1tj83g0/today_regular_pork_cutlet/",
+        "published_at": "2026-05-21T03:16:28+00:00",
+        "summary": "[r/KoreanFood] by u/Just_Ganache_6157 | 48 points | 0 comments\n\nI had the spicy version last time, but today I went with the regular pork cutlet. The regular one is really good too!"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Help with boiled eggs",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tj7zz2/help_with_boiled_eggs/",
+        "published_at": "2026-05-21T03:12:16+00:00",
+        "summary": "[r/Cooking] by u/Dominant_Peanut | 0 points | 18 comments\n\nI am having the most infuriating issue with eggs recently.  I adapted a couple different methods to try to get eggs that were cooked exactly how i wanted them and easy to peel.  The method/ recipe is: pot of water with enough to cover the eggs+ 1/4 inch, salt, splash of vinegar.  Bring water to a rolling boil. Gently crack the fat side of the eggs, put in the water (again, gently), and boil. 6-6 1/2 min for soft-boiled, 7-7 1/2 for jammy yolks, 8+ for hard- boiled. Then scoop them out and into an ice bath. \n\nThis worked for ages, damn near perfectly. Which is great, cause my kid HATES cooked yolk. Runny is best, jammy is acceptable, fully cooked is gross. \n\nThe last few weeks this method has stopped working. Recipe hasn't changed, same pot, buying eggs from the same place, but all of a sudden the eggs are insane. \n\nThe eggs aren't coming out the way i expect, but even weirder, I'll have a single batch with eggs coming out differently.  For example, I cooked four eggs last night.  Two came out soft-boiled. One came out jammy, almost fully cooked.  And the last one came out with the middle of the yolk liquid, a jammy layer, and the edge of the yolk fully cooked.  From a single pot!\n\nI had one last week come out with the yolk fully cooked, but some of the white was still raw. Like straight up liquid.   HOW DOES THAT EVEN HAPPEN?!\n\nThe only thing I've changed recently is how i was cracking the eggs.  I used to smack the bottom on a cutting board just hard enough to crack, but sometimes they'd leak in the pot.  I changed to using a knife to crack them instead, which stopped the leaking, but I'm hard-pressed to believe that alone could cause my eggs to cook differently when they're all in one pot.  Can anyone help explain what the heck is going on?  At this point I'm suspecting a space-time anomaly in my stovetop."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Give me your best hummus recipes please!",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tj77wm/give_me_your_best_hummus_recipes_please/",
+        "published_at": "2026-05-21T02:37:41+00:00",
+        "summary": "[r/Cooking] by u/T_makesthings | 8 points | 24 comments\n\nWhenever I make hummus (which I prefer to do, because I tend to eat a lot of it), it always turns out dense and heavy, and I either stay classic or go with roasted garlic. I also tend to go a little heavy-handed on the tahini. So, looking for your best recipes for hummus that is light in texture, and super flavourful. Preferably some that would rival really good restaurant hummus. What are your secrets?!"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Recipe suggestions",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tj70zy/recipe_suggestions/",
+        "published_at": "2026-05-21T02:29:04+00:00",
+        "summary": "[r/Cooking] by u/theal3xorcist | 0 points | 7 comments\n\nI was gifted a huge produce box and I need some recipes please! \n\nI have Swiss chard, kale, mixed lettuce, asparagus, leeks, golden and striped beets, mixed carrots, ice carrots, some squash blossoms, and finally yellow zucchini. \n\nI’d anyone has some suggestions especially for the first 3 listed that would be much appreciated! \n\nTIA"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Obsessed with chia seed pudding",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tj70qw/obsessed_with_chia_seed_pudding/",
+        "published_at": "2026-05-21T02:28:46+00:00",
+        "summary": "[r/Cooking] by u/MilleForze | 0 points | 6 comments\n\nAnyone else? Right now my favorite flavor is chocolate with tumeric. I've also made matcha-vanilla, and pumpkin."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "I tried to making shrimp fried rice but completely messed up",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tj6j77/i_tried_to_making_shrimp_fried_rice_but/",
+        "published_at": "2026-05-21T02:07:40+00:00",
+        "summary": "[r/Cooking] by u/ocean_breeze_luluca | 0 points | 18 comments\n\n1. First I didn't have time because I went straight from cooling it to trying to fry it(I was on a time limit)\n\n2. Them I think I put too much egg there\n\n3. It was still wet kinda to\n\nAny advice I want to try again"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Microgreens being recalled in Canada because of E. coli",
+        "source_url": "https://www.foodsafetynews.com/2026/05/microgreens-being-recalled-in-canada-because-of-e-coli/",
+        "published_at": "2026-05-21T01:52:15+00:00",
+        "summary": "<p>Micro Verdure brand microgreens are being recalled in Canada because of pathogenic E. coli.</p><p>This recall was triggered by the company, according to the Canadian Food Inspection Agency. The recalled products were distributed in Quebec.</p><p>There have been no reported illnesses associated with the consumption of these&</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Just came back from a vacation in Hawaii and had they best kimchi of my life. I want to recreate it or something similar",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tj6551/just_came_back_from_a_vacation_in_hawaii_and_had/",
+        "published_at": "2026-05-21T01:51:00+00:00",
+        "summary": "[r/Cooking] by u/LazerChicken420 | 3 points | 5 comments\n\nIt was at Ohana Karaoke Grill & Bar. It’s probably not a traditional Korean recipe since that’s supposed to be fermented, I think\n\nThis was fresh. Every bite tastes so good. Not too spicy, if at all\n\nPlease help me out here. Is there like a Hawaiian kimchi style that they were probably doing? I called and asked and they make it in house and… no they won’t share the recipe. Which is totally fair.\n\nI just usually don’t like kimchi that much and here I loved it."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "Do you mash or chop the yolks for egg salad?",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tj5gcw/do_you_mash_or_chop_the_yolks_for_egg_salad/",
+        "published_at": "2026-05-21T01:20:54+00:00",
+        "summary": "[r/Cooking] by u/JeffNovotny | 1 points | 34 comments\n\nJust asking what people think about this. I mash mine; it tastes more like deviled eggs."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/foodsafety",
+        "headline": "How come I can take food out from home in morning and eat lunch with no problems?",
+        "source_url": "https://www.reddit.com/r/foodsafety/comments/1tj58b8/how_come_i_can_take_food_out_from_home_in_morning/",
+        "published_at": "2026-05-21T01:11:08+00:00",
+        "summary": "[r/foodsafety] by u/typeshhhhhh | 0 points | 8 comments\n\nPeople say you can’t take meat out for more than a few hours before it goes bad but for example:\n\nI have a BBQ\n\nCooked chicken, beef ribs, vegetables.\n\nIt’s in my fridge at home. I leave at 8am with it in a lunch bag not insulated/cold. Eat around 12-1pm and it’s fine. It’s not sitting in a fridge either. Am I missing something?\n\nEdit: it makes me think of all the food I see in places like south east Asia or Latin America, not just the street food as that’s often continuously heated but lots of food is sitting in warm enviroments outside"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/Cooking",
+        "headline": "How long is pre cooked frozen shrimp good for once thawed?",
+        "source_url": "https://www.reddit.com/r/Cooking/comments/1tj56r6/how_long_is_pre_cooked_frozen_shrimp_good_for/",
+        "published_at": "2026-05-21T01:09:15+00:00",
+        "summary": "[r/Cooking] by u/pringlydingly | 0 points | 5 comments\n\nHey everyone,\n\nI had a bag of cooked frozen jumbo shrimp that I took out of the freezer and placed into the fridge to thaw at 6 AM on monday. I ended up not being home for dinner until today, and am trying to see if it's still good to cook. I opened the bag and it smelled lightly of the sea/salt, no obvious ammonia smell. Shrimp otherwise looked and felt fine. I'm camping this weekend and want to make sure I don't eat bad shrimp and get myself sick.\n\nInternet had different recommendations, so I'd appreciate any guidance or advice!"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식약처 보도자료",
+        "headline": "[보도참고] 식약처, 여름철 달걀 조리식품 살모넬라 식중독 주의 당부",
+        "source_url": "/portal/board/boardDetail.do?bbs_no=bbs080&ntctxt_no=50005&menu_no=2857",
+        "published_at": "2026-05-21T00:00:00+00:00",
+        "summary": "<p>[보도참고] 식약처, 여름철 달걀 조리식품 살모넬라 식중독 주의 당부</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/KoreanFood",
+        "headline": "Korean Jangteo-gukbap",
+        "source_url": "https://www.reddit.com/r/KoreanFood/comments/1tj37zi/korean_jangteogukbap/",
+        "published_at": "2026-05-20T23:45:25+00:00",
+        "summary": "[r/KoreanFood] by u/godok_drinker | 613 points | 70 comments\n\nSpicy beef and vegetable soup served with rice."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/KoreanFood",
+        "headline": "Homemade Japchae",
+        "source_url": "https://www.reddit.com/r/KoreanFood/comments/1tj08m0/homemade_japchae/",
+        "published_at": "2026-05-20T21:49:10+00:00",
+        "summary": "[r/KoreanFood] by u/djlinda | 38 points | 2 comments\n\nUsed Lam Lam’s recipe on ATK, loved it!"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/KoreanFood",
+        "headline": "Plain Soups?",
+        "source_url": "https://www.reddit.com/r/KoreanFood/comments/1tizgsk/plain_soups/",
+        "published_at": "2026-05-20T21:20:34+00:00",
+        "summary": "[r/KoreanFood] by u/Acrobatic-Day-8891 | 1 points | 16 comments\n\nI just got out of the hospital with a pancreas infection and am on a liquid diet, meaning that I can have foods a somewhat thick consistency (think yogurt) but nothing with any kind of chunks (meat, veggie, rice, otherwise). I also need to avoid fatty foods and fiber. I am getting very sick of sweet food! Are there any Korean soups that are relatively bland that I could strain into plain broth to drink? I have plenty of good Korean restaurants near me, just not sure what to ask for."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/foodsafety",
+        "headline": "Question",
+        "source_url": "https://www.reddit.com/r/foodsafety/comments/1tizdt3/question/",
+        "published_at": "2026-05-20T21:17:46+00:00",
+        "summary": "[r/foodsafety] by u/PositiveCucumber6345 | 0 points | 5 comments\n\nSaw that slime stuff as I was eating my sandwich is it safe to consume?"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/KoreanFood",
+        "headline": "Just made on of my favorite banchan",
+        "source_url": "https://www.reddit.com/r/KoreanFood/comments/1tixakb/just_made_on_of_my_favorite_banchan/",
+        "published_at": "2026-05-20T20:06:26+00:00",
+        "summary": "[r/KoreanFood] by u/boolpies | 45 points | 4 comments\n\nLove Korean soy potato so much so savory and sweet and an amazing texture from the potato 😍"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/KoreanFood",
+        "headline": "help - coffee/barista workshop",
+        "source_url": "https://www.reddit.com/r/KoreanFood/comments/1tiwmoa/help_coffeebarista_workshop/",
+        "published_at": "2026-05-20T19:43:20+00:00",
+        "summary": "[r/KoreanFood] by u/y9doong | 0 points | 0 comments\n\nLink: /r/seoul/comments/1tiwm9h/help_coffeebarista_workshop/"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/foodsafety",
+        "headline": "has this spring mix gone bad?",
+        "source_url": "https://www.reddit.com/r/foodsafety/comments/1tiwmi2/has_this_spring_mix_gone_bad/",
+        "published_at": "2026-05-20T19:43:10+00:00",
+        "summary": "[r/foodsafety] by u/Ok_Green420 | 0 points | 0 comments\n\nit has 2 more days according to the date but I’m suspicious of all the moisture in there."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/foodsafety",
+        "headline": "Is this tea pot safe to use?",
+        "source_url": "https://www.reddit.com/r/foodsafety/comments/1tiwgkb/is_this_tea_pot_safe_to_use/",
+        "published_at": "2026-05-20T19:37:31+00:00",
+        "summary": "[r/foodsafety] by u/steelfeathered | 2 points | 2 comments\n\nMy main concern is the clear scratching of the glaze from the lid. Though I am concerned if it’s also oven top safe? Is there a way to go about testing the glaze to see if it’s food and heat safe?"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/foodsafety",
+        "headline": "What’s the prognosis here - ground beef burger",
+        "source_url": "https://www.reddit.com/r/foodsafety/comments/1tiv485/whats_the_prognosis_here_ground_beef_burger/",
+        "published_at": "2026-05-20T18:52:36+00:00",
+        "summary": "[r/foodsafety] by u/ExpertAd3229 | 0 points | 12 comments\n\nPost locked - plz message if you have advice!! \n\nCooked yesterday on grill by a friend, internal temperature was never checked. Sat on counter for 30-40 minutes before going in fridge.\n\nI packed for my lunch today and reheated in microwave.\n\nIt wasn’t until I had already eaten most of it that I looked down and noticed how pink it was… convinced myself it was fine and kept eating.\n\nShowed these photos to coworkers who said I should not have eaten.\n\nWhat to expect? Likelihood this doesn’t end well for my stomach or toilet? Hahaha\n\nI love this weekend and have the busiest work week ever.\n\nAnything I can do now?"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/foodsafety",
+        "headline": "Left Chick Fil A (mac cheese, fries, nuggets) in warm/hot car for 20-30 minutes. Is it safe?",
+        "source_url": "https://www.reddit.com/r/foodsafety/comments/1tiuxho/left_chick_fil_a_mac_cheese_fries_nuggets_in/",
+        "published_at": "2026-05-20T18:46:06+00:00",
+        "summary": "[r/foodsafety] by u/Reese-Dante25 | 0 points | 5 comments\n\nHi all! I picked up some Chick Fil A for me and my kids (age 1 and 3).Food items were Mac and Cheese, nuggets, and fries. Ran into Costco on the way home and ended up inside for about 25-30 minutes. Thought I left food in the car with AC running but it seems like the AC cut out while I was inside. Turned on AC on blast immediately upon returning to car and we all ate the the food as soon as we got home, which was a total of about 1.5 hours after we picked it up from the resteraunt. At first I thought the food is definitely ok since it was less than 2 hours after getting it but now with the hot car excursion im not so sure. It is about 85-90 F outside, not sure exactly how warm the car got while I was gone. Felt warm but not super hot when we returned. \n\nThoughts? Was this likely ok or no? 😆"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/KoreanFood",
+        "headline": "냉면 Naengmyeon noodles",
+        "source_url": "https://www.reddit.com/r/KoreanFood/comments/1tirrwp/냉면_naengmyeon_noodles/",
+        "published_at": "2026-05-20T16:59:42+00:00",
+        "summary": "[r/KoreanFood] by u/LanysLirana | 5 points | 39 comments\n\nI went to H Mart yesterday and accidentally bought **just the broth** for naengmyeon. 🤦🏻‍♀️ Hmart isn't super close to me (30-40 mins depending on traffic), so I'm wondering if anyone knows of a good noodle I can order online? When I tried looking on Amazon I could only find the packs that come with noodles and broth. I have somen (소면), which I'm sure will work if I get desperate, but I'd rather have the correct noodles. Thanks for helping me in my moment of brain fog."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/foodsafety",
+        "headline": "Should I wash this lettuce?",
+        "source_url": "https://www.reddit.com/r/foodsafety/comments/1tiresf/should_i_wash_this_lettuce/",
+        "published_at": "2026-05-20T16:47:05+00:00",
+        "summary": "[r/foodsafety] by u/AIolanMarowak | 1 points | 5 comments\n\nWas sitting at my counter eating lettuce from this container when a thought occurred to me: is lettuce clean? According to google, lettuce is generally not considered clean when purchased, and it’s best to wash and dry all lettuce in a salad spinner, even prepackaged “triple washed” lettuce. Is this really necessary, and if so, why?\n\nLooking back at the container in front of me I can see that it clearly states “no need to wash” on the front, but now I’m not so sure. I found a small fly in this lettuce the other day, which isn’t unheard of but still it got me thinking, maybe I should’ve been washing it this whole time?"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/KoreanFood",
+        "headline": "Soju time",
+        "source_url": "https://www.reddit.com/r/KoreanFood/comments/1tiqdpv/soju_time/",
+        "published_at": "2026-05-20T16:12:20+00:00",
+        "summary": "[r/KoreanFood] by u/EZ_Choi | 130 points | 2 comments"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/foodsafety",
+        "headline": "Is this safe to eat?",
+        "source_url": "https://www.reddit.com/r/foodsafety/comments/1tiqaaa/is_this_safe_to_eat/",
+        "published_at": "2026-05-20T16:09:08+00:00",
+        "summary": "[r/foodsafety] by u/Rarehunter333 | 2 points | 3 comments\n\nHi I’m new here. My family member was gifted a ham since this person works at a food bank.\n\nI’m being instructed to cook it but I notice the ham looks weird. I’m not sure though since I don’t eat meat, so I’m not used to what it should normally look like.\n\nSome parts had meat juice inside and a little slimy in other areas.\n\nAlso the ham was refrigerated and sealed the entire time but it’s past its use by date of 7 days. Plus this product says there’s no preservatives.\n\nI really have no idea about this situation. Please advise. They want to feed the dogs some of this as well."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/KoreanFood",
+        "headline": "Bibim naengmyeon",
+        "source_url": "https://www.reddit.com/r/KoreanFood/comments/1tipvzz/bibim_naengmyeon/",
+        "published_at": "2026-05-20T15:55:48+00:00",
+        "summary": "[r/KoreanFood] by u/kuposempai | 158 points | 3 comments\n\nSuper hot in Jersey, a whooping 95F degree, 35C. My siblings, and my little sister’s bf all went to get some cold noodle dishes. Truly hits the spot."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "Ferrero to revive Wonka candy brand with Netflix",
+        "source_url": "https://www.fooddive.com/news/ferrero-netflix-wonka-candy-collaboration/820721/",
+        "published_at": "2026-05-20T14:47:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/QHa2iKDHo_stIAmvJ7-ZNB24onrDIsmOVBarnvN5COo/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9GZXJyZXJvX0dyb3VwX3VudmVpbHNfbmV3X1dvbmthLmpwZw==.webp\" /></div></figure><p>The candy giant is collaborating with the streaming platform on 10 seasonal and limited-edition products this fall, spanning categories including chocolate, cereal and ice cream.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/KoreanFood",
+        "headline": "What kind of Korean food products do you want to see in grocery stores?",
+        "source_url": "https://www.reddit.com/r/KoreanFood/comments/1tinjnl/what_kind_of_korean_food_products_do_you_want_to/",
+        "published_at": "2026-05-20T14:34:07+00:00",
+        "summary": "[r/KoreanFood] by u/Kind_Jellyfish | 30 points | 47 comments\n\nI work with different farms in Korea to import natural, traditionally made Korean jangs under our own brand. We're in about 200 independent retailers and interested in pursuing larger grocery stores but I've learned that not everyone is willing to pay more for premium jangs. Curious if you'd pay extra for jangs without preservatives + added sugar? If not, what kinds of Korean food products are you not seeing at your local grocery store that would be exciting or make life easier?"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "Independent grocers make up nearly 40% of US food retail sales, report says",
+        "source_url": "https://www.fooddive.com/news/nga-national-grocers-association-economic-impact-analysis-independent-grocers/820247/",
+        "published_at": "2026-05-20T14:14:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/cG912JD40pLKqNjSby67D3ffrPvAgLmLL-XLmLbskok/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS93b21hbl93X3Byb2R1Y2UuanBn.webp\" /></div></figure><p>An NGA analysis found that every $1 in indie grocery sales generates an additional 58 cents in supply chain and household spending nationwide.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/foodsafety",
+        "headline": "Is my pineapple moldy?",
+        "source_url": "https://www.reddit.com/r/foodsafety/comments/1tilx5o/is_my_pineapple_moldy/",
+        "published_at": "2026-05-20T13:35:23+00:00",
+        "summary": "[r/foodsafety] by u/PaleOrchid23 | 0 points | 4 comments\n\ndoes this look like mold on the prickly things? it just got ripe today. and if it is why does this happen to every pineapple i get from walmart. it always molds from the bottom up. or whatever that is. the mold was on the bottom before it even got ripe."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "Once Upon a Farm soars as parents seek healthier kids’ foods despite inflation",
+        "source_url": "https://www.fooddive.com/news/once-upon-a-farm-soars-as-parents-seek-healthier-kids-foods-despite-inflat/819748/",
+        "published_at": "2026-05-20T13:30:00+00:00",
+        "summary": "<p>John Foraker, the company’s CEO and co-founder, said consumer demand for better-for-you offerings remains robust even as rising prices prompt shoppers to cut back on spending in other areas.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/foodsafety",
+        "headline": "Is this smoked salmon safe to eat?",
+        "source_url": "https://www.reddit.com/r/foodsafety/comments/1tijyz3/is_this_smoked_salmon_safe_to_eat/",
+        "published_at": "2026-05-20T12:19:27+00:00",
+        "summary": "[r/foodsafety] by u/OiseauAquario | 2 points | 4 comments\n\nAre those white spots bacterial colony? Unopened smoke salmon expiring next week."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/KoreanFood",
+        "headline": "Which burger chain fits Korean tastes the best?",
+        "source_url": "https://www.reddit.com/r/KoreanFood/comments/1tijrn7/which_burger_chain_fits_korean_tastes_the_best/",
+        "published_at": "2026-05-20T12:10:50+00:00",
+        "summary": "[r/KoreanFood] by u/CaregiverAble1275 | 0 points | 20 comments\n\nHave you tried Lotteria?"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/foodsafety",
+        "headline": "Dent to worry about?",
+        "source_url": "https://www.reddit.com/r/foodsafety/comments/1tig7l0/dent_to_worry_about/",
+        "published_at": "2026-05-20T09:14:39+00:00",
+        "summary": "[r/foodsafety] by u/therealslimkaty_ | 1 points | 5 comments\n\nI only noticed this on the bottom of canned tomatoes after I poured it into my dish. Is this a dent to worry about or considered unsafe, considering the location? The smell is almost metallic/acidic, but I can’t tell if it’s the fact that it’s tomatoes or due to bacteria from the dent"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "r/KoreanFood",
+        "headline": "a plate of assorted sashimi 대방어 모듬회",
+        "source_url": "https://www.reddit.com/r/KoreanFood/comments/1tifjuh/a_plate_of_assorted_sashimi_대방어_모듬회/",
+        "published_at": "2026-05-20T08:37:09+00:00",
+        "summary": "[r/KoreanFood] by u/MallOk9124 | 68 points | 6 comments\n\nyum yum\\~\\~"
+      }
+    }
+  ],
+  "ontology": {
+    "repo": "FoodRadar",
+    "category": "food",
+    "ontology_version": "0.1.0",
+    "event_model_ids": [
+      "food.complaint_signal",
+      "food.editorial_coverage",
+      "food.enforcement_action",
+      "food.official_notice",
+      "food.recall_status_change"
+    ],
+    "event_model_mappings": {
+      "recall_status_change": "food.recall_status_change",
+      "enforcement_action": "food.enforcement_action",
+      "complaint_signal": "food.complaint_signal",
+      "official_notice": "food.official_notice",
+      "editorial_coverage": "food.editorial_coverage"
+    },
+    "entity_type_hints": [
+      "food.food_type",
+      "food.brand",
+      "food.product",
+      "food.manufacturer",
+      "food.safety_issue",
+      "food.regulation"
+    ],
+    "source_role_ids": [
+      "community_signal",
+      "context_only",
+      "official_context",
+      "primary_evidence"
+    ],
+    "source_role_mappings": {
+      "식품안전나라 회수판매중지": "primary_evidence",
+      "식품안전나라 행정처분": "primary_evidence",
+      "식약처 보도자료": "official_context",
+      "식품안전 국내뉴스": "context_only",
+      "식품안전 해외뉴스": "context_only",
+      "Food Safety News": "context_only",
+      "Food Dive": "context_only",
+      "r/foodsafety": "community_signal",
+      "r/Cooking": "community_signal",
+      "r/nutrition": "community_signal",
+      "r/KoreanFood": "community_signal",
+      "r/ProductRecalls": "community_signal"
+    },
+    "evidence_policy_ids": [
+      "food.official_source_required_for_recall",
+      "food.community_signal_auxiliary_only",
+      "food.traceable_url_required"
+    ]
+  },
+  "quality_summary": {
+    "total_sources": 12,
+    "tracked_sources": 3,
+    "fresh_sources": 1,
+    "quiet_window_sources": 0,
+    "stale_sources": 1,
+    "missing_sources": 1,
+    "unknown_event_date_sources": 0,
+    "not_tracked_sources": 8,
+    "catalog_only_sources": 0,
+    "skipped_disabled_sources": 1,
+    "collection_error_count": 4,
+    "alias_candidate_count": 3,
+    "text_length_outlier_count": 3,
+    "title_length_outlier_count": 1,
+    "summary_length_outlier_count": 2,
+    "mapped_alias_candidate_count": 3,
+    "unmapped_alias_candidate_count": 0,
+    "product_alias_candidate_count": 0,
+    "brand_alias_candidate_count": 2,
+    "manufacturer_alias_candidate_count": 1,
+    "match_coverage_article_count": 180,
+    "match_coverage_matched_count": 177,
+    "match_coverage_unmatched_count": 3,
+    "match_coverage_rate": 98.3,
+    "match_coverage_review_item_count": 3,
+    "fresh_food_events": 3,
+    "stale_food_events": 27,
+    "undated_food_events": 0,
+    "unique_food_event_key_count": 30,
+    "recall_events_with_notice_date_count": 0,
+    "recall_events_with_status_count": 0,
+    "event_alias_trace_count": 0,
+    "complaint_auxiliary_only_events": 24,
+    "official_evidence_events": 6,
+    "recall_status_change_events": 0,
+    "enforcement_action_events": 6,
+    "complaint_signal_events": 24
+  },
+  "warnings": [
+    "collection errors detected: 4",
+    "freshness gaps detected: stale=1, missing=1"
+  ],
+  "quality_flagged_sources": [
+    {
+      "source": "식품안전나라 회수판매중지",
+      "source_type": "rss",
+      "enabled": true,
+      "tracked": true,
+      "event_model": "recall_status_change",
+      "freshness_sla_days": 3,
+      "quiet_window_days": 5,
+      "status": "missing",
+      "article_count": 0,
+      "latest_event_at": null,
+      "latest_collected_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_food_event_key": "",
+      "latest_notice_date": "",
+      "latest_recall_status": "",
+      "latest_release_date": "",
+      "latest_sanction_start_date": "",
+      "latest_sanction_end_date": "",
+      "latest_sanction_type": "",
+      "latest_product_name_raw": "",
+      "latest_manufacturer_name_raw": "",
+      "latest_alias_traces": [],
+      "verification_role": "",
+      "merge_policy": "",
+      "skip_reason": "",
+      "reenable_gate": "",
+      "errors": []
+    },
+    {
+      "source": "r/foodsafety",
+      "source_type": "reddit",
+      "enabled": true,
+      "tracked": true,
+      "event_model": "complaint_signal",
+      "freshness_sla_days": 3,
+      "quiet_window_days": null,
+      "status": "stale",
+      "article_count": 24,
+      "latest_event_at": "2026-05-22T00:48:57+00:00",
+      "latest_collected_at": "2026-05-22T01:05:45.246832+00:00",
+      "age_days": 5.26,
+      "latest_title": "Pretty positive I ate bread earlier today with little bits of mold on it. It was only visible from the crust, not on the bread itself. Will I be fine?",
+      "latest_url": "https://www.reddit.com/r/foodsafety/comments/1tk3f49/pretty_positive_i_ate_bread_earlier_today_with",
+      "latest_food_event_key": "complaint-signal:us:r-foodsafety:2026-05-22:bread:mold:https-www-reddit-com-r-foodsafety-comments-1tk3f49-pretty-positive-i-ate-bread-earlier-today-with",
+      "latest_notice_date": "",
+      "latest_recall_status": "",
+      "latest_release_date": "",
+      "latest_sanction_start_date": "",
+      "latest_sanction_end_date": "",
+      "latest_sanction_type": "",
+      "latest_product_name_raw": "",
+      "latest_manufacturer_name_raw": "",
+      "latest_alias_traces": [],
+      "verification_role": "auxiliary_complaint_signal",
+      "merge_policy": "do_not_merge_with_official_notice",
+      "skip_reason": "",
+      "reenable_gate": "",
+      "errors": [
+        "r/foodsafety: Source disabled (crawl health threshold reached)"
+      ]
+    }
+  ],
+  "quality_alias_candidates": [
+    {
+      "alias_type": "brand",
+      "canonical": "Kraft Heinz",
+      "normalized": "kraftheinz",
+      "variants": [
+        "kraft heinz"
+      ],
+      "count": 2,
+      "example_urls": [
+        "https://www.fooddive.com/news/kraft-heinz-jello-natural-colors-artificial-dyes/820864",
+        "https://www.fooddive.com/news/oscar-mayers-wienermobile-race-returns-with-bolder-media-blitz/820973"
+      ]
+    },
+    {
+      "alias_type": "brand",
+      "canonical": "농심",
+      "normalized": "농심",
+      "variants": [
+        "nongshim"
+      ],
+      "count": 1,
+      "example_urls": [
+        "https://www.reddit.com/r/KoreanFood/comments/1tjtm6b/korean_exchange_student_memories_my_favorite"
+      ]
+    },
+    {
+      "alias_type": "manufacturer",
+      "canonical": "농심",
+      "normalized": "농심",
+      "variants": [
+        "nongshim"
+      ],
+      "count": 1,
+      "example_urls": [
+        "https://www.reddit.com/r/KoreanFood/comments/1tjtm6b/korean_exchange_student_memories_my_favorite"
+      ]
+    }
+  ],
+  "quality_match_coverage_review_items": [
+    {
+      "reason": "market_or_editorial_unclassified",
+      "priority": "medium",
+      "source": "Food Safety News",
+      "source_type": "rss",
+      "trust_tier": "T3_professional",
+      "event_model": "editorial_coverage",
+      "title": "Initial results from alcohol testing raise concerns",
+      "url": "https://www.foodsafetynews.com/2026/05/initial-results-from-alcohol-testing-raise-concerns",
+      "published_at": "2026-05-26T04:01:39+00:00",
+      "collected_at": "2026-05-27T06:57:07.523765+00:00",
+      "summary_excerpt": "Findings from a preliminary investigation into the availability of illicit alcohol in an Australian state have been described as “concerning.” Researchers visited four licensed alcohol retailers in Melbourne, Victoria, during June, July and September 2025. The",
+      "recommended_action": "review Product/FoodType/Brand keyword coverage"
+    },
+    {
+      "reason": "market_or_editorial_unclassified",
+      "priority": "medium",
+      "source": "Food Safety News",
+      "source_type": "rss",
+      "trust_tier": "T3_professional",
+      "event_model": "editorial_coverage",
+      "title": "Publisher's Platform: What industry doesn't want you to know about cantaloupe",
+      "url": "https://www.foodsafetynews.com/2026/05/publishers-platform-what-industry-doesnt-want-you-to-know-about-cantaloupe",
+      "published_at": "2026-05-22T04:06:27+00:00",
+      "collected_at": "2026-05-26T06:40:42.840539+00:00",
+      "summary_excerpt": "Cantaloupe is almost perfectly designed to make people sick",
+      "recommended_action": "review Product/FoodType/Brand keyword coverage"
+    },
+    {
+      "reason": "market_or_editorial_unclassified",
+      "priority": "medium",
+      "source": "Food Safety News",
+      "source_type": "rss",
+      "trust_tier": "T3_professional",
+      "event_model": "editorial_coverage",
+      "title": "Sunday Edition: Reflecting",
+      "url": "https://www.foodsafetynews.com/2026/05/sunday-edition-reflecting",
+      "published_at": "2026-05-24T12:00:53+00:00",
+      "collected_at": "2026-05-27T06:57:07.523765+00:00",
+      "summary_excerpt": "Today we revisit some of the topics we’ve covered in the past months.",
+      "recommended_action": "review Product/FoodType/Brand keyword coverage"
+    }
+  ]
+}
