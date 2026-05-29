@@ -1,44 +1,44 @@
 {
   "category": "food",
-  "generated_at": "2026-05-28T06:45:32.222149+00:00",
+  "generated_at": "2026-05-29T06:47:27.503503+00:00",
   "summary": {
     "total_sources": 12,
     "tracked_sources": 3,
-    "fresh_sources": 1,
+    "fresh_sources": 2,
     "quiet_window_sources": 0,
-    "stale_sources": 2,
-    "missing_sources": 0,
+    "stale_sources": 0,
+    "missing_sources": 1,
     "unknown_event_date_sources": 0,
     "not_tracked_sources": 8,
     "catalog_only_sources": 0,
     "skipped_disabled_sources": 1,
     "collection_error_count": 0,
-    "alias_candidate_count": 5,
-    "text_length_outlier_count": 1,
+    "alias_candidate_count": 12,
+    "text_length_outlier_count": 0,
     "title_length_outlier_count": 0,
-    "summary_length_outlier_count": 1,
-    "mapped_alias_candidate_count": 5,
+    "summary_length_outlier_count": 0,
+    "mapped_alias_candidate_count": 12,
     "unmapped_alias_candidate_count": 0,
-    "product_alias_candidate_count": 1,
-    "brand_alias_candidate_count": 2,
+    "product_alias_candidate_count": 9,
+    "brand_alias_candidate_count": 1,
     "manufacturer_alias_candidate_count": 2,
-    "match_coverage_article_count": 139,
-    "match_coverage_matched_count": 136,
+    "match_coverage_article_count": 65,
+    "match_coverage_matched_count": 62,
     "match_coverage_unmatched_count": 3,
-    "match_coverage_rate": 97.8,
+    "match_coverage_rate": 95.4,
     "match_coverage_review_item_count": 3,
-    "fresh_food_events": 1,
-    "stale_food_events": 18,
+    "fresh_food_events": 10,
+    "stale_food_events": 4,
     "undated_food_events": 0,
-    "unique_food_event_key_count": 19,
-    "recall_events_with_notice_date_count": 1,
-    "recall_events_with_status_count": 1,
+    "unique_food_event_key_count": 14,
+    "recall_events_with_notice_date_count": 9,
+    "recall_events_with_status_count": 9,
     "event_alias_trace_count": 0,
-    "complaint_auxiliary_only_events": 12,
-    "official_evidence_events": 7,
-    "recall_status_change_events": 1,
-    "enforcement_action_events": 6,
-    "complaint_signal_events": 12
+    "complaint_auxiliary_only_events": 0,
+    "official_evidence_events": 14,
+    "recall_status_change_events": 9,
+    "enforcement_action_events": 5,
+    "complaint_signal_events": 0
   },
   "sources": [
     {
@@ -50,21 +50,21 @@
       "freshness_sla_days": 3,
       "quiet_window_days": 5,
       "status": "fresh",
-      "article_count": 1,
-      "latest_event_at": "2026-05-27T00:00:00+00:00",
-      "latest_collected_at": "2026-05-28T06:45:29.778544+00:00",
+      "article_count": 9,
+      "latest_event_at": "2026-05-28T00:00:00+00:00",
+      "latest_collected_at": "2026-05-29T06:47:25.420613+00:00",
       "age_days": 1.28,
-      "latest_title": "마티에르",
-      "latest_url": "/portal/suspensionDetail.do?search_keyword=3000226544",
-      "latest_food_event_key": "recall-status-change:kr:식품안전나라-회수판매중지:2026-05-27:마티에르:디노르-진공-와인-스토퍼-키퍼:portal-suspensiondetail-do-search-keyword-3000226544",
-      "latest_notice_date": "2026-05-27",
+      "latest_title": "대일종합식품",
+      "latest_url": "/portal/suspensionDetail.do?search_keyword=3000226602",
+      "latest_food_event_key": "recall-status-change:kr:식품안전나라-회수판매중지:2026-05-28:대일종합식품:멍게젓:식품:portal-suspensiondetail-do-search-keyword-3000226602",
+      "latest_notice_date": "2026-05-28",
       "latest_recall_status": "notice",
       "latest_release_date": "",
       "latest_sanction_start_date": "",
       "latest_sanction_end_date": "",
       "latest_sanction_type": "",
-      "latest_product_name_raw": "디노르 진공 와인 스토퍼 키퍼",
-      "latest_manufacturer_name_raw": "마티에르",
+      "latest_product_name_raw": "멍게젓",
+      "latest_manufacturer_name_raw": "대일종합식품",
       "latest_alias_traces": [],
       "verification_role": "",
       "merge_policy": "",
@@ -80,19 +80,19 @@
       "event_model": "enforcement_action",
       "freshness_sla_days": 2,
       "quiet_window_days": null,
-      "status": "stale",
-      "article_count": 6,
-      "latest_event_at": "2026-05-26T00:00:00+00:00",
-      "latest_collected_at": "2026-05-28T06:45:29.778544+00:00",
-      "age_days": 2.28,
-      "latest_title": "○ 자가품질검사 전항목 미실시 - 상기 업체는 품목제조보고한 탁주 2종[① 제품명(품목보고번호): 우리밀막걸리 옹동주장(201300192192), ② 제품명(품목보고번호): 우리찹쌀동동주*(201300192193)]을 생산·판매하면서, 2021년 5월경 자가품질검사를 실시한 이후 점검…",
-      "latest_url": "/portal/administMeasureDetail.do?seq=4721804",
-      "latest_food_event_key": "enforcement-action:kr:식품안전나라-행정처분:2026-03-31:막걸리:점검-검사:portal-administmeasuredetail-do-seq-4721804",
+      "status": "fresh",
+      "article_count": 5,
+      "latest_event_at": "2026-05-29T00:00:00+00:00",
+      "latest_collected_at": "2026-05-29T06:47:25.420613+00:00",
+      "age_days": 0.28,
+      "latest_title": "2026. 1. 26. 수입신고한 미얀마산 수입수산물 ‘냉동가물치(FROZEN SNAKEHEAD, 포장년월일: 2025. 12. 30., 수입신고 접수번호: 202600061834)’에 대한 정밀검사 결과, 식용으로 사용이 금지된 유해물질인 동물용의약품 ‘오플록사신(Ofloxacin)…",
+      "latest_url": "/portal/administMeasureDetail.do?seq=4723075",
+      "latest_food_event_key": "enforcement-action:kr:식품안전나라-행정처분:2026-01-26:수산물-해물:검출-검사-식용:portal-administmeasuredetail-do-seq-4723075",
       "latest_notice_date": "",
       "latest_recall_status": "",
       "latest_release_date": "",
-      "latest_sanction_start_date": "2026-03-31",
-      "latest_sanction_end_date": "2026-04-03",
+      "latest_sanction_start_date": "2026-01-26",
+      "latest_sanction_end_date": "2025-12-30",
       "latest_sanction_type": "enforcement_action",
       "latest_product_name_raw": "",
       "latest_manufacturer_name_raw": "",
@@ -112,12 +112,12 @@
       "freshness_sla_days": 2,
       "quiet_window_days": null,
       "status": "not_tracked",
-      "article_count": 5,
-      "latest_event_at": "2026-05-28T00:00:00+00:00",
-      "latest_collected_at": "2026-05-28T06:45:29.778544+00:00",
+      "article_count": 8,
+      "latest_event_at": "2026-05-29T00:00:00+00:00",
+      "latest_collected_at": "2026-05-29T06:47:25.420613+00:00",
       "age_days": 0.28,
-      "latest_title": "[부처합동] 지역 바가지요금 근절을 위해 범부처 총력 대응",
-      "latest_url": "/portal/board/boardDetail.do?bbs_no=bbs080&menu_no=2857&ntctxt_no=50025",
+      "latest_title": "[보도참고] 무신고 소분·판매한 '젓갈류' 회수 조치",
+      "latest_url": "/portal/board/boardDetail.do?bbs_no=bbs080&menu_no=2857&ntctxt_no=50031",
       "latest_food_event_key": "",
       "latest_notice_date": "",
       "latest_recall_status": "",
@@ -205,12 +205,12 @@
       "freshness_sla_days": null,
       "quiet_window_days": null,
       "status": "not_tracked",
-      "article_count": 36,
-      "latest_event_at": "2026-05-28T04:05:44+00:00",
-      "latest_collected_at": "2026-05-28T06:45:29.778544+00:00",
+      "article_count": 30,
+      "latest_event_at": "2026-05-29T04:05:24+00:00",
+      "latest_collected_at": "2026-05-29T06:47:25.420613+00:00",
       "age_days": 0.11,
-      "latest_title": "FDA reopens investigation into Salmonella outbreak traced to moringa capsules",
-      "latest_url": "https://www.foodsafetynews.com/2026/05/fda-reopens-investigation-into-salmonella-outbreak-traced-to-moringa-capsules",
+      "latest_title": "FDA report shows timeline, traceback in infant botulism outbreak traced to ByHeart formula",
+      "latest_url": "https://www.foodsafetynews.com/2026/05/fda-report-shows-timeline-traceback-in-infant-botulism-outbreak-traced-to-byheart-formula",
       "latest_food_event_key": "",
       "latest_notice_date": "",
       "latest_recall_status": "",
@@ -237,11 +237,11 @@
       "quiet_window_days": null,
       "status": "not_tracked",
       "article_count": 13,
-      "latest_event_at": "2026-05-27T14:46:00+00:00",
-      "latest_collected_at": "2026-05-28T06:45:29.778544+00:00",
-      "age_days": 0.67,
-      "latest_title": "Splenda owner to buy Equal sweeteners maker",
-      "latest_url": "https://www.fooddive.com/news/splenda-owner-buys-equal-sweeteners/821215",
+      "latest_event_at": "2026-05-28T17:06:00+00:00",
+      "latest_collected_at": "2026-05-29T06:47:25.420613+00:00",
+      "age_days": 0.57,
+      "latest_title": "Inside ADM’s reformulation hub powering better-for-you innovation",
+      "latest_url": "https://www.fooddive.com/news/adm-reformulation-ingredients-solutions-erlanger-kentucky/821384",
       "latest_food_event_key": "",
       "latest_notice_date": "",
       "latest_recall_status": "",
@@ -266,14 +266,14 @@
       "event_model": "complaint_signal",
       "freshness_sla_days": 3,
       "quiet_window_days": null,
-      "status": "stale",
-      "article_count": 12,
-      "latest_event_at": "2026-05-22T00:48:57+00:00",
-      "latest_collected_at": "2026-05-22T01:05:45.246832+00:00",
-      "age_days": 6.25,
-      "latest_title": "Pretty positive I ate bread earlier today with little bits of mold on it. It was only visible from the crust, not on the bread itself. Will I be fine?",
-      "latest_url": "https://www.reddit.com/r/foodsafety/comments/1tk3f49/pretty_positive_i_ate_bread_earlier_today_with",
-      "latest_food_event_key": "complaint-signal:us:r-foodsafety:2026-05-22:bread:mold:https-www-reddit-com-r-foodsafety-comments-1tk3f49-pretty-positive-i-ate-bread-earlier-today-with",
+      "status": "missing",
+      "article_count": 0,
+      "latest_event_at": null,
+      "latest_collected_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_food_event_key": "",
       "latest_notice_date": "",
       "latest_recall_status": "",
       "latest_release_date": "",
@@ -298,12 +298,12 @@
       "freshness_sla_days": null,
       "quiet_window_days": null,
       "status": "not_tracked",
-      "article_count": 49,
-      "latest_event_at": "2026-05-22T00:59:52+00:00",
-      "latest_collected_at": "2026-05-22T01:05:45.246832+00:00",
-      "age_days": 6.24,
-      "latest_title": "Dilute / weaken chilli crisp",
-      "latest_url": "https://www.reddit.com/r/Cooking/comments/1tk3nky/dilute_weaken_chilli_crisp",
+      "article_count": 0,
+      "latest_event_at": null,
+      "latest_collected_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
       "latest_food_event_key": "",
       "latest_notice_date": "",
       "latest_recall_status": "",
@@ -329,12 +329,12 @@
       "freshness_sla_days": null,
       "quiet_window_days": null,
       "status": "not_tracked",
-      "article_count": 4,
-      "latest_event_at": "2026-05-21T23:32:45+00:00",
-      "latest_collected_at": "2026-05-22T00:35:28.189369+00:00",
-      "age_days": 6.3,
-      "latest_title": "How Much Potassium in a Banana Peel?",
-      "latest_url": "https://www.reddit.com/r/nutrition/comments/1tk1o4v/how_much_potassium_in_a_banana_peel",
+      "article_count": 0,
+      "latest_event_at": null,
+      "latest_collected_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
       "latest_food_event_key": "",
       "latest_notice_date": "",
       "latest_recall_status": "",
@@ -360,12 +360,12 @@
       "freshness_sla_days": null,
       "quiet_window_days": null,
       "status": "not_tracked",
-      "article_count": 13,
-      "latest_event_at": "2026-05-22T00:56:00+00:00",
-      "latest_collected_at": "2026-05-22T01:05:45.246832+00:00",
-      "age_days": 6.24,
-      "latest_title": "Why does Korean food in the U.S. feel so expensive compared to Korea and other Asian cuisines?",
-      "latest_url": "https://www.reddit.com/r/KoreanFood/comments/1tk3kia/why_does_korean_food_in_the_us_feel_so_expensive",
+      "article_count": 0,
+      "latest_event_at": null,
+      "latest_collected_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
       "latest_food_event_key": "",
       "latest_notice_date": "",
       "latest_recall_status": "",
@@ -416,6 +416,407 @@
   ],
   "events": [
     {
+      "source": "식품안전나라 행정처분",
+      "source_type": "rss",
+      "trust_tier": "T1_official",
+      "event_model": "enforcement_action",
+      "title": "2026. 1. 26. 수입신고한 미얀마산 수입수산물 ‘냉동가물치(FROZEN SNAKEHEAD, 포장년월일: 2025. 12. 30., 수입신고 접수번호: 202600061834)’에 대한 정밀검사 결과, 식용으로 사용이 금지된 유해물질인 동물용의약품 ‘오플록사신(Ofloxacin)…",
+      "url": "/portal/administMeasureDetail.do?seq=4723075",
+      "event_at": "2026-05-29T00:00:00+00:00",
+      "event_age_days": 0.28,
+      "event_freshness_sla_days": 2,
+      "event_status": "fresh",
+      "food_event_key": "enforcement-action:kr:식품안전나라-행정처분:2026-01-26:수산물-해물:검출-검사-식용:portal-administmeasuredetail-do-seq-4723075",
+      "evidence_url": "/portal/administMeasureDetail.do?seq=4723075",
+      "evidence_url_present": true,
+      "country": "KR",
+      "products": [],
+      "product_canonical": [],
+      "brands": [],
+      "brand_canonical": [],
+      "manufacturers": [],
+      "manufacturer_canonical": [],
+      "food_types": [
+        "수산물",
+        "해물"
+      ],
+      "safety_issues": [
+        "검출",
+        "검사",
+        "식용"
+      ],
+      "recall_reasons": [],
+      "alias_traces": [],
+      "verification_role": "",
+      "merge_policy": "",
+      "verification_status": "official_source",
+      "sanction_start_date": "2026-01-26",
+      "sanction_end_date": "2025-12-30",
+      "sanction_type": "enforcement_action"
+    },
+    {
+      "source": "식품안전나라 회수판매중지",
+      "source_type": "rss",
+      "trust_tier": "T1_official",
+      "event_model": "recall_status_change",
+      "title": "대일종합식품",
+      "url": "/portal/suspensionDetail.do?search_keyword=3000226602",
+      "event_at": "2026-05-28T00:00:00+00:00",
+      "event_age_days": 1.28,
+      "event_freshness_sla_days": 3,
+      "event_status": "fresh",
+      "food_event_key": "recall-status-change:kr:식품안전나라-회수판매중지:2026-05-28:대일종합식품:멍게젓:식품:portal-suspensiondetail-do-search-keyword-3000226602",
+      "evidence_url": "/portal/suspensionDetail.do?search_keyword=3000226602",
+      "evidence_url_present": true,
+      "country": "KR",
+      "products": [
+        "멍게젓"
+      ],
+      "product_canonical": [
+        "멍게젓"
+      ],
+      "brands": [],
+      "brand_canonical": [],
+      "manufacturers": [
+        "대일종합식품"
+      ],
+      "manufacturer_canonical": [
+        "대일종합식품"
+      ],
+      "food_types": [],
+      "safety_issues": [
+        "식품"
+      ],
+      "recall_reasons": [],
+      "alias_traces": [],
+      "verification_role": "",
+      "merge_policy": "",
+      "verification_status": "official_source",
+      "product_name_raw": "멍게젓",
+      "manufacturer_name_raw": "대일종합식품",
+      "recall_extraction_method": "official_recall_title_summary",
+      "notice_date": "2026-05-28",
+      "recall_status": "notice",
+      "release_date": ""
+    },
+    {
+      "source": "식품안전나라 회수판매중지",
+      "source_type": "rss",
+      "trust_tier": "T1_official",
+      "event_model": "recall_status_change",
+      "title": "대일종합식품",
+      "url": "/portal/suspensionDetail.do?search_keyword=3000226611",
+      "event_at": "2026-05-28T00:00:00+00:00",
+      "event_age_days": 1.28,
+      "event_freshness_sla_days": 3,
+      "event_status": "fresh",
+      "food_event_key": "recall-status-change:kr:식품안전나라-회수판매중지:2026-05-28:대일종합식품:오징어젓:오징어:식품:portal-suspensiondetail-do-search-keyword-3000226611",
+      "evidence_url": "/portal/suspensionDetail.do?search_keyword=3000226611",
+      "evidence_url_present": true,
+      "country": "KR",
+      "products": [
+        "오징어젓"
+      ],
+      "product_canonical": [
+        "오징어젓"
+      ],
+      "brands": [],
+      "brand_canonical": [],
+      "manufacturers": [
+        "대일종합식품"
+      ],
+      "manufacturer_canonical": [
+        "대일종합식품"
+      ],
+      "food_types": [
+        "오징어"
+      ],
+      "safety_issues": [
+        "식품"
+      ],
+      "recall_reasons": [],
+      "alias_traces": [],
+      "verification_role": "",
+      "merge_policy": "",
+      "verification_status": "official_source",
+      "product_name_raw": "오징어젓",
+      "manufacturer_name_raw": "대일종합식품",
+      "recall_extraction_method": "official_recall_title_summary",
+      "notice_date": "2026-05-28",
+      "recall_status": "notice",
+      "release_date": ""
+    },
+    {
+      "source": "식품안전나라 회수판매중지",
+      "source_type": "rss",
+      "trust_tier": "T1_official",
+      "event_model": "recall_status_change",
+      "title": "대일종합식품",
+      "url": "/portal/suspensionDetail.do?search_keyword=3000226609",
+      "event_at": "2026-05-28T00:00:00+00:00",
+      "event_age_days": 1.28,
+      "event_freshness_sla_days": 3,
+      "event_status": "fresh",
+      "food_event_key": "recall-status-change:kr:식품안전나라-회수판매중지:2026-05-28:대일종합식품:낙지젓:식품:portal-suspensiondetail-do-search-keyword-3000226609",
+      "evidence_url": "/portal/suspensionDetail.do?search_keyword=3000226609",
+      "evidence_url_present": true,
+      "country": "KR",
+      "products": [
+        "낙지젓"
+      ],
+      "product_canonical": [
+        "낙지젓"
+      ],
+      "brands": [],
+      "brand_canonical": [],
+      "manufacturers": [
+        "대일종합식품"
+      ],
+      "manufacturer_canonical": [
+        "대일종합식품"
+      ],
+      "food_types": [],
+      "safety_issues": [
+        "식품"
+      ],
+      "recall_reasons": [],
+      "alias_traces": [],
+      "verification_role": "",
+      "merge_policy": "",
+      "verification_status": "official_source",
+      "product_name_raw": "낙지젓",
+      "manufacturer_name_raw": "대일종합식품",
+      "recall_extraction_method": "official_recall_title_summary",
+      "notice_date": "2026-05-28",
+      "recall_status": "notice",
+      "release_date": ""
+    },
+    {
+      "source": "식품안전나라 회수판매중지",
+      "source_type": "rss",
+      "trust_tier": "T1_official",
+      "event_model": "recall_status_change",
+      "title": "대일종합식품",
+      "url": "/portal/suspensionDetail.do?search_keyword=3000226612",
+      "event_at": "2026-05-28T00:00:00+00:00",
+      "event_age_days": 1.28,
+      "event_freshness_sla_days": 3,
+      "event_status": "fresh",
+      "food_event_key": "recall-status-change:kr:식품안전나라-회수판매중지:2026-05-28:대일종합식품:순태젓:식품:portal-suspensiondetail-do-search-keyword-3000226612",
+      "evidence_url": "/portal/suspensionDetail.do?search_keyword=3000226612",
+      "evidence_url_present": true,
+      "country": "KR",
+      "products": [
+        "순태젓"
+      ],
+      "product_canonical": [
+        "순태젓"
+      ],
+      "brands": [],
+      "brand_canonical": [],
+      "manufacturers": [
+        "대일종합식품"
+      ],
+      "manufacturer_canonical": [
+        "대일종합식품"
+      ],
+      "food_types": [],
+      "safety_issues": [
+        "식품"
+      ],
+      "recall_reasons": [],
+      "alias_traces": [],
+      "verification_role": "",
+      "merge_policy": "",
+      "verification_status": "official_source",
+      "product_name_raw": "순태젓",
+      "manufacturer_name_raw": "대일종합식품",
+      "recall_extraction_method": "official_recall_title_summary",
+      "notice_date": "2026-05-28",
+      "recall_status": "notice",
+      "release_date": ""
+    },
+    {
+      "source": "식품안전나라 회수판매중지",
+      "source_type": "rss",
+      "trust_tier": "T1_official",
+      "event_model": "recall_status_change",
+      "title": "대일종합식품",
+      "url": "/portal/suspensionDetail.do?search_keyword=3000226610",
+      "event_at": "2026-05-28T00:00:00+00:00",
+      "event_age_days": 1.28,
+      "event_freshness_sla_days": 3,
+      "event_status": "fresh",
+      "food_event_key": "recall-status-change:kr:식품안전나라-회수판매중지:2026-05-28:대일종합식품:맛창젓:식품:portal-suspensiondetail-do-search-keyword-3000226610",
+      "evidence_url": "/portal/suspensionDetail.do?search_keyword=3000226610",
+      "evidence_url_present": true,
+      "country": "KR",
+      "products": [
+        "맛창젓"
+      ],
+      "product_canonical": [
+        "맛창젓"
+      ],
+      "brands": [],
+      "brand_canonical": [],
+      "manufacturers": [
+        "대일종합식품"
+      ],
+      "manufacturer_canonical": [
+        "대일종합식품"
+      ],
+      "food_types": [],
+      "safety_issues": [
+        "식품"
+      ],
+      "recall_reasons": [],
+      "alias_traces": [],
+      "verification_role": "",
+      "merge_policy": "",
+      "verification_status": "official_source",
+      "product_name_raw": "맛창젓",
+      "manufacturer_name_raw": "대일종합식품",
+      "recall_extraction_method": "official_recall_title_summary",
+      "notice_date": "2026-05-28",
+      "recall_status": "notice",
+      "release_date": ""
+    },
+    {
+      "source": "식품안전나라 회수판매중지",
+      "source_type": "rss",
+      "trust_tier": "T1_official",
+      "event_model": "recall_status_change",
+      "title": "대일종합식품",
+      "url": "/portal/suspensionDetail.do?search_keyword=3000226614",
+      "event_at": "2026-05-28T00:00:00+00:00",
+      "event_age_days": 1.28,
+      "event_freshness_sla_days": 3,
+      "event_status": "fresh",
+      "food_event_key": "recall-status-change:kr:식품안전나라-회수판매중지:2026-05-28:대일종합식품:꼴뚜기젓:식품:portal-suspensiondetail-do-search-keyword-3000226614",
+      "evidence_url": "/portal/suspensionDetail.do?search_keyword=3000226614",
+      "evidence_url_present": true,
+      "country": "KR",
+      "products": [
+        "꼴뚜기젓"
+      ],
+      "product_canonical": [
+        "꼴뚜기젓"
+      ],
+      "brands": [],
+      "brand_canonical": [],
+      "manufacturers": [
+        "대일종합식품"
+      ],
+      "manufacturer_canonical": [
+        "대일종합식품"
+      ],
+      "food_types": [],
+      "safety_issues": [
+        "식품"
+      ],
+      "recall_reasons": [],
+      "alias_traces": [],
+      "verification_role": "",
+      "merge_policy": "",
+      "verification_status": "official_source",
+      "product_name_raw": "꼴뚜기젓",
+      "manufacturer_name_raw": "대일종합식품",
+      "recall_extraction_method": "official_recall_title_summary",
+      "notice_date": "2026-05-28",
+      "recall_status": "notice",
+      "release_date": ""
+    },
+    {
+      "source": "식품안전나라 회수판매중지",
+      "source_type": "rss",
+      "trust_tier": "T1_official",
+      "event_model": "recall_status_change",
+      "title": "대일종합식품",
+      "url": "/portal/suspensionDetail.do?search_keyword=3000226606",
+      "event_at": "2026-05-28T00:00:00+00:00",
+      "event_age_days": 1.28,
+      "event_freshness_sla_days": 3,
+      "event_status": "fresh",
+      "food_event_key": "recall-status-change:kr:식품안전나라-회수판매중지:2026-05-28:대일종합식품:신안새우젓:식품:portal-suspensiondetail-do-search-keyword-3000226606",
+      "evidence_url": "/portal/suspensionDetail.do?search_keyword=3000226606",
+      "evidence_url_present": true,
+      "country": "KR",
+      "products": [
+        "신안새우젓"
+      ],
+      "product_canonical": [
+        "신안새우젓"
+      ],
+      "brands": [],
+      "brand_canonical": [],
+      "manufacturers": [
+        "대일종합식품"
+      ],
+      "manufacturer_canonical": [
+        "대일종합식품"
+      ],
+      "food_types": [],
+      "safety_issues": [
+        "식품"
+      ],
+      "recall_reasons": [],
+      "alias_traces": [],
+      "verification_role": "",
+      "merge_policy": "",
+      "verification_status": "official_source",
+      "product_name_raw": "신안새우젓",
+      "manufacturer_name_raw": "대일종합식품",
+      "recall_extraction_method": "official_recall_title_summary",
+      "notice_date": "2026-05-28",
+      "recall_status": "notice",
+      "release_date": ""
+    },
+    {
+      "source": "식품안전나라 회수판매중지",
+      "source_type": "rss",
+      "trust_tier": "T1_official",
+      "event_model": "recall_status_change",
+      "title": "대일종합식품",
+      "url": "/portal/suspensionDetail.do?search_keyword=3000226613",
+      "event_at": "2026-05-28T00:00:00+00:00",
+      "event_age_days": 1.28,
+      "event_freshness_sla_days": 3,
+      "event_status": "fresh",
+      "food_event_key": "recall-status-change:kr:식품안전나라-회수판매중지:2026-05-28:대일종합식품:명란젓:식품:portal-suspensiondetail-do-search-keyword-3000226613",
+      "evidence_url": "/portal/suspensionDetail.do?search_keyword=3000226613",
+      "evidence_url_present": true,
+      "country": "KR",
+      "products": [
+        "명란젓"
+      ],
+      "product_canonical": [
+        "명란젓"
+      ],
+      "brands": [],
+      "brand_canonical": [],
+      "manufacturers": [
+        "대일종합식품"
+      ],
+      "manufacturer_canonical": [
+        "대일종합식품"
+      ],
+      "food_types": [],
+      "safety_issues": [
+        "식품"
+      ],
+      "recall_reasons": [],
+      "alias_traces": [],
+      "verification_role": "",
+      "merge_policy": "",
+      "verification_status": "official_source",
+      "product_name_raw": "명란젓",
+      "manufacturer_name_raw": "대일종합식품",
+      "recall_extraction_method": "official_recall_title_summary",
+      "notice_date": "2026-05-28",
+      "recall_status": "notice",
+      "release_date": ""
+    },
+    {
       "source": "식품안전나라 회수판매중지",
       "source_type": "rss",
       "trust_tier": "T1_official",
@@ -423,7 +824,7 @@
       "title": "마티에르",
       "url": "/portal/suspensionDetail.do?search_keyword=3000226544",
       "event_at": "2026-05-27T00:00:00+00:00",
-      "event_age_days": 1.28,
+      "event_age_days": 2.28,
       "event_freshness_sla_days": 3,
       "event_status": "fresh",
       "food_event_key": "recall-status-change:kr:식품안전나라-회수판매중지:2026-05-27:마티에르:디노르-진공-와인-스토퍼-키퍼:portal-suspensiondetail-do-search-keyword-3000226544",
@@ -463,10 +864,46 @@
       "source_type": "rss",
       "trust_tier": "T1_official",
       "event_model": "enforcement_action",
+      "title": "○ 자가품질검사 전항목 미실시 - 상기 업체는 품목제조보고한 탁주 2종[① 제품명(품목보고번호): 밀주(2013001911516), ② 제품명(품목보고번호): 찹쌀로만(201300191154)]을 생산·판매하면서, 6개월마다 1회 이상 자가품질검사를 실시하여야 함에도 불구하고 2024…",
+      "url": "/portal/administMeasureDetail.do?seq=4721805",
+      "event_at": "2026-05-26T00:00:00+00:00",
+      "event_age_days": 3.28,
+      "event_freshness_sla_days": 2,
+      "event_status": "stale",
+      "food_event_key": "enforcement-action:kr:식품안전나라-행정처분:2024-11-18:회:검사:portal-administmeasuredetail-do-seq-4721805",
+      "evidence_url": "/portal/administMeasureDetail.do?seq=4721805",
+      "evidence_url_present": true,
+      "country": "KR",
+      "products": [],
+      "product_canonical": [],
+      "brands": [],
+      "brand_canonical": [],
+      "manufacturers": [],
+      "manufacturer_canonical": [],
+      "food_types": [
+        "회"
+      ],
+      "safety_issues": [
+        "검사"
+      ],
+      "recall_reasons": [],
+      "alias_traces": [],
+      "verification_role": "",
+      "merge_policy": "",
+      "verification_status": "official_source",
+      "sanction_start_date": "2024-11-18",
+      "sanction_end_date": "2025-11-18",
+      "sanction_type": "enforcement_action"
+    },
+    {
+      "source": "식품안전나라 행정처분",
+      "source_type": "rss",
+      "trust_tier": "T1_official",
+      "event_model": "enforcement_action",
       "title": "○ 자가품질검사 전항목 미실시 - 상기 업체는 품목제조보고한 탁주 2종[① 제품명(품목보고번호): 우리밀막걸리 옹동주장(201300192192), ② 제품명(품목보고번호): 우리찹쌀동동주*(201300192193)]을 생산·판매하면서, 2021년 5월경 자가품질검사를 실시한 이후 점검…",
       "url": "/portal/administMeasureDetail.do?seq=4721804",
       "event_at": "2026-05-26T00:00:00+00:00",
-      "event_age_days": 2.28,
+      "event_age_days": 3.28,
       "event_freshness_sla_days": 2,
       "event_status": "stale",
       "food_event_key": "enforcement-action:kr:식품안전나라-행정처분:2026-03-31:막걸리:점검-검사:portal-administmeasuredetail-do-seq-4721804",
@@ -500,46 +937,10 @@
       "source_type": "rss",
       "trust_tier": "T1_official",
       "event_model": "enforcement_action",
-      "title": "○ 자가품질검사 전항목 미실시 - 상기 업체는 품목제조보고한 탁주 2종[① 제품명(품목보고번호): 밀주(2013001911516), ② 제품명(품목보고번호): 찹쌀로만(201300191154)]을 생산·판매하면서, 6개월마다 1회 이상 자가품질검사를 실시하여야 함에도 불구하고 2024…",
-      "url": "/portal/administMeasureDetail.do?seq=4721805",
-      "event_at": "2026-05-26T00:00:00+00:00",
-      "event_age_days": 2.28,
-      "event_freshness_sla_days": 2,
-      "event_status": "stale",
-      "food_event_key": "enforcement-action:kr:식품안전나라-행정처분:2024-11-18:회:검사:portal-administmeasuredetail-do-seq-4721805",
-      "evidence_url": "/portal/administMeasureDetail.do?seq=4721805",
-      "evidence_url_present": true,
-      "country": "KR",
-      "products": [],
-      "product_canonical": [],
-      "brands": [],
-      "brand_canonical": [],
-      "manufacturers": [],
-      "manufacturer_canonical": [],
-      "food_types": [
-        "회"
-      ],
-      "safety_issues": [
-        "검사"
-      ],
-      "recall_reasons": [],
-      "alias_traces": [],
-      "verification_role": "",
-      "merge_policy": "",
-      "verification_status": "official_source",
-      "sanction_start_date": "2024-11-18",
-      "sanction_end_date": "2025-11-18",
-      "sanction_type": "enforcement_action"
-    },
-    {
-      "source": "식품안전나라 행정처분",
-      "source_type": "rss",
-      "trust_tier": "T1_official",
-      "event_model": "enforcement_action",
       "title": "2024.1.27.부터 2026.1.27. 까지 식품 등의 구매대행을 목적으로 게시글(제품명: 솔로데이트랩)을 인터넷 사이트에 게시하면서 질병의 예방.치료에 효능이 있는 것으로 인식할 우려가 있는 표시 광고를 한 사실이 있음.",
       "url": "/portal/administMeasureDetail.do?seq=4720327",
       "event_at": "2026-05-26T00:00:00+00:00",
-      "event_age_days": 2.28,
+      "event_age_days": 3.28,
       "event_freshness_sla_days": 2,
       "event_status": "stale",
       "food_event_key": "enforcement-action:kr:식품안전나라-행정처분:2024-01-27:식품:portal-administmeasuredetail-do-seq-4720327",
@@ -573,7 +974,7 @@
       "title": "○ 수입신고를 하려는 자 또는 수입신고를 한 자는 수입식품등의 안전과 품질에 대하여 책임을 지며, 거짓이나 그 밖의 부정한 방법으로 수입신고 하여서는 아니 되나, - 상기 영업자는 2025년 12월 12일부터 2026년 1월 22일까지 수입식품등을 수입하면서 해외 제조업소를 사실과 다…",
       "url": "/portal/administMeasureDetail.do?seq=4720326",
       "event_at": "2026-05-23T00:00:00+00:00",
-      "event_age_days": 5.28,
+      "event_age_days": 6.28,
       "event_freshness_sla_days": 2,
       "event_status": "stale",
       "food_event_key": "enforcement-action:kr:식품안전나라-행정처분:2025-12-12:제조업소:수입식품:식품:portal-administmeasuredetail-do-seq-4720326",
@@ -602,502 +1003,6 @@
       "sanction_start_date": "2025-12-12",
       "sanction_end_date": "2026-01-22",
       "sanction_type": "enforcement_action"
-    },
-    {
-      "source": "r/foodsafety",
-      "source_type": "reddit",
-      "trust_tier": "T4_community",
-      "event_model": "complaint_signal",
-      "title": "Pretty positive I ate bread earlier today with little bits of mold on it. It was only visible from the crust, not on the bread itself. Will I be fine?",
-      "url": "https://www.reddit.com/r/foodsafety/comments/1tk3f49/pretty_positive_i_ate_bread_earlier_today_with",
-      "event_at": "2026-05-22T00:48:57+00:00",
-      "event_age_days": 6.25,
-      "event_freshness_sla_days": 3,
-      "event_status": "stale",
-      "food_event_key": "complaint-signal:us:r-foodsafety:2026-05-22:bread:mold:https-www-reddit-com-r-foodsafety-comments-1tk3f49-pretty-positive-i-ate-bread-earlier-today-with",
-      "evidence_url": "https://www.reddit.com/r/foodsafety/comments/1tk3f49/pretty_positive_i_ate_bread_earlier_today_with",
-      "evidence_url_present": true,
-      "country": "US",
-      "products": [],
-      "product_canonical": [],
-      "brands": [],
-      "brand_canonical": [],
-      "manufacturers": [],
-      "manufacturer_canonical": [],
-      "food_types": [
-        "bread"
-      ],
-      "safety_issues": [
-        "mold"
-      ],
-      "recall_reasons": [],
-      "alias_traces": [],
-      "verification_role": "auxiliary_complaint_signal",
-      "merge_policy": "do_not_merge_with_official_notice",
-      "verification_status": "auxiliary_only",
-      "complaint_channel": "r/foodsafety",
-      "observed_at": "2026-05-22",
-      "official_merge_allowed": false
-    },
-    {
-      "source": "식품안전나라 행정처분",
-      "source_type": "rss",
-      "trust_tier": "T1_official",
-      "event_model": "enforcement_action",
-      "title": "2020. 3. 17.부터 2025. 9. 5.까지 베트남산 수입식품[제품명(유형):➊으오이 사오 퐁남(당류가공품), ➋옹토(당류가공품)]을 총 15회에 걸쳐 수입신고하면서 해외 제조업소 소재지를 사실과 다르게 수입신고한 사실이 있음.",
-      "url": "/portal/administMeasureDetail.do?seq=4722507",
-      "event_at": "2026-05-22T00:00:00+00:00",
-      "event_age_days": 6.28,
-      "event_freshness_sla_days": 2,
-      "event_status": "stale",
-      "food_event_key": "enforcement-action:kr:식품안전나라-행정처분:2020-03-17:제조업소:수입식품-회:식품:portal-administmeasuredetail-do-seq-4722507",
-      "evidence_url": "/portal/administMeasureDetail.do?seq=4722507",
-      "evidence_url_present": true,
-      "country": "KR",
-      "products": [],
-      "product_canonical": [],
-      "brands": [],
-      "brand_canonical": [],
-      "manufacturers": [
-        "제조업소"
-      ],
-      "manufacturer_canonical": [],
-      "food_types": [
-        "수입식품",
-        "회"
-      ],
-      "safety_issues": [
-        "식품"
-      ],
-      "recall_reasons": [],
-      "alias_traces": [],
-      "verification_role": "",
-      "merge_policy": "",
-      "verification_status": "official_source",
-      "sanction_start_date": "2020-03-17",
-      "sanction_end_date": "2025-09-05",
-      "sanction_type": "enforcement_action"
-    },
-    {
-      "source": "식품안전나라 행정처분",
-      "source_type": "rss",
-      "trust_tier": "T1_official",
-      "event_model": "enforcement_action",
-      "title": "2024. 9. 2.부터 2026. 1. 9.까지 베트남산 수입식품[제품명(유형): ➊으오이 사오 퐁남(당류가공품), ➋옹토(당류가공품), ➌코코넛워터(과·채주스]을 총 48회에 걸쳐 수입신고하면서 해외 제조업소 소재지를 사실과 다르게 수입신고한 사실이 있음.",
-      "url": "/portal/administMeasureDetail.do?seq=4722508",
-      "event_at": "2026-05-22T00:00:00+00:00",
-      "event_age_days": 6.28,
-      "event_freshness_sla_days": 2,
-      "event_status": "stale",
-      "food_event_key": "enforcement-action:kr:식품안전나라-행정처분:2024-09-02:제조업소:수입식품-회:식품:portal-administmeasuredetail-do-seq-4722508",
-      "evidence_url": "/portal/administMeasureDetail.do?seq=4722508",
-      "evidence_url_present": true,
-      "country": "KR",
-      "products": [],
-      "product_canonical": [],
-      "brands": [],
-      "brand_canonical": [],
-      "manufacturers": [
-        "제조업소"
-      ],
-      "manufacturer_canonical": [],
-      "food_types": [
-        "수입식품",
-        "회"
-      ],
-      "safety_issues": [
-        "식품"
-      ],
-      "recall_reasons": [],
-      "alias_traces": [],
-      "verification_role": "",
-      "merge_policy": "",
-      "verification_status": "official_source",
-      "sanction_start_date": "2024-09-02",
-      "sanction_end_date": "2026-01-09",
-      "sanction_type": "enforcement_action"
-    },
-    {
-      "source": "r/foodsafety",
-      "source_type": "reddit",
-      "trust_tier": "T4_community",
-      "event_model": "complaint_signal",
-      "title": "Left (unopened, packaged) ravioli that should be kept frozen in the fridge for 10 days, is it safe?",
-      "url": "https://www.reddit.com/r/foodsafety/comments/1tk1ivf/left_unopened_packaged_ravioli_that_should_be",
-      "event_at": "2026-05-21T23:26:31+00:00",
-      "event_age_days": 6.3,
-      "event_freshness_sla_days": 3,
-      "event_status": "stale",
-      "food_event_key": "complaint-signal:us:r-foodsafety:2026-05-21:is-it-safe:https-www-reddit-com-r-foodsafety-comments-1tk1ivf-left-unopened-packaged-ravioli-that-should-be",
-      "evidence_url": "https://www.reddit.com/r/foodsafety/comments/1tk1ivf/left_unopened_packaged_ravioli_that_should_be",
-      "evidence_url_present": true,
-      "country": "US",
-      "products": [],
-      "product_canonical": [],
-      "brands": [],
-      "brand_canonical": [],
-      "manufacturers": [],
-      "manufacturer_canonical": [],
-      "food_types": [],
-      "safety_issues": [
-        "is it safe"
-      ],
-      "recall_reasons": [],
-      "alias_traces": [],
-      "verification_role": "auxiliary_complaint_signal",
-      "merge_policy": "do_not_merge_with_official_notice",
-      "verification_status": "auxiliary_only",
-      "complaint_channel": "r/foodsafety",
-      "observed_at": "2026-05-21",
-      "official_merge_allowed": false
-    },
-    {
-      "source": "r/foodsafety",
-      "source_type": "reddit",
-      "trust_tier": "T4_community",
-      "event_model": "complaint_signal",
-      "title": "Is this normal",
-      "url": "https://www.reddit.com/r/foodsafety/comments/1tk03mh/is_this_normal",
-      "event_at": "2026-05-21T22:28:12+00:00",
-      "event_age_days": 6.35,
-      "event_freshness_sla_days": 3,
-      "event_status": "stale",
-      "food_event_key": "complaint-signal:us:r-foodsafety:2026-05-21:chicken:https-www-reddit-com-r-foodsafety-comments-1tk03mh-is-this-normal",
-      "evidence_url": "https://www.reddit.com/r/foodsafety/comments/1tk03mh/is_this_normal",
-      "evidence_url_present": true,
-      "country": "US",
-      "products": [],
-      "product_canonical": [],
-      "brands": [],
-      "brand_canonical": [],
-      "manufacturers": [],
-      "manufacturer_canonical": [],
-      "food_types": [
-        "chicken"
-      ],
-      "safety_issues": [],
-      "recall_reasons": [],
-      "alias_traces": [],
-      "verification_role": "auxiliary_complaint_signal",
-      "merge_policy": "do_not_merge_with_official_notice",
-      "verification_status": "auxiliary_only",
-      "complaint_channel": "r/foodsafety",
-      "observed_at": "2026-05-21",
-      "official_merge_allowed": false
-    },
-    {
-      "source": "r/foodsafety",
-      "source_type": "reddit",
-      "trust_tier": "T4_community",
-      "event_model": "complaint_signal",
-      "title": "Broken eggs … can you eat the non broken ones that have raw egg on them?",
-      "url": "https://www.reddit.com/r/foodsafety/comments/1tjznt8/broken_eggs_can_you_eat_the_non_broken_ones_that",
-      "event_at": "2026-05-21T22:11:14+00:00",
-      "event_age_days": 6.36,
-      "event_freshness_sla_days": 3,
-      "event_status": "stale",
-      "food_event_key": "complaint-signal:us:r-foodsafety:2026-05-21:egg-eggs-grocery:https-www-reddit-com-r-foodsafety-comments-1tjznt8-broken-eggs-can-you-eat-the-non-broken-ones-that",
-      "evidence_url": "https://www.reddit.com/r/foodsafety/comments/1tjznt8/broken_eggs_can_you_eat_the_non_broken_ones_that",
-      "evidence_url_present": true,
-      "country": "US",
-      "products": [],
-      "product_canonical": [],
-      "brands": [],
-      "brand_canonical": [],
-      "manufacturers": [],
-      "manufacturer_canonical": [],
-      "food_types": [
-        "egg",
-        "eggs",
-        "grocery"
-      ],
-      "safety_issues": [],
-      "recall_reasons": [],
-      "alias_traces": [],
-      "verification_role": "auxiliary_complaint_signal",
-      "merge_policy": "do_not_merge_with_official_notice",
-      "verification_status": "auxiliary_only",
-      "complaint_channel": "r/foodsafety",
-      "observed_at": "2026-05-21",
-      "official_merge_allowed": false
-    },
-    {
-      "source": "r/foodsafety",
-      "source_type": "reddit",
-      "trust_tier": "T4_community",
-      "event_model": "complaint_signal",
-      "title": "Plastic-like string flakes in my drink... am I going to die",
-      "url": "https://www.reddit.com/r/foodsafety/comments/1tjyc06/plasticlike_string_flakes_in_my_drink_am_i_going",
-      "event_at": "2026-05-21T21:21:07+00:00",
-      "event_age_days": 6.39,
-      "event_freshness_sla_days": 3,
-      "event_status": "stale",
-      "food_event_key": "complaint-signal:us:r-foodsafety:2026-05-21:drink:https-www-reddit-com-r-foodsafety-comments-1tjyc06-plasticlike-string-flakes-in-my-drink-am-i-going",
-      "evidence_url": "https://www.reddit.com/r/foodsafety/comments/1tjyc06/plasticlike_string_flakes_in_my_drink_am_i_going",
-      "evidence_url_present": true,
-      "country": "US",
-      "products": [],
-      "product_canonical": [],
-      "brands": [],
-      "brand_canonical": [],
-      "manufacturers": [],
-      "manufacturer_canonical": [],
-      "food_types": [
-        "drink"
-      ],
-      "safety_issues": [],
-      "recall_reasons": [],
-      "alias_traces": [],
-      "verification_role": "auxiliary_complaint_signal",
-      "merge_policy": "do_not_merge_with_official_notice",
-      "verification_status": "auxiliary_only",
-      "complaint_channel": "r/foodsafety",
-      "observed_at": "2026-05-21",
-      "official_merge_allowed": false
-    },
-    {
-      "source": "r/foodsafety",
-      "source_type": "reddit",
-      "trust_tier": "T4_community",
-      "event_model": "complaint_signal",
-      "title": "Weird, foul smelling gunk in my Iced Coffee",
-      "url": "https://www.reddit.com/r/foodsafety/comments/1tjy6iv/weird_foul_smelling_gunk_in_my_iced_coffee",
-      "event_at": "2026-05-21T21:15:42+00:00",
-      "event_age_days": 6.4,
-      "event_freshness_sla_days": 3,
-      "event_status": "stale",
-      "food_event_key": "complaint-signal:us:r-foodsafety:2026-05-21:coffee-drink-milk:https-www-reddit-com-r-foodsafety-comments-1tjy6iv-weird-foul-smelling-gunk-in-my-iced-coffee",
-      "evidence_url": "https://www.reddit.com/r/foodsafety/comments/1tjy6iv/weird_foul_smelling_gunk_in_my_iced_coffee",
-      "evidence_url_present": true,
-      "country": "US",
-      "products": [],
-      "product_canonical": [],
-      "brands": [],
-      "brand_canonical": [],
-      "manufacturers": [],
-      "manufacturer_canonical": [],
-      "food_types": [
-        "coffee",
-        "drink",
-        "milk"
-      ],
-      "safety_issues": [],
-      "recall_reasons": [],
-      "alias_traces": [],
-      "verification_role": "auxiliary_complaint_signal",
-      "merge_policy": "do_not_merge_with_official_notice",
-      "verification_status": "auxiliary_only",
-      "complaint_channel": "r/foodsafety",
-      "observed_at": "2026-05-21",
-      "official_merge_allowed": false
-    },
-    {
-      "source": "r/foodsafety",
-      "source_type": "reddit",
-      "trust_tier": "T4_community",
-      "event_model": "complaint_signal",
-      "title": "Can I cook and eat these beans?",
-      "url": "https://www.reddit.com/r/foodsafety/comments/1tjsx8t/can_i_cook_and_eat_these_beans",
-      "event_at": "2026-05-21T18:12:27+00:00",
-      "event_age_days": 6.52,
-      "event_freshness_sla_days": 3,
-      "event_status": "stale",
-      "food_event_key": "complaint-signal:us:r-foodsafety:2026-05-21:https-www-reddit-com-r-foodsafety-comments-1tjsx8t-can-i-cook-and-eat-these-beans",
-      "evidence_url": "https://www.reddit.com/r/foodsafety/comments/1tjsx8t/can_i_cook_and_eat_these_beans",
-      "evidence_url_present": true,
-      "country": "US",
-      "products": [],
-      "product_canonical": [],
-      "brands": [],
-      "brand_canonical": [],
-      "manufacturers": [],
-      "manufacturer_canonical": [],
-      "food_types": [],
-      "safety_issues": [],
-      "recall_reasons": [],
-      "alias_traces": [],
-      "verification_role": "auxiliary_complaint_signal",
-      "merge_policy": "do_not_merge_with_official_notice",
-      "verification_status": "auxiliary_only",
-      "complaint_channel": "r/foodsafety",
-      "observed_at": "2026-05-21",
-      "official_merge_allowed": false
-    },
-    {
-      "source": "r/foodsafety",
-      "source_type": "reddit",
-      "trust_tier": "T4_community",
-      "event_model": "complaint_signal",
-      "title": "is it safe to consume coconut milk that was at room temp (opened) for 3 days",
-      "url": "https://www.reddit.com/r/foodsafety/comments/1tjqj7j/is_it_safe_to_consume_coconut_milk_that_was_at",
-      "event_at": "2026-05-21T16:54:22+00:00",
-      "event_age_days": 6.58,
-      "event_freshness_sla_days": 3,
-      "event_status": "stale",
-      "food_event_key": "complaint-signal:us:r-foodsafety:2026-05-21:milk:safe-to-eat-is-it-safe:https-www-reddit-com-r-foodsafety-comments-1tjqj7j-is-it-safe-to-consume-coconut-milk-that-was-at",
-      "evidence_url": "https://www.reddit.com/r/foodsafety/comments/1tjqj7j/is_it_safe_to_consume_coconut_milk_that_was_at",
-      "evidence_url_present": true,
-      "country": "US",
-      "products": [],
-      "product_canonical": [],
-      "brands": [],
-      "brand_canonical": [],
-      "manufacturers": [],
-      "manufacturer_canonical": [],
-      "food_types": [
-        "milk"
-      ],
-      "safety_issues": [
-        "safe to eat",
-        "is it safe"
-      ],
-      "recall_reasons": [],
-      "alias_traces": [],
-      "verification_role": "auxiliary_complaint_signal",
-      "merge_policy": "do_not_merge_with_official_notice",
-      "verification_status": "auxiliary_only",
-      "complaint_channel": "r/foodsafety",
-      "observed_at": "2026-05-21",
-      "official_merge_allowed": false
-    },
-    {
-      "source": "r/foodsafety",
-      "source_type": "reddit",
-      "trust_tier": "T4_community",
-      "event_model": "complaint_signal",
-      "title": "Raw chicken probably spoiled",
-      "url": "https://www.reddit.com/r/foodsafety/comments/1tjojaq/raw_chicken_probably_spoiled",
-      "event_at": "2026-05-21T15:46:26+00:00",
-      "event_age_days": 6.62,
-      "event_freshness_sla_days": 3,
-      "event_status": "stale",
-      "food_event_key": "complaint-signal:us:r-foodsafety:2026-05-21:chicken:https-www-reddit-com-r-foodsafety-comments-1tjojaq-raw-chicken-probably-spoiled",
-      "evidence_url": "https://www.reddit.com/r/foodsafety/comments/1tjojaq/raw_chicken_probably_spoiled",
-      "evidence_url_present": true,
-      "country": "US",
-      "products": [],
-      "product_canonical": [],
-      "brands": [],
-      "brand_canonical": [],
-      "manufacturers": [],
-      "manufacturer_canonical": [],
-      "food_types": [
-        "chicken"
-      ],
-      "safety_issues": [],
-      "recall_reasons": [],
-      "alias_traces": [],
-      "verification_role": "auxiliary_complaint_signal",
-      "merge_policy": "do_not_merge_with_official_notice",
-      "verification_status": "auxiliary_only",
-      "complaint_channel": "r/foodsafety",
-      "observed_at": "2026-05-21",
-      "official_merge_allowed": false
-    },
-    {
-      "source": "r/foodsafety",
-      "source_type": "reddit",
-      "trust_tier": "T4_community",
-      "event_model": "complaint_signal",
-      "title": "What is in this smarties box? One of them has a hole in it… I’ve never seen anything like this before. Many boxes are like this.",
-      "url": "https://www.reddit.com/r/foodsafety/comments/1tjogf1/what_is_in_this_smarties_box_one_of_them_has_a",
-      "event_at": "2026-05-21T15:43:46+00:00",
-      "event_age_days": 6.63,
-      "event_freshness_sla_days": 3,
-      "event_status": "stale",
-      "food_event_key": "complaint-signal:us:r-foodsafety:2026-05-21:smarties:https-www-reddit-com-r-foodsafety-comments-1tjogf1-what-is-in-this-smarties-box-one-of-them-has-a",
-      "evidence_url": "https://www.reddit.com/r/foodsafety/comments/1tjogf1/what_is_in_this_smarties_box_one_of_them_has_a",
-      "evidence_url_present": true,
-      "country": "US",
-      "products": [
-        "smarties"
-      ],
-      "product_canonical": [],
-      "brands": [],
-      "brand_canonical": [],
-      "manufacturers": [],
-      "manufacturer_canonical": [],
-      "food_types": [],
-      "safety_issues": [],
-      "recall_reasons": [],
-      "alias_traces": [],
-      "verification_role": "auxiliary_complaint_signal",
-      "merge_policy": "do_not_merge_with_official_notice",
-      "verification_status": "auxiliary_only",
-      "complaint_channel": "r/foodsafety",
-      "observed_at": "2026-05-21",
-      "official_merge_allowed": false
-    },
-    {
-      "source": "r/foodsafety",
-      "source_type": "reddit",
-      "trust_tier": "T4_community",
-      "event_model": "complaint_signal",
-      "title": "mouldy couscous",
-      "url": "https://www.reddit.com/r/foodsafety/comments/1tjkja4/mouldy_couscous",
-      "event_at": "2026-05-21T13:27:53+00:00",
-      "event_age_days": 6.72,
-      "event_freshness_sla_days": 3,
-      "event_status": "stale",
-      "food_event_key": "complaint-signal:us:r-foodsafety:2026-05-21:vegetable:mold:https-www-reddit-com-r-foodsafety-comments-1tjkja4-mouldy-couscous",
-      "evidence_url": "https://www.reddit.com/r/foodsafety/comments/1tjkja4/mouldy_couscous",
-      "evidence_url_present": true,
-      "country": "US",
-      "products": [],
-      "product_canonical": [],
-      "brands": [],
-      "brand_canonical": [],
-      "manufacturers": [],
-      "manufacturer_canonical": [],
-      "food_types": [
-        "vegetable"
-      ],
-      "safety_issues": [
-        "mold"
-      ],
-      "recall_reasons": [],
-      "alias_traces": [],
-      "verification_role": "auxiliary_complaint_signal",
-      "merge_policy": "do_not_merge_with_official_notice",
-      "verification_status": "auxiliary_only",
-      "complaint_channel": "r/foodsafety",
-      "observed_at": "2026-05-21",
-      "official_merge_allowed": false
-    },
-    {
-      "source": "r/foodsafety",
-      "source_type": "reddit",
-      "trust_tier": "T4_community",
-      "event_model": "complaint_signal",
-      "title": "Coffee drink in glass bottle has this white stuff in it?",
-      "url": "https://www.reddit.com/r/foodsafety/comments/1tjiozj/coffee_drink_in_glass_bottle_has_this_white_stuff",
-      "event_at": "2026-05-21T12:15:55+00:00",
-      "event_age_days": 6.77,
-      "event_freshness_sla_days": 3,
-      "event_status": "stale",
-      "food_event_key": "complaint-signal:us:r-foodsafety:2026-05-21:coffee-drink:https-www-reddit-com-r-foodsafety-comments-1tjiozj-coffee-drink-in-glass-bottle-has-this-white-stuff",
-      "evidence_url": "https://www.reddit.com/r/foodsafety/comments/1tjiozj/coffee_drink_in_glass_bottle_has_this_white_stuff",
-      "evidence_url_present": true,
-      "country": "US",
-      "products": [],
-      "product_canonical": [],
-      "brands": [],
-      "brand_canonical": [],
-      "manufacturers": [],
-      "manufacturer_canonical": [],
-      "food_types": [
-        "coffee",
-        "drink"
-      ],
-      "safety_issues": [],
-      "recall_reasons": [],
-      "alias_traces": [],
-      "verification_role": "auxiliary_complaint_signal",
-      "merge_policy": "do_not_merge_with_official_notice",
-      "verification_status": "auxiliary_only",
-      "complaint_channel": "r/foodsafety",
-      "observed_at": "2026-05-21",
-      "official_merge_allowed": false
     }
   ],
   "alias_candidates": [
@@ -1108,34 +1013,23 @@
       "variants": [
         "kraft heinz"
       ],
-      "count": 2,
+      "count": 1,
       "example_urls": [
-        "https://www.fooddive.com/news/kraft-heinz-jello-natural-colors-artificial-dyes/820864",
         "https://www.fooddive.com/news/oscar-mayers-wienermobile-race-returns-with-bolder-media-blitz/820973"
       ]
     },
     {
-      "alias_type": "brand",
-      "canonical": "농심",
-      "normalized": "농심",
-      "variants": [
-        "nongshim"
-      ],
-      "count": 1,
-      "example_urls": [
-        "https://www.reddit.com/r/KoreanFood/comments/1tjtm6b/korean_exchange_student_memories_my_favorite"
-      ]
-    },
-    {
       "alias_type": "manufacturer",
-      "canonical": "농심",
-      "normalized": "농심",
+      "canonical": "대일종합식품",
+      "normalized": "대일종합식품",
       "variants": [
-        "nongshim"
+        "대일종합식품"
       ],
-      "count": 1,
+      "count": 8,
       "example_urls": [
-        "https://www.reddit.com/r/KoreanFood/comments/1tjtm6b/korean_exchange_student_memories_my_favorite"
+        "/portal/suspensionDetail.do?search_keyword=3000226602",
+        "/portal/suspensionDetail.do?search_keyword=3000226609",
+        "/portal/suspensionDetail.do?search_keyword=3000226611"
       ]
     },
     {
@@ -1152,6 +1046,30 @@
     },
     {
       "alias_type": "product",
+      "canonical": "꼴뚜기젓",
+      "normalized": "꼴뚜기젓",
+      "variants": [
+        "꼴뚜기젓"
+      ],
+      "count": 1,
+      "example_urls": [
+        "/portal/suspensionDetail.do?search_keyword=3000226614"
+      ]
+    },
+    {
+      "alias_type": "product",
+      "canonical": "낙지젓",
+      "normalized": "낙지젓",
+      "variants": [
+        "낙지젓"
+      ],
+      "count": 1,
+      "example_urls": [
+        "/portal/suspensionDetail.do?search_keyword=3000226609"
+      ]
+    },
+    {
+      "alias_type": "product",
       "canonical": "디노르 진공 와인 스토퍼 키퍼",
       "normalized": "디노르진공와인스토퍼키퍼",
       "variants": [
@@ -1161,20 +1079,96 @@
       "example_urls": [
         "/portal/suspensionDetail.do?search_keyword=3000226544"
       ]
-    }
-  ],
-  "text_length_outliers": [
+    },
     {
-      "source": "r/Cooking",
-      "field": "summary",
-      "length": 2066,
-      "threshold": 2000,
-      "title": "Blueberry Lemon Bread",
-      "url": "https://www.reddit.com/r/Cooking/comments/1tjwg5w/blueberry_lemon_bread",
-      "published": "2026-05-21T20:12:38"
+      "alias_type": "product",
+      "canonical": "맛창젓",
+      "normalized": "맛창젓",
+      "variants": [
+        "맛창젓"
+      ],
+      "count": 1,
+      "example_urls": [
+        "/portal/suspensionDetail.do?search_keyword=3000226610"
+      ]
+    },
+    {
+      "alias_type": "product",
+      "canonical": "멍게젓",
+      "normalized": "멍게젓",
+      "variants": [
+        "멍게젓"
+      ],
+      "count": 1,
+      "example_urls": [
+        "/portal/suspensionDetail.do?search_keyword=3000226602"
+      ]
+    },
+    {
+      "alias_type": "product",
+      "canonical": "명란젓",
+      "normalized": "명란젓",
+      "variants": [
+        "명란젓"
+      ],
+      "count": 1,
+      "example_urls": [
+        "/portal/suspensionDetail.do?search_keyword=3000226613"
+      ]
+    },
+    {
+      "alias_type": "product",
+      "canonical": "순태젓",
+      "normalized": "순태젓",
+      "variants": [
+        "순태젓"
+      ],
+      "count": 1,
+      "example_urls": [
+        "/portal/suspensionDetail.do?search_keyword=3000226612"
+      ]
+    },
+    {
+      "alias_type": "product",
+      "canonical": "신안새우젓",
+      "normalized": "신안새우젓",
+      "variants": [
+        "신안새우젓"
+      ],
+      "count": 1,
+      "example_urls": [
+        "/portal/suspensionDetail.do?search_keyword=3000226606"
+      ]
+    },
+    {
+      "alias_type": "product",
+      "canonical": "오징어젓",
+      "normalized": "오징어젓",
+      "variants": [
+        "오징어젓"
+      ],
+      "count": 1,
+      "example_urls": [
+        "/portal/suspensionDetail.do?search_keyword=3000226611"
+      ]
     }
   ],
+  "text_length_outliers": [],
   "match_coverage_review_items": [
+    {
+      "reason": "market_or_editorial_unclassified",
+      "priority": "medium",
+      "source": "Food Dive",
+      "source_type": "rss",
+      "trust_tier": "T3_professional",
+      "event_model": "editorial_coverage",
+      "title": "Sam Adams channels Revolutionary Era with America 250 beer",
+      "url": "https://www.fooddive.com/news/samuel-adams-brewer-patriot-collection-america-250-boston-beer/821261",
+      "published_at": "2026-05-28T13:16:00+00:00",
+      "collected_at": "2026-05-29T06:47:25.420613+00:00",
+      "summary_excerpt": "Boston Beer is going back to the 1770s with brews inspired by the country’s Founding Fathers that use ingredients from the period.",
+      "recommended_action": "review Product/FoodType/Brand keyword coverage"
+    },
     {
       "reason": "market_or_editorial_unclassified",
       "priority": "medium",
@@ -1187,20 +1181,6 @@
       "published_at": "2026-05-26T04:01:39+00:00",
       "collected_at": "2026-05-27T06:57:07.523765+00:00",
       "summary_excerpt": "Findings from a preliminary investigation into the availability of illicit alcohol in an Australian state have been described as “concerning.” Researchers visited four licensed alcohol retailers in Melbourne, Victoria, during June, July and September 2025. The",
-      "recommended_action": "review Product/FoodType/Brand keyword coverage"
-    },
-    {
-      "reason": "market_or_editorial_unclassified",
-      "priority": "medium",
-      "source": "Food Safety News",
-      "source_type": "rss",
-      "trust_tier": "T3_professional",
-      "event_model": "editorial_coverage",
-      "title": "Publisher's Platform: What industry doesn't want you to know about cantaloupe",
-      "url": "https://www.foodsafetynews.com/2026/05/publishers-platform-what-industry-doesnt-want-you-to-know-about-cantaloupe",
-      "published_at": "2026-05-22T04:06:27+00:00",
-      "collected_at": "2026-05-26T06:40:42.840539+00:00",
-      "summary_excerpt": "Cantaloupe is almost perfectly designed to make people sick",
       "recommended_action": "review Product/FoodType/Brand keyword coverage"
     },
     {
