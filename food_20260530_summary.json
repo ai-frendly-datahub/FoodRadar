@@ -1,0 +1,975 @@
+{
+  "date": "2026-05-30",
+  "category": "food",
+  "article_count": 66,
+  "source_count": 5,
+  "matched_count": 63,
+  "top_entities": [
+    {
+      "name": "FoodGeneral",
+      "count": 101
+    },
+    {
+      "name": "SafetyIssue",
+      "count": 69
+    },
+    {
+      "name": "FoodType",
+      "count": 40
+    },
+    {
+      "name": "Regulation",
+      "count": 13
+    },
+    {
+      "name": "Product",
+      "count": 10
+    },
+    {
+      "name": "ProductCanonical",
+      "count": 10
+    },
+    {
+      "name": "Manufacturer",
+      "count": 10
+    },
+    {
+      "name": "ManufacturerCanonical",
+      "count": 10
+    },
+    {
+      "name": "Brand",
+      "count": 3
+    },
+    {
+      "name": "RecallReason",
+      "count": 1
+    }
+  ],
+  "sources": {
+    "Food Safety News": 30,
+    "Food Dive": 14,
+    "식약처 보도자료": 8,
+    "식품안전나라 행정처분": 4,
+    "식품안전나라 회수판매중지": 10
+  },
+  "generated_at": "2026-05-30T15:17:11.073378+09:00",
+  "articles": [
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Publisher’s Platform: We Haven’t Finished the Job - A Warning From the Kebab Shop",
+        "source_url": "https://www.foodsafetynews.com/2026/05/publishers-platform-we-havent-finished-the-job-a-warning-from-the-kebab-shop/",
+        "published_at": "2026-05-30T05:57:50+00:00",
+        "summary": "I have spent more than thirty years representing people whose lives were shattered by a single meal. I have sat across from parents in hospital waiting rooms, watched children in kidney failure, and held the hands of families who buried kids who just wanted a hamburger."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "Leftovers: Hidden Valley Ranch launches dippable snacks | Hot Pockets leans into snacking",
+        "source_url": "https://www.fooddive.com/news/leftovers-hidden-valley-ranch-dippable-snacks-hot-pockets-snacks-liquid-iv-margarita/821486/",
+        "published_at": "2026-05-29T15:00:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/sG5_qXi2qJ81l-8nywsG_wBG2IgicW4-NeskgGNmOFY/g:nowe:0:139/c:2400:1355/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9EaXBwZXJzX1N3ZWV0c19fU25hY2tzXzEucG5n.webp\" /></div></figure><p>The ranch dressing maker is entering the refrigerated aisle for the first time, while Liquid IV takes on the mocktail market.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "IFF to sell food ingredients business for $4.3B",
+        "source_url": "https://www.fooddive.com/news/iff-to-sell-food-ingredients-business-for-43b/821464/",
+        "published_at": "2026-05-29T15:00:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/HCecFnScoUFvMmg_DyRI5IlcFwYIHVIc-lykRXm0tlw/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0xMjM5NTA0ODA4LmpwZw==.webp\" /></div></figure><p>The transaction with CVC Capital Partners marks the latest step by IFF to improve growth and boost profitability.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "SNAP waivers could lead to $830M sales loss for soda, candy, energy drinks",
+        "source_url": "https://www.fooddive.com/news/snap-waivers-grocery-sales-loss-numerator/821472/",
+        "published_at": "2026-05-29T14:07:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/WX3DVzTF_eEMlBHvs_pwtqM_5M3zvqMWOqlFt3mb0Y8/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0xMTg2NTk2NDQ2LmpwZw==.webp\" /></div></figure><p>By the end of 2026, state-specific restrictions are expected to impact one-third of participants in the government food assistance program, Numerator found.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "FDA report shows timeline, traceback in infant botulism outbreak traced to ByHeart formula",
+        "source_url": "https://www.foodsafetynews.com/2026/05/fda-report-shows-timeline-traceback-in-infant-botulism-outbreak-traced-to-byheart-formula/",
+        "published_at": "2026-05-29T04:05:24+00:00",
+        "summary": "In its Executive Summary, the FDA redacted the name of the company that provided ByHeart with some of the powdered milk used in the production of the implicated formula."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Study shows link between climate and antimicrobial resistant Salmonella",
+        "source_url": "https://www.foodsafetynews.com/2026/05/study-shows-link-between-climate-and-antimicrobial-resistant-salmonella/",
+        "published_at": "2026-05-29T04:03:47+00:00",
+        "summary": "<p>Researchers have described how climate change could have an impact on Salmonella and antimicrobial resistance.</p><p>Scientists analyzed more than 236,700 Salmonella genomes from 139 countries or regions over the period 1940 to 2023. They selected annual mean temperatures and rain levels as indicators of climate change. Future</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Academic warns of risks with changing FSA’s remit",
+        "source_url": "https://www.foodsafetynews.com/2026/05/academic-warns-of-risks-with-changing-fsas-remit/",
+        "published_at": "2026-05-29T04:01:12+00:00",
+        "summary": "<p>A leading academic has warned that any plans for UK regulators to help industry grow could end up repeating past mistakes and impacting public health.</p><p>As part of modernization plans, a recent set of proposals from the Food Standards Agency (FSA) covered an expansion of responsibilities to include trying to</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식약처 보도자료",
+        "headline": "[보도참고] 무신고 소분·판매한 '젓갈류' 회수 조치",
+        "source_url": "/portal/board/boardDetail.do?bbs_no=bbs080&ntctxt_no=50031&menu_no=2857",
+        "published_at": "2026-05-29T00:00:00+00:00",
+        "summary": "<p>[보도참고] 무신고 소분·판매한 '젓갈류' 회수 조치</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식약처 보도자료",
+        "headline": "원료돈지를 식용돈지로 오인혼동하도록 판매한 온라인 부당광고 업체 7곳 적발",
+        "source_url": "/portal/board/boardDetail.do?bbs_no=bbs080&ntctxt_no=50029&menu_no=2857",
+        "published_at": "2026-05-29T00:00:00+00:00",
+        "summary": "<p>원료돈지를 식용돈지로 오인혼동하도록 판매한 온라인 부당광고 업체 7곳 적발</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식약처 보도자료",
+        "headline": "2025년 식품산업 생산실적 119조 원, 전년 대비 4.3% 증가",
+        "source_url": "/portal/board/boardDetail.do?bbs_no=bbs080&ntctxt_no=50028&menu_no=2857",
+        "published_at": "2026-05-29T00:00:00+00:00",
+        "summary": "<p>2025년 식품산업 생산실적 119조 원, 전년 대비 4.3% 증가</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식품안전나라 행정처분",
+        "headline": "2026. 1. 26. 수입신고한 미얀마산 수입수산물 ‘냉동가물치(FROZEN SNAKEHEAD, 포장년월일: 2025. 12. 30., 수입신고 접수번호: 202600061834)’에 대한 정밀검사 결과, 식용으로 사용이 금지된 유해물질인 동물용의약품 ‘오플록사신(Ofloxacin)…",
+        "source_url": "/portal/administMeasureDetail.do?seq=4723075",
+        "published_at": "2026-05-29T00:00:00+00:00",
+        "summary": "2026. 1. 26. 수입신고한 미얀마산 수입수산물 ‘냉동가물치(FROZEN SNAKEHEAD, 포장년월일: 2025. 12. 30., 수입신고 접수번호: 202600061834)’에 대한 정밀검사 결과, 식용으로 사용이 금지된 유해물질인 동물용의약품 ‘오플록사신(Ofloxacin)’이 검출된 사실이 있음. ※ 검사결과: 0.0004mg/kg 검출(기준: 불검출)"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Infant formula recalled because of cereulide contamination",
+        "source_url": "https://www.foodsafetynews.com/2026/05/infant-formula-recalled-because-of-cereulide-contamination/",
+        "published_at": "2026-05-28T18:41:49+00:00",
+        "summary": "<p>The a2 Milk Company (“a2MC”) has recalled three specific batches of its imported a2 Platinum Premium USA label infant formula 0-12 months because of the presence of cereulide. The product is sold only in the United States.</p><p>Cereulide is a heat-stable toxin produced by some strains of the</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "Inside ADM’s reformulation hub powering better-for-you innovation",
+        "source_url": "https://www.fooddive.com/news/adm-reformulation-ingredients-solutions-erlanger-kentucky/821384/",
+        "published_at": "2026-05-28T17:06:00+00:00",
+        "summary": "<p>The flavors and ingredient giant is working to rapidly create solutions for food makers to address consumer demand for lower sugar, reduced sodium and more protein.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "Tyson Foods hires Jeff Schomburger as CEO",
+        "source_url": "https://www.fooddive.com/news/tyson-foods-hires-jeff-schomburger-as-ceo/821351/",
+        "published_at": "2026-05-28T14:00:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/in5vpNQZ0zsE7Mh2NOQZwCbPLRB26PXdqYy8Pjz4UvE/g:nowe:0:277/c:2134:1205/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9URl9NZWRpYVBob3RvX1dvcmxkSGVhZHF1YXJ0ZXJzXzEucG5n.webp\" /></div></figure><p>The executive takes over for Donnie King, who has been with the meat and chicken processor for 43 years, including the last five as CEO.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "Sam Adams channels Revolutionary Era with America 250 beer",
+        "source_url": "https://www.fooddive.com/news/samuel-adams-brewer-patriot-collection-america-250-boston-beer/821261/",
+        "published_at": "2026-05-28T13:16:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/79-ktbl_Yed7ALQGkhOhqVSZFIPIZ-k4a9KN4jcMWes/g:nowe:0:0/c:2488:1405/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9CcmV3ZXJfUGF0cmlvdF9Db2xsZWN0aW9uXy1fSGVyb19JbWFnZS5qcGc=.webp\" /></div></figure><p>Boston Beer is going back to the 1770s with brews inspired by the country’s Founding Fathers that use ingredients from the period.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "WK Kellogg adds on-pack nutrition guide to highlight cereal benefits",
+        "source_url": "https://www.fooddive.com/news/wk-kellogg-adds-on-pack-nutrition-guide-to-highlight/821267/",
+        "published_at": "2026-05-28T13:00:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/RM7PAGmCLIWIJkWsBpRRsaUCoKVLRoSGi4_D3uPMS-M/g:nowe:12:114/c:2805:1584/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9SYWlzaW5fQnJhbi1fU1BPT05TX1BhY2thZ2luZ193aXRoX2Jvd2xfY2xvc2VfdXAuanBnLWZvdG9yLTIwMjYwNTI3MTYxNzQ1LmpwZw==.webp\" /></div></figure><p>The SPOONS framework, which will debut on classic products such as Rice Krispies and Corn Flakes, provides information on fiber, protein and sugar content.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "FDA reopens investigation into Salmonella outbreak traced to moringa capsules",
+        "source_url": "https://www.foodsafetynews.com/2026/05/fda-reopens-investigation-into-salmonella-outbreak-traced-to-moringa-capsules/",
+        "published_at": "2026-05-28T04:05:44+00:00",
+        "summary": "As of May 27 a total of 119 people infected with one of the outbreak strains of Salmonella have been reported from 36 states since the investigation began."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Hundreds of inmates sickened in Salmonella outbreak",
+        "source_url": "https://www.foodsafetynews.com/2026/05/hundreds-of-inmates-sickened-in-salmonella-outbreak/",
+        "published_at": "2026-05-28T04:04:53+00:00",
+        "summary": "<p>The Broome County Health Department in New York has determined that the illnesses impacting more than 300 people in the Broome County Correctional Facility is Salmonella infection.</p><p>The Broome County Sheriff's Office and the health department released a joint statement on May 27 confirming that \"multiple test</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Irish illness data shows more reports of major pathogens",
+        "source_url": "https://www.foodsafetynews.com/2026/05/irish-illness-data-shows-more-reports-of-major-pathogens/",
+        "published_at": "2026-05-28T04:03:43+00:00",
+        "summary": "<p>Infection data from Ireland has revealed an increase in most major pathogens this past year with Salmonella at its highest level since 2008.</p><p>Figures come from a report published by the Health Protection Surveillance Centre (HPSC) that includes foodborne illnesses in the last quarter and all of 2025.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Rise in Campylobacter positive flocks in Norway",
+        "source_url": "https://www.foodsafetynews.com/2026/05/rise-in-campylobacter-positive-flocks-in-norway-2/",
+        "published_at": "2026-05-28T04:01:21+00:00",
+        "summary": "<p>The rate of poultry flocks positive for Campylobacter in Norway went up in 2025 to almost 5 percent.</p><p>Overall, 99 broiler flocks tested positive for Campylobacter among all flocks slaughtered before 51 days of age between the start of May and the end of October. In total, 2,014</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식약처 보도자료",
+        "headline": "[부처합동] 지역 바가지요금 근절을 위해 범부처 총력 대응",
+        "source_url": "/portal/board/boardDetail.do?bbs_no=bbs080&ntctxt_no=50025&menu_no=2857",
+        "published_at": "2026-05-28T00:00:00+00:00",
+        "summary": "<p style=\"margin: 0px; padding: 0px; font-size: 13.3333px;\">(부처합동)지역 바가지요금 근절을 위해 범부처 총력 대응 </p>\n<p style=\"margin: 0px; padding: 0px; font-size: 13.3333px;\"><span style=\"color: rgb(255, 0, 0);\"><u></u></span></p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식품안전나라 회수판매중지",
+        "headline": "대일종합식품",
+        "source_url": "/portal/suspensionDetail.do?search_keyword=3000226612",
+        "published_at": "2026-05-28T00:00:00+00:00",
+        "summary": "순태젓"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식품안전나라 회수판매중지",
+        "headline": "대일종합식품",
+        "source_url": "/portal/suspensionDetail.do?search_keyword=3000226610",
+        "published_at": "2026-05-28T00:00:00+00:00",
+        "summary": "맛창젓"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식품안전나라 회수판매중지",
+        "headline": "대일종합식품",
+        "source_url": "/portal/suspensionDetail.do?search_keyword=3000226614",
+        "published_at": "2026-05-28T00:00:00+00:00",
+        "summary": "꼴뚜기젓"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식품안전나라 회수판매중지",
+        "headline": "대일종합식품",
+        "source_url": "/portal/suspensionDetail.do?search_keyword=3000226611",
+        "published_at": "2026-05-28T00:00:00+00:00",
+        "summary": "오징어젓"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식품안전나라 회수판매중지",
+        "headline": "주식회사 샘그린유통",
+        "source_url": "/portal/suspensionDetail.do?search_keyword=3000226584",
+        "published_at": "2026-05-28T00:00:00+00:00",
+        "summary": "국화"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식품안전나라 회수판매중지",
+        "headline": "대일종합식품",
+        "source_url": "/portal/suspensionDetail.do?search_keyword=3000226606",
+        "published_at": "2026-05-28T00:00:00+00:00",
+        "summary": "신안새우젓"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식약처 보도자료",
+        "headline": "식약처, 청년과 함께 안전한 식의약 유통환경 조성",
+        "source_url": "/portal/board/boardDetail.do?bbs_no=bbs080&ntctxt_no=50020&menu_no=2857",
+        "published_at": "2026-05-28T00:00:00+00:00",
+        "summary": "<p>식약처, 청년과 함께 안전한 식의약 유통환경 조성</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식품안전나라 회수판매중지",
+        "headline": "대일종합식품",
+        "source_url": "/portal/suspensionDetail.do?search_keyword=3000226609",
+        "published_at": "2026-05-28T00:00:00+00:00",
+        "summary": "낙지젓"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식품안전나라 회수판매중지",
+        "headline": "대일종합식품",
+        "source_url": "/portal/suspensionDetail.do?search_keyword=3000226613",
+        "published_at": "2026-05-28T00:00:00+00:00",
+        "summary": "명란젓"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식품안전나라 회수판매중지",
+        "headline": "대일종합식품",
+        "source_url": "/portal/suspensionDetail.do?search_keyword=3000226602",
+        "published_at": "2026-05-28T00:00:00+00:00",
+        "summary": "멍게젓"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Chocolate bars recalled because they contain sildenafil",
+        "source_url": "https://www.foodsafetynews.com/2026/05/chocolate-bars-recalled-because-they-contain-sildenafil/",
+        "published_at": "2026-05-27T22:54:03+00:00",
+        "summary": "<p>JXK Enterprises Inc. is recalling Boner Bears Chocolate, Lot #BB21125, after being notified that FDA laboratory analysis confirmed the presence of sildenafil, an active ingredient in the FDA-approved prescription drug Viagra, which is not declared on the product label.</p><p>Sildenafil is approved for use only under the supervision of a</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "More moringa products recalled because of Salmonella",
+        "source_url": "https://www.foodsafetynews.com/2026/05/more-moringa-products-recalled-because-of-salmonella/",
+        "published_at": "2026-05-27T22:44:34+00:00",
+        "summary": "<p>Total Nutrition Inc. of Deer Park, NY, is recalling TNVitamins Ultra Potent Complete Green Superfood and Doctor’s Pride Complete Green Superfood Ultra Potent Moringa Capsules because they have the potential to be contaminated with Salmonella.</p><p>The recalled product was distributed nationally through the online platforms, Amazon, Walmart, TikTok</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Chocolate bites recalled because of undeclared peanut butter",
+        "source_url": "https://www.foodsafetynews.com/2026/05/chocolate-bites-recalled-because-of-undeclared-peanut-butter/",
+        "published_at": "2026-05-27T22:30:02+00:00",
+        "summary": "<p>Bazzini LLC, of Allentown, PA, a co-manufacturer utilized by SkinnyDipped, is recalling a limited number of cases of SkinnyDipped Dark Chocolate Coconut Almond Bites, because of the possible presence of undeclared peanuts. </p><p>People who have allergies to peanuts run the risk of a serious or life-threatening allergic reaction if</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Popsicles recalled because of undeclared allergens, dyes",
+        "source_url": "https://www.foodsafetynews.com/2026/05/popsicles-recalled-because-of-undeclared-allergens-dyes/",
+        "published_at": "2026-05-27T22:20:02+00:00",
+        "summary": "<p>De Dios’s Ice Pops II LLC is recalling its 3.7 oz. packages of “popsicles” because they may contain undeclared milk, yellow #5, red #40, pecans and pistachios. </p><p>People who have an allergy or severe sensitivity to these ingredients run the risk of serious or</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Raaw Energy expands recall of pet food because of Listeria test results",
+        "source_url": "https://www.foodsafetynews.com/2026/05/raw-energy-expands-recall-of-pet-food-because-of-listeria-test-results/",
+        "published_at": "2026-05-27T22:07:46+00:00",
+        "summary": "<p>Raaw Energy is voluntarily notifying the public of an expansion of a recall involving products produced between 7/17/25 and 12/23/25 due to possible Listeria contamination. </p><p>Another batch date is 3/31/26 Beef and Turkey Medley. Some products produced during this timeframe were not tested,</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "Splenda owner to buy Equal sweeteners maker",
+        "source_url": "https://www.fooddive.com/news/splenda-owner-buys-equal-sweeteners/821215/",
+        "published_at": "2026-05-27T14:46:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/cTaPPrhXXoyebqqdsljDYxUp-UyTmBi8S5rl_NQjxXA/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy03Mzg0NzUxM18xLmpwZw==.webp\" /></div></figure><p>Heartland Food Products will acquire Whole Earth Brands’ Americas business in a deal combining some of the most recognized sugar substitute brands.  </p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "Nutella maker Ferrero may take ‘a breather’ in large-scale M&A in the US",
+        "source_url": "https://www.fooddive.com/news/nutella-maker-ferrero-may-take-a-breather-in-large-scale-ma-in-the-us/820835/",
+        "published_at": "2026-05-27T14:00:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/J8tfcFNcorc7mbtbOObmtHgYG6eKONaPCLYnscdK5tk/g:nowe:4:182/c:4027:2275/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9JTUdfNzgxOS5qcGc=.webp\" /></div></figure><p>After spending more than $8 billion for brands such as Keebler, Butterfinger and Rice Krispies, the sweets giant is turning its attention to innovation and boosting efficiencies.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "Mondelēz taps AI for distribution centers to cut costs",
+        "source_url": "https://www.fooddive.com/news/mondelez-taps-ai-for-distribution-centers-to-cut-costs/820791/",
+        "published_at": "2026-05-27T13:34:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/HEHkjGkcTUeTBDpLs32ddwbRxjfG5B1R6k2E4T7SxDU/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMTg5NDQ3NDUzLmpwZw==.webp\" /></div></figure><p>The snack and confectionery manufacturer plans to bring more manufacturing and packaging in-house to “save quite a bit of money,” COO and CFO Luca Zaramella said.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "FDA reports another Salmonella outbreak traced to moringa leaf powder",
+        "source_url": "https://www.foodsafetynews.com/2026/05/fda-reports-another-salmonella-outbreak-traced-to-moringa-leaf-powder/",
+        "published_at": "2026-05-27T04:06:22+00:00",
+        "summary": "The outbreak of Salmonella Typhimurium has sickened 18 people"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Outbreak numbers related to backyard poultry flocks rising quickly",
+        "source_url": "https://www.foodsafetynews.com/2026/05/outbreak-numbers-related-to-backyard-poultry-flocks-rising-quickly/",
+        "published_at": "2026-05-27T04:05:29+00:00",
+        "summary": "Over a quarter of people sickened in this outbreak are children younger than 5 years old"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Germany shares findings from long-term outbreak analysis",
+        "source_url": "https://www.foodsafetynews.com/2026/05/germany-shares-findings-from-long-term-outbreak-analysis/",
+        "published_at": "2026-05-27T04:04:38+00:00",
+        "summary": "Over the 10-year period studied, 3,021 foodborne outbreaks were investigated in 16 states."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Botulism cases under investigation in Italy",
+        "source_url": "https://www.foodsafetynews.com/2026/05/botulism-cases-under-investigation-in-italy/",
+        "published_at": "2026-05-27T04:02:04+00:00",
+        "summary": "<p>Italian officials suspect that a brand of olive and almond cream caused two cases of botulism.</p><p>In early May, two adult patients, part of the same family, were hospitalized because of suspected botulism with epidemiological investigations led by experts from the Toscana Centro local health authority (ASL).</p><p>A notice on</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식품안전나라 회수판매중지",
+        "headline": "마티에르",
+        "source_url": "/portal/suspensionDetail.do?search_keyword=3000226544",
+        "published_at": "2026-05-27T00:00:00+00:00",
+        "summary": "디노르 진공 와인 스토퍼 키퍼"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식약처 보도자료",
+        "headline": "안전한 매실청 담그는 방법, 식약처가 알려드림",
+        "source_url": "/portal/board/boardDetail.do?bbs_no=bbs080&ntctxt_no=50018&menu_no=2857",
+        "published_at": "2026-05-27T00:00:00+00:00",
+        "summary": "<p>안전한 매실청 담그는 방법, 식약처가 알려드림</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "FDA issues warning after cookie company refuses to recall products",
+        "source_url": "https://www.foodsafetynews.com/2026/05/fda-issues-warning-after-cookie-company-refuses-to-recall-products/",
+        "published_at": "2026-05-26T21:50:12+00:00",
+        "summary": "<p>The FDA is warning consumers with milk, wheat, or tree nut allergies not to eat, and retailers not to serve or sell certain Imperial-brand cookies and candies manufactured by Imperial Nougat Co. due to milk, wheat, and tree nut ingredients not being listed on the label as required.</p><p>People with</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "Svedka’s senior brand director on the vodka’s future-forward marketing",
+        "source_url": "https://www.fooddive.com/news/svedkas-senior-brand-director-on-the-vodkas-future-forward-marketing/820581/",
+        "published_at": "2026-05-26T14:01:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/u6dx1Y6ljZmup75frOywVb8DLDpBsxs8yUyojMjn_NQ/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9TdmVka2FfU1ZFRFBIT05FUy5qcGc=.webp\" /></div></figure><p>David Binder talks about the vodka maker’s controversial AI-generated Super Bowl debut and its future plans under Sazerac.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "Cactus candies, protein donuts: 5 products highlighting the evolution of snacking",
+        "source_url": "https://www.fooddive.com/news/cactus-candies-protein-donuts-5-products-highlighting-the-evolution-of-sn/820362/",
+        "published_at": "2026-05-26T14:00:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/k1drEPCQVxRg7HwdO_utjV7Hts0t4VdkxgCEfCwMEx0/g:nowe:0:97/c:2855:1613/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9JTUdfMzg0My5qcGVn.webp\" /></div></figure><p>Nutrition and sustainability were key themes at the 2026 Sweets & Snacks Expo, where 1,000 exhibitors from around the world gathered to display their innovations.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "How the food and beverage industry is rethinking manufacturing investments",
+        "source_url": "https://www.fooddive.com/news/food-beverage-manufacturing-investments-us-expansion/821081/",
+        "published_at": "2026-05-26T13:59:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/yI1IHTmvJeaUh2-UwCmmr2ukYIn8IwkoZkSZzlzreVc/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0xNDA0NDAxNDM4LmpwZw==.webp\" /></div></figure><p>Companies are increasingly focused on modernizing facilities as they shrink their footprints.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "The co-manufacturer’s dilemma: How MattPak learned to say yes to more business",
+        "source_url": "https://www.fooddive.com/spons/the-co-manufacturers-dilemma-how-mattpak-learned-to-say-yes-to-more-busin/820203/",
+        "published_at": "2026-05-26T09:00:00+00:00",
+        "summary": "<p>Ninety-eight percent uptime, no temp labor, a facility doubling in size. MattPak's automation story.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Costa Rica reports Salmonella outbreak; one possible death",
+        "source_url": "https://www.foodsafetynews.com/2026/05/costa-rica-reports-salmonella-outbreaks-one-possible-death/",
+        "published_at": "2026-05-26T04:05:48+00:00",
+        "summary": "Local media said a shop that sold mainly chicken is implicated"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "New guidance for infant manufacturers available",
+        "source_url": "https://www.foodsafetynews.com/2026/05/new-guidance-for-infant-manufacturers-available/",
+        "published_at": "2026-05-26T04:03:42+00:00",
+        "summary": "<p>The FDA has issued <a href=\"https://www.fda.gov/regulatory-information/search-fda-guidance-documents/guidance-industry-protein-efficiency-ratio-rat-bioassay-studies-demonstrate-new-infant-formula?ref=foodsafetynews.com\"><u>final guidance</u></a> for manufacturers of infant formula and laboratories conducting testing on infant formula. </p><p>The guidance was developed to help manufacturers and laboratories in the design, conduct, evaluation, and reporting of Protein Efficiency Ratio (PER) studies. Protein is an essential nutrient to support growth and</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Initial results from alcohol testing raise concerns",
+        "source_url": "https://www.foodsafetynews.com/2026/05/initial-results-from-alcohol-testing-raise-concerns/",
+        "published_at": "2026-05-26T04:01:39+00:00",
+        "summary": "<p>Findings from a preliminary investigation into the availability of illicit alcohol in an Australian state have been described as “concerning.”</p><p>Researchers visited four licensed alcohol retailers in Melbourne, Victoria, during June, July and September 2025. They purchased three suspected illicit vodka products and one control product and submitted</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식품안전나라 행정처분",
+        "headline": "2024.1.27.부터 2026.1.27. 까지 식품 등의 구매대행을 목적으로 게시글(제품명: 솔로데이트랩)을 인터넷 사이트에 게시하면서 질병의 예방.치료에 효능이 있는 것으로 인식할 우려가 있는 표시 광고를 한 사실이 있음.",
+        "source_url": "/portal/administMeasureDetail.do?seq=4720327",
+        "published_at": "2026-05-26T00:00:00+00:00",
+        "summary": "2024.1.27.부터 2026.1.27. 까지 식품 등의 구매대행을 목적으로 게시글(제품명: 솔로데이트랩)을 인터넷 사이트에 게시하면서 질병의 예방.치료에 효능이 있는 것으로 인식할 우려가 있는 표시 광고를 한 사실이 있음."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식품안전나라 행정처분",
+        "headline": "○ 자가품질검사 전항목 미실시 - 상기 업체는 품목제조보고한 탁주 2종[① 제품명(품목보고번호): 우리밀막걸리 옹동주장(201300192192), ② 제품명(품목보고번호): 우리찹쌀동동주*(201300192193)]을 생산·판매하면서, 2021년 5월경 자가품질검사를 실시한 이후 점검…",
+        "source_url": "/portal/administMeasureDetail.do?seq=4721804",
+        "published_at": "2026-05-26T00:00:00+00:00",
+        "summary": "○ 자가품질검사 전항목 미실시 - 상기 업체는 품목제조보고한 탁주 2종[① 제품명(품목보고번호): 우리밀막걸리 옹동주장(201300192192), ② 제품명(품목보고번호): 우리찹쌀동동주*(201300192193)]을 생산·판매하면서, 2021년 5월경 자가품질검사를 실시한 이후 점검일(2026. 3. 31.) 현재까지 검사항목 전부에 대하여 자가품질검사를 실시하지 않은 사실이 있음 * 2026. 4. 3. ‘상서로세’로 품목명 변경"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식품안전나라 행정처분",
+        "headline": "○ 자가품질검사 전항목 미실시 - 상기 업체는 품목제조보고한 탁주 2종[① 제품명(품목보고번호): 밀주(2013001911516), ② 제품명(품목보고번호): 찹쌀로만(201300191154)]을 생산·판매하면서, 6개월마다 1회 이상 자가품질검사를 실시하여야 함에도 불구하고 2024…",
+        "source_url": "/portal/administMeasureDetail.do?seq=4721805",
+        "published_at": "2026-05-26T00:00:00+00:00",
+        "summary": "○ 자가품질검사 전항목 미실시 - 상기 업체는 품목제조보고한 탁주 2종[① 제품명(품목보고번호): 밀주(2013001911516), ② 제품명(품목보고번호): 찹쌀로만(201300191154)]을 생산·판매하면서, 6개월마다 1회 이상 자가품질검사를 실시하여야 함에도 불구하고 2024년 1회(2024. 11. 18.), 2025년 1회(2025. 11. 18.) 국세청 주류면허지원센터 분석･감정 결과 ‘적합’판정을 받고 그 외 자가품질검사는 전혀 실시하지 않은 사실이 있음"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식약처 보도자료",
+        "headline": "식약처, 전국 6개 권역에서 '식의약 정책이음 지역현장 열린마당' 개최",
+        "source_url": "/portal/board/boardDetail.do?bbs_no=bbs080&ntctxt_no=50012&menu_no=2857",
+        "published_at": "2026-05-26T00:00:00+00:00",
+        "summary": "<p>식약처, 전국 6개 권역에서 '식의약 정책이음 지역현장 열린마당' 개최</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식약처 보도자료",
+        "headline": "[보도참고] 식약처, 축산물 수거·검사 결과 “온라인 신속알림” 시범운영",
+        "source_url": "/portal/board/boardDetail.do?bbs_no=bbs080&ntctxt_no=50013&menu_no=2857",
+        "published_at": "2026-05-26T00:00:00+00:00",
+        "summary": "<p>[보도참고] 식약처, 축산물 수거·검사 결과 “온라인 신속알림” 시범운영</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "USDA posts warning about beef kofta linked to E. coli outbreak",
+        "source_url": "https://www.foodsafetynews.com/2026/05/usda-posts-warning-about-beef-kofta-linked-to-e-coli-outbreak/",
+        "published_at": "2026-05-25T23:22:14+00:00",
+        "summary": "<p>The USDA’s Food Safety and Inspection Service (FSIS) has issued a public health alert regarding beef kofta products served at The Kebab Shop restaurant locations because they have been implicated in an outbreak of E. coli infections.</p><p>The beef kofta was produced as a raw ground beef product</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Salmonella egg outbreak sickens 230 in Belgium",
+        "source_url": "https://www.foodsafetynews.com/2026/05/salmonella-egg-outbreak-sickens-230-in-belgium/",
+        "published_at": "2026-05-25T04:05:08+00:00",
+        "summary": "Salmonella was found in a dust sample taken from a Laerco BV chicken coop and subsequent analysis revealed it was the same type detected in patients."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Bill Marler is right about food safety — but here’s what he left out",
+        "source_url": "https://www.foodsafetynews.com/2026/05/bill-marler-is-right-about-food-safety-but-heres-what-he-left-out/",
+        "published_at": "2026-05-25T04:04:08+00:00",
+        "summary": "Title: Bill Marler is right about food safety — but here’s what he left out\n\nURL Source: https://www.foodsafetynews.com/2026/05/bill-marler-is-right-about-food-safety-but-heres-what-he-left-out/\n\nPublished Time: 2026-05-25T04:04:08.000Z\n\nMarkdown Content:\n## Subscribe to Food Safety News\n\nGet the free version of our newsletter. No spam ever, unsubscribe anytime.\n\n**By Kathleen Gillin**\n\nTwenty years ago, my daughter Rylee nearly died after eating spinach contaminated with E. coli 0157:H7. She was only 9 years old. Sitting helplessly beside her hospital bed as she fought for her life was the most agonizing experience I have ever endured. Thankfully, she survived — but the health effects of that illness continue to impact her life to this day.\n\nBecause of that experience, I will always be a passionate advocate for food safety.\n\nRecently, I read food safety attorney Bill Marler’s editorial, “Romaine Roulette,” in which he recounted the history of foodborne illness outbreaks linked to leafy greens and pointed to cattle operations as a likely source of contamination.\n\nI agree with much of what Mr. Marler wrote. Dangerous pathogens do not originate in lettuce itself, and industries that raise livestock have a responsibility to prevent contamination of the environment and nearby food crops.\n\nBill Marler has done more than perhaps anyone else to force America’s food industries to take food safety seriously. His work has saved lives.\n\nBut there is another part of this story that deserves attention.\n\nAs part of my work as a food safety advocate, I serve as the Public Member of the California Leafy Greens Marketing Agreement (LGMA), which was formed in response to the devastating 2006 spinach outbreak that nearly took my daughter’s life. A few years after the LGMA was formed, their leadership reached out to invite families impacted by foodborne illness to California to meet growers, visit farms, and see firsthand the extensive food safety practices now required on leafy greens"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "FDA cites three companies for failing to verify safety of a variety of imported products",
+        "source_url": "https://www.foodsafetynews.com/2026/05/fda-cites-three-companies-for-failing-to-verify-safety-of-a-variety-of-imported-products/",
+        "published_at": "2026-05-25T04:03:19+00:00",
+        "summary": "<p><em>As part of its enforcement activities, the Food and Drug Administration sends warning letters to entities under its jurisdiction. Some letters are not posted for public view until weeks or months after they are sent. Business owners have 15 days to respond to FDA warning letters. Warning letters often are</em></p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "U.S. experts among attendees at food safety event in China",
+        "source_url": "https://www.foodsafetynews.com/2026/05/u-s-experts-among-attendees-at-food-safety-event-in-china/",
+        "published_at": "2026-05-25T04:01:28+00:00",
+        "summary": "<p>Officials from several countries, including the United States, met in China recently to discuss food safety priorities.</p><p>The Asia-Pacific Economic Cooperation (APEC) conference was hosted by the General Administration of Customs of China (GACC) in mid-May.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Sunday Edition: Reflecting",
+        "source_url": "https://www.foodsafetynews.com/2026/05/sunday-edition-reflecting/",
+        "published_at": "2026-05-24T12:00:53+00:00",
+        "summary": "Today we revisit some of the topics we’ve covered in the past months."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Angel Speciality drinks recalled because of Salmonella risk",
+        "source_url": "https://www.foodsafetynews.com/2026/05/angel-speciality-drinks-recalled-because-of-salmonella-risk/",
+        "published_at": "2026-05-24T03:35:15+00:00",
+        "summary": "<p>SKS Copack of Cerritos, CA is recalling various specialty beverages, because they have the potential to be contaminated with Salmonella.</p><p>The recalled products were distributed in the states of CA, UT, ID, NY, NJ, AZ, PA, NC, TX, OH, LA, GA, FL, IL, OK, MA, WA, OR, WI, NV, VA,</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Brucellosis outbreak in California linked to raw milk cheese",
+        "source_url": "https://www.foodsafetynews.com/2026/05/brucellosis-outbreak-in-california-linked-to-raw-milk-cheese/",
+        "published_at": "2026-05-24T03:22:23+00:00",
+        "summary": "<p>The Los Angeles County Department of Public Health (LAC DPH) is investigating a cluster of Brucella melitensis (brucellosis) infections among adults residing in South Los Angeles County. </p><p>Each confirmed case reported consuming unpasteurized cheese imported from Mexico, underscoring the serious health risks associated with raw or unpasteurized</p>"
+      }
+    }
+  ],
+  "ontology": {
+    "repo": "FoodRadar",
+    "category": "food",
+    "ontology_version": "0.1.0",
+    "event_model_ids": [
+      "food.complaint_signal",
+      "food.editorial_coverage",
+      "food.enforcement_action",
+      "food.official_notice",
+      "food.recall_status_change"
+    ],
+    "event_model_mappings": {
+      "recall_status_change": "food.recall_status_change",
+      "enforcement_action": "food.enforcement_action",
+      "complaint_signal": "food.complaint_signal",
+      "official_notice": "food.official_notice",
+      "editorial_coverage": "food.editorial_coverage"
+    },
+    "entity_type_hints": [
+      "food.food_type",
+      "food.brand",
+      "food.product",
+      "food.manufacturer",
+      "food.safety_issue",
+      "food.regulation"
+    ],
+    "source_role_ids": [
+      "community_signal",
+      "context_only",
+      "official_context",
+      "primary_evidence"
+    ],
+    "source_role_mappings": {
+      "식품안전나라 회수판매중지": "primary_evidence",
+      "식품안전나라 행정처분": "primary_evidence",
+      "식약처 보도자료": "official_context",
+      "식품안전 국내뉴스": "context_only",
+      "식품안전 해외뉴스": "context_only",
+      "Food Safety News": "context_only",
+      "Food Dive": "context_only",
+      "r/foodsafety": "community_signal",
+      "r/Cooking": "community_signal",
+      "r/nutrition": "community_signal",
+      "r/KoreanFood": "community_signal",
+      "r/ProductRecalls": "community_signal"
+    },
+    "evidence_policy_ids": [
+      "food.official_source_required_for_recall",
+      "food.community_signal_auxiliary_only",
+      "food.traceable_url_required"
+    ]
+  },
+  "quality_summary": {
+    "total_sources": 12,
+    "tracked_sources": 3,
+    "fresh_sources": 2,
+    "quiet_window_sources": 0,
+    "stale_sources": 0,
+    "missing_sources": 1,
+    "unknown_event_date_sources": 0,
+    "not_tracked_sources": 8,
+    "catalog_only_sources": 0,
+    "skipped_disabled_sources": 1,
+    "collection_error_count": 4,
+    "alias_candidate_count": 13,
+    "text_length_outlier_count": 0,
+    "title_length_outlier_count": 0,
+    "summary_length_outlier_count": 0,
+    "mapped_alias_candidate_count": 13,
+    "unmapped_alias_candidate_count": 0,
+    "product_alias_candidate_count": 10,
+    "brand_alias_candidate_count": 0,
+    "manufacturer_alias_candidate_count": 3,
+    "match_coverage_article_count": 66,
+    "match_coverage_matched_count": 63,
+    "match_coverage_unmatched_count": 3,
+    "match_coverage_rate": 95.5,
+    "match_coverage_review_item_count": 3,
+    "fresh_food_events": 10,
+    "stale_food_events": 4,
+    "undated_food_events": 0,
+    "unique_food_event_key_count": 14,
+    "recall_events_with_notice_date_count": 10,
+    "recall_events_with_status_count": 10,
+    "event_alias_trace_count": 0,
+    "complaint_auxiliary_only_events": 0,
+    "official_evidence_events": 14,
+    "recall_status_change_events": 10,
+    "enforcement_action_events": 4,
+    "complaint_signal_events": 0
+  },
+  "warnings": [
+    "collection errors detected: 4",
+    "freshness gaps detected: stale=0, missing=1"
+  ],
+  "quality_flagged_sources": [
+    {
+      "source": "r/foodsafety",
+      "source_type": "reddit",
+      "enabled": true,
+      "tracked": true,
+      "event_model": "complaint_signal",
+      "freshness_sla_days": 3,
+      "quiet_window_days": null,
+      "status": "missing",
+      "article_count": 0,
+      "latest_event_at": null,
+      "latest_collected_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_food_event_key": "",
+      "latest_notice_date": "",
+      "latest_recall_status": "",
+      "latest_release_date": "",
+      "latest_sanction_start_date": "",
+      "latest_sanction_end_date": "",
+      "latest_sanction_type": "",
+      "latest_product_name_raw": "",
+      "latest_manufacturer_name_raw": "",
+      "latest_alias_traces": [],
+      "verification_role": "auxiliary_complaint_signal",
+      "merge_policy": "do_not_merge_with_official_notice",
+      "skip_reason": "",
+      "reenable_gate": "",
+      "errors": [
+        "r/foodsafety: Source disabled (crawl health threshold reached)"
+      ]
+    }
+  ],
+  "quality_alias_candidates": [
+    {
+      "alias_type": "manufacturer",
+      "canonical": "대일종합식품",
+      "normalized": "대일종합식품",
+      "variants": [
+        "대일종합식품"
+      ],
+      "count": 8,
+      "example_urls": [
+        "/portal/suspensionDetail.do?search_keyword=3000226610",
+        "/portal/suspensionDetail.do?search_keyword=3000226612",
+        "/portal/suspensionDetail.do?search_keyword=3000226614"
+      ]
+    },
+    {
+      "alias_type": "manufacturer",
+      "canonical": "마티에르",
+      "normalized": "마티에르",
+      "variants": [
+        "마티에르"
+      ],
+      "count": 1,
+      "example_urls": [
+        "/portal/suspensionDetail.do?search_keyword=3000226544"
+      ]
+    },
+    {
+      "alias_type": "manufacturer",
+      "canonical": "주식회사 샘그린유통",
+      "normalized": "샘그린유통",
+      "variants": [
+        "주식회사 샘그린유통"
+      ],
+      "count": 1,
+      "example_urls": [
+        "/portal/suspensionDetail.do?search_keyword=3000226584"
+      ]
+    },
+    {
+      "alias_type": "product",
+      "canonical": "국화",
+      "normalized": "국화",
+      "variants": [
+        "국화"
+      ],
+      "count": 1,
+      "example_urls": [
+        "/portal/suspensionDetail.do?search_keyword=3000226584"
+      ]
+    },
+    {
+      "alias_type": "product",
+      "canonical": "꼴뚜기젓",
+      "normalized": "꼴뚜기젓",
+      "variants": [
+        "꼴뚜기젓"
+      ],
+      "count": 1,
+      "example_urls": [
+        "/portal/suspensionDetail.do?search_keyword=3000226614"
+      ]
+    },
+    {
+      "alias_type": "product",
+      "canonical": "낙지젓",
+      "normalized": "낙지젓",
+      "variants": [
+        "낙지젓"
+      ],
+      "count": 1,
+      "example_urls": [
+        "/portal/suspensionDetail.do?search_keyword=3000226609"
+      ]
+    },
+    {
+      "alias_type": "product",
+      "canonical": "디노르 진공 와인 스토퍼 키퍼",
+      "normalized": "디노르진공와인스토퍼키퍼",
+      "variants": [
+        "디노르 진공 와인 스토퍼 키퍼"
+      ],
+      "count": 1,
+      "example_urls": [
+        "/portal/suspensionDetail.do?search_keyword=3000226544"
+      ]
+    },
+    {
+      "alias_type": "product",
+      "canonical": "맛창젓",
+      "normalized": "맛창젓",
+      "variants": [
+        "맛창젓"
+      ],
+      "count": 1,
+      "example_urls": [
+        "/portal/suspensionDetail.do?search_keyword=3000226610"
+      ]
+    },
+    {
+      "alias_type": "product",
+      "canonical": "멍게젓",
+      "normalized": "멍게젓",
+      "variants": [
+        "멍게젓"
+      ],
+      "count": 1,
+      "example_urls": [
+        "/portal/suspensionDetail.do?search_keyword=3000226602"
+      ]
+    },
+    {
+      "alias_type": "product",
+      "canonical": "명란젓",
+      "normalized": "명란젓",
+      "variants": [
+        "명란젓"
+      ],
+      "count": 1,
+      "example_urls": [
+        "/portal/suspensionDetail.do?search_keyword=3000226613"
+      ]
+    },
+    {
+      "alias_type": "product",
+      "canonical": "순태젓",
+      "normalized": "순태젓",
+      "variants": [
+        "순태젓"
+      ],
+      "count": 1,
+      "example_urls": [
+        "/portal/suspensionDetail.do?search_keyword=3000226612"
+      ]
+    },
+    {
+      "alias_type": "product",
+      "canonical": "신안새우젓",
+      "normalized": "신안새우젓",
+      "variants": [
+        "신안새우젓"
+      ],
+      "count": 1,
+      "example_urls": [
+        "/portal/suspensionDetail.do?search_keyword=3000226606"
+      ]
+    }
+  ],
+  "quality_match_coverage_review_items": [
+    {
+      "reason": "market_or_editorial_unclassified",
+      "priority": "medium",
+      "source": "Food Dive",
+      "source_type": "rss",
+      "trust_tier": "T3_professional",
+      "event_model": "editorial_coverage",
+      "title": "Sam Adams channels Revolutionary Era with America 250 beer",
+      "url": "https://www.fooddive.com/news/samuel-adams-brewer-patriot-collection-america-250-boston-beer/821261",
+      "published_at": "2026-05-28T13:16:00+00:00",
+      "collected_at": "2026-05-30T06:17:10.284280+00:00",
+      "summary_excerpt": "Boston Beer is going back to the 1770s with brews inspired by the country’s Founding Fathers that use ingredients from the period.",
+      "recommended_action": "review Product/FoodType/Brand keyword coverage"
+    },
+    {
+      "reason": "market_or_editorial_unclassified",
+      "priority": "medium",
+      "source": "Food Safety News",
+      "source_type": "rss",
+      "trust_tier": "T3_professional",
+      "event_model": "editorial_coverage",
+      "title": "Initial results from alcohol testing raise concerns",
+      "url": "https://www.foodsafetynews.com/2026/05/initial-results-from-alcohol-testing-raise-concerns",
+      "published_at": "2026-05-26T04:01:39+00:00",
+      "collected_at": "2026-05-27T06:57:07.523765+00:00",
+      "summary_excerpt": "Findings from a preliminary investigation into the availability of illicit alcohol in an Australian state have been described as “concerning.” Researchers visited four licensed alcohol retailers in Melbourne, Victoria, during June, July and September 2025. The",
+      "recommended_action": "review Product/FoodType/Brand keyword coverage"
+    },
+    {
+      "reason": "market_or_editorial_unclassified",
+      "priority": "medium",
+      "source": "Food Safety News",
+      "source_type": "rss",
+      "trust_tier": "T3_professional",
+      "event_model": "editorial_coverage",
+      "title": "Sunday Edition: Reflecting",
+      "url": "https://www.foodsafetynews.com/2026/05/sunday-edition-reflecting",
+      "published_at": "2026-05-24T12:00:53+00:00",
+      "collected_at": "2026-05-27T06:57:07.523765+00:00",
+      "summary_excerpt": "Today we revisit some of the topics we’ve covered in the past months.",
+      "recommended_action": "review Product/FoodType/Brand keyword coverage"
+    }
+  ]
+}
