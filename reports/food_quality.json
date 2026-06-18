@@ -1,11 +1,11 @@
 {
   "category": "food",
-  "generated_at": "2026-06-17T08:23:18.838156+00:00",
+  "generated_at": "2026-06-18T07:42:44.885371+00:00",
   "summary": {
     "total_sources": 12,
     "tracked_sources": 3,
-    "fresh_sources": 1,
-    "quiet_window_sources": 0,
+    "fresh_sources": 0,
+    "quiet_window_sources": 1,
     "stale_sources": 1,
     "missing_sources": 1,
     "unknown_event_date_sources": 0,
@@ -13,31 +13,31 @@
     "catalog_only_sources": 0,
     "skipped_disabled_sources": 1,
     "collection_error_count": 0,
-    "alias_candidate_count": 12,
+    "alias_candidate_count": 10,
     "text_length_outlier_count": 0,
     "title_length_outlier_count": 0,
     "summary_length_outlier_count": 0,
-    "mapped_alias_candidate_count": 12,
+    "mapped_alias_candidate_count": 10,
     "unmapped_alias_candidate_count": 0,
-    "product_alias_candidate_count": 8,
+    "product_alias_candidate_count": 7,
     "brand_alias_candidate_count": 1,
-    "manufacturer_alias_candidate_count": 3,
-    "match_coverage_article_count": 66,
-    "match_coverage_matched_count": 63,
-    "match_coverage_unmatched_count": 3,
-    "match_coverage_rate": 95.5,
-    "match_coverage_review_item_count": 3,
-    "fresh_food_events": 7,
-    "stale_food_events": 5,
+    "manufacturer_alias_candidate_count": 2,
+    "match_coverage_article_count": 61,
+    "match_coverage_matched_count": 56,
+    "match_coverage_unmatched_count": 5,
+    "match_coverage_rate": 91.8,
+    "match_coverage_review_item_count": 5,
+    "fresh_food_events": 0,
+    "stale_food_events": 10,
     "undated_food_events": 0,
-    "unique_food_event_key_count": 12,
-    "recall_events_with_notice_date_count": 8,
-    "recall_events_with_status_count": 8,
+    "unique_food_event_key_count": 10,
+    "recall_events_with_notice_date_count": 7,
+    "recall_events_with_status_count": 7,
     "event_alias_trace_count": 0,
     "complaint_auxiliary_only_events": 0,
-    "official_evidence_events": 12,
-    "recall_status_change_events": 8,
-    "enforcement_action_events": 4,
+    "official_evidence_events": 10,
+    "recall_status_change_events": 7,
+    "enforcement_action_events": 3,
     "complaint_signal_events": 0
   },
   "sources": [
@@ -49,21 +49,21 @@
       "event_model": "recall_status_change",
       "freshness_sla_days": 3,
       "quiet_window_days": 5,
-      "status": "fresh",
-      "article_count": 8,
+      "status": "quiet_window",
+      "article_count": 7,
       "latest_event_at": "2026-06-15T00:00:00+00:00",
       "latest_collected_at": "2026-06-17T08:23:16.904171+00:00",
-      "age_days": 2.35,
+      "age_days": 3.32,
       "latest_title": "트렌디저트 주식회사",
-      "latest_url": "/portal/suspensionDetail.do?search_keyword=3000227392",
-      "latest_food_event_key": "recall-status-change:kr:식품안전나라-회수판매중지:2026-06-15:트렌디저트-주식회사:빙슈-턴앤업-초코:회:portal-suspensiondetail-do-search-keyword-3000227392",
+      "latest_url": "/portal/suspensionDetail.do?search_keyword=3000227387",
+      "latest_food_event_key": "recall-status-change:kr:식품안전나라-회수판매중지:2026-06-15:트렌디저트-주식회사:빙슈-턴앤업-밀크:회:portal-suspensiondetail-do-search-keyword-3000227387",
       "latest_notice_date": "2026-06-15",
       "latest_recall_status": "notice",
       "latest_release_date": "",
       "latest_sanction_start_date": "",
       "latest_sanction_end_date": "",
       "latest_sanction_type": "",
-      "latest_product_name_raw": "빙슈 턴앤업 초코",
+      "latest_product_name_raw": "빙슈 턴앤업 밀크",
       "latest_manufacturer_name_raw": "트렌디저트 주식회사",
       "latest_alias_traces": [],
       "verification_role": "",
@@ -81,18 +81,18 @@
       "freshness_sla_days": 2,
       "quiet_window_days": null,
       "status": "stale",
-      "article_count": 4,
+      "article_count": 3,
       "latest_event_at": "2026-06-15T00:00:00+00:00",
       "latest_collected_at": "2026-06-17T08:23:16.904171+00:00",
-      "age_days": 2.35,
-      "latest_title": "○「식품 등의 표시·광고에 관한 법률」제8조제1항제3호에 따라 누구든지 식품등의 명칭ㆍ제조방법ㆍ성분 등 대통령령으로 정하는 사항에 관하여 건강기능식품이 아닌 것을 건강기능식품으로 인식할 우려가 있는 표시 또는 광고를 하여서는 아니 되나, - 상기 영업자는 수입식품등을 구매대행 하면서…",
-      "latest_url": "/portal/administMeasureDetail.do?seq=4726398",
-      "latest_food_event_key": "enforcement-action:kr:식품안전나라-행정처분:2026-06-15:건강기능식품-수입식품:식품-성분:portal-administmeasuredetail-do-seq-4726398",
+      "age_days": 3.32,
+      "latest_title": "상기 영업자는 2024년 4월 18일부터 2024년 11월 1일까지 수입식품등을 수입하면서 해외 제조업소의 소재지를 사실과 다르게 수입신고한 사실이 있음",
+      "latest_url": "/portal/administMeasureDetail.do?seq=4725756",
+      "latest_food_event_key": "enforcement-action:kr:식품안전나라-행정처분:2024-04-18:제조업소:수입식품:식품:portal-administmeasuredetail-do-seq-4725756",
       "latest_notice_date": "",
       "latest_recall_status": "",
       "latest_release_date": "",
-      "latest_sanction_start_date": "",
-      "latest_sanction_end_date": "",
+      "latest_sanction_start_date": "2024-04-18",
+      "latest_sanction_end_date": "2024-11-01",
       "latest_sanction_type": "enforcement_action",
       "latest_product_name_raw": "",
       "latest_manufacturer_name_raw": "",
@@ -115,9 +115,9 @@
       "article_count": 5,
       "latest_event_at": "2026-06-17T00:00:00+00:00",
       "latest_collected_at": "2026-06-17T08:23:16.904171+00:00",
-      "age_days": 0.35,
-      "latest_title": "[보도참고] 제조일자 없는 '빙과' 회수 조치",
-      "latest_url": "/portal/board/boardDetail.do?bbs_no=bbs080&menu_no=2857&ntctxt_no=50083",
+      "age_days": 1.32,
+      "latest_title": "[보도참고] 식약처, 시험·검사 역량 강화를 위한 동물용의약품 시험법 설명회 개최",
+      "latest_url": "/portal/board/boardDetail.do?bbs_no=bbs080&menu_no=2857&ntctxt_no=50086",
       "latest_food_event_key": "",
       "latest_notice_date": "",
       "latest_recall_status": "",
@@ -205,12 +205,12 @@
       "freshness_sla_days": null,
       "quiet_window_days": null,
       "status": "not_tracked",
-      "article_count": 30,
-      "latest_event_at": "2026-06-17T04:07:41+00:00",
-      "latest_collected_at": "2026-06-17T08:23:16.904171+00:00",
-      "age_days": 0.18,
-      "latest_title": "Infant formula company refuses to reveal the name of the manufacturer tied to botulism outbreak",
-      "latest_url": "https://www.foodsafetynews.com/2026/06/infant-formula-company-refuses-to-reveal-the-name-of-the-manufacturer",
+      "article_count": 29,
+      "latest_event_at": "2026-06-18T04:06:48+00:00",
+      "latest_collected_at": "2026-06-18T07:42:43.306240+00:00",
+      "age_days": 0.15,
+      "latest_title": "German company made the infant formula linked to botulism outbreak",
+      "latest_url": "https://www.foodsafetynews.com/2026/06/german-company-made-the-infant-formula-linked-to-botulism-outbreak",
       "latest_food_event_key": "",
       "latest_notice_date": "",
       "latest_recall_status": "",
@@ -236,12 +236,12 @@
       "freshness_sla_days": null,
       "quiet_window_days": null,
       "status": "not_tracked",
-      "article_count": 19,
-      "latest_event_at": "2026-06-16T19:00:00+00:00",
-      "latest_collected_at": "2026-06-17T08:23:16.904171+00:00",
-      "age_days": 0.56,
-      "latest_title": "Danone sues Chobani over high-protein yogurt claims",
-      "latest_url": "https://www.fooddive.com/news/danone-sues-chobani-high-protein-yogurt-claims-oikos/823033",
+      "article_count": 17,
+      "latest_event_at": "2026-06-17T14:29:00+00:00",
+      "latest_collected_at": "2026-06-18T07:42:43.306240+00:00",
+      "age_days": 0.72,
+      "latest_title": "Anheuser Busch invests $20M in Michelob Ultra production in bet on beer rebound",
+      "latest_url": "https://www.fooddive.com/news/anheuser-busch-michelob-ultra-manufacturing-investment-st-louis-20m/823134",
       "latest_food_event_key": "",
       "latest_notice_date": "",
       "latest_recall_status": "",
@@ -421,11 +421,101 @@
       "trust_tier": "T1_official",
       "event_model": "recall_status_change",
       "title": "트렌디저트 주식회사",
+      "url": "/portal/suspensionDetail.do?search_keyword=3000227387",
+      "event_at": "2026-06-15T00:00:00+00:00",
+      "event_age_days": 3.32,
+      "event_freshness_sla_days": 3,
+      "event_status": "stale",
+      "food_event_key": "recall-status-change:kr:식품안전나라-회수판매중지:2026-06-15:트렌디저트-주식회사:빙슈-턴앤업-밀크:회:portal-suspensiondetail-do-search-keyword-3000227387",
+      "evidence_url": "/portal/suspensionDetail.do?search_keyword=3000227387",
+      "evidence_url_present": true,
+      "country": "KR",
+      "products": [
+        "빙슈 턴앤업 밀크"
+      ],
+      "product_canonical": [
+        "빙슈 턴앤업 밀크"
+      ],
+      "brands": [],
+      "brand_canonical": [],
+      "manufacturers": [
+        "트렌디저트 주식회사"
+      ],
+      "manufacturer_canonical": [
+        "트렌디저트 주식회사"
+      ],
+      "food_types": [
+        "회"
+      ],
+      "safety_issues": [],
+      "recall_reasons": [],
+      "alias_traces": [],
+      "verification_role": "",
+      "merge_policy": "",
+      "verification_status": "official_source",
+      "product_name_raw": "빙슈 턴앤업 밀크",
+      "manufacturer_name_raw": "트렌디저트 주식회사",
+      "recall_extraction_method": "official_recall_title_summary",
+      "notice_date": "2026-06-15",
+      "recall_status": "notice",
+      "release_date": ""
+    },
+    {
+      "source": "식품안전나라 회수판매중지",
+      "source_type": "rss",
+      "trust_tier": "T1_official",
+      "event_model": "recall_status_change",
+      "title": "트렌디저트 주식회사",
+      "url": "/portal/suspensionDetail.do?search_keyword=3000227389",
+      "event_at": "2026-06-15T00:00:00+00:00",
+      "event_age_days": 3.32,
+      "event_freshness_sla_days": 3,
+      "event_status": "stale",
+      "food_event_key": "recall-status-change:kr:식품안전나라-회수판매중지:2026-06-15:트렌디저트-주식회사:빙슈-턴앤업-바나나맛:회:portal-suspensiondetail-do-search-keyword-3000227389",
+      "evidence_url": "/portal/suspensionDetail.do?search_keyword=3000227389",
+      "evidence_url_present": true,
+      "country": "KR",
+      "products": [
+        "빙슈 턴앤업 바나나맛"
+      ],
+      "product_canonical": [
+        "빙슈 턴앤업 바나나맛"
+      ],
+      "brands": [],
+      "brand_canonical": [],
+      "manufacturers": [
+        "트렌디저트 주식회사"
+      ],
+      "manufacturer_canonical": [
+        "트렌디저트 주식회사"
+      ],
+      "food_types": [
+        "회"
+      ],
+      "safety_issues": [],
+      "recall_reasons": [],
+      "alias_traces": [],
+      "verification_role": "",
+      "merge_policy": "",
+      "verification_status": "official_source",
+      "product_name_raw": "빙슈 턴앤업 바나나맛",
+      "manufacturer_name_raw": "트렌디저트 주식회사",
+      "recall_extraction_method": "official_recall_title_summary",
+      "notice_date": "2026-06-15",
+      "recall_status": "notice",
+      "release_date": ""
+    },
+    {
+      "source": "식품안전나라 회수판매중지",
+      "source_type": "rss",
+      "trust_tier": "T1_official",
+      "event_model": "recall_status_change",
+      "title": "트렌디저트 주식회사",
       "url": "/portal/suspensionDetail.do?search_keyword=3000227392",
       "event_at": "2026-06-15T00:00:00+00:00",
-      "event_age_days": 2.35,
+      "event_age_days": 3.32,
       "event_freshness_sla_days": 3,
-      "event_status": "fresh",
+      "event_status": "stale",
       "food_event_key": "recall-status-change:kr:식품안전나라-회수판매중지:2026-06-15:트렌디저트-주식회사:빙슈-턴앤업-초코:회:portal-suspensiondetail-do-search-keyword-3000227392",
       "evidence_url": "/portal/suspensionDetail.do?search_keyword=3000227392",
       "evidence_url_present": true,
@@ -461,44 +551,6 @@
       "release_date": ""
     },
     {
-      "source": "식품안전나라 행정처분",
-      "source_type": "rss",
-      "trust_tier": "T1_official",
-      "event_model": "enforcement_action",
-      "title": "○「식품 등의 표시·광고에 관한 법률」제8조제1항제3호에 따라 누구든지 식품등의 명칭ㆍ제조방법ㆍ성분 등 대통령령으로 정하는 사항에 관하여 건강기능식품이 아닌 것을 건강기능식품으로 인식할 우려가 있는 표시 또는 광고를 하여서는 아니 되나, - 상기 영업자는 수입식품등을 구매대행 하면서…",
-      "url": "/portal/administMeasureDetail.do?seq=4726398",
-      "event_at": "2026-06-15T00:00:00+00:00",
-      "event_age_days": 2.35,
-      "event_freshness_sla_days": 2,
-      "event_status": "stale",
-      "food_event_key": "enforcement-action:kr:식품안전나라-행정처분:2026-06-15:건강기능식품-수입식품:식품-성분:portal-administmeasuredetail-do-seq-4726398",
-      "evidence_url": "/portal/administMeasureDetail.do?seq=4726398",
-      "evidence_url_present": true,
-      "country": "KR",
-      "products": [],
-      "product_canonical": [],
-      "brands": [],
-      "brand_canonical": [],
-      "manufacturers": [],
-      "manufacturer_canonical": [],
-      "food_types": [
-        "건강기능식품",
-        "수입식품"
-      ],
-      "safety_issues": [
-        "식품",
-        "성분"
-      ],
-      "recall_reasons": [],
-      "alias_traces": [],
-      "verification_role": "",
-      "merge_policy": "",
-      "verification_status": "official_source",
-      "sanction_start_date": "",
-      "sanction_end_date": "",
-      "sanction_type": "enforcement_action"
-    },
-    {
       "source": "식품안전나라 회수판매중지",
       "source_type": "rss",
       "trust_tier": "T1_official",
@@ -506,9 +558,9 @@
       "title": "트렌디저트 주식회사",
       "url": "/portal/suspensionDetail.do?search_keyword=3000227386",
       "event_at": "2026-06-15T00:00:00+00:00",
-      "event_age_days": 2.35,
+      "event_age_days": 3.32,
       "event_freshness_sla_days": 3,
-      "event_status": "fresh",
+      "event_status": "stale",
       "food_event_key": "recall-status-change:kr:식품안전나라-회수판매중지:2026-06-15:트렌디저트-주식회사:빙슈-턴앤업-멜론맛:회:portal-suspensiondetail-do-search-keyword-3000227386",
       "evidence_url": "/portal/suspensionDetail.do?search_keyword=3000227386",
       "evidence_url_present": true,
@@ -551,7 +603,7 @@
       "title": "상기 영업자는 2024년 4월 18일부터 2024년 11월 1일까지 수입식품등을 수입하면서 해외 제조업소의 소재지를 사실과 다르게 수입신고한 사실이 있음",
       "url": "/portal/administMeasureDetail.do?seq=4725756",
       "event_at": "2026-06-15T00:00:00+00:00",
-      "event_age_days": 2.35,
+      "event_age_days": 3.32,
       "event_freshness_sla_days": 2,
       "event_status": "stale",
       "food_event_key": "enforcement-action:kr:식품안전나라-행정처분:2024-04-18:제조업소:수입식품:식품:portal-administmeasuredetail-do-seq-4725756",
@@ -586,12 +638,95 @@
       "source_type": "rss",
       "trust_tier": "T1_official",
       "event_model": "recall_status_change",
+      "title": "트렌디저트 주식회사",
+      "url": "/portal/suspensionDetail.do?search_keyword=3000227385",
+      "event_at": "2026-06-15T00:00:00+00:00",
+      "event_age_days": 3.32,
+      "event_freshness_sla_days": 3,
+      "event_status": "stale",
+      "food_event_key": "recall-status-change:kr:식품안전나라-회수판매중지:2026-06-15:트렌디저트-주식회사:빙슈-턴앤업-망고맛:회:portal-suspensiondetail-do-search-keyword-3000227385",
+      "evidence_url": "/portal/suspensionDetail.do?search_keyword=3000227385",
+      "evidence_url_present": true,
+      "country": "KR",
+      "products": [
+        "빙슈 턴앤업 망고맛"
+      ],
+      "product_canonical": [
+        "빙슈 턴앤업 망고맛"
+      ],
+      "brands": [],
+      "brand_canonical": [],
+      "manufacturers": [
+        "트렌디저트 주식회사"
+      ],
+      "manufacturer_canonical": [
+        "트렌디저트 주식회사"
+      ],
+      "food_types": [
+        "회"
+      ],
+      "safety_issues": [],
+      "recall_reasons": [],
+      "alias_traces": [],
+      "verification_role": "",
+      "merge_policy": "",
+      "verification_status": "official_source",
+      "product_name_raw": "빙슈 턴앤업 망고맛",
+      "manufacturer_name_raw": "트렌디저트 주식회사",
+      "recall_extraction_method": "official_recall_title_summary",
+      "notice_date": "2026-06-15",
+      "recall_status": "notice",
+      "release_date": ""
+    },
+    {
+      "source": "식품안전나라 행정처분",
+      "source_type": "rss",
+      "trust_tier": "T1_official",
+      "event_model": "enforcement_action",
+      "title": "○「식품 등의 표시·광고에 관한 법률」제8조제1항제3호에 따라 누구든지 식품등의 명칭ㆍ제조방법ㆍ성분 등 대통령령으로 정하는 사항에 관하여 건강기능식품이 아닌 것을 건강기능식품으로 인식할 우려가 있는 표시 또는 광고를 하여서는 아니 되나, - 상기 영업자는 수입식품등을 구매대행 하면서…",
+      "url": "/portal/administMeasureDetail.do?seq=4726398",
+      "event_at": "2026-06-15T00:00:00+00:00",
+      "event_age_days": 3.32,
+      "event_freshness_sla_days": 2,
+      "event_status": "stale",
+      "food_event_key": "enforcement-action:kr:식품안전나라-행정처분:2026-06-15:건강기능식품-수입식품:식품-성분:portal-administmeasuredetail-do-seq-4726398",
+      "evidence_url": "/portal/administMeasureDetail.do?seq=4726398",
+      "evidence_url_present": true,
+      "country": "KR",
+      "products": [],
+      "product_canonical": [],
+      "brands": [],
+      "brand_canonical": [],
+      "manufacturers": [],
+      "manufacturer_canonical": [],
+      "food_types": [
+        "건강기능식품",
+        "수입식품"
+      ],
+      "safety_issues": [
+        "식품",
+        "성분"
+      ],
+      "recall_reasons": [],
+      "alias_traces": [],
+      "verification_role": "",
+      "merge_policy": "",
+      "verification_status": "official_source",
+      "sanction_start_date": "",
+      "sanction_end_date": "",
+      "sanction_type": "enforcement_action"
+    },
+    {
+      "source": "식품안전나라 회수판매중지",
+      "source_type": "rss",
+      "trust_tier": "T1_official",
+      "event_model": "recall_status_change",
       "title": "주식회사 디와이푸드텍 농업회사법인",
       "url": "/portal/suspensionDetail.do?search_keyword=3000227337",
       "event_at": "2026-06-15T00:00:00+00:00",
-      "event_age_days": 2.35,
+      "event_age_days": 3.32,
       "event_freshness_sla_days": 3,
-      "event_status": "fresh",
+      "event_status": "stale",
       "food_event_key": "recall-status-change:kr:식품안전나라-회수판매중지:2026-06-15:주식회사-디와이푸드텍-농업회사법인:추억의-알짜소세지:회:portal-suspensiondetail-do-search-keyword-3000227337",
       "evidence_url": "/portal/suspensionDetail.do?search_keyword=3000227337",
       "evidence_url_present": true,
@@ -634,9 +769,9 @@
       "title": "트렌디저트 주식회사",
       "url": "/portal/suspensionDetail.do?search_keyword=3000227342",
       "event_at": "2026-06-15T00:00:00+00:00",
-      "event_age_days": 2.35,
+      "event_age_days": 3.32,
       "event_freshness_sla_days": 3,
-      "event_status": "fresh",
+      "event_status": "stale",
       "food_event_key": "recall-status-change:kr:식품안전나라-회수판매중지:2026-06-15:트렌디저트-주식회사:빙슈-턴앤업-딸기:회:portal-suspensiondetail-do-search-keyword-3000227342",
       "evidence_url": "/portal/suspensionDetail.do?search_keyword=3000227342",
       "evidence_url_present": true,
@@ -672,141 +807,6 @@
       "release_date": ""
     },
     {
-      "source": "식품안전나라 회수판매중지",
-      "source_type": "rss",
-      "trust_tier": "T1_official",
-      "event_model": "recall_status_change",
-      "title": "트렌디저트 주식회사",
-      "url": "/portal/suspensionDetail.do?search_keyword=3000227389",
-      "event_at": "2026-06-15T00:00:00+00:00",
-      "event_age_days": 2.35,
-      "event_freshness_sla_days": 3,
-      "event_status": "fresh",
-      "food_event_key": "recall-status-change:kr:식품안전나라-회수판매중지:2026-06-15:트렌디저트-주식회사:빙슈-턴앤업-바나나맛:회:portal-suspensiondetail-do-search-keyword-3000227389",
-      "evidence_url": "/portal/suspensionDetail.do?search_keyword=3000227389",
-      "evidence_url_present": true,
-      "country": "KR",
-      "products": [
-        "빙슈 턴앤업 바나나맛"
-      ],
-      "product_canonical": [
-        "빙슈 턴앤업 바나나맛"
-      ],
-      "brands": [],
-      "brand_canonical": [],
-      "manufacturers": [
-        "트렌디저트 주식회사"
-      ],
-      "manufacturer_canonical": [
-        "트렌디저트 주식회사"
-      ],
-      "food_types": [
-        "회"
-      ],
-      "safety_issues": [],
-      "recall_reasons": [],
-      "alias_traces": [],
-      "verification_role": "",
-      "merge_policy": "",
-      "verification_status": "official_source",
-      "product_name_raw": "빙슈 턴앤업 바나나맛",
-      "manufacturer_name_raw": "트렌디저트 주식회사",
-      "recall_extraction_method": "official_recall_title_summary",
-      "notice_date": "2026-06-15",
-      "recall_status": "notice",
-      "release_date": ""
-    },
-    {
-      "source": "식품안전나라 회수판매중지",
-      "source_type": "rss",
-      "trust_tier": "T1_official",
-      "event_model": "recall_status_change",
-      "title": "트렌디저트 주식회사",
-      "url": "/portal/suspensionDetail.do?search_keyword=3000227387",
-      "event_at": "2026-06-15T00:00:00+00:00",
-      "event_age_days": 2.35,
-      "event_freshness_sla_days": 3,
-      "event_status": "fresh",
-      "food_event_key": "recall-status-change:kr:식품안전나라-회수판매중지:2026-06-15:트렌디저트-주식회사:빙슈-턴앤업-밀크:회:portal-suspensiondetail-do-search-keyword-3000227387",
-      "evidence_url": "/portal/suspensionDetail.do?search_keyword=3000227387",
-      "evidence_url_present": true,
-      "country": "KR",
-      "products": [
-        "빙슈 턴앤업 밀크"
-      ],
-      "product_canonical": [
-        "빙슈 턴앤업 밀크"
-      ],
-      "brands": [],
-      "brand_canonical": [],
-      "manufacturers": [
-        "트렌디저트 주식회사"
-      ],
-      "manufacturer_canonical": [
-        "트렌디저트 주식회사"
-      ],
-      "food_types": [
-        "회"
-      ],
-      "safety_issues": [],
-      "recall_reasons": [],
-      "alias_traces": [],
-      "verification_role": "",
-      "merge_policy": "",
-      "verification_status": "official_source",
-      "product_name_raw": "빙슈 턴앤업 밀크",
-      "manufacturer_name_raw": "트렌디저트 주식회사",
-      "recall_extraction_method": "official_recall_title_summary",
-      "notice_date": "2026-06-15",
-      "recall_status": "notice",
-      "release_date": ""
-    },
-    {
-      "source": "식품안전나라 회수판매중지",
-      "source_type": "rss",
-      "trust_tier": "T1_official",
-      "event_model": "recall_status_change",
-      "title": "트렌디저트 주식회사",
-      "url": "/portal/suspensionDetail.do?search_keyword=3000227385",
-      "event_at": "2026-06-15T00:00:00+00:00",
-      "event_age_days": 2.35,
-      "event_freshness_sla_days": 3,
-      "event_status": "fresh",
-      "food_event_key": "recall-status-change:kr:식품안전나라-회수판매중지:2026-06-15:트렌디저트-주식회사:빙슈-턴앤업-망고맛:회:portal-suspensiondetail-do-search-keyword-3000227385",
-      "evidence_url": "/portal/suspensionDetail.do?search_keyword=3000227385",
-      "evidence_url_present": true,
-      "country": "KR",
-      "products": [
-        "빙슈 턴앤업 망고맛"
-      ],
-      "product_canonical": [
-        "빙슈 턴앤업 망고맛"
-      ],
-      "brands": [],
-      "brand_canonical": [],
-      "manufacturers": [
-        "트렌디저트 주식회사"
-      ],
-      "manufacturer_canonical": [
-        "트렌디저트 주식회사"
-      ],
-      "food_types": [
-        "회"
-      ],
-      "safety_issues": [],
-      "recall_reasons": [],
-      "alias_traces": [],
-      "verification_role": "",
-      "merge_policy": "",
-      "verification_status": "official_source",
-      "product_name_raw": "빙슈 턴앤업 망고맛",
-      "manufacturer_name_raw": "트렌디저트 주식회사",
-      "recall_extraction_method": "official_recall_title_summary",
-      "notice_date": "2026-06-15",
-      "recall_status": "notice",
-      "release_date": ""
-    },
-    {
       "source": "식품안전나라 행정처분",
       "source_type": "rss",
       "trust_tier": "T1_official",
@@ -814,7 +814,7 @@
       "title": "인터넷 판매사이트에 해외식품을 국내 소비자에게 구매 대행하여 판매할 목적으로 관련 광고글을 게시하면서 질병 또는 질병군의 발생을 예방한다는 내용의 표시·광고를 하여 해당 제품이 질병의 예방·치료에 효능이 있는 것으로 인식할 우려가 있는 표시 또는 광고를 한 사실이 있음",
       "url": "/portal/administMeasureDetail.do?seq=4725368",
       "event_at": "2026-06-12T00:00:00+00:00",
-      "event_age_days": 5.35,
+      "event_age_days": 6.32,
       "event_freshness_sla_days": 2,
       "event_status": "stale",
       "food_event_key": "enforcement-action:kr:식품안전나라-행정처분:2026-06-12:식품:portal-administmeasuredetail-do-seq-4725368",
@@ -830,94 +830,6 @@
       "food_types": [],
       "safety_issues": [
         "식품"
-      ],
-      "recall_reasons": [],
-      "alias_traces": [],
-      "verification_role": "",
-      "merge_policy": "",
-      "verification_status": "official_source",
-      "sanction_start_date": "",
-      "sanction_end_date": "",
-      "sanction_type": "enforcement_action"
-    },
-    {
-      "source": "식품안전나라 회수판매중지",
-      "source_type": "rss",
-      "trust_tier": "T1_official",
-      "event_model": "recall_status_change",
-      "title": "주식회사 푸드서플라이",
-      "url": "/portal/suspensionDetail.do?search_keyword=3000227148",
-      "event_at": "2026-06-11T00:00:00+00:00",
-      "event_age_days": 6.35,
-      "event_freshness_sla_days": 3,
-      "event_status": "stale",
-      "food_event_key": "recall-status-change:kr:식품안전나라-회수판매중지:2026-06-11:주식회사-푸드서플라이:해물누룽지탕-원재료-중-해물누룽지소스-부적합:회-해물:부적합:portal-suspensiondetail-do-search-keyword-3000227148",
-      "evidence_url": "/portal/suspensionDetail.do?search_keyword=3000227148",
-      "evidence_url_present": true,
-      "country": "KR",
-      "products": [
-        "해물누룽지탕(원재료 중 '해물누룽지소스' 부적합)"
-      ],
-      "product_canonical": [
-        "해물누룽지탕(원재료 중 '해물누룽지소스' 부적합)"
-      ],
-      "brands": [],
-      "brand_canonical": [],
-      "manufacturers": [
-        "주식회사 푸드서플라이"
-      ],
-      "manufacturer_canonical": [
-        "주식회사 푸드서플라이"
-      ],
-      "food_types": [
-        "회",
-        "해물"
-      ],
-      "safety_issues": [
-        "부적합"
-      ],
-      "recall_reasons": [],
-      "alias_traces": [],
-      "verification_role": "",
-      "merge_policy": "",
-      "verification_status": "official_source",
-      "product_name_raw": "해물누룽지탕(원재료 중 '해물누룽지소스' 부적합)",
-      "manufacturer_name_raw": "주식회사 푸드서플라이",
-      "recall_extraction_method": "official_recall_title_summary",
-      "notice_date": "2026-06-11",
-      "recall_status": "notice",
-      "release_date": ""
-    },
-    {
-      "source": "식품안전나라 행정처분",
-      "source_type": "rss",
-      "trust_tier": "T1_official",
-      "event_model": "enforcement_action",
-      "title": "상기 당사자는 기준과 규격이 맞지 않는 식품을 수입·판매한 경우로서, 유통 수거·검사 결과 상기 당사자가 수입·판매한 수산물가공품(제품명: 새우패티)이「식품의 기준 및 규격」의 동물용의약품의 허용기준을 위반하여 부적합 판정된 사실이 있음",
-      "url": "/portal/administMeasureDetail.do?seq=4725728",
-      "event_at": "2026-06-11T00:00:00+00:00",
-      "event_age_days": 6.35,
-      "event_freshness_sla_days": 2,
-      "event_status": "stale",
-      "food_event_key": "enforcement-action:kr:식품안전나라-행정처분:2026-06-11:수산물:부적합-수거-검사-식품-규격:portal-administmeasuredetail-do-seq-4725728",
-      "evidence_url": "/portal/administMeasureDetail.do?seq=4725728",
-      "evidence_url_present": true,
-      "country": "KR",
-      "products": [],
-      "product_canonical": [],
-      "brands": [],
-      "brand_canonical": [],
-      "manufacturers": [],
-      "manufacturer_canonical": [],
-      "food_types": [
-        "수산물"
-      ],
-      "safety_issues": [
-        "부적합",
-        "수거",
-        "검사",
-        "식품",
-        "규격"
       ],
       "recall_reasons": [],
       "alias_traces": [],
@@ -963,21 +875,9 @@
       ],
       "count": 6,
       "example_urls": [
-        "/portal/suspensionDetail.do?search_keyword=3000227342",
-        "/portal/suspensionDetail.do?search_keyword=3000227386",
+        "/portal/suspensionDetail.do?search_keyword=3000227387",
+        "/portal/suspensionDetail.do?search_keyword=3000227389",
         "/portal/suspensionDetail.do?search_keyword=3000227392"
-      ]
-    },
-    {
-      "alias_type": "manufacturer",
-      "canonical": "주식회사 푸드서플라이",
-      "normalized": "푸드서플라이",
-      "variants": [
-        "주식회사 푸드서플라이"
-      ],
-      "count": 1,
-      "example_urls": [
-        "/portal/suspensionDetail.do?search_keyword=3000227148"
       ]
     },
     {
@@ -1063,22 +963,24 @@
       "example_urls": [
         "/portal/suspensionDetail.do?search_keyword=3000227337"
       ]
-    },
-    {
-      "alias_type": "product",
-      "canonical": "해물누룽지탕(원재료 중 '해물누룽지소스' 부적합)",
-      "normalized": "해물누룽지탕원재료중해물누룽지소스부적합",
-      "variants": [
-        "해물누룽지탕(원재료 중 '해물누룽지소스' 부적합)"
-      ],
-      "count": 1,
-      "example_urls": [
-        "/portal/suspensionDetail.do?search_keyword=3000227148"
-      ]
     }
   ],
   "text_length_outliers": [],
   "match_coverage_review_items": [
+    {
+      "reason": "market_or_editorial_unclassified",
+      "priority": "medium",
+      "source": "Food Dive",
+      "source_type": "rss",
+      "trust_tier": "T3_professional",
+      "event_model": "editorial_coverage",
+      "title": "Anheuser Busch invests $20M in Michelob Ultra production in bet on beer rebound",
+      "url": "https://www.fooddive.com/news/anheuser-busch-michelob-ultra-manufacturing-investment-st-louis-20m/823134",
+      "published_at": "2026-06-17T14:29:00+00:00",
+      "collected_at": "2026-06-18T07:42:43.306240+00:00",
+      "summary_excerpt": "The Bud Light owner will upgrade brewery and packaging equipment at facilities across Missouri after executives expressed optimism that the worst is over for the industry.",
+      "recommended_action": "review Product/FoodType/Brand keyword coverage"
+    },
     {
       "reason": "market_or_editorial_unclassified",
       "priority": "medium",
@@ -1091,6 +993,20 @@
       "published_at": "2026-06-15T09:00:00+00:00",
       "collected_at": "2026-06-17T08:23:16.904171+00:00",
       "summary_excerpt": "74% of free streaming viewers like the brands in their ad breaks. CPG planners are taking note.",
+      "recommended_action": "review Product/FoodType/Brand keyword coverage"
+    },
+    {
+      "reason": "market_or_editorial_unclassified",
+      "priority": "medium",
+      "source": "Food Dive",
+      "source_type": "rss",
+      "trust_tier": "T3_professional",
+      "event_model": "editorial_coverage",
+      "title": "Why Fiji Water temporarily operated its own shipping network",
+      "url": "https://www.fooddive.com/news/why-fiji-water-temporarily-operated-its-own-shipping-network/823080",
+      "published_at": "2026-06-17T13:15:00+00:00",
+      "collected_at": "2026-06-18T07:42:43.306240+00:00",
+      "summary_excerpt": "The COVID-19 pandemic pushed the company to run a dedicated route until capacity improved.",
       "recommended_action": "review Product/FoodType/Brand keyword coverage"
     },
     {
@@ -1117,7 +1033,7 @@
       "title": "FERG chief ‘encouraged’ by progress but burden remains ‘significant’",
       "url": "https://www.foodsafetynews.com/2026/06/ferg-chief-encouraged-by-progress-but-burden-remains-significant",
       "published_at": "2026-06-16T04:00:50+00:00",
-      "collected_at": "2026-06-17T08:23:16.904171+00:00",
+      "collected_at": "2026-06-18T07:42:43.306240+00:00",
       "summary_excerpt": "The chair of the group behind revised foodborne illness figures has hailed the “encouraging” progress in reducing infections but warned that the burden is still “significant.” Speaking on a webinar discussing key findings from the 2026 edition of the World Hea",
       "recommended_action": "review Product/FoodType/Brand keyword coverage"
     }
