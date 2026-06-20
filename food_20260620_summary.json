@@ -1,0 +1,1029 @@
+{
+  "date": "2026-06-20",
+  "category": "food",
+  "article_count": 70,
+  "source_count": 5,
+  "matched_count": 66,
+  "top_entities": [
+    {
+      "name": "FoodGeneral",
+      "count": 114
+    },
+    {
+      "name": "SafetyIssue",
+      "count": 59
+    },
+    {
+      "name": "FoodType",
+      "count": 40
+    },
+    {
+      "name": "Regulation",
+      "count": 16
+    },
+    {
+      "name": "Manufacturer",
+      "count": 11
+    },
+    {
+      "name": "Product",
+      "count": 9
+    },
+    {
+      "name": "ProductCanonical",
+      "count": 9
+    },
+    {
+      "name": "ManufacturerCanonical",
+      "count": 9
+    },
+    {
+      "name": "Brand",
+      "count": 7
+    },
+    {
+      "name": "BrandCanonical",
+      "count": 3
+    },
+    {
+      "name": "RecallReason",
+      "count": 1
+    }
+  ],
+  "sources": {
+    "Food Safety News": 29,
+    "식약처 보도자료": 7,
+    "식품안전나라 회수판매중지": 9,
+    "식품안전나라 행정처분": 10,
+    "Food Dive": 15
+  },
+  "generated_at": "2026-06-20T16:10:08.778448+09:00",
+  "articles": [
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Charity calls for improved infant formula controls in UK",
+        "source_url": "https://www.foodsafetynews.com/2026/06/charity-calls-for-improved-infant-formula-controls-in-uk/",
+        "published_at": "2026-06-19T04:06:37+00:00",
+        "summary": "Title: Charity calls for improved infant formula controls in UK\n\nURL Source: https://www.foodsafetynews.com/2026/06/charity-calls-for-improved-infant-formula-controls-in-uk/\n\nPublished Time: 2026-06-19T04:06:37.000Z\n\nMarkdown Content:\nEU Commission considers more cereulide testing\n\n![Image 1: Charity calls for improved infant formula controls in UK](https://storage.ghost.io/c/43/4e/434e508a-5e2f-4102-a53d-00bca10bb4bf/content/images/size/w30/2026/06/baby-infant-formula.png)\n\nPublished:June 19, 2026, 12:06 am\n\nA charity in the United Kingdom has made several recommendations to regulators after the cereulide infant formula contamination incident.\n\nFirst Steps Nutrition Trust said the situation exposed important weaknesses in the safety and security systems governing infant foods.\n\nContaminated products may have been on the market from May 2025 until the first Food Standards Agency (FSA) alert on Jan. 5, 2026. This raises questions about the adequacy of existing regulatory oversight, surveillance and incident response, said the public health nutrition charity.\n\n[![Image 2](https://assets.context.ly/thumbnails/food_safety_newsghostio/29326458/600x315.jpg)](https://www.foodsafetynews.com/2026/02/uk-reports-dozens-of-potential-infant-formula-related-illnesses/ \"UK reports dozens of potential infant formula-related illnesses\")\n\n[![Image 3](https://assets.context.ly/thumbnails/food_safety_newsghostio/29326384/600x315.png)](https://www.foodsafetynews.com/2026/02/infant-formula-contamination-dates-back-to-2024/ \"Infant formula contamination dates back to 2024\")\n\n[![Image 4](https://assets.context.ly/thumbnails/food_safety_newsghostio/29326514/600x315.png)](https://www.foodsafetynews.com/2026/02/efsa-proposes-tighter-toxin-levels-for-infant-formula/ \"EFSA proposes tighter toxin levels for infant formula\")\n\n[![Image 5](https://assets.context.ly/thumbnails/food_safety_newsghostio/29326429/600x315.png)](https://www.foodsafetynews.com/2026/02/eu-countries-investigate-formula-illne"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Contaminated fruit puree hospitalizes children in Israel",
+        "source_url": "https://www.foodsafetynews.com/2026/06/contaminated-fruit-puree-hospitalizes-children-in-israel/",
+        "published_at": "2026-06-19T04:04:49+00:00",
+        "summary": "<p>Several children have needed hospital treatment in Israel after consuming contaminated fruit puree.</p><p>According to the Ministry of Health’s epidemiological investigation, children were hospitalized after having \"Prinok\" baby fruit puree purchased at Zol U'Begadol stores. At least four children are affected but they have</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Salmonella, illegal colors, misbranding among problems with imported food",
+        "source_url": "https://www.foodsafetynews.com/2026/06/salmonella-illegal-colors-misbranding-among-problems-with-imported-food/",
+        "published_at": "2026-06-19T04:02:28+00:00",
+        "summary": "<p>The Food and Drug Administration uses import alerts to enforce U.S. food safety regulations for food from foreign countries. The agency updates and modifies the alerts as needed.Recent modifications to FDA’s import alerts, as posted by the agency, are listed below. </p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Round-up of World Food Safety Day highlights",
+        "source_url": "https://www.foodsafetynews.com/2026/06/round-up-of-world-food-safety-day-highlights/",
+        "published_at": "2026-06-19T04:01:20+00:00",
+        "summary": "<p>World Food Safety Day was held on June 7. In this article, <strong>Food Safety News</strong> looks at some of the ways different regions and stakeholders marked the occasion.</p><p>On June 8, the UN Food and Agriculture Organization (FAO) held a hybrid event on how Codex texts can help tackle foodborne</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Pepperoni rolls recalled because of undeclared milk",
+        "source_url": "https://www.foodsafetynews.com/2026/06/pepperoni-rolls-recalled-because-of-undeclared-milk/",
+        "published_at": "2026-06-19T00:41:55+00:00",
+        "summary": "<p>Fry Pie Factory has issued a recall of its 5-ounce pepperoni rolls because of misbranding involving undeclared milk, a known allergen, and a process deviation related to refrigeration.</p><p>The company said the Pepperoni Rolls were not stored, distributed or sold at appropriate temperatures, which may allow pathogenic growth and</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식약처 보도자료",
+        "headline": "식용 복어와 혼동하기 쉬운 잡종 복어, 섭취하지 마세요",
+        "source_url": "/portal/board/boardDetail.do?bbs_no=bbs080&ntctxt_no=50094&menu_no=2857",
+        "published_at": "2026-06-19T00:00:00+00:00",
+        "summary": "<p>식용 복어와 혼동하기 쉬운 잡종 복어, 섭취하지 마세요</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식품안전나라 회수판매중지",
+        "headline": "오에스농산 주식회사",
+        "source_url": "/portal/suspensionDetail.do?search_keyword=3000227626",
+        "published_at": "2026-06-19T00:00:00+00:00",
+        "summary": "정성 가득 담은 고춧가루(중국산)"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식품안전나라 행정처분",
+        "headline": "2025. 3. 13. 베트남산 수입식품[제품명(유형): 옹토(당류가공품)]을 수입신고하면서 해외 제조업소 소재지를 사실과 다르게 수입신고한 사실이 있음.",
+        "source_url": "/portal/administMeasureDetail.do?seq=4726695",
+        "published_at": "2026-06-19T00:00:00+00:00",
+        "summary": "2025. 3. 13. 베트남산 수입식품[제품명(유형): 옹토(당류가공품)]을 수입신고하면서 해외 제조업소 소재지를 사실과 다르게 수입신고한 사실이 있음."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Frozen meatloaf recalled because of undeclared soy",
+        "source_url": "https://www.foodsafetynews.com/2026/06/frozen-meatloaf-recalled-because-of-undeclared-soy/",
+        "published_at": "2026-06-18T23:39:55+00:00",
+        "summary": "<p>Power Plate Meals LLC a West Fargo, ND, Cooperative Interstate Shipping establishment, is recalling 5,795 pounds of frozen meatloaf with garlic mashed potatoes because of misbranding and an undeclared allergen, the USDA's Food Safety and Inspection Service (FSIS) announced today. </p><p>The product contains soy, a known</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "Bibigo owner to build cultivated seaweed plant to fuel Korean food demand",
+        "source_url": "https://www.fooddive.com/news/bibigo-cj-foods-seaweed-cultivation-plant/823293/",
+        "published_at": "2026-06-18T16:33:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/Gg0jThBn1DiL5EKoWPPQKkryIIt0GxRD6TUmDH7hiFI/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9hODJiNDQyMTg5Y2I0MjBmOWQyZTFlYjFhMjNlNDZhYi5qcGc=.webp\" /></div></figure><p>The land-based facility will allow CJ Foods to secure consistent supply of gim, an ingredient threatened by rising ocean temperatures.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "Mars taps new digital chief for snacking unit",
+        "source_url": "https://www.fooddive.com/news/mars-snacking-tech-chief-kemal-cetin/823263/",
+        "published_at": "2026-06-18T14:08:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/xLye68F4GMCeXpyA8T6-dbCTCydZWrVDSGznS3bOkNI/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMTY2Nzg4MzQxLmpwZw==.webp\" /></div></figure><p>Kemal Cetin will lead the division's technology agenda as the company continues to absorb the Kellanova acquisition completed last year.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "Kraft Heinz overhauls operating structure to accelerate growth",
+        "source_url": "https://www.fooddive.com/news/turnaround-kraft-heinz-overhauls-operating-structure-to-accelerate-growth/823247/",
+        "published_at": "2026-06-18T14:00:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/FIt4L1buIDBhLJTDizan_WS9huZSpLPDz5IAUszYvxY/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMjMzMzk0ODY3LmpwZw==.webp\" /></div></figure><p>The Kool-Aid maker is reorganizing into three units and cutting senior leadership in a bid to turn around declining sales.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "Better together: Hershey’s combined sweets and snacks business pays off for retailers, consumers",
+        "source_url": "https://www.fooddive.com/news/hersheys-combines-candy-snacking-units-paying-off-for-retailers/821217/",
+        "published_at": "2026-06-18T14:00:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/piyVzXoM9U49xKTyowd_hXrsViS8hHZkGJx0w2FjFOA/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMTUxMzEzODg3X0pvRlBsdWwuanBn.webp\" /></div></figure><p>The merging of the company’s sweet, salty and protein brands under one umbrella called “One Hershey” allows the Reese’s maker to boost sales and help stores plan for big events.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "German company made the infant formula linked to botulism outbreak",
+        "source_url": "https://www.foodsafetynews.com/2026/06/german-company-made-the-infant-formula-linked-to-botulism-outbreak/",
+        "published_at": "2026-06-18T04:06:48+00:00",
+        "summary": "The manufacturer uses milk from 100 contract farmers who supply it with more than a million liters of milk every day."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Illegal cheese operation linked to Salmonella cases",
+        "source_url": "https://www.foodsafetynews.com/2026/06/illegal-cheese-operation-linked-to-salmonella-cases/",
+        "published_at": "2026-06-18T04:04:22+00:00",
+        "summary": "<p>Seven people have fallen ill in Slovakia after eating cheese from an unregistered operation.</p><p>Sick people were infected with Salmonella Schleissheim and several of them were hospitalized.</p><p>The Regional Veterinary and Food Administration (RVPS) of Liptovský Mikuláš received a complaint from the Regional Public Health Authority (R&</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "The Litigated Dish: The supply chain is not a shield",
+        "source_url": "https://www.foodsafetynews.com/2026/06/the-litigated-dish-the-supply-chain-is-not-a-shield/",
+        "published_at": "2026-06-18T04:03:52+00:00",
+        "summary": "<p>-- OPINION --</p><p>In food safety litigation, one of the most consequential, and often most contested, questions is not whether a product was contaminated, or even whether someone was harmed. It is whether the court has the power to hold the right defendants accountable in the first place. That question, always important,</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Inorganic arsenic and lead top list of foodborne chemical hazards",
+        "source_url": "https://www.foodsafetynews.com/2026/06/inorganic-arsenic-and-lead-top-list-of-foodborne-chemical-hazards/",
+        "published_at": "2026-06-18T04:01:22+00:00",
+        "summary": "<p>Dietary exposure to inorganic arsenic represents a major problem, according to an analysis of foodborne chemicals.</p><p>In 2021, nine foodborne chemicals caused 6.26 million cases and 1.12 million deaths. These substances are  inorganic arsenic, lead, aflatoxin B1 and M1, methylmercury, cadmium, dioxin, peanut allergy, and cassava cyanide.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식품안전나라 행정처분",
+        "headline": "○ 영업자는 등록한 사항 중 대통령령으로 정하는 중요한 사항(영업소의 소재지)을 변경할 때 등록 사항의 변경 등록을 하여야 하나, - 상기 영업자는 해당 영업소 소재지의 관련 영업시설을 전부 철거하고, 변경등록을 하지 않은 사실이 있음",
+        "source_url": "/portal/administMeasureDetail.do?seq=4726450",
+        "published_at": "2026-06-18T00:00:00+00:00",
+        "summary": "○ 영업자는 등록한 사항 중 대통령령으로 정하는 중요한 사항(영업소의 소재지)을 변경할 때 등록 사항의 변경 등록을 하여야 하나, - 상기 영업자는 해당 영업소 소재지의 관련 영업시설을 전부 철거하고, 변경등록을 하지 않은 사실이 있음"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식품안전나라 행정처분",
+        "headline": "○「위생용품 관리법」제3조(영업의 신고)제2항 위반 - 영업시설을 전부 철거함.",
+        "source_url": "/portal/administMeasureDetail.do?seq=4724461",
+        "published_at": "2026-06-18T00:00:00+00:00",
+        "summary": "○「위생용품 관리법」제3조(영업의 신고)제2항 위반 - 영업시설을 전부 철거함."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식품안전나라 행정처분",
+        "headline": "상기 당사자는 해당 영업소 소재지의 관련 영업시설을 전부 철거하고, 변경등록을 하지 않은 사실이 있음",
+        "source_url": "/portal/administMeasureDetail.do?seq=4727004",
+        "published_at": "2026-06-18T00:00:00+00:00",
+        "summary": "상기 당사자는 해당 영업소 소재지의 관련 영업시설을 전부 철거하고, 변경등록을 하지 않은 사실이 있음"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식품안전나라 행정처분",
+        "headline": "○「위생용품 관리법」제3조(영업의 신고)제2항 위반 - 영업시설을 전부 철거함.",
+        "source_url": "/portal/administMeasureDetail.do?seq=4724463",
+        "published_at": "2026-06-18T00:00:00+00:00",
+        "summary": "○「위생용품 관리법」제3조(영업의 신고)제2항 위반 - 영업시설을 전부 철거함."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식품안전나라 행정처분",
+        "headline": "상기 당사자는 기준과 규격이 맞지 않는 농산물을 수입·판매한 경우로서, 유통 수거·검사 결과 상기 당사자가 수입·판매한 농산물(제품명: 냉동청포도, 제품명:냉동람부탄)이「식품의 기준 및 규격」의 잔류농약 허용기준을 위반하여 부적합 판정된 사실이 있음",
+        "source_url": "/portal/administMeasureDetail.do?seq=4727005",
+        "published_at": "2026-06-18T00:00:00+00:00",
+        "summary": "상기 당사자는 기준과 규격이 맞지 않는 농산물을 수입·판매한 경우로서, 유통 수거·검사 결과 상기 당사자가 수입·판매한 농산물(제품명: 냉동청포도, 제품명:냉동람부탄)이「식품의 기준 및 규격」의 잔류농약 허용기준을 위반하여 부적합 판정된 사실이 있음"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식약처 보도자료",
+        "headline": "식약처, 전국 어린이집 6,173곳 위생점검",
+        "source_url": "/portal/board/boardDetail.do?bbs_no=bbs080&ntctxt_no=50090&menu_no=2857",
+        "published_at": "2026-06-18T00:00:00+00:00",
+        "summary": "<p><span style=\"font-size: 10pt;\">식약처, 전국 어린이집 6,173곳 위생점검</span></p>\n<p><br /></p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식품안전나라 행정처분",
+        "headline": "○「위생용품 관리법」제3조(영업의 신고)제2항 위반 - 영업시설을 전부 철거함.",
+        "source_url": "/portal/administMeasureDetail.do?seq=4724462",
+        "published_at": "2026-06-18T00:00:00+00:00",
+        "summary": "○「위생용품 관리법」제3조(영업의 신고)제2항 위반 - 영업시설을 전부 철거함."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식품안전나라 회수판매중지",
+        "headline": "주식회사 케이비지리테일(KBG Retail Inc.)",
+        "source_url": "/portal/suspensionDetail.do?search_keyword=3000227567",
+        "published_at": "2026-06-18T00:00:00+00:00",
+        "summary": "에코비 밀랍랩"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "Anheuser-Busch invests $20M in Michelob Ultra production in bet on beer rebound",
+        "source_url": "https://www.fooddive.com/news/anheuser-busch-michelob-ultra-manufacturing-investment-st-louis-20m/823134/",
+        "published_at": "2026-06-17T14:29:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/aE0l8R2bpYYMM-cKTdph1A7xNVJ2_1oT1HUPNgGw3CE/g:nowe:0:134/c:2500:1412/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMTkwMjg5Mjg4LmpwZw==.webp\" /></div></figure><p>The Bud Light owner will upgrade brewery and packaging equipment at facilities across Missouri after executives expressed optimism that the worst is over for the industry.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "Why Fiji Water temporarily operated its own shipping network",
+        "source_url": "https://www.fooddive.com/news/why-fiji-water-temporarily-operated-its-own-shipping-network/823080/",
+        "published_at": "2026-06-17T13:15:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/tof-25EMITYJhxM9hz5jt9oAImeIF8LdVOJbvI6A0lE/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMjYxODA4Njc3LmpwZw==.webp\" /></div></figure><p>The COVID-19 pandemic pushed the company to run a dedicated route until capacity improved. </p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Infant formula company refuses to reveal the name of the manufacturer tied to botulism outbreak",
+        "source_url": "https://www.foodsafetynews.com/2026/06/infant-formula-company-refuses-to-reveal-the-name-of-the-manufacturer/",
+        "published_at": "2026-06-17T04:07:41+00:00",
+        "summary": "A U.S. representative has issued a statement calling on Congress to pass the bipartisan Infant Formula Safety Modernization Act."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Publisher's Platform: FDA’s ByHeart inspection report is finally public — everyone owns the bottle",
+        "source_url": "https://www.foodsafetynews.com/2026/06/publishers-platform-fdas-byheart-inspection-report-is-finally-public-everyone-owns-the-bottle/",
+        "published_at": "2026-06-17T04:06:14+00:00",
+        "summary": "<p>On Thursday, June 11, 2026, the FDA quietly posted to its website the document those of us investigating the ByHeart infant-botulism outbreak have waited months to see: the complete Establishment Inspection Report (EIR) for Blendhouse Allerton, LLC — the Iowa plant that produced ByHeart’s infant-formula base</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "E. coli infections traced to eating at Costco in Japan",
+        "source_url": "https://www.foodsafetynews.com/2026/06/e-coli-infections-traced-to-eating-at-costco-in-japan/",
+        "published_at": "2026-06-17T04:03:13+00:00",
+        "summary": "<p>Five people have fallen sick after eating food sold at a Costco store in Japan.</p><p>Earlier this month, the Nagoya City Public Health Center received a report of a person infected by E. coli. After investigating, it was found that the patient had eaten food prepared at the Costco Wholesale</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Foodwatch raises questions about plans to simplify food safety rules",
+        "source_url": "https://www.foodsafetynews.com/2026/06/foodwatch-raises-questions-about-plans-to-simplify-food-safety-rules/",
+        "published_at": "2026-06-17T04:01:40+00:00",
+        "summary": "The European Ombudsman is also looking into effectiveness of the Rapid Alert System for Food and Feed (RASFF)"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "UKHSA assessment features E. coli and Salmonella examples",
+        "source_url": "https://www.foodsafetynews.com/2026/06/ukhsa-assessment-features-e-coli-and-salmonella-examples/",
+        "published_at": "2026-06-17T04:00:13+00:00",
+        "summary": "<p>Example E. coli and Salmonella outbreaks are included in a review by the UK Health Security Agency (UKHSA) of health risks that could occur in the next few years.</p><p>The Health Security Risk Assessment details some of the most significant risks facing the UK over the next</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Chocolate raisins recalled because of undeclared peanuts",
+        "source_url": "https://www.foodsafetynews.com/2026/06/chocolate-raisins-recalled-because-of-undeclared-peanuts/",
+        "published_at": "2026-06-17T01:26:44+00:00",
+        "summary": "<p>Western Mixers Produce & Nuts Inc. of Ontario, CA, is recalling First Street brand dark chocolate raisins in 9-ounce packages because they may contain peanuts.</p><p>People who have an allergy or severe sensitivity to peanuts run the risk of serious or life-threatening allergic reaction if they consume these</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식약처 보도자료",
+        "headline": "[보도참고] 식약처, 시험·검사 역량 강화를 위한 동물용의약품 시험법 설명회 개최",
+        "source_url": "/portal/board/boardDetail.do?bbs_no=bbs080&ntctxt_no=50086&menu_no=2857",
+        "published_at": "2026-06-17T00:00:00+00:00",
+        "summary": "<p>[보도참고] 식약처, 시험·검사 역량 강화를 위한 동물용의약품 시험법 설명회 개최</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식약처 보도자료",
+        "headline": "K-축산물 세계로, 식약처가 함께한다!",
+        "source_url": "/portal/board/boardDetail.do?bbs_no=bbs080&ntctxt_no=50088&menu_no=2857",
+        "published_at": "2026-06-17T00:00:00+00:00",
+        "summary": "<p> K-축산물 세계로, 식약처가 함께한다!</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식약처 보도자료",
+        "headline": "[보도참고] 제조일자 없는 '빙과' 회수 조치",
+        "source_url": "/portal/board/boardDetail.do?bbs_no=bbs080&ntctxt_no=50083&menu_no=2857",
+        "published_at": "2026-06-17T00:00:00+00:00",
+        "summary": "<p>[보도참고] 제조일자 없는 '빙과' 회수 조치</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "Chobani sued by Danone over high-protein yogurt claims",
+        "source_url": "https://www.fooddive.com/news/danone-sues-chobani-high-protein-yogurt-claims-oikos/823033/",
+        "published_at": "2026-06-16T19:00:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/-gX7tX32EKNYap7Kbl7-vlvNEJaWNX6XI_-szAXE0p4/g:nowe:0:765/c:3099:1751/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9JTUdfMDY1M18xLWZvdG9yLTIwMjYwNjE2MTYyNjQyLmpwZw==.webp\" /></div></figure><p>The Oikos maker said its rival is engaging in “unfair competition and consumer deception” to make its product more appealing to shoppers.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "Former Red Bull exec tapped to lead turnaround at Zevia",
+        "source_url": "https://www.fooddive.com/news/red-bull-coca-cola-celsius-executive-CEO-zevia/822996/",
+        "published_at": "2026-06-16T14:00:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/u9Q6JRnJY5wZFQHlQ3NfVzkB9TcU_P72T9s6Rffzwjk/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9aZXZpYV9Qcm9kdWN0X1Nob3RfMS5qcGc=.webp\" /></div></figure><p>The better-for-you beverage company said Alexandre Ruberti will replace Amy Taylor, who resigned to run a National Women’s Soccer League team, as president and CEO.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "Bill in Congress targets ‘forever chemicals’ in food packaging",
+        "source_url": "https://www.fooddive.com/news/no-toxics-in-food-packaging-act-2026/822803/",
+        "published_at": "2026-06-16T13:19:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/E3Nw4jBqqvcnSYPhHIWIXlr_-FUyr7SKkGs5rLfpq0s/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9yZXNpemVkLmpwZw==.webp\" /></div></figure><p>The No Toxics in Food Packaging Act seeks to ban PFAS, phthalates, BPA and certain other substances from food packaging and food processing materials.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "Campbell’s launches gluten-free chicken noodle soup in partnership with Banza",
+        "source_url": "https://www.fooddive.com/news/soup-campbells-banza-partner-gluten-free-condensed/822629/",
+        "published_at": "2026-06-16T13:00:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/ArweP79DgTO9-e51vSZYaXDoSYM7a8W8pP9aQ9hJP-s/g:nowe:0:139/c:3100:1751/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9DYW1wYmVsbHNfeF9CYW56YV9MaWZlc3R5bGVfSW1hZ2VfMTZ4OS1mb3Rvci0yMDI2MDYxNTEyMTU2LmpwZw==.webp\" /></div></figure><p>The offering comes as big snack brands like Cheez-It and Oreo lean into the gluten-free market, which is forecast to reach $14 billion by 2032.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Publisher's Platform: The genome doesn’t lie",
+        "source_url": "https://www.foodsafetynews.com/2026/06/publishers-platform-the-genome-doesnt-lie/",
+        "published_at": "2026-06-16T04:06:28+00:00",
+        "summary": "<p>When I started suing food companies more than thirty years ago, after E. coli O157:H7 in undercooked Jack in the Box hamburgers killed four children and sickened hundreds, proving where a pathogen came from was slow, painstaking, and often impossible. Investigators matched bacteria using crude “fingerprinting” methods</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Complaints prompt infant formula recall",
+        "source_url": "https://www.foodsafetynews.com/2026/06/complaints-prompt-infant-formula-recall/",
+        "published_at": "2026-06-16T04:04:21+00:00",
+        "summary": "Laboratoires Novalac has issued a recall in France"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Sentence scheduled for former janitorial services manager who forged IDs for hundreds of workers",
+        "source_url": "https://www.foodsafetynews.com/2026/06/sentence-scheduled-for-former-janitorial-services-manager-who-forged-ids-for-hundreds-of-workers/",
+        "published_at": "2026-06-16T04:03:26+00:00",
+        "summary": "Homeland Security found that 339 of 353 Fayette employees at Perdue’s Accomack facility were likely using fake identifications."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Understanding burden is ‘just the beginning’, says WHO group",
+        "source_url": "https://www.foodsafetynews.com/2026/06/understanding-burden-is-just-the-beginning-says-who-group/",
+        "published_at": "2026-06-16T04:01:42+00:00",
+        "summary": "Title: Understanding burden is ‘just the beginning’, says WHO group\n\nURL Source: https://www.foodsafetynews.com/2026/06/understanding-burden-is-just-the-beginning-says-who-group/\n\nPublished Time: 2026-06-16T04:01:42.000Z\n\nMarkdown Content:\nPlus regional food safety highlights\n\n![Image 1: Understanding burden is ‘just the beginning’, says WHO group](https://storage.ghost.io/c/43/4e/434e508a-5e2f-4102-a53d-00bca10bb4bf/content/images/size/w30/2026/06/dreamstime_world-health-organization-who.png)\n\nPublished:June 16, 2026, 12:01 am\n\nA World Health Organization (WHO) group has urged food safety stakeholders to turn evidence into action, adding that understanding the burden of foodborne disease is only the beginning.\n\nIn a statement to mark World Food Safety Day, the WHO Alliance for Food Safety called on governments, international organizations, academic institutions, and public health agencies to work together to accelerate progress toward safer food everywhere.\n\n[![Image 2](https://assets.context.ly/thumbnails/food_safety_newsghostio/29329933/600x315.jpg)](https://www.foodsafetynews.com/2021/06/who-helps-countries-assess-impact-of-foodborne-illness/ \"WHO helps countries assess impact of foodborne illness\")\n\n[![Image 3](https://assets.context.ly/thumbnails/food_safety_newsghostio/29612578/600x315.png)](https://www.foodsafetynews.com/2026/04/who-urges-action-ahead-of-estimates-release/ \"WHO urges action ahead of estimates release\")\n\n[![Image 4](https://assets.context.ly/thumbnails/food_safety_newsghostio/29325300/600x315.png)](https://www.foodsafetynews.com/2024/03/who-to-create-alliance-for-food-safety/ \"WHO to create Alliance for Food Safety\")\n\n[![Image 5](https://assets.context.ly/thumbnails/food_safety_newsghostio/29327868/600x315.png)](https://www.foodsafetynews.com/2022/10/who-unveils-food-safety-strategy-and-promises-to-support-take-up/ \"WHO unveils food safety strategy and promises to support take-up\")\n\n[![Image 6](https://assets.context.ly/thumbnails/food_safety"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "FERG chief ‘encouraged’ by progress but burden remains ‘significant’",
+        "source_url": "https://www.foodsafetynews.com/2026/06/ferg-chief-encouraged-by-progress-but-burden-remains-significant/",
+        "published_at": "2026-06-16T04:00:50+00:00",
+        "summary": "<p>The chair of the group behind revised foodborne illness figures has hailed the “encouraging” progress in reducing infections but warned that the burden is still “significant.”</p><p>Speaking on a webinar discussing key findings from the 2026 edition of the World Health Organization’s (WHO) estimates</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Company expands cheese recall; Listeria outbreak traced to products",
+        "source_url": "https://www.foodsafetynews.com/2026/06/company-expands-cheese-recall-listeria-outbreak-traced-to-products/",
+        "published_at": "2026-06-16T00:35:21+00:00",
+        "summary": "<p>The FDA and CDC, in collaboration with state and local partners, are investigating a multi-state, multi-year outbreak of Listeria monocytogenes infections linked to requeson, a soft cheese similar to ricotta, manufactured by Clover Hill Dairy LLC of Mechanicsville, MD.  </p><p>So far, the investigation has identified nine patients.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "JBS to close meat plants in manufacturing reshuffle",
+        "source_url": "https://www.fooddive.com/news/jbs-beef-plant-closures-layoffs-pilgrims-manufacturing/822910/",
+        "published_at": "2026-06-15T15:18:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/TSiGcixe8xPuuxU-nYD8WQlWpnbk3-ud6OYHpGwkqXE/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9KQlNMb2dvLURpc3BsYXllZC5wbmc=.webp\" /></div></figure><p>The company plans to lay off at least 2,000 workers as it shutters a Pennsylvania beef processing facility and makes changes at majority-owned Pilgrim’s Pride.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "PepsiCo expanding autonomous truck use in its supply chain",
+        "source_url": "https://www.fooddive.com/news/pepsico-autonomous-trucks-supply-chain/822732/",
+        "published_at": "2026-06-15T14:45:00+00:00",
+        "summary": "<p>The multiyear deal with Gatik will help the food and beverage giant increase capacity in \"hard to staff\" areas of its transportation network.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "Nestlé USA removes artificial colors in all food and beverages",
+        "source_url": "https://www.fooddive.com/news/Nestle-artificial-colors-dyes-fda-General-mills-cheerios-kraft-heinz/822661/",
+        "published_at": "2026-06-15T13:00:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/hgOH9UIkFQq7e_XiLjPHRWLIUopxlqv_GS0Aahq6JT4/g:nowe:127:115/c:813:459/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9TY3JlZW5zaG90XzIwMjQtMDQtMTVfMTgwMTI1LmpwZw==.webp\" /></div></figure><p>The Nesquik maker joined other food manufacturers last year in pledging to eliminate synthetic dyes from the rest of its portfolio following pressure from the Trump administration.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "4 strategies for product extensions that build brand value and momentum",
+        "source_url": "https://www.fooddive.com/spons/4-strategies-for-product-extensions-that-build-brand-value-and-momentum/822597/",
+        "published_at": "2026-06-15T09:00:00+00:00",
+        "summary": "<p>Learn how to drive incremental sales with extensions that strengthen your brand</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "The CPG trust gap: Buying ad reach has never been easier. Building trust has never been harder.",
+        "source_url": "https://www.fooddive.com/spons/the-cpg-trust-gap-buying-ad-reach-has-never-been-easier-building-trust-ha/822401/",
+        "published_at": "2026-06-15T09:00:00+00:00",
+        "summary": "<p>74% of free streaming viewers like the brands in their ad breaks. CPG planners are taking note.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Scientists call ultra-processed foods 'Big Food's tobacco moment'",
+        "source_url": "https://www.foodsafetynews.com/2026/06/scientists-call-ultra-processed-foods-big-foods-tobacco-moment/",
+        "published_at": "2026-06-15T04:06:31+00:00",
+        "summary": "[식품안전] Scientists call ultra-processed foods 'Big Food's tobacco moment'"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "FDA warns seafood firms about botulism controls and import violations",
+        "source_url": "https://www.foodsafetynews.com/2026/06/fda-warns-seafood-firms-about-botulism-controls-and-import-violations/",
+        "published_at": "2026-06-15T04:04:05+00:00",
+        "summary": "<p>As part of its enforcement activities, the U.S. Food and Drug Administration sends warning letters to entities under its jurisdiction. Some letters are not posted for public view until weeks or months after they are sent. Business owners generally have 15 working days to respond to FDA warning letters.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Wine controls dominate enforcement operations in Portugal",
+        "source_url": "https://www.foodsafetynews.com/2026/06/wine-controls-dominate-enforcement-operations-in-portugal/",
+        "published_at": "2026-06-15T04:02:33+00:00",
+        "summary": "<p>A significant quantity of wine and bottle labels have been seized in a series of checks by Portuguese authorities.</p><p>The Portuguese Economic and Food Safety Authority (ASAE) was part of a team that inspected operators bottling and marketing wine in Anadia and Miranda do Corvo.</p><p>As a result of</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Home canning season is here: Follow safe practices to avoid botulism and other foodborne illnesses",
+        "source_url": "https://www.foodsafetynews.com/2026/06/home-canning-season-is-here-follow-safe-practices-to-avoid-botulism-and-other-foodborne-illnesses/",
+        "published_at": "2026-06-15T04:02:06+00:00",
+        "summary": "<p>As gardens begin producing tomatoes, green beans, peppers and other summer favorites, many home cooks are preparing to preserve their harvest through canning.</p><p>Home canning can be a safe and rewarding way to store food for months or even years. However, food safety experts warn that improper canning techniques can</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식품안전나라 행정처분",
+        "headline": "상기 영업자는 2024년 4월 18일부터 2024년 11월 1일까지 수입식품등을 수입하면서 해외 제조업소의 소재지를 사실과 다르게 수입신고한 사실이 있음",
+        "source_url": "/portal/administMeasureDetail.do?seq=4725756",
+        "published_at": "2026-06-15T00:00:00+00:00",
+        "summary": "상기 영업자는 2024년 4월 18일부터 2024년 11월 1일까지 수입식품등을 수입하면서 해외 제조업소의 소재지를 사실과 다르게 수입신고한 사실이 있음"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식품안전나라 회수판매중지",
+        "headline": "트렌디저트 주식회사",
+        "source_url": "/portal/suspensionDetail.do?search_keyword=3000227387",
+        "published_at": "2026-06-15T00:00:00+00:00",
+        "summary": "빙슈 턴앤업 밀크"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식약처 보도자료",
+        "headline": "식약처, 염소 고기 등 여름 보양식 안전관리 실시",
+        "source_url": "/portal/board/boardDetail.do?bbs_no=bbs080&ntctxt_no=50079&menu_no=2857",
+        "published_at": "2026-06-15T00:00:00+00:00",
+        "summary": "<p style=\"font-size: 13.3333px;\"><span style=\"font-size: 10pt;\">식약처, 염소 고기 등 여름 보양식 안전관리 실시</span></p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식품안전나라 회수판매중지",
+        "headline": "주식회사 디와이푸드텍 농업회사법인",
+        "source_url": "/portal/suspensionDetail.do?search_keyword=3000227337",
+        "published_at": "2026-06-15T00:00:00+00:00",
+        "summary": "추억의 알짜소세지"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식품안전나라 회수판매중지",
+        "headline": "트렌디저트 주식회사",
+        "source_url": "/portal/suspensionDetail.do?search_keyword=3000227389",
+        "published_at": "2026-06-15T00:00:00+00:00",
+        "summary": "빙슈 턴앤업 바나나맛"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식품안전나라 회수판매중지",
+        "headline": "트렌디저트 주식회사",
+        "source_url": "/portal/suspensionDetail.do?search_keyword=3000227386",
+        "published_at": "2026-06-15T00:00:00+00:00",
+        "summary": "빙슈 턴앤업 멜론맛"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식품안전나라 회수판매중지",
+        "headline": "트렌디저트 주식회사",
+        "source_url": "/portal/suspensionDetail.do?search_keyword=3000227392",
+        "published_at": "2026-06-15T00:00:00+00:00",
+        "summary": "빙슈 턴앤업 초코"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식품안전나라 행정처분",
+        "headline": "○「식품 등의 표시·광고에 관한 법률」제8조제1항제3호에 따라 누구든지 식품등의 명칭ㆍ제조방법ㆍ성분 등 대통령령으로 정하는 사항에 관하여 건강기능식품이 아닌 것을 건강기능식품으로 인식할 우려가 있는 표시 또는 광고를 하여서는 아니 되나, - 상기 영업자는 수입식품등을 구매대행 하면서…",
+        "source_url": "/portal/administMeasureDetail.do?seq=4726398",
+        "published_at": "2026-06-15T00:00:00+00:00",
+        "summary": "○「식품 등의 표시·광고에 관한 법률」제8조제1항제3호에 따라 누구든지 식품등의 명칭ㆍ제조방법ㆍ성분 등 대통령령으로 정하는 사항에 관하여 건강기능식품이 아닌 것을 건강기능식품으로 인식할 우려가 있는 표시 또는 광고를 하여서는 아니 되나, - 상기 영업자는 수입식품등을 구매대행 하면서 ’미국 메리루스 구미 젤리 천연 수면 보조제 유도제’ 제품에 대해 판매사이트(https://smartstore.naver.com/national-supermarket/products/5567019505)에서 제품명으로 (미국 메리루스 구미 젤리 천연 수면 보조제 유도제) 광고내용(소중한 숙면을 취하세요. 당신과 당신의 몸은 수면이 필요합니다. 수면은 신체가 재생되고 다음 날의 에너지를 만들어주는 시간이기 때문이에요. 장기적인 수면 부족은 피로감과 허약함을 느끼게 해줍니다.)으로 건강기능식품이 아닌 것을 건강기능식품으로 인식할 우려가 있는 광고를 한 사실이 있음"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식약처 보도자료",
+        "headline": "식약처-지방정부, 식품 등 온라인 부당광고 합동점검 225건 적발",
+        "source_url": "/portal/board/boardDetail.do?bbs_no=bbs080&ntctxt_no=50078&menu_no=2857",
+        "published_at": "2026-06-15T00:00:00+00:00",
+        "summary": "<p><span style=\"font-size: 10pt;\">식약처-지방정부, 식품 등 온라인 부당광고 합동점검 225건 적발</span></p>\n<p><br /></p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식품안전나라 행정처분",
+        "headline": "○「식품 등의 표시·광고에 관한 법률」제8조제1항제3호에 따라 누구든지 식품등의 명칭ㆍ제조방법ㆍ성분 등 대통령령으로 정하는 사항에 관하여 건강기능식품이 아닌 것을 건강기능식품으로 인식할 우려가 있는 표시 또는 광고를 하여서는 아니 되나,- 상기 영업자는 수입식품등을 구매대행 하면서 ’…",
+        "source_url": "/portal/administMeasureDetail.do?seq=4726428",
+        "published_at": "2026-06-15T00:00:00+00:00",
+        "summary": "○「식품 등의 표시·광고에 관한 법률」제8조제1항제3호에 따라 누구든지 식품등의 명칭ㆍ제조방법ㆍ성분 등 대통령령으로 정하는 사항에 관하여 건강기능식품이 아닌 것을 건강기능식품으로 인식할 우려가 있는 표시 또는 광고를 하여서는 아니 되나,- 상기 영업자는 수입식품등을 구매대행 하면서 ’콜라겐 파르페’ 제품에 대해 판매사이트(https://energy-scoop.com/pages/product/product-detail.html?productNo=123179957)에서 ‘피부·연골 건강’ 및 ‘항산화’ 등 건강기능식품이 아닌 것을 건강기능식품으로 인식할 우려가 있는 광고를 한 사실이 있음"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식품안전나라 회수판매중지",
+        "headline": "트렌디저트 주식회사",
+        "source_url": "/portal/suspensionDetail.do?search_keyword=3000227385",
+        "published_at": "2026-06-15T00:00:00+00:00",
+        "summary": "빙슈 턴앤업 망고맛"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식품안전나라 회수판매중지",
+        "headline": "트렌디저트 주식회사",
+        "source_url": "/portal/suspensionDetail.do?search_keyword=3000227342",
+        "published_at": "2026-06-15T00:00:00+00:00",
+        "summary": "빙슈 턴앤업 딸기"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Sunday Edition: Shrooms",
+        "source_url": "https://www.foodsafetynews.com/2026/06/sunday-edition-shrooms/",
+        "published_at": "2026-06-14T12:00:43+00:00",
+        "summary": "After President Trump signed the executive order concerning the treatment of severe mental illness in April, the FDA followed up by issuing “national priority vouchers” to three companies studying the effects of so called magic mushrooms."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Publisher's Platform: Two botulism outbreaks in seven months — where are the FDA and the formula industry on the formula we feed our kids?",
+        "source_url": "https://www.foodsafetynews.com/2026/06/publishers-platform-two-botulism-outbreaks-in-seven-months-where-are-the-fda-and-the-formula-industry-on-the-formula-we-feed-our-kids/",
+        "published_at": "2026-06-14T04:05:27+00:00",
+        "summary": "For the second time in seven months, I am writing about a baby formula that is carrying the toxin that causes botulism."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "New infant botulism outbreak linked to imported organic powdered formula",
+        "source_url": "https://www.foodsafetynews.com/2026/06/new-infant-botulism-outbreak-linked-to-imported-organic-powdered-formula/",
+        "published_at": "2026-06-14T00:49:20+00:00",
+        "summary": "Title: New infant botulism outbreak linked to imported organic powdered formula\n\nURL Source: https://www.foodsafetynews.com/2026/06/new-infant-botulism-outbreak-linked-to-imported-organic-powdered-formula/\n\nPublished Time: 2026-06-14T00:49:20.000Z\n\nMarkdown Content:\n## Subscribe to Food Safety News\n\nGet the free version of our newsletter. No spam ever, unsubscribe anytime.\n\nState and federal public health officials are investigating a new outbreak of infant botulism poisoning.\n\nSo far the outbreak has sickened three babies across three states: California, Pennsylvania and Washington, according to the Food and Drug Administration.\n\nThe California Department of Public Health has reported that the infections are among infants who were fed Nara Organics Whole Milk Organic Powdered Infant Formula. The babies became sick in April and May. They ranged in age from 2 to 5 months old when their illness began. All three consumed Nara Organics Whole Milk Organic Infant Formula.\n\nAll three infants were hospitalized and treated with BabyBIG®, the FDA-approved treatment for infant botulism. No deaths have been reported.\n\nThe implicated organic formula was distributed nationally across Target retail stores, Target.com, and Nara.com between July 2025 and June 2026.\n\nOfficials in two states have collected leftover infant formula for testing. This testing is underway, and results are expected in the coming weeks.\n\n## World Food Safety Day-June 7\n\nFSN supports food safety around the world through our daily coverage of recalls and outbreaks. Your contribution of any amount toward our $10,000 goal makes it possible for us to continue providing this service to all readers.\n\n![Image 1: CTA Image](https://storage.ghost.io/c/43/4e/434e508a-5e2f-4102-a53d-00bca10bb4bf/content/images/2026/06/u0pEkQvl4xCszWvcyV9PxgaSEFyVM0CIxWwu0eH1.png)\n\nThe FDA contacted the firm on June 12 and recommended that it conduct a recall because of the severity of illnesses and the epidemiological signal. On June 13"
+      }
+    }
+  ],
+  "ontology": {
+    "repo": "FoodRadar",
+    "category": "food",
+    "ontology_version": "0.1.0",
+    "event_model_ids": [
+      "food.complaint_signal",
+      "food.editorial_coverage",
+      "food.enforcement_action",
+      "food.official_notice",
+      "food.recall_status_change"
+    ],
+    "event_model_mappings": {
+      "recall_status_change": "food.recall_status_change",
+      "enforcement_action": "food.enforcement_action",
+      "complaint_signal": "food.complaint_signal",
+      "official_notice": "food.official_notice",
+      "editorial_coverage": "food.editorial_coverage"
+    },
+    "entity_type_hints": [
+      "food.food_type",
+      "food.brand",
+      "food.product",
+      "food.manufacturer",
+      "food.safety_issue",
+      "food.regulation"
+    ],
+    "source_role_ids": [
+      "community_signal",
+      "context_only",
+      "official_context",
+      "primary_evidence"
+    ],
+    "source_role_mappings": {
+      "식품안전나라 회수판매중지": "primary_evidence",
+      "식품안전나라 행정처분": "primary_evidence",
+      "식약처 보도자료": "official_context",
+      "식품안전 국내뉴스": "context_only",
+      "식품안전 해외뉴스": "context_only",
+      "Food Safety News": "context_only",
+      "Food Dive": "context_only",
+      "r/foodsafety": "community_signal",
+      "r/Cooking": "community_signal",
+      "r/nutrition": "community_signal",
+      "r/KoreanFood": "community_signal",
+      "r/ProductRecalls": "community_signal"
+    },
+    "evidence_policy_ids": [
+      "food.official_source_required_for_recall",
+      "food.community_signal_auxiliary_only",
+      "food.traceable_url_required"
+    ]
+  },
+  "quality_summary": {
+    "total_sources": 12,
+    "tracked_sources": 3,
+    "fresh_sources": 2,
+    "quiet_window_sources": 0,
+    "stale_sources": 0,
+    "missing_sources": 1,
+    "unknown_event_date_sources": 0,
+    "not_tracked_sources": 8,
+    "catalog_only_sources": 0,
+    "skipped_disabled_sources": 1,
+    "collection_error_count": 9,
+    "alias_candidate_count": 16,
+    "text_length_outlier_count": 0,
+    "title_length_outlier_count": 0,
+    "summary_length_outlier_count": 0,
+    "mapped_alias_candidate_count": 16,
+    "unmapped_alias_candidate_count": 0,
+    "product_alias_candidate_count": 9,
+    "brand_alias_candidate_count": 3,
+    "manufacturer_alias_candidate_count": 4,
+    "match_coverage_article_count": 70,
+    "match_coverage_matched_count": 66,
+    "match_coverage_unmatched_count": 4,
+    "match_coverage_rate": 94.3,
+    "match_coverage_review_item_count": 4,
+    "fresh_food_events": 3,
+    "stale_food_events": 16,
+    "undated_food_events": 0,
+    "unique_food_event_key_count": 19,
+    "recall_events_with_notice_date_count": 9,
+    "recall_events_with_status_count": 9,
+    "event_alias_trace_count": 0,
+    "complaint_auxiliary_only_events": 0,
+    "official_evidence_events": 19,
+    "recall_status_change_events": 9,
+    "enforcement_action_events": 10,
+    "complaint_signal_events": 0
+  },
+  "warnings": [
+    "collection errors detected: 9",
+    "freshness gaps detected: stale=0, missing=1"
+  ],
+  "quality_flagged_sources": [
+    {
+      "source": "r/foodsafety",
+      "source_type": "reddit",
+      "enabled": true,
+      "tracked": true,
+      "event_model": "complaint_signal",
+      "freshness_sla_days": 3,
+      "quiet_window_days": null,
+      "status": "missing",
+      "article_count": 0,
+      "latest_event_at": null,
+      "latest_collected_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_food_event_key": "",
+      "latest_notice_date": "",
+      "latest_recall_status": "",
+      "latest_release_date": "",
+      "latest_sanction_start_date": "",
+      "latest_sanction_end_date": "",
+      "latest_sanction_type": "",
+      "latest_product_name_raw": "",
+      "latest_manufacturer_name_raw": "",
+      "latest_alias_traces": [],
+      "verification_role": "auxiliary_complaint_signal",
+      "merge_policy": "do_not_merge_with_official_notice",
+      "skip_reason": "",
+      "reenable_gate": "",
+      "errors": [
+        "r/foodsafety: Source disabled (crawl health threshold reached)"
+      ]
+    }
+  ],
+  "quality_alias_candidates": [
+    {
+      "alias_type": "brand",
+      "canonical": "CJ",
+      "normalized": "cj",
+      "variants": [
+        "cj"
+      ],
+      "count": 1,
+      "example_urls": [
+        "https://www.fooddive.com/news/bibigo-cj-foods-seaweed-cultivation-plant/823293"
+      ]
+    },
+    {
+      "alias_type": "brand",
+      "canonical": "Kraft Heinz",
+      "normalized": "kraftheinz",
+      "variants": [
+        "kraft heinz"
+      ],
+      "count": 1,
+      "example_urls": [
+        "https://www.fooddive.com/news/turnaround-kraft-heinz-overhauls-operating-structure-to-accelerate-growth/823247"
+      ]
+    },
+    {
+      "alias_type": "brand",
+      "canonical": "PepsiCo",
+      "normalized": "pepsico",
+      "variants": [
+        "pepsico"
+      ],
+      "count": 1,
+      "example_urls": [
+        "https://www.fooddive.com/news/pepsico-autonomous-trucks-supply-chain/822732"
+      ]
+    },
+    {
+      "alias_type": "manufacturer",
+      "canonical": "주식회사 디와이푸드텍 농업회사법인",
+      "normalized": "디와이푸드텍",
+      "variants": [
+        "주식회사 디와이푸드텍 농업회사법인"
+      ],
+      "count": 1,
+      "example_urls": [
+        "/portal/suspensionDetail.do?search_keyword=3000227337"
+      ]
+    },
+    {
+      "alias_type": "manufacturer",
+      "canonical": "오에스농산 주식회사",
+      "normalized": "오에스농산",
+      "variants": [
+        "오에스농산 주식회사"
+      ],
+      "count": 1,
+      "example_urls": [
+        "/portal/suspensionDetail.do?search_keyword=3000227626"
+      ]
+    },
+    {
+      "alias_type": "manufacturer",
+      "canonical": "주식회사 케이비지리테일(KBG Retail Inc.)",
+      "normalized": "케이비지리테일kbgretail",
+      "variants": [
+        "주식회사 케이비지리테일(KBG Retail Inc.)"
+      ],
+      "count": 1,
+      "example_urls": [
+        "/portal/suspensionDetail.do?search_keyword=3000227567"
+      ]
+    },
+    {
+      "alias_type": "manufacturer",
+      "canonical": "트렌디저트 주식회사",
+      "normalized": "트렌디저트",
+      "variants": [
+        "트렌디저트 주식회사"
+      ],
+      "count": 6,
+      "example_urls": [
+        "/portal/suspensionDetail.do?search_keyword=3000227386",
+        "/portal/suspensionDetail.do?search_keyword=3000227387",
+        "/portal/suspensionDetail.do?search_keyword=3000227389"
+      ]
+    },
+    {
+      "alias_type": "product",
+      "canonical": "빙슈 턴앤업 딸기",
+      "normalized": "빙슈턴앤업딸기",
+      "variants": [
+        "빙슈 턴앤업 딸기"
+      ],
+      "count": 1,
+      "example_urls": [
+        "/portal/suspensionDetail.do?search_keyword=3000227342"
+      ]
+    },
+    {
+      "alias_type": "product",
+      "canonical": "빙슈 턴앤업 망고맛",
+      "normalized": "빙슈턴앤업망고맛",
+      "variants": [
+        "빙슈 턴앤업 망고맛"
+      ],
+      "count": 1,
+      "example_urls": [
+        "/portal/suspensionDetail.do?search_keyword=3000227385"
+      ]
+    },
+    {
+      "alias_type": "product",
+      "canonical": "빙슈 턴앤업 멜론맛",
+      "normalized": "빙슈턴앤업멜론맛",
+      "variants": [
+        "빙슈 턴앤업 멜론맛"
+      ],
+      "count": 1,
+      "example_urls": [
+        "/portal/suspensionDetail.do?search_keyword=3000227386"
+      ]
+    },
+    {
+      "alias_type": "product",
+      "canonical": "빙슈 턴앤업 밀크",
+      "normalized": "빙슈턴앤업밀크",
+      "variants": [
+        "빙슈 턴앤업 밀크"
+      ],
+      "count": 1,
+      "example_urls": [
+        "/portal/suspensionDetail.do?search_keyword=3000227387"
+      ]
+    },
+    {
+      "alias_type": "product",
+      "canonical": "빙슈 턴앤업 바나나맛",
+      "normalized": "빙슈턴앤업바나나맛",
+      "variants": [
+        "빙슈 턴앤업 바나나맛"
+      ],
+      "count": 1,
+      "example_urls": [
+        "/portal/suspensionDetail.do?search_keyword=3000227389"
+      ]
+    }
+  ],
+  "quality_match_coverage_review_items": [
+    {
+      "reason": "market_or_editorial_unclassified",
+      "priority": "medium",
+      "source": "Food Dive",
+      "source_type": "rss",
+      "trust_tier": "T3_professional",
+      "event_model": "editorial_coverage",
+      "title": "Anheuser-Busch invests $20M in Michelob Ultra production in bet on beer rebound",
+      "url": "https://www.fooddive.com/news/anheuser-busch-michelob-ultra-manufacturing-investment-st-louis-20m/823134",
+      "published_at": "2026-06-17T14:29:00+00:00",
+      "collected_at": "2026-06-20T07:10:08.294626+00:00",
+      "summary_excerpt": "The Bud Light owner will upgrade brewery and packaging equipment at facilities across Missouri after executives expressed optimism that the worst is over for the industry.",
+      "recommended_action": "review Product/FoodType/Brand keyword coverage"
+    },
+    {
+      "reason": "market_or_editorial_unclassified",
+      "priority": "medium",
+      "source": "Food Dive",
+      "source_type": "rss",
+      "trust_tier": "T3_professional",
+      "event_model": "editorial_coverage",
+      "title": "The CPG trust gap: Buying ad reach has never been easier. Building trust has never been harder.",
+      "url": "https://www.fooddive.com/spons/the-cpg-trust-gap-buying-ad-reach-has-never-been-easier-building-trust-ha/822401",
+      "published_at": "2026-06-15T09:00:00+00:00",
+      "collected_at": "2026-06-17T08:23:16.904171+00:00",
+      "summary_excerpt": "74% of free streaming viewers like the brands in their ad breaks. CPG planners are taking note.",
+      "recommended_action": "review Product/FoodType/Brand keyword coverage"
+    },
+    {
+      "reason": "market_or_editorial_unclassified",
+      "priority": "medium",
+      "source": "Food Dive",
+      "source_type": "rss",
+      "trust_tier": "T3_professional",
+      "event_model": "editorial_coverage",
+      "title": "Why Fiji Water temporarily operated its own shipping network",
+      "url": "https://www.fooddive.com/news/why-fiji-water-temporarily-operated-its-own-shipping-network/823080",
+      "published_at": "2026-06-17T13:15:00+00:00",
+      "collected_at": "2026-06-20T07:10:08.294626+00:00",
+      "summary_excerpt": "The COVID-19 pandemic pushed the company to run a dedicated route until capacity improved.",
+      "recommended_action": "review Product/FoodType/Brand keyword coverage"
+    },
+    {
+      "reason": "market_or_editorial_unclassified",
+      "priority": "medium",
+      "source": "Food Safety News",
+      "source_type": "rss",
+      "trust_tier": "T3_professional",
+      "event_model": "editorial_coverage",
+      "title": "FERG chief ‘encouraged’ by progress but burden remains ‘significant’",
+      "url": "https://www.foodsafetynews.com/2026/06/ferg-chief-encouraged-by-progress-but-burden-remains-significant",
+      "published_at": "2026-06-16T04:00:50+00:00",
+      "collected_at": "2026-06-18T07:42:43.306240+00:00",
+      "summary_excerpt": "The chair of the group behind revised foodborne illness figures has hailed the “encouraging” progress in reducing infections but warned that the burden is still “significant.” Speaking on a webinar discussing key findings from the 2026 edition of the World Hea",
+      "recommended_action": "review Product/FoodType/Brand keyword coverage"
+    }
+  ]
+}
