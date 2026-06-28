@@ -1,6 +1,6 @@
 {
   "category": "food",
-  "generated_at": "2026-06-27T06:37:53.961463+00:00",
+  "generated_at": "2026-06-28T06:56:47.661921+00:00",
   "summary": {
     "total_sources": 12,
     "tracked_sources": 3,
@@ -13,31 +13,31 @@
     "catalog_only_sources": 0,
     "skipped_disabled_sources": 1,
     "collection_error_count": 0,
-    "alias_candidate_count": 12,
+    "alias_candidate_count": 24,
     "text_length_outlier_count": 0,
     "title_length_outlier_count": 0,
     "summary_length_outlier_count": 0,
-    "mapped_alias_candidate_count": 11,
+    "mapped_alias_candidate_count": 23,
     "unmapped_alias_candidate_count": 1,
-    "product_alias_candidate_count": 5,
+    "product_alias_candidate_count": 10,
     "brand_alias_candidate_count": 2,
-    "manufacturer_alias_candidate_count": 5,
-    "match_coverage_article_count": 62,
-    "match_coverage_matched_count": 57,
+    "manufacturer_alias_candidate_count": 12,
+    "match_coverage_article_count": 78,
+    "match_coverage_matched_count": 73,
     "match_coverage_unmatched_count": 5,
-    "match_coverage_rate": 91.9,
+    "match_coverage_rate": 93.6,
     "match_coverage_review_item_count": 5,
     "fresh_food_events": 0,
-    "stale_food_events": 12,
+    "stale_food_events": 23,
     "undated_food_events": 0,
-    "unique_food_event_key_count": 12,
-    "recall_events_with_notice_date_count": 5,
-    "recall_events_with_status_count": 5,
+    "unique_food_event_key_count": 23,
+    "recall_events_with_notice_date_count": 11,
+    "recall_events_with_status_count": 11,
     "event_alias_trace_count": 0,
     "complaint_auxiliary_only_events": 0,
-    "official_evidence_events": 12,
-    "recall_status_change_events": 5,
-    "enforcement_action_events": 7,
+    "official_evidence_events": 23,
+    "recall_status_change_events": 11,
+    "enforcement_action_events": 12,
     "complaint_signal_events": 0
   },
   "sources": [
@@ -50,21 +50,21 @@
       "freshness_sla_days": 3,
       "quiet_window_days": 5,
       "status": "quiet_window",
-      "article_count": 5,
-      "latest_event_at": "2026-06-23T00:00:00+00:00",
-      "latest_collected_at": "2026-06-24T06:38:23.729414+00:00",
-      "age_days": 4.28,
-      "latest_title": "앰엔제이fnb",
-      "latest_url": "/portal/suspensionDetail.do?search_keyword=3000227749",
-      "latest_food_event_key": "recall-status-change:kr:식품안전나라-회수판매중지:2026-06-23:앰엔제이fnb:명품갈비탕-기본맛:갈비:portal-suspensiondetail-do-search-keyword-3000227749",
-      "latest_notice_date": "2026-06-23",
+      "article_count": 11,
+      "latest_event_at": "2026-06-25T00:00:00+00:00",
+      "latest_collected_at": "2026-06-28T06:56:45.669332+00:00",
+      "age_days": 3.29,
+      "latest_title": "주식회사 펀드랩스",
+      "latest_url": "/portal/suspensionDetail.do?search_keyword=3000227875",
+      "latest_food_event_key": "recall-status-change:kr:식품안전나라-회수판매중지:2026-06-25:주식회사-펀드랩스:투명-냉장고-정리용기-4단-세트-반찬통-마늘-보관용기-소분-보관함:반찬-회:portal-suspensiondetail-do-search-keyword-3000227875",
+      "latest_notice_date": "2026-06-25",
       "latest_recall_status": "notice",
       "latest_release_date": "",
       "latest_sanction_start_date": "",
       "latest_sanction_end_date": "",
       "latest_sanction_type": "",
-      "latest_product_name_raw": "명품갈비탕 기본맛",
-      "latest_manufacturer_name_raw": "앰엔제이fnb",
+      "latest_product_name_raw": "투명 냉장고 정리용기 4단 세트 반찬통 마늘 보관용기 소분 보관함",
+      "latest_manufacturer_name_raw": "주식회사 펀드랩스",
       "latest_alias_traces": [],
       "verification_role": "",
       "merge_policy": "",
@@ -81,18 +81,18 @@
       "freshness_sla_days": 2,
       "quiet_window_days": null,
       "status": "stale",
-      "article_count": 7,
-      "latest_event_at": "2026-06-24T00:00:00+00:00",
-      "latest_collected_at": "2026-06-24T06:38:23.729414+00:00",
-      "age_days": 3.28,
-      "latest_title": "기준과 규격이 맞지 않는 건강기능식품을 수입 판매한 경우로서, 유통 건강기능식품 수거·검사 결과 기능(지표)성분 부적합(함량이 기준치에 대하여 10퍼센트 초과로 부족)으로 판정됨",
-      "latest_url": "/portal/administMeasureDetail.do?seq=4727037",
-      "latest_food_event_key": "enforcement-action:kr:식품안전나라-행정처분:2026-06-24:건강기능식품:부적합-수거-검사-식품-성분-규격:portal-administmeasuredetail-do-seq-4727037",
+      "article_count": 12,
+      "latest_event_at": "2026-06-26T00:00:00+00:00",
+      "latest_collected_at": "2026-06-28T06:56:45.669332+00:00",
+      "age_days": 2.29,
+      "latest_title": "상기 영업자는 2024년 1월 16일부터 2024년 3월 13일까지 수입식품등을 수입하면서 해외 제조업소의 소재지를 사실과 다르게 수입신고한 사실이 있음",
+      "latest_url": "/portal/administMeasureDetail.do?seq=4727007",
+      "latest_food_event_key": "enforcement-action:kr:식품안전나라-행정처분:2024-01-16:제조업소:수입식품:식품:portal-administmeasuredetail-do-seq-4727007",
       "latest_notice_date": "",
       "latest_recall_status": "",
       "latest_release_date": "",
-      "latest_sanction_start_date": "",
-      "latest_sanction_end_date": "",
+      "latest_sanction_start_date": "2024-01-16",
+      "latest_sanction_end_date": "2024-03-13",
       "latest_sanction_type": "enforcement_action",
       "latest_product_name_raw": "",
       "latest_manufacturer_name_raw": "",
@@ -112,12 +112,12 @@
       "freshness_sla_days": 2,
       "quiet_window_days": null,
       "status": "not_tracked",
-      "article_count": 4,
-      "latest_event_at": "2026-06-24T00:00:00+00:00",
-      "latest_collected_at": "2026-06-24T06:38:23.729414+00:00",
-      "age_days": 3.28,
-      "latest_title": "식약처, 건강기능식품 분야 ‘식의약 정책이음 지역현장 열린마당’ 개최",
-      "latest_url": "/portal/board/boardDetail.do?bbs_no=bbs080&menu_no=2857&ntctxt_no=50112",
+      "article_count": 9,
+      "latest_event_at": "2026-06-26T00:00:00+00:00",
+      "latest_collected_at": "2026-06-28T06:56:45.669332+00:00",
+      "age_days": 2.29,
+      "latest_title": "[부처합동] AI 범죄 대응 범부처 협의체 출범",
+      "latest_url": "/portal/board/boardDetail.do?bbs_no=bbs080&menu_no=2857&ntctxt_no=50129",
       "latest_food_event_key": "",
       "latest_notice_date": "",
       "latest_recall_status": "",
@@ -207,8 +207,8 @@
       "status": "not_tracked",
       "article_count": 30,
       "latest_event_at": "2026-06-27T01:43:41+00:00",
-      "latest_collected_at": "2026-06-27T06:37:52.314196+00:00",
-      "age_days": 0.2,
+      "latest_collected_at": "2026-06-28T06:56:45.669332+00:00",
+      "age_days": 1.22,
       "latest_title": "Cyclospora outbreak sickens almost 150 people",
       "latest_url": "https://www.foodsafetynews.com/2026/06/cyclospora-outbreak-sickens-almost-150-people",
       "latest_food_event_key": "",
@@ -238,8 +238,8 @@
       "status": "not_tracked",
       "article_count": 16,
       "latest_event_at": "2026-06-26T15:17:00+00:00",
-      "latest_collected_at": "2026-06-27T06:37:52.314196+00:00",
-      "age_days": 0.64,
+      "latest_collected_at": "2026-06-28T06:56:45.669332+00:00",
+      "age_days": 1.65,
       "latest_title": "Leftovers: Dolly Parton pours into coffee | Eggo launches first zero-sugar waffle",
       "latest_url": "https://www.fooddive.com/news/dolly-parton-coffee-kings-hawaiian-pretzel-eggo-no-added-sugar/823875",
       "latest_food_event_key": "",
@@ -420,40 +420,37 @@
       "source_type": "rss",
       "trust_tier": "T1_official",
       "event_model": "enforcement_action",
-      "title": "기준과 규격이 맞지 않는 건강기능식품을 수입 판매한 경우로서, 유통 건강기능식품 수거·검사 결과 기능(지표)성분 부적합(함량이 기준치에 대하여 10퍼센트 초과로 부족)으로 판정됨",
-      "url": "/portal/administMeasureDetail.do?seq=4727037",
-      "event_at": "2026-06-24T00:00:00+00:00",
-      "event_age_days": 3.28,
+      "title": "상기 영업자는 2024년 1월 16일부터 2024년 3월 13일까지 수입식품등을 수입하면서 해외 제조업소의 소재지를 사실과 다르게 수입신고한 사실이 있음",
+      "url": "/portal/administMeasureDetail.do?seq=4727007",
+      "event_at": "2026-06-26T00:00:00+00:00",
+      "event_age_days": 2.29,
       "event_freshness_sla_days": 2,
       "event_status": "stale",
-      "food_event_key": "enforcement-action:kr:식품안전나라-행정처분:2026-06-24:건강기능식품:부적합-수거-검사-식품-성분-규격:portal-administmeasuredetail-do-seq-4727037",
-      "evidence_url": "/portal/administMeasureDetail.do?seq=4727037",
+      "food_event_key": "enforcement-action:kr:식품안전나라-행정처분:2024-01-16:제조업소:수입식품:식품:portal-administmeasuredetail-do-seq-4727007",
+      "evidence_url": "/portal/administMeasureDetail.do?seq=4727007",
       "evidence_url_present": true,
       "country": "KR",
       "products": [],
       "product_canonical": [],
       "brands": [],
       "brand_canonical": [],
-      "manufacturers": [],
+      "manufacturers": [
+        "제조업소"
+      ],
       "manufacturer_canonical": [],
       "food_types": [
-        "건강기능식품"
+        "수입식품"
       ],
       "safety_issues": [
-        "부적합",
-        "수거",
-        "검사",
-        "식품",
-        "성분",
-        "규격"
+        "식품"
       ],
       "recall_reasons": [],
       "alias_traces": [],
       "verification_role": "",
       "merge_policy": "",
       "verification_status": "official_source",
-      "sanction_start_date": "",
-      "sanction_end_date": "",
+      "sanction_start_date": "2024-01-16",
+      "sanction_end_date": "2024-03-13",
       "sanction_type": "enforcement_action"
     },
     {
@@ -461,14 +458,56 @@
       "source_type": "rss",
       "trust_tier": "T1_official",
       "event_model": "enforcement_action",
-      "title": "인터넷 판매사이트에 해외식품을 국내 소비자에게 구매대행하여 판매할 목적으로 관련 광고글을 게시하면서 질병 또는 질병군의 발생을 예방한다는 내용의 표시·광고를 하여 해당 제품이 질병의 예방·치료에 효능이 있는 것으로 인식할 우려가 있는 표시 또는 광고를 한 사실이 있음",
-      "url": "/portal/administMeasureDetail.do?seq=4727831",
-      "event_at": "2026-06-24T00:00:00+00:00",
-      "event_age_days": 3.28,
+      "title": "\"○「식품위생법」제48조제2항 및 동법 시행규칙 제62조제1항제13호에 따라 식품제조가공업의 영업소 중 전년도 매출이 100억 이상인 영업소에서 제조·가공하는 식품은 식품의약품안전처장이 식품별로 고시한 식품안전관리인증기준을 지켜야 하나 - 상기 당사자는 2025년도 매출액이 38,01…",
+      "url": "/portal/administMeasureDetail.do?seq=4728376",
+      "event_at": "2026-06-26T00:00:00+00:00",
+      "event_age_days": 2.29,
       "event_freshness_sla_days": 2,
       "event_status": "stale",
-      "food_event_key": "enforcement-action:kr:식품안전나라-행정처분:2026-06-24:식품:portal-administmeasuredetail-do-seq-4727831",
-      "evidence_url": "/portal/administMeasureDetail.do?seq=4727831",
+      "food_event_key": "enforcement-action:kr:식품안전나라-행정처분:2026-01-01:대상:대상:위생-식품-고시:portal-administmeasuredetail-do-seq-4728376",
+      "evidence_url": "/portal/administMeasureDetail.do?seq=4728376",
+      "evidence_url_present": true,
+      "country": "KR",
+      "products": [],
+      "product_canonical": [],
+      "brands": [
+        "대상"
+      ],
+      "brand_canonical": [],
+      "manufacturers": [
+        "대상"
+      ],
+      "manufacturer_canonical": [
+        "대상"
+      ],
+      "food_types": [],
+      "safety_issues": [
+        "위생",
+        "식품",
+        "고시"
+      ],
+      "recall_reasons": [],
+      "alias_traces": [],
+      "verification_role": "",
+      "merge_policy": "",
+      "verification_status": "official_source",
+      "sanction_start_date": "2026-01-01",
+      "sanction_end_date": "2026-04-22",
+      "sanction_type": "enforcement_action"
+    },
+    {
+      "source": "식품안전나라 행정처분",
+      "source_type": "rss",
+      "trust_tier": "T1_official",
+      "event_model": "enforcement_action",
+      "title": "\"○ 위생용품수입업을 하려는 자는 총리령으로 정하는 기준에 따른 시설을 갖추고 식품의약품안전처장에게 신고 하여야 하고, 신고한 사항 중 대통령령으로 정하는 중요한 사항을 변경하려는 경우에도 또한 같으나, - 상기 당사자는 해당 영업소 소재지의 관련 영업시설을 전부 철거하고, 변경신고를…",
+      "url": "/portal/administMeasureDetail.do?seq=4725745",
+      "event_at": "2026-06-25T00:00:00+00:00",
+      "event_age_days": 3.29,
+      "event_freshness_sla_days": 2,
+      "event_status": "stale",
+      "food_event_key": "enforcement-action:kr:식품안전나라-행정처분:2026-06-25:위생-식품:portal-administmeasuredetail-do-seq-4725745",
+      "evidence_url": "/portal/administMeasureDetail.do?seq=4725745",
       "evidence_url_present": true,
       "country": "KR",
       "products": [],
@@ -479,6 +518,7 @@
       "manufacturer_canonical": [],
       "food_types": [],
       "safety_issues": [
+        "위생",
         "식품"
       ],
       "recall_reasons": [],
@@ -491,6 +531,255 @@
       "sanction_type": "enforcement_action"
     },
     {
+      "source": "식품안전나라 회수판매중지",
+      "source_type": "rss",
+      "trust_tier": "T1_official",
+      "event_model": "recall_status_change",
+      "title": "주식회사 펀드랩스",
+      "url": "/portal/suspensionDetail.do?search_keyword=3000227875",
+      "event_at": "2026-06-25T00:00:00+00:00",
+      "event_age_days": 3.29,
+      "event_freshness_sla_days": 3,
+      "event_status": "stale",
+      "food_event_key": "recall-status-change:kr:식품안전나라-회수판매중지:2026-06-25:주식회사-펀드랩스:투명-냉장고-정리용기-4단-세트-반찬통-마늘-보관용기-소분-보관함:반찬-회:portal-suspensiondetail-do-search-keyword-3000227875",
+      "evidence_url": "/portal/suspensionDetail.do?search_keyword=3000227875",
+      "evidence_url_present": true,
+      "country": "KR",
+      "products": [
+        "투명 냉장고 정리용기 4단 세트 반찬통 마늘 보관용기 소분 보관함"
+      ],
+      "product_canonical": [
+        "투명 냉장고 정리용기 4단 세트 반찬통 마늘 보관용기 소분 보관함"
+      ],
+      "brands": [],
+      "brand_canonical": [],
+      "manufacturers": [
+        "주식회사 펀드랩스"
+      ],
+      "manufacturer_canonical": [
+        "주식회사 펀드랩스"
+      ],
+      "food_types": [
+        "반찬",
+        "회"
+      ],
+      "safety_issues": [],
+      "recall_reasons": [],
+      "alias_traces": [],
+      "verification_role": "",
+      "merge_policy": "",
+      "verification_status": "official_source",
+      "product_name_raw": "투명 냉장고 정리용기 4단 세트 반찬통 마늘 보관용기 소분 보관함",
+      "manufacturer_name_raw": "주식회사 펀드랩스",
+      "recall_extraction_method": "official_recall_title_summary",
+      "notice_date": "2026-06-25",
+      "recall_status": "notice",
+      "release_date": ""
+    },
+    {
+      "source": "식품안전나라 회수판매중지",
+      "source_type": "rss",
+      "trust_tier": "T1_official",
+      "event_model": "recall_status_change",
+      "title": "미광식품",
+      "url": "/portal/suspensionDetail.do?search_keyword=3000227890",
+      "event_at": "2026-06-25T00:00:00+00:00",
+      "event_age_days": 3.29,
+      "event_freshness_sla_days": 3,
+      "event_status": "stale",
+      "food_event_key": "recall-status-change:kr:식품안전나라-회수판매중지:2026-06-25:미광식품:닭꼬치:식품:portal-suspensiondetail-do-search-keyword-3000227890",
+      "evidence_url": "/portal/suspensionDetail.do?search_keyword=3000227890",
+      "evidence_url_present": true,
+      "country": "KR",
+      "products": [
+        "닭꼬치"
+      ],
+      "product_canonical": [
+        "닭꼬치"
+      ],
+      "brands": [],
+      "brand_canonical": [],
+      "manufacturers": [
+        "미광식품"
+      ],
+      "manufacturer_canonical": [
+        "미광식품"
+      ],
+      "food_types": [],
+      "safety_issues": [
+        "식품"
+      ],
+      "recall_reasons": [],
+      "alias_traces": [],
+      "verification_role": "",
+      "merge_policy": "",
+      "verification_status": "official_source",
+      "product_name_raw": "닭꼬치",
+      "manufacturer_name_raw": "미광식품",
+      "recall_extraction_method": "official_recall_title_summary",
+      "notice_date": "2026-06-25",
+      "recall_status": "notice",
+      "release_date": ""
+    },
+    {
+      "source": "식품안전나라 행정처분",
+      "source_type": "rss",
+      "trust_tier": "T1_official",
+      "event_model": "enforcement_action",
+      "title": "\"○ 위생용품수입업을 하려는 자는 총리령으로 정하는 기준에 따른 시설을 갖추고 식품의약품안전처장에게 신고 하여야 하고, 신고한 사항 중 대통령령으로 정하는 중요한 사항을 변경하려는 경우에도 또한 같으나, - 상기 당사자는 해당 영업소 소재지의 관련 영업시설을 전부 철거하고, 변경신고를…",
+      "url": "/portal/administMeasureDetail.do?seq=4725744",
+      "event_at": "2026-06-25T00:00:00+00:00",
+      "event_age_days": 3.29,
+      "event_freshness_sla_days": 2,
+      "event_status": "stale",
+      "food_event_key": "enforcement-action:kr:식품안전나라-행정처분:2026-06-25:위생-식품:portal-administmeasuredetail-do-seq-4725744",
+      "evidence_url": "/portal/administMeasureDetail.do?seq=4725744",
+      "evidence_url_present": true,
+      "country": "KR",
+      "products": [],
+      "product_canonical": [],
+      "brands": [],
+      "brand_canonical": [],
+      "manufacturers": [],
+      "manufacturer_canonical": [],
+      "food_types": [],
+      "safety_issues": [
+        "위생",
+        "식품"
+      ],
+      "recall_reasons": [],
+      "alias_traces": [],
+      "verification_role": "",
+      "merge_policy": "",
+      "verification_status": "official_source",
+      "sanction_start_date": "",
+      "sanction_end_date": "",
+      "sanction_type": "enforcement_action"
+    },
+    {
+      "source": "식품안전나라 회수판매중지",
+      "source_type": "rss",
+      "trust_tier": "T1_official",
+      "event_model": "recall_status_change",
+      "title": "(주)윈윈농수산",
+      "url": "/portal/suspensionDetail.do?search_keyword=3000227851",
+      "event_at": "2026-06-25T00:00:00+00:00",
+      "event_age_days": 3.29,
+      "event_freshness_sla_days": 3,
+      "event_status": "stale",
+      "food_event_key": "recall-status-change:kr:식품안전나라-회수판매중지:2026-06-25:주-윈윈농수산:자숙홍합살:portal-suspensiondetail-do-search-keyword-3000227851",
+      "evidence_url": "/portal/suspensionDetail.do?search_keyword=3000227851",
+      "evidence_url_present": true,
+      "country": "KR",
+      "products": [
+        "자숙홍합살"
+      ],
+      "product_canonical": [
+        "자숙홍합살"
+      ],
+      "brands": [],
+      "brand_canonical": [],
+      "manufacturers": [
+        "(주)윈윈농수산"
+      ],
+      "manufacturer_canonical": [
+        "(주)윈윈농수산"
+      ],
+      "food_types": [],
+      "safety_issues": [],
+      "recall_reasons": [],
+      "alias_traces": [],
+      "verification_role": "",
+      "merge_policy": "",
+      "verification_status": "official_source",
+      "product_name_raw": "자숙홍합살",
+      "manufacturer_name_raw": "(주)윈윈농수산",
+      "recall_extraction_method": "official_recall_title_summary",
+      "notice_date": "2026-06-25",
+      "recall_status": "notice",
+      "release_date": ""
+    },
+    {
+      "source": "식품안전나라 행정처분",
+      "source_type": "rss",
+      "trust_tier": "T1_official",
+      "event_model": "enforcement_action",
+      "title": "\"○ 위생용품수입업을 하려는 자는 총리령으로 정하는 기준에 따른 시설을 갖추고 식품의약품안전처장에게 신고 하여야 하고, 신고한 사항 중 대통령령으로 정하는 중요한 사항을 변경하려는 경우에도 또한 같으나, - 상기 당사자는 해당 영업소 소재지의 관련 영업시설을 전부 철거하고, 변경신고를…",
+      "url": "/portal/administMeasureDetail.do?seq=4725747",
+      "event_at": "2026-06-25T00:00:00+00:00",
+      "event_age_days": 3.29,
+      "event_freshness_sla_days": 2,
+      "event_status": "stale",
+      "food_event_key": "enforcement-action:kr:식품안전나라-행정처분:2026-06-25:위생-식품:portal-administmeasuredetail-do-seq-4725747",
+      "evidence_url": "/portal/administMeasureDetail.do?seq=4725747",
+      "evidence_url_present": true,
+      "country": "KR",
+      "products": [],
+      "product_canonical": [],
+      "brands": [],
+      "brand_canonical": [],
+      "manufacturers": [],
+      "manufacturer_canonical": [],
+      "food_types": [],
+      "safety_issues": [
+        "위생",
+        "식품"
+      ],
+      "recall_reasons": [],
+      "alias_traces": [],
+      "verification_role": "",
+      "merge_policy": "",
+      "verification_status": "official_source",
+      "sanction_start_date": "",
+      "sanction_end_date": "",
+      "sanction_type": "enforcement_action"
+    },
+    {
+      "source": "식품안전나라 회수판매중지",
+      "source_type": "rss",
+      "trust_tier": "T1_official",
+      "event_model": "recall_status_change",
+      "title": "(유)제일식품",
+      "url": "/portal/suspensionDetail.do?search_keyword=3000227820",
+      "event_at": "2026-06-24T00:00:00+00:00",
+      "event_age_days": 4.29,
+      "event_freshness_sla_days": 3,
+      "event_status": "stale",
+      "food_event_key": "recall-status-change:kr:식품안전나라-회수판매중지:2026-06-24:유-제일식품:울금가루:식품:portal-suspensiondetail-do-search-keyword-3000227820",
+      "evidence_url": "/portal/suspensionDetail.do?search_keyword=3000227820",
+      "evidence_url_present": true,
+      "country": "KR",
+      "products": [
+        "울금가루"
+      ],
+      "product_canonical": [
+        "울금가루"
+      ],
+      "brands": [],
+      "brand_canonical": [],
+      "manufacturers": [
+        "(유)제일식품"
+      ],
+      "manufacturer_canonical": [
+        "(유)제일식품"
+      ],
+      "food_types": [],
+      "safety_issues": [
+        "식품"
+      ],
+      "recall_reasons": [],
+      "alias_traces": [],
+      "verification_role": "",
+      "merge_policy": "",
+      "verification_status": "official_source",
+      "product_name_raw": "울금가루",
+      "manufacturer_name_raw": "(유)제일식품",
+      "recall_extraction_method": "official_recall_title_summary",
+      "notice_date": "2026-06-24",
+      "recall_status": "notice",
+      "release_date": ""
+    },
+    {
       "source": "식품안전나라 행정처분",
       "source_type": "rss",
       "trust_tier": "T1_official",
@@ -498,7 +787,7 @@
       "title": "상기 영업자는 2024년 9월 30일부터 2024년 10월 15일까지 수입식품등을 수입하면서 해외 제조업소의 소재지를 사실과 다르게 수입신고한 사실이 있음",
       "url": "/portal/administMeasureDetail.do?seq=4727518",
       "event_at": "2026-06-24T00:00:00+00:00",
-      "event_age_days": 3.28,
+      "event_age_days": 4.29,
       "event_freshness_sla_days": 2,
       "event_status": "stale",
       "food_event_key": "enforcement-action:kr:식품안전나라-행정처분:2024-09-30:제조업소:수입식품:식품:portal-administmeasuredetail-do-seq-4727518",
@@ -533,10 +822,218 @@
       "source_type": "rss",
       "trust_tier": "T1_official",
       "event_model": "enforcement_action",
+      "title": "기준과 규격이 맞지 않는 건강기능식품을 수입 판매한 경우로서, 유통 건강기능식품 수거·검사 결과 기능(지표)성분 부적합(함량이 기준치에 대하여 10퍼센트 초과로 부족)으로 판정됨",
+      "url": "/portal/administMeasureDetail.do?seq=4727037",
+      "event_at": "2026-06-24T00:00:00+00:00",
+      "event_age_days": 4.29,
+      "event_freshness_sla_days": 2,
+      "event_status": "stale",
+      "food_event_key": "enforcement-action:kr:식품안전나라-행정처분:2026-06-24:건강기능식품:부적합-수거-검사-식품-성분-규격:portal-administmeasuredetail-do-seq-4727037",
+      "evidence_url": "/portal/administMeasureDetail.do?seq=4727037",
+      "evidence_url_present": true,
+      "country": "KR",
+      "products": [],
+      "product_canonical": [],
+      "brands": [],
+      "brand_canonical": [],
+      "manufacturers": [],
+      "manufacturer_canonical": [],
+      "food_types": [
+        "건강기능식품"
+      ],
+      "safety_issues": [
+        "부적합",
+        "수거",
+        "검사",
+        "식품",
+        "성분",
+        "규격"
+      ],
+      "recall_reasons": [],
+      "alias_traces": [],
+      "verification_role": "",
+      "merge_policy": "",
+      "verification_status": "official_source",
+      "sanction_start_date": "",
+      "sanction_end_date": "",
+      "sanction_type": "enforcement_action"
+    },
+    {
+      "source": "식품안전나라 회수판매중지",
+      "source_type": "rss",
+      "trust_tier": "T1_official",
+      "event_model": "recall_status_change",
+      "title": "주식회사 생생드림",
+      "url": "/portal/suspensionDetail.do?search_keyword=3000227817",
+      "event_at": "2026-06-24T00:00:00+00:00",
+      "event_age_days": 4.29,
+      "event_freshness_sla_days": 3,
+      "event_status": "stale",
+      "food_event_key": "recall-status-change:kr:식품안전나라-회수판매중지:2026-06-24:주식회사-생생드림:우슬닭발환:회:portal-suspensiondetail-do-search-keyword-3000227817",
+      "evidence_url": "/portal/suspensionDetail.do?search_keyword=3000227817",
+      "evidence_url_present": true,
+      "country": "KR",
+      "products": [
+        "우슬닭발환"
+      ],
+      "product_canonical": [
+        "우슬닭발환"
+      ],
+      "brands": [],
+      "brand_canonical": [],
+      "manufacturers": [
+        "주식회사 생생드림"
+      ],
+      "manufacturer_canonical": [
+        "주식회사 생생드림"
+      ],
+      "food_types": [
+        "회"
+      ],
+      "safety_issues": [],
+      "recall_reasons": [],
+      "alias_traces": [],
+      "verification_role": "",
+      "merge_policy": "",
+      "verification_status": "official_source",
+      "product_name_raw": "우슬닭발환",
+      "manufacturer_name_raw": "주식회사 생생드림",
+      "recall_extraction_method": "official_recall_title_summary",
+      "notice_date": "2026-06-24",
+      "recall_status": "notice",
+      "release_date": ""
+    },
+    {
+      "source": "식품안전나라 행정처분",
+      "source_type": "rss",
+      "trust_tier": "T1_official",
+      "event_model": "enforcement_action",
+      "title": "인터넷 판매사이트에 해외식품을 국내 소비자에게 구매대행하여 판매할 목적으로 관련 광고글을 게시하면서 질병 또는 질병군의 발생을 예방한다는 내용의 표시·광고를 하여 해당 제품이 질병의 예방·치료에 효능이 있는 것으로 인식할 우려가 있는 표시 또는 광고를 한 사실이 있음",
+      "url": "/portal/administMeasureDetail.do?seq=4727831",
+      "event_at": "2026-06-24T00:00:00+00:00",
+      "event_age_days": 4.29,
+      "event_freshness_sla_days": 2,
+      "event_status": "stale",
+      "food_event_key": "enforcement-action:kr:식품안전나라-행정처분:2026-06-24:식품:portal-administmeasuredetail-do-seq-4727831",
+      "evidence_url": "/portal/administMeasureDetail.do?seq=4727831",
+      "evidence_url_present": true,
+      "country": "KR",
+      "products": [],
+      "product_canonical": [],
+      "brands": [],
+      "brand_canonical": [],
+      "manufacturers": [],
+      "manufacturer_canonical": [],
+      "food_types": [],
+      "safety_issues": [
+        "식품"
+      ],
+      "recall_reasons": [],
+      "alias_traces": [],
+      "verification_role": "",
+      "merge_policy": "",
+      "verification_status": "official_source",
+      "sanction_start_date": "",
+      "sanction_end_date": "",
+      "sanction_type": "enforcement_action"
+    },
+    {
+      "source": "식품안전나라 회수판매중지",
+      "source_type": "rss",
+      "trust_tier": "T1_official",
+      "event_model": "recall_status_change",
+      "title": "건강플러스",
+      "url": "/portal/suspensionDetail.do?search_keyword=3000227821",
+      "event_at": "2026-06-24T00:00:00+00:00",
+      "event_age_days": 4.29,
+      "event_freshness_sla_days": 3,
+      "event_status": "stale",
+      "food_event_key": "recall-status-change:kr:식품안전나라-회수판매중지:2026-06-24:건강플러스:우슬닭발환:portal-suspensiondetail-do-search-keyword-3000227821",
+      "evidence_url": "/portal/suspensionDetail.do?search_keyword=3000227821",
+      "evidence_url_present": true,
+      "country": "KR",
+      "products": [
+        "우슬닭발환"
+      ],
+      "product_canonical": [
+        "우슬닭발환"
+      ],
+      "brands": [],
+      "brand_canonical": [],
+      "manufacturers": [
+        "건강플러스"
+      ],
+      "manufacturer_canonical": [
+        "건강플러스"
+      ],
+      "food_types": [],
+      "safety_issues": [],
+      "recall_reasons": [],
+      "alias_traces": [],
+      "verification_role": "",
+      "merge_policy": "",
+      "verification_status": "official_source",
+      "product_name_raw": "우슬닭발환",
+      "manufacturer_name_raw": "건강플러스",
+      "recall_extraction_method": "official_recall_title_summary",
+      "notice_date": "2026-06-24",
+      "recall_status": "notice",
+      "release_date": ""
+    },
+    {
+      "source": "식품안전나라 회수판매중지",
+      "source_type": "rss",
+      "trust_tier": "T1_official",
+      "event_model": "recall_status_change",
+      "title": "농업회사법인(주)화촌엄마손",
+      "url": "/portal/suspensionDetail.do?search_keyword=3000227742",
+      "event_at": "2026-06-23T00:00:00+00:00",
+      "event_age_days": 5.29,
+      "event_freshness_sla_days": 3,
+      "event_status": "stale",
+      "food_event_key": "recall-status-change:kr:식품안전나라-회수판매중지:2026-06-23:농업회사법인-주-화촌엄마손:남원광원추어탕:회:portal-suspensiondetail-do-search-keyword-3000227742",
+      "evidence_url": "/portal/suspensionDetail.do?search_keyword=3000227742",
+      "evidence_url_present": true,
+      "country": "KR",
+      "products": [
+        "남원광원추어탕"
+      ],
+      "product_canonical": [
+        "남원광원추어탕"
+      ],
+      "brands": [],
+      "brand_canonical": [],
+      "manufacturers": [
+        "농업회사법인(주)화촌엄마손"
+      ],
+      "manufacturer_canonical": [
+        "농업회사법인(주)화촌엄마손"
+      ],
+      "food_types": [
+        "회"
+      ],
+      "safety_issues": [],
+      "recall_reasons": [],
+      "alias_traces": [],
+      "verification_role": "",
+      "merge_policy": "",
+      "verification_status": "official_source",
+      "product_name_raw": "남원광원추어탕",
+      "manufacturer_name_raw": "농업회사법인(주)화촌엄마손",
+      "recall_extraction_method": "official_recall_title_summary",
+      "notice_date": "2026-06-23",
+      "recall_status": "notice",
+      "release_date": ""
+    },
+    {
+      "source": "식품안전나라 행정처분",
+      "source_type": "rss",
+      "trust_tier": "T1_official",
+      "event_model": "enforcement_action",
       "title": "- 상기 영업자는 인터넷 사이트 (https://smartstore.naver.com/zottaa/products/5935136896)에서 수입식품등을 구매대행하면서 ‘Huperzine A 뇌건강 집중력 인지력 기억력 및 학습 능력 지원 보충제 108캡슐’ 제품에 대해 판매 페이지의…",
       "url": "/portal/administMeasureDetail.do?seq=4726952",
       "event_at": "2026-06-23T00:00:00+00:00",
-      "event_age_days": 4.28,
+      "event_age_days": 5.29,
       "event_freshness_sla_days": 2,
       "event_status": "stale",
       "food_event_key": "enforcement-action:kr:식품안전나라-행정처분:2026-06-23:수입식품:식품:portal-administmeasuredetail-do-seq-4726952",
@@ -572,7 +1069,7 @@
       "title": "앰엔제이fnb",
       "url": "/portal/suspensionDetail.do?search_keyword=3000227749",
       "event_at": "2026-06-23T00:00:00+00:00",
-      "event_age_days": 4.28,
+      "event_age_days": 5.29,
       "event_freshness_sla_days": 3,
       "event_status": "stale",
       "food_event_key": "recall-status-change:kr:식품안전나라-회수판매중지:2026-06-23:앰엔제이fnb:명품갈비탕-기본맛:갈비:portal-suspensiondetail-do-search-keyword-3000227749",
@@ -617,7 +1114,7 @@
       "title": "타임스퀘어",
       "url": "/portal/suspensionDetail.do?search_keyword=3000227767",
       "event_at": "2026-06-23T00:00:00+00:00",
-      "event_age_days": 4.28,
+      "event_age_days": 5.29,
       "event_freshness_sla_days": 3,
       "event_status": "stale",
       "food_event_key": "recall-status-change:kr:식품안전나라-회수판매중지:2026-06-23:타임스퀘어:new-로얄-소보로-회오리감자:회:portal-suspensiondetail-do-search-keyword-3000227767",
@@ -655,51 +1152,6 @@
       "release_date": ""
     },
     {
-      "source": "식품안전나라 회수판매중지",
-      "source_type": "rss",
-      "trust_tier": "T1_official",
-      "event_model": "recall_status_change",
-      "title": "농업회사법인(주)화촌엄마손",
-      "url": "/portal/suspensionDetail.do?search_keyword=3000227742",
-      "event_at": "2026-06-23T00:00:00+00:00",
-      "event_age_days": 4.28,
-      "event_freshness_sla_days": 3,
-      "event_status": "stale",
-      "food_event_key": "recall-status-change:kr:식품안전나라-회수판매중지:2026-06-23:농업회사법인-주-화촌엄마손:남원광원추어탕:회:portal-suspensiondetail-do-search-keyword-3000227742",
-      "evidence_url": "/portal/suspensionDetail.do?search_keyword=3000227742",
-      "evidence_url_present": true,
-      "country": "KR",
-      "products": [
-        "남원광원추어탕"
-      ],
-      "product_canonical": [
-        "남원광원추어탕"
-      ],
-      "brands": [],
-      "brand_canonical": [],
-      "manufacturers": [
-        "농업회사법인(주)화촌엄마손"
-      ],
-      "manufacturer_canonical": [
-        "농업회사법인(주)화촌엄마손"
-      ],
-      "food_types": [
-        "회"
-      ],
-      "safety_issues": [],
-      "recall_reasons": [],
-      "alias_traces": [],
-      "verification_role": "",
-      "merge_policy": "",
-      "verification_status": "official_source",
-      "product_name_raw": "남원광원추어탕",
-      "manufacturer_name_raw": "농업회사법인(주)화촌엄마손",
-      "recall_extraction_method": "official_recall_title_summary",
-      "notice_date": "2026-06-23",
-      "recall_status": "notice",
-      "release_date": ""
-    },
-    {
       "source": "식품안전나라 행정처분",
       "source_type": "rss",
       "trust_tier": "T1_official",
@@ -707,7 +1159,7 @@
       "title": "○「식품 등의 표시․광고에 관한 법률」제8조제1항제10호에 의거 누구든지 식품등의 명칭·제조방법·성분 등 대통령령으로 정하는 사항에 관하여 같은 법 제10조제1항에 따라 심의를 받지 아니하거나 같은 조 제4항을 위반하여 심의 결과를 따르지 아니한 표시 또는 광고를 하여서는 아니 되나,…",
       "url": "/portal/administMeasureDetail.do?seq=4725757",
       "event_at": "2026-06-23T00:00:00+00:00",
-      "event_age_days": 4.28,
+      "event_age_days": 5.29,
       "event_freshness_sla_days": 2,
       "event_status": "stale",
       "food_event_key": "enforcement-action:kr:식품안전나라-행정처분:2026-06-23:건강기능식품-회:식품-성분:portal-administmeasuredetail-do-seq-4725757",
@@ -742,10 +1194,93 @@
       "source_type": "rss",
       "trust_tier": "T1_official",
       "event_model": "recall_status_change",
+      "title": "농업회사법인 주식회사 에이치앤디",
+      "url": "/portal/suspensionDetail.do?search_keyword=3000227695",
+      "event_at": "2026-06-22T00:00:00+00:00",
+      "event_age_days": 6.29,
+      "event_freshness_sla_days": 3,
+      "event_status": "stale",
+      "food_event_key": "recall-status-change:kr:식품안전나라-회수판매중지:2026-06-22:농업회사법인-주식회사-에이치앤디:두배진흑염소진액:회:portal-suspensiondetail-do-search-keyword-3000227695",
+      "evidence_url": "/portal/suspensionDetail.do?search_keyword=3000227695",
+      "evidence_url_present": true,
+      "country": "KR",
+      "products": [
+        "두배진흑염소진액"
+      ],
+      "product_canonical": [
+        "두배진흑염소진액"
+      ],
+      "brands": [],
+      "brand_canonical": [],
+      "manufacturers": [
+        "농업회사법인 주식회사 에이치앤디"
+      ],
+      "manufacturer_canonical": [
+        "농업회사법인 주식회사 에이치앤디"
+      ],
+      "food_types": [
+        "회"
+      ],
+      "safety_issues": [],
+      "recall_reasons": [],
+      "alias_traces": [],
+      "verification_role": "",
+      "merge_policy": "",
+      "verification_status": "official_source",
+      "product_name_raw": "두배진흑염소진액",
+      "manufacturer_name_raw": "농업회사법인 주식회사 에이치앤디",
+      "recall_extraction_method": "official_recall_title_summary",
+      "notice_date": "2026-06-22",
+      "recall_status": "notice",
+      "release_date": ""
+    },
+    {
+      "source": "식품안전나라 행정처분",
+      "source_type": "rss",
+      "trust_tier": "T1_official",
+      "event_model": "enforcement_action",
+      "title": "상기 영업자는 2024년 11월 13일부터 2025년 2월 6일까지 수입식품등을 수입하면서 해외 제조업소의 소재지를 사실과 다르게 수입신고한 사실이 있음",
+      "url": "/portal/administMeasureDetail.do?seq=4727519",
+      "event_at": "2026-06-22T00:00:00+00:00",
+      "event_age_days": 6.29,
+      "event_freshness_sla_days": 2,
+      "event_status": "stale",
+      "food_event_key": "enforcement-action:kr:식품안전나라-행정처분:2024-11-13:제조업소:수입식품:식품:portal-administmeasuredetail-do-seq-4727519",
+      "evidence_url": "/portal/administMeasureDetail.do?seq=4727519",
+      "evidence_url_present": true,
+      "country": "KR",
+      "products": [],
+      "product_canonical": [],
+      "brands": [],
+      "brand_canonical": [],
+      "manufacturers": [
+        "제조업소"
+      ],
+      "manufacturer_canonical": [],
+      "food_types": [
+        "수입식품"
+      ],
+      "safety_issues": [
+        "식품"
+      ],
+      "recall_reasons": [],
+      "alias_traces": [],
+      "verification_role": "",
+      "merge_policy": "",
+      "verification_status": "official_source",
+      "sanction_start_date": "2024-11-13",
+      "sanction_end_date": "2025-02-06",
+      "sanction_type": "enforcement_action"
+    },
+    {
+      "source": "식품안전나라 회수판매중지",
+      "source_type": "rss",
+      "trust_tier": "T1_official",
+      "event_model": "recall_status_change",
       "title": "오에스농산 주식회사",
       "url": "/portal/suspensionDetail.do?search_keyword=3000227684",
       "event_at": "2026-06-22T00:00:00+00:00",
-      "event_age_days": 5.28,
+      "event_age_days": 6.29,
       "event_freshness_sla_days": 3,
       "event_status": "stale",
       "food_event_key": "recall-status-change:kr:식품안전나라-회수판매중지:2026-06-22:오에스농산-주식회사:자연향-가득한-고춧가루-베트남산:회:portal-suspensiondetail-do-search-keyword-3000227684",
@@ -790,7 +1325,7 @@
       "title": "상기 영업자는 소비기한이 2026. 2. 13.까지인 수입식품(제품명: 캄맛블랙흑후추)을 2026. 2. 19.에 판매한 사실이 있음.",
       "url": "/portal/administMeasureDetail.do?seq=4726985",
       "event_at": "2026-06-22T00:00:00+00:00",
-      "event_age_days": 5.28,
+      "event_age_days": 6.29,
       "event_freshness_sla_days": 2,
       "event_status": "stale",
       "food_event_key": "enforcement-action:kr:식품안전나라-행정처분:2026-02-13:수입식품:식품:portal-administmeasuredetail-do-seq-4726985",
@@ -817,89 +1352,6 @@
       "sanction_start_date": "2026-02-13",
       "sanction_end_date": "2026-02-19",
       "sanction_type": "enforcement_action"
-    },
-    {
-      "source": "식품안전나라 행정처분",
-      "source_type": "rss",
-      "trust_tier": "T1_official",
-      "event_model": "enforcement_action",
-      "title": "상기 영업자는 2024년 11월 13일부터 2025년 2월 6일까지 수입식품등을 수입하면서 해외 제조업소의 소재지를 사실과 다르게 수입신고한 사실이 있음",
-      "url": "/portal/administMeasureDetail.do?seq=4727519",
-      "event_at": "2026-06-22T00:00:00+00:00",
-      "event_age_days": 5.28,
-      "event_freshness_sla_days": 2,
-      "event_status": "stale",
-      "food_event_key": "enforcement-action:kr:식품안전나라-행정처분:2024-11-13:제조업소:수입식품:식품:portal-administmeasuredetail-do-seq-4727519",
-      "evidence_url": "/portal/administMeasureDetail.do?seq=4727519",
-      "evidence_url_present": true,
-      "country": "KR",
-      "products": [],
-      "product_canonical": [],
-      "brands": [],
-      "brand_canonical": [],
-      "manufacturers": [
-        "제조업소"
-      ],
-      "manufacturer_canonical": [],
-      "food_types": [
-        "수입식품"
-      ],
-      "safety_issues": [
-        "식품"
-      ],
-      "recall_reasons": [],
-      "alias_traces": [],
-      "verification_role": "",
-      "merge_policy": "",
-      "verification_status": "official_source",
-      "sanction_start_date": "2024-11-13",
-      "sanction_end_date": "2025-02-06",
-      "sanction_type": "enforcement_action"
-    },
-    {
-      "source": "식품안전나라 회수판매중지",
-      "source_type": "rss",
-      "trust_tier": "T1_official",
-      "event_model": "recall_status_change",
-      "title": "농업회사법인 주식회사 에이치앤디",
-      "url": "/portal/suspensionDetail.do?search_keyword=3000227695",
-      "event_at": "2026-06-22T00:00:00+00:00",
-      "event_age_days": 5.28,
-      "event_freshness_sla_days": 3,
-      "event_status": "stale",
-      "food_event_key": "recall-status-change:kr:식품안전나라-회수판매중지:2026-06-22:농업회사법인-주식회사-에이치앤디:두배진흑염소진액:회:portal-suspensiondetail-do-search-keyword-3000227695",
-      "evidence_url": "/portal/suspensionDetail.do?search_keyword=3000227695",
-      "evidence_url_present": true,
-      "country": "KR",
-      "products": [
-        "두배진흑염소진액"
-      ],
-      "product_canonical": [
-        "두배진흑염소진액"
-      ],
-      "brands": [],
-      "brand_canonical": [],
-      "manufacturers": [
-        "농업회사법인 주식회사 에이치앤디"
-      ],
-      "manufacturer_canonical": [
-        "농업회사법인 주식회사 에이치앤디"
-      ],
-      "food_types": [
-        "회"
-      ],
-      "safety_issues": [],
-      "recall_reasons": [],
-      "alias_traces": [],
-      "verification_role": "",
-      "merge_policy": "",
-      "verification_status": "official_source",
-      "product_name_raw": "두배진흑염소진액",
-      "manufacturer_name_raw": "농업회사법인 주식회사 에이치앤디",
-      "recall_extraction_method": "official_recall_title_summary",
-      "notice_date": "2026-06-22",
-      "recall_status": "notice",
-      "release_date": ""
     }
   ],
   "alias_candidates": [
@@ -928,6 +1380,54 @@
       "example_urls": [
         "https://www.fooddive.com/news/coca-cola-pepsico-keurig-ingredient-transparency-qr-codes/823802",
         "https://www.fooddive.com/news/hershey-names-pepsico-vet-as-president-of-us-business/823644"
+      ]
+    },
+    {
+      "alias_type": "manufacturer",
+      "canonical": "건강플러스",
+      "normalized": "건강플러스",
+      "variants": [
+        "건강플러스"
+      ],
+      "count": 1,
+      "example_urls": [
+        "/portal/suspensionDetail.do?search_keyword=3000227821"
+      ]
+    },
+    {
+      "alias_type": "manufacturer",
+      "canonical": "대상",
+      "normalized": "대상",
+      "variants": [
+        "대상"
+      ],
+      "count": 1,
+      "example_urls": [
+        "/portal/administMeasureDetail.do?seq=4728376"
+      ]
+    },
+    {
+      "alias_type": "manufacturer",
+      "canonical": "미광식품",
+      "normalized": "미광식품",
+      "variants": [
+        "미광식품"
+      ],
+      "count": 1,
+      "example_urls": [
+        "/portal/suspensionDetail.do?search_keyword=3000227890"
+      ]
+    },
+    {
+      "alias_type": "manufacturer",
+      "canonical": "주식회사 생생드림",
+      "normalized": "생생드림",
+      "variants": [
+        "주식회사 생생드림"
+      ],
+      "count": 1,
+      "example_urls": [
+        "/portal/suspensionDetail.do?search_keyword=3000227817"
       ]
     },
     {
@@ -968,6 +1468,30 @@
     },
     {
       "alias_type": "manufacturer",
+      "canonical": "(주)윈윈농수산",
+      "normalized": "윈윈농수산",
+      "variants": [
+        "(주)윈윈농수산"
+      ],
+      "count": 1,
+      "example_urls": [
+        "/portal/suspensionDetail.do?search_keyword=3000227851"
+      ]
+    },
+    {
+      "alias_type": "manufacturer",
+      "canonical": "(유)제일식품",
+      "normalized": "유제일식품",
+      "variants": [
+        "(유)제일식품"
+      ],
+      "count": 1,
+      "example_urls": [
+        "/portal/suspensionDetail.do?search_keyword=3000227820"
+      ]
+    },
+    {
+      "alias_type": "manufacturer",
       "canonical": "타임스퀘어",
       "normalized": "타임스퀘어",
       "variants": [
@@ -976,6 +1500,18 @@
       "count": 1,
       "example_urls": [
         "/portal/suspensionDetail.do?search_keyword=3000227767"
+      ]
+    },
+    {
+      "alias_type": "manufacturer",
+      "canonical": "주식회사 펀드랩스",
+      "normalized": "펀드랩스",
+      "variants": [
+        "주식회사 펀드랩스"
+      ],
+      "count": 1,
+      "example_urls": [
+        "/portal/suspensionDetail.do?search_keyword=3000227875"
       ]
     },
     {
@@ -1016,6 +1552,18 @@
     },
     {
       "alias_type": "product",
+      "canonical": "닭꼬치",
+      "normalized": "닭꼬치",
+      "variants": [
+        "닭꼬치"
+      ],
+      "count": 1,
+      "example_urls": [
+        "/portal/suspensionDetail.do?search_keyword=3000227890"
+      ]
+    },
+    {
+      "alias_type": "product",
       "canonical": "두배진흑염소진액",
       "normalized": "두배진흑염소진액",
       "variants": [
@@ -1040,6 +1588,43 @@
     },
     {
       "alias_type": "product",
+      "canonical": "우슬닭발환",
+      "normalized": "우슬닭발환",
+      "variants": [
+        "우슬닭발환"
+      ],
+      "count": 2,
+      "example_urls": [
+        "/portal/suspensionDetail.do?search_keyword=3000227817",
+        "/portal/suspensionDetail.do?search_keyword=3000227821"
+      ]
+    },
+    {
+      "alias_type": "product",
+      "canonical": "울금가루",
+      "normalized": "울금가루",
+      "variants": [
+        "울금가루"
+      ],
+      "count": 1,
+      "example_urls": [
+        "/portal/suspensionDetail.do?search_keyword=3000227820"
+      ]
+    },
+    {
+      "alias_type": "product",
+      "canonical": "자숙홍합살",
+      "normalized": "자숙홍합살",
+      "variants": [
+        "자숙홍합살"
+      ],
+      "count": 1,
+      "example_urls": [
+        "/portal/suspensionDetail.do?search_keyword=3000227851"
+      ]
+    },
+    {
+      "alias_type": "product",
       "canonical": "자연향 가득한 고춧가루 (베트남산)",
       "normalized": "자연향가득한고춧가루베트남산",
       "variants": [
@@ -1048,6 +1633,18 @@
       "count": 1,
       "example_urls": [
         "/portal/suspensionDetail.do?search_keyword=3000227684"
+      ]
+    },
+    {
+      "alias_type": "product",
+      "canonical": "투명 냉장고 정리용기 4단 세트 반찬통 마늘 보관용기 소분 보관함",
+      "normalized": "투명냉장고정리용기4단세트반찬통마늘보관용기소분보관함",
+      "variants": [
+        "투명 냉장고 정리용기 4단 세트 반찬통 마늘 보관용기 소분 보관함"
+      ],
+      "count": 1,
+      "example_urls": [
+        "/portal/suspensionDetail.do?search_keyword=3000227875"
       ]
     }
   ],
@@ -1063,7 +1660,7 @@
       "title": "Alcohol brands need to emphasize value to grow sales: report",
       "url": "https://www.fooddive.com/news/alcohol-value-consumer-trends-prices/823750",
       "published_at": "2026-06-25T13:41:00+00:00",
-      "collected_at": "2026-06-27T06:37:52.314196+00:00",
+      "collected_at": "2026-06-28T06:56:45.669332+00:00",
       "summary_excerpt": "Current offerings aren't doing enough to convince a large cohort of consumers that the price is “worth it,” according to a Deloitte analysis.",
       "recommended_action": "review Product/FoodType/Brand keyword coverage"
     },
