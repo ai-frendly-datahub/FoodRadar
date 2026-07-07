@@ -1,0 +1,2738 @@
+<!doctype html>
+<html lang="en" data-visual-system="radar-unified-v2" data-visual-surface="report" data-visual-page="daily-report">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <title>식품 안전 레이더 - Report</title>
+
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" />
+
+    <style>
+      :root{
+        --vs-bg-0:#0b0b0f;
+        --vs-bg-1:#121116;
+        --vs-surface-0:rgba(24, 22, 29, .74);
+        --vs-surface-1:rgba(28, 26, 34, .74);
+        --vs-surface-2:rgba(28, 26, 34, .92);
+        --vs-line:rgba(244, 244, 247, .14);
+        --vs-line-strong:rgba(244, 244, 247, .22);
+        --vs-shadow:0 18px 60px rgba(0,0,0,.44);
+        --vs-text:#e9eefb;
+        --vs-text-muted:rgba(233, 238, 251, .72);
+        --vs-text-faint:rgba(233, 238, 251, .52);
+        --vs-brand:#33d6c5;
+        --vs-brand-strong:#19b591;
+        --vs-accent:#f6c84c;
+        --vs-danger:#ff5b6e;
+        --vs-font-mono:"JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        --vs-font-sans:"Pretendard Variable","Pretendard", ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif;
+        --vs-radius:8px;
+        --vs-max:1180px;
+
+        --bg0:var(--vs-bg-0);
+        --bg1:var(--vs-bg-1);
+        --panel0:var(--vs-surface-0);
+        --panel1:var(--vs-surface-1);
+        --panel2:var(--vs-surface-2);
+        --line:var(--vs-line);
+        --line2:var(--vs-line-strong);
+        --shadow:var(--vs-shadow);
+        --text:var(--vs-text);
+        --muted:var(--vs-text-muted);
+        --faint:var(--vs-text-faint);
+        --brand:var(--vs-brand);
+        --brand2:var(--vs-brand-strong);
+        --accent:var(--vs-accent);
+        --danger:var(--vs-danger);
+
+        --radius:var(--vs-radius);
+        --radius2:var(--vs-radius);
+        --max:var(--vs-max);
+
+        --mono:var(--vs-font-mono);
+        --sans:var(--vs-font-sans);
+
+        --focus: 0 0 0 3px rgba(51, 214, 197, .20), 0 0 0 1px rgba(51, 214, 197, .70);
+      }
+
+      *{box-sizing:border-box}
+      html,body{height:100%}
+      body{
+        margin:0;
+        font-family:var(--sans);
+        color:var(--text);
+        background: linear-gradient(180deg, var(--bg0), var(--bg1) 58%, #08080b);
+        overflow-x:hidden;
+      }
+
+      a{color:inherit; text-decoration:none}
+      a:hover{text-decoration:none}
+      ::selection{background:rgba(51,214,197,.24)}
+      .skip{
+        position:absolute;
+        left:-999px;
+        top:12px;
+        padding:10px 12px;
+        border-radius:8px;
+        background:rgba(14, 22, 42, .98);
+        border:1px solid var(--line2);
+        color:var(--text);
+        z-index:9999;
+      }
+      .skip:focus{left:12px; box-shadow:var(--focus); outline:none}
+
+      .wrap{max-width:var(--max); margin:0 auto; padding:20px 16px 64px}
+      .topbar{
+        position:sticky; top:0; z-index:50;
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        background: linear-gradient(180deg, rgba(5,7,12,.92), rgba(5,7,12,.55));
+        border-bottom:1px solid rgba(150,190,255,.10);
+      }
+      .topbar-inner{max-width:var(--max); margin:0 auto; padding:14px 16px; display:flex; align-items:center; justify-content:space-between; gap:14px}
+      .brand{
+        display:flex; align-items:center; gap:10px;
+        min-width:220px;
+      }
+      .mark{
+        width:34px; height:34px; border-radius:12px;
+        background:
+          radial-gradient(18px 18px at 32% 28%, rgba(255,255,255,.18), transparent 55%),
+          linear-gradient(145deg, rgba(51,214,197,.95), rgba(25,167,195,.78) 55%, rgba(246,200,76,.72));
+        box-shadow: 0 10px 30px rgba(0,0,0,.45);
+        border:1px solid rgba(255,255,255,.10);
+      }
+      .brand-title{
+        line-height:1.05;
+        font-weight:750;
+        letter-spacing:-.02em;
+      }
+      .brand-sub{
+        display:block;
+        font-family:var(--mono);
+        font-size:12px;
+        color:var(--faint);
+        margin-top:4px;
+      }
+      .nav{
+        display:flex; flex-wrap:wrap; gap:8px;
+        justify-content:flex-end;
+      }
+      .pill{
+        display:inline-flex; align-items:center; gap:8px;
+        padding:9px 12px;
+        border-radius:999px;
+        border:1px solid rgba(150,190,255,.14);
+        background:rgba(10,16,30,.45);
+        color:var(--muted);
+        font-size:13px;
+        transition: transform .18s ease, border-color .18s ease, background .18s ease, color .18s ease;
+        user-select:none;
+      }
+      .pill:hover{
+        transform: translateY(-1px);
+        border-color: rgba(51,214,197,.34);
+        background: rgba(10,16,30,.70);
+        color: rgba(233,238,251,.88);
+      }
+      .pill:focus-visible{outline:none; box-shadow:var(--focus)}
+
+      /* Report Navigation */
+      .report-navigation{
+        display:flex;
+        align-items:center;
+        gap:12px;
+        margin-left:auto;
+      }
+      .nav-button{
+        display:inline-flex;
+        align-items:center;
+        gap:6px;
+        padding:8px 14px;
+        border-radius:999px;
+        border:1px solid rgba(150,190,255,.14);
+        background:rgba(10,16,30,.45);
+        color:var(--muted);
+        font-size:13px;
+        font-weight:500;
+        transition: all .18s ease;
+        cursor:pointer;
+        text-decoration:none;
+      }
+      .nav-button:hover:not([disabled]){
+        transform: translateY(-1px);
+        border-color: rgba(51,214,197,.34);
+        background: rgba(10,16,30,.70);
+        color: rgba(233,238,251,.88);
+      }
+      .nav-button[disabled]{
+        opacity:.4;
+        cursor:not-allowed;
+        pointer-events:none;
+      }
+      .nav-button:focus-visible{outline:none; box-shadow:var(--focus)}
+
+      .hero{
+        padding:24px 0 12px;
+        display:grid;
+        grid-template-columns: 1.25fr .75fr;
+        gap:18px;
+        align-items:stretch;
+      }
+      .hero-card{
+        border-radius: var(--radius2);
+        background: linear-gradient(180deg, var(--panel2), rgba(14,22,42,.58));
+        border: 1px solid rgba(150,190,255,.14);
+        box-shadow: var(--shadow);
+        padding:18px 18px 16px;
+        position:relative;
+        overflow:hidden;
+      }
+      .hero-card:before{content:none}
+      .hero-body{position:relative}
+      .kicker{
+        display:inline-flex; align-items:center; gap:10px;
+        font-family:var(--mono);
+        font-size:12px;
+        color:rgba(233,238,251,.72);
+        letter-spacing:.06em;
+        text-transform:uppercase;
+      }
+      .dot{
+        width:8px; height:8px; border-radius:999px;
+        background: var(--brand);
+        box-shadow:0 0 0 4px rgba(51,214,197,.12);
+      }
+      h1{
+        margin:10px 0 0;
+        font-weight:820;
+        letter-spacing:-.03em;
+        font-size: clamp(28px, 3.2vw, 40px);
+        line-height:1.08;
+      }
+      .lede{
+        margin:10px 0 0;
+        color: var(--muted);
+        font-size:15px;
+        line-height:1.55;
+        max-width: 72ch;
+      }
+      .meta{
+        margin:14px 0 0;
+        display:flex;
+        flex-wrap:wrap;
+        gap:10px 12px;
+        color: rgba(233,238,251,.70);
+        font-size:13px;
+      }
+      .meta span{
+        display:inline-flex; align-items:center; gap:8px;
+        padding:6px 10px;
+        border-radius:999px;
+        border:1px solid rgba(150,190,255,.12);
+        background: rgba(10,16,30,.40);
+      }
+      .mono{font-family:var(--mono)}
+      .accent{color: rgba(246,200,76,.96)}
+      .ok{color: rgba(51,214,197,.92)}
+      .bad{color: rgba(255,91,110,.92)}
+
+      .stats{
+        border-radius: var(--radius2);
+        background: linear-gradient(180deg, rgba(10,16,30,.64), rgba(10,16,30,.36));
+        border: 1px solid rgba(150,190,255,.12);
+        box-shadow: 0 12px 40px rgba(0,0,0,.34);
+        padding:16px;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        gap:12px;
+      }
+      .stat{
+        border-radius: 8px;
+        background: rgba(14,22,42,.45);
+        border: 1px solid rgba(150,190,255,.12);
+        padding:12px 12px 10px;
+        min-height: 76px;
+      }
+      .stat .label{
+        color: rgba(233,238,251,.66);
+        font-size:12px;
+        font-family: var(--mono);
+        letter-spacing:.03em;
+      }
+      .stat .value{
+        margin-top:8px;
+        font-weight:800;
+        letter-spacing:-.02em;
+        font-size: 20px;
+        line-height:1.1;
+      }
+      .stat .hint{
+        margin-top:6px;
+        color: rgba(233,238,251,.60);
+        font-size:12px;
+        line-height:1.35;
+      }
+
+      .grid{
+        margin-top:14px;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        gap:14px;
+      }
+      .panel{
+        border-radius: var(--radius2);
+        background: linear-gradient(180deg, var(--panel0), var(--panel1));
+        border: 1px solid rgba(150,190,255,.12);
+        box-shadow: 0 16px 55px rgba(0,0,0,.38);
+        overflow:hidden;
+      }
+      .panel-hd{
+        padding:14px 16px;
+        display:flex;
+        justify-content:space-between;
+        align-items:flex-start;
+        gap:12px;
+        border-bottom:1px solid rgba(150,190,255,.10);
+        background: rgba(10,16,30,.20);
+      }
+      .panel-title{
+        margin:0;
+        font-weight:780;
+        letter-spacing:-.02em;
+        font-size:14px;
+      }
+      .panel-sub{
+        margin:6px 0 0;
+        color: rgba(233,238,251,.64);
+        font-size:12px;
+        line-height:1.35;
+        font-family: var(--mono);
+      }
+      .panel-bd{padding:14px 16px 16px}
+      .chart-wrap{position:relative; height: 290px}
+      .chart-wrap.tall{height: 320px}
+      canvas{max-width:100%}
+
+      /* Plugin Charts Container */
+      #plugin-charts{
+        margin-top:14px;
+      }
+      .plugin-chart{
+        border-radius: var(--radius2);
+        background: linear-gradient(180deg, var(--panel0), var(--panel1));
+        border: 1px solid rgba(150,190,255,.12);
+        box-shadow: 0 16px 55px rgba(0,0,0,.38);
+        overflow:hidden;
+        margin-bottom:14px;
+      }
+      .plugin-chart-header{
+        padding:14px 16px;
+        border-bottom:1px solid rgba(150,190,255,.10);
+        background: rgba(10,16,30,.20);
+      }
+      .plugin-chart h3{
+        margin:0;
+        font-weight:780;
+        letter-spacing:-.02em;
+        font-size:14px;
+        color: var(--text);
+      }
+      .plugin-chart .chart-container{
+        padding:14px 16px 16px;
+        min-height: 300px;
+      }
+
+      .extra-section-body{
+        display:flex;
+        flex-direction:column;
+        gap:14px;
+      }
+      .extra-section-body p{
+        margin:0;
+        color: rgba(233,238,251,.76);
+        font-size:13px;
+        line-height:1.6;
+      }
+      .extra-section-body > div{
+        display:flex;
+        flex-direction:column;
+        gap:10px;
+      }
+      .extra-section-body h3{
+        margin:0;
+        font-size:13px;
+        font-weight:780;
+        letter-spacing:.02em;
+        text-transform:uppercase;
+        color: rgba(233,238,251,.74);
+        font-family: var(--mono);
+      }
+      .extra-section-body .metric-grid{
+        display:grid;
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap:10px;
+      }
+      .extra-section-body .metric-card{
+        border-radius: 8px;
+        border: 1px solid rgba(150,190,255,.12);
+        background: rgba(10,16,30,.38);
+        padding: 12px;
+      }
+      .extra-section-body .metric-card span{
+        display:block;
+        color: rgba(233,238,251,.64);
+        font-size: 12px;
+      }
+      .extra-section-body .metric-card strong{
+        display:block;
+        margin-top:6px;
+        font-size: 20px;
+        line-height:1.1;
+        letter-spacing:-.02em;
+      }
+      .extra-section-body .inline-chips{
+        display:flex;
+        flex-wrap:wrap;
+        gap:8px;
+      }
+      .extra-section-body .data-table{
+        width:100%;
+        border-collapse: collapse;
+        font-size:13px;
+      }
+      .extra-section-body .data-table th,
+      .extra-section-body .data-table td{
+        padding:10px 8px;
+        border-top: 1px solid rgba(150,190,255,.12);
+        text-align:left;
+        vertical-align:top;
+      }
+      .extra-section-body .data-table th{
+        color: rgba(233,238,251,.64);
+        font-family: var(--mono);
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: .04em;
+      }
+      .extra-section-body ul{
+        margin:0;
+        padding-left:18px;
+        color: rgba(233,238,251,.72);
+        font-size:13px;
+        line-height:1.55;
+      }
+      .extra-section-body li + li{
+        margin-top:6px;
+      }
+      .extra-section-body code{
+        font-family: var(--mono);
+        font-size:12px;
+        color: rgba(233,238,251,.86);
+      }
+
+      .notice{
+        margin-top:14px;
+        border-radius: var(--radius2);
+        border: 1px solid rgba(255,91,110,.28);
+        background: linear-gradient(180deg, rgba(255,91,110,.14), rgba(10,16,30,.56));
+        box-shadow: 0 18px 55px rgba(0,0,0,.34);
+        padding:14px 16px;
+      }
+      .notice h2{
+        margin:0;
+        font-size:14px;
+        font-weight:800;
+        letter-spacing:-.02em;
+      }
+      .notice p{
+        margin:8px 0 0;
+        color: rgba(233,238,251,.74);
+        font-size:13px;
+        line-height:1.5;
+      }
+      .notice ul{
+        margin:10px 0 0;
+        padding-left: 18px;
+        color: rgba(233,238,251,.72);
+        font-size:13px;
+        line-height:1.55;
+      }
+
+      .section{
+        margin-top:16px;
+      }
+      .section--extension .panel{
+        border-color: rgba(51,214,197,.18);
+      }
+      .section-hd{
+        display:flex; align-items:flex-end; justify-content:space-between; gap:12px;
+        margin: 20px 0 10px;
+      }
+      .section-hd h2{
+        margin:0;
+        font-size: 16px;
+        font-weight:820;
+        letter-spacing:-.02em;
+      }
+      .section-hd .right{
+        display:flex; gap:8px; flex-wrap:wrap; justify-content:flex-end;
+      }
+      .muted{color: rgba(233,238,251,.68)}
+      .small{font-size:12px}
+      .kbd{
+        font-family: var(--mono);
+        font-size: 12px;
+        color: rgba(233,238,251,.72);
+        background: rgba(10,16,30,.52);
+        border:1px solid rgba(150,190,255,.14);
+        padding:6px 10px;
+        border-radius:999px;
+      }
+
+      /* Entity Pills Section */
+      .entity-section{
+        margin-top:14px;
+        padding:16px 18px;
+        border-radius: var(--radius2);
+        background: linear-gradient(180deg, var(--panel0), var(--panel1));
+        border: 1px solid rgba(150,190,255,.12);
+        box-shadow: 0 12px 40px rgba(0,0,0,.34);
+      }
+      .entity-pills{
+        display:flex;
+        flex-wrap:wrap;
+        gap:8px;
+      }
+      .entity-pill{
+        display:inline-flex;
+        align-items:center;
+        gap:6px;
+        padding:6px 12px;
+        border-radius:999px;
+        border: 1px solid rgba(51,214,197,.18);
+        background: rgba(51,214,197,.10);
+        color: var(--text);
+        font-size:13px;
+        font-weight:500;
+        cursor:pointer;
+        transition: all .18s ease;
+      }
+      .entity-pill:hover{
+        transform: translateY(-1px);
+        border-color: rgba(51,214,197,.34);
+        background: rgba(51,214,197,.18);
+      }
+      .entity-pill .count{
+        font-family: var(--mono);
+        font-size:12px;
+        color: var(--accent);
+        font-weight:600;
+      }
+
+      .articles{
+        display:grid;
+        grid-template-columns: 1fr;
+        gap:10px;
+      }
+      .card{
+        border-radius: 8px;
+        background: rgba(14,22,42,.46);
+        border: 1px solid rgba(150,190,255,.12);
+        padding: 12px 12px 11px;
+        transition: transform .18s ease, border-color .18s ease, background .18s ease;
+        display:flex;
+        gap:10px;
+        align-items:flex-start;
+      }
+      .card:hover{
+        transform: translateY(-1px);
+        border-color: rgba(51,214,197,.22);
+        background: rgba(14,22,42,.62);
+      }
+      .card:focus-within{box-shadow: var(--focus)}
+      .card .left{flex:1; min-width:0}
+      .title{
+        margin:0;
+        font-weight:780;
+        letter-spacing:-.02em;
+        font-size: 14px;
+        line-height:1.35;
+      }
+      .title a{
+        display:inline-block;
+        outline:none;
+      }
+      .title a:focus-visible{outline:none}
+      .desc{
+        margin:8px 0 0;
+        color: rgba(233,238,251,.68);
+        font-size: 13px;
+        line-height: 1.55;
+      }
+      .row{
+        margin-top:10px;
+        display:flex;
+        flex-wrap:wrap;
+        gap:8px;
+        align-items:center;
+        color: rgba(233,238,251,.64);
+        font-size: 12px;
+      }
+      .chip{
+        display:inline-flex; align-items:center;
+        gap:8px;
+        padding:6px 10px;
+        border-radius:999px;
+        border: 1px solid rgba(150,190,255,.12);
+        background: rgba(10,16,30,.38);
+        font-family: var(--mono);
+        font-size: 12px;
+      }
+      .chip strong{font-weight:800; color: rgba(233,238,251,.86)}
+      .chip.brand{
+        border-color: rgba(51,214,197,.18);
+        background: rgba(51,214,197,.10);
+      }
+      .actions{
+        display:flex;
+        align-items:center;
+        justify-content:flex-end;
+      }
+      .btn{
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        gap:10px;
+        padding:10px 12px;
+        border-radius: 8px;
+        border: 1px solid rgba(150,190,255,.14);
+        background: rgba(10,16,30,.46);
+        color: rgba(233,238,251,.86);
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: -.01em;
+        transition: transform .18s ease, border-color .18s ease, background .18s ease;
+        cursor:pointer;
+        user-select:none;
+        min-width: 84px;
+      }
+      .btn:hover{
+        transform: translateY(-1px);
+        border-color: rgba(246,200,76,.30);
+        background: rgba(10,16,30,.68);
+      }
+      .btn:focus-visible{outline:none; box-shadow:var(--focus)}
+      .btn.primary{
+        border-color: rgba(51,214,197,.22);
+        background: linear-gradient(135deg, rgba(51,214,197,.22), rgba(25,167,195,.12));
+      }
+      .btn.primary:hover{border-color: rgba(51,214,197,.36)}
+      .btn[aria-disabled="true"]{opacity:.6; cursor:not-allowed}
+
+      .footer{
+        margin-top:24px;
+        padding-top:14px;
+        border-top: 1px solid rgba(150,190,255,.10);
+        display:flex;
+        flex-wrap:wrap;
+        gap:10px 14px;
+        justify-content:space-between;
+        align-items:center;
+        color: rgba(233,238,251,.62);
+        font-size: 12px;
+      }
+      .footer a{color: rgba(233,238,251,.74)}
+      .footer a:hover{color: rgba(51,214,197,.90)}
+      .footer-actions{
+        display:flex;
+        gap:12px;
+        align-items:center;
+      }
+      .export-btn{
+        display:inline-flex;
+        align-items:center;
+        gap:8px;
+        padding:8px 14px;
+        border-radius:999px;
+        border: 1px solid rgba(246,200,76,.22);
+        background: rgba(246,200,76,.12);
+        color: var(--accent);
+        font-size:13px;
+        font-weight:600;
+        cursor:pointer;
+        transition: all .18s ease;
+      }
+      .export-btn:hover{
+        transform: translateY(-1px);
+        border-color: rgba(246,200,76,.36);
+        background: rgba(246,200,76,.20);
+      }
+
+      @media (max-width: 980px){
+        .hero{grid-template-columns: 1fr; }
+        .stats{grid-template-columns: 1fr 1fr}
+        .grid{grid-template-columns: 1fr}
+        .report-navigation{margin-left:0; margin-top:8px; width:100%; justify-content:center}
+      }
+      @media (max-width: 560px){
+        .topbar-inner{align-items:flex-start; flex-wrap:wrap}
+        .brand{min-width: 0}
+        .nav{justify-content:flex-start}
+        .stats{grid-template-columns: 1fr}
+        .card{flex-direction:column}
+        .actions{justify-content:flex-start}
+        .btn{width:100%}
+        .chart-wrap{height: 260px}
+        .chart-wrap.tall{height: 300px}
+        .footer{flex-direction:column; text-align:center}
+        .footer-actions{width:100%; justify-content:center}
+      }
+      @media (prefers-reduced-motion: reduce){
+        *{scroll-behavior:auto !important}
+        .pill,.card,.btn,.entity-pill,.nav-button,.export-btn{transition:none !important}
+        .pill:hover,.card:hover,.btn:hover,.entity-pill:hover,.nav-button:hover,.export-btn:hover{transform:none !important}
+      }
+    </style>
+  </head>
+
+  <body>
+    <a class="skip" href="#content">Skip to content</a>
+
+    <header class="topbar" role="banner">
+      <div class="topbar-inner">
+        <div class="brand" aria-label="Report identity">
+          <div class="mark" aria-hidden="true"></div>
+          <div>
+            <div class="brand-title">식품 안전 레이더</div>
+            <span class="brand-sub">editorial report - charts + feed</span>
+          </div>
+        </div>
+
+        <nav class="report-navigation" aria-label="Day navigation">
+          <a href="food_20260706.html"
+             class="nav-button"
+
+             aria-label="Previous day report">
+            <span>&larr;</span> Previous Day
+          </a>
+          <a href="#"
+             class="nav-button"
+             disabled aria-disabled="true"
+             aria-label="Next day report">
+            Next Day <span>&rarr;</span>
+          </a>
+        </nav>
+
+        <nav class="nav" aria-label="Jump links">
+          <a class="pill" href="#charts">Charts</a>
+
+          <a class="pill" href="#entities">Entities</a>
+          <a class="pill" href="#articles">Articles</a>
+
+          <a class="pill" href="#errors" aria-label="Jump to errors (9)">Errors</a>
+
+        </nav>
+      </div>
+    </header>
+
+    <main id="content" class="wrap" role="main">
+      <section class="hero" aria-label="Overview">
+        <div class="hero-card">
+          <div class="hero-body">
+            <div class="kicker">
+              <span class="dot" aria-hidden="true"></span>
+              <span class="mono">RADAR</span>
+              <span class="mono muted">/</span>
+              <span class="mono accent">식품 안전 레이더</span>
+            </div>
+
+            <h1>식품 안전 레이더</h1>
+            <p class="lede">
+              A fast, reusable HTML report for lightweight Radar projects: entity distribution, article velocity,
+              and source mix, alongside a clean reading list.
+            </p>
+
+            <div class="meta" aria-label="Key facts">
+              <span><span class="mono muted">articles</span><span class="mono ok">46</span></span>
+              <span><span class="mono muted">entities</span><span class="mono accent">5</span></span>
+              <span><span class="mono muted">errors</span><span class="mono bad">9</span></span>
+              <span title="Generated time"><span class="mono muted">Generated at</span><span class="mono">2026-07-07 06:39 UTC</span></span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="stats" aria-label="Quick stats">
+          <div class="stat">
+            <div class="label">SOURCES</div>
+            <div class="value">12</div>
+            <div class="hint">Active data sources</div>
+          </div>
+          <div class="stat">
+            <div class="label">COLLECTED</div>
+            <div class="value">46</div>
+            <div class="hint">Total items collected</div>
+          </div>
+          <div class="stat">
+            <div class="label">MATCHED</div>
+            <div class="value">40</div>
+            <div class="hint">Entity matches found</div>
+          </div>
+          <div class="stat">
+            <div class="label">WINDOW</div>
+            <div class="value">7d</div>
+            <div class="hint">Collection window</div>
+          </div>
+        </aside>
+      </section>
+
+
+      <section id="errors" class="notice" role="alert" aria-label="Errors">
+        <h2>Errors detected (9)</h2>
+        <p>Some sources or steps reported errors. The report still renders with partial data.</p>
+        <ul>
+
+          <li><span class="mono">식품안전나라 회수판매중지: Source disabled (crawl health threshold reached)</span></li>
+
+          <li><span class="mono">식품안전나라 행정처분: Network error fetching 식품안전나라 행정처분: HTTPSConnectionPool(host=&#39;www.foodsafetykorea.go.kr&#39;, port=443): Max retries exceeded with url: /rss/rss.do?menu_no=2714&amp;menu_grp=MENU_NEW02 (Caused by ConnectTimeoutError(&lt;HTTPSConnection(host=&#39;www.foodsafetykorea.go.kr&#39;, port=443) at 0x7fcfa4de4a50&gt;, &#39;Connection to www.foodsafetykorea.go.kr timed out. (connect timeout=15)&#39;))</span></li>
+
+          <li><span class="mono">식약처 보도자료: Source disabled (crawl health threshold reached)</span></li>
+
+          <li><span class="mono">식품안전 국내뉴스: Source disabled (crawl health threshold reached)</span></li>
+
+          <li><span class="mono">식품안전 해외뉴스: Source disabled (crawl health threshold reached)</span></li>
+
+          <li><span class="mono">r/foodsafety: Source disabled (crawl health threshold reached)</span></li>
+
+          <li><span class="mono">r/Cooking: Source disabled (crawl health threshold reached)</span></li>
+
+          <li><span class="mono">r/nutrition: Source disabled (crawl health threshold reached)</span></li>
+
+          <li><span class="mono">r/KoreanFood: Source disabled (crawl health threshold reached)</span></li>
+
+        </ul>
+      </section>
+
+
+      <section id="charts" class="section" aria-label="Charts">
+        <div class="section-hd">
+          <h2>Visuals</h2>
+          <div class="right">
+            <span class="kbd">Chart.js</span>
+            <span class="kbd">dark editorial</span>
+            <span class="kbd">responsive</span>
+          </div>
+        </div>
+
+        <div class="grid">
+          <article class="panel" aria-label="Entity distribution">
+            <header class="panel-hd">
+              <div>
+                <p class="panel-title">Entity Distribution</p>
+                <p class="panel-sub">Top entities by frequency</p>
+              </div>
+              <div class="pill" aria-hidden="true">bar</div>
+            </header>
+            <div class="panel-bd">
+              <div class="chart-wrap" role="img" aria-label="Bar chart showing entity frequency">
+                <canvas id="chartEntities"></canvas>
+              </div>
+              <noscript>
+                <p class="muted small">Charts require JavaScript. Enable JS to see entity distribution.</p>
+              </noscript>
+            </div>
+          </article>
+
+          <article class="panel" aria-label="Article timeline">
+            <header class="panel-hd">
+              <div>
+                <p class="panel-title">Article Timeline</p>
+                <p class="panel-sub">Daily volume inferred from article dates</p>
+              </div>
+              <div class="pill" aria-hidden="true">line</div>
+            </header>
+            <div class="panel-bd">
+              <div class="chart-wrap tall" role="img" aria-label="Line chart showing article volume over time">
+                <canvas id="chartTimeline"></canvas>
+              </div>
+              <noscript>
+                <p class="muted small">Charts require JavaScript. Enable JS to see the timeline.</p>
+              </noscript>
+            </div>
+          </article>
+        </div>
+
+        <div class="grid" style="margin-top:14px">
+          <article class="panel" aria-label="Source distribution">
+            <header class="panel-hd">
+              <div>
+                <p class="panel-title">Source Distribution</p>
+                <p class="panel-sub">Share of articles by source</p>
+              </div>
+              <div class="pill" aria-hidden="true">doughnut</div>
+            </header>
+            <div class="panel-bd">
+              <div class="chart-wrap" role="img" aria-label="Doughnut chart showing article share by source">
+                <canvas id="chartSources"></canvas>
+              </div>
+              <noscript>
+                <p class="muted small">Charts require JavaScript. Enable JS to see source breakdown.</p>
+              </noscript>
+            </div>
+          </article>
+
+          <article class="panel" aria-label="Data freshness">
+            <header class="panel-hd">
+              <div>
+                <p class="panel-title">Data Freshness</p>
+                <p class="panel-sub">Collection lag distribution</p>
+              </div>
+              <div class="pill" aria-hidden="true">lag</div>
+            </header>
+            <div class="panel-bd">
+              <div class="chart-wrap" role="img" aria-label="Bar chart showing collection lag in hours">
+                <canvas id="chartFreshness"></canvas>
+              </div>
+              <noscript>
+                <p class="muted small">Charts require JavaScript. Enable JS to see freshness data.</p>
+              </noscript>
+            </div>
+          </article>
+        </div>
+
+        <div class="grid" style="margin-top:14px">
+          <article class="panel" aria-label="Entity extraction rate">
+            <header class="panel-hd">
+              <div>
+                <p class="panel-title">Entity Extraction Rate</p>
+                <p class="panel-sub">Percentage with matched entities</p>
+              </div>
+              <div class="pill" aria-hidden="true">rate</div>
+            </header>
+            <div class="panel-bd">
+              <div class="chart-wrap" role="img" aria-label="Doughnut chart showing entity extraction rate">
+                <canvas id="chartEntityRate"></canvas>
+              </div>
+              <noscript>
+                <p class="muted small">Charts require JavaScript. Enable JS to see extraction rate.</p>
+              </noscript>
+            </div>
+          </article>
+
+          <article class="panel" aria-label="Source health">
+            <header class="panel-hd">
+              <div>
+                <p class="panel-title">Source Health</p>
+                <p class="panel-sub">Article count by source (sorted)</p>
+              </div>
+              <div class="pill" aria-hidden="true">health</div>
+            </header>
+            <div class="panel-bd">
+              <div class="chart-wrap" role="img" aria-label="Horizontal bar chart showing source health">
+                <canvas id="chartSourceHealth"></canvas>
+              </div>
+              <noscript>
+                <p class="muted small">Charts require JavaScript. Enable JS to see source health.</p>
+              </noscript>
+            </div>
+          </article>
+        </div>
+
+
+        <div id="plugin-charts">
+
+        </div>
+      </section>
+
+
+
+
+      <section id="quality-traceability" class="section" aria-label="Quality traceability">
+        <div class="section-hd">
+          <h2>Quality Traceability</h2>
+          <div class="right">
+            <span class="kbd">food_quality.json</span>
+            <span class="kbd">alias map</span>
+          </div>
+        </div>
+        <article class="panel">
+          <header class="panel-hd">
+            <div>
+              <p class="panel-title">Freshness and Alias Checks</p>
+              <p class="panel-sub">source freshness, missing source count, and product/manufacturer alias trace</p>
+            </div>
+          </header>
+          <div class="panel-bd">
+            <div class="row" aria-label="Quality summary">
+              <span class="chip"><strong>fresh</strong> 0</span>
+<span class="chip"><strong>quiet</strong> 0</span>
+<span class="chip"><strong>stale</strong> 0</span>
+<span class="chip"><strong>missing</strong> 3</span>
+<span class="chip"><strong>recall events</strong> 0</span>
+<span class="chip"><strong>enforcement</strong> 0</span>
+<span class="chip"><strong>complaints</strong> 0</span>
+<span class="chip"><strong>alias candidates</strong> 2</span>
+<span class="chip"><strong>product aliases</strong> 0</span>
+<span class="chip"><strong>manufacturer aliases</strong> 0</span>
+<span class="chip"><strong>alias traced</strong> 0</span>
+<span class="chip"><strong>coverage review</strong> 6</span>
+            </div>
+            <p class="muted small">No tracked food safety events in this run.</p>
+            <ul><li><strong>식품안전나라 회수판매중지</strong>: missing (recall_status_change)</li>
+<li><strong>식품안전나라 행정처분</strong>: missing (enforcement_action)</li>
+<li><strong>r/foodsafety</strong>: missing (complaint_signal)</li></ul>
+            <ul><li><strong>medium</strong> market_or_editorial_unclassified: Food Dive - CVC Capital builds out ingredients portfolio with Irca acquisition<br><span class="muted small">review Product/FoodType/Brand keyword coverage</span></li>
+<li><strong>medium</strong> market_or_editorial_unclassified: Food Dive - General Mills plans $3B in cost cuts to fight consumer spending slump<br><span class="muted small">review Product/FoodType/Brand keyword coverage</span></li>
+<li><strong>medium</strong> market_or_editorial_unclassified: Food Safety News - Cyclospora cases surge to nearly 600 in Michigan<br><span class="muted small">review Product/FoodType/Brand keyword coverage</span></li>
+<li><strong>medium</strong> market_or_editorial_unclassified: Food Safety News - Publisher&#x27;s Platform: Nara, you knew what when?  And, your words matter!<br><span class="muted small">review Product/FoodType/Brand keyword coverage</span></li>
+<li><strong>medium</strong> market_or_editorial_unclassified: Food Safety News - Publisher’s Platform: The Safest Fourth of July in 250 Years<br><span class="muted small">review Product/FoodType/Brand keyword coverage</span></li>
+<li><strong>medium</strong> market_or_editorial_unclassified: Food Safety News - Sunday Edition: In the spotlight<br><span class="muted small">review Product/FoodType/Brand keyword coverage</span></li></ul>
+            <ul><li><strong>brand</strong> Aldi: aldi</li>
+<li><strong>brand</strong> Kraft Heinz: kraft heinz</li></ul>
+          </div>
+        </article>
+      </section>
+      <section id="entities" class="section" aria-label="Entity table">
+        <div class="section-hd">
+          <h2>Entities</h2>
+          <div class="right">
+            <span class="kbd">clickable pills</span>
+            <span class="kbd">top 24 shown</span>
+          </div>
+        </div>
+
+        <div class="entity-section">
+
+          <div class="entity-pills" aria-label="Entity count list">
+
+            <span class="entity-pill" data-entity="FoodGeneral" role="button" tabindex="0">
+              FoodGeneral
+              <span class="count">67</span>
+            </span>
+
+            <span class="entity-pill" data-entity="SafetyIssue" role="button" tabindex="0">
+              SafetyIssue
+              <span class="count">41</span>
+            </span>
+
+            <span class="entity-pill" data-entity="FoodType" role="button" tabindex="0">
+              FoodType
+              <span class="count">25</span>
+            </span>
+
+            <span class="entity-pill" data-entity="Brand" role="button" tabindex="0">
+              Brand
+              <span class="count">3</span>
+            </span>
+
+            <span class="entity-pill" data-entity="BrandCanonical" role="button" tabindex="0">
+              BrandCanonical
+              <span class="count">2</span>
+            </span>
+
+          </div>
+
+        </div>
+      </section>
+
+      <section id="articles" class="section" aria-label="Articles">
+        <div class="section-hd">
+          <h2>Articles</h2>
+          <div class="right">
+            <span class="kbd">cards</span>
+            <span class="kbd">source + date</span>
+            <span class="kbd">fast scan</span>
+          </div>
+        </div>
+
+        <article class="panel">
+          <header class="panel-hd">
+            <div>
+              <p class="panel-title">Reading List</p>
+              <p class="panel-sub">Click through to the original source</p>
+            </div>
+            <div class="pill" aria-hidden="true">46</div>
+          </header>
+          <div class="panel-bd">
+
+            <div class="articles" id="articles-list" aria-label="Article list">
+
+              <div class="card" role="article" aria-label="Article: French Salmonella outbreak linked to Polish eggs" data-entities="["FoodType", "SafetyIssue", "FoodGeneral"]">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://www.foodsafetynews.com/2026/07/french-salmonella-outbreak-linked-to-polish-eggs" target="_blank" rel="noopener noreferrer">French Salmonella outbreak linked to Polish eggs</a>
+                  </p>
+
+
+                  <p class="desc">&lt;p&gt;A Salmonella outbreak in France was likely caused by contaminated eggs from Poland.&lt;/p&gt;&lt;p&gt;Sixteen people fell sick in the Salmonella Enteritidis outbreak, including nine males and seven females. Four people were admit...</p>
+
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Food Safety News</span>
+
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-07-07</span></span>
+
+
+                    <span class="chip brand"><strong>entities</strong> 3</span>
+
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://www.foodsafetynews.com/2026/07/french-salmonella-outbreak-linked-to-polish-eggs" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+
+              <div class="card" role="article" aria-label="Article: FSA research targets Campylobacter reduction" data-entities="["FoodType", "FoodGeneral"]">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://www.foodsafetynews.com/2026/07/fsa-research-targets-campylobacter-reduction" target="_blank" rel="noopener noreferrer">FSA research targets Campylobacter reduction</a>
+                  </p>
+
+
+                  <p class="desc">&lt;p&gt;The Food Standards Agency (FSA) has published six pieces of research relating to efforts to reduce Campylobacter in chicken meat.&lt;/p&gt;&lt;p&gt;The papers cover interventions applied at slaughterhouses, in the supply chain, b...</p>
+
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Food Safety News</span>
+
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-07-07</span></span>
+
+
+                    <span class="chip brand"><strong>entities</strong> 2</span>
+
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://www.foodsafetynews.com/2026/07/fsa-research-targets-campylobacter-reduction" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+
+              <div class="card" role="article" aria-label="Article: Another patient identified in outbreak of infant botulism" data-entities="["SafetyIssue", "FoodGeneral"]">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://www.foodsafetynews.com/2026/07/another-patient-identified-in-outbreak-of-infant-botulism" target="_blank" rel="noopener noreferrer">Another patient identified in outbreak of infant botulism</a>
+                  </p>
+
+
+                  <p class="desc">All of the sick babies were fed Nara Organics infant formula.</p>
+
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Food Safety News</span>
+
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-07-07</span></span>
+
+
+                    <span class="chip brand"><strong>entities</strong> 2</span>
+
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://www.foodsafetynews.com/2026/07/another-patient-identified-in-outbreak-of-infant-botulism" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+
+              <div class="card" role="article" aria-label="Article: Imported sashimi recalled because of undeclared allergens" data-entities="["FoodType", "SafetyIssue"]">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://www.foodsafetynews.com/2026/07/imported-sashimi-recalled-because-of-undeclared-allergens" target="_blank" rel="noopener noreferrer">Imported sashimi recalled because of undeclared allergens</a>
+                  </p>
+
+
+                  <p class="desc">&lt;p&gt;Eunha Fisheries Co. Ltd. of Busan, Republic of Korea, is recalling certain Sliced Korean Halibut and Flounder Sashimi products because the accompanying soy sauce and vinegar red pepper paste packets contain wheat, soy...</p>
+
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Food Safety News</span>
+
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-07-07</span></span>
+
+
+                    <span class="chip brand"><strong>entities</strong> 2</span>
+
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://www.foodsafetynews.com/2026/07/imported-sashimi-recalled-because-of-undeclared-allergens" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+
+              <div class="card" role="article" aria-label="Article: Aldi kimchi recalled because of undeclared fish" data-entities="["FoodType", "Brand", "SafetyIssue", "FoodGeneral", "BrandCanonical"]">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://www.foodsafetynews.com/2026/07/aldi-kimchi-recalled-because-of-undeclared-fish" target="_blank" rel="noopener noreferrer">Aldi kimchi recalled because of undeclared fish</a>
+                  </p>
+
+
+                  <p class="desc">&lt;p&gt;Gellert Global Group of Elizabeth, NJ, is recalling 8.1 oz packages of ALDI Brand Fusia Asian Inspirations Kimchi &amp; Tofu Kimbap because they may contain undeclared tuna. &lt;/p&gt;&lt;p&gt;People who have an allergy or severe sen...</p>
+
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Food Safety News</span>
+
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-07-07</span></span>
+
+
+                    <span class="chip brand"><strong>entities</strong> 5</span>
+
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://www.foodsafetynews.com/2026/07/aldi-kimchi-recalled-because-of-undeclared-fish" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+
+              <div class="card" role="article" aria-label="Article: Food giants defeat lawsuit calling ultraprocessed products addictive" data-entities="["FoodGeneral"]">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://www.fooddive.com/news/food-giants-ultraprocessed-lawsuit-dismissed/824472" target="_blank" rel="noopener noreferrer">Food giants defeat lawsuit calling ultraprocessed products addictive</a>
+                  </p>
+
+
+                  <p class="desc">&lt;figure&gt;&lt;div&gt;&lt;img src=&#34;https://imgproxy.divecdn.com/3oNdMifQ93MiqUPkdO8i2f2jQ8UZG9UUdjJbRh9bMC0/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMTg5NDQ2MDM0LmpwZw==.webp&#34; /&gt;&lt;/div&gt;&lt;/fig...</p>
+
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Food Dive</span>
+
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-07-06</span></span>
+
+
+                    <span class="chip brand"><strong>entities</strong> 1</span>
+
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://www.fooddive.com/news/food-giants-ultraprocessed-lawsuit-dismissed/824472" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+
+              <div class="card" role="article" aria-label="Article: How Tom Holland’s nonalcoholic Bero breaks through with brand partners" data-entities="["FoodGeneral"]">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://www.fooddive.com/news/how-tom-hollands-nonalcoholic-beer-breaks-through-with-brand-partners/824453" target="_blank" rel="noopener noreferrer">How Tom Holland’s nonalcoholic Bero breaks through with brand partners</a>
+                  </p>
+
+
+                  <p class="desc">&lt;figure&gt;&lt;div&gt;&lt;img src=&#34;https://imgproxy.divecdn.com/KjbSEprJZh56ctLwcZO6fLF23WVFVJrY75o4_CjodEM/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9KTUNMMjM5My5qcGc=.webp&#34; /&gt;&lt;/div&gt;&lt;/figure&gt;&lt;p&gt;Co-founded by...</p>
+
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Food Dive</span>
+
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-07-06</span></span>
+
+
+                    <span class="chip brand"><strong>entities</strong> 1</span>
+
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://www.fooddive.com/news/how-tom-hollands-nonalcoholic-beer-breaks-through-with-brand-partners/824453" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+
+              <div class="card" role="article" aria-label="Article: Cyclospora cases surge to nearly 600 in Michigan" data-entities="[]">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://www.foodsafetynews.com/2026/07/cyclospora-outbreak-surges-in-michigan" target="_blank" rel="noopener noreferrer">Cyclospora cases surge to nearly 600 in Michigan</a>
+                  </p>
+
+
+                  <p class="desc">&lt;p&gt;The CDC is tracking a summer surge of Cyclospora infections. As of its &lt;a href=&#34;https://www.cdc.gov/cyclosporiasis/php/surveillance/index.html?ref=foodsafetynews.com&#34;&gt;June 18 surveillance update&lt;/a&gt;, CDC has logged 14...</p>
+
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Food Safety News</span>
+
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-07-06</span></span>
+
+
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://www.foodsafetynews.com/2026/07/cyclospora-outbreak-surges-in-michigan" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+
+              <div class="card" role="article" aria-label="Article: Scientists propose label to help people avoid Listeria infection" data-entities="["SafetyIssue"]">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://www.foodsafetynews.com/2026/07/scientists-propose-label-to-help-people-avoid-listeria-infection" target="_blank" rel="noopener noreferrer">Scientists propose label to help people avoid Listeria infection</a>
+                  </p>
+
+
+                  <p class="desc">Plus Irish agencies report on revised EU Listeria rules now in force</p>
+
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Food Safety News</span>
+
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-07-06</span></span>
+
+
+                    <span class="chip brand"><strong>entities</strong> 1</span>
+
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://www.foodsafetynews.com/2026/07/scientists-propose-label-to-help-people-avoid-listeria-infection" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+
+              <div class="card" role="article" aria-label="Article: FDA warns six importers in five states for food safety failures tied to tea, produce and sauces" data-entities="["FoodType", "SafetyIssue", "FoodGeneral"]">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://www.foodsafetynews.com/2026/07/fda-warns-six-importers-in-five-states-for-food-safety-failures-tied-to-tea-produce-and-sauces" target="_blank" rel="noopener noreferrer">FDA warns six importers in five states for food safety failures tied to tea, produce and sauces</a>
+                  </p>
+
+
+                  <p class="desc">&lt;p&gt;As part of its enforcement activities, the Food and Drug Administration sends warning letters to entities under its jurisdiction. Some letters are not posted for public view until weeks or months after they are sent. ...</p>
+
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Food Safety News</span>
+
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-07-06</span></span>
+
+
+                    <span class="chip brand"><strong>entities</strong> 3</span>
+
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://www.foodsafetynews.com/2026/07/fda-warns-six-importers-in-five-states-for-food-safety-failures-tied-to-tea-produce-and-sauces" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+
+              <div class="card" role="article" aria-label="Article: Ireland records rise in consumer complaints" data-entities="["FoodGeneral"]">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://www.foodsafetynews.com/2026/07/ireland-records-rise-in-consumer-complaints" target="_blank" rel="noopener noreferrer">Ireland records rise in consumer complaints</a>
+                  </p>
+
+
+                  <p class="desc">Plus a report from a meeting on misinformation in food safety</p>
+
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Food Safety News</span>
+
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-07-06</span></span>
+
+
+                    <span class="chip brand"><strong>entities</strong> 1</span>
+
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://www.foodsafetynews.com/2026/07/ireland-records-rise-in-consumer-complaints" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+
+              <div class="card" role="article" aria-label="Article: Nominations open for WHO food safety award" data-entities="["FoodGeneral"]">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://www.foodsafetynews.com/2026/07/nominations-open-for-who-food-safety-award" target="_blank" rel="noopener noreferrer">Nominations open for WHO food safety award</a>
+                  </p>
+
+
+                  <p class="desc">Applicants must be from the Western Pacific region</p>
+
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Food Safety News</span>
+
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-07-06</span></span>
+
+
+                    <span class="chip brand"><strong>entities</strong> 1</span>
+
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://www.foodsafetynews.com/2026/07/nominations-open-for-who-food-safety-award" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+
+              <div class="card" role="article" aria-label="Article: Frozen blueberries recalled, linked to E. coli outbreak" data-entities="["FoodType", "SafetyIssue", "FoodGeneral"]">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://www.foodsafetynews.com/2026/07/frozen-blueberries-recalled-linked-to-e-coli-outbreak" target="_blank" rel="noopener noreferrer">Frozen blueberries recalled, linked to E. coli outbreak</a>
+                  </p>
+
+
+                  <p class="desc">&lt;p&gt;Frozen blueberries sold at Publix grocery stores have been recalled because of contamination with E. coli O145:H28. Twelve people have fallen ill.&lt;/p&gt;&lt;p&gt;On July 3, Frutas y Hortalizas del Sur S.A. — the Chilean grower...</p>
+
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Food Safety News</span>
+
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-07-06</span></span>
+
+
+                    <span class="chip brand"><strong>entities</strong> 3</span>
+
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://www.foodsafetynews.com/2026/07/frozen-blueberries-recalled-linked-to-e-coli-outbreak" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+
+              <div class="card" role="article" aria-label="Article: Sunday Edition: In the spotlight" data-entities="[]">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://www.foodsafetynews.com/2026/07/sunday-edition-in-the-spotlight" target="_blank" rel="noopener noreferrer">Sunday Edition: In the spotlight</a>
+                  </p>
+
+
+                  <p class="desc">Here are some highlights and updates related to the great work the FSN team does each week.</p>
+
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Food Safety News</span>
+
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-07-05</span></span>
+
+
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://www.foodsafetynews.com/2026/07/sunday-edition-in-the-spotlight" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+
+              <div class="card" role="article" aria-label="Article: Publix Recalls Blueberries due to E. coli Illnesses" data-entities="["SafetyIssue"]">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://www.foodsafetynews.com/2026/07/publix-recalls-blueberries-dues-to-e-coli-illnesses" target="_blank" rel="noopener noreferrer">Publix Recalls Blueberries due to E. coli Illnesses</a>
+                  </p>
+
+
+                  <p class="desc">The recalled product was shipped to Publix retail stores throughout 8 states including Alabama, Florida, Georgia, Kentucky, North Carolina, South Carolina, Tennessee, and Virginia. Consumers should check their freezers f...</p>
+
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Food Safety News</span>
+
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-07-04</span></span>
+
+
+                    <span class="chip brand"><strong>entities</strong> 1</span>
+
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://www.foodsafetynews.com/2026/07/publix-recalls-blueberries-dues-to-e-coli-illnesses" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+
+              <div class="card" role="article" aria-label="Article: Publisher’s Platform: The Safest Fourth of July in 250 Years" data-entities="[]">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://www.foodsafetynews.com/2026/07/publishers-platform-the-safest-fourth-of-july-in-250-years" target="_blank" rel="noopener noreferrer">Publisher’s Platform: The Safest Fourth of July in 250 Years</a>
+                  </p>
+
+
+                  <p class="desc">On the 250th birthday of a country that keeps, against long odds, getting better at feeding itself — that dream feels a little less far off than it used to. Happy Independence Day. Eat well and eat safely. We have earned...</p>
+
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Food Safety News</span>
+
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-07-04</span></span>
+
+
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://www.foodsafetynews.com/2026/07/publishers-platform-the-safest-fourth-of-july-in-250-years" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+
+              <div class="card" role="article" aria-label="Article: Beef jerky recalled because of undeclared wheat" data-entities="["FoodType", "SafetyIssue", "FoodGeneral"]">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://www.foodsafetynews.com/2026/07/beef-jerky-recalled-because-of-undeclared-wheat" target="_blank" rel="noopener noreferrer">Beef jerky recalled because of undeclared wheat</a>
+                  </p>
+
+
+                  <p class="desc">&lt;p&gt;The USDA’s Food Safety and Inspection Service (FSIS) is issuing a public health alert for a beef jerky product because of misbranding and an undeclared allergen.&lt;/p&gt;&lt;p&gt;The product contains wheat, a known allergen, whi...</p>
+
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Food Safety News</span>
+
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-07-04</span></span>
+
+
+                    <span class="chip brand"><strong>entities</strong> 3</span>
+
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://www.foodsafetynews.com/2026/07/beef-jerky-recalled-because-of-undeclared-wheat" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+
+              <div class="card" role="article" aria-label="Article: DOJ ends investigation into infant formula company linked to deadly cronobacter outbreak" data-entities="["SafetyIssue", "FoodGeneral"]">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://www.foodsafetynews.com/2026/07/doj-ends-investigation-into-infant-formula-company-linked-to-deadly-cronobacter-outbreak" target="_blank" rel="noopener noreferrer">DOJ ends investigation into infant formula company linked to deadly cronobacter outbreak</a>
+                  </p>
+
+
+                  <p class="desc">The DOJ ended its investigation into Abbott after it came to light that the company gave $500,000 to President Trump’s inauguration committee.</p>
+
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Food Safety News</span>
+
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-07-03</span></span>
+
+
+                    <span class="chip brand"><strong>entities</strong> 2</span>
+
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://www.foodsafetynews.com/2026/07/doj-ends-investigation-into-infant-formula-company-linked-to-deadly-cronobacter-outbreak" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+
+              <div class="card" role="article" aria-label="Article: Experts make case for domestic food safety focus" data-entities="["FoodGeneral"]">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://www.foodsafetynews.com/2026/07/experts-make-case-for-domestic-food-safety-focus" target="_blank" rel="noopener noreferrer">Experts make case for domestic food safety focus</a>
+                  </p>
+
+
+                  <p class="desc">&lt;p&gt;Experts are hoping revised foodborne infection data can shift the focus of resources from trade to investing in domestic food safety.&lt;/p&gt;&lt;p&gt;The World Health Organization (WHO) updated &lt;a href=&#34;https://www.foodsafetyne...</p>
+
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Food Safety News</span>
+
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-07-03</span></span>
+
+
+                    <span class="chip brand"><strong>entities</strong> 1</span>
+
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://www.foodsafetynews.com/2026/07/experts-make-case-for-domestic-food-safety-focus" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+
+              <div class="card" role="article" aria-label="Article: Moldova and Malta report food poisoning incidents" data-entities="["SafetyIssue", "FoodGeneral"]">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://www.foodsafetynews.com/2026/07/moldova-and-malta-report-food-poisoning-incidents" target="_blank" rel="noopener noreferrer">Moldova and Malta report food poisoning incidents</a>
+                  </p>
+
+
+                  <p class="desc">&lt;p&gt;Moldova and Malta have both recently recorded separate outbreaks of foodborne illness.&lt;/p&gt;&lt;p&gt;In Moldova, the National Agency for Public Health (ANSP) reported an outbreak of food poisoning among people who attended ev...</p>
+
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Food Safety News</span>
+
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-07-03</span></span>
+
+
+                    <span class="chip brand"><strong>entities</strong> 2</span>
+
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://www.foodsafetynews.com/2026/07/moldova-and-malta-report-food-poisoning-incidents" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+
+              <div class="card" role="article" aria-label="Article: Keeping America’s 250th Independence Day leftovers safe" data-entities="["FoodGeneral"]">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://www.foodsafetynews.com/2026/07/keeping-americas-250th-independence-day-leftovers-safe" target="_blank" rel="noopener noreferrer">Keeping America’s 250th Independence Day leftovers safe</a>
+                  </p>
+
+
+                  <p class="desc">&lt;p&gt;As the United States marks its 250th Independence Day, families will be packing away picnic trays, grill platters and dessert tables and facing the question of how to safely handle leftovers in the sizzling summer hea...</p>
+
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Food Safety News</span>
+
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-07-03</span></span>
+
+
+                    <span class="chip brand"><strong>entities</strong> 1</span>
+
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://www.foodsafetynews.com/2026/07/keeping-americas-250th-independence-day-leftovers-safe" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+
+              <div class="card" role="article" aria-label="Article: Call to address fraud in food security programs" data-entities="["FoodGeneral"]">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://www.foodsafetynews.com/2026/07/call-to-address-fraud-in-food-security-programs" target="_blank" rel="noopener noreferrer">Call to address fraud in food security programs</a>
+                  </p>
+
+
+                  <p class="desc">&lt;p&gt;Experts have voiced concerns about food fraud in food security programs and suggested ways to combat the problem.&lt;/p&gt;&lt;p&gt;A report made several recommendations including penalizing and discouraging food fraud practices,...</p>
+
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Food Safety News</span>
+
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-07-03</span></span>
+
+
+                    <span class="chip brand"><strong>entities</strong> 1</span>
+
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://www.foodsafetynews.com/2026/07/call-to-address-fraud-in-food-security-programs" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+
+              <div class="card" role="article" aria-label="Article: FDA steps up import enforcement action on infant formula, cantaloupes and seafood" data-entities="["FoodType", "SafetyIssue", "FoodGeneral"]">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://www.foodsafetynews.com/2026/07/fda-steps-up-import-enforcement-action-on-infant-formula-cantaloupes-and-seafood" target="_blank" rel="noopener noreferrer">FDA steps up import enforcement action on infant formula, cantaloupes and seafood</a>
+                  </p>
+
+
+                  <p class="desc">&lt;p&gt;The Food and Drug Administration uses import alerts to enforce U.S. food safety regulations for food from foreign countries. The agency updates and modifies the alerts as needed.&lt;/p&gt;&lt;p&gt;Recent modifications to FDA’s im...</p>
+
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Food Safety News</span>
+
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-07-03</span></span>
+
+
+                    <span class="chip brand"><strong>entities</strong> 3</span>
+
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://www.foodsafetynews.com/2026/07/fda-steps-up-import-enforcement-action-on-infant-formula-cantaloupes-and-seafood" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+
+              <div class="card" role="article" aria-label="Article: FDA adds caffeine labeling to regulatory priority list" data-entities="["FoodType", "SafetyIssue", "FoodGeneral"]">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://www.fooddive.com/news/caffeine-labeling-fda-guidance-celsius-alani-nu/824355" target="_blank" rel="noopener noreferrer">FDA adds caffeine labeling to regulatory priority list</a>
+                  </p>
+
+
+                  <p class="desc">&lt;figure&gt;&lt;div&gt;&lt;img src=&#34;https://imgproxy.divecdn.com/sj4wT6fx5Ur37PwbvRCU9FVuvl_CvxuXDgui7nl72sQ/g:nowe:0:180/c:2500:1412/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMTU4MzQxNjYxLmpwZw==...</p>
+
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Food Dive</span>
+
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-07-02</span></span>
+
+
+                    <span class="chip brand"><strong>entities</strong> 3</span>
+
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://www.fooddive.com/news/caffeine-labeling-fda-guidance-celsius-alani-nu/824355" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+
+              <div class="card" role="article" aria-label="Article: General Mills plans $3B in cost cuts to fight consumer spending slump" data-entities="[]">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://www.fooddive.com/news/general-mills-3b-cost-cuts-consumer-inflation/824321" target="_blank" rel="noopener noreferrer">General Mills plans $3B in cost cuts to fight consumer spending slump</a>
+                  </p>
+
+
+                  <p class="desc">&lt;figure&gt;&lt;div&gt;&lt;img src=&#34;https://imgproxy.divecdn.com/JNW6cgVdjJCNLciKPJVnRwcE5ifDTIIXDbCRkXNtPJM/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0xODcwMzM5NDAyX2tRUzNIbnouanBn.webp&#34; /&gt;&lt;/d...</p>
+
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Food Dive</span>
+
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-07-02</span></span>
+
+
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://www.fooddive.com/news/general-mills-3b-cost-cuts-consumer-inflation/824321" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+
+              <div class="card" role="article" aria-label="Article: Consumer sentiment rises from record low on prospect of lower inflation" data-entities="["FoodGeneral"]">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://www.fooddive.com/news/consumer-sentiment-record-low-prospect-lower-inflation-fed/824316" target="_blank" rel="noopener noreferrer">Consumer sentiment rises from record low on prospect of lower inflation</a>
+                  </p>
+
+
+                  <p class="desc">&lt;figure&gt;&lt;div&gt;&lt;img src=&#34;https://imgproxy.divecdn.com/i-ZO2c1VruUMUGtpblLdSOIhPLVCDdthGUifuIB1pP4/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy00NjUxNzU4NzQuanBn.webp&#34; /&gt;&lt;/div&gt;&lt;/figure&gt;...</p>
+
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Food Dive</span>
+
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-07-02</span></span>
+
+
+                    <span class="chip brand"><strong>entities</strong> 1</span>
+
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://www.fooddive.com/news/consumer-sentiment-record-low-prospect-lower-inflation-fed/824316" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+
+              <div class="card" role="article" aria-label="Article: How 5 top food and beverage brands are celebrating America’s 250th" data-entities="["FoodType", "Brand", "FoodGeneral", "BrandCanonical"]">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://www.fooddive.com/news/food-beverage-america-250-product-launches/824333" target="_blank" rel="noopener noreferrer">How 5 top food and beverage brands are celebrating America’s 250th</a>
+                  </p>
+
+
+                  <p class="desc">&lt;p&gt;General Mills, Campbell’s and Kraft Heinz are breaking out the red, white and blue with special innovations honoring the nation’s semiquincentennial.&lt;/p&gt;</p>
+
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Food Dive</span>
+
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-07-02</span></span>
+
+
+                    <span class="chip brand"><strong>entities</strong> 4</span>
+
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://www.fooddive.com/news/food-beverage-america-250-product-launches/824333" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+
+              <div class="card" role="article" aria-label="Article: Publisher&#39;s Platform: Nara, you knew what when? And, your words matter!" data-entities="[]">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://www.foodsafetynews.com/2026/07/publishers-platform-nara-you-knew-what-when-and-your-words-matter" target="_blank" rel="noopener noreferrer">Publisher&#39;s Platform: Nara, you knew what when? And, your words matter!</a>
+                  </p>
+
+
+                  <p class="desc">As the company that imported this formula from Europe, Nara had specific, federally mandated duties to find this hazard and make sure its supplier controlled it.</p>
+
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Food Safety News</span>
+
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-07-02</span></span>
+
+
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://www.foodsafetynews.com/2026/07/publishers-platform-nara-you-knew-what-when-and-your-words-matter" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+
+              <div class="card" role="article" aria-label="Article: More than 100 sick in severe multi-country Salmonella outbreak" data-entities="["FoodType", "SafetyIssue", "FoodGeneral"]">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://www.foodsafetynews.com/2026/07/more-than-100-sick-in-severe-multi-country-salmonella-outbreak" target="_blank" rel="noopener noreferrer">More than 100 sick in severe multi-country Salmonella outbreak</a>
+                  </p>
+
+
+                  <p class="desc">Epidemiological investigations have found that many of the patients consumed flavored instant noodle products before falling ill.</p>
+
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Food Safety News</span>
+
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-07-02</span></span>
+
+
+                    <span class="chip brand"><strong>entities</strong> 3</span>
+
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://www.foodsafetynews.com/2026/07/more-than-100-sick-in-severe-multi-country-salmonella-outbreak" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+
+              <div class="card" role="article" aria-label="Article: New E. coli outbreak detected; FDA begins onsite inspections in Nara infant formula botulism outbreak" data-entities="["SafetyIssue", "FoodGeneral"]">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://www.foodsafetynews.com/2026/07/new-e-coli-outbreak-detected-fda-begins-onsite-inspections-in-nara-infant-formula-botulism-outbreak" target="_blank" rel="noopener noreferrer">New E. coli outbreak detected; FDA begins onsite inspections in Nara infant formula botulism outbreak</a>
+                  </p>
+
+
+                  <p class="desc">&lt;p&gt;Federal public health officials are investigating a new outbreak of E. coli O157:H7 infections.&lt;/p&gt;&lt;p&gt;The Food and Drug Administration reports that there are 14 outbreak patients. The agency has not reported the patie...</p>
+
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Food Safety News</span>
+
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-07-02</span></span>
+
+
+                    <span class="chip brand"><strong>entities</strong> 2</span>
+
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://www.foodsafetynews.com/2026/07/new-e-coli-outbreak-detected-fda-begins-onsite-inspections-in-nara-infant-formula-botulism-outbreak" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+
+              <div class="card" role="article" aria-label="Article: Food safety tips to keep America&#39;s 250th anniversary illness-free" data-entities="["FoodGeneral"]">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://www.foodsafetynews.com/2026/07/food-safety-tips-to-keep-americas-250th-anniversary-illness-free" target="_blank" rel="noopener noreferrer">Food safety tips to keep America&#39;s 250th anniversary illness-free</a>
+                  </p>
+
+
+                  <p class="desc">&lt;p&gt;As Americans prepare to celebrate the nation&#39;s 250th birthday this Fourth of July, millions of people will gather for backyard barbecues, picnics, parades and fireworks displays. Food safety experts say taking a few s...</p>
+
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Food Safety News</span>
+
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-07-02</span></span>
+
+
+                    <span class="chip brand"><strong>entities</strong> 1</span>
+
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://www.foodsafetynews.com/2026/07/food-safety-tips-to-keep-americas-250th-anniversary-illness-free" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+
+              <div class="card" role="article" aria-label="Article: Belgian 2025 review includes deadly E. coli outbreak" data-entities="["SafetyIssue", "FoodGeneral"]">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://www.foodsafetynews.com/2026/07/belgian-2025-review-includes-deadly-e-coli-outbreak" target="_blank" rel="noopener noreferrer">Belgian 2025 review includes deadly E. coli outbreak</a>
+                  </p>
+
+
+                  <p class="desc">&lt;p&gt;The Belgian food agency’s annual report was released recently and highlighted a fatal E. coli outbreak and revealed food fraud cases.&lt;/p&gt;&lt;p&gt;The Federal Agency for the Safety of the Food Chain (FASFC) marked its 25&lt;sup...</p>
+
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Food Safety News</span>
+
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-07-02</span></span>
+
+
+                    <span class="chip brand"><strong>entities</strong> 2</span>
+
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://www.foodsafetynews.com/2026/07/belgian-2025-review-includes-deadly-e-coli-outbreak" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+
+              <div class="card" role="article" aria-label="Article: Cal-Maine to donate 30M eggs in DOJ price-fixing settlement" data-entities="["FoodType"]">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://www.fooddive.com/news/cal-maine-antitrust-settlement-egg-producers-prices/824217" target="_blank" rel="noopener noreferrer">Cal-Maine to donate 30M eggs in DOJ price-fixing settlement</a>
+                  </p>
+
+
+                  <p class="desc">&lt;figure&gt;&lt;div&gt;&lt;img src=&#34;https://imgproxy.divecdn.com/X7y46zJyXm1uddPTNGcm0CN-2fsKWh4a8mxRJlGP8EQ/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0xNDE1MDM1NjM5LmpwZw==.webp&#34; /&gt;&lt;/div&gt;&lt;/fig...</p>
+
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Food Dive</span>
+
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-07-01</span></span>
+
+
+                    <span class="chip brand"><strong>entities</strong> 1</span>
+
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://www.fooddive.com/news/cal-maine-antitrust-settlement-egg-producers-prices/824217" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+
+              <div class="card" role="article" aria-label="Article: Food brands report challenges switching to recycled plastics in packaging" data-entities="["FoodGeneral"]">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://www.fooddive.com/news/pcr-postconsumer-recycled-content-brands-campbells-ahold-delhaize-packaging-recycling-summit/824116" target="_blank" rel="noopener noreferrer">Food brands report challenges switching to recycled plastics in packaging</a>
+                  </p>
+
+
+                  <p class="desc">&lt;figure&gt;&lt;div&gt;&lt;img src=&#34;https://imgproxy.divecdn.com/HysArNh8K1VRenyDerZKk3x8uvsqpuVfrfsEpH6BtqU/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9wY3JfcHJzLmpwZw==.webp&#34; /&gt;&lt;/div&gt;&lt;/figure&gt;&lt;p&gt;Material avai...</p>
+
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Food Dive</span>
+
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-07-01</span></span>
+
+
+                    <span class="chip brand"><strong>entities</strong> 1</span>
+
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://www.fooddive.com/news/pcr-postconsumer-recycled-content-brands-campbells-ahold-delhaize-packaging-recycling-summit/824116" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+
+              <div class="card" role="article" aria-label="Article: Hormel Foods to sell ‘challenged’ Brazil business" data-entities="["FoodGeneral"]">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://www.fooddive.com/news/Hormel-brazil-selling-operations-general-mills/824108" target="_blank" rel="noopener noreferrer">Hormel Foods to sell ‘challenged’ Brazil business</a>
+                  </p>
+
+
+                  <p class="desc">&lt;figure&gt;&lt;div&gt;&lt;img src=&#34;https://imgproxy.divecdn.com/RGVcVd5E1z6TWy-BDUl4YpGpG_uhDRqA5MxKQMuGun8/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9ob3JtZWxfaVUxYXpyay5qcGc=.webp&#34; /&gt;&lt;/div&gt;&lt;/figure&gt;&lt;p&gt;Inter...</p>
+
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Food Dive</span>
+
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-07-01</span></span>
+
+
+                    <span class="chip brand"><strong>entities</strong> 1</span>
+
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://www.fooddive.com/news/Hormel-brazil-selling-operations-general-mills/824108" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+
+              <div class="card" role="article" aria-label="Article: Mondelēz bets big on Luna Bar after brand hit a ‘crossroads’" data-entities="["Brand", "FoodGeneral"]">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://www.fooddive.com/news/mondelez-bets-big-on-luna-bar-after-brand-hit-a-crossroads/820882" target="_blank" rel="noopener noreferrer">Mondelēz bets big on Luna Bar after brand hit a ‘crossroads’</a>
+                  </p>
+
+
+                  <p class="desc">&lt;figure&gt;&lt;div&gt;&lt;img src=&#34;https://imgproxy.divecdn.com/2PfJJu2o12q8XXldnlGscG4OuOud2E4tNUrb07MDykU/g:nowe:0:168/c:1080:610/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9MVU5BX0JlcnJ5X0JhcnNfLV9TdHJhd2JlcnJ5X...</p>
+
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Food Dive</span>
+
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-07-01</span></span>
+
+
+                    <span class="chip brand"><strong>entities</strong> 2</span>
+
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://www.fooddive.com/news/mondelez-bets-big-on-luna-bar-after-brand-hit-a-crossroads/820882" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+
+              <div class="card" role="article" aria-label="Article: Publisher&#39;s Platform: Letter to the Committee on Health, Education, Labor and Pensions" data-entities="["FoodType", "SafetyIssue", "FoodGeneral"]">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://www.foodsafetynews.com/2026/07/publishers-platform-26" target="_blank" rel="noopener noreferrer">Publisher&#39;s Platform: Letter to the Committee on Health, Education, Labor and Pensions</a>
+                  </p>
+
+
+                  <p class="desc">Bring the FDA, Dairy Farmers of America, Organic West Milk, and Nara Organics before this Committee and put the disclosure failure of 2025 on the public record — so the next reform is built on what actually happened, not...</p>
+
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Food Safety News</span>
+
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-07-01</span></span>
+
+
+                    <span class="chip brand"><strong>entities</strong> 3</span>
+
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://www.foodsafetynews.com/2026/07/publishers-platform-26" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+
+              <div class="card" role="article" aria-label="Article: 2026 Farm Bill includes food safety education funding" data-entities="["FoodGeneral"]">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://www.foodsafetynews.com/2026/07/2026-farm-bill-includes-food-safe" target="_blank" rel="noopener noreferrer">2026 Farm Bill includes food safety education funding</a>
+                  </p>
+
+
+                  <p class="desc">&lt;p&gt;The proposed 2026 Farm Bill includes several provisions for food safety.&lt;/p&gt;&lt;p&gt;The formal name of the bill is the Farm, Food, and National Security Act of 2026. It is a multi-year omnibus bill and is the primary piece...</p>
+
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Food Safety News</span>
+
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-07-01</span></span>
+
+
+                    <span class="chip brand"><strong>entities</strong> 1</span>
+
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://www.foodsafetynews.com/2026/07/2026-farm-bill-includes-food-safe" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+
+              <div class="card" role="article" aria-label="Article: EU tightens tahini and halva Salmonella checks, adjusts rates for other foods" data-entities="["SafetyIssue", "FoodGeneral"]">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://www.foodsafetynews.com/2026/07/eu-tightens-tahini-and-halva-salmonella-checks-adjusts-rates-for-other-foods" target="_blank" rel="noopener noreferrer">EU tightens tahini and halva Salmonella checks, adjusts rates for other foods</a>
+                  </p>
+
+
+                  <p class="desc">&lt;p&gt;Stricter controls on tahini and halva from Syria for Salmonella have been put in place by the European Commission.&lt;/p&gt;&lt;p&gt;The legislation sets the rate of official controls and special conditions for food and feed of n...</p>
+
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Food Safety News</span>
+
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-07-01</span></span>
+
+
+                    <span class="chip brand"><strong>entities</strong> 2</span>
+
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://www.foodsafetynews.com/2026/07/eu-tightens-tahini-and-halva-salmonella-checks-adjusts-rates-for-other-foods" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+
+              <div class="card" role="article" aria-label="Article: Scottish survey finds risky burger habits" data-entities="["FoodType", "FoodGeneral"]">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://www.foodsafetynews.com/2026/07/scottish-survey-finds-risky-burger-habits" target="_blank" rel="noopener noreferrer">Scottish survey finds risky burger habits</a>
+                  </p>
+
+
+                  <p class="desc">&lt;p&gt;Nearly one in three consumers in Scotland have eaten beef burgers that are pink or have pink juices, according to a survey.&lt;/p&gt;&lt;p&gt;Food Standards Scotland (FSS) said results highlight potentially dangerous habits as ba...</p>
+
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Food Safety News</span>
+
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-07-01</span></span>
+
+
+                    <span class="chip brand"><strong>entities</strong> 2</span>
+
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://www.foodsafetynews.com/2026/07/scottish-survey-finds-risky-burger-habits" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+
+              <div class="card" role="article" aria-label="Article: Allergens dominate as recalls drop in New Zealand" data-entities="["SafetyIssue", "FoodGeneral"]">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://www.foodsafetynews.com/2026/07/allergens-dominate-as-recalls-drop-in-new-zealand" target="_blank" rel="noopener noreferrer">Allergens dominate as recalls drop in New Zealand</a>
+                  </p>
+
+
+                  <p class="desc">&lt;p&gt;The number of food recalls declined in New Zealand in 2025 and undeclared allergens were responsible for almost half of the alerts.&lt;/p&gt;&lt;p&gt;New Zealand Food Safety supported businesses in conducting 57 consumer-level fo...</p>
+
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Food Safety News</span>
+
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-07-01</span></span>
+
+
+                    <span class="chip brand"><strong>entities</strong> 2</span>
+
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://www.foodsafetynews.com/2026/07/allergens-dominate-as-recalls-drop-in-new-zealand" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+
+              <div class="card" role="article" aria-label="Article: Five Star brand oysters recalled in Canada because of Salmonella" data-entities="["SafetyIssue", "FoodGeneral"]">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://www.foodsafetynews.com/2026/07/five-star-brand-oysters-recalled-in-canada-because-of-salmonella" target="_blank" rel="noopener noreferrer">Five Star brand oysters recalled in Canada because of Salmonella</a>
+                  </p>
+
+
+                  <p class="desc">&lt;p&gt;Certain Five Star Shellfish Inc. brand oysters are being recalled in Canada because of contamination with Salmonella.&lt;/p&gt;&lt;p&gt;The recall was triggered by Canadian Food Inspection Agency test results. &lt;/p&gt;&lt;p&gt;There have b...</p>
+
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Food Safety News</span>
+
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-07-01</span></span>
+
+
+                    <span class="chip brand"><strong>entities</strong> 2</span>
+
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://www.foodsafetynews.com/2026/07/five-star-brand-oysters-recalled-in-canada-because-of-salmonella" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+
+              <div class="card" role="article" aria-label="Article: Publisher’s Platform: You Can’t Test One Spore Out of Five Cans — So Fund It, Inspect It, and Let the Parents Speak" data-entities="["FoodType", "FoodGeneral"]">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://www.foodsafetynews.com/2026/06/publishers-platform-you-cant-test-one-spore-out-of-five-cans-so-fund-it-inspect-it-and-let-the-parents-speak" target="_blank" rel="noopener noreferrer">Publisher’s Platform: You Can’t Test One Spore Out of Five Cans — So Fund It, Inspect It, and Let the Parents Speak</a>
+                  </p>
+
+
+                  <p class="desc">The Scientific American piece is not a reason to give up. It is a blueprint: stop pretending a number on a can is a guarantee, move the controls upstream to the milk and the plant, fund the people who make any mandate re...</p>
+
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Food Safety News</span>
+
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-06-30</span></span>
+
+
+                    <span class="chip brand"><strong>entities</strong> 2</span>
+
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://www.foodsafetynews.com/2026/06/publishers-platform-you-cant-test-one-spore-out-of-five-cans-so-fund-it-inspect-it-and-let-the-parents-speak" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+
+              <div class="card" role="article" aria-label="Article: CVC Capital builds out ingredients portfolio with Irca acquisition" data-entities="[]">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://www.fooddive.com/news/cvc-irca-ingredients-acquisition/824068" target="_blank" rel="noopener noreferrer">CVC Capital builds out ingredients portfolio with Irca acquisition</a>
+                  </p>
+
+
+                  <p class="desc">&lt;figure&gt;&lt;div&gt;&lt;img src=&#34;https://imgproxy.divecdn.com/x_VDEQGnFFcgxbw0t8OXAUToL9N0DbLdZlIVYH4K_vM/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMjYzMTY5MzgyLmpwZw==.webp&#34; /&gt;&lt;/div&gt;&lt;/fig...</p>
+
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Food Dive</span>
+
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-06-30</span></span>
+
+
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://www.fooddive.com/news/cvc-irca-ingredients-acquisition/824068" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+
+              <div class="card" role="article" aria-label="Article: Challenger food brands are standing out despite fewer marketing swings" data-entities="["FoodGeneral"]">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://www.fooddive.com/news/how-challenger-brands-can-stand-out-with-fewer-marketing-swings/823979" target="_blank" rel="noopener noreferrer">Challenger food brands are standing out despite fewer marketing swings</a>
+                  </p>
+
+
+                  <p class="desc">&lt;figure&gt;&lt;div&gt;&lt;img src=&#34;https://imgproxy.divecdn.com/hK2ATefn8pqrtCMSaE8amNbRLhqjL2Xw_mqn8ZAxJWk/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9FbWVyYWxkX1dhbG1hcnRfQ3JlYXRpdmVfMS5qcGc=.webp&#34; /&gt;&lt;/div&gt;&lt;...</p>
+
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Food Dive</span>
+
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-06-30</span></span>
+
+
+                    <span class="chip brand"><strong>entities</strong> 1</span>
+
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://www.fooddive.com/news/how-challenger-brands-can-stand-out-with-fewer-marketing-swings/823979" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+
+              <div class="card" role="article" aria-label="Article: Coca-Cola to close Massachusetts bottling plant" data-entities="["FoodType", "FoodGeneral"]">
+                <div class="left">
+                  <p class="title">
+                    <a href="https://www.fooddive.com/news/coca-cola-closes-bottling-plant-northampton-massachusetts/824063" target="_blank" rel="noopener noreferrer">Coca-Cola to close Massachusetts bottling plant</a>
+                  </p>
+
+
+                  <p class="desc">&lt;figure&gt;&lt;div&gt;&lt;img src=&#34;https://imgproxy.divecdn.com/O4gpFfh1NjeeNuDjTZTMH7Ti4XOFwQDE5RvpD0dkJGM/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy02MzQ1OTY5OTYuanBn.webp&#34; /&gt;&lt;/div&gt;&lt;/figure&gt;...</p>
+
+
+                  <div class="row" aria-label="Article metadata">
+                    <span class="chip"><strong>source</strong> Food Dive</span>
+
+                    <span class="chip"><strong>date</strong> <span class="mono">2026-06-30</span></span>
+
+
+                    <span class="chip brand"><strong>entities</strong> 2</span>
+
+                  </div>
+                </div>
+
+                <div class="actions">
+                  <a class="btn primary" href="https://www.fooddive.com/news/coca-cola-closes-bottling-plant-northampton-massachusetts/824063" target="_blank" rel="noopener noreferrer" aria-label="Open article">Open</a>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </article>
+      </section>
+
+      <footer class="footer" role="contentinfo">
+        <div>
+          <span class="mono">category</span>
+          <span class="muted">/</span>
+          <span>식품 안전 레이더</span>
+          <span class="muted">·</span>
+          <span class="mono">2026-07-07 06:39 UTC</span>
+        </div>
+        <div class="footer-actions">
+          <a href="#content" class="mono" aria-label="Back to top">back to top</a>
+          <button id="export-csv" class="export-btn" aria-label="Export to CSV">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            Export CSV
+          </button>
+        </div>
+      </footer>
+
+      <script id="articles-data" type="application/json">[{"collected_at": "2026-07-07T06:39:04.005880", "event_model_payload": {"headline": "French Salmonella outbreak linked to Polish eggs", "published_at": "2026-07-07T04:05:04+00:00", "source_name": "Food Safety News", "source_url": "https://www.foodsafetynews.com/2026/07/french-salmonella-outbreak-linked-to-polish-eggs/", "summary": "\u003cp\u003eA Salmonella outbreak in France was likely caused by contaminated eggs from Poland.\u003c/p\u003e\u003cp\u003eSixteen people fell sick in the Salmonella Enteritidis outbreak, including nine males and seven females. Four people were admitted to hospitals. Patients ranged in age from 1 to 55 years old and mainly had fever and diarrhea,\u003c/p\u003e"}, "link": "https://www.foodsafetynews.com/2026/07/french-salmonella-outbreak-linked-to-polish-eggs", "matched_entities": {"FoodGeneral": ["outbreak"], "FoodType": ["eggs"], "SafetyIssue": ["outbreak", "salmonella"]}, "published_at": "2026-07-07T04:05:04", "source": "Food Safety News", "summary": "\u003cp\u003eA Salmonella outbreak in France was likely caused by contaminated eggs from Poland.\u003c/p\u003e\u003cp\u003eSixteen people fell sick in the Salmonella Enteritidis outbreak, including nine males and seven females. Four people were admitted to hospitals. Patients ranged in age from 1 to 55 years old and mainly had fever and diarrhea,\u003c/p\u003e", "title": "French Salmonella outbreak linked to Polish eggs"}, {"collected_at": "2026-07-07T06:39:04.005880", "event_model_payload": {"headline": "FSA research targets Campylobacter reduction", "published_at": "2026-07-07T04:01:46+00:00", "source_name": "Food Safety News", "source_url": "https://www.foodsafetynews.com/2026/07/fsa-research-targets-campylobacter-reduction/", "summary": "\u003cp\u003eThe Food Standards Agency (FSA) has published six pieces of research relating to efforts to reduce Campylobacter in chicken meat.\u003c/p\u003e\u003cp\u003eThe papers cover interventions applied at slaughterhouses, in the supply chain, by food companies, in cutting and processing plants, and at the consumer level.\u003c/p\u003e"}, "link": "https://www.foodsafetynews.com/2026/07/fsa-research-targets-campylobacter-reduction", "matched_entities": {"FoodGeneral": ["food", "supply chain"], "FoodType": ["meat", "chicken"]}, "published_at": "2026-07-07T04:01:46", "source": "Food Safety News", "summary": "\u003cp\u003eThe Food Standards Agency (FSA) has published six pieces of research relating to efforts to reduce Campylobacter in chicken meat.\u003c/p\u003e\u003cp\u003eThe papers cover interventions applied at slaughterhouses, in the supply chain, by food companies, in cutting and processing plants, and at the consumer level.\u003c/p\u003e", "title": "FSA research targets Campylobacter reduction"}, {"collected_at": "2026-07-07T06:39:04.005880", "event_model_payload": {"headline": "Another patient identified in outbreak of infant botulism", "published_at": "2026-07-07T02:09:10+00:00", "source_name": "Food Safety News", "source_url": "https://www.foodsafetynews.com/2026/07/another-patient-identified-in-outbreak-of-infant-botulism/", "summary": "All of the sick babies were fed Nara Organics infant formula."}, "link": "https://www.foodsafetynews.com/2026/07/another-patient-identified-in-outbreak-of-infant-botulism", "matched_entities": {"FoodGeneral": ["outbreak"], "SafetyIssue": ["outbreak"]}, "published_at": "2026-07-07T02:09:10", "source": "Food Safety News", "summary": "All of the sick babies were fed Nara Organics infant formula.", "title": "Another patient identified in outbreak of infant botulism"}, {"collected_at": "2026-07-07T06:39:04.005880", "event_model_payload": {"headline": "Imported sashimi recalled because of undeclared allergens", "published_at": "2026-07-07T01:00:32+00:00", "source_name": "Food Safety News", "source_url": "https://www.foodsafetynews.com/2026/07/imported-sashimi-recalled-because-of-undeclared-allergens/", "summary": "\u003cp\u003eEunha Fisheries Co. Ltd. of Busan, Republic of Korea, is recalling certain Sliced Korean Halibut and Flounder Sashimi products because the accompanying soy sauce and vinegar red pepper paste packets contain wheat, soy, and sesame that were not declared in English on the individual condiment packets.\u003c/p\u003e\u003cp\u003ePeople who have an\u003c/p\u003e"}, "link": "https://www.foodsafetynews.com/2026/07/imported-sashimi-recalled-because-of-undeclared-allergens", "matched_entities": {"FoodType": ["sauce", "sashimi"], "SafetyIssue": ["recalled", "undeclared"]}, "published_at": "2026-07-07T01:00:32", "source": "Food Safety News", "summary": "\u003cp\u003eEunha Fisheries Co. Ltd. of Busan, Republic of Korea, is recalling certain Sliced Korean Halibut and Flounder Sashimi products because the accompanying soy sauce and vinegar red pepper paste packets contain wheat, soy, and sesame that were not declared in English on the individual condiment packets.\u003c/p\u003e\u003cp\u003ePeople who have an\u003c/p\u003e", "title": "Imported sashimi recalled because of undeclared allergens"}, {"collected_at": "2026-07-07T06:39:04.005880", "event_model_payload": {"headline": "Aldi kimchi recalled because of undeclared fish", "published_at": "2026-07-07T00:47:06+00:00", "source_name": "Food Safety News", "source_url": "https://www.foodsafetynews.com/2026/07/aldi-kimchi-recalled-because-of-undeclared-fish/", "summary": "\u003cp\u003eGellert Global Group of Elizabeth, NJ, is recalling 8.1 oz packages of ALDI Brand Fusia Asian Inspirations Kimchi \u0026 Tofu Kimbap because they may contain undeclared tuna.\u00a0\u003c/p\u003e\u003cp\u003ePeople who have an allergy or severe sensitivity to fish run the risk of serious or life-threatening allergic reaction if\u003c/p\u003e"}, "link": "https://www.foodsafetynews.com/2026/07/aldi-kimchi-recalled-because-of-undeclared-fish", "matched_entities": {"Brand": ["aldi"], "BrandCanonical": ["Aldi"], "FoodGeneral": ["brand"], "FoodType": ["fish", "tuna", "kimchi", "kimbap"], "SafetyIssue": ["recalled", "undeclared", "allergy", "sensitivity"]}, "published_at": "2026-07-07T00:47:06", "source": "Food Safety News", "summary": "\u003cp\u003eGellert Global Group of Elizabeth, NJ, is recalling 8.1 oz packages of ALDI Brand Fusia Asian Inspirations Kimchi \u0026 Tofu Kimbap because they may contain undeclared tuna. \u003c/p\u003e\u003cp\u003ePeople who have an allergy or severe sensitivity to fish run the risk of serious or life-threatening allergic reaction if\u003c/p\u003e", "title": "Aldi kimchi recalled because of undeclared fish"}, {"collected_at": "2026-07-07T06:39:04.005880", "event_model_payload": {"headline": "Food giants defeat lawsuit calling ultraprocessed products addictive", "published_at": "2026-07-06T15:35:00+00:00", "source_name": "Food Dive", "source_url": "https://www.fooddive.com/news/food-giants-ultraprocessed-lawsuit-dismissed/824472/", "summary": "\u003cfigure\u003e\u003cdiv\u003e\u003cimg src=\"https://imgproxy.divecdn.com/3oNdMifQ93MiqUPkdO8i2f2jQ8UZG9UUdjJbRh9bMC0/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMTg5NDQ2MDM0LmpwZw==.webp\" /\u003e\u003c/div\u003e\u003c/figure\u003e\u003cp\u003eA court ruled that a correlation between the rise in ultraprocessed foods and an increase in childhood diseases does not amount to causation.\u003c/p\u003e"}, "link": "https://www.fooddive.com/news/food-giants-ultraprocessed-lawsuit-dismissed/824472", "matched_entities": {"FoodGeneral": ["food", "foods"]}, "published_at": "2026-07-06T15:35:00", "source": "Food Dive", "summary": "\u003cfigure\u003e\u003cdiv\u003e\u003cimg src=\"https://imgproxy.divecdn.com/3oNdMifQ93MiqUPkdO8i2f2jQ8UZG9UUdjJbRh9bMC0/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMTg5NDQ2MDM0LmpwZw==.webp\" /\u003e\u003c/div\u003e\u003c/figure\u003e\u003cp\u003eA court ruled that a correlation between the rise in ultraprocessed foods and an increase in childhood diseases does not amount to causation.\u003c/p\u003e", "title": "Food giants defeat lawsuit calling ultraprocessed products addictive"}, {"collected_at": "2026-07-07T06:39:04.005880", "event_model_payload": {"headline": "How Tom Holland\u2019s nonalcoholic Bero breaks through with brand partners", "published_at": "2026-07-06T13:54:00+00:00", "source_name": "Food Dive", "source_url": "https://www.fooddive.com/news/how-tom-hollands-nonalcoholic-beer-breaks-through-with-brand-partners/824453/", "summary": "\u003cfigure\u003e\u003cdiv\u003e\u003cimg src=\"https://imgproxy.divecdn.com/KjbSEprJZh56ctLwcZO6fLF23WVFVJrY75o4_CjodEM/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9KTUNMMjM5My5qcGc=.webp\" /\u003e\u003c/div\u003e\u003c/figure\u003e\u003cp\u003eCo-founded by the Spider-Man star, the beer brand has used partnerships with Chase and fitness chain Barry\u2019s to charge its marketing efforts.\u003c/p\u003e"}, "link": "https://www.fooddive.com/news/how-tom-hollands-nonalcoholic-beer-breaks-through-with-brand-partners/824453", "matched_entities": {"FoodGeneral": ["brand"]}, "published_at": "2026-07-06T13:54:00", "source": "Food Dive", "summary": "\u003cfigure\u003e\u003cdiv\u003e\u003cimg src=\"https://imgproxy.divecdn.com/KjbSEprJZh56ctLwcZO6fLF23WVFVJrY75o4_CjodEM/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9KTUNMMjM5My5qcGc=.webp\" /\u003e\u003c/div\u003e\u003c/figure\u003e\u003cp\u003eCo-founded by the Spider-Man star, the beer brand has used partnerships with Chase and fitness chain Barry\u2019s to charge its marketing efforts.\u003c/p\u003e", "title": "How Tom Holland\u2019s nonalcoholic Bero breaks through with brand partners"}, {"collected_at": "2026-07-07T06:39:04.005880", "event_model_payload": {"headline": "Cyclospora cases surge to nearly 600 in Michigan", "published_at": "2026-07-06T04:04:35+00:00", "source_name": "Food Safety News", "source_url": "https://www.foodsafetynews.com/2026/07/cyclospora-outbreak-surges-in-michigan/", "summary": "\u003cp\u003eThe CDC is tracking a summer surge of\u00a0Cyclospora infections. As of its \u003ca href=\"https://www.cdc.gov/cyclosporiasis/php/surveillance/index.html?ref=foodsafetynews.com\"\u003eJune 18 surveillance update\u003c/a\u003e, CDC has logged 145 cases acquired in the United States across 17 states, with illness onsets from May 1 through June 16. Twenty people have been hospitalized; no deaths have been reported.\u003c/p\u003e"}, "link": "https://www.foodsafetynews.com/2026/07/cyclospora-outbreak-surges-in-michigan", "matched_entities": {}, "published_at": "2026-07-06T04:04:35", "source": "Food Safety News", "summary": "\u003cp\u003eThe CDC is tracking a summer surge of Cyclospora infections. As of its \u003ca href=\"https://www.cdc.gov/cyclosporiasis/php/surveillance/index.html?ref=foodsafetynews.com\"\u003eJune 18 surveillance update\u003c/a\u003e, CDC has logged 145 cases acquired in the United States across 17 states, with illness onsets from May 1 through June 16. Twenty people have been hospitalized; no deaths have been reported.\u003c/p\u003e", "title": "Cyclospora cases surge to nearly 600 in Michigan"}, {"collected_at": "2026-07-07T06:39:04.005880", "event_model_payload": {"headline": "Scientists propose label to help people avoid Listeria infection", "published_at": "2026-07-06T04:03:42+00:00", "source_name": "Food Safety News", "source_url": "https://www.foodsafetynews.com/2026/07/scientists-propose-label-to-help-people-avoid-listeria-infection/", "summary": "Plus Irish agencies report on revised EU Listeria rules now in force"}, "link": "https://www.foodsafetynews.com/2026/07/scientists-propose-label-to-help-people-avoid-listeria-infection", "matched_entities": {"SafetyIssue": ["listeria"]}, "published_at": "2026-07-06T04:03:42", "source": "Food Safety News", "summary": "Plus Irish agencies report on revised EU Listeria rules now in force", "title": "Scientists propose label to help people avoid Listeria infection"}, {"collected_at": "2026-07-07T06:39:04.005880", "event_model_payload": {"headline": "FDA warns six importers in five states for food safety failures tied to tea, produce and sauces", "published_at": "2026-07-06T04:02:03+00:00", "source_name": "Food Safety News", "source_url": "https://www.foodsafetynews.com/2026/07/fda-warns-six-importers-in-five-states-for-food-safety-failures-tied-to-tea-produce-and-sauces/", "summary": "\u003cp\u003eAs part of its enforcement activities, the Food and Drug Administration sends warning letters to entities under its jurisdiction. Some letters are not posted for public view until weeks or months after they are sent. Business owners have 15 days to respond to FDA warning letters. Warning letters often are\u003c/p\u003e"}, "link": "https://www.foodsafetynews.com/2026/07/fda-warns-six-importers-in-five-states-for-food-safety-failures-tied-to-tea-produce-and-sauces", "matched_entities": {"FoodGeneral": ["food", "safety", "fda"], "FoodType": ["tea"], "SafetyIssue": ["fda"]}, "published_at": "2026-07-06T04:02:03", "source": "Food Safety News", "summary": "\u003cp\u003eAs part of its enforcement activities, the Food and Drug Administration sends warning letters to entities under its jurisdiction. Some letters are not posted for public view until weeks or months after they are sent. Business owners have 15 days to respond to FDA warning letters. Warning letters often are\u003c/p\u003e", "title": "FDA warns six importers in five states for food safety failures tied to tea, produce and sauces"}, {"collected_at": "2026-07-07T06:39:04.005880", "event_model_payload": {"headline": "Ireland records rise in consumer complaints", "published_at": "2026-07-06T04:01:11+00:00", "source_name": "Food Safety News", "source_url": "https://www.foodsafetynews.com/2026/07/ireland-records-rise-in-consumer-complaints/", "summary": "Plus a report from a meeting on misinformation in food safety"}, "link": "https://www.foodsafetynews.com/2026/07/ireland-records-rise-in-consumer-complaints", "matched_entities": {"FoodGeneral": ["food", "safety"]}, "published_at": "2026-07-06T04:01:11", "source": "Food Safety News", "summary": "Plus a report from a meeting on misinformation in food safety", "title": "Ireland records rise in consumer complaints"}, {"collected_at": "2026-07-07T06:39:04.005880", "event_model_payload": {"headline": "Nominations open for WHO food safety award", "published_at": "2026-07-06T04:00:29+00:00", "source_name": "Food Safety News", "source_url": "https://www.foodsafetynews.com/2026/07/nominations-open-for-who-food-safety-award/", "summary": "Applicants must be from the Western Pacific region"}, "link": "https://www.foodsafetynews.com/2026/07/nominations-open-for-who-food-safety-award", "matched_entities": {"FoodGeneral": ["food", "safety"]}, "published_at": "2026-07-06T04:00:29", "source": "Food Safety News", "summary": "Applicants must be from the Western Pacific region", "title": "Nominations open for WHO food safety award"}, {"collected_at": "2026-07-07T06:39:04.005880", "event_model_payload": {"headline": "Frozen blueberries recalled, linked to E. coli outbreak", "published_at": "2026-07-06T01:54:28+00:00", "source_name": "Food Safety News", "source_url": "https://www.foodsafetynews.com/2026/07/frozen-blueberries-recalled-linked-to-e-coli-outbreak/", "summary": "\u003cp\u003eFrozen blueberries sold at Publix grocery stores have been recalled because of contamination with E. coli O145:H28. Twelve people have fallen ill.\u003c/p\u003e\u003cp\u003eOn July 3, Frutas y Hortalizas del Sur S.A. \u2014 the Chilean grower-packer that sells under the Comfrut brand \u2014 announced the recall of its\u003c/p\u003e"}, "link": "https://www.foodsafetynews.com/2026/07/frozen-blueberries-recalled-linked-to-e-coli-outbreak", "matched_entities": {"FoodGeneral": ["recall", "contamination", "outbreak", "brand"], "FoodType": ["grocery"], "SafetyIssue": ["recall", "recalled", "contamination", "outbreak", "e. coli"]}, "published_at": "2026-07-06T01:54:28", "source": "Food Safety News", "summary": "\u003cp\u003eFrozen blueberries sold at Publix grocery stores have been recalled because of contamination with E. coli O145:H28. Twelve people have fallen ill.\u003c/p\u003e\u003cp\u003eOn July 3, Frutas y Hortalizas del Sur S.A. \u2014 the Chilean grower-packer that sells under the Comfrut brand \u2014 announced the recall of its\u003c/p\u003e", "title": "Frozen blueberries recalled, linked to E. coli outbreak"}, {"collected_at": "2026-07-07T06:39:04.005880", "event_model_payload": {"headline": "Sunday Edition: In the spotlight", "published_at": "2026-07-05T12:00:09+00:00", "source_name": "Food Safety News", "source_url": "https://www.foodsafetynews.com/2026/07/sunday-edition-in-the-spotlight/", "summary": "Here are some highlights and updates related to the\u00a0great work the FSN team does each week."}, "link": "https://www.foodsafetynews.com/2026/07/sunday-edition-in-the-spotlight", "matched_entities": {}, "published_at": "2026-07-05T12:00:09", "source": "Food Safety News", "summary": "Here are some highlights and updates related to the great work the FSN team does each week.", "title": "Sunday Edition: In the spotlight"}, {"collected_at": "2026-07-07T06:39:04.005880", "event_model_payload": {"headline": "Publix Recalls Blueberries due to E. coli Illnesses", "published_at": "2026-07-04T16:33:15+00:00", "source_name": "Food Safety News", "source_url": "https://www.foodsafetynews.com/2026/07/publix-recalls-blueberries-dues-to-e-coli-illnesses/", "summary": "The recalled product was shipped to Publix retail stores throughout 8 states including Alabama, Florida, Georgia, Kentucky, North Carolina, South Carolina, Tennessee, and Virginia.\u00a0\u00a0Consumers should check their freezers for the affected product."}, "link": "https://www.foodsafetynews.com/2026/07/publix-recalls-blueberries-dues-to-e-coli-illnesses", "matched_entities": {"SafetyIssue": ["recalled", "e. coli"]}, "published_at": "2026-07-04T16:33:15", "source": "Food Safety News", "summary": "The recalled product was shipped to Publix retail stores throughout 8 states including Alabama, Florida, Georgia, Kentucky, North Carolina, South Carolina, Tennessee, and Virginia. Consumers should check their freezers for the affected product.", "title": "Publix Recalls Blueberries due to E. coli Illnesses"}, {"collected_at": "2026-07-07T06:39:04.005880", "event_model_payload": {"headline": "Publisher\u2019s Platform: The Safest Fourth of July in 250 Years", "published_at": "2026-07-04T11:26:00+00:00", "source_name": "Food Safety News", "source_url": "https://www.foodsafetynews.com/2026/07/publishers-platform-the-safest-fourth-of-july-in-250-years/", "summary": "On the 250th birthday of a country that keeps, against long odds, getting better at feeding itself \u2014 that dream feels a little less far off than it used to. Happy Independence Day. Eat well and eat safely. We have earned both."}, "link": "https://www.foodsafetynews.com/2026/07/publishers-platform-the-safest-fourth-of-july-in-250-years", "matched_entities": {}, "published_at": "2026-07-04T11:26:00", "source": "Food Safety News", "summary": "On the 250th birthday of a country that keeps, against long odds, getting better at feeding itself \u2014 that dream feels a little less far off than it used to. Happy Independence Day. Eat well and eat safely. We have earned both.", "title": "Publisher\u2019s Platform: The Safest Fourth of July in 250 Years"}, {"collected_at": "2026-07-07T06:39:04.005880", "event_model_payload": {"headline": "Beef jerky recalled because of undeclared wheat", "published_at": "2026-07-04T01:27:31+00:00", "source_name": "Food Safety News", "source_url": "https://www.foodsafetynews.com/2026/07/beef-jerky-recalled-because-of-undeclared-wheat/", "summary": "\u003cp\u003eThe USDA\u2019s Food Safety and Inspection Service (FSIS) is issuing a public health alert for a beef jerky product because of misbranding and an undeclared allergen.\u003c/p\u003e\u003cp\u003eThe product contains wheat, a known allergen, which is not declared on the product label.\u00a0People with allergies or sensitivities to\u003c/p\u003e"}, "link": "https://www.foodsafetynews.com/2026/07/beef-jerky-recalled-because-of-undeclared-wheat", "matched_entities": {"FoodGeneral": ["food", "safety", "inspection", "usda"], "FoodType": ["beef"], "SafetyIssue": ["recalled", "undeclared"]}, "published_at": "2026-07-04T01:27:31", "source": "Food Safety News", "summary": "\u003cp\u003eThe USDA\u2019s Food Safety and Inspection Service (FSIS) is issuing a public health alert for a beef jerky product because of misbranding and an undeclared allergen.\u003c/p\u003e\u003cp\u003eThe product contains wheat, a known allergen, which is not declared on the product label. People with allergies or sensitivities to\u003c/p\u003e", "title": "Beef jerky recalled because of undeclared wheat"}, {"collected_at": "2026-07-06T07:04:36.963268", "event_model_payload": {"headline": "DOJ ends investigation into infant formula company linked to deadly cronobacter outbreak", "published_at": "2026-07-03T04:06:13+00:00", "source_name": "Food Safety News", "source_url": "https://www.foodsafetynews.com/2026/07/doj-ends-investigation-into-infant-formula-company-linked-to-deadly-cronobacter-outbreak/", "summary": "The DOJ ended its investigation into Abbott after it came to light that the company gave $500,000 to President Trump\u2019s inauguration committee."}, "link": "https://www.foodsafetynews.com/2026/07/doj-ends-investigation-into-infant-formula-company-linked-to-deadly-cronobacter-outbreak", "matched_entities": {"FoodGeneral": ["outbreak"], "SafetyIssue": ["outbreak"]}, "published_at": "2026-07-03T04:06:13", "source": "Food Safety News", "summary": "The DOJ ended its investigation into Abbott after it came to light that the company gave $500,000 to President Trump\u2019s inauguration committee.", "title": "DOJ ends investigation into infant formula company linked to deadly cronobacter outbreak"}, {"collected_at": "2026-07-06T07:04:36.963268", "event_model_payload": {"headline": "Experts make case for domestic food safety focus", "published_at": "2026-07-03T04:04:16+00:00", "source_name": "Food Safety News", "source_url": "https://www.foodsafetynews.com/2026/07/experts-make-case-for-domestic-food-safety-focus/", "summary": "\u003cp\u003eExperts are hoping revised foodborne infection data can shift the focus of resources from trade to investing in domestic food safety.\u003c/p\u003e\u003cp\u003eThe World Health Organization (WHO) updated\u00a0\u003ca href=\"https://www.foodsafetynews.com/2026/06/who-estimates-reveal-millions-of-foodborne-illness-deaths/\"\u003efoodborne illness estimates\u003c/a\u003e thanks to work by the Foodborne Disease Burden Epidemiology Reference Group (FERG). Incidence, death, and disability-adjusted life-year\u003c/p\u003e"}, "link": "https://www.foodsafetynews.com/2026/07/experts-make-case-for-domestic-food-safety-focus", "matched_entities": {"FoodGeneral": ["food", "safety"]}, "published_at": "2026-07-03T04:04:16", "source": "Food Safety News", "summary": "\u003cp\u003eExperts are hoping revised foodborne infection data can shift the focus of resources from trade to investing in domestic food safety.\u003c/p\u003e\u003cp\u003eThe World Health Organization (WHO) updated \u003ca href=\"https://www.foodsafetynews.com/2026/06/who-estimates-reveal-millions-of-foodborne-illness-deaths/\"\u003efoodborne illness estimates\u003c/a\u003e thanks to work by the Foodborne Disease Burden Epidemiology Reference Group (FERG). Incidence, death, and disability-adjusted life-year\u003c/p\u003e", "title": "Experts make case for domestic food safety focus"}, {"collected_at": "2026-07-06T07:04:36.963268", "event_model_payload": {"headline": "Moldova and Malta report food poisoning incidents", "published_at": "2026-07-03T04:02:50+00:00", "source_name": "Food Safety News", "source_url": "https://www.foodsafetynews.com/2026/07/moldova-and-malta-report-food-poisoning-incidents/", "summary": "\u003cp\u003eMoldova and Malta have both recently recorded separate outbreaks of foodborne illness.\u003c/p\u003e\u003cp\u003eIn Moldova, the National Agency for Public Health (ANSP) reported an outbreak of food poisoning among people who attended events in a hotel in Chisinau.\u003c/p\u003e\u003cp\u003eThe epidemiological investigation found that onset of symptoms was associated with participation in\u003c/p\u003e"}, "link": "https://www.foodsafetynews.com/2026/07/moldova-and-malta-report-food-poisoning-incidents", "matched_entities": {"FoodGeneral": ["food", "outbreak", "outbreaks"], "SafetyIssue": ["outbreak", "outbreaks"]}, "published_at": "2026-07-03T04:02:50", "source": "Food Safety News", "summary": "\u003cp\u003eMoldova and Malta have both recently recorded separate outbreaks of foodborne illness.\u003c/p\u003e\u003cp\u003eIn Moldova, the National Agency for Public Health (ANSP) reported an outbreak of food poisoning among people who attended events in a hotel in Chisinau.\u003c/p\u003e\u003cp\u003eThe epidemiological investigation found that onset of symptoms was associated with participation in\u003c/p\u003e", "title": "Moldova and Malta report food poisoning incidents"}, {"collected_at": "2026-07-06T07:04:36.963268", "event_model_payload": {"headline": "Keeping America\u2019s 250th Independence Day leftovers safe", "published_at": "2026-07-03T04:01:45+00:00", "source_name": "Food Safety News", "source_url": "https://www.foodsafetynews.com/2026/07/keeping-americas-250th-independence-day-leftovers-safe/", "summary": "\u003cp\u003eAs the United States marks its 250th Independence Day, families will be packing away picnic trays, grill platters and dessert tables and facing the question of how to safely handle leftovers in the sizzling summer heat.\u003c/p\u003e\u003cp\u003eThe U.S. Department of Agriculture warns that improper storage of perishable foods can\u003c/p\u003e"}, "link": "https://www.foodsafetynews.com/2026/07/keeping-americas-250th-independence-day-leftovers-safe", "matched_entities": {"FoodGeneral": ["foods"]}, "published_at": "2026-07-03T04:01:45", "source": "Food Safety News", "summary": "\u003cp\u003eAs the United States marks its 250th Independence Day, families will be packing away picnic trays, grill platters and dessert tables and facing the question of how to safely handle leftovers in the sizzling summer heat.\u003c/p\u003e\u003cp\u003eThe U.S. Department of Agriculture warns that improper storage of perishable foods can\u003c/p\u003e", "title": "Keeping America\u2019s 250th Independence Day leftovers safe"}, {"collected_at": "2026-07-06T07:04:36.963268", "event_model_payload": {"headline": "Call to address fraud in food security programs", "published_at": "2026-07-03T04:01:31+00:00", "source_name": "Food Safety News", "source_url": "https://www.foodsafetynews.com/2026/07/call-to-address-fraud-in-food-security-programs/", "summary": "\u003cp\u003eExperts have voiced concerns about food fraud in food security programs and suggested ways to combat the problem.\u003c/p\u003e\u003cp\u003eA report made several recommendations including penalizing and discouraging food fraud practices, greenwashing and misleading claims or labels by requiring businesses to verify claims about how products were cultivated, grown, processed and\u003c/p\u003e"}, "link": "https://www.foodsafetynews.com/2026/07/call-to-address-fraud-in-food-security-programs", "matched_entities": {"FoodGeneral": ["food"]}, "published_at": "2026-07-03T04:01:31", "source": "Food Safety News", "summary": "\u003cp\u003eExperts have voiced concerns about food fraud in food security programs and suggested ways to combat the problem.\u003c/p\u003e\u003cp\u003eA report made several recommendations including penalizing and discouraging food fraud practices, greenwashing and misleading claims or labels by requiring businesses to verify claims about how products were cultivated, grown, processed and\u003c/p\u003e", "title": "Call to address fraud in food security programs"}, {"collected_at": "2026-07-05T06:33:12.472108", "event_model_payload": {"headline": "FDA steps up import enforcement action on infant formula, cantaloupes and seafood", "published_at": "2026-07-03T04:00:37+00:00", "source_name": "Food Safety News", "source_url": "https://www.foodsafetynews.com/2026/07/fda-steps-up-import-enforcement-action-on-infant-formula-cantaloupes-and-seafood/", "summary": "\u003cp\u003eThe Food and Drug Administration uses import alerts to enforce U.S. food safety regulations for food from foreign countries. The agency updates and modifies the alerts as needed.\u003c/p\u003e\u003cp\u003eRecent modifications to FDA\u2019s import alerts, as posted by the agency, are listed below.\u003c/p\u003e\u003cp\u003e\u003ca href=\"https://content.govdelivery.com/attachments/USFDA/2026/06/29/file_attachments/3697433/Import%20Alerts%20Modified%20in%20the%20past%207%20days%202026-06-29.pdf?ref=foodsafetynews.com\"\u003e\u003cu\u003eClick here\u003c/u\u003e\u003c/a\u003e\u003cu\u003e \u003c/u\u003eto go to\u003c/p\u003e"}, "link": "https://www.foodsafetynews.com/2026/07/fda-steps-up-import-enforcement-action-on-infant-formula-cantaloupes-and-seafood", "matched_entities": {"FoodGeneral": ["food", "safety", "fda"], "FoodType": ["seafood"], "SafetyIssue": ["fda"]}, "published_at": "2026-07-03T04:00:37", "source": "Food Safety News", "summary": "\u003cp\u003eThe Food and Drug Administration uses import alerts to enforce U.S. food safety regulations for food from foreign countries. The agency updates and modifies the alerts as needed.\u003c/p\u003e\u003cp\u003eRecent modifications to FDA\u2019s import alerts, as posted by the agency, are listed below.\u003c/p\u003e\u003cp\u003e\u003ca href=\"https://content.govdelivery.com/attachments/USFDA/2026/06/29/file_attachments/3697433/Import%20Alerts%20Modified%20in%20the%20past%207%20days%202026-06-29.pdf?ref=foodsafetynews.com\"\u003e\u003cu\u003eClick here\u003c/u\u003e\u003c/a\u003e\u003cu\u003e \u003c/u\u003eto go to\u003c/p\u003e", "title": "FDA steps up import enforcement action on infant formula, cantaloupes and seafood"}, {"collected_at": "2026-07-07T06:39:04.005880", "event_model_payload": {"headline": "FDA adds caffeine labeling to regulatory priority list", "published_at": "2026-07-02T16:35:00+00:00", "source_name": "Food Dive", "source_url": "https://www.fooddive.com/news/caffeine-labeling-fda-guidance-celsius-alani-nu/824355/", "summary": "\u003cfigure\u003e\u003cdiv\u003e\u003cimg src=\"https://imgproxy.divecdn.com/sj4wT6fx5Ur37PwbvRCU9FVuvl_CvxuXDgui7nl72sQ/g:nowe:0:180/c:2500:1412/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMTU4MzQxNjYxLmpwZw==.webp\" /\u003e\u003c/div\u003e\u003c/figure\u003e\u003cp\u003eThe disclosure comes after Celsius and other energy drink manufacturers face mounting scrutiny for allegedly failing to disclose health risks to consumers.\u003c/p\u003e"}, "link": "https://www.fooddive.com/news/caffeine-labeling-fda-guidance-celsius-alani-nu/824355", "matched_entities": {"FoodGeneral": ["fda"], "FoodType": ["drink"], "SafetyIssue": ["fda"]}, "published_at": "2026-07-02T16:35:00", "source": "Food Dive", "summary": "\u003cfigure\u003e\u003cdiv\u003e\u003cimg src=\"https://imgproxy.divecdn.com/sj4wT6fx5Ur37PwbvRCU9FVuvl_CvxuXDgui7nl72sQ/g:nowe:0:180/c:2500:1412/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMTU4MzQxNjYxLmpwZw==.webp\" /\u003e\u003c/div\u003e\u003c/figure\u003e\u003cp\u003eThe disclosure comes after Celsius and other energy drink manufacturers face mounting scrutiny for allegedly failing to disclose health risks to consumers.\u003c/p\u003e", "title": "FDA adds caffeine labeling to regulatory priority list"}, {"collected_at": "2026-07-07T06:39:04.005880", "event_model_payload": {"headline": "General Mills plans $3B in cost cuts to fight consumer spending slump", "published_at": "2026-07-02T13:48:00+00:00", "source_name": "Food Dive", "source_url": "https://www.fooddive.com/news/general-mills-3b-cost-cuts-consumer-inflation/824321/", "summary": "\u003cfigure\u003e\u003cdiv\u003e\u003cimg src=\"https://imgproxy.divecdn.com/JNW6cgVdjJCNLciKPJVnRwcE5ifDTIIXDbCRkXNtPJM/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0xODcwMzM5NDAyX2tRUzNIbnouanBn.webp\" /\u003e\u003c/div\u003e\u003c/figure\u003e\u003cp\u003eThe Cheerios maker is focusing on improving the \u201cremarkability\u201d of its brands as the company acknowledges consumer sentiment is unlikely to recover anytime soon.\u003c/p\u003e"}, "link": "https://www.fooddive.com/news/general-mills-3b-cost-cuts-consumer-inflation/824321", "matched_entities": {}, "published_at": "2026-07-02T13:48:00", "source": "Food Dive", "summary": "\u003cfigure\u003e\u003cdiv\u003e\u003cimg src=\"https://imgproxy.divecdn.com/JNW6cgVdjJCNLciKPJVnRwcE5ifDTIIXDbCRkXNtPJM/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0xODcwMzM5NDAyX2tRUzNIbnouanBn.webp\" /\u003e\u003c/div\u003e\u003c/figure\u003e\u003cp\u003eThe Cheerios maker is focusing on improving the \u201cremarkability\u201d of its brands as the company acknowledges consumer sentiment is unlikely to recover anytime soon.\u003c/p\u003e", "title": "General Mills plans $3B in cost cuts to fight consumer spending slump"}, {"collected_at": "2026-07-07T06:39:04.005880", "event_model_payload": {"headline": "Consumer sentiment rises from record low on prospect of lower inflation", "published_at": "2026-07-02T13:38:00+00:00", "source_name": "Food Dive", "source_url": "https://www.fooddive.com/news/consumer-sentiment-record-low-prospect-lower-inflation-fed/824316/", "summary": "\u003cfigure\u003e\u003cdiv\u003e\u003cimg src=\"https://imgproxy.divecdn.com/i-ZO2c1VruUMUGtpblLdSOIhPLVCDdthGUifuIB1pP4/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy00NjUxNzU4NzQuanBn.webp\" /\u003e\u003c/div\u003e\u003c/figure\u003e\u003cp\u003eFood companies said shoppers have shown a more pronounced focus on value in the past few months as cost pressures mounted.\u00a0\u003c/p\u003e"}, "link": "https://www.fooddive.com/news/consumer-sentiment-record-low-prospect-lower-inflation-fed/824316", "matched_entities": {"FoodGeneral": ["food"]}, "published_at": "2026-07-02T13:38:00", "source": "Food Dive", "summary": "\u003cfigure\u003e\u003cdiv\u003e\u003cimg src=\"https://imgproxy.divecdn.com/i-ZO2c1VruUMUGtpblLdSOIhPLVCDdthGUifuIB1pP4/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy00NjUxNzU4NzQuanBn.webp\" /\u003e\u003c/div\u003e\u003c/figure\u003e\u003cp\u003eFood companies said shoppers have shown a more pronounced focus on value in the past few months as cost pressures mounted. \u003c/p\u003e", "title": "Consumer sentiment rises from record low on prospect of lower inflation"}, {"collected_at": "2026-07-07T06:39:04.005880", "event_model_payload": {"headline": "How 5 top food and beverage brands are celebrating America\u2019s 250th", "published_at": "2026-07-02T13:37:08+00:00", "source_name": "Food Dive", "source_url": "https://www.fooddive.com/news/food-beverage-america-250-product-launches/824333/", "summary": "\u003cp\u003eGeneral Mills, Campbell\u2019s and Kraft Heinz are breaking out the red, white and blue with special innovations honoring the nation\u2019s semiquincentennial.\u003c/p\u003e"}, "link": "https://www.fooddive.com/news/food-beverage-america-250-product-launches/824333", "matched_entities": {"Brand": ["kraft heinz"], "BrandCanonical": ["Kraft Heinz"], "FoodGeneral": ["food"], "FoodType": ["beverage"]}, "published_at": "2026-07-02T13:37:08", "source": "Food Dive", "summary": "\u003cp\u003eGeneral Mills, Campbell\u2019s and Kraft Heinz are breaking out the red, white and blue with special innovations honoring the nation\u2019s semiquincentennial.\u003c/p\u003e", "title": "How 5 top food and beverage brands are celebrating America\u2019s 250th"}, {"collected_at": "2026-07-05T06:33:12.472108", "event_model_payload": {"headline": "Publisher\u0027s Platform: Nara, you knew what when?  And, your words matter!", "published_at": "2026-07-02T04:06:45+00:00", "source_name": "Food Safety News", "source_url": "https://www.foodsafetynews.com/2026/07/publishers-platform-nara-you-knew-what-when-and-your-words-matter/", "summary": "As the company that imported this formula from Europe, Nara had specific, federally mandated duties to find this hazard and make sure its supplier controlled it."}, "link": "https://www.foodsafetynews.com/2026/07/publishers-platform-nara-you-knew-what-when-and-your-words-matter", "matched_entities": {}, "published_at": "2026-07-02T04:06:45", "source": "Food Safety News", "summary": "As the company that imported this formula from Europe, Nara had specific, federally mandated duties to find this hazard and make sure its supplier controlled it.", "title": "Publisher\u0027s Platform: Nara, you knew what when? And, your words matter!"}, {"collected_at": "2026-07-05T06:33:12.472108", "event_model_payload": {"headline": "More than 100 sick in severe multi-country Salmonella outbreak", "published_at": "2026-07-02T04:05:08+00:00", "source_name": "Food Safety News", "source_url": "https://www.foodsafetynews.com/2026/07/more-than-100-sick-in-severe-multi-country-salmonella-outbreak/", "summary": "Epidemiological investigations have found that many of the patients consumed flavored instant noodle products before falling ill."}, "link": "https://www.foodsafetynews.com/2026/07/more-than-100-sick-in-severe-multi-country-salmonella-outbreak", "matched_entities": {"FoodGeneral": ["outbreak"], "FoodType": ["noodle"], "SafetyIssue": ["outbreak", "salmonella"]}, "published_at": "2026-07-02T04:05:08", "source": "Food Safety News", "summary": "Epidemiological investigations have found that many of the patients consumed flavored instant noodle products before falling ill.", "title": "More than 100 sick in severe multi-country Salmonella outbreak"}, {"collected_at": "2026-07-05T06:33:12.472108", "event_model_payload": {"headline": "New E. coli outbreak detected; FDA begins onsite inspections in Nara infant formula botulism outbreak", "published_at": "2026-07-02T04:04:10+00:00", "source_name": "Food Safety News", "source_url": "https://www.foodsafetynews.com/2026/07/new-e-coli-outbreak-detected-fda-begins-onsite-inspections-in-nara-infant-formula-botulism-outbreak/", "summary": "\u003cp\u003eFederal public health officials are investigating a new outbreak of E. coli O157:H7 infections.\u003c/p\u003e\u003cp\u003eThe Food and Drug Administration reports that there are 14 outbreak patients. The agency has not reported the patients\u2019 ages or where they live. Investigators with the FDA have initiated traceback, but the agency\u003c/p\u003e"}, "link": "https://www.foodsafetynews.com/2026/07/new-e-coli-outbreak-detected-fda-begins-onsite-inspections-in-nara-infant-formula-botulism-outbreak", "matched_entities": {"FoodGeneral": ["food", "outbreak", "fda"], "SafetyIssue": ["outbreak", "e. coli", "fda"]}, "published_at": "2026-07-02T04:04:10", "source": "Food Safety News", "summary": "\u003cp\u003eFederal public health officials are investigating a new outbreak of E. coli O157:H7 infections.\u003c/p\u003e\u003cp\u003eThe Food and Drug Administration reports that there are 14 outbreak patients. The agency has not reported the patients\u2019 ages or where they live. Investigators with the FDA have initiated traceback, but the agency\u003c/p\u003e", "title": "New E. coli outbreak detected; FDA begins onsite inspections in Nara infant formula botulism outbreak"}, {"collected_at": "2026-07-05T06:33:12.472108", "event_model_payload": {"headline": "Food safety tips to keep America\u0027s 250th anniversary illness-free", "published_at": "2026-07-02T04:02:51+00:00", "source_name": "Food Safety News", "source_url": "https://www.foodsafetynews.com/2026/07/food-safety-tips-to-keep-americas-250th-anniversary-illness-free/", "summary": "\u003cp\u003eAs Americans prepare to celebrate the nation\u0027s 250th birthday this Fourth of July, millions of people will gather for backyard barbecues, picnics, parades and fireworks displays. Food safety experts say taking a few simple precautions can help ensure the holiday is remembered for the celebration and not foodborne\u003c/p\u003e"}, "link": "https://www.foodsafetynews.com/2026/07/food-safety-tips-to-keep-americas-250th-anniversary-illness-free", "matched_entities": {"FoodGeneral": ["food", "safety"]}, "published_at": "2026-07-02T04:02:51", "source": "Food Safety News", "summary": "\u003cp\u003eAs Americans prepare to celebrate the nation\u0027s 250th birthday this Fourth of July, millions of people will gather for backyard barbecues, picnics, parades and fireworks displays. Food safety experts say taking a few simple precautions can help ensure the holiday is remembered for the celebration and not foodborne\u003c/p\u003e", "title": "Food safety tips to keep America\u0027s 250th anniversary illness-free"}, {"collected_at": "2026-07-05T06:33:12.472108", "event_model_payload": {"headline": "Belgian 2025 review includes deadly E. coli outbreak", "published_at": "2026-07-02T04:01:34+00:00", "source_name": "Food Safety News", "source_url": "https://www.foodsafetynews.com/2026/07/belgian-2025-review-includes-deadly-e-coli-outbreak/", "summary": "\u003cp\u003eThe Belgian food agency\u2019s annual report was released recently and highlighted a fatal E. coli outbreak and revealed food fraud cases.\u003c/p\u003e\u003cp\u003eThe Federal Agency for the Safety of the Food Chain (FASFC) marked its 25\u003csup\u003eth\u003c/sup\u003e anniversary in 2025.\u003c/p\u003e\u003cp\u003eIn total, 773 foodborne outbreaks were reported with 3,\u003c/p\u003e"}, "link": "https://www.foodsafetynews.com/2026/07/belgian-2025-review-includes-deadly-e-coli-outbreak", "matched_entities": {"FoodGeneral": ["food", "safety", "outbreak", "outbreaks"], "SafetyIssue": ["outbreak", "outbreaks", "e. coli"]}, "published_at": "2026-07-02T04:01:34", "source": "Food Safety News", "summary": "\u003cp\u003eThe Belgian food agency\u2019s annual report was released recently and highlighted a fatal E. coli outbreak and revealed food fraud cases.\u003c/p\u003e\u003cp\u003eThe Federal Agency for the Safety of the Food Chain (FASFC) marked its 25\u003csup\u003eth\u003c/sup\u003e anniversary in 2025.\u003c/p\u003e\u003cp\u003eIn total, 773 foodborne outbreaks were reported with 3,\u003c/p\u003e", "title": "Belgian 2025 review includes deadly E. coli outbreak"}, {"collected_at": "2026-07-07T06:39:04.005880", "event_model_payload": {"headline": "Cal-Maine to donate 30M eggs in DOJ price-fixing settlement", "published_at": "2026-07-01T14:49:00+00:00", "source_name": "Food Dive", "source_url": "https://www.fooddive.com/news/cal-maine-antitrust-settlement-egg-producers-prices/824217/", "summary": "\u003cfigure\u003e\u003cdiv\u003e\u003cimg src=\"https://imgproxy.divecdn.com/X7y46zJyXm1uddPTNGcm0CN-2fsKWh4a8mxRJlGP8EQ/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0xNDE1MDM1NjM5LmpwZw==.webp\" /\u003e\u003c/div\u003e\u003c/figure\u003e\u003cp\u003eThe country\u0027s largest egg producer will also pay $1.5 million in an agreement that also involves producers Hickman\u0027s Egg Ranch and Versova.\u003c/p\u003e"}, "link": "https://www.fooddive.com/news/cal-maine-antitrust-settlement-egg-producers-prices/824217", "matched_entities": {"FoodType": ["egg", "eggs"]}, "published_at": "2026-07-01T14:49:00", "source": "Food Dive", "summary": "\u003cfigure\u003e\u003cdiv\u003e\u003cimg src=\"https://imgproxy.divecdn.com/X7y46zJyXm1uddPTNGcm0CN-2fsKWh4a8mxRJlGP8EQ/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0xNDE1MDM1NjM5LmpwZw==.webp\" /\u003e\u003c/div\u003e\u003c/figure\u003e\u003cp\u003eThe country\u0027s largest egg producer will also pay $1.5 million in an agreement that also involves producers Hickman\u0027s Egg Ranch and Versova.\u003c/p\u003e", "title": "Cal-Maine to donate 30M eggs in DOJ price-fixing settlement"}, {"collected_at": "2026-07-07T06:39:04.005880", "event_model_payload": {"headline": "Food brands report challenges switching to recycled plastics in packaging", "published_at": "2026-07-01T13:45:00+00:00", "source_name": "Food Dive", "source_url": "https://www.fooddive.com/news/pcr-postconsumer-recycled-content-brands-campbells-ahold-delhaize-packaging-recycling-summit/824116/", "summary": "\u003cfigure\u003e\u003cdiv\u003e\u003cimg src=\"https://imgproxy.divecdn.com/HysArNh8K1VRenyDerZKk3x8uvsqpuVfrfsEpH6BtqU/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9wY3JfcHJzLmpwZw==.webp\" /\u003e\u003c/div\u003e\u003c/figure\u003e\u003cp\u003eMaterial availability, cost and consumer purchasing habits have impacted Campbell\u0027s and other companies\u0027 abilities to incorporate more postconsumer recycled material.\u003c/p\u003e"}, "link": "https://www.fooddive.com/news/pcr-postconsumer-recycled-content-brands-campbells-ahold-delhaize-packaging-recycling-summit/824116", "matched_entities": {"FoodGeneral": ["food"]}, "published_at": "2026-07-01T13:45:00", "source": "Food Dive", "summary": "\u003cfigure\u003e\u003cdiv\u003e\u003cimg src=\"https://imgproxy.divecdn.com/HysArNh8K1VRenyDerZKk3x8uvsqpuVfrfsEpH6BtqU/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9wY3JfcHJzLmpwZw==.webp\" /\u003e\u003c/div\u003e\u003c/figure\u003e\u003cp\u003eMaterial availability, cost and consumer purchasing habits have impacted Campbell\u0027s and other companies\u0027 abilities to incorporate more postconsumer recycled material.\u003c/p\u003e", "title": "Food brands report challenges switching to recycled plastics in packaging"}, {"collected_at": "2026-07-07T06:39:04.005880", "event_model_payload": {"headline": "Hormel Foods to sell \u2018challenged\u2019 Brazil business", "published_at": "2026-07-01T13:24:00+00:00", "source_name": "Food Dive", "source_url": "https://www.fooddive.com/news/Hormel-brazil-selling-operations-general-mills/824108/", "summary": "\u003cfigure\u003e\u003cdiv\u003e\u003cimg src=\"https://imgproxy.divecdn.com/RGVcVd5E1z6TWy-BDUl4YpGpG_uhDRqA5MxKQMuGun8/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9ob3JtZWxfaVUxYXpyay5qcGc=.webp\" /\u003e\u003c/div\u003e\u003c/figure\u003e\u003cp\u003eInterim CEO Jeffrey Ettinger said the country had been a \u201cdrag\u201d on the company\u2019s overall 2025 performance and hurt its ability to meet international growth targets.\u003c/p\u003e"}, "link": "https://www.fooddive.com/news/Hormel-brazil-selling-operations-general-mills/824108", "matched_entities": {"FoodGeneral": ["foods"]}, "published_at": "2026-07-01T13:24:00", "source": "Food Dive", "summary": "\u003cfigure\u003e\u003cdiv\u003e\u003cimg src=\"https://imgproxy.divecdn.com/RGVcVd5E1z6TWy-BDUl4YpGpG_uhDRqA5MxKQMuGun8/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9ob3JtZWxfaVUxYXpyay5qcGc=.webp\" /\u003e\u003c/div\u003e\u003c/figure\u003e\u003cp\u003eInterim CEO Jeffrey Ettinger said the country had been a \u201cdrag\u201d on the company\u2019s overall 2025 performance and hurt its ability to meet international growth targets.\u003c/p\u003e", "title": "Hormel Foods to sell \u2018challenged\u2019 Brazil business"}, {"collected_at": "2026-07-07T06:39:04.005880", "event_model_payload": {"headline": "Mondel\u0113z bets big on Luna Bar after brand hit a \u2018crossroads\u2019", "published_at": "2026-07-01T13:24:00+00:00", "source_name": "Food Dive", "source_url": "https://www.fooddive.com/news/mondelez-bets-big-on-luna-bar-after-brand-hit-a-crossroads/820882/", "summary": "\u003cfigure\u003e\u003cdiv\u003e\u003cimg src=\"https://imgproxy.divecdn.com/2PfJJu2o12q8XXldnlGscG4OuOud2E4tNUrb07MDykU/g:nowe:0:168/c:1080:610/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9MVU5BX0JlcnJ5X0JhcnNfLV9TdHJhd2JlcnJ5X0JhbmFuYV8zLmpwZw==.webp\" /\u003e\u003c/div\u003e\u003c/figure\u003e\u003cp\u003eThe Oreo maker is prioritizing innovation and marketing for the brand popular with young women, an underserved demographic in the $10 billion bar category.\u003c/p\u003e"}, "link": "https://www.fooddive.com/news/mondelez-bets-big-on-luna-bar-after-brand-hit-a-crossroads/820882", "matched_entities": {"Brand": ["mondel\u0113z"], "FoodGeneral": ["brand"]}, "published_at": "2026-07-01T13:24:00", "source": "Food Dive", "summary": "\u003cfigure\u003e\u003cdiv\u003e\u003cimg src=\"https://imgproxy.divecdn.com/2PfJJu2o12q8XXldnlGscG4OuOud2E4tNUrb07MDykU/g:nowe:0:168/c:1080:610/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9MVU5BX0JlcnJ5X0JhcnNfLV9TdHJhd2JlcnJ5X0JhbmFuYV8zLmpwZw==.webp\" /\u003e\u003c/div\u003e\u003c/figure\u003e\u003cp\u003eThe Oreo maker is prioritizing innovation and marketing for the brand popular with young women, an underserved demographic in the $10 billion bar category.\u003c/p\u003e", "title": "Mondel\u0113z bets big on Luna Bar after brand hit a \u2018crossroads\u2019"}, {"collected_at": "2026-07-05T06:33:12.472108", "event_model_payload": {"headline": "Publisher\u0027s Platform: Letter to the Committee on Health, Education, Labor and Pensions", "published_at": "2026-07-01T04:06:53+00:00", "source_name": "Food Safety News", "source_url": "https://www.foodsafetynews.com/2026/07/publishers-platform-26/", "summary": "Bring the FDA, Dairy Farmers of America, Organic West Milk, and Nara Organics before this Committee and put the disclosure failure of 2025 on the public record \u2014 so the next reform is built on what actually happened, not on what anyone is willing to volunteer."}, "link": "https://www.foodsafetynews.com/2026/07/publishers-platform-26", "matched_entities": {"FoodGeneral": ["fda"], "FoodType": ["milk"], "SafetyIssue": ["fda"]}, "published_at": "2026-07-01T04:06:53", "source": "Food Safety News", "summary": "Bring the FDA, Dairy Farmers of America, Organic West Milk, and Nara Organics before this Committee and put the disclosure failure of 2025 on the public record \u2014 so the next reform is built on what actually happened, not on what anyone is willing to volunteer.", "title": "Publisher\u0027s Platform: Letter to the Committee on Health, Education, Labor and Pensions"}, {"collected_at": "2026-07-04T06:12:31.696208", "event_model_payload": {"headline": "2026 Farm Bill includes food safety education funding", "published_at": "2026-07-01T04:05:46+00:00", "source_name": "Food Safety News", "source_url": "https://www.foodsafetynews.com/2026/07/2026-farm-bill-includes-food-safe/", "summary": "\u003cp\u003eThe proposed 2026 Farm Bill includes several provisions for food safety.\u003c/p\u003e\u003cp\u003eThe formal name of the bill is the Farm, Food, and National Security Act of 2026. It is a multi-year omnibus bill and is the primary piece of legislation that governs a number of agriculture and food programs.\u003c/p\u003e"}, "link": "https://www.foodsafetynews.com/2026/07/2026-farm-bill-includes-food-safe", "matched_entities": {"FoodGeneral": ["food", "safety"]}, "published_at": "2026-07-01T04:05:46", "source": "Food Safety News", "summary": "\u003cp\u003eThe proposed 2026 Farm Bill includes several provisions for food safety.\u003c/p\u003e\u003cp\u003eThe formal name of the bill is the Farm, Food, and National Security Act of 2026. It is a multi-year omnibus bill and is the primary piece of legislation that governs a number of agriculture and food programs.\u003c/p\u003e", "title": "2026 Farm Bill includes food safety education funding"}, {"collected_at": "2026-07-04T06:12:31.696208", "event_model_payload": {"headline": "EU tightens tahini and halva Salmonella checks, adjusts rates for other foods", "published_at": "2026-07-01T04:04:19+00:00", "source_name": "Food Safety News", "source_url": "https://www.foodsafetynews.com/2026/07/eu-tightens-tahini-and-halva-salmonella-checks-adjusts-rates-for-other-foods/", "summary": "\u003cp\u003eStricter controls on tahini and halva from Syria for Salmonella have been put in place by the European Commission.\u003c/p\u003e\u003cp\u003eThe legislation sets the rate of official controls and special conditions for food and feed of non-animal origin imported into Europe.\u00a0Action guards against the risk of contamination by\u003c/p\u003e"}, "link": "https://www.foodsafetynews.com/2026/07/eu-tightens-tahini-and-halva-salmonella-checks-adjusts-rates-for-other-foods", "matched_entities": {"FoodGeneral": ["food", "foods", "contamination"], "SafetyIssue": ["contamination", "salmonella"]}, "published_at": "2026-07-01T04:04:19", "source": "Food Safety News", "summary": "\u003cp\u003eStricter controls on tahini and halva from Syria for Salmonella have been put in place by the European Commission.\u003c/p\u003e\u003cp\u003eThe legislation sets the rate of official controls and special conditions for food and feed of non-animal origin imported into Europe. Action guards against the risk of contamination by\u003c/p\u003e", "title": "EU tightens tahini and halva Salmonella checks, adjusts rates for other foods"}, {"collected_at": "2026-07-03T06:37:21.454711", "event_model_payload": {"headline": "Scottish survey finds risky burger habits", "published_at": "2026-07-01T04:02:03+00:00", "source_name": "Food Safety News", "source_url": "https://www.foodsafetynews.com/2026/07/scottish-survey-finds-risky-burger-habits/", "summary": "\u003cp\u003eNearly one in three consumers in Scotland have eaten beef burgers that are pink or have pink juices, according to a survey.\u003c/p\u003e\u003cp\u003eFood Standards Scotland (FSS) said results highlight potentially dangerous habits as barbecue season gets underway. The agency urged people to use a meat thermometer to check to make\u003c/p\u003e"}, "link": "https://www.foodsafetynews.com/2026/07/scottish-survey-finds-risky-burger-habits", "matched_entities": {"FoodGeneral": ["food"], "FoodType": ["meat", "beef", "burger", "burgers"]}, "published_at": "2026-07-01T04:02:03", "source": "Food Safety News", "summary": "\u003cp\u003eNearly one in three consumers in Scotland have eaten beef burgers that are pink or have pink juices, according to a survey.\u003c/p\u003e\u003cp\u003eFood Standards Scotland (FSS) said results highlight potentially dangerous habits as barbecue season gets underway. The agency urged people to use a meat thermometer to check to make\u003c/p\u003e", "title": "Scottish survey finds risky burger habits"}, {"collected_at": "2026-07-02T06:46:43.936148", "event_model_payload": {"headline": "Allergens dominate as recalls drop in New Zealand", "published_at": "2026-07-01T04:01:02+00:00", "source_name": "Food Safety News", "source_url": "https://www.foodsafetynews.com/2026/07/allergens-dominate-as-recalls-drop-in-new-zealand/", "summary": "\u003cp\u003eThe number of food recalls declined in New Zealand in 2025 and undeclared allergens were responsible for almost half of the alerts.\u003c/p\u003e\u003cp\u003eNew Zealand Food Safety supported businesses in conducting 57 consumer-level food recalls this past year, down from 88 in 2024.\u003c/p\u003e"}, "link": "https://www.foodsafetynews.com/2026/07/allergens-dominate-as-recalls-drop-in-new-zealand", "matched_entities": {"FoodGeneral": ["food", "safety"], "SafetyIssue": ["undeclared"]}, "published_at": "2026-07-01T04:01:02", "source": "Food Safety News", "summary": "\u003cp\u003eThe number of food recalls declined in New Zealand in 2025 and undeclared allergens were responsible for almost half of the alerts.\u003c/p\u003e\u003cp\u003eNew Zealand Food Safety supported businesses in conducting 57 consumer-level food recalls this past year, down from 88 in 2024.\u003c/p\u003e", "title": "Allergens dominate as recalls drop in New Zealand"}, {"collected_at": "2026-07-02T06:46:43.936148", "event_model_payload": {"headline": "Five Star brand oysters recalled in Canada because of Salmonella", "published_at": "2026-07-01T00:38:33+00:00", "source_name": "Food Safety News", "source_url": "https://www.foodsafetynews.com/2026/07/five-star-brand-oysters-recalled-in-canada-because-of-salmonella/", "summary": "\u003cp\u003eCertain Five Star Shellfish Inc. brand oysters are being recalled in Canada because of contamination with Salmonella.\u003c/p\u003e\u003cp\u003eThe recall was triggered by Canadian Food Inspection Agency test results.\u00a0\u003c/p\u003e\u003cp\u003eThere have been no reported illnesses associated with the consumption of these products.\u003c/p\u003e\u003cp\u003eThe recalled oysters were distributed in Nova Scotia,\u003c/p\u003e"}, "link": "https://www.foodsafetynews.com/2026/07/five-star-brand-oysters-recalled-in-canada-because-of-salmonella", "matched_entities": {"FoodGeneral": ["food", "recall", "contamination", "inspection", "brand"], "SafetyIssue": ["recall", "recalled", "contamination", "salmonella"]}, "published_at": "2026-07-01T00:38:33", "source": "Food Safety News", "summary": "\u003cp\u003eCertain Five Star Shellfish Inc. brand oysters are being recalled in Canada because of contamination with Salmonella.\u003c/p\u003e\u003cp\u003eThe recall was triggered by Canadian Food Inspection Agency test results. \u003c/p\u003e\u003cp\u003eThere have been no reported illnesses associated with the consumption of these products.\u003c/p\u003e\u003cp\u003eThe recalled oysters were distributed in Nova Scotia,\u003c/p\u003e", "title": "Five Star brand oysters recalled in Canada because of Salmonella"}, {"collected_at": "2026-07-02T06:46:43.936148", "event_model_payload": {"headline": "Publisher\u2019s Platform: You Can\u2019t Test One Spore Out of Five Cans \u2014 So Fund It, Inspect It, and Let the Parents Speak", "published_at": "2026-06-30T14:39:10+00:00", "source_name": "Food Safety News", "source_url": "https://www.foodsafetynews.com/2026/06/publishers-platform-you-cant-test-one-spore-out-of-five-cans-so-fund-it-inspect-it-and-let-the-parents-speak/", "summary": "The\u00a0Scientific American\u00a0piece is not a reason to give up. It is a blueprint: stop pretending a number on a can is a guarantee, move the controls upstream to the milk and the plant, fund the people who make any mandate real."}, "link": "https://www.foodsafetynews.com/2026/06/publishers-platform-you-cant-test-one-spore-out-of-five-cans-so-fund-it-inspect-it-and-let-the-parents-speak", "matched_entities": {"FoodGeneral": ["plant"], "FoodType": ["milk"]}, "published_at": "2026-06-30T14:39:10", "source": "Food Safety News", "summary": "The Scientific American piece is not a reason to give up. It is a blueprint: stop pretending a number on a can is a guarantee, move the controls upstream to the milk and the plant, fund the people who make any mandate real.", "title": "Publisher\u2019s Platform: You Can\u2019t Test One Spore Out of Five Cans \u2014 So Fund It, Inspect It, and Let the Parents Speak"}, {"collected_at": "2026-07-06T07:04:36.963268", "event_model_payload": {"headline": "CVC Capital builds out ingredients portfolio with Irca acquisition", "published_at": "2026-06-30T13:43:00+00:00", "source_name": "Food Dive", "source_url": "https://www.fooddive.com/news/cvc-irca-ingredients-acquisition/824068/", "summary": "\u003cfigure\u003e\u003cdiv\u003e\u003cimg src=\"https://imgproxy.divecdn.com/x_VDEQGnFFcgxbw0t8OXAUToL9N0DbLdZlIVYH4K_vM/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMjYzMTY5MzgyLmpwZw==.webp\" /\u003e\u003c/div\u003e\u003c/figure\u003e\u003cp\u003eThe deal for the Italian dessert ingredients supplier comes about a month after the private equity firm purchased IFF\u0027s ingredients business for $4.3 billion.\u003c/p\u003e"}, "link": "https://www.fooddive.com/news/cvc-irca-ingredients-acquisition/824068", "matched_entities": {}, "published_at": "2026-06-30T13:43:00", "source": "Food Dive", "summary": "\u003cfigure\u003e\u003cdiv\u003e\u003cimg src=\"https://imgproxy.divecdn.com/x_VDEQGnFFcgxbw0t8OXAUToL9N0DbLdZlIVYH4K_vM/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMjYzMTY5MzgyLmpwZw==.webp\" /\u003e\u003c/div\u003e\u003c/figure\u003e\u003cp\u003eThe deal for the Italian dessert ingredients supplier comes about a month after the private equity firm purchased IFF\u0027s ingredients business for $4.3 billion.\u003c/p\u003e", "title": "CVC Capital builds out ingredients portfolio with Irca acquisition"}, {"collected_at": "2026-07-06T07:04:36.963268", "event_model_payload": {"headline": "Challenger food brands are standing out despite fewer marketing swings", "published_at": "2026-06-30T13:23:00+00:00", "source_name": "Food Dive", "source_url": "https://www.fooddive.com/news/how-challenger-brands-can-stand-out-with-fewer-marketing-swings/823979/", "summary": "\u003cfigure\u003e\u003cdiv\u003e\u003cimg src=\"https://imgproxy.divecdn.com/hK2ATefn8pqrtCMSaE8amNbRLhqjL2Xw_mqn8ZAxJWk/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9FbWVyYWxkX1dhbG1hcnRfQ3JlYXRpdmVfMS5qcGc=.webp\" /\u003e\u003c/div\u003e\u003c/figure\u003e\u003cp\u003eDan Eisenberg, CMO at Blue Chip, discusses how brands such as Emerald Nuts and Bob\u2019s Red Mill compete against corporate giants.\u003c/p\u003e"}, "link": "https://www.fooddive.com/news/how-challenger-brands-can-stand-out-with-fewer-marketing-swings/823979", "matched_entities": {"FoodGeneral": ["food"]}, "published_at": "2026-06-30T13:23:00", "source": "Food Dive", "summary": "\u003cfigure\u003e\u003cdiv\u003e\u003cimg src=\"https://imgproxy.divecdn.com/hK2ATefn8pqrtCMSaE8amNbRLhqjL2Xw_mqn8ZAxJWk/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9FbWVyYWxkX1dhbG1hcnRfQ3JlYXRpdmVfMS5qcGc=.webp\" /\u003e\u003c/div\u003e\u003c/figure\u003e\u003cp\u003eDan Eisenberg, CMO at Blue Chip, discusses how brands such as Emerald Nuts and Bob\u2019s Red Mill compete against corporate giants.\u003c/p\u003e", "title": "Challenger food brands are standing out despite fewer marketing swings"}, {"collected_at": "2026-07-02T06:46:43.936148", "event_model_payload": {"headline": "Coca-Cola to close Massachusetts bottling plant", "published_at": "2026-06-30T13:18:00+00:00", "source_name": "Food Dive", "source_url": "https://www.fooddive.com/news/coca-cola-closes-bottling-plant-northampton-massachusetts/824063/", "summary": "\u003cfigure\u003e\u003cdiv\u003e\u003cimg src=\"https://imgproxy.divecdn.com/O4gpFfh1NjeeNuDjTZTMH7Ti4XOFwQDE5RvpD0dkJGM/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy02MzQ1OTY5OTYuanBn.webp\" /\u003e\u003c/div\u003e\u003c/figure\u003e\u003cp\u003eThe beverage giant will lay off 175 workers as part of the closure, which\u00a0has been planned for several years.\u003c/p\u003e"}, "link": "https://www.fooddive.com/news/coca-cola-closes-bottling-plant-northampton-massachusetts/824063", "matched_entities": {"FoodGeneral": ["plant"], "FoodType": ["beverage"]}, "published_at": "2026-06-30T13:18:00", "source": "Food Dive", "summary": "\u003cfigure\u003e\u003cdiv\u003e\u003cimg src=\"https://imgproxy.divecdn.com/O4gpFfh1NjeeNuDjTZTMH7Ti4XOFwQDE5RvpD0dkJGM/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy02MzQ1OTY5OTYuanBn.webp\" /\u003e\u003c/div\u003e\u003c/figure\u003e\u003cp\u003eThe beverage giant will lay off 175 workers as part of the closure, which has been planned for several years.\u003c/p\u003e", "title": "Coca-Cola to close Massachusetts bottling plant"}]</script>
+      <script id="entities-data" type="application/json">{"Brand": 3, "BrandCanonical": 2, "FoodGeneral": 67, "FoodType": 25, "SafetyIssue": 41}</script>
+
+
+      <script src="static/chart.min.js"></script>
+      <script>
+        if (typeof Chart === 'undefined') {
+          var s = document.createElement('script');
+          s.src = 'https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js';
+          document.head.appendChild(s);
+        }
+      </script>
+      <script>
+        (function () {
+          const reducedMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+          function readJson(id, fallback) {
+            const el = document.getElementById(id);
+            if (!el) return fallback;
+            const txt = (el.textContent || "").trim();
+            if (!txt) return fallback;
+            try { return JSON.parse(txt); } catch (e) { return fallback; }
+          }
+
+          const articles = readJson("articles-data", []);
+          const entityCountsRaw = readJson("entities-data", {});
+
+          function normalizeEntityPairs(raw) {
+            if (!raw) return [];
+            if (Array.isArray(raw)) {
+              if (raw.length && Array.isArray(raw[0]) && raw[0].length >= 2) {
+                return raw.map(p => [String(p[0]), Number(p[1]) || 0]);
+              }
+              if (raw.length && typeof raw[0] === "object") {
+                return raw.map(o => [String(o.name || o.entity || ""), Number(o.count || o.value || 0) || 0]).filter(p => p[0]);
+              }
+              return [];
+            }
+            if (typeof raw === "object") {
+              return Object.entries(raw).map(([k, v]) => [String(k), Number(v) || 0]);
+            }
+            return [];
+          }
+
+          function getArticleDate(a) {
+            const v = a && (a.published_at || a.published || a.date || a.datetime || a.publishedAt || a.publishedAtISO);
+            if (!v) return null;
+
+            const s = String(v);
+            const direct = new Date(s);
+            if (!isNaN(direct.getTime())) return direct;
+
+            const m = s.match(/^(\d{4})-(\d{2})-(\d{2})/);
+            if (m) {
+              const d = new Date(Number(m[1]), Number(m[2]) - 1, Number(m[3]));
+              if (!isNaN(d.getTime())) return d;
+            }
+            return null;
+          }
+
+          function toDayKey(d) {
+            const y = d.getFullYear();
+            const m = String(d.getMonth() + 1).padStart(2, "0");
+            const day = String(d.getDate()).padStart(2, "0");
+            return y + "-" + m + "-" + day;
+          }
+
+          function buildTimeline(items) {
+            const map = new Map();
+            for (const a of items) {
+              const d = getArticleDate(a);
+              if (!d) continue;
+              const k = toDayKey(d);
+              map.set(k, (map.get(k) || 0) + 1);
+            }
+            const keys = Array.from(map.keys()).sort();
+            return { labels: keys, values: keys.map(k => map.get(k) || 0) };
+          }
+
+          function buildSources(items) {
+            const map = new Map();
+            for (const a of items) {
+              const s = (a && (a.source || a.source_name || a.publisher || a.feed || a.domain)) ? String(a.source || a.source_name || a.publisher || a.feed || a.domain) : "unknown";
+              const key = s.trim() || "unknown";
+              map.set(key, (map.get(key) || 0) + 1);
+            }
+            const pairs = Array.from(map.entries()).sort((a, b) => b[1] - a[1]);
+            const top = pairs.slice(0, 10);
+            const rest = pairs.slice(10).reduce((acc, p) => acc + p[1], 0);
+            const labels = top.map(p => p[0]);
+            const values = top.map(p => p[1]);
+            if (rest > 0) { labels.push("other"); values.push(rest); }
+            return { labels, values };
+          }
+
+          function palette(n) {
+            const base = [
+              "rgba(51,214,197,.86)",
+              "rgba(25,167,195,.78)",
+              "rgba(246,200,76,.86)",
+              "rgba(120,162,255,.78)",
+              "rgba(255,91,110,.74)",
+              "rgba(160,118,255,.70)",
+              "rgba(95,222,132,.70)",
+              "rgba(255,154,74,.70)",
+              "rgba(226,93,255,.62)",
+              "rgba(233,238,251,.46)"
+            ];
+            const out = [];
+            for (let i = 0; i < n; i++) out.push(base[i % base.length]);
+            return out;
+          }
+
+          function chartDefaults() {
+            return {
+              color: "rgba(233,238,251,.78)",
+              borderColor: "rgba(150,190,255,.14)",
+              font: { family: '"Pretendard Variable","Pretendard",system-ui,-apple-system,Segoe UI,sans-serif', size: 12 },
+              animation: reducedMotion ? false : { duration: 650, easing: "easeOutQuart" }
+            };
+          }
+
+          if (!window.Chart) return;
+
+          Chart.defaults.maintainAspectRatio = false;
+          Chart.defaults.responsive = true;
+          Chart.defaults.plugins.legend.labels.boxWidth = 10;
+          Chart.defaults.plugins.legend.labels.boxHeight = 10;
+          Chart.defaults.plugins.legend.labels.usePointStyle = true;
+
+          const defaults = chartDefaults();
+          Chart.defaults.color = defaults.color;
+          Chart.defaults.borderColor = defaults.borderColor;
+          Chart.defaults.font = defaults.font;
+          Chart.defaults.animation = defaults.animation;
+
+          const entityPairs = normalizeEntityPairs(entityCountsRaw)
+            .filter(p => p[0] && Number.isFinite(p[1]))
+            .sort((a, b) => b[1] - a[1])
+            .slice(0, 12);
+
+          const timeline = buildTimeline(articles);
+          const sources = buildSources(articles);
+
+          // 1. Entity Distribution
+          const entityCanvas = document.getElementById("chartEntities");
+          if (entityCanvas && entityPairs.length) {
+            const labels = entityPairs.map(p => p[0]);
+            const values = entityPairs.map(p => p[1]);
+            new Chart(entityCanvas.getContext("2d"), {
+              type: "bar",
+              data: {
+                labels,
+                datasets: [{
+                  label: "count",
+                  data: values,
+                  backgroundColor: "rgba(51,214,197,.35)",
+                  borderColor: "rgba(51,214,197,.72)",
+                  borderWidth: 1.2,
+                  borderRadius: 10,
+                  maxBarThickness: 44
+                }]
+              },
+              options: {
+                plugins: {
+                  legend: { display: false },
+                  tooltip: {
+                    backgroundColor: "rgba(10,16,30,.92)",
+                    borderColor: "rgba(150,190,255,.20)",
+                    borderWidth: 1,
+                    titleColor: "rgba(233,238,251,.92)",
+                    bodyColor: "rgba(233,238,251,.84)"
+                  }
+                },
+                scales: {
+                  x: { grid: { display: false }, ticks: { color: "rgba(233,238,251,.68)" } },
+                  y: { beginAtZero: true, grid: { color: "rgba(150,190,255,.10)" }, ticks: { color: "rgba(233,238,251,.64)" } }
+                }
+              }
+            });
+          }
+
+          // 2. Timeline
+          const timelineCanvas = document.getElementById("chartTimeline");
+          if (timelineCanvas && timeline.labels.length) {
+            new Chart(timelineCanvas.getContext("2d"), {
+              type: "line",
+              data: {
+                labels: timeline.labels,
+                datasets: [{
+                  label: "articles/day",
+                  data: timeline.values,
+                  tension: 0.28,
+                  fill: true,
+                  borderColor: "rgba(246,200,76,.84)",
+                  backgroundColor: "rgba(246,200,76,.12)",
+                  pointRadius: 2.8,
+                  pointHoverRadius: 4.2,
+                  pointBackgroundColor: "rgba(246,200,76,.84)",
+                  pointBorderColor: "rgba(10,16,30,.92)",
+                  pointBorderWidth: 1.2
+                }]
+              },
+              options: {
+                plugins: {
+                  legend: { display: false },
+                  tooltip: { backgroundColor: "rgba(10,16,30,.92)", borderColor: "rgba(150,190,255,.20)", borderWidth: 1 }
+                },
+                scales: {
+                  x: { grid: { display: false }, ticks: { color: "rgba(233,238,251,.68)", maxRotation: 0, autoSkip: true, maxTicksLimit: 9 } },
+                  y: { beginAtZero: true, grid: { color: "rgba(150,190,255,.10)" }, ticks: { color: "rgba(233,238,251,.64)" } }
+                }
+              }
+            });
+          }
+
+          // 3. Source Distribution
+          const sourcesCanvas = document.getElementById("chartSources");
+          if (sourcesCanvas && sources.labels.length) {
+            const colors = palette(sources.labels.length);
+            new Chart(sourcesCanvas.getContext("2d"), {
+              type: "doughnut",
+              data: {
+                labels: sources.labels,
+                datasets: [{
+                  label: "articles",
+                  data: sources.values,
+                  backgroundColor: colors.map(c => c.replace(")", ", .24)").replace("rgba", "rgba")),
+                  borderColor: colors.map(c => c.replace(")", ", .80)").replace("rgba", "rgba")),
+                  borderWidth: 1.1,
+                  hoverOffset: 6
+                }]
+              },
+              options: {
+                cutout: "62%",
+                plugins: {
+                  legend: { position: "bottom", labels: { color: "rgba(233,238,251,.72)", padding: 14 } },
+                  tooltip: { backgroundColor: "rgba(10,16,30,.92)", borderColor: "rgba(150,190,255,.20)", borderWidth: 1 }
+                }
+              }
+            });
+          }
+
+          // 4. Data Freshness
+          function buildFreshness(items) {
+            const lagBuckets = { "0-1h": 0, "1-6h": 0, "6-24h": 0, "1-3d": 0, "3-7d": 0, "7d+": 0 };
+            for (const a of items) {
+              const pubStr = a && (a.published_at || a.published);
+              const collStr = a && a.collected_at;
+              if (!pubStr || !collStr) continue;
+              const pubDate = new Date(String(pubStr));
+              const collDate = new Date(String(collStr));
+              if (isNaN(pubDate.getTime()) || isNaN(collDate.getTime())) continue;
+              const lagMs = collDate.getTime() - pubDate.getTime();
+              const lagHours = lagMs / (1000 * 60 * 60);
+              if (lagHours < 1) lagBuckets["0-1h"]++;
+              else if (lagHours < 6) lagBuckets["1-6h"]++;
+              else if (lagHours < 24) lagBuckets["6-24h"]++;
+              else if (lagHours < 72) lagBuckets["1-3d"]++;
+              else if (lagHours < 168) lagBuckets["3-7d"]++;
+              else lagBuckets["7d+"]++;
+            }
+            return { labels: Object.keys(lagBuckets), values: Object.values(lagBuckets) };
+          }
+
+          const freshnessData = buildFreshness(articles);
+          const freshnessCanvas = document.getElementById("chartFreshness");
+          if (freshnessCanvas && freshnessData.labels.length) {
+            new Chart(freshnessCanvas.getContext("2d"), {
+              type: "bar",
+              data: {
+                labels: freshnessData.labels,
+                datasets: [{
+                  label: "articles",
+                  data: freshnessData.values,
+                  backgroundColor: "rgba(120,162,255,.35)",
+                  borderColor: "rgba(120,162,255,.72)",
+                  borderWidth: 1.2,
+                  borderRadius: 8,
+                  maxBarThickness: 44
+                }]
+              },
+              options: {
+                plugins: {
+                  legend: { display: false },
+                  tooltip: { backgroundColor: "rgba(10,16,30,.92)", borderColor: "rgba(150,190,255,.20)", borderWidth: 1 }
+                },
+                scales: {
+                  x: { grid: { display: false }, ticks: { color: "rgba(233,238,251,.68)" } },
+                  y: { beginAtZero: true, grid: { color: "rgba(150,190,255,.10)" }, ticks: { color: "rgba(233,238,251,.64)" } }
+                }
+              }
+            });
+          }
+
+          // 5. Entity Extraction Rate
+          function buildEntityRate(items) {
+            let withEntities = 0, withoutEntities = 0;
+            for (const a of items) {
+              const ents = a && a.matched_entities;
+              if (ents && Object.keys(ents).length > 0) withEntities++;
+              else withoutEntities++;
+            }
+            return { with: withEntities, without: withoutEntities };
+          }
+
+          const entityRateData = buildEntityRate(articles);
+          const entityRateCanvas = document.getElementById("chartEntityRate");
+          if (entityRateCanvas) {
+            const total = entityRateData.with + entityRateData.without;
+            const pct = total > 0 ? Math.round((entityRateData.with / total) * 100) : 0;
+            const plugin = {
+              id: "textCenter",
+              beforeDatasetsDraw(c) {
+                const { width, height } = c.chartArea;
+                const x = c.chartArea.left + width / 2;
+                const y = c.chartArea.top + height / 2;
+                c.ctx.save();
+                c.ctx.font = "bold 24px sans-serif";
+                c.ctx.fillStyle = "rgba(233,238,251,.8)";
+                c.ctx.textAlign = "center";
+                c.ctx.textBaseline = "middle";
+                c.ctx.fillText(pct + "%", x, y);
+                c.ctx.restore();
+              }
+            };
+            new Chart(entityRateCanvas.getContext("2d"), {
+              type: "doughnut",
+              data: {
+                labels: ["With entities", "Without entities"],
+                datasets: [{
+                  data: [entityRateData.with, entityRateData.without],
+                  backgroundColor: ["rgba(95,222,132,.35)", "rgba(255,91,110,.35)"],
+                  borderColor: ["rgba(95,222,132,.80)", "rgba(255,91,110,.80)"],
+                  borderWidth: 1.2
+                }]
+              },
+              options: {
+                cutout: "62%",
+                plugins: {
+                  legend: { position: "bottom", labels: { color: "rgba(233,238,251,.72)", padding: 14 } },
+                  tooltip: { backgroundColor: "rgba(10,16,30,.92)", borderColor: "rgba(150,190,255,.20)", borderWidth: 1 }
+                }
+              },
+              plugins: [plugin]
+            });
+          }
+
+          // 6. Source Health
+          function buildSourceHealth(items) {
+            const map = new Map();
+            for (const a of items) {
+              const s = (a && (a.source || a.source_name || a.publisher || a.feed || a.domain)) ? String(a.source || a.source_name || a.publisher || a.feed || a.domain) : "unknown";
+              const key = s.trim() || "unknown";
+              map.set(key, (map.get(key) || 0) + 1);
+            }
+            const pairs = Array.from(map.entries()).sort((a, b) => b[1] - a[1]);
+            return { labels: pairs.map(p => p[0]), values: pairs.map(p => p[1]) };
+          }
+
+          const sourceHealthData = buildSourceHealth(articles);
+          const sourceHealthCanvas = document.getElementById("chartSourceHealth");
+          if (sourceHealthCanvas && sourceHealthData.labels.length) {
+            const colors = palette(sourceHealthData.labels.length);
+            new Chart(sourceHealthCanvas.getContext("2d"), {
+              type: "bar",
+              data: {
+                labels: sourceHealthData.labels,
+                datasets: [{
+                  label: "articles",
+                  data: sourceHealthData.values,
+                  backgroundColor: colors.map(c => c.replace(")", ", .35)").replace("rgba", "rgba")),
+                  borderColor: colors.map(c => c.replace(")", ", .80)").replace("rgba", "rgba")),
+                  borderWidth: 1.2,
+                  borderRadius: 8,
+                  maxBarThickness: 44
+                }]
+              },
+              options: {
+                indexAxis: "y",
+                plugins: {
+                  legend: { display: false },
+                  tooltip: { backgroundColor: "rgba(10,16,30,.92)", borderColor: "rgba(150,190,255,.20)", borderWidth: 1 }
+                },
+                scales: {
+                  x: { beginAtZero: true, grid: { color: "rgba(150,190,255,.10)" }, ticks: { color: "rgba(233,238,251,.64)" } },
+                  y: { grid: { display: false }, ticks: { color: "rgba(233,238,251,.68)" } }
+                }
+              }
+            });
+          }
+
+          // CSV Export
+          function exportCSV() {
+            const data = articles;
+            if (!data.length) { alert("No data to export"); return; }
+            const BOM = "\uFEFF";
+            const headers = ["Title","Source","Published","Summary","Entities","Link"];
+            const rows = [headers.join(",")];
+            for (const a of data) {
+              let ents = "";
+              if (a.matched_entities) {
+                ents = Object.entries(a.matched_entities).map(e => e[0] + ": " + (Array.isArray(e[1]) ? e[1].join(", ") : e[1])).join("; ");
+              }
+              let pub = a.published_at || a.published || "";
+              if (pub) { const d = new Date(String(pub)); if (!isNaN(d.getTime())) pub = d.toISOString().slice(0,10); }
+              rows.push([
+                csvEsc(a.title || ""), csvEsc(a.source || ""), csvEsc(String(pub)),
+                csvEsc(a.summary || ""), csvEsc(ents), csvEsc(a.link || "")
+              ].join(","));
+            }
+            const csv = BOM + rows.join("\n");
+            const blob = new Blob([csv], { type: "text/csv;charset=utf-8" });
+            const url = URL.createObjectURL(blob);
+            const el = document.createElement("a");
+            const title = document.querySelector(".brand-title");
+            const catName = title ? title.textContent.trim().replace(/\s+/g, "_") : "report";
+            const dateStr = new Date().toISOString().slice(0,10);
+            el.href = url; el.download = catName + "_report_" + dateStr + ".csv";
+            document.body.appendChild(el); el.click(); document.body.removeChild(el);
+            URL.revokeObjectURL(url);
+          }
+
+          function csvEsc(s) {
+            if (s == null) return '""';
+            s = String(s);
+            if (s.indexOf(",") >= 0 || s.indexOf('"') >= 0 || s.indexOf("\n") >= 0)
+              return '"' + s.replace(/"/g, '""') + '"';
+            return s;
+          }
+
+          const exportBtn = document.getElementById("export-csv");
+          if (exportBtn) {
+            exportBtn.addEventListener("click", exportCSV);
+          }
+
+          // Entity pill click handler
+          document.querySelectorAll(".entity-pill").forEach(pill => {
+            pill.addEventListener("click", function() {
+              const entity = this.dataset.entity;
+              const cards = document.querySelectorAll("#articles-list .card");
+              cards.forEach(card => {
+                const cardEntities = JSON.parse(card.dataset.entities || "[]");
+                if (entity && !cardEntities.includes(entity)) {
+                  card.style.opacity = "0.3";
+                } else {
+                  card.style.opacity = "1";
+                }
+              });
+            });
+            pill.addEventListener("keydown", function(e) {
+              if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault();
+                this.click();
+              }
+            });
+          });
+        })();
+      </script>
+    </main>
+  </body>
+</html>

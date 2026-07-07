@@ -1,6 +1,6 @@
 {
   "category": "food",
-  "generated_at": "2026-07-06T07:04:38.590621+00:00",
+  "generated_at": "2026-07-07T06:39:05.511967+00:00",
   "summary": {
     "total_sources": 12,
     "tracked_sources": 3,
@@ -22,11 +22,11 @@
     "product_alias_candidate_count": 0,
     "brand_alias_candidate_count": 2,
     "manufacturer_alias_candidate_count": 0,
-    "match_coverage_article_count": 49,
-    "match_coverage_matched_count": 42,
-    "match_coverage_unmatched_count": 7,
-    "match_coverage_rate": 85.7,
-    "match_coverage_review_item_count": 7,
+    "match_coverage_article_count": 46,
+    "match_coverage_matched_count": 40,
+    "match_coverage_unmatched_count": 6,
+    "match_coverage_rate": 87.0,
+    "match_coverage_review_item_count": 6,
     "fresh_food_events": 0,
     "stale_food_events": 0,
     "undated_food_events": 0,
@@ -205,12 +205,12 @@
       "freshness_sla_days": null,
       "quiet_window_days": null,
       "status": "not_tracked",
-      "article_count": 35,
-      "latest_event_at": "2026-07-06T04:04:35+00:00",
-      "latest_collected_at": "2026-07-06T07:04:36.963268+00:00",
-      "age_days": 0.13,
-      "latest_title": "Cyclospora cases surge to nearly 600 in Michigan",
-      "latest_url": "https://www.foodsafetynews.com/2026/07/cyclospora-outbreak-surges-in-michigan",
+      "article_count": 33,
+      "latest_event_at": "2026-07-07T04:05:04+00:00",
+      "latest_collected_at": "2026-07-07T06:39:04.005880+00:00",
+      "age_days": 0.11,
+      "latest_title": "French Salmonella outbreak linked to Polish eggs",
+      "latest_url": "https://www.foodsafetynews.com/2026/07/french-salmonella-outbreak-linked-to-polish-eggs",
       "latest_food_event_key": "",
       "latest_notice_date": "",
       "latest_recall_status": "",
@@ -236,12 +236,12 @@
       "freshness_sla_days": null,
       "quiet_window_days": null,
       "status": "not_tracked",
-      "article_count": 14,
-      "latest_event_at": "2026-07-02T16:35:00+00:00",
-      "latest_collected_at": "2026-07-06T07:04:36.963268+00:00",
-      "age_days": 3.6,
-      "latest_title": "FDA adds caffeine labeling to regulatory priority list",
-      "latest_url": "https://www.fooddive.com/news/caffeine-labeling-fda-guidance-celsius-alani-nu/824355",
+      "article_count": 13,
+      "latest_event_at": "2026-07-06T15:35:00+00:00",
+      "latest_collected_at": "2026-07-07T06:39:04.005880+00:00",
+      "age_days": 0.63,
+      "latest_title": "Food giants defeat lawsuit calling ultraprocessed products addictive",
+      "latest_url": "https://www.fooddive.com/news/food-giants-ultraprocessed-lawsuit-dismissed/824472",
       "latest_food_event_key": "",
       "latest_notice_date": "",
       "latest_recall_status": "",
@@ -418,6 +418,18 @@
   "alias_candidates": [
     {
       "alias_type": "brand",
+      "canonical": "Aldi",
+      "normalized": "aldi",
+      "variants": [
+        "aldi"
+      ],
+      "count": 1,
+      "example_urls": [
+        "https://www.foodsafetynews.com/2026/07/aldi-kimchi-recalled-because-of-undeclared-fish"
+      ]
+    },
+    {
+      "alias_type": "brand",
       "canonical": "Kraft Heinz",
       "normalized": "kraftheinz",
       "variants": [
@@ -426,19 +438,6 @@
       "count": 1,
       "example_urls": [
         "https://www.fooddive.com/news/food-beverage-america-250-product-launches/824333"
-      ]
-    },
-    {
-      "alias_type": "brand",
-      "canonical": "PepsiCo",
-      "normalized": "pepsico",
-      "variants": [
-        "mars",
-        "pepsico"
-      ],
-      "count": 2,
-      "example_urls": [
-        "https://www.fooddive.com/news/big-food-companies-tik-tok-shop/823959"
       ]
     }
   ],
@@ -468,7 +467,7 @@
       "title": "General Mills plans $3B in cost cuts to fight consumer spending slump",
       "url": "https://www.fooddive.com/news/general-mills-3b-cost-cuts-consumer-inflation/824321",
       "published_at": "2026-07-02T13:48:00+00:00",
-      "collected_at": "2026-07-06T07:04:36.963268+00:00",
+      "collected_at": "2026-07-07T06:39:04.005880+00:00",
       "summary_excerpt": "The Cheerios maker is focusing on improving the “remarkability” of its brands as the company acknowledges consumer sentiment is unlikely to recover anytime soon.",
       "recommended_action": "review Product/FoodType/Brand keyword coverage"
     },
@@ -482,7 +481,7 @@
       "title": "Cyclospora cases surge to nearly 600 in Michigan",
       "url": "https://www.foodsafetynews.com/2026/07/cyclospora-outbreak-surges-in-michigan",
       "published_at": "2026-07-06T04:04:35+00:00",
-      "collected_at": "2026-07-06T07:04:36.963268+00:00",
+      "collected_at": "2026-07-07T06:39:04.005880+00:00",
       "summary_excerpt": "The CDC is tracking a summer surge of Cyclospora infections. As of its June 18 surveillance update , CDC has logged 145 cases acquired in the United States across 17 states, with illness onsets from May 1 through June 16. Twenty people have been hospitalized; ",
       "recommended_action": "review Product/FoodType/Brand keyword coverage"
     },
@@ -507,24 +506,10 @@
       "source_type": "rss",
       "trust_tier": "T3_professional",
       "event_model": "editorial_coverage",
-      "title": "Publisher’s Platform: Mr. Abbott, You Are Not Going to Jail After All",
-      "url": "https://www.foodsafetynews.com/2026/06/publishers-platform-mr-abbott-you-are-not-going-to-jail-after-all",
-      "published_at": "2026-06-29T15:51:17+00:00",
-      "collected_at": "2026-07-01T07:19:39.735917+00:00",
-      "summary_excerpt": "Four years ago, I wrote two posts with titles I meant: “Mr. Abbott, you are going to face criminal sanctions” and, a few weeks earlier, “Mr. Abbott, you are going to jail for manufacturing tainted infant formula.”",
-      "recommended_action": "review Product/FoodType/Brand keyword coverage"
-    },
-    {
-      "reason": "market_or_editorial_unclassified",
-      "priority": "medium",
-      "source": "Food Safety News",
-      "source_type": "rss",
-      "trust_tier": "T3_professional",
-      "event_model": "editorial_coverage",
       "title": "Publisher’s Platform: The Safest Fourth of July in 250 Years",
       "url": "https://www.foodsafetynews.com/2026/07/publishers-platform-the-safest-fourth-of-july-in-250-years",
       "published_at": "2026-07-04T11:26:00+00:00",
-      "collected_at": "2026-07-06T07:04:36.963268+00:00",
+      "collected_at": "2026-07-07T06:39:04.005880+00:00",
       "summary_excerpt": "On the 250th birthday of a country that keeps, against long odds, getting better at feeding itself — that dream feels a little less far off than it used to. Happy Independence Day. Eat well and eat safely. We have earned both.",
       "recommended_action": "review Product/FoodType/Brand keyword coverage"
     },
@@ -538,7 +523,7 @@
       "title": "Sunday Edition: In the spotlight",
       "url": "https://www.foodsafetynews.com/2026/07/sunday-edition-in-the-spotlight",
       "published_at": "2026-07-05T12:00:09+00:00",
-      "collected_at": "2026-07-06T07:04:36.963268+00:00",
+      "collected_at": "2026-07-07T06:39:04.005880+00:00",
       "summary_excerpt": "Here are some highlights and updates related to the great work the FSN team does each week.",
       "recommended_action": "review Product/FoodType/Brand keyword coverage"
     }
