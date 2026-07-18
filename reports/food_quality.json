@@ -1,6 +1,6 @@
 {
   "category": "food",
-  "generated_at": "2026-07-17T05:34:32.014809+00:00",
+  "generated_at": "2026-07-18T05:17:58.061188+00:00",
   "summary": {
     "total_sources": 12,
     "tracked_sources": 3,
@@ -22,11 +22,11 @@
     "product_alias_candidate_count": 0,
     "brand_alias_candidate_count": 1,
     "manufacturer_alias_candidate_count": 0,
-    "match_coverage_article_count": 45,
-    "match_coverage_matched_count": 36,
-    "match_coverage_unmatched_count": 9,
-    "match_coverage_rate": 80.0,
-    "match_coverage_review_item_count": 9,
+    "match_coverage_article_count": 46,
+    "match_coverage_matched_count": 38,
+    "match_coverage_unmatched_count": 8,
+    "match_coverage_rate": 82.6,
+    "match_coverage_review_item_count": 8,
     "fresh_food_events": 0,
     "stale_food_events": 0,
     "undated_food_events": 0,
@@ -206,11 +206,11 @@
       "quiet_window_days": null,
       "status": "not_tracked",
       "article_count": 28,
-      "latest_event_at": "2026-07-17T04:06:28+00:00",
-      "latest_collected_at": "2026-07-17T05:34:30.468471+00:00",
-      "age_days": 0.06,
-      "latest_title": "Counterfeit tequila prompts Mexican health alert",
-      "latest_url": "https://www.foodsafetynews.com/2026/07/counterfeit-tequila-prompts-mexican-health-alert",
+      "latest_event_at": "2026-07-17T23:46:21+00:00",
+      "latest_collected_at": "2026-07-18T05:17:56.529186+00:00",
+      "age_days": 0.23,
+      "latest_title": "Company admits its lettuce is cause of Cyclospora outbreak",
+      "latest_url": "https://www.foodsafetynews.com/2026/07/company-admits-its-lettuce-is-cause-of-cyclospora-outbreak",
       "latest_food_event_key": "",
       "latest_notice_date": "",
       "latest_recall_status": "",
@@ -236,12 +236,12 @@
       "freshness_sla_days": null,
       "quiet_window_days": null,
       "status": "not_tracked",
-      "article_count": 17,
-      "latest_event_at": "2026-07-16T16:47:41+00:00",
-      "latest_collected_at": "2026-07-17T05:34:30.468471+00:00",
-      "age_days": 0.53,
-      "latest_title": "ADM to scale egg proteins with precision fermentation",
-      "latest_url": "https://www.fooddive.com/news/adm-every-ovopro-eggs-precision-fermentation-protein-ingredients/825437",
+      "article_count": 18,
+      "latest_event_at": "2026-07-17T15:36:00+00:00",
+      "latest_collected_at": "2026-07-18T05:17:56.529186+00:00",
+      "age_days": 0.57,
+      "latest_title": "Ransomware attack forces Coca-Cola to suspend US production at dairy unit",
+      "latest_url": "https://www.fooddive.com/news/ransomware-attack-coca-cola-suspend-production-dairy/825551",
       "latest_food_event_key": "",
       "latest_notice_date": "",
       "latest_recall_status": "",
@@ -423,9 +423,10 @@
       "variants": [
         "pepsico"
       ],
-      "count": 1,
+      "count": 2,
       "example_urls": [
-        "https://www.fooddive.com/news/pepsico-cfo-says-tariff-refunds-will-help-offset-inflation/825070"
+        "https://www.fooddive.com/news/pepsico-cfo-says-tariff-refunds-will-help-offset-inflation/825070",
+        "https://www.fooddive.com/news/pepsico-improves-sustainable-sourcing-delays-emissions-reporting/825276"
       ]
     }
   ],
@@ -497,7 +498,7 @@
       "title": "Infections from Cyclospora parasite continue sharp increases",
       "url": "https://www.foodsafetynews.com/2026/07/infections-from-cyclospora-parasite-continue-sharp-increases",
       "published_at": "2026-07-16T23:09:13+00:00",
-      "collected_at": "2026-07-17T05:34:30.468471+00:00",
+      "collected_at": "2026-07-18T05:17:56.529186+00:00",
       "summary_excerpt": "One public health official says the confirmed patients are probably the tip of the iceberg",
       "recommended_action": "review Product/FoodType/Brand keyword coverage"
     },
@@ -511,22 +512,8 @@
       "title": "Michigan again sees significant increase in Cyclospora infections",
       "url": "https://www.foodsafetynews.com/2026/07/michigan-again-sees-significant-increase-in-cyclospora-infections",
       "published_at": "2026-07-15T23:48:15+00:00",
-      "collected_at": "2026-07-17T05:34:30.468471+00:00",
+      "collected_at": "2026-07-18T05:17:56.529186+00:00",
       "summary_excerpt": "Public health officials have not weighed in on why there are so many infections this year.",
-      "recommended_action": "review Product/FoodType/Brand keyword coverage"
-    },
-    {
-      "reason": "market_or_editorial_unclassified",
-      "priority": "medium",
-      "source": "Food Safety News",
-      "source_type": "rss",
-      "trust_tier": "T3_professional",
-      "event_model": "editorial_coverage",
-      "title": "Publisher's Platform: They stopped counting, and now they say they can’t see",
-      "url": "https://www.foodsafetynews.com/2026/07/publishers-platform-they-stopped-counting-and-now-they-say-they-cant-see",
-      "published_at": "2026-07-10T23:06:19+00:00",
-      "collected_at": "2026-07-14T05:22:58.328266+00:00",
-      "summary_excerpt": "If you want to make foodborne disease disappear, don’t investigate foodborne disease. That’s not a slippery-slope warning anymore. As of July 1, 2025, it’s the operating plan.",
       "recommended_action": "review Product/FoodType/Brand keyword coverage"
     },
     {
