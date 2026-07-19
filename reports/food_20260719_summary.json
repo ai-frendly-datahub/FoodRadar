@@ -1,0 +1,793 @@
+{
+  "date": "2026-07-19",
+  "category": "food",
+  "article_count": 48,
+  "source_count": 2,
+  "matched_count": 40,
+  "top_entities": [
+    {
+      "name": "FoodGeneral",
+      "count": 65
+    },
+    {
+      "name": "SafetyIssue",
+      "count": 35
+    },
+    {
+      "name": "FoodType",
+      "count": 22
+    },
+    {
+      "name": "Brand",
+      "count": 4
+    },
+    {
+      "name": "BrandCanonical",
+      "count": 2
+    }
+  ],
+  "sources": {
+    "Food Safety News": 30,
+    "Food Dive": 18
+  },
+  "generated_at": "2026-07-19T14:43:50.296026+09:00",
+  "articles": [
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "FDA confirms that Taylor Farms lettuce is contaminated with parasite behind massive outbreak",
+        "source_url": "https://www.foodsafetynews.com/2026/07/fda-confirms-that-taylor-farms-lettuce-is-contaminated-with-parasite-behind-massive-outbreak/",
+        "published_at": "2026-07-19T01:40:01+00:00",
+        "summary": "The recalled lettuce was distributed to Walmart stores in at least 15 states, as well as food service operations in 27 states."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Publisher’s Platform: The Largest Foodborne Outbreaks of the Last Fifty Years. Now Count the Sick with Cyclospora in Michigan.",
+        "source_url": "https://www.foodsafetynews.com/2026/07/publishers-platform-the-largest-foodborne-outbreaks-of-the-last-fifty-years-now-count-the-sick-with-cyclospora-in-michigan/",
+        "published_at": "2026-07-18T15:41:37+00:00",
+        "summary": "Fifty years of outbreaks and the pattern does not move. We find out how big it was afterward, from a journal article, years later, when it is too late for the rule to matter and too late for the family."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Company admits its lettuce is cause of Cyclospora outbreak",
+        "source_url": "https://www.foodsafetynews.com/2026/07/company-admits-its-lettuce-is-cause-of-cyclospora-outbreak/",
+        "published_at": "2026-07-17T23:46:21+00:00",
+        "summary": "The FDA and CDC say the illnesses in the outbreak — reported from Indiana, Kentucky, Michigan, Ohio, and West Virginia — represent only a portion of Cyclospora infections currently under investigation and involve only one of several outbreaks."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "Ransomware attack forces Coca-Cola to suspend US production at dairy unit",
+        "source_url": "https://www.fooddive.com/news/ransomware-attack-coca-cola-suspend-production-dairy/825551/",
+        "published_at": "2026-07-17T15:36:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/8KMQQx9oFU_XqX30l7XnnSFMow2MEfissHE8kTg-Z8E/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9TY3JlZW5zaG90XzIwMjMtMDUtMDlfMTI0NzQ2LnBuZw==.webp\" /></div></figure><p>The beverage company is still working to determine the full scope of the breach at its Fairlife business.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "PepsiCo improves sustainable sourcing, delays emissions reporting",
+        "source_url": "https://www.fooddive.com/news/pepsico-improves-sustainable-sourcing-delays-emissions-reporting/825276/",
+        "published_at": "2026-07-17T13:49:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/0lcIMvaQDIK9K2IcQgwLaLyGZU0q3PVlDNtBUVLHOk0/g:nowe:0:251/c:2500:1412/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMjQwMTYyMTEyLmpwZw==.webp\" /></div></figure><p>The company adjusted its environmental targets last year “to what we have confidence we can achieve.”</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "Leftovers: Welch’s takes on Uncrustables | Campbell’s launches high-protein soups",
+        "source_url": "https://www.fooddive.com/news/welchs-pbj-sandwich-campbells-protein-soup-cann-zero-thc/825524/",
+        "published_at": "2026-07-17T13:34:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/B-2j715mWL52ChRip-DoiReAcaKWVgFpl__bfvKBIbE/g:nowe:243:70/c:2233:1261/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS8zLVVQX1VQREFURUQuanBn.webp\" /></div></figure><p>The juice and jelly brand is launching a refrigerated PB&J, while Cann removes THC for a new mood-boosting drink.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Counterfeit tequila prompts Mexican health alert",
+        "source_url": "https://www.foodsafetynews.com/2026/07/counterfeit-tequila-prompts-mexican-health-alert/",
+        "published_at": "2026-07-17T04:06:28+00:00",
+        "summary": "<p>Mexican authorities have warned about an adulterated brand of tequila as investigations continue into several tainted alcohol deaths.</p><p>La Comisión Federal para la Protección contra Riesgos Sanitarios (COFEPRIS) said the health alert relates to Gran Centenario branded reposado tequila 950 mL with lot number L 061</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Haaland's raw milk habit highlights a public health challenge",
+        "source_url": "https://www.foodsafetynews.com/2026/07/haalands-raw-milk-habit-highlights-a-public-health-challenge/",
+        "published_at": "2026-07-17T04:04:46+00:00",
+        "summary": "Erling Haaland says raw milk helps fuel his performance. Food safety experts warn the risks likely outweigh the hype."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "EU countries struggling with food safety culture controls",
+        "source_url": "https://www.foodsafetynews.com/2026/07/eu-countries-struggling-with-food-safety-culture-controls/",
+        "published_at": "2026-07-17T04:03:51+00:00",
+        "summary": "<p>The majority of countries are finding implementing food safety culture controls difficult, according to a European Commission survey.  </p><p>The report looked at the state of food safety culture controls in EU member states. All countries responded to the questionnaire sent in 2025. Food safety culture requirements were put into</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Imported seafood, mushrooms, canned food among products subject to increased FDA scrutiny",
+        "source_url": "https://www.foodsafetynews.com/2026/07/imported-seafood-mushrooms-canned-food-among-products-subject-to-increased-fda-scrutiny/",
+        "published_at": "2026-07-17T04:01:58+00:00",
+        "summary": "<p>The Food and Drug Administration uses import alerts to enforce U.S. food safety regulations for food from foreign countries. The agency updates and modifies the alerts as needed.</p><p>Recent modifications to FDA’s import alerts, as posted by the agency, are listed below.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Infections from Cyclospora parasite continue sharp increases",
+        "source_url": "https://www.foodsafetynews.com/2026/07/infections-from-cyclospora-parasite-continue-sharp-increases/",
+        "published_at": "2026-07-16T23:09:13+00:00",
+        "summary": "One public health official says the confirmed patients are probably the tip of the iceberg"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "ADM to scale egg proteins with precision fermentation",
+        "source_url": "https://www.fooddive.com/news/adm-every-ovopro-eggs-precision-fermentation-protein-ingredients/825437/",
+        "published_at": "2026-07-16T16:47:41+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/2SePrHXaA7rgaZgbS1_GYv_rj0cDSVySKaMArQ3TnB8/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS91bm5hbWVkX2g2U1ptQVkucG5n.webp\" /></div></figure><p>The ingredients giant is collaborating with startup Every’s OvoPro to give food companies innovative new protein options.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "The beverages that scored in the World Cup",
+        "source_url": "https://www.fooddive.com/news/world-cup-beverage-sales-winners-data-circana/825403/",
+        "published_at": "2026-07-16T14:10:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/P8hqF3IvI9QLPqKDRmah5Sl0RjsuKtvDJF6gVxiNl9g/g:nowe:0:104/c:2500:1412/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMjgwNzgwMzYyLmpwZw==.webp\" /></div></figure><p>Premixed cocktails and nonalcoholic beverages are seeing double-digit percentage sales increases, while domestic beer is facing only a moderate boost.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "Marzetti taps former Unilever exec as supply chain head",
+        "source_url": "https://www.fooddive.com/news/marzetti-taps-schwan-supply-chain-head-unilever/825275/",
+        "published_at": "2026-07-16T13:33:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/GKIVmyOEVEZZMw4PvTQLjgHPWWzzzVUORkeswzsj5vU/g:nowe:0:55/c:2500:1412/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9CYWNoYW5zX0phcGFuZXNlX0JhcmJlY3VlX1NhdWNlLmpwZw==.webp\" /></div></figure><p>Mark Carter will oversee the specialty food maker's continued efforts to simplify its network and improve productivity.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Publisher's Platform: Sen. Klobuchar wants food safety programs the Administration cut put back",
+        "source_url": "https://www.foodsafetynews.com/2026/07/publishers-platform-sen-klobuchar-wants-food-safety-programs-the-administration-cut-put-back/",
+        "published_at": "2026-07-16T04:05:56+00:00",
+        "summary": "She’s right — and the cyclospora numbers are worse than her letter says."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Raw Farm LLC cheese found to be cause of E. coli outbreak",
+        "source_url": "https://www.foodsafetynews.com/2026/07/raw-farm-llc-cheese-found-to-be-cause-of-e-coli-outbreak/",
+        "published_at": "2026-07-16T04:04:31+00:00",
+        "summary": "<p>Federal officials are reporting that inspectors found unsanitary handling and other food safety issues at Raw Farm LLC, the dairy connected to an E. Coli O157 outbreak.</p><p>The outbreak sickened nine people across California, Texas and Florida.</p><p>According to an Executive Summary from the Food and Drug Administration, inspectors found</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Concerns raised over food poisoning rise in Vietnam",
+        "source_url": "https://www.foodsafetynews.com/2026/07/concerns-raised-over-food-poisoning-rise-in-vietnam/",
+        "published_at": "2026-07-16T04:03:12+00:00",
+        "summary": "In the first six months of 2026, Vietnam recorded 58 foodborne outbreaks an increase of 23 outbreaks compared to the same period in 2025."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Isle of Man to roll out food hygiene ratings in 2027",
+        "source_url": "https://www.foodsafetynews.com/2026/07/isle-of-man-to-roll-out-food-hygiene-ratings-in-2027/",
+        "published_at": "2026-07-16T04:01:10+00:00",
+        "summary": "<p>The Isle of Man has unveiled a food hygiene ratings system to give consumers greater confidence and encourage high standards.</p><p>The Department of Environment, Food and Agriculture's (DEFA) Food Hygiene Scheme will cover more than 300 cafés, restaurants, takeaways, and pubs that serve meals.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Salmonella outbreak reported in relation to July 4th event in Yakima",
+        "source_url": "https://www.foodsafetynews.com/2026/07/salmonella-outbreak-reported-in-relation-to-july-4th-event-in-yakima/",
+        "published_at": "2026-07-16T01:57:31+00:00",
+        "summary": "<p>The Yakima Health District in Washington is investigating 10 confirmed and suspected cases of Salmonella infection among individuals who reported eating food at the Fourth of July event hosted by Imperial’s Garden located at 4817 Lateral A Road, Wapato, WA 98951. </p><p>This event was not related to</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Rice balls recalled because of undeclared peanuts",
+        "source_url": "https://www.foodsafetynews.com/2026/07/rice-balls-recalled-because-of-undeclared-peanuts/",
+        "published_at": "2026-07-16T00:49:14+00:00",
+        "summary": "<p>Khong Guan Corporation is recalling specific lots of “Glutinous Rice Balls with Black Sesame Filling” because they may contain undeclared peanuts. </p><p>People who have an allergy or severe sensitivity to peanuts run the risk of serious or life-threatening allergic reactions if they consume these products.</p><p>Product</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Michigan again sees significant increase in Cyclospora infections",
+        "source_url": "https://www.foodsafetynews.com/2026/07/michigan-again-sees-significant-increase-in-cyclospora-infections/",
+        "published_at": "2026-07-15T23:48:15+00:00",
+        "summary": "Public health officials have not weighed in on why there are so many infections this year."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "Conagra’s new CEO ready to take ‘bold actions’ to turn around food giant",
+        "source_url": "https://www.fooddive.com/news/conagra-ceo-sales-snacking-inflation-slimjim-smucker/825313/",
+        "published_at": "2026-07-15T19:00:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/PHTRZPm3nMcBKYlyCHwawK42BW1zGFcqAdEMg0zKotU/g:nowe:0:612/c:3099:1751/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9JTUdfMTMzMl8xLWZvdG9yLTIwMjUwOTE1OTE2NDAuanBn.webp\" /></div></figure><p>John Brase, who recently joined from J.M. Smucker, told Food Dive he is “not happy” with the Slim Jim maker's performance and that divestitures of brands could be on the table.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "Defining ultraprocessed foods proves ‘challenging,’ FDA food head says",
+        "source_url": "https://www.fooddive.com/news/ultraprocessed-food-definition-upfs-challenging-fda/825297/",
+        "published_at": "2026-07-15T14:58:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/f5a4VRDXQg-SwH2yBDKHbtLeyVHpX8cemnSbe-t-6xU/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0xMjI3NzEwNDk4X0F5QktzVk0uanBn.webp\" /></div></figure><p>Donald Prater, acting deputy commissioner of food, said the Trump administration is still making the definition a “priority.”</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "General Mills plans supply chain revamp",
+        "source_url": "https://www.fooddive.com/news/general-mills-plans-supply-chain-revamp/825274/",
+        "published_at": "2026-07-15T13:41:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/6wxb4vT2WlHqdPaZshgeMl39xVnm6_vy94Sg8NlbTSo/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMjQ5ODAxMDU3LmpwZw==.webp\" /></div></figure><p>The upgrade, part of a $3 billion cost cutting effort, is critical because the company’s current network was built for a lower-volume era, executives said.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "Danone expands high-protein Silk line into yogurts, shakes",
+        "source_url": "https://www.fooddive.com/news/danone-high-protein-silk-line-enters-yogurt-shakes/824486/",
+        "published_at": "2026-07-15T13:00:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/VXmsI_-bOBob-UGAX_2fUSgnTO_Vry32X644EGXtHNU/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9TaWxrLVByb3RlaW4tbGluZXVwLURhbm9uZS1VU0FfM2F3dTFsQi5qcGc=.webp\" /></div></figure><p>The launch comes after early success for the brand’s milk line, underscoring interest among younger consumers in plant-based options loaded with the popular nutrient.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Finland signals end of Salmonella outbreak",
+        "source_url": "https://www.foodsafetynews.com/2026/07/finland-signals-end-of-salmonella-outbreak/",
+        "published_at": "2026-07-15T04:03:04+00:00",
+        "summary": "<p>Health officials in Finland have declared that a major Salmonella outbreak has ended.</p><p>More than 100 people fell sick in 11 countries as part of the <a href=\"https://www.foodsafetynews.com/2026/06/more-than-100-sick-in-european-salmonella-outbreak/\" rel=\"noreferrer\">multi-country outbreak</a> linked to alfalfa sprouted seeds from India.</p><p>In spring this year, Salmonella Bovismorbificans illnesses were detected in Finland. The cluster included</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "EU Commission reports potential fraud alerts for May",
+        "source_url": "https://www.foodsafetynews.com/2026/07/eu-commission-reports-potential-fraud-alerts-for-may/",
+        "published_at": "2026-07-15T04:01:36+00:00",
+        "summary": "Title: EU Commission reports potential fraud alerts for May\n\nURL Source: https://www.foodsafetynews.com/2026/07/eu-commission-reports-potential-fraud-alerts-for-may/\n\nPublished Time: 2026-07-15T04:01:36.000Z\n\nMarkdown Content:\nPlus DG Sante's 2025 and 2026 work\n\n![Image 1: EU Commission reports potential fraud alerts for May](https://storage.ghost.io/c/43/4e/434e508a-5e2f-4102-a53d-00bca10bb4bf/content/images/size/w30/2026/07/food-fraud-adulteration-authenticity.png)\n\nPublished:July 15, 2026, 12:01 am\n\nPotential fraud discussions in Europe in May declined compared to the month before but were higher than the same period in 2025.\n\nThere were 150 reports in May, 188 in April, 204 in March, 159 in February, and 189 in January 2026. Earlier data for 2025 shows 196 in December, 194 in November, 223 in October,164 in September, 166 in August, 136 in July, 164 in June and 129 in May.\n\nOne alert mentioned the United States in May. It concerned tetrahydrocannabinol (THC) and cannabidiol (CBD) in sweets.\n\n[![Image 2](https://assets.context.ly/thumbnails/food_safety_newsghostio/29552236/600x315.png)](https://www.foodsafetynews.com/2026/04/eu-reports-fall-in-suspected-food-fraud-incidents/ \"EU reports fall in suspected food fraud incidents\")\n\n[![Image 3](https://assets.context.ly/thumbnails/food_safety_newsghostio/29323771/600x315.png)](https://www.foodsafetynews.com/2025/03/eu-details-potential-frauds-in-early-2025/ \"EU details potential frauds in early 2025\")\n\n[![Image 4](https://assets.context.ly/thumbnails/food_safety_newsghostio/29402630/600x315.png)](https://www.foodsafetynews.com/2026/03/europe-records-varied-fraud-reports-in-early-2026/ \"Europe records varied fraud reports in early 2026\")\n\n[![Image 5](https://assets.context.ly/thumbnails/food_safety_newsghostio/29326877/600x315.png)](https://www.foodsafetynews.com/2025/12/european-potential-fraud-alerts-rise-in-october/ \"European potential fraud alerts rise in October\")\n\n[![Image 6](https://assets.context.ly/thumbnails/"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "CDC says thousands are likely infected with cyclospora parasite",
+        "source_url": "https://www.foodsafetynews.com/2026/07/cdc-says-thousands-are-likely-infected-with-cyclospora-parasite/",
+        "published_at": "2026-07-15T00:00:57+00:00",
+        "summary": "Michigan officials believe lettuce and/or salad mixes are the source of the parasite, but they said there is no single grower, supplier or brand identified yet."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "CEO of Jack Daniel’s maker Brown-Forman to retire",
+        "source_url": "https://www.fooddive.com/news/jack-daniels-owner-brown-forman-ceo-lawson-whiting-retires/825174/",
+        "published_at": "2026-07-14T14:46:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/zVmc9sNC1s-qAd437pFRnr0gpJ0zvRsKw8pOPsHujRE/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMjcxNjc4Njg0LmpwZw==.webp\" /></div></figure><p>Lawson Whiting, who led the company for seven years, will remain at the spirits giant until his successor is named.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "Coca-Cola files application to trademark ‘Spricy’",
+        "source_url": "https://www.fooddive.com/news/coca-cola-trademarks-spricy-spicy-soda/825164/",
+        "published_at": "2026-07-14T14:12:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/onbpTXTZ1w_vKGtpeAFqZLpxv4J22nBt8jcW6dfWL9M/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0xNDMwMTM4MDRfd3drYko2Si5qcGc=.webp\" /></div></figure><p>The request could signal that the beverage giant is planning a new spicy offering after discontinuing Coca-Cola Spiced in 2024.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "PepsiCo CFO says tariff refund will help offset inflation",
+        "source_url": "https://www.fooddive.com/news/pepsico-cfo-says-tariff-refunds-will-help-offset-inflation/825070/",
+        "published_at": "2026-07-14T13:25:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/_K-Sc7NgMmEXpZPOVyeBwAnhPwNJZJB9M26vBfORnbk/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0xOTk4NDI2NTUxX29yTVNMbGkuanBn.webp\" /></div></figure><p>“We do expect some more pressure on the business from a commodity standpoint,” CFO Steve Schmitt said on an earnings call.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "FDA letter reinforces responsibilities of infant formula supply chain",
+        "source_url": "https://www.foodsafetynews.com/2026/07/fda-letter-reinforces-responsibilities-of-infant-formula-supply-chain/",
+        "published_at": "2026-07-14T04:05:26+00:00",
+        "summary": "<p>The FDA has put the entire infant formula supply chain on notice to improve monitoring and production practices.</p><p>The decree comes amid a second outbreak since November 2025 of infant botulism tied to powdered infant formula. The Food and Drug Administration put the lion’s share of the responsibility</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Major German E. coli outbreak sickened almost 500",
+        "source_url": "https://www.foodsafetynews.com/2026/07/major-german-e-coli-outbreak-sickened-almost-500/",
+        "published_at": "2026-07-14T04:03:35+00:00",
+        "summary": "<p>Almost 500 people were sick in a major E. coli outbreak in Germany in 2025, according to recently released figures from a regional State Office for Health and Social Affairs.</p><p>The Landesamt für Gesundheit und Soziales (LAGuS) in Mecklenburg-Vorpommern reported there were 476 possible cases and</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Codex adopts standards on chicken meat and allergen labeling",
+        "source_url": "https://www.foodsafetynews.com/2026/07/codex-adopts-standards-on-chicken-meat-and-allergen-labeling/",
+        "published_at": "2026-07-14T04:01:55+00:00",
+        "summary": "<p>Guidelines related to Campylobacter and Salmonella in chicken meat and Listeria monocytogenes in certain foods have been approved at the latest meeting of a global food standards setting body.</p><p>The Codex Alimentarius Commission was established by FAO and the World Health Organization (WHO). It is responsible for setting food standards</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Publisher's Platform: We made the everglades a python buffet -- we’re doing the same thing to the salad bar",
+        "source_url": "https://www.foodsafetynews.com/2026/07/we-made-the-everglades-a-python-buffet-were-doing-the-same-thing-to-the-salad-bar/",
+        "published_at": "2026-07-14T01:21:04+00:00",
+        "summary": "We made the Everglades a python buffet by looking away for twenty years. We’re setting the salad bar up the same way — one defunded surveillance program at a time."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Michigan officials say salad likely cause of Cyclospora outbreak",
+        "source_url": "https://www.foodsafetynews.com/2026/07/michigan-officials-say-salad-likely-cause-of-cyclospora-outbreak/",
+        "published_at": "2026-07-14T00:50:48+00:00",
+        "summary": "Title: Michigan officials say salad likely cause of Cyclospora outbreak\n\nURL Source: https://www.foodsafetynews.com/2026/07/michigan-officials-say-salad-likely-cause-of-cyclospora-outbreak/\n\nPublished Time: 2026-07-14T00:50:48.000Z\n\nMarkdown Content:\n## Subscribe to Food Safety News\n\nGet the free version of our newsletter. No spam ever, unsubscribe anytime.\n\nPublic health officials in Michigan believe that lettuce or salad greens are behind a cyclospora outbreak that has sickened 2,640 people in their state alone.\n\nThe Michigan Department of Health and Human Services (MDHHS) reports that its investigation is ongoing and other food items cannot be completely ruled out. No specific type of produce, grower or supplier has been identified as the source of the parasite, which is a microscopic creature.\n\n“Although we do not have a definite product identified as the source of the outbreak, we want to let Michiganders know what we have learned so far so they can take steps to protect their families,” said Dr. Natasha Bagdasarian, chief medical executive in Michigan.\n\n“Early information has shown lettuce as a common product that regularly comes up during the investigation.We will continue to provide updates as we learn more.”\n\nTypically, Michigan only records 40 to 50 cases of cyclosporiasis annually.\n\nThe outbreak has sickened people in 31 states, with Ohio reporting 364 patients and New York reporting 470. The Centers for Disease Control and Prevention is lagging behind in posting nationwide numbers, reporting only 843 confirmed cases and more than 1,500 suspected cases. The CDC last updated its count on July 9.\n\n## Food Safety Is Your Safety\n\nFSN supports a safe food supply for all through our daily coverage of recalls and outbreaks around the world. Your contribution of $10, $25 or $50 makes it possible for us to continue providing this service to everyone.\n\nThe CDC’s count is likely because it stopped tracking cyclospora illnesses in 2025 when changes implemented by the"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "Bakery ingredients supplier AAK to scale Savor’s carbon-based fats",
+        "source_url": "https://www.fooddive.com/news/aak-savor-butter-carbon-fats-ingredients-bakery/825054/",
+        "published_at": "2026-07-13T14:48:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/rbWpeI49Ak66nCZcQDlNbSYrMpoKDT_2SZpL7HeS0Yw/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS8zUWtVSWtVUS5qcGVn.webp\" /></div></figure><p>The companies entered a two-year agreement to jointly develop sustainable solutions for bakery and dairy alternative markets.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "Premier Protein maker taps salty snack leader as CEO",
+        "source_url": "https://www.fooddive.com/news/bellring-brands-premier-protein-ceo-michael-axelrod/825037/",
+        "published_at": "2026-07-13T13:32:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/36nksGxLmWVvGZh-4YGEhJD895c7D1fX4e-hBjHeDes/g:nowe:250:519/c:1836:1037/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS8yMDI1MTEwNV9QcmVtaWVyX1Byb3RlaW5fMTg5OS5qcGc=.webp\" /></div></figure><p>Bellring Brands named Michael Axelrod to lead the company as it looks to maintain its top spot amid increased protein shake competition.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "JBS axes 2040 net-zero goal, citing ‘immense’ execution challenges",
+        "source_url": "https://www.fooddive.com/news/jbs-axes-2040-net-zero-goal-citing-immense-execution-challenges/825036/",
+        "published_at": "2026-07-13T13:31:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/wTxa7C6uoEobm3I9x0ekgE5IFjqeRka4JOfulFkgVYs/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMjY2NDU1OTcwLmpwZw==.webp\" /></div></figure><p>The meat giant has also dropped targets for scope 3 emissions, which make up the bulk of its environmental footprint. </p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "For producers, for the planet: Why we need conservation on farmland",
+        "source_url": "https://www.fooddive.com/spons/for-producers-for-the-planet-why-we-need-conservation-on-farmland/824661/",
+        "published_at": "2026-07-13T09:00:00+00:00",
+        "summary": "<p>Conservation agriculture practices have short and long-term benefits, yet adoption lags.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "How Boxed Water and 2 other manufacturers solved end-of-line palletizing without buying a robot",
+        "source_url": "https://www.fooddive.com/spons/how-boxed-water-and-2-other-manufacturers-solved-end-of-line-palletizing-wi/824303/",
+        "published_at": "2026-07-13T09:00:00+00:00",
+        "summary": "<p>Three manufacturers. Three different products. Same answer when asked about robotic palletizing: \"should've done it sooner.\"</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Cyclospora: Seasonal nuisance or preventable problem?",
+        "source_url": "https://www.foodsafetynews.com/2026/07/cyclospora-seasonal-nuisance-or-preventable-problem/",
+        "published_at": "2026-07-13T04:05:04+00:00",
+        "summary": "The parasite's long incubation period makes it challenging for investigators to identify exposures."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Spanish court rejects appeal in poisoning case",
+        "source_url": "https://www.foodsafetynews.com/2026/07/spanish-court-rejects-appeal-in-poisoning-case/",
+        "published_at": "2026-07-13T04:04:45+00:00",
+        "summary": "<p>A court in Spain has maintained the prison sentence of a woman who attempted to murder her ex-partner using chocolate laced with rat poison.</p><p>A ruling in November 2021 granted the victim permanent disability status.</p><p>The Supreme Court upheld the 12-and-a-half-year prison sentence for the</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "FDA warns Florida supplement maker about sanitation and allergen risks",
+        "source_url": "https://www.foodsafetynews.com/2026/07/fda-warns-florida-supplement-maker-about-sanitation-and-allergen-risks/",
+        "published_at": "2026-07-13T04:03:59+00:00",
+        "summary": "<p><em>As part of its enforcement activities, the U.S. Food and Drug Administration sends warning letters to entities under its jurisdiction. Some letters are not posted for public view until weeks or months after they are sent. Business owners generally have 15 working days to respond to FDA warning letters.</em></p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Salmonella outbreak in New York linked to funeral meal",
+        "source_url": "https://www.foodsafetynews.com/2026/07/salmonella-outbreak-in-new-york-linked-to-funeral-meal/",
+        "published_at": "2026-07-13T04:02:31+00:00",
+        "summary": "<p>A salmonella outbreak that has sickened dozens of Suffolk County residents in New York is under investigation by the county's Department of Health Services.</p><p>A total of 58 patients have been seen by Stony Brook Southampton Hospital doctors while exhibiting symptoms consistent with salmonella infection since the beginning</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Incidents up as Ireland records biggest Listeria outbreak",
+        "source_url": "https://www.foodsafetynews.com/2026/07/incidents-up-as-ireland-records-biggest-listeria-outbreak/",
+        "published_at": "2026-07-13T04:01:56+00:00",
+        "summary": "<p>Ireland’s largest Listeria outbreak and plans to introduce a food hygiene rating system are among the highlights of the Irish food agency’s annual report.</p><p>According to the Food Safety Authority of Ireland (FSAI) there were 820 incidents and 88 investigations in 2025. This represents an increase</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Cheese linked to Salmonella outbreak in Portugal",
+        "source_url": "https://www.foodsafetynews.com/2026/07/cheese-linked-to-salmonella-outbreak-in-portugal/",
+        "published_at": "2026-07-13T04:00:56+00:00",
+        "summary": "<p>An investigation into a Salmonella outbreak in two regions of Portugal traced to cheese has revealed problems at the production site.</p><p>A case–case study suggested fresh cheese as the likely vehicle of the Salmonella Typhimurium outbreak. The case–case approach compares outbreak and historical</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Sunday Edition: Farm Bill 2.0",
+        "source_url": "https://www.foodsafetynews.com/2026/07/sunday-edition-farm-bill-2-0/",
+        "published_at": "2026-07-12T12:00:07+00:00",
+        "summary": "Zippy Duvall, president of the American Farm Bureau Federation, said the draft is “a good first step,” but said more action is needed from Congress “to help farmers weather the weakened farm economy.”"
+      }
+    }
+  ],
+  "ontology": {
+    "repo": "FoodRadar",
+    "category": "food",
+    "ontology_version": "0.1.0",
+    "event_model_ids": [
+      "food.complaint_signal",
+      "food.editorial_coverage",
+      "food.enforcement_action",
+      "food.official_notice",
+      "food.recall_status_change"
+    ],
+    "event_model_mappings": {
+      "recall_status_change": "food.recall_status_change",
+      "enforcement_action": "food.enforcement_action",
+      "complaint_signal": "food.complaint_signal",
+      "official_notice": "food.official_notice",
+      "editorial_coverage": "food.editorial_coverage"
+    },
+    "entity_type_hints": [
+      "food.food_type",
+      "food.brand",
+      "food.product",
+      "food.manufacturer",
+      "food.safety_issue",
+      "food.regulation"
+    ],
+    "source_role_ids": [
+      "community_signal",
+      "context_only",
+      "official_context",
+      "primary_evidence"
+    ],
+    "source_role_mappings": {
+      "식품안전나라 회수판매중지": "primary_evidence",
+      "식품안전나라 행정처분": "primary_evidence",
+      "식약처 보도자료": "official_context",
+      "식품안전 국내뉴스": "context_only",
+      "식품안전 해외뉴스": "context_only",
+      "Food Safety News": "context_only",
+      "Food Dive": "context_only",
+      "r/foodsafety": "community_signal",
+      "r/Cooking": "community_signal",
+      "r/nutrition": "community_signal",
+      "r/KoreanFood": "community_signal",
+      "r/ProductRecalls": "community_signal"
+    },
+    "evidence_policy_ids": [
+      "food.official_source_required_for_recall",
+      "food.community_signal_auxiliary_only",
+      "food.traceable_url_required"
+    ]
+  },
+  "quality_summary": {
+    "total_sources": 12,
+    "tracked_sources": 3,
+    "fresh_sources": 0,
+    "quiet_window_sources": 0,
+    "stale_sources": 0,
+    "missing_sources": 3,
+    "unknown_event_date_sources": 0,
+    "not_tracked_sources": 8,
+    "catalog_only_sources": 0,
+    "skipped_disabled_sources": 1,
+    "collection_error_count": 9,
+    "alias_candidate_count": 1,
+    "text_length_outlier_count": 0,
+    "title_length_outlier_count": 0,
+    "summary_length_outlier_count": 0,
+    "mapped_alias_candidate_count": 1,
+    "unmapped_alias_candidate_count": 0,
+    "product_alias_candidate_count": 0,
+    "brand_alias_candidate_count": 1,
+    "manufacturer_alias_candidate_count": 0,
+    "match_coverage_article_count": 48,
+    "match_coverage_matched_count": 40,
+    "match_coverage_unmatched_count": 8,
+    "match_coverage_rate": 83.3,
+    "match_coverage_review_item_count": 8,
+    "fresh_food_events": 0,
+    "stale_food_events": 0,
+    "undated_food_events": 0,
+    "unique_food_event_key_count": 0,
+    "recall_events_with_notice_date_count": 0,
+    "recall_events_with_status_count": 0,
+    "event_alias_trace_count": 0,
+    "complaint_auxiliary_only_events": 0,
+    "official_evidence_events": 0,
+    "recall_status_change_events": 0,
+    "enforcement_action_events": 0,
+    "complaint_signal_events": 0
+  },
+  "warnings": [
+    "collection errors detected: 9",
+    "freshness gaps detected: stale=0, missing=3"
+  ],
+  "quality_flagged_sources": [
+    {
+      "source": "식품안전나라 회수판매중지",
+      "source_type": "rss",
+      "enabled": true,
+      "tracked": true,
+      "event_model": "recall_status_change",
+      "freshness_sla_days": 3,
+      "quiet_window_days": 5,
+      "status": "missing",
+      "article_count": 0,
+      "latest_event_at": null,
+      "latest_collected_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_food_event_key": "",
+      "latest_notice_date": "",
+      "latest_recall_status": "",
+      "latest_release_date": "",
+      "latest_sanction_start_date": "",
+      "latest_sanction_end_date": "",
+      "latest_sanction_type": "",
+      "latest_product_name_raw": "",
+      "latest_manufacturer_name_raw": "",
+      "latest_alias_traces": [],
+      "verification_role": "",
+      "merge_policy": "",
+      "skip_reason": "",
+      "reenable_gate": "",
+      "errors": [
+        "식품안전나라 회수판매중지: Source disabled (crawl health threshold reached)"
+      ]
+    },
+    {
+      "source": "식품안전나라 행정처분",
+      "source_type": "rss",
+      "enabled": true,
+      "tracked": true,
+      "event_model": "enforcement_action",
+      "freshness_sla_days": 2,
+      "quiet_window_days": null,
+      "status": "missing",
+      "article_count": 0,
+      "latest_event_at": null,
+      "latest_collected_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_food_event_key": "",
+      "latest_notice_date": "",
+      "latest_recall_status": "",
+      "latest_release_date": "",
+      "latest_sanction_start_date": "",
+      "latest_sanction_end_date": "",
+      "latest_sanction_type": "",
+      "latest_product_name_raw": "",
+      "latest_manufacturer_name_raw": "",
+      "latest_alias_traces": [],
+      "verification_role": "",
+      "merge_policy": "",
+      "skip_reason": "",
+      "reenable_gate": "",
+      "errors": [
+        "식품안전나라 행정처분: Network error fetching 식품안전나라 행정처분: HTTPSConnectionPool(host='www.foodsafetykorea.go.kr', port=443): Max retries exceeded with url: /rss/rss.do?menu_no=2714&menu_grp=MENU_NEW02 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.foodsafetykorea.go.kr', port=443) at 0x7f86d69d4090>, 'Connection to www.foodsafetykorea.go.kr timed out. (connect timeout=15)'))"
+      ]
+    },
+    {
+      "source": "r/foodsafety",
+      "source_type": "reddit",
+      "enabled": true,
+      "tracked": true,
+      "event_model": "complaint_signal",
+      "freshness_sla_days": 3,
+      "quiet_window_days": null,
+      "status": "missing",
+      "article_count": 0,
+      "latest_event_at": null,
+      "latest_collected_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_food_event_key": "",
+      "latest_notice_date": "",
+      "latest_recall_status": "",
+      "latest_release_date": "",
+      "latest_sanction_start_date": "",
+      "latest_sanction_end_date": "",
+      "latest_sanction_type": "",
+      "latest_product_name_raw": "",
+      "latest_manufacturer_name_raw": "",
+      "latest_alias_traces": [],
+      "verification_role": "auxiliary_complaint_signal",
+      "merge_policy": "do_not_merge_with_official_notice",
+      "skip_reason": "",
+      "reenable_gate": "",
+      "errors": [
+        "r/foodsafety: Source disabled (crawl health threshold reached)"
+      ]
+    }
+  ],
+  "quality_alias_candidates": [
+    {
+      "alias_type": "brand",
+      "canonical": "PepsiCo",
+      "normalized": "pepsico",
+      "variants": [
+        "pepsico"
+      ],
+      "count": 2,
+      "example_urls": [
+        "https://www.fooddive.com/news/pepsico-cfo-says-tariff-refunds-will-help-offset-inflation/825070",
+        "https://www.fooddive.com/news/pepsico-improves-sustainable-sourcing-delays-emissions-reporting/825276"
+      ]
+    }
+  ],
+  "quality_match_coverage_review_items": [
+    {
+      "reason": "market_or_editorial_unclassified",
+      "priority": "medium",
+      "source": "Food Dive",
+      "source_type": "rss",
+      "trust_tier": "T3_professional",
+      "event_model": "editorial_coverage",
+      "title": "Bakery ingredients supplier AAK to scale Savor’s carbon-based fats",
+      "url": "https://www.fooddive.com/news/aak-savor-butter-carbon-fats-ingredients-bakery/825054",
+      "published_at": "2026-07-13T14:48:00+00:00",
+      "collected_at": "2026-07-16T05:32:58.293989+00:00",
+      "summary_excerpt": "The companies entered a two-year agreement to jointly develop sustainable solutions for bakery and dairy alternative markets.",
+      "recommended_action": "review Product/FoodType/Brand keyword coverage"
+    },
+    {
+      "reason": "market_or_editorial_unclassified",
+      "priority": "medium",
+      "source": "Food Dive",
+      "source_type": "rss",
+      "trust_tier": "T3_professional",
+      "event_model": "editorial_coverage",
+      "title": "For producers, for the planet: Why we need conservation on farmland",
+      "url": "https://www.fooddive.com/spons/for-producers-for-the-planet-why-we-need-conservation-on-farmland/824661",
+      "published_at": "2026-07-13T09:00:00+00:00",
+      "collected_at": "2026-07-15T05:23:46.759911+00:00",
+      "summary_excerpt": "Conservation agriculture practices have short and long-term benefits, yet adoption lags.",
+      "recommended_action": "review Product/FoodType/Brand keyword coverage"
+    },
+    {
+      "reason": "market_or_editorial_unclassified",
+      "priority": "medium",
+      "source": "Food Dive",
+      "source_type": "rss",
+      "trust_tier": "T3_professional",
+      "event_model": "editorial_coverage",
+      "title": "How Boxed Water and 2 other manufacturers solved end-of-line palletizing without buying a robot",
+      "url": "https://www.fooddive.com/spons/how-boxed-water-and-2-other-manufacturers-solved-end-of-line-palletizing-wi/824303",
+      "published_at": "2026-07-13T09:00:00+00:00",
+      "collected_at": "2026-07-15T05:23:46.759911+00:00",
+      "summary_excerpt": "Three manufacturers. Three different products. Same answer when asked about robotic palletizing: \"should've done it sooner.\"",
+      "recommended_action": "review Product/FoodType/Brand keyword coverage"
+    },
+    {
+      "reason": "market_or_editorial_unclassified",
+      "priority": "medium",
+      "source": "Food Safety News",
+      "source_type": "rss",
+      "trust_tier": "T3_professional",
+      "event_model": "editorial_coverage",
+      "title": "Cyclospora: Seasonal nuisance or preventable problem?",
+      "url": "https://www.foodsafetynews.com/2026/07/cyclospora-seasonal-nuisance-or-preventable-problem",
+      "published_at": "2026-07-13T04:05:04+00:00",
+      "collected_at": "2026-07-15T05:23:46.759911+00:00",
+      "summary_excerpt": "The parasite's long incubation period makes it challenging for investigators to identify exposures.",
+      "recommended_action": "review Product/FoodType/Brand keyword coverage"
+    },
+    {
+      "reason": "market_or_editorial_unclassified",
+      "priority": "medium",
+      "source": "Food Safety News",
+      "source_type": "rss",
+      "trust_tier": "T3_professional",
+      "event_model": "editorial_coverage",
+      "title": "Infections from Cyclospora parasite continue sharp increases",
+      "url": "https://www.foodsafetynews.com/2026/07/infections-from-cyclospora-parasite-continue-sharp-increases",
+      "published_at": "2026-07-16T23:09:13+00:00",
+      "collected_at": "2026-07-19T05:43:49.799948+00:00",
+      "summary_excerpt": "One public health official says the confirmed patients are probably the tip of the iceberg",
+      "recommended_action": "review Product/FoodType/Brand keyword coverage"
+    },
+    {
+      "reason": "market_or_editorial_unclassified",
+      "priority": "medium",
+      "source": "Food Safety News",
+      "source_type": "rss",
+      "trust_tier": "T3_professional",
+      "event_model": "editorial_coverage",
+      "title": "Michigan again sees significant increase in Cyclospora infections",
+      "url": "https://www.foodsafetynews.com/2026/07/michigan-again-sees-significant-increase-in-cyclospora-infections",
+      "published_at": "2026-07-15T23:48:15+00:00",
+      "collected_at": "2026-07-19T05:43:49.799948+00:00",
+      "summary_excerpt": "Public health officials have not weighed in on why there are so many infections this year.",
+      "recommended_action": "review Product/FoodType/Brand keyword coverage"
+    },
+    {
+      "reason": "market_or_editorial_unclassified",
+      "priority": "medium",
+      "source": "Food Safety News",
+      "source_type": "rss",
+      "trust_tier": "T3_professional",
+      "event_model": "editorial_coverage",
+      "title": "Publisher's Platform: We made the everglades a python buffet -- we’re doing the same thing to the salad bar",
+      "url": "https://www.foodsafetynews.com/2026/07/we-made-the-everglades-a-python-buffet-were-doing-the-same-thing-to-the-salad-bar",
+      "published_at": "2026-07-14T01:21:04+00:00",
+      "collected_at": "2026-07-16T05:32:58.293989+00:00",
+      "summary_excerpt": "We made the Everglades a python buffet by looking away for twenty years. We’re setting the salad bar up the same way — one defunded surveillance program at a time.",
+      "recommended_action": "review Product/FoodType/Brand keyword coverage"
+    },
+    {
+      "reason": "market_or_editorial_unclassified",
+      "priority": "medium",
+      "source": "Food Safety News",
+      "source_type": "rss",
+      "trust_tier": "T3_professional",
+      "event_model": "editorial_coverage",
+      "title": "Sunday Edition: Farm Bill 2.0",
+      "url": "https://www.foodsafetynews.com/2026/07/sunday-edition-farm-bill-2-0",
+      "published_at": "2026-07-12T12:00:07+00:00",
+      "collected_at": "2026-07-15T05:23:46.759911+00:00",
+      "summary_excerpt": "Zippy Duvall, president of the American Farm Bureau Federation, said the draft is “a good first step,” but said more action is needed from Congress “to help farmers weather the weakened farm economy.”",
+      "recommended_action": "review Product/FoodType/Brand keyword coverage"
+    }
+  ]
+}
