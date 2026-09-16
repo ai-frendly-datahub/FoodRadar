@@ -1,0 +1,863 @@
+{
+  "date": "2026-09-16",
+  "category": "food",
+  "article_count": 59,
+  "source_count": 3,
+  "matched_count": 54,
+  "top_entities": [
+    {
+      "name": "FoodGeneral",
+      "count": 122
+    },
+    {
+      "name": "SafetyIssue",
+      "count": 65
+    },
+    {
+      "name": "FoodType",
+      "count": 39
+    },
+    {
+      "name": "Regulation",
+      "count": 13
+    },
+    {
+      "name": "Brand",
+      "count": 8
+    },
+    {
+      "name": "Manufacturer",
+      "count": 3
+    },
+    {
+      "name": "BrandCanonical",
+      "count": 2
+    }
+  ],
+  "sources": {
+    "Food Safety News": 32,
+    "식품안전나라 행정처분": 9,
+    "Food Dive": 18
+  },
+  "generated_at": "2026-09-16T17:06:34.815034+09:00",
+  "articles": [
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Supplier in sprout outbreak recalls seed",
+        "source_url": "https://www.foodsafetynews.com/2026/09/supplier-in-sprout-outbreak-recalls-seed/",
+        "published_at": "2026-09-16T04:05:04+00:00",
+        "summary": "Title: Supplier in sprout outbreak recalls seed\n\nURL Source: https://www.foodsafetynews.com/2026/09/supplier-in-sprout-outbreak-recalls-seed/\n\nPublished Time: 2026-09-16T04:05:04.000Z\n\nMarkdown Content:\nThe FDA has not named the supplier\n\n![Image 1: Supplier in sprout outbreak recalls seed](https://storage.ghost.io/c/43/4e/434e508a-5e2f-4102-a53d-00bca10bb4bf/content/images/size/w30/2026/09/outbreak-map-Everything-Sprouts-09-15-26.png)\n\nPublished:September 16, 2026, 12:05 am\n\n## Subscribe to Food Safety News\n\nGet the free version of our newsletter. No spam ever, unsubscribe anytime.\n\nThe seed supplier for a sprout growing company involved in an outbreak of E. coli and Salmonella has agreed to conduct a recall.\n\nThe Food and Drug Administration announced the recall on Sept. 15, but did not name the seed supplier. The agency also did not provide any identifying information about the seeds, such as lot numbers. The seed supplier initially refused to conduct a recall.\n\nThe supplier sold seeds to Everything Sprouts LLC. The seed lot was also sold directly to other sprout growers and wholesale distributors in Puerto Rico and the U.S. It was also shipped internationally to Canada, Mexico, Tahiti, and Venezuela.\n\nProducts from Everything Sprouts have been linked to an outbreak of E. coli and Salmonella infections. So far, 55 patients in 15 states have been identified. Four of the patients have required hospitalization, but no deaths have been reported.\n\nSome people were infected with more than one outbreak strain. Forty-six people were infected with E. coli, seven people were infected with Salmonella, and two people were infected with both Salmonella and E. coli.\n\nIllnesses started on dates ranging from May 31 to Aug. 8, but additional patients could be identified because of the lag time of when a patient becomes ill and when they are added to the national toll. Also, there are likely many more sick people who have not been identified. This is because some people do not see"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Fine and charges issued in case involving fish that was unfit to eat",
+        "source_url": "https://www.foodsafetynews.com/2026/09/fine-and-charges-issued-in-case-involving-fist-that-was-unfit-to-eat/",
+        "published_at": "2026-09-16T04:03:10+00:00",
+        "summary": "<p>Two men have been charged in Norway for their roles in selling farmed salmon that was unfit for human consumption.</p><p>The defendants, both men in their 50s, worked in senior positions at the company Pure Norwegian Seafood.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Chemical topics dominate Dutch emerging risk signals",
+        "source_url": "https://www.foodsafetynews.com/2026/09/chemical-topics-dominate-dutch-emerging-risk-signals/",
+        "published_at": "2026-09-16T04:01:42+00:00",
+        "summary": "<p>Potential chemical risks dominated discussions this past year in a Dutch network created to identify emerging food safety risks.</p><p>The Food Safety Signalling Consultation (SO-V) was formed in 2020 to identify and interpret emerging food safety risks. It has two sections: one for microbiological risks (SO-VM) and another</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Frozen raspberries recalled because of norovirus; illnesses reported",
+        "source_url": "https://www.foodsafetynews.com/2026/09/frozen-raspberries-recalled-because-of-norovirus-illnesses-reported/",
+        "published_at": "2026-09-16T02:45:09+00:00",
+        "summary": "<p>Alasko brand frozen whole raspberries are being recalled in Canada because of contamination with norovirus.</p><p>This recall was triggered by findings by the Canadian Food Inspection Agency during its investigation into a foodborne illness outbreak. There have been reported illnesses associated with the consumption of these products.</p><p>The recalled berries</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "So Delicious frozen dessert product recalled because of foreign objects",
+        "source_url": "https://www.foodsafetynews.com/2026/09/so-delicious-frozen-dessert-product-recalled-because-of-foreign-objects/",
+        "published_at": "2026-09-16T02:07:55+00:00",
+        "summary": "<p>Danone USA is recalling of So Delicious Dairy Free Salted Caramel Cluster Non-Dairy Frozen Dessert pints with best-by dates on and before April 3, 2028, because consumers complained about the presence of foreign materials, such as small stones and other hard objects, within the cashew inclusions.</p><p>The recalled</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식품안전나라 행정처분",
+        "headline": "상기 당사자는 수입 건강기능식품(제품명: 더그린스톤플러스골드)을 수입·판매하면서「식품 등의 표시․광고에 관한 법률」제10조제1항에 따라 심의받지 않고 표시 또는 광고를 한 사실이 있음",
+        "source_url": "/portal/administMeasureDetail.do?seq=4741016",
+        "published_at": "2026-09-16T00:00:00+00:00",
+        "summary": "상기 당사자는 수입 건강기능식품(제품명: 더그린스톤플러스골드)을 수입·판매하면서「식품 등의 표시․광고에 관한 법률」제10조제1항에 따라 심의받지 않고 표시 또는 광고를 한 사실이 있음"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "Coca-Cola to spend $10B on US manufacturing by 2030",
+        "source_url": "https://www.fooddive.com/news/coca-cola-us-manufacturing-10-billion-investment/830468/",
+        "published_at": "2026-09-15T20:02:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/BuHm8_LvtUmXjAEZzfOcJLWqQaXeUD0j1mkq8srt4B8/g:nowe:0:130/c:1920:1084/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS90aHVtYm5haWxfSU1HXzQ2MjcuanBn.webp\" /></div></figure><p>The soda giant and its bottlers are planning to expand production and distribution in part of its largest market.</p>\n\n<p> </p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "Mars zeroes in on gut health with startup partnerships",
+        "source_url": "https://www.fooddive.com/news/mars-startups-unreasonable-fiber-gut-health/830410/",
+        "published_at": "2026-09-15T15:01:31+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/KUVz2mQjiI9FGAUTiRZSEzbrqNOpjGzhDcO4kSgU1yk/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy01MTE4NDI2NjAuanBn.webp\" /></div></figure><p>The Snickers owner announced the latest cohort for its accelerator program, prioritizing firms advancing solutions in fiber, protein and nutrition.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "Nestlé ‘not happy’ with food giant’s performance in North America",
+        "source_url": "https://www.fooddive.com/news/nestle-not-happy-with-performance-north-america-frozen-coffee/830304/",
+        "published_at": "2026-09-15T13:00:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/TywAcvHuolGoxN45APjrN5zUcFXO7woJhFFwDl1CrJY/g:nowe:1257:992/c:2603:1470/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9JTUdfMzQ2Nl9SenlndU1YLkpQRw==.webp\" /></div></figure><p>CFO Anna Manz said “more needs to be done” to improve execution in the region, particularly for creamers and its Gerber brand.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "Mondelēz set to relaunch ‘star brand’ Oreo in 2027",
+        "source_url": "https://www.fooddive.com/news/snacking-mondelez-relaunch-oreo-2027-chips-ahoy/830320/",
+        "published_at": "2026-09-15T13:00:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/HEHkjGkcTUeTBDpLs32ddwbRxjfG5B1R6k2E4T7SxDU/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMTg5NDQ3NDUzLmpwZw==.webp\" /></div></figure><p>The snacking giant said the overhaul of the 100-year-old cookie brand, with nearly $5 billion in sales, will include new packaging, price points and formulas.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "The last mile of a food safety recall: It is not complete until consumers are protected",
+        "source_url": "https://www.foodsafetynews.com/2026/09/the-last-mile-of-a-food-safety-recall-it-is-not-complete-until-consumers-are-protected-2/",
+        "published_at": "2026-09-15T04:05:04+00:00",
+        "summary": "Title: The last mile of a food safety recall: It is not complete until consumers are protected\n\nURL Source: https://www.foodsafetynews.com/2026/09/the-last-mile-of-a-food-safety-recall-it-is-not-complete-until-consumers-are-protected-2/\n\nPublished Time: 2026-09-15T04:05:04.000Z\n\nMarkdown Content:\n## Subscribe to Food Safety News\n\nGet the free version of our newsletter. No spam ever, unsubscribe anytime.\n\nImagine being the parent of an infant and learning that the baby formula in your home may be associated with a life-threatening illness. You rush to the pantry and begin looking for which product codes are associated with a recall notice web site, and you can’t find the codes. Perhaps the container has already been discarded but you know you have used that brand. Perhaps you never even heard about the recall until after the product had been consumed and you’re at the hospital with your sick infant.\n\nIn June 2026, Nara Organics recalled all lots of its powdered infant formula after FDA investigated four confirmed cases of\n\n[infant botulism among infants who had consumed the product](https://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-infant-botulism-powdered-infant-formula-june-2026?ref=foodsafetynews.com)\n. The recall was announced quickly, but issuing a recall and reaching every household that may still possess the product are not the same thing.\n\nThat distinction is not theoretical. During a the ByHeart infant formula recall, FDA found recalled product\n\n[remaining on retail shelves after retailers had already been notified](https://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-infant-botulism-infant-formula-november-2025?ref=foodsafetynews.com)\n. The FDA, along with state and local partners,\n\n[conducted over 4,000 checks at retail locations](https://www.fda.gov/food/recalls-outbreaks-emergencies/fda-calls-food-industry-leaders-strengthen-recall-compliance-and-ensure-recall-effectiveness?ref=foodsafetynews.com)\nacross t"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "EU proposes changes to rules about meat storage conditions",
+        "source_url": "https://www.foodsafetynews.com/2026/09/eu-proposes-changes-to-rules-about-meat-storage-conditions/",
+        "published_at": "2026-09-15T04:03:41+00:00",
+        "summary": "<p>The European Commission has opened a comment period on a change to regulations that would give companies more flexibility related to frozen meat.</p><p>The proposals would increase the options for food businesses around storage conditions before freezing meat. They are based on a European Food Safety Authority (EFSA) opinion that</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Sri Lanka creates food safety policy with FAO support",
+        "source_url": "https://www.foodsafetynews.com/2026/09/sri-lanka-creates-food-safety-policy-with-fao-support/",
+        "published_at": "2026-09-15T04:01:29+00:00",
+        "summary": "<p>Sri Lanka has unveiled its first national food safety policy with six themes including improving food controls, strengthening surveillance, and enhancing standards.</p><p>Developed by the Ministry of Health and Mass Media, through the Food Control Administration Unit (FCAU), it promotes a preventive, risk-based approach.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Abbott to pay almost $385 million to settle false claims allegation about infant formula",
+        "source_url": "https://www.foodsafetynews.com/2026/09/abbott-hit-with-almost-390-million-to-settle-false-claims-allegation-about-infant-formula/",
+        "published_at": "2026-09-15T01:20:10+00:00",
+        "summary": "The settlement resolves a case by the federal government related to allegations about false claims and is not a determination of liability on the part of the company."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식품안전나라 행정처분",
+        "headline": "○ 건강기능식품이 아닌 것을 건강기능식품으로 인식할 우려가 있는 표시 또는 광고 - 상기 업체는 인터넷 판매사이트(네이버플러스 스토어 ‘네이쳐스하트’)에 수입식품인 ① 고헬시 메노릴리프(메노포스) 120정(GO MENO RELIEF), ② 스위스 메노포스발란스 60정(Swisse ME…",
+        "source_url": "/portal/administMeasureDetail.do?seq=4740289",
+        "published_at": "2026-09-15T00:00:00+00:00",
+        "summary": "○ 건강기능식품이 아닌 것을 건강기능식품으로 인식할 우려가 있는 표시 또는 광고 - 상기 업체는 인터넷 판매사이트(네이버플러스 스토어 ‘네이쳐스하트’)에 수입식품인 ① 고헬시 메노릴리프(메노포스) 120정(GO MENO RELIEF), ② 스위스 메노포스발란스 60정(Swisse MENOPAUSE BALANCE) 제품을 게시하여 구매대행하면서, 아래와 같이 제품명란 및 제품정보란에 건강기능식품 기능성 내용인 ‘갱년기 여성의 건강에 도움을 줄 수 있음’을 연상하게 하는 문구(‘갱년기완화’, ‘갱년기증상개선’, ‘갱년기증상완화’,‘기능성’, ‘건강기능식품’등)를 사용하여 건강기능식품이 아닌 것을 건강기능식품으로 인식할 우려가 있는 광고를 한 사실이 있음"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식품안전나라 행정처분",
+        "headline": "‘16. 5. 10. ~‘19. 12. 6. 기간동안 ‘CHOCOLATE DARK TRUFFLE SHELL’등 8품목 총48건을 해외제조업소명 및 소재지를 사실과 다르게 수입신고 * 영업정지 10일에 해당되나, ｢수입식품법 시행규칙｣[별표13]Ⅰ.일반기준 제9호 마목에 따라 2분의 1…",
+        "source_url": "/portal/administMeasureDetail.do?seq=4740275",
+        "published_at": "2026-09-15T00:00:00+00:00",
+        "summary": "‘16. 5. 10. ~‘19. 12. 6. 기간동안 ‘CHOCOLATE DARK TRUFFLE SHELL’등 8품목 총48건을 해외제조업소명 및 소재지를 사실과 다르게 수입신고 * 영업정지 10일에 해당되나, ｢수입식품법 시행규칙｣[별표13]Ⅰ.일반기준 제9호 마목에 따라 2분의 1 경감 적용"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식품안전나라 행정처분",
+        "headline": "상기 당사자는 수입신고하지 아니한 중국산 위생용품(제품명: 코멧키친 대나무 이쑤시개 등 3품목, 수입업소명: ㈜애런), 총 240CT을 납품받아 쿠팡을 통해 판매한 사실이 있음.",
+        "source_url": "/portal/administMeasureDetail.do?seq=4740355",
+        "published_at": "2026-09-15T00:00:00+00:00",
+        "summary": "상기 당사자는 수입신고하지 아니한 중국산 위생용품(제품명: 코멧키친 대나무 이쑤시개 등 3품목, 수입업소명: ㈜애런), 총 240CT을 납품받아 쿠팡을 통해 판매한 사실이 있음."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Whole Foods recalls cheese because of undeclared eggs",
+        "source_url": "https://www.foodsafetynews.com/2026/09/whole-foods-recalls-cheese-because-of-undeclared-eggs/",
+        "published_at": "2026-09-14T23:54:12+00:00",
+        "summary": "<p>Whole Foods Market of Austin, TX, is recalling Fromagerie Coop de Mean Cabricharme cheese because the product contains egg lysozyme, an egg white protein, which is not declared on the product label. </p><p>People who have an allergy or severe sensitivity to eggs run the risk of a serious or</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "Kraft Heinz looks to ‘fix’ Oscar Mayer after sales losses",
+        "source_url": "https://www.fooddive.com/news/kraft-heinz-oscar-mayer-turnaround/830286/",
+        "published_at": "2026-09-14T15:25:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/355FWsut5l1VRLV6_UqN1x3lrcZ37p1h6o5sm7iL5WI/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMTUyNzkyNTQ5LmpwZw==.webp\" /></div></figure><p>A resealability issue in the product’s packaging was responsible for “the vast majority of the problem,” the company’s CEO said.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "Sleepytime Tea owner Hain Celestial to sell international business for $323M",
+        "source_url": "https://www.fooddive.com/news/sleepytime-tea-owner-hain-celestial-selling-international-business-organic-natural/830263/",
+        "published_at": "2026-09-14T15:00:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/CdLcRvVJIkL1loIl1j4DdYPLyP9m-qbOYSBiCiRkg78/g:nowe:843:245/c:1172:662/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9JTUdfMTYxNy5qcGc=.webp\" /></div></figure><p>The transaction marks the second major divestiture for the natural and organic food maker this year following the sale of its North American snacks business.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "Inside PepsiCo’s dirty soda playbook",
+        "source_url": "https://www.fooddive.com/news/pepsico-ready-to-drink-dirty-soda-mountain-dew-mug-root-beer/828427/",
+        "published_at": "2026-09-14T13:26:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/48S3v3Lc9Bf0SBZx2dq3vaNW14qQ00N_jHuySs3KQF0/g:nowe:316:0/c:1938:1095/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9EaXJ0eV9EZXdfUFJfTm9fSGVhZGxpbmUucG5n.webp\" /></div></figure><p>The beverage giant is putting a ready-to-drink twist on the buzzy drink trend, which an executive said has yet to reach its peak.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "How CPG brands can innovate products amid the spicy food boom",
+        "source_url": "https://www.fooddive.com/spons/how-cpg-brands-can-innovate-products-amid-the-spicy-food-boom/829751/",
+        "published_at": "2026-09-14T09:00:00+00:00",
+        "summary": "<p>The spicy food boom is heating up. Here’s what CPG brands need to know.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "We must stick to a zero tolerance policy for listeria",
+        "source_url": "https://www.foodsafetynews.com/2026/09/we-must-stick-to-a-zero-tolerance-policy-for-listeria/",
+        "published_at": "2026-09-14T04:06:54+00:00",
+        "summary": "Title: We must stick to a zero tolerance policy for listeria\n\nURL Source: https://www.foodsafetynews.com/2026/09/we-must-stick-to-a-zero-tolerance-policy-for-listeria/\n\nPublished Time: 2026-09-14T04:06:54.000Z\n\nMarkdown Content:\n## Subscribe to Food Safety News\n\nGet the free version of our newsletter. No spam ever, unsubscribe anytime.\n\n**By Brian Ronholm,**Director of Food Policy for Consumer Reports,and  \n**Michael Hansen,**Senior Scientist for Consumer Reports\n\nFor decades, the FDA has upheld a strict \"zero tolerance\" policy for Listeria monocytogenes — a dangerous bacteria that poses a severe health threat primarily to pregnant individuals, newborns, older adults, and immunocompromised people. It can lead to severe invasive infections, hospitalizations, miscarriages, or death.\n\nHowever, at a recent public meeting, the FDA signaled it might consider a shift away from this zero tolerance standard. The agency has been subject to growing pressure from some industry voices and scientists to adopt a \"risk-based\" approach, similar to what is currently practiced in Canada and the European Union. This approach argues that, because some food products naturally contain low, \"low-risk\" levels of Listeria, it should eliminate the need for the zero-tolerance policy and allow for a focus on management rather than total prevention.\n\nWhile the concept of \"risk-based\" management may sound scholarly and refined, applying it to Listeria policy represents a dangerous gamble with public health. The risk is underscored by the evidence, which demonstrates that the zero-tolerance policy protects consumers and abandoning this policy could increase the risk of foodborne illness.\n\n**Higher rates abroad**  \nIf we look at the actual rates of listeriosis — the infection caused by this bacteria — the numbers show that the U.S. approach is vastly more effective than the international alternatives. In the European Union, the rate of listeriosis is nearly three times higher than it is in the U.S."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Belgium leads horse meat fraud investigation",
+        "source_url": "https://www.foodsafetynews.com/2026/09/belgium-leads-horse-meat-fraud-investigation/",
+        "published_at": "2026-09-14T04:04:09+00:00",
+        "summary": "<p>Authorities have uncovered a network operating across Europe that is accused of being involved in the slaughter of horses that were unfit for human consumption.</p><p>The group is suspected of using falsified documents and manipulated microchips to conceal the animals’ true identities.</p><p>Nearly 200 officers and representatives of different</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "FDA warns two food importers about failures involving peppers, candy and other foods",
+        "source_url": "https://www.foodsafetynews.com/2026/09/fda-warns-two-food-importers-about-failures-involving-peppers-candy-and-other-foods/",
+        "published_at": "2026-09-14T04:03:11+00:00",
+        "summary": "[식품안전] FDA warns two food importers about failures involving peppers, candy and other foods"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Deadly Listeria outbreak highlights risk from traditional foods",
+        "source_url": "https://www.foodsafetynews.com/2026/09/deadly-listeria-outbreak-highlights-risk-from-traditional-foods/",
+        "published_at": "2026-09-14T04:02:10+00:00",
+        "summary": "<p>Scientists have warned about the risks posed by small-scale production of traditional foods after studying a fatal Listeria outbreak.</p><p>From 2020 to 2022, 10 people were sick and three died in an outbreak of listeriosis in Austria. It was traced to a traditional southern European dairy item known as</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식품안전나라 행정처분",
+        "headline": "○ 영업자는 등록한 사항 중 대통령령으로 정하는 중요한 사항(영업소의 소재지)을 변경할 때 등록 사항의 변경 등록을 하여야 하나, - 상기 영업자는 해당 영업소 소재지의 관련 영업시설을 전부 철거하고, 변경등록을 하지 않은 사실이 있음",
+        "source_url": "/portal/administMeasureDetail.do?seq=4736981",
+        "published_at": "2026-09-14T00:00:00+00:00",
+        "summary": "○ 영업자는 등록한 사항 중 대통령령으로 정하는 중요한 사항(영업소의 소재지)을 변경할 때 등록 사항의 변경 등록을 하여야 하나, - 상기 영업자는 해당 영업소 소재지의 관련 영업시설을 전부 철거하고, 변경등록을 하지 않은 사실이 있음"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식품안전나라 행정처분",
+        "headline": "○「식품 등의 표시·광고에 관한 법률」제8조제1항제3호에 따라 누구든지 식품등의 명칭ㆍ제조방법ㆍ성분 등 대통령령으로 정하는 사항에 관하여 건강기능식품이 아닌 것을 건강기능식품으로 인식할 우려가 있는 표시 또는 광고를 하여서는 아니 되나, - 상기 영업자는 수입식품등을 구매대행 하면서…",
+        "source_url": "/portal/administMeasureDetail.do?seq=4740735",
+        "published_at": "2026-09-14T00:00:00+00:00",
+        "summary": "○「식품 등의 표시·광고에 관한 법률」제8조제1항제3호에 따라 누구든지 식품등의 명칭ㆍ제조방법ㆍ성분 등 대통령령으로 정하는 사항에 관하여 건강기능식품이 아닌 것을 건강기능식품으로 인식할 우려가 있는 표시 또는 광고를 하여서는 아니 되나, - 상기 영업자는 수입식품등을 구매대행 하면서 ’닥터스베스트 베인 서포트 60캡슐 정맥 순환 및 다리붓기관리[원산지:미국산]’ 제품에 대해 인터넷 판매사이트 https://smartstore.naver.com/thomas_global/products/13175682798 에서 해시태크를 통해 #하지정맥영양제, #다리붓기영양제, #하체부종관리, #혈관건강 등을 표시 하여 건강기능식품이 아닌 것을 건강기능식품으로 인식할 우려가 있는 광고를 한 사실이 있음"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식품안전나라 행정처분",
+        "headline": "○「식품 등의 표시·광고에 관한 법률」제8조제1항제3호에 따라 누구든지 식품등의 명칭ㆍ제조방법ㆍ성분 등 대통령령으로 정하는 사항에 관하여 건강기능식품이 아닌 것을 건강기능식품으로 인식할 우려가 있는 표시 또는 광고를 하여서는 아니 되나, - 상기 영업자는 수입식품등을 수입판매 하면서…",
+        "source_url": "/portal/administMeasureDetail.do?seq=4740737",
+        "published_at": "2026-09-14T00:00:00+00:00",
+        "summary": "○「식품 등의 표시·광고에 관한 법률」제8조제1항제3호에 따라 누구든지 식품등의 명칭ㆍ제조방법ㆍ성분 등 대통령령으로 정하는 사항에 관하여 건강기능식품이 아닌 것을 건강기능식품으로 인식할 우려가 있는 표시 또는 광고를 하여서는 아니 되나, - 상기 영업자는 수입식품등을 수입판매 하면서 ’시베리아 차가버섯 러시아 프리미엄 분말 가루 러시아산 시베리안 건강 차’ 제품에 대해 인터넷 사이트(https://blog.naver.com/healernet0402/224044171359)에서 해당제품의 블로그 광고로 ’면역력 강화, 피로 회복, 세포 손상 예방, 피부 노화 억제 등에 도움을 줄 수 있습니다’ 등을 표시 하여 건강기능식품이 아닌 것을 건강기능식품으로 인식할 우려가 있는 광고를 한 사실이 있음"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식품안전나라 행정처분",
+        "headline": "○ 자가품질검사 전항목 미실시 - 상기 업체는 품목제조보고한 맥주 7종에 대하여 6개월마다 1회 이상 자가품질검사를 실시하여야 함에도 불구하고 2025년 1회(2025. 6. 4.(의뢰일: 2025. 5. 21.)) 국세청 주류면허지원센터 분석･감정 결과 ‘적합’판정을 받고 그 이후…",
+        "source_url": "/portal/administMeasureDetail.do?seq=4740012",
+        "published_at": "2026-09-14T00:00:00+00:00",
+        "summary": "○ 자가품질검사 전항목 미실시 - 상기 업체는 품목제조보고한 맥주 7종에 대하여 6개월마다 1회 이상 자가품질검사를 실시하여야 함에도 불구하고 2025년 1회(2025. 6. 4.(의뢰일: 2025. 5. 21.)) 국세청 주류면허지원센터 분석･감정 결과 ‘적합’판정을 받고 그 이후 2026. 6. 17.까지 자가품질검사를 전혀 실시하지 않은 채 생산·판매한 사실이 있음"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "The Sunday Edition: Antibiotics",
+        "source_url": "https://www.foodsafetynews.com/2026/09/the-sunday-edition-antibiotics/",
+        "published_at": "2026-09-13T12:00:17+00:00",
+        "summary": "We have reached a point where there are very few treatment alternatives left for some bacterial infections – including some caused by foodborne bacteria."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Sauce company refuses to comply with cease-and-desist order issued because of botulism risk",
+        "source_url": "https://www.foodsafetynews.com/2026/09/sauce-company-refuses-to-comply-with-cease-and-desist-order-issued-because-of-botulism-risk/",
+        "published_at": "2026-09-13T01:05:40+00:00",
+        "summary": "<p>The Connecticut Department of Consumer Protection Food and Standards Division has issued a cease-and-desist order to Phire in the Hole of Monroe, CT, and asked the company to voluntarily remove its hot sauce products from the market, following complaints from several local health departments.</p><p>The products were manufactured</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Vermont farm recalls eggs because of link to Salmonella outbreak",
+        "source_url": "https://www.foodsafetynews.com/2026/09/vermont-farm-recalls-eggs-because-of-link-to-salmonella-outbreak/",
+        "published_at": "2026-09-12T01:22:57+00:00",
+        "summary": "<p>Leaping Bear Farm is recalling eggs after Vermont health and agriculture officials detected Salmonella in eggs and environmental samples from the farm.</p><p>The recall covers cartons dated between June 1 and Sept. 5. The eggs were sold at local farmers markets and other retailers.</p><p>Vermont health officials have linked 14</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "California issues pubic warning about Happy Hens eggs because of link to Salmonella outbreak",
+        "source_url": "https://www.foodsafetynews.com/2026/09/california-issues-pubic-warning-about-happy-hens-eggs-because-of-link-to-salmonella-outbreak/",
+        "published_at": "2026-09-12T01:07:12+00:00",
+        "summary": "<p>The California Department of Health has issued a warning about Happy Hens brand eggs because a Salmonella outbreak has been traced to them.</p><p>The department is working with the California Department of Food and Agriculture and the U.S. Food and Drug Administration to investigate the outbreak of Salmonella<em> </em>Enteritidis</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "CDC says Cyclospora outbreak linked to iceberg lettuce is over",
+        "source_url": "https://www.foodsafetynews.com/2026/09/cdc-says-cyclospora-outbreak-linked-to-iceberg-lettuce-is-over/",
+        "published_at": "2026-09-11T22:36:23+00:00",
+        "summary": "FDA's investigation of a Taylor Farms growing and processing operation in Mexico continues"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Idaho company recalls sprouts linked to Salmonella outbreak",
+        "source_url": "https://www.foodsafetynews.com/2026/09/idaho-company-recalls-sprouts-linked-to-salmonella-outbreak/",
+        "published_at": "2026-09-11T21:55:57+00:00",
+        "summary": "<p>Evergreen Fresh Sprouts LLC of Moyie Springs, ID, is recalling 215 cases of Broccoli Sprouts, because they have been linked to an outbreak of Salmonella infections.</p><p>The sprouts were delivered to three distributors in Washington between Aug. 24 and Sept. 2. They may have been further distributed and sold in</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "Leftovers: Carbone expands beyond sauce | Little Debbie flips for flapjacks",
+        "source_url": "https://www.fooddive.com/news/carbone-chili-crisp-little-debbie-pancakes-functional-nonalc-beer/830164/",
+        "published_at": "2026-09-11T14:55:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/yKGrJLWwMsRvMO0Cf4c0Yt9UHq3aZnQamPmMEv6d5lY/g:nowe:1:1383/c:1799:1016/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9DaGlsaUNyaXNwXy04XzEuanBn.webp\" /></div></figure><p>The restaurant-inspired pasta sauce brand is debuting an Italian-inspired chili crisp, while protein powder maker Optimum Nutrition brews a functional non-alcoholic beer.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "Campbell’s heats up digital focus amid marketing reformulation",
+        "source_url": "https://www.fooddive.com/news/campbells-heats-up-digital-focus-amid-marketing-reformulation/829939/",
+        "published_at": "2026-09-11T14:30:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/UN7q3rqMtSumw3Rme7luSzfatMGzujS7bT2nb7edmmw/g:nowe:0:120/c:2500:1412/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMjE4MzEwMjk3LmpwZw==.webp\" /></div></figure><p>Channels including social, influencer and e-commerce will command 85% of working media budgets as the food maker tries to meet modern consumer tastes.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "UK Salmonella outbreak appears to be easing",
+        "source_url": "https://www.foodsafetynews.com/2026/09/uk-salmonella-outbreak-appears-to-be-easing/",
+        "published_at": "2026-09-11T04:05:05+00:00",
+        "summary": "More than 500 people have fallen sick and two have died"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "FDA quietly closes outbreak investigation naming romaine lettuce as cause",
+        "source_url": "https://www.foodsafetynews.com/2026/09/fda-outbreak-investigations-continue-4/",
+        "published_at": "2026-09-11T04:03:35+00:00",
+        "summary": "<p>The Food and Drug Administration continues to investigate multiple outbreaks of foodborne illnesses, many with the source of the pathogens unknown.</p><p>However, for the first time the agency is reporting that romaine lettuce was the vehicle of an outbreak of E. coli O157:H7. The FDA first posted the outbreak</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Sprout seed supplier recalled product amid outbreak",
+        "source_url": "https://www.foodsafetynews.com/2026/09/sprout-seed-supplier-recalled-product-amid-outbreak/",
+        "published_at": "2026-09-11T04:02:30+00:00",
+        "summary": "<p>The seed supplier behind a multi-state outbreak linked to sprouts may have been named quietly in an obscure FDA report.</p><p>First reported by Phyllis Entis on <a href=\"https://efoodalert.com/2026/09/10/alfalfa-seeds-implicated-in-outbreak-of-e-coli-and-salmonella-recalled/?ref=foodsafetynews.com\"><u>eFoodAlert.com</u></a>, the news about International Sprout Holdings Inc. of Cookeville, TN, came in an entry on the Food and Drug Administration’</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Pesto linked to botulism cases in Poland",
+        "source_url": "https://www.foodsafetynews.com/2026/09/pesto-linked-to-botulism-cases-in-poland/",
+        "published_at": "2026-09-11T04:01:13+00:00",
+        "summary": "The company said it was taking all necessary steps to fully clarify the matter"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Peanuts recalled because of Salmonella contamination",
+        "source_url": "https://www.foodsafetynews.com/2026/09/peanuts-recalled-because-of-salmonella-contamination/",
+        "published_at": "2026-09-11T02:11:35+00:00",
+        "summary": "<p>PK brand Roasted Lemon N’ Chilli Peanuts are being recalled in Canada because of Salmonella contamination.</p><p>The peanuts were distributed in Ontario and Quebec, according to the Canadian Food Inspection Agency.</p><p>As of the posting of the recall notice, no illnesses had been reported in relation to the recalled</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "General Mills, Mars sue sugar producers for alleged price-fixing",
+        "source_url": "https://www.fooddive.com/news/general-mills-mars-lawsuit-sugar-price-fixing/830079/",
+        "published_at": "2026-09-10T18:28:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/1pLfpmqJJdMyWfVibomwdfuyeTu0F-k57axXdmZLT6U/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy01MTk3NDMxODAuanBn.webp\" /></div></figure><p>Food giants claim suppliers coordinated on sensitive pricing information and pushed costs for the sweetener to a record high.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "The fastest-growing food and beverage brands of 2026",
+        "source_url": "https://www.fooddive.com/news/fastest-growing-food-beverage-brands-morning-consult/830023/",
+        "published_at": "2026-09-10T15:04:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/QojD2nn4aUma8FlMBTAUKWlfkp8Xq1Vc2hJzKnJrzrY/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0xNDM2ODA2NzY2LmpwZw==.webp\" /></div></figure><p>Only 14% of brands saw growth in purchasing intent among consumers, with legacy players securing the biggest boost, according to Morning Consult. </p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "Boston Beer hires tech-savvy CMO to hone data-driven marketing",
+        "source_url": "https://www.fooddive.com/news/boston-beer-hires-tech-savvy-cmo-to-hone-data-driven-marketing/829940/",
+        "published_at": "2026-09-10T14:44:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/BxNRZLvE9fuNwxqeYJ1GSq3Up3xJubHcSgBVj7yENSA/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0xMTQ4Mjg2OTc2LmpwZw==.webp\" /></div></figure><p>Allison Stransky will join the Samuel Adams owner from Samsung Electronics America, where she’s focused on applications of big data and AI.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "How Mondelēz wants to ‘shake up’ snacking with cookies",
+        "source_url": "https://www.fooddive.com/news/Mondelez-snacking-cookies-oreo-chipsahoy/828605/",
+        "published_at": "2026-09-10T14:00:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/6vM916-fH5kQnIGIPAE3rCScFLjiArY7usOt0F1CZwQ/g:nowe:17:0/c:4014:2268/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9JTUdfMDI0NC5qcGc=.webp\" /></div></figure><p>The Oreo and Chips Ahoy! maker is turning to innovation and marketing to woo more consumers inundated with other choices, such as chips and candy.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "General Mills’ CEO says M&A not a priority in challenging environment",
+        "source_url": "https://www.fooddive.com/news/general-mills-ceo-says-ma-not-a-priority-in-challenging-environment/830035/",
+        "published_at": "2026-09-10T14:00:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/YBAKg32M4T6gsPR3eTgz3Cz_fS0m3uj7jzZ1Qel7LKA/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9jaGVlcmlvei5wbmc=.webp\" /></div></figure><p>Jeff Harmening said there is a “high bar” for acquisitions, but the food maker could consider additional divestitures.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "CDC reporting almost 20,000 confirmed patients in Cyclospora outbreak",
+        "source_url": "https://www.foodsafetynews.com/2026/09/cdc-reporting-almost-20-000-confirmed-patients-in-cyclospora-outbreak/",
+        "published_at": "2026-09-10T04:06:07+00:00",
+        "summary": "Also, the CDC is aware of  6,149 additional cases of cyclosporiasis, which include those that are not laboratory confirmed, or are pending patient interview and submission."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "CDC, FDA share stage at European WGS event",
+        "source_url": "https://www.foodsafetynews.com/2026/09/cdc-fda-share-stage-at-european-wgs-event/",
+        "published_at": "2026-09-10T04:05:24+00:00",
+        "summary": "Also, insights from EFSA, ECDC, Ireland, Denmark, and France"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "EU notes improvement in U.S. aflatoxin situation",
+        "source_url": "https://www.foodsafetynews.com/2026/09/eu-notes-improvement-in-u-s-aflatoxin-situation/",
+        "published_at": "2026-09-10T04:03:44+00:00",
+        "summary": "<p>The American peanut industry has made major efforts to improve controls on exports to Europe, but aflatoxin contamination remains a problem, according to the European Commission.</p><p>An audit by DG Sante in March 2026 was planned because of regular Rapid Alert System for Food and Feed (RASFF) notifications for aflatoxins</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Publisher's Platform: Want to Put Us Out of Business? Come Help Us Try.",
+        "source_url": "https://www.foodsafetynews.com/2026/09/pu-2/",
+        "published_at": "2026-09-10T03:59:56+00:00",
+        "summary": "Both jobs are open now. Lawyers, send a writing sample and tell me which case or outbreak on marlerblog.com you would pick up first and what you would do with it. Paralegals, tell me about the hardest lien you ever cleared or the record you had to fight hardest to get."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Pork cracklings products recalled because of production in Colombia",
+        "source_url": "https://www.foodsafetynews.com/2026/09/pork-cracklings-products-recalled-because-of-production-in-colombia/",
+        "published_at": "2026-09-10T02:34:20+00:00",
+        "summary": "<p>El Eden Import Distributor Corp., a Long Island City, NY, firm, is recalling 264 pounds of potato chip products containing chicharrón (pork cracklings) because they were produced in the Republic of Colombia, a country that is not eligible to export meat products to the United States, the USDA&</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "New Salmonella outbreak traced to Evergreen Sprouts",
+        "source_url": "https://www.foodsafetynews.com/2026/09/new-salmonella-outbreak-traced-to-evergreen-sprouts/",
+        "published_at": "2026-09-10T02:00:33+00:00",
+        "summary": "This is the third outbreak since 2011 linked to Evergreen Sprouts."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "식품안전나라 행정처분",
+        "headline": "영업자가 판매를 목적으로 하거나 영업상 사용할 목적으로 수입식품등을 수입하려면 해당 수입식품등을 총리령으로 정하는 바에 따라 식품의약품안전처정에게 수입신고를 하여야 하고, 수입신고를 하려는 자 또는 수입신고를 한 자는 수입식품등의 안전과 품질에 대하여 책임을 지며, 거짓이나 그 밖의…",
+        "source_url": "/portal/administMeasureDetail.do?seq=4740730",
+        "published_at": "2026-09-10T00:00:00+00:00",
+        "summary": "영업자가 판매를 목적으로 하거나 영업상 사용할 목적으로 수입식품등을 수입하려면 해당 수입식품등을 총리령으로 정하는 바에 따라 식품의약품안전처정에게 수입신고를 하여야 하고, 수입신고를 하려는 자 또는 수입신고를 한 자는 수입식품등의 안전과 품질에 대하여 책임을 지며, 거짓이나 그 밖의 부정한 방법으로 수입신고 하여서는 아니 되나, - 상기 영업자는 2023년 11월 3일∼2024년 12월 2일까지 수입식품등(제품명: 슈프리모 똠양 팝콘 등 5개품목)을 수입신고 하면서 해외제조업소 명칭 및 소재지를 아래와 같이 사실과 다르게 수입신고 한 사실이 있음"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Safety News",
+        "headline": "Publisher's Platform: The chronic disease groups have been in a different room, and they should not be",
+        "source_url": "https://www.foodsafetynews.com/2026/09/publishers-platform-the-chronic-disease-groups-have-been-in-a-different-room-and-they-should-not-be/",
+        "published_at": "2026-09-09T22:20:35+00:00",
+        "summary": "Here are 10 of them, and 10 things all 40 Food Safety organizations could work on together."
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "Coca-Cola’s bet to relaunch Mr Pibb is paying off",
+        "source_url": "https://www.fooddive.com/news/mr-pibb-relaunch-top-growing-brand-morning-consult/829866/",
+        "published_at": "2026-09-09T13:27:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/mIpVluQsP2SfG62rvuVtTO_f83IKBanBtgFw8ezMV1A/g:nowe:0:0/c:1911:1080/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9OQU9VLU1SLVBJQkItS1YtUkdCX01yX1BpYmJfS1ZfSG9yaXpvbnRhbF8zNTVtbF9DYW4uanBn.webp\" /></div></figure><p>The recently revived brand was the fastest growing soda in 2026, according to Morning Consult.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "USDA takes new SNAP waiver approach following court ruling",
+        "source_url": "https://www.fooddive.com/news/usda-takes-new-snap-waiver-approach-following-court-ruling/829824/",
+        "published_at": "2026-09-09T13:27:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/WX3DVzTF_eEMlBHvs_pwtqM_5M3zvqMWOqlFt3mb0Y8/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0xMTg2NTk2NDQ2LmpwZw==.webp\" /></div></figure><p>After a federal district court judge vacated SNAP food purchasing restrictions in five states, the federal government wants public comments.</p>"
+      }
+    },
+    {
+      "event_model_payload": {
+        "source_name": "Food Dive",
+        "headline": "Beyond adds protein bars, powders in portfolio expansion",
+        "source_url": "https://www.fooddive.com/news/beyond-new-protein-bars-poweders-plant-based/829554/",
+        "published_at": "2026-09-09T13:00:00+00:00",
+        "summary": "<figure><div><img src=\"https://imgproxy.divecdn.com/JvZiYN4EEH4-DkaeYSmIrhLQMwYbBXTK_LC9SrtiR7Y/g:nowe:0:0/c:2500:1412/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9QaHl0b3NwaGVyZV9IZXJvLmpwZw==.webp\" /></div></figure><p>The plant-based meat company is entering adjacent categories to tap into more lucrative opportunities within protein.</p>"
+      }
+    }
+  ],
+  "ontology": {
+    "repo": "FoodRadar",
+    "category": "food",
+    "ontology_version": "0.1.0",
+    "event_model_ids": [
+      "food.complaint_signal",
+      "food.editorial_coverage",
+      "food.enforcement_action",
+      "food.official_notice",
+      "food.recall_status_change"
+    ],
+    "event_model_mappings": {
+      "recall_status_change": "food.recall_status_change",
+      "enforcement_action": "food.enforcement_action",
+      "complaint_signal": "food.complaint_signal",
+      "official_notice": "food.official_notice",
+      "editorial_coverage": "food.editorial_coverage"
+    },
+    "entity_type_hints": [
+      "food.food_type",
+      "food.brand",
+      "food.product",
+      "food.manufacturer",
+      "food.safety_issue",
+      "food.regulation"
+    ],
+    "source_role_ids": [
+      "community_signal",
+      "context_only",
+      "official_context",
+      "primary_evidence"
+    ],
+    "source_role_mappings": {
+      "식품안전나라 회수판매중지": "primary_evidence",
+      "식품안전나라 행정처분": "primary_evidence",
+      "식약처 보도자료": "official_context",
+      "식품안전 국내뉴스": "context_only",
+      "식품안전 해외뉴스": "context_only",
+      "Food Safety News": "context_only",
+      "Food Dive": "context_only",
+      "r/foodsafety": "community_signal",
+      "r/Cooking": "community_signal",
+      "r/nutrition": "community_signal",
+      "r/KoreanFood": "community_signal",
+      "r/ProductRecalls": "community_signal"
+    },
+    "evidence_policy_ids": [
+      "food.official_source_required_for_recall",
+      "food.community_signal_auxiliary_only",
+      "food.traceable_url_required"
+    ]
+  },
+  "quality_summary": {
+    "total_sources": 12,
+    "tracked_sources": 3,
+    "fresh_sources": 1,
+    "quiet_window_sources": 0,
+    "stale_sources": 0,
+    "missing_sources": 2,
+    "unknown_event_date_sources": 0,
+    "not_tracked_sources": 8,
+    "catalog_only_sources": 0,
+    "skipped_disabled_sources": 1,
+    "collection_error_count": 8,
+    "alias_candidate_count": 4,
+    "text_length_outlier_count": 0,
+    "title_length_outlier_count": 0,
+    "summary_length_outlier_count": 0,
+    "mapped_alias_candidate_count": 2,
+    "unmapped_alias_candidate_count": 2,
+    "product_alias_candidate_count": 0,
+    "brand_alias_candidate_count": 4,
+    "manufacturer_alias_candidate_count": 0,
+    "match_coverage_article_count": 59,
+    "match_coverage_matched_count": 54,
+    "match_coverage_unmatched_count": 5,
+    "match_coverage_rate": 91.5,
+    "match_coverage_review_item_count": 5,
+    "fresh_food_events": 4,
+    "stale_food_events": 5,
+    "undated_food_events": 0,
+    "unique_food_event_key_count": 9,
+    "recall_events_with_notice_date_count": 0,
+    "recall_events_with_status_count": 0,
+    "event_alias_trace_count": 0,
+    "complaint_auxiliary_only_events": 0,
+    "official_evidence_events": 9,
+    "recall_status_change_events": 0,
+    "enforcement_action_events": 9,
+    "complaint_signal_events": 0
+  },
+  "warnings": [
+    "collection errors detected: 8",
+    "freshness gaps detected: stale=0, missing=2"
+  ],
+  "quality_flagged_sources": [
+    {
+      "source": "식품안전나라 회수판매중지",
+      "source_type": "rss",
+      "enabled": true,
+      "tracked": true,
+      "event_model": "recall_status_change",
+      "freshness_sla_days": 3,
+      "quiet_window_days": 5,
+      "status": "missing",
+      "article_count": 0,
+      "latest_event_at": null,
+      "latest_collected_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_food_event_key": "",
+      "latest_notice_date": "",
+      "latest_recall_status": "",
+      "latest_release_date": "",
+      "latest_sanction_start_date": "",
+      "latest_sanction_end_date": "",
+      "latest_sanction_type": "",
+      "latest_product_name_raw": "",
+      "latest_manufacturer_name_raw": "",
+      "latest_alias_traces": [],
+      "verification_role": "",
+      "merge_policy": "",
+      "skip_reason": "",
+      "reenable_gate": "",
+      "errors": [
+        "식품안전나라 회수판매중지: Source disabled (crawl health threshold reached)"
+      ]
+    },
+    {
+      "source": "r/foodsafety",
+      "source_type": "reddit",
+      "enabled": true,
+      "tracked": true,
+      "event_model": "complaint_signal",
+      "freshness_sla_days": 3,
+      "quiet_window_days": null,
+      "status": "missing",
+      "article_count": 0,
+      "latest_event_at": null,
+      "latest_collected_at": null,
+      "age_days": null,
+      "latest_title": "",
+      "latest_url": "",
+      "latest_food_event_key": "",
+      "latest_notice_date": "",
+      "latest_recall_status": "",
+      "latest_release_date": "",
+      "latest_sanction_start_date": "",
+      "latest_sanction_end_date": "",
+      "latest_sanction_type": "",
+      "latest_product_name_raw": "",
+      "latest_manufacturer_name_raw": "",
+      "latest_alias_traces": [],
+      "verification_role": "auxiliary_complaint_signal",
+      "merge_policy": "do_not_merge_with_official_notice",
+      "skip_reason": "",
+      "reenable_gate": "",
+      "errors": [
+        "r/foodsafety: Source disabled (crawl health threshold reached)"
+      ]
+    }
+  ],
+  "quality_alias_candidates": [
+    {
+      "alias_type": "brand",
+      "canonical": "Kraft Heinz",
+      "normalized": "kraftheinz",
+      "variants": [
+        "kraft heinz"
+      ],
+      "count": 1,
+      "example_urls": [
+        "https://www.fooddive.com/news/kraft-heinz-oscar-mayer-turnaround/830286"
+      ]
+    },
+    {
+      "alias_type": "brand",
+      "canonical": "",
+      "normalized": "mars",
+      "variants": [
+        "mars"
+      ],
+      "count": 2,
+      "example_urls": [
+        "https://www.fooddive.com/news/general-mills-mars-lawsuit-sugar-price-fixing/830079",
+        "https://www.fooddive.com/news/mars-startups-unreasonable-fiber-gut-health/830410"
+      ]
+    },
+    {
+      "alias_type": "brand",
+      "canonical": "",
+      "normalized": "mondelz",
+      "variants": [
+        "mondelēz"
+      ],
+      "count": 2,
+      "example_urls": [
+        "https://www.fooddive.com/news/Mondelez-snacking-cookies-oreo-chipsahoy/828605",
+        "https://www.fooddive.com/news/snacking-mondelez-relaunch-oreo-2027-chips-ahoy/830320"
+      ]
+    },
+    {
+      "alias_type": "brand",
+      "canonical": "PepsiCo",
+      "normalized": "pepsico",
+      "variants": [
+        "pepsico"
+      ],
+      "count": 1,
+      "example_urls": [
+        "https://www.fooddive.com/news/pepsico-ready-to-drink-dirty-soda-mountain-dew-mug-root-beer/828427"
+      ]
+    }
+  ],
+  "quality_match_coverage_review_items": [
+    {
+      "reason": "market_or_editorial_unclassified",
+      "priority": "medium",
+      "source": "Food Dive",
+      "source_type": "rss",
+      "trust_tier": "T3_professional",
+      "event_model": "editorial_coverage",
+      "title": "Boston Beer hires tech-savvy CMO to hone data-driven marketing",
+      "url": "https://www.fooddive.com/news/boston-beer-hires-tech-savvy-cmo-to-hone-data-driven-marketing/829940",
+      "published_at": "2026-09-10T14:44:00+00:00",
+      "collected_at": "2026-09-15T08:13:46.198451+00:00",
+      "summary_excerpt": "Allison Stransky will join the Samuel Adams owner from Samsung Electronics America, where she’s focused on applications of big data and AI.",
+      "recommended_action": "review Product/FoodType/Brand keyword coverage"
+    },
+    {
+      "reason": "market_or_editorial_unclassified",
+      "priority": "medium",
+      "source": "Food Dive",
+      "source_type": "rss",
+      "trust_tier": "T3_professional",
+      "event_model": "editorial_coverage",
+      "title": "Coca-Cola to spend $10B on US manufacturing by 2030",
+      "url": "https://www.fooddive.com/news/coca-cola-us-manufacturing-10-billion-investment/830468",
+      "published_at": "2026-09-15T20:02:00+00:00",
+      "collected_at": "2026-09-16T08:06:34.210097+00:00",
+      "summary_excerpt": "The soda giant and its bottlers are planning to expand production and distribution in part of its largest market.",
+      "recommended_action": "review Product/FoodType/Brand keyword coverage"
+    },
+    {
+      "reason": "market_or_editorial_unclassified",
+      "priority": "medium",
+      "source": "Food Safety News",
+      "source_type": "rss",
+      "trust_tier": "T3_professional",
+      "event_model": "editorial_coverage",
+      "title": "Abbott to pay almost $385 million to settle false claims allegation about infant formula",
+      "url": "https://www.foodsafetynews.com/2026/09/abbott-hit-with-almost-390-million-to-settle-false-claims-allegation-about-infant-formula",
+      "published_at": "2026-09-15T01:20:10+00:00",
+      "collected_at": "2026-09-16T08:06:34.210097+00:00",
+      "summary_excerpt": "The settlement resolves a case by the federal government related to allegations about false claims and is not a determination of liability on the part of the company.",
+      "recommended_action": "review Product/FoodType/Brand keyword coverage"
+    },
+    {
+      "reason": "market_or_editorial_unclassified",
+      "priority": "medium",
+      "source": "Food Safety News",
+      "source_type": "rss",
+      "trust_tier": "T3_professional",
+      "event_model": "editorial_coverage",
+      "title": "Pesto linked to botulism cases in Poland",
+      "url": "https://www.foodsafetynews.com/2026/09/pesto-linked-to-botulism-cases-in-poland",
+      "published_at": "2026-09-11T04:01:13+00:00",
+      "collected_at": "2026-09-14T08:21:48.310575+00:00",
+      "summary_excerpt": "The company said it was taking all necessary steps to fully clarify the matter",
+      "recommended_action": "review Product/FoodType/Brand keyword coverage"
+    },
+    {
+      "reason": "market_or_editorial_unclassified",
+      "priority": "medium",
+      "source": "Food Safety News",
+      "source_type": "rss",
+      "trust_tier": "T3_professional",
+      "event_model": "editorial_coverage",
+      "title": "The Sunday Edition: Antibiotics",
+      "url": "https://www.foodsafetynews.com/2026/09/the-sunday-edition-antibiotics",
+      "published_at": "2026-09-13T12:00:17+00:00",
+      "collected_at": "2026-09-16T08:06:34.210097+00:00",
+      "summary_excerpt": "We have reached a point where there are very few treatment alternatives left for some bacterial infections – including some caused by foodborne bacteria.",
+      "recommended_action": "review Product/FoodType/Brand keyword coverage"
+    }
+  ]
+}
