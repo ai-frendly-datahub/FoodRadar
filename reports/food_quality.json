@@ -1,6 +1,6 @@
 {
   "category": "food",
-  "generated_at": "2026-10-06T09:38:22.020999+00:00",
+  "generated_at": "2026-10-07T09:34:17.442574+00:00",
   "summary": {
     "total_sources": 12,
     "tracked_sources": 3,
@@ -13,19 +13,19 @@
     "catalog_only_sources": 0,
     "skipped_disabled_sources": 1,
     "collection_error_count": 0,
-    "alias_candidate_count": 3,
+    "alias_candidate_count": 4,
     "text_length_outlier_count": 0,
     "title_length_outlier_count": 0,
     "summary_length_outlier_count": 0,
-    "mapped_alias_candidate_count": 1,
+    "mapped_alias_candidate_count": 2,
     "unmapped_alias_candidate_count": 2,
     "product_alias_candidate_count": 0,
-    "brand_alias_candidate_count": 3,
+    "brand_alias_candidate_count": 4,
     "manufacturer_alias_candidate_count": 0,
-    "match_coverage_article_count": 54,
-    "match_coverage_matched_count": 53,
+    "match_coverage_article_count": 56,
+    "match_coverage_matched_count": 55,
     "match_coverage_unmatched_count": 1,
-    "match_coverage_rate": 98.1,
+    "match_coverage_rate": 98.2,
     "match_coverage_review_item_count": 1,
     "fresh_food_events": 1,
     "stale_food_events": 2,
@@ -83,8 +83,8 @@
       "status": "fresh",
       "article_count": 3,
       "latest_event_at": "2026-10-06T00:00:00+00:00",
-      "latest_collected_at": "2026-10-06T09:38:20.322999+00:00",
-      "age_days": 0.4,
+      "latest_collected_at": "2026-10-07T09:34:15.751480+00:00",
+      "age_days": 1.4,
       "latest_title": "「수입식품안전관리 특별법」 제20조제1항에 따른 수입신고를 하지 아니한 중국산 기구 용기(제품명: 에코비 밀랍랩)를 중국 대행업체로부터 공급받아 전자상거래 사이트에서 판매할 목적으로 진열(게시)하고 2026.5.25.부터 2026.6.4.까지 총 5개(판매금액: 64,500원)를 판매…",
       "latest_url": "/portal/administMeasureDetail.do?seq=4745075",
       "latest_food_event_key": "enforcement-action:kr:식품안전나라-행정처분:2026-05-25:수입식품:식품:portal-administmeasuredetail-do-seq-4745075",
@@ -205,12 +205,12 @@
       "freshness_sla_days": null,
       "quiet_window_days": null,
       "status": "not_tracked",
-      "article_count": 30,
-      "latest_event_at": "2026-10-06T04:05:22+00:00",
-      "latest_collected_at": "2026-10-06T09:38:20.322999+00:00",
+      "article_count": 32,
+      "latest_event_at": "2026-10-07T04:05:03+00:00",
+      "latest_collected_at": "2026-10-07T09:34:15.751480+00:00",
       "age_days": 0.23,
-      "latest_title": "FDA announces plan to address Cyclospora on fresh produce",
-      "latest_url": "https://www.foodsafetynews.com/2026/10/fda-announces-plan-to-address-cyclospora-on-fresh-produce",
+      "latest_title": "Before next season, show us what will be different",
+      "latest_url": "https://www.foodsafetynews.com/2026/10/before-next-season-show-us-what-will-be-different",
       "latest_food_event_key": "",
       "latest_notice_date": "",
       "latest_recall_status": "",
@@ -237,11 +237,11 @@
       "quiet_window_days": null,
       "status": "not_tracked",
       "article_count": 21,
-      "latest_event_at": "2026-10-05T13:41:20+00:00",
-      "latest_collected_at": "2026-10-06T09:38:20.322999+00:00",
-      "age_days": 0.83,
-      "latest_title": "Once Upon a Farm joins crowded kids electrolyte space",
-      "latest_url": "https://www.fooddive.com/news/once-upon-a-farm-debuts-kids-electrolyte-product-nestle/832106",
+      "latest_event_at": "2026-10-06T14:30:00+00:00",
+      "latest_collected_at": "2026-10-07T09:34:15.751480+00:00",
+      "age_days": 0.79,
+      "latest_title": "Mars hikes use of sustainably sourced cocoa, but falls short of 2025 goal",
+      "latest_url": "https://www.fooddive.com/news/mars-sustainably-cocoa-goals/832032",
       "latest_food_event_key": "",
       "latest_notice_date": "",
       "latest_recall_status": "",
@@ -423,7 +423,7 @@
       "title": "「수입식품안전관리 특별법」 제20조제1항에 따른 수입신고를 하지 아니한 중국산 기구 용기(제품명: 에코비 밀랍랩)를 중국 대행업체로부터 공급받아 전자상거래 사이트에서 판매할 목적으로 진열(게시)하고 2026.5.25.부터 2026.6.4.까지 총 5개(판매금액: 64,500원)를 판매…",
       "url": "/portal/administMeasureDetail.do?seq=4745075",
       "event_at": "2026-10-06T00:00:00+00:00",
-      "event_age_days": 0.4,
+      "event_age_days": 1.4,
       "event_freshness_sla_days": 2,
       "event_status": "fresh",
       "food_event_key": "enforcement-action:kr:식품안전나라-행정처분:2026-05-25:수입식품:식품:portal-administmeasuredetail-do-seq-4745075",
@@ -459,7 +459,7 @@
       "title": "인터넷 판매 사이트을 통해 해외식품을 구매대행할 목적으로 관련 광고글을 게시하면서, 건강기능식품이 아닌 것을 건강기능식품으로 인식할 우려가 있는 표시 또는 광고를 게시한 사실이 있음",
       "url": "/portal/administMeasureDetail.do?seq=4745178",
       "event_at": "2026-10-02T00:00:00+00:00",
-      "event_age_days": 4.4,
+      "event_age_days": 5.4,
       "event_freshness_sla_days": 2,
       "event_status": "stale",
       "food_event_key": "enforcement-action:kr:식품안전나라-행정처분:2026-10-02:건강기능식품:식품:portal-administmeasuredetail-do-seq-4745178",
@@ -495,7 +495,7 @@
       "title": "2026. 6. 4. 수입신고한 베트남산 해물혼합(냉동) ‘냉동해물혼합(SP2)(FROZEN SEAFOOD MIX(SP2), 포장년월일: 2026. 4. 17., 수입신고 접수번호: 202600385018)’에 대한 정밀검사 결과, 식용으로 사용이 금지된 유해물질인 동물용의약품 ‘오플…",
       "url": "/portal/administMeasureDetail.do?seq=4743505",
       "event_at": "2026-10-01T00:00:00+00:00",
-      "event_age_days": 5.4,
+      "event_age_days": 6.4,
       "event_freshness_sla_days": 2,
       "event_status": "stale",
       "food_event_key": "enforcement-action:kr:식품안전나라-행정처분:2026-06-04:seafood-해물:검출-검사-식용:portal-administmeasuredetail-do-seq-4743505",
@@ -530,15 +530,28 @@
   "alias_candidates": [
     {
       "alias_type": "brand",
+      "canonical": "Kraft Heinz",
+      "normalized": "kraftheinz",
+      "variants": [
+        "kraft heinz"
+      ],
+      "count": 1,
+      "example_urls": [
+        "https://www.fooddive.com/news/kraft-mac-and-cheese-cheesy-ramen-product-innovation/832222"
+      ]
+    },
+    {
+      "alias_type": "brand",
       "canonical": "",
       "normalized": "mars",
       "variants": [
         "mars"
       ],
-      "count": 2,
+      "count": 3,
       "example_urls": [
         "https://www.fooddive.com/news/leftovers-skittles-give-gummies-some-crunch-cup-noodles-bites-back-for-h/832000",
-        "https://www.fooddive.com/news/leftovers-skittles-gives-gummies-some-crunch-cup-noodles-bites-back-for/832000"
+        "https://www.fooddive.com/news/leftovers-skittles-gives-gummies-some-crunch-cup-noodles-bites-back-for/832000",
+        "https://www.fooddive.com/news/mars-sustainably-cocoa-goals/832032"
       ]
     },
     {
@@ -548,10 +561,9 @@
       "variants": [
         "nestlé"
       ],
-      "count": 3,
+      "count": 2,
       "example_urls": [
         "https://www.fooddive.com/news/6-food-manufacturers-talk-supply-chain-tactics/832033",
-        "https://www.fooddive.com/news/nestle-plastic-reduction-strategy-2030/831372",
         "https://www.fooddive.com/news/once-upon-a-farm-debuts-kids-electrolyte-product-nestle/832106"
       ]
     },
@@ -580,7 +592,7 @@
       "title": "Ferrero launches Nutella-filled frozen waffles",
       "url": "https://www.fooddive.com/news/ferrero-nutella-waffles-breakfast-innovation/832036",
       "published_at": "2026-10-05T13:00:00+00:00",
-      "collected_at": "2026-10-06T09:38:20.322999+00:00",
+      "collected_at": "2026-10-07T09:34:15.751480+00:00",
       "summary_excerpt": "The product, set to launch in the U.S. next spring, is meant to be a premium option in a space that has lacked meaningful innovation, an executive said.",
       "recommended_action": "review Product/FoodType/Brand keyword coverage"
     }
