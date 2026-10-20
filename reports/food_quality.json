@@ -1,6 +1,6 @@
 {
   "category": "food",
-  "generated_at": "2026-10-19T08:19:08.365192+00:00",
+  "generated_at": "2026-10-20T08:03:02.319139+00:00",
   "summary": {
     "total_sources": 12,
     "tracked_sources": 3,
@@ -13,14 +13,14 @@
     "catalog_only_sources": 0,
     "skipped_disabled_sources": 1,
     "collection_error_count": 0,
-    "alias_candidate_count": 1,
+    "alias_candidate_count": 2,
     "text_length_outlier_count": 0,
     "title_length_outlier_count": 0,
     "summary_length_outlier_count": 0,
     "mapped_alias_candidate_count": 1,
-    "unmapped_alias_candidate_count": 0,
+    "unmapped_alias_candidate_count": 1,
     "product_alias_candidate_count": 0,
-    "brand_alias_candidate_count": 1,
+    "brand_alias_candidate_count": 2,
     "manufacturer_alias_candidate_count": 0,
     "match_coverage_article_count": 42,
     "match_coverage_matched_count": 41,
@@ -83,8 +83,8 @@
       "status": "stale",
       "article_count": 3,
       "latest_event_at": "2026-10-16T00:00:00+00:00",
-      "latest_collected_at": "2026-10-18T07:35:11.061678+00:00",
-      "age_days": 3.35,
+      "latest_collected_at": "2026-10-20T08:03:00.563660+00:00",
+      "age_days": 4.34,
       "latest_title": "○ 수입신고를 하려는 자 또는 수입신고를 한 자는 수입식품등의 안전과 품질에 대하여 책임을 지며, 거짓이나 그 밖의 부정한 방법으로 수입신고 하여서는 아니 되나, - 상기 영업자는 2023년 4월 11일부터 2025년 5월 14일 까지수입식품등[제품명: 레몬민트 등 10개 품목]을 수…",
       "latest_url": "/portal/administMeasureDetail.do?seq=4745674",
       "latest_food_event_key": "enforcement-action:kr:식품안전나라-행정처분:2023-04-11:제조업소:수입식품:식품:portal-administmeasuredetail-do-seq-4745674",
@@ -205,12 +205,12 @@
       "freshness_sla_days": null,
       "quiet_window_days": null,
       "status": "not_tracked",
-      "article_count": 23,
-      "latest_event_at": "2026-10-19T04:05:00+00:00",
-      "latest_collected_at": "2026-10-19T08:19:07.032308+00:00",
-      "age_days": 0.18,
-      "latest_title": "Publisher's Platform: Comments sought on FDA petition to add botulism to the infant formula testing list",
-      "latest_url": "https://www.foodsafetynews.com/2026/10/publishers-platform-comments-sought-on-fda-petition-to-add-botulism-to-the-infant-formula-testing-list",
+      "article_count": 24,
+      "latest_event_at": "2026-10-20T04:05:00+00:00",
+      "latest_collected_at": "2026-10-20T08:03:00.563660+00:00",
+      "age_days": 0.17,
+      "latest_title": "Austrian tomato warning follows Salmonella infections",
+      "latest_url": "https://www.foodsafetynews.com/2026/10/austrian-tomato-warning-follows-salmonella-infections",
       "latest_food_event_key": "",
       "latest_notice_date": "",
       "latest_recall_status": "",
@@ -236,12 +236,12 @@
       "freshness_sla_days": null,
       "quiet_window_days": null,
       "status": "not_tracked",
-      "article_count": 16,
-      "latest_event_at": "2026-10-16T14:45:00+00:00",
-      "latest_collected_at": "2026-10-19T08:19:07.032308+00:00",
-      "age_days": 2.73,
-      "latest_title": "Inside Omaha Steaks’ efforts to ditch marketing bull and attract Gen Z",
-      "latest_url": "https://www.fooddive.com/news/inside-omaha-steaks-efforts-to-ditch-marketing-bull-and-attract-gen-z/833235",
+      "article_count": 15,
+      "latest_event_at": "2026-10-19T15:29:10+00:00",
+      "latest_collected_at": "2026-10-20T08:03:00.563660+00:00",
+      "age_days": 0.69,
+      "latest_title": "Texas sues Nestlé’s Gerber over alleged heavy metals in baby food",
+      "latest_url": "https://www.fooddive.com/news/texas-sues-nestles-gerber-over-alleged-heavy-metals-in-baby-food/833365",
       "latest_food_event_key": "",
       "latest_notice_date": "",
       "latest_recall_status": "",
@@ -423,7 +423,7 @@
       "title": "○ 수입신고를 하려는 자 또는 수입신고를 한 자는 수입식품등의 안전과 품질에 대하여 책임을 지며, 거짓이나 그 밖의 부정한 방법으로 수입신고 하여서는 아니 되나, - 상기 영업자는 2023년 4월 11일부터 2025년 5월 14일 까지수입식품등[제품명: 레몬민트 등 10개 품목]을 수…",
       "url": "/portal/administMeasureDetail.do?seq=4745674",
       "event_at": "2026-10-16T00:00:00+00:00",
-      "event_age_days": 3.35,
+      "event_age_days": 4.34,
       "event_freshness_sla_days": 2,
       "event_status": "stale",
       "food_event_key": "enforcement-action:kr:식품안전나라-행정처분:2023-04-11:제조업소:수입식품:식품:portal-administmeasuredetail-do-seq-4745674",
@@ -461,7 +461,7 @@
       "title": "2025년 8월 10일부터 2026년 1월 19일까지 '제품명: 욕지도 고구마막걸리(유형: 탁주)'를 생산하면서 자가품질검사 전항목을 실시하지 않은 사실이 있음.",
       "url": "/portal/administMeasureDetail.do?seq=4745480",
       "event_at": "2026-10-15T00:00:00+00:00",
-      "event_age_days": 4.35,
+      "event_age_days": 5.34,
       "event_freshness_sla_days": 2,
       "event_status": "stale",
       "food_event_key": "enforcement-action:kr:식품안전나라-행정처분:2025-08-10:막걸리:검사:portal-administmeasuredetail-do-seq-4745480",
@@ -497,7 +497,7 @@
       "title": "상기 당사자는 수입 건강기능식품(제품명: 프리메가5000 프로바이오틱스포르테)을 수입·판매하면서「식품 등의 표시․광고에 관한 법률」제10조제1항에 따라 심의받지 않고 표시 또는 광고를 한 사실이 있음",
       "url": "/portal/administMeasureDetail.do?seq=4746990",
       "event_at": "2026-10-15T00:00:00+00:00",
-      "event_age_days": 4.35,
+      "event_age_days": 5.34,
       "event_freshness_sla_days": 2,
       "event_status": "stale",
       "food_event_key": "enforcement-action:kr:식품안전나라-행정처분:2026-10-15:건강기능식품:식품:portal-administmeasuredetail-do-seq-4746990",
@@ -529,15 +529,27 @@
   "alias_candidates": [
     {
       "alias_type": "brand",
+      "canonical": "",
+      "normalized": "nestl",
+      "variants": [
+        "nestlé"
+      ],
+      "count": 2,
+      "example_urls": [
+        "https://www.fooddive.com/news/nestle-investment-mexico-coffee-pet-food-emerging-markets/832996",
+        "https://www.fooddive.com/news/texas-sues-nestles-gerber-over-alleged-heavy-metals-in-baby-food/833365"
+      ]
+    },
+    {
+      "alias_type": "brand",
       "canonical": "PepsiCo",
       "normalized": "pepsico",
       "variants": [
         "pepsico"
       ],
-      "count": 2,
+      "count": 1,
       "example_urls": [
-        "https://www.fooddive.com/news/ghirardelli-dubai-chocolate-perdue-pepsico-chicken-cpk-salads/833232",
-        "https://www.fooddive.com/news/pepsico-soda-business-turnaround-poppi-mountain-dew/832737"
+        "https://www.fooddive.com/news/ghirardelli-dubai-chocolate-perdue-pepsico-chicken-cpk-salads/833232"
       ]
     }
   ],
@@ -553,7 +565,7 @@
       "title": "Publisher’s Platform: Seven Petitions, One Message: Tell Us What You Know, Test for What Kills, and Warn People Before They Eat It",
       "url": "https://www.foodsafetynews.com/2026/10/publishers-platform-seven-petitions-one-message-tell-us-what-you-know-test-for-what-kills-and-warn-people-before-they-eat-it",
       "published_at": "2026-10-17T03:19:46+00:00",
-      "collected_at": "2026-10-19T08:19:07.032308+00:00",
+      "collected_at": "2026-10-20T08:03:00.563660+00:00",
       "summary_excerpt": "Every one of these petitions comes back to the same idea. If the government knows something that would keep people from getting sick, it should test for it, write it down and tell the public. That is not a radical ask. It is the job.",
       "recommended_action": "review Product/FoodType/Brand keyword coverage"
     }
