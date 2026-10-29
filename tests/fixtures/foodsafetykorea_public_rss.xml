@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Trimmed from the public 식품안전나라 RSS feeds on 2026-10-29.
+  robots.txt: https://www.foodsafetykorea.go.kr/robots.txt
+  (User-agent Googlebot disallows only /api/board/board.do?menu_grp=MENU_GRP33&menu_no=690$)
+  Sources:
+  - https://www.foodsafetykorea.go.kr/rss/rss.do?menu_no=2713&menu_grp=MENU_NEW02
+  - https://www.foodsafetykorea.go.kr/rss/rss.do?menu_no=2714&menu_grp=MENU_NEW02
+  - https://www.foodsafetykorea.go.kr/rss/rss.do?bbs_no=bbs080&menu_no=2857&menu_grp=MENU_NEW05
+  - https://www.foodsafetykorea.go.kr/rss/rss.do?bbs_no=bbs180&menu_no=4122&menu_grp=MENU_NEW05
+  One public <item> is kept from each feed. The last four items reproduce list,
+  javascript:, and /layer links using ids that appear in those public items.
+-->
+<rss version="2.0">
+<channel>
+	<title>행정처분</title>
+	<link>/portal/fooddanger/administMeasureList.do?menu_no=2714&amp;menu_grp=MENU_NEW02</link>
+	<description><![CDATA[식품안전나라 RSS fixture]]></description>
+	<item>
+			<title><![CDATA[ 주식회사 어썸티 ]]></title>
+			<link>/portal/suspensionDetail.do?search_keyword=3000236534</link>
+			<description><![CDATA[ 도라지환 ]]></description>
+			<pubDate><![CDATA[ Tue Oct 27 00:00:00 KST 2026 ]]></pubDate>
+		</item>
+	<item>
+			<title><![CDATA[ 인터넷 판매 사이트(네이버 스마트 스토어)을 통해 해외식품(상품명: ① 총 210정 호주 폴리코사놀 20mg 고함량 폴리코사놀 20 호주산 사탕수수직구, ② MVL2 호주 폴리코사놀 고함량 사탕수수직구 효능 네이쳐스탑 두달치)을 구매대행할 목적으로 관련 광고글을 게시하면서, 건강기능식품이 아닌 것을 건강기능식품으로 인식할 우려가 있는 표시 또는 광고[(관련태그) #호주영양제]를 게시한 사실이 있음
+ ]]></title>
+			<link>/portal/administMeasureDetail.do?seq=4749051</link>
+			<description><![CDATA[ 20261028 ]]></description>
+			<pubDate><![CDATA[  ]]></pubDate>
+		</item>
+	<item>
+			<title><![CDATA[ 식약처, 김장철 대비 단순처리 농·수산물 생산업체 위생점검 ]]></title>
+			<link>/portal/board/boardDetail.do?bbs_no=bbs080&amp;ntctxt_no=50448&amp;menu_no=2857</link>
+			<description><![CDATA[ <p><span style="font-size: 10pt;">식약처, 김장철 대비 단순처리 농&middot;수산물 생산업체 위생점검</span></p> ]]></description>
+			<pubDate><![CDATA[ Thu Oct 29 00:00:00 KST 2026 ]]></pubDate>
+		</item>
+	<item>
+			<title><![CDATA[ 대만, 식품표시 신호등 제도 공동 추진 ]]></title>
+			<link>/portal/board/boardDetail.do?bbs_no=bbs180&amp;ntctxt_no=1110421&amp;menu_no=4122</link>
+			<description><![CDATA[  ]]></description>
+			<pubDate><![CDATA[ Tue Apr 14 00:00:00 KST 2026 ]]></pubDate>
+		</item>
+
+		<item>
+			<title><![CDATA[행정처분 레이어 링크]]></title>
+			<link>/layer/administMeasureDetail.do?seq=4749051&amp;t=1710000000000</link>
+			<description><![CDATA[20261028]]></description>
+		</item>
+		<item>
+			<title><![CDATA[행정처분 스크립트 링크]]></title>
+			<link>javascript:fn_moveDetail2('4749051')</link>
+			<description><![CDATA[20261028]]></description>
+		</item>
+		<item>
+			<title><![CDATA[행정처분 목록 링크]]></title>
+			<link>/portal/fooddanger/administMeasureList.do?menu_no=2714&amp;menu_grp=MENU_NEW02</link>
+			<description><![CDATA[20261028]]></description>
+		</item>
+		<item>
+			<title><![CDATA[회수 목록 링크]]></title>
+			<link>/portal/fooddanger/suspension.do</link>
+			<guid>/portal/suspensionDetail.do?search_keyword=3000236534</guid>
+			<description><![CDATA[공개 목록 주소만 있고 guid에 상세 경로가 있는 항목입니다. 본문이 50자를 넘어 추가 수집은 하지 않습니다.]]></description>
+		</item>
+
+</channel>
+</rss>
