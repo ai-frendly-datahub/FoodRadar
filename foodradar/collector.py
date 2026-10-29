@@ -38,9 +38,7 @@ DATE_ONLY_SUMMARY_PATTERN = re.compile(
 )
 COMPACT_DATE_PATTERN = re.compile(r"^\s*(20\d{2})(\d{2})(\d{2})\s*$")
 SEPARATED_DATE_PATTERN = re.compile(
-    r"^\s*(20\d{2})\s*(?:[.\-/]|년)\s*"
-    r"(\d{1,2})\s*(?:[.\-/]|월)\s*"
-    r"(\d{1,2})"
+    r"^\s*(20\d{2})\s*(?:[.\-/]|년)\s*" r"(\d{1,2})\s*(?:[.\-/]|월)\s*" r"(\d{1,2})"
 )
 
 
@@ -220,19 +218,14 @@ def collect_sources(
     errors: list[str] = []
     enabled_sources = [source for source in sources if source.enabled]
     rss_sources = [source for source in enabled_sources if source.type.lower() == "rss"]
-    reddit_sources = [
-        source for source in enabled_sources if source.type.lower() == "reddit"
-    ]
+    reddit_sources = [source for source in enabled_sources if source.type.lower() == "reddit"]
     unsupported_sources = [
-        source
-        for source in enabled_sources
-        if source.type.lower() not in {"rss", "reddit"}
+        source for source in enabled_sources if source.type.lower() not in {"rss", "reddit"}
     ]
     manager = get_circuit_breaker_manager()
     workers = _resolve_max_workers(max_workers)
     source_hosts: dict[str, str] = {
-        source.name: (urlparse(source.url).netloc.lower() or source.name)
-        for source in rss_sources
+        source.name: (urlparse(source.url).netloc.lower() or source.name) for source in rss_sources
     }
     rate_limiters: dict[str, RateLimiter] = {
         host: RateLimiter(min_interval=min_interval_per_host) for host in set(source_hosts.values())
@@ -380,14 +373,11 @@ def _collect_single(
                 raw_title = _entry_text(entry, "title").strip()
                 summary = f"[식품안전] {raw_title}" if raw_title else ""
 
-            # URL extraction fallback: fetch content from link if summary is too short
-            link = _entry_text(entry, "link").strip()
+            # URL extraction fallback: fetch content from link if summary is too short.
+            # Resolve first so a relative, list, or javascript: href is not fetched.
+            link = _article_link(entry, source.url)
             if link and (
-                not summary
-                or (
-                    len(summary.strip()) < 50
-                    and not _is_date_only_summary(summary)
-                )
+                not summary or (len(summary.strip()) < 50 and not _is_date_only_summary(summary))
             ):
                 extracted = extract_url_content_safe(link)
                 if extracted and extracted.content:
@@ -408,7 +398,7 @@ def _collect_single(
             items.append(
                 Article(
                     title=normalized_title,
-                    link=_entry_text(entry, "link").strip(),
+                    link=link,
                     summary=normalized_summary,
                     published=published,
                     source=source.name,
@@ -575,3 +565,268 @@ def _extract_datetime(entry: Mapping[str, Any]) -> datetime | None:
 def _entry_text(entry: Mapping[str, Any], key: str) -> str:
     value = entry.get(key)
     return value if isinstance(value, str) else ""
+
+
+_FOODSAFETYKOREA_ORIGIN = "https://www.foodsafetykorea.go.kr"
+_CANONICAL_DETAIL_PATHS: dict[str, str] = {
+    "administmeasuredetail": "/portal/administMeasureDetail.do",
+    "suspensiondetail": "/portal/suspensionDetail.do",
+    "boarddetail": "/portal/board/boardDetail.do",
+}
+_DETAIL_ID_PARAMS: dict[str, str] = {
+    "administmeasuredetail": "seq",
+    "suspensiondetail": "search_keyword",
+    "boarddetail": "ntctxt_no",
+}
+_LIST_PAGE_SUFFIXES: tuple[str, ...] = (
+    "/portal/fooddanger/administMeasureList.do",
+    "/portal/fooddanger/suspension.do",
+    "/portal/board/board.do",
+    "/rss/rss.do",
+)
+_DETAIL_KIND_PATTERN = re.compile(
+    r"(?P<kind>administMeasureDetail|suspensionDetail|boardDetail)\.do$",
+    re.IGNORECASE,
+)
+_JS_MOVE_DETAIL2_PATTERN = re.compile(
+    r"fn_moveDetail2\s*\(\s*['\"]?(?P<seq>\d+)",
+    re.IGNORECASE,
+)
+_JS_MOVE_DETAIL_PATTERN = re.compile(
+    r"fn_moveDetail\s*\(\s*['\"]?(?P<keyword>\d+)",
+    re.IGNORECASE,
+)
+_JS_VIEW_DETAIL_PATTERN = re.compile(
+    r"viewDetail\s*\(\s*['\"](?P<ntc>\d+)['\"]",
+    re.IGNORECASE,
+)
+_DIGITS_PATTERN = re.compile(r"[0-9]+$")
+_BBS_NO_PATTERN = re.compile(r"[A-Za-z0-9_]+$")
+
+
+def resolve_article_link(raw_link: str, base_url: str) -> str:
+    """Return a stable absolute article URL for one feed item.
+
+    식품안전나라 list pages navigate with ``javascript:`` or a ``/layer``/``/popup``
+    URL that adds a cache-busting ``t`` parameter. Those are rewritten to the
+    public ``/portal`` detail URL using the notice id (``seq``, ``search_keyword``,
+    or ``ntctxt_no``). Relative detail paths from the RSS feed are made absolute
+    against the source host. Other publishers' absolute links are left unchanged.
+    """
+    link = html.unescape(raw_link or "").strip()
+    base = html.unescape(base_url or "").strip()
+    if link.startswith("//"):
+        scheme = urlparse(base).scheme
+        if scheme not in {"http", "https"}:
+            scheme = "https"
+        link = f"{scheme}:{link}"
+
+    if _should_resolve_foodsafetykorea_link(link, base):
+        detail = _foodsafetykorea_detail_url(link, base)
+        if detail:
+            return detail
+        if _foodsafetykorea_link_is_unusable(link):
+            return ""
+    return _absolutize_http_link(link, base)
+
+
+def _article_link(entry: Mapping[str, Any], base_url: str) -> str:
+    raw_link = _raw_entry_link(entry)
+    resolved = resolve_article_link(raw_link, base_url)
+    if resolved:
+        return resolved
+    for key in ("id", "guid"):
+        candidate = _entry_text(entry, key).strip()
+        if not candidate or candidate == raw_link:
+            continue
+        resolved = resolve_article_link(candidate, base_url)
+        if resolved:
+            return resolved
+    return ""
+
+
+def _raw_entry_link(entry: Mapping[str, Any]) -> str:
+    link = _entry_text(entry, "link").strip()
+    if link:
+        return link
+    links = entry.get("links")
+    if not isinstance(links, list):
+        return ""
+    for item in links:
+        if not isinstance(item, Mapping):
+            continue
+        href = item.get("href")
+        if not isinstance(href, str) or not href.strip():
+            continue
+        rel = item.get("rel")
+        if rel in (None, "", "alternate"):
+            return href.strip()
+    return ""
+
+
+def _should_resolve_foodsafetykorea_link(link: str, base_url: str) -> bool:
+    link_host = _http_hostname(link)
+    if link_host:
+        return _is_foodsafetykorea_host(link_host)
+    if _http_hostname(base_url) and not _is_foodsafetykorea_host(_http_hostname(base_url)):
+        return False
+    if not link or link.lower().startswith("javascript:"):
+        return _is_foodsafetykorea_host(_http_hostname(base_url))
+    parsed = urlparse(link)
+    if parsed.scheme and parsed.scheme not in {"http", "https"}:
+        return False
+    return _is_foodsafetykorea_host(_http_hostname(base_url))
+
+
+def _foodsafetykorea_detail_url(link: str, base_url: str) -> str | None:
+    origin = _foodsafetykorea_origin(link, base_url)
+    path, query = _split_path_query(link)
+    kind = _detail_kind(path)
+    if kind:
+        cleaned = _strip_query_param(query, "t")
+        item_id = _query_param(cleaned, _DETAIL_ID_PARAMS[kind])
+        if item_id and _DIGITS_PATTERN.fullmatch(item_id):
+            return f"{origin}{_CANONICAL_DETAIL_PATHS[kind]}?{cleaned}"
+
+    identifiers = _parse_foodsafetykorea_js(link)
+    if identifiers is None:
+        return None
+    return _detail_from_identifiers(origin, base_url, identifiers)
+
+
+def _detail_from_identifiers(
+    origin: str, base_url: str, identifiers: Mapping[str, str]
+) -> str | None:
+    seq = identifiers.get("seq", "")
+    if seq and _DIGITS_PATTERN.fullmatch(seq):
+        return f"{origin}/portal/administMeasureDetail.do?seq={seq}"
+
+    keyword = identifiers.get("keyword", "")
+    if keyword and _DIGITS_PATTERN.fullmatch(keyword):
+        return f"{origin}/portal/suspensionDetail.do?search_keyword={keyword}"
+
+    ntc = identifiers.get("ntc", "")
+    if not ntc or not _DIGITS_PATTERN.fullmatch(ntc):
+        return None
+    bbs_no = _query_param(urlparse(base_url).query, "bbs_no")
+    menu_no = _query_param(urlparse(base_url).query, "menu_no")
+    if not _BBS_NO_PATTERN.fullmatch(bbs_no) or not _DIGITS_PATTERN.fullmatch(menu_no):
+        return None
+    return (
+        f"{origin}/portal/board/boardDetail.do"
+        f"?bbs_no={bbs_no}&ntctxt_no={ntc}&menu_no={menu_no}"
+    )
+
+
+def _parse_foodsafetykorea_js(link: str) -> dict[str, str] | None:
+    if "javascript:" not in link.lower():
+        return None
+    move2 = _JS_MOVE_DETAIL2_PATTERN.search(link)
+    if move2 is not None:
+        return {"seq": move2.group("seq")}
+    move = _JS_MOVE_DETAIL_PATTERN.search(link)
+    if move is not None:
+        return {"keyword": move.group("keyword")}
+    view = _JS_VIEW_DETAIL_PATTERN.search(link)
+    if view is not None:
+        return {"ntc": view.group("ntc")}
+    return None
+
+
+def _foodsafetykorea_link_is_unusable(link: str) -> bool:
+    if not link or link.lower().startswith("javascript:"):
+        return True
+    path, _query = _split_path_query(link)
+    normalized = (path.rstrip("/") or "/").lower()
+    if normalized in {"", "/"}:
+        return True
+    return any(normalized.endswith(suffix.lower()) for suffix in _LIST_PAGE_SUFFIXES)
+
+
+def _foodsafetykorea_origin(link: str, base_url: str) -> str:
+    for candidate in (base_url, link):
+        if _is_foodsafetykorea_host(_http_hostname(candidate)):
+            origin = _origin_from_http_url(candidate)
+            if origin:
+                return origin
+    return _FOODSAFETYKOREA_ORIGIN
+
+
+def _absolutize_http_link(link: str, base_url: str) -> str:
+    if not link:
+        return ""
+    if link.lower().startswith("javascript:"):
+        return link
+    parsed = urlparse(link)
+    if parsed.scheme in {"http", "https"} and parsed.netloc:
+        return link
+    if parsed.scheme and parsed.scheme not in {"http", "https"}:
+        return link
+    origin = _origin_from_http_url(base_url)
+    if not origin:
+        return link
+    if link.startswith("/"):
+        return origin + link
+    return origin + "/" + link.lstrip("./")
+
+
+def _detail_kind(path: str) -> str:
+    match = _DETAIL_KIND_PATTERN.search(path.rstrip("/"))
+    if match is None:
+        return ""
+    return match.group("kind").lower()
+
+
+def _split_path_query(link: str) -> tuple[str, str]:
+    if not link or link.lower().startswith("javascript:"):
+        return "", ""
+    if "://" in link or link.startswith("//"):
+        parsed = urlparse(link if "://" in link else f"https:{link}")
+        return parsed.path or "", parsed.query or ""
+    path, _, query = link.partition("?")
+    path = path.split("#", 1)[0]
+    query = query.split("#", 1)[0]
+    if path and not path.startswith("/"):
+        path = "/" + path
+    return path, query
+
+
+def _strip_query_param(query: str, name: str) -> str:
+    kept: list[str] = []
+    for part in query.split("&"):
+        if not part:
+            continue
+        key = part.split("=", 1)[0]
+        if key == name:
+            continue
+        kept.append(part)
+    return "&".join(kept)
+
+
+def _query_param(query: str, name: str) -> str:
+    for part in query.split("&"):
+        if not part or "=" not in part:
+            continue
+        key, value = part.split("=", 1)
+        if key == name and value:
+            return value
+    return ""
+
+
+def _http_hostname(url: str) -> str:
+    parsed = urlparse(url)
+    if parsed.scheme not in {"http", "https"}:
+        return ""
+    return (parsed.hostname or "").lower()
+
+
+def _origin_from_http_url(url: str) -> str:
+    parsed = urlparse(url)
+    if parsed.scheme not in {"http", "https"} or not parsed.hostname:
+        return ""
+    return f"{parsed.scheme}://{parsed.hostname}"
+
+
+def _is_foodsafetykorea_host(hostname: str) -> bool:
+    host = hostname.lower().rstrip(".")
+    return host == "foodsafetykorea.go.kr" or host.endswith(".foodsafetykorea.go.kr")

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<!--
+  Verbatim excerpts from public 식품안전나라 list pages fetched 2026-10-29.
+  robots.txt allows these document paths.
+  - https://www.foodsafetykorea.go.kr/portal/fooddanger/suspension.do?menu_no=2713&menu_grp=MENU_NEW02
+  - https://www.foodsafetykorea.go.kr/portal/fooddanger/administMeasureList.do?menu_no=2714&menu_grp=MENU_NEW02
+  - https://www.foodsafetykorea.go.kr/portal/board/board.do?menu_no=2857&menu_grp=MENU_NEW05
+-->
+<body>
+<script id="recall-list">
+var href = '/layer/suspensionDetail.do?search_keyword='+list[i].rtrvldsuse_seq + "&t=" + new Date().getTime();
+                content += "<a class='recall fancybox.ajax'  id='"+list[i].rtrvldsuse_seq+"' onclick='javascript:fn_setId("+list[i].rtrvldsuse_seq+");'  href='"+href+"' >";
+function fn_moveDetail(no){
+
+    	var action  = '/popup/suspensionDetail.do?search_keyword='+no;
+
+    }
+</script>
+<script id="enforcement-list">
+var href = '/layer/administMeasureDetail.do?seq='+list[i].dspsdtls_seq + "&t=" + new Date().getTime();
+                content += "<a class='openinfo fancybox.ajax' style='margin-bottom:40px;' id='"+list[i].dspsdtls_seq+"' onclick='fn_setId("+list[i].dspsdtls_seq+")' href='"+href+"' >"; 
+                
+	            /* content += "<a class='openinfo fancybox.iframe' data-fancybox-group='iframe' href='#' onclick=\"javascript:fn_moveDetail2('"+list[i].dspsdtls_seq+"');\">";  */
+function fn_moveDetail2(seq){
+		
+    	var action  = '/popup/administMeasureDetail.do?seq='+seq;	
+
+    }
+</script>
+<script id="press-list">
+content += "<a class='re' title='게시글 링크' href=javascript:viewDetail('"+list[i].ntctxt_no+"','"+list[i].cretr_id+"','"+list[i].rm+"');>"+list[i].titl+"
+document.baseForm.action="/portal/board/boardDetail.do";
+				document.baseForm.target="_self";
+</script>
+</body>
+</html>
